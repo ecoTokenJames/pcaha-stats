@@ -1,0 +1,806 @@
+[
+  {
+    "id": 181229,
+    "name": "FVE U9 League",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 181228,
+    "name": "FVN U9 League",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 181149,
+    "name": "FVW U9 League",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 181117,
+    "name": "LG U9 League",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 181221,
+    "name": "PL U9 League",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 181070,
+    "name": "U9 C League",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 180837,
+    "name": "VIAHA U11 Development Placement Schedule",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 182217,
+    "name": "U11 A Placement",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 181069,
+    "name": "U11 C Placement",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181193,
+    "name": "U11A Placement",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 181109,
+    "name": "FVE U11C League",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181212,
+    "name": "LG U11C League",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181148,
+    "name": "FVN U11C League",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181894,
+    "name": "VIAHA South Island League U11 Regular Season",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181125,
+    "name": "FVW U11C League",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181071,
+    "name": "U11 C League",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 182218,
+    "name": "U11 A League",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 181172,
+    "name": "PL U11C League",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181051,
+    "name": "U11A League",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 188359,
+    "name": "U11 A Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 181261,
+    "name": "PL U11C Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181265,
+    "name": "U11 C Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181266,
+    "name": "FVE U11C Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181245,
+    "name": "FVN U11C Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181133,
+    "name": "FVW U11C Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 181252,
+    "name": "U11A Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 181260,
+    "name": "LG U11C Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 191110,
+    "name": "VIAHA South Island U11 Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 191177,
+    "name": "VIAHA U11 Development Division 1 Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 191178,
+    "name": "VIAHA U11 Development Division 2 Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 191179,
+    "name": "VIAHA U11 Development Division 3 Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 191180,
+    "name": "VIAHA U11 Development Division 4 Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 180513,
+    "name": "VIAHA Island League U13 Placement Games",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181129,
+    "name": "U13A Placement",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181060,
+    "name": "U13 A Placement",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181062,
+    "name": "U13 C Placement",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181127,
+    "name": "FVE U13C League",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181222,
+    "name": "LG U13C League",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 182991,
+    "name": "VIAHA Island League U13 Alberni Valley Turkey Classic",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 182517,
+    "name": "VIAHA Island League U13 Oceanside Thanksgiving Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 182894,
+    "name": "VIAHA Island League U13 Kerry Park Xavier Rasul-Jankovics Memorial Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181151,
+    "name": "FVN U13C League",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181893,
+    "name": "VIAHA South Island League U13 Regular Season",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 183622,
+    "name": "VIAHA Island League U13 Division 1",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 183623,
+    "name": "VIAHA Island League U13 Division 2",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 183624,
+    "name": "VIAHA Island League U13 Division 3",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181126,
+    "name": "FVW U13C League",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181207,
+    "name": "U13 C League",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181066,
+    "name": "U13  A League",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181044,
+    "name": "U13A League",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181160,
+    "name": "PL U13C League",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 184611,
+    "name": "VIAHA Island League Tier 1 U13 JDF Remembrance Day Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 183771,
+    "name": "VIAHA Island League U13 T2 Juan de Fuca Remembrance Day Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 185996,
+    "name": "VIAHA Island League U13 Comox Valley Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 182860,
+    "name": "VIAHA Island League U13 Peninsula Winter Classic Eagle Cup",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181134,
+    "name": "FVE U13C Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 187952,
+    "name": "VIAHA Island League U13 Tier 1 Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 187953,
+    "name": "VIAHA Island League U13 Tier 2 Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 187954,
+    "name": "VIAHA Island League U13 Tier 3 Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181257,
+    "name": "U13 A Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181249,
+    "name": "U13A Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 181262,
+    "name": "PL U13C Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181258,
+    "name": "U13 C Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181246,
+    "name": "FVN U13C Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181135,
+    "name": "FVW U13C Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181255,
+    "name": "LG U13C Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 191111,
+    "name": "VIAHA South Island U13 Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181714,
+    "name": "U15 AA League ",
+    "divisionName": "U15",
+    "categoryName": "U15 AA"
+  },
+  {
+    "id": 180512,
+    "name": "VIAHA Island League U15 Placement Games",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181089,
+    "name": "U15 C Placement",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 181083,
+    "name": "U15 A Placement",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181053,
+    "name": "U15A Placement",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181195,
+    "name": "FVE U15C League",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 181213,
+    "name": "LG U15C League",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 182621,
+    "name": "VIAHA Island League U15 Peninsula Larry Orr Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181145,
+    "name": "FVN U15C League",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 181891,
+    "name": "VIAHA South Island League U15 Regular Season",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 183612,
+    "name": "VIAHA Island League U15 Division 1",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 183620,
+    "name": "VIAHA Island League U15 Division 2",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 183621,
+    "name": "VIAHA Island League U15 Division 3",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181128,
+    "name": "FVW U15C League",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 181085,
+    "name": "U15 A League",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181043,
+    "name": "U15A League",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181090,
+    "name": "U15 C League",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 184274,
+    "name": "VIAHA Island League U15 VRC Remembrance Day Classic",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181174,
+    "name": "PL U15 League",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 184290,
+    "name": "VIAHA Island League U15 Powell River Kings Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 183209,
+    "name": "VIAHA Island League U15 Oceanside Remembrance Day Classic",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 185254,
+    "name": "VIAHA Island League U15 2026 Rick Lapointe Memorial Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 185664,
+    "name": "VIAHA Island League U15 Comox Valley Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181146,
+    "name": "FVE U15C Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 187949,
+    "name": "VIAHA Island League U15 Tier 1 Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 187950,
+    "name": "VIAHA Island League U15 Tier 2 Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 187951,
+    "name": "VIAHA Island League U15 Tier 3 Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181087,
+    "name": "U15 A Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181263,
+    "name": "PL U15C Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 181091,
+    "name": "U15 C Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 181250,
+    "name": "U15A Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181247,
+    "name": "FVN U15C Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 181136,
+    "name": "FVW U15C Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 181256,
+    "name": "LG U15C Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 191115,
+    "name": "VIAHA South Island U15 Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 191694,
+    "name": "PCEHL U15 AA Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 AA"
+  },
+  {
+    "id": 180511,
+    "name": "VIAHA Island League U18 Placement Games",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181057,
+    "name": "U18 A Placement",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181064,
+    "name": "U18 C Placement",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 181118,
+    "name": "U18A Placement",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181155,
+    "name": "FVE U18C League",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 181223,
+    "name": "LG U18C League",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 182954,
+    "name": "VIAHA Island League U18 North Island Bears Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181143,
+    "name": "FVN U18C League",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 183021,
+    "name": "VIAHA Island League U18 Kings Cup Powell River Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181889,
+    "name": "VIAHA South Island League U18 Regular Season",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 183610,
+    "name": "VIAHA Island League U18 Division 2",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 183609,
+    "name": "VIAHA Island League U18 Division 1",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 183611,
+    "name": "VIAHA Island League U18 Division 3",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181131,
+    "name": "FVW U18C League",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 181203,
+    "name": "U18A League",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181079,
+    "name": "U18  C League",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 181054,
+    "name": "U18 A League",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181179,
+    "name": "PL U18 League",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 183157,
+    "name": "VIAHA Island League U18 Kerry Park Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181157,
+    "name": "FVE U18C Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 187946,
+    "name": "VIAHA Island League U18 Tier 1 Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 187947,
+    "name": "VIAHA Island League U18 Tier 2 Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 187948,
+    "name": "VIAHA Island League U18 Tier 3 Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181061,
+    "name": "U18 A Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181080,
+    "name": "U18 C Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 181264,
+    "name": "PL U18C Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 181251,
+    "name": "U18A Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181248,
+    "name": "FVN U18C Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 181191,
+    "name": "FVW U18C Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 181259,
+    "name": "LG U18C Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 191116,
+    "name": "VIAHA South Island U18 Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  }
+]
