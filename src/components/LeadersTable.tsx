@@ -70,12 +70,11 @@ export function LeadersTable({
   // Filter by schedule view, merge duplicates, then filter by tier and position
   const filteredPlayers = useMemo(() => {
     let filtered: LeaderPlayer[];
-    if (scheduleView === "league") {
-      filtered = players.filter((p) => p.scheduleType === "League");
-    } else if (scheduleView === "tournament") {
+    if (scheduleView === "tournament") {
       filtered = players.filter((p) => p.scheduleType === "Tournament");
     } else {
-      filtered = players;
+      // "overall" = everything EXCEPT tournaments (League + Playoffs + Placement)
+      filtered = players.filter((p) => p.scheduleType !== "Tournament");
     }
 
     filtered = mergeByPlayer(filtered);
@@ -120,7 +119,6 @@ export function LeadersTable({
           {(
             [
               { key: "overall", label: "Overall" },
-              { key: "league", label: "League" },
               { key: "tournament", label: "Tournaments" },
             ] as const
           ).map((tab) => (

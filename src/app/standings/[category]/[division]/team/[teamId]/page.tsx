@@ -91,10 +91,13 @@ export default async function TeamDetailPage({
     notFound();
   }
 
-  // Get ALL players for this team and merge across schedule types into overall stats
+  // Get ALL players for this team, exclude tournaments from overall stats
   const allPlayers = getTeamPlayers(divName, teamId);
   const abbrev = getLeagueAbbrev(teamInfo.scheduleName);
-  const mergedPlayers = mergePlayerStats(allPlayers);
+  const leaguePlayers = allPlayers.filter(
+    (p) => getScheduleType(p.scheduleName) !== "Tournament"
+  );
+  const mergedPlayers = mergePlayerStats(leaguePlayers);
 
   // Separate tournament players and group by tournament name
   const tournamentPlayers = allPlayers.filter(
