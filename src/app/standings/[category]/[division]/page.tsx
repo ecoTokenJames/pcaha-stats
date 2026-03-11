@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import {
   getFilteredStandings,
   getDivisionsForCategory,
@@ -9,6 +10,33 @@ import {
 import { StandingsTable } from "@/components/StandingsTable";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
+
+const CATEGORY_LABELS: Record<string, string> = {
+  rep: "Rep",
+  house: "House",
+  female: "Female",
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string; division: string }>;
+}): Promise<Metadata> {
+  const { category, division } = await params;
+  const divName = division.toUpperCase();
+  const catLabel = CATEGORY_LABELS[category] || category;
+  const title = `${divName} ${catLabel} Standings`;
+  const description = `${divName} ${catLabel} hockey standings for the 2025-26 PCAHA season. View team records, points, goals, and rankings.`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${title} | PCAHA Stats`,
+      description,
+    },
+  };
+}
 
 export function generateStaticParams() {
   const params: { category: string; division: string }[] = [];

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import type { Metadata } from "next";
 import {
   getTeamInfo,
   getTeamPlayers,
@@ -12,6 +13,33 @@ import {
 import { TeamRosterTable } from "@/components/TeamRosterTable";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string; division: string; teamId: string }>;
+}): Promise<Metadata> {
+  const { division, teamId: teamIdStr } = await params;
+  const divName = division.toUpperCase();
+  const teamId = parseInt(teamIdStr);
+  const teamInfo = getTeamInfo(divName, teamId);
+
+  if (!teamInfo) {
+    return { title: "Team Not Found" };
+  }
+
+  const title = teamInfo.teamName;
+  const description = `Player stats and roster for ${teamInfo.teamName} in the 2025-26 PCAHA ${divName} season.`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${title} | PCAHA Stats`,
+      description,
+    },
+  };
+}
 
 export function generateStaticParams() {
   const params: { category: string; division: string; teamId: string }[] = [];
