@@ -333,6 +333,107 @@ async function fetchPlayerStats(schedules) {
 }
 
 /**
+ * Step 5: Fetch team rosters and set GP = team GP from standings.
+ * Also adds players who never appeared in a boxscore but are on the roster.
+ */
+async function enrichWithRosters(playerMap, standings, schedules) {
+  log('Fetching team rosters to fix GP...');
+
+  // Build a map of teamId -> { teamGP, schedule info }
+  const teamInfo = {};
+  for (const [schedId, data] of Object.entries(standings)) {
+    const schedule = schedules.find(s => s.id === parseInt(schedId));
+    if (!schedule) continue;
+
+    for (const team of data.teams) {
+      // Use the highest GP if a team appears in multiple schedules
+      if (!teamInfo[team.teamId] || team.gamesPlayed > teamInfo[team.teamId].gamesPlayed) {
+        teamInfo[team.teamId] = {
+          teamId: team.teamId,
+          teamName: team.teamName,
+          gamesPlayed: team.gamesPlayed,
+          divisionName: data.divisionName,
+          scheduleName: data.scheduleName,
+          scheduleId: parseInt(schedId),
+          categoryName: data.categoryName,
+        };
+      }
+    }
+  }
+
+  const teamIds = Object.keys(teamInfo).map(Number);
+  log(`  Fetching rosters for ${teamIds.length} teams...`);
+
+  let fetched = 0;
+  let rosterPlayers = 0;
+  let newPlayers = 0;
+
+  for (let i = 0; i < teamIds.length; i += 5) {
+    const batch = teamIds.slice(i, i + 5);
+    const rosters = await Promise.all(
+      batch.map(async (teamId) => {
+        try {
+          const members = await api.getTeamMembers(teamId);
+          return { teamId, members: members || [] };
+        } catch (e) {
+          return { teamId, members: [] };
+        }
+      })
+    );
+
+    for (const { teamId, members } of rosters) {
+      const info = teamInfo[teamId];
+      if (!info) continue;
+
+      // Filter to actual players (have a jersey number)
+      const players = members.filter(m => m.number && m.number > 0 && m.participant);
+
+      for (const member of players) {
+        const pid = member.participantId;
+        rosterPlayers++;
+
+        if (playerMap[pid]) {
+          // Player exists from boxscore data — update GP to team GP
+          playerMap[pid].gamesPlayed = info.gamesPlayed;
+        } else {
+          // New player — never appeared in a boxscore but is on the roster
+          newPlayers++;
+          playerMap[pid] = {
+            participantId: pid,
+            name: member.participant.fullName || 'Unknown',
+            number: member.number || 0,
+            teamId: teamId,
+            teamName: info.teamName,
+            divisionName: info.divisionName,
+            scheduleName: info.scheduleName,
+            scheduleId: info.scheduleId,
+            categoryName: info.categoryName,
+            goals: 0,
+            assists: 0,
+            points: 0,
+            pim: 0,
+            ppGoals: 0,
+            shGoals: 0,
+            gwGoals: 0,
+            gamesPlayed: info.gamesPlayed,
+            isAffiliate: member.isAffiliate || false,
+          };
+        }
+      }
+    }
+
+    fetched += batch.length;
+    if (fetched % 100 === 0 || fetched >= teamIds.length) {
+      log(`  Fetched ${fetched}/${teamIds.length} rosters`);
+    }
+
+    await api.sleep(50);
+  }
+
+  log(`  Roster enrichment: ${rosterPlayers} roster players processed, ${newPlayers} new players added`);
+}
+
+/**
  * Main scraper function
  */
 async function main() {
@@ -395,6 +496,11 @@ async function main() {
   // Step 4: Fetch player stats (unless --standings flag)
   if (!standingsOnly) {
     const { playerMap, totalGames } = await fetchPlayerStats(schedules);
+
+    // Step 5: Fetch team rosters and fix GP
+    // The boxscore only records players who scored/assisted/penalized.
+    // We use team rosters + team GP from standings for accurate games played.
+    await enrichWithRosters(playerMap, standings, schedules);
 
     // Convert player map to sorted arrays
     const players = Object.values(playerMap).sort((a, b) => b.points - a.points);

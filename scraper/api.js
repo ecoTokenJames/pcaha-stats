@@ -141,6 +141,16 @@ async function getParticipant(participantId) {
   return fetchWithRetry(`/participants/${participantId}`);
 }
 
+/**
+ * Get team roster (all registered players/staff)
+ */
+async function getTeamMembers(teamId) {
+  const filter = JSON.stringify({
+    include: 'participant'
+  });
+  return fetchWithRetry(`/teams/${teamId}/members?filter=${encodeURIComponent(filter)}`);
+}
+
 module.exports = {
   fetchApi,
   fetchWithRetry,
@@ -154,5 +164,6 @@ module.exports = {
   getBoxscore,
   getGroups,
   getParticipant,
+  getTeamMembers,
   sleep,
 };
