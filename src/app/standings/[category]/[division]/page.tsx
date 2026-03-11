@@ -1,28 +1,46 @@
 import { notFound } from "next/navigation";
 import {
-  getDivisionStandings,
-  getActiveDivisions,
+  getFilteredStandings,
+  getDivisionsForCategory,
   getScheduleType,
   getLeagueAbbrev,
+  type HockeyCategory,
 } from "@/lib/data";
 import { StandingsTable } from "@/components/StandingsTable";
 
+const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
+
 export function generateStaticParams() {
-  const divisions = getActiveDivisions();
-  return divisions.map((d) => ({ division: d.name.toLowerCase() }));
+  const params: { category: string; division: string }[] = [];
+  for (const category of VALID_CATEGORIES) {
+    const divisions = getDivisionsForCategory(category);
+    for (const div of divisions) {
+      params.push({ category, division: div.name.toLowerCase() });
+    }
+  }
+  return params;
 }
 
 export default async function DivisionStandingsPage({
   params,
 }: {
-  params: Promise<{ division: string }>;
+  params: Promise<{ category: string; division: string }>;
 }) {
-  const { division } = await params;
+  const { category, division } = await params;
   const divName = division.toUpperCase();
-  const standings = getDivisionStandings(divName);
+
+  if (!VALID_CATEGORIES.includes(category as HockeyCategory)) {
+    notFound();
+  }
+
+  const standings = getFilteredStandings(divName, category as HockeyCategory);
 
   if (Object.keys(standings).length === 0) {
-    notFound();
+    return (
+      <div className="text-center py-12 text-gray-500">
+        No standings data for {divName} {category}.
+      </div>
+    );
   }
 
   // Group schedules by type (League, Playoffs, Placement, Tournament)
@@ -40,11 +58,12 @@ export default async function DivisionStandingsPage({
     });
   }
 
-  // Sort order: League first, then Playoffs, Placement, Tournament
   const typeOrder = ["League", "Playoffs", "Placement", "Tournament"];
   const sortedTypes = Object.keys(grouped).sort(
     (a, b) => typeOrder.indexOf(a) - typeOrder.indexOf(b)
   );
+
+  const teamLinkBase = `/standings/${category}/${division}/team`;
 
   return (
     <div className="space-y-8">
@@ -87,7 +106,10 @@ export default async function DivisionStandingsPage({
                         {abbrev}
                       </span>
                     </div>
-                    <StandingsTable teams={data.teams} />
+                    <StandingsTable
+                      teams={data.teams}
+                      teamLinkBase={teamLinkBase}
+                    />
                   </div>
                 );
               })}

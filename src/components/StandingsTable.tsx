@@ -1,12 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import type { TeamStanding } from "@/lib/data";
 import { TeamStar } from "./FavoriteStar";
 
 type SortKey = keyof TeamStanding;
 
-export function StandingsTable({ teams }: { teams: TeamStanding[] }) {
+export function StandingsTable({
+  teams,
+  teamLinkBase,
+}: {
+  teams: TeamStanding[];
+  teamLinkBase?: string;
+}) {
   const [sortKey, setSortKey] = useState<SortKey>("rank");
   const [sortAsc, setSortAsc] = useState(true);
 
@@ -110,7 +117,16 @@ export function StandingsTable({ teams }: { teams: TeamStanding[] }) {
                   <td className="px-2 py-2 text-left font-medium text-gray-900 whitespace-nowrap">
                     <span className="inline-flex items-center gap-1.5">
                       <TeamStar teamId={team.teamId} />
-                      {team.teamName}
+                      {teamLinkBase ? (
+                        <Link
+                          href={`${teamLinkBase}/${team.teamId}`}
+                          className="hover:text-blue-700 hover:underline"
+                        >
+                          {team.teamName}
+                        </Link>
+                      ) : (
+                        team.teamName
+                      )}
                     </span>
                   </td>
                   <td className="px-2 py-2 text-center">{team.gamesPlayed}</td>

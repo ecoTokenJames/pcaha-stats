@@ -16,7 +16,7 @@ export function DivisionGrid({ divisions }: { divisions: DivisionCardData[] }) {
       {divisions.map((div) => (
         <Link
           key={div.id}
-          href={`/standings/${div.name.toLowerCase()}`}
+          href={`/standings/rep/${div.name.toLowerCase()}`}
           className="bg-white rounded-lg border border-gray-200 p-4 hover:border-blue-300 hover:shadow-md transition-all group relative"
         >
           <div className="flex items-start justify-between">
