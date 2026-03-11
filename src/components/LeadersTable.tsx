@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import type { PlayerStat } from "@/lib/data";
 
 type StatCategory = "points" | "goals" | "assists" | "pim";
+type ScheduleFilter = "League" | "Playoffs";
 
 const STAT_TABS: { key: StatCategory; label: string }[] = [
   { key: "points", label: "Points" },
@@ -12,31 +13,117 @@ const STAT_TABS: { key: StatCategory; label: string }[] = [
   { key: "pim", label: "PIM" },
 ];
 
+const SCHEDULE_TABS: { key: ScheduleFilter; label: string }[] = [
+  { key: "League", label: "Regular Season" },
+  { key: "Playoffs", label: "Playoffs" },
+];
+
 const PAGE_SIZE = 50;
 
-export function LeadersTable({ players }: { players: PlayerStat[] }) {
+export interface LeaderPlayer extends PlayerStat {
+  scheduleType: string;
+}
+
+/**
+ * Merge multiple entries for the same player (e.g. playoff + placement) into one.
+ */
+function mergeByPlayer(players: LeaderPlayer[]): LeaderPlayer[] {
+  const grouped = new Map<number, LeaderPlayer[]>();
+  for (const p of players) {
+    const entries = grouped.get(p.participantId) || [];
+    entries.push(p);
+    grouped.set(p.participantId, entries);
+  }
+
+  const merged: LeaderPlayer[] = [];
+  for (const entries of grouped.values()) {
+    const primary = entries.reduce((a, b) =>
+      a.gamesPlayed >= b.gamesPlayed ? a : b
+    );
+    merged.push({
+      ...primary,
+      gamesPlayed: entries.reduce((sum, e) => sum + e.gamesPlayed, 0),
+      goals: entries.reduce((sum, e) => sum + e.goals, 0),
+      assists: entries.reduce((sum, e) => sum + e.assists, 0),
+      points: entries.reduce((sum, e) => sum + e.points, 0),
+      pim: entries.reduce((sum, e) => sum + e.pim, 0),
+      ppGoals: entries.reduce((sum, e) => sum + e.ppGoals, 0),
+      shGoals: entries.reduce((sum, e) => sum + e.shGoals, 0),
+      gwGoals: entries.reduce((sum, e) => sum + e.gwGoals, 0),
+    });
+  }
+
+  return merged;
+}
+
+export function LeadersTable({ players }: { players: LeaderPlayer[] }) {
+  const [scheduleFilter, setScheduleFilter] =
+    useState<ScheduleFilter>("League");
   const [statCategory, setStatCategory] = useState<StatCategory>("points");
   const [showCount, setShowCount] = useState(PAGE_SIZE);
 
-  // Sort players by selected stat category
-  const sortedPlayers = [...players].sort((a, b) => {
-    switch (statCategory) {
-      case "goals":
-        return b.goals - a.goals || b.points - a.points;
-      case "assists":
-        return b.assists - a.assists || b.points - a.points;
-      case "pim":
-        return b.pim - a.pim;
-      default:
-        return b.points - a.points || b.goals - a.goals;
+  // Check if there are any playoff players
+  const hasPlayoffs = useMemo(
+    () => players.some((p) => p.scheduleType !== "League"),
+    [players]
+  );
+
+  // Filter by schedule type, then merge duplicates (e.g. playoff + placement)
+  const filteredPlayers = useMemo(() => {
+    let filtered: LeaderPlayer[];
+    if (scheduleFilter === "League") {
+      filtered = players.filter((p) => p.scheduleType === "League");
+    } else {
+      // Playoffs includes both "Playoffs" and "Placement"
+      filtered = players.filter((p) => p.scheduleType !== "League");
+      filtered = mergeByPlayer(filtered);
     }
-  });
+    return filtered;
+  }, [players, scheduleFilter]);
+
+  // Sort players by selected stat category
+  const sortedPlayers = useMemo(() => {
+    return [...filteredPlayers].sort((a, b) => {
+      switch (statCategory) {
+        case "goals":
+          return b.goals - a.goals || b.points - a.points;
+        case "assists":
+          return b.assists - a.assists || b.points - a.points;
+        case "pim":
+          return b.pim - a.pim;
+        default:
+          return b.points - a.points || b.goals - a.goals;
+      }
+    });
+  }, [filteredPlayers, statCategory]);
 
   const visiblePlayers = sortedPlayers.slice(0, showCount);
   const hasMore = showCount < sortedPlayers.length;
 
   return (
     <div>
+      {/* Schedule Type Toggle */}
+      {hasPlayoffs && (
+        <div className="flex gap-1 mb-4">
+          {SCHEDULE_TABS.map((tab) => (
+            <button
+              key={tab.key}
+              onClick={() => {
+                setScheduleFilter(tab.key);
+                setShowCount(PAGE_SIZE);
+              }}
+              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                scheduleFilter === tab.key
+                  ? "bg-blue-900 text-white"
+                  : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-900"
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* Stat Category Tabs */}
       <div className="flex gap-1 mb-6">
         {STAT_TABS.map((tab) => (

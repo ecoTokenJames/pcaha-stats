@@ -2,9 +2,10 @@ import { notFound } from "next/navigation";
 import {
   getFilteredPlayers,
   getDivisionsForCategory,
+  getScheduleType,
   type HockeyCategory,
 } from "@/lib/data";
-import { LeadersTable } from "@/components/LeadersTable";
+import { LeadersTable, type LeaderPlayer } from "@/components/LeadersTable";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
 
@@ -31,10 +32,16 @@ export default async function LeadersDivisionPage({
     notFound();
   }
 
+  // Get ALL players (both regular season and playoffs)
   const players = getFilteredPlayers(divName, category as HockeyCategory);
 
-  // Filter to players with at least 3 games played
-  const qualifiedPlayers = players.filter((p) => p.gamesPlayed >= 3);
+  // Add scheduleType field and filter to min 3 GP
+  const qualifiedPlayers: LeaderPlayer[] = players
+    .filter((p) => p.gamesPlayed >= 3)
+    .map((p) => ({
+      ...p,
+      scheduleType: getScheduleType(p.scheduleName),
+    }));
 
   if (qualifiedPlayers.length === 0) {
     return (

@@ -230,14 +230,19 @@ export function getFilteredStandings(
   return filtered;
 }
 
+export type ScheduleTypeFilter = "League" | "Playoffs";
+
 /**
- * Get players for a division filtered by hockey category.
+ * Get players for a division filtered by hockey category and optionally by schedule type.
  * Uses schedule-level female detection: players in a female-majority schedule
  * are all classified as female regardless of individual team name.
+ *
+ * scheduleType: "League" = regular season only, "Playoffs" = playoffs + placement, undefined = all
  */
 export function getFilteredPlayers(
   division: string,
-  category: HockeyCategory
+  category: HockeyCategory,
+  scheduleType?: ScheduleTypeFilter
 ): PlayerStat[] {
   const allPlayers = getDivisionPlayers(division);
   const standings = getDivisionStandings(division);
@@ -254,19 +259,73 @@ export function getFilteredPlayers(
     const schedCat = classifyScheduleCategory(player.categoryName);
     const inFemaleSchedule = femaleScheduleIds.has(player.scheduleId);
 
-    if (category === "female") return inFemaleSchedule;
-    return schedCat === category && !inFemaleSchedule;
+    // Category filter
+    if (category === "female" && !inFemaleSchedule) return false;
+    if (category !== "female" && (schedCat !== category || inFemaleSchedule)) return false;
+
+    // Schedule type filter
+    if (scheduleType) {
+      const type = getScheduleType(player.scheduleName);
+      if (scheduleType === "League") return type === "League";
+      if (scheduleType === "Playoffs") return type === "Playoffs" || type === "Placement";
+    }
+
+    return true;
   });
 }
 
 /**
- * Get all players for a specific team.
+ * Get all players for a specific team, optionally filtered by schedule type.
  */
-export function getTeamPlayers(division: string, teamId: number): PlayerStat[] {
+export function getTeamPlayers(
+  division: string,
+  teamId: number,
+  scheduleType?: ScheduleTypeFilter
+): PlayerStat[] {
   const allPlayers = getDivisionPlayers(division);
   return allPlayers
-    .filter((p) => p.teamId === teamId)
+    .filter((p) => {
+      if (p.teamId !== teamId) return false;
+      if (scheduleType) {
+        const type = getScheduleType(p.scheduleName);
+        if (scheduleType === "League") return type === "League";
+        if (scheduleType === "Playoffs") return type === "Playoffs" || type === "Placement";
+      }
+      return true;
+    })
     .sort((a, b) => b.points - a.points || b.goals - a.goals);
+}
+
+/**
+ * Merge multiple player entries (from different schedules) into one per player.
+ * Sums GP, G, A, PTS, PIM, PPG, SHG. Takes name/number/team from entry with most GP.
+ */
+export function mergePlayerStats(players: PlayerStat[]): PlayerStat[] {
+  const grouped = new Map<number, PlayerStat[]>();
+  for (const p of players) {
+    const entries = grouped.get(p.participantId) || [];
+    entries.push(p);
+    grouped.set(p.participantId, entries);
+  }
+
+  const merged: PlayerStat[] = [];
+  for (const entries of grouped.values()) {
+    // Use the entry with most GP for identity fields
+    const primary = entries.reduce((a, b) => (a.gamesPlayed >= b.gamesPlayed ? a : b));
+    merged.push({
+      ...primary,
+      gamesPlayed: entries.reduce((sum, e) => sum + e.gamesPlayed, 0),
+      goals: entries.reduce((sum, e) => sum + e.goals, 0),
+      assists: entries.reduce((sum, e) => sum + e.assists, 0),
+      points: entries.reduce((sum, e) => sum + e.points, 0),
+      pim: entries.reduce((sum, e) => sum + e.pim, 0),
+      ppGoals: entries.reduce((sum, e) => sum + e.ppGoals, 0),
+      shGoals: entries.reduce((sum, e) => sum + e.shGoals, 0),
+      gwGoals: entries.reduce((sum, e) => sum + e.gwGoals, 0),
+    });
+  }
+
+  return merged.sort((a, b) => b.points - a.points || b.goals - a.goals);
 }
 
 /**

@@ -144,13 +144,15 @@ async function fetchStandings(schedules) {
  */
 async function fetchPlayerStats(schedules) {
   log('Fetching games and player stats...');
-  const playerMap = {}; // participantId -> { name, number, teamId, goals, assists, pim, gp, ... }
+  // Keyed by `${participantId}-${scheduleId}` so stats are per-schedule
+  const playerMap = {};
   const teamPlayerMap = {}; // teamId -> Set of participantIds
   let totalGames = 0;
   let processedGames = 0;
 
   for (const schedule of schedules) {
     log(`  Fetching games for ${schedule.divisionName} - ${schedule.name}...`);
+    const schedId = schedule.id;
 
     try {
       const games = await api.getGames(schedule.id);
@@ -181,17 +183,18 @@ async function fetchPlayerStats(schedules) {
           const game = completedGames.find(g => g.id === batch[j]);
           if (!boxscore || !game) continue;
 
-          // Track which players played in this game
+          // Track which players played in this game (composite keys)
           const gamePlayers = new Set();
 
           // Process goals
           for (const goal of (boxscore.goals || [])) {
             if (!goal.participant) continue;
             const pid = goal.participant.participantId;
+            const key = `${pid}-${schedId}`;
 
-            // Initialize player if new
-            if (!playerMap[pid]) {
-              playerMap[pid] = {
+            // Initialize player if new for this schedule
+            if (!playerMap[key]) {
+              playerMap[key] = {
                 participantId: pid,
                 name: goal.participant.fullName,
                 number: goal.participant.number,
@@ -199,7 +202,7 @@ async function fetchPlayerStats(schedules) {
                 teamName: '',
                 divisionName: schedule.divisionName,
                 scheduleName: schedule.name,
-                scheduleId: schedule.id,
+                scheduleId: schedId,
                 categoryName: schedule.category?.name || '',
                 goals: 0,
                 assists: 0,
@@ -213,15 +216,15 @@ async function fetchPlayerStats(schedules) {
               };
             }
 
-            playerMap[pid].goals++;
-            playerMap[pid].points++;
-            if (goal.isPowerplay) playerMap[pid].ppGoals++;
-            if (goal.isShorthanded) playerMap[pid].shGoals++;
-            gamePlayers.add(pid);
+            playerMap[key].goals++;
+            playerMap[key].points++;
+            if (goal.isPowerplay) playerMap[key].ppGoals++;
+            if (goal.isShorthanded) playerMap[key].shGoals++;
+            gamePlayers.add(key);
 
             // Set team name from game data
             const team = boxscore.teams?.find(t => t.id === goal.teamId);
-            if (team) playerMap[pid].teamName = team.name;
+            if (team) playerMap[key].teamName = team.name;
 
             // Track team membership
             if (!teamPlayerMap[goal.teamId]) teamPlayerMap[goal.teamId] = new Set();
@@ -230,8 +233,9 @@ async function fetchPlayerStats(schedules) {
             // Process assists
             for (const assist of (goal.assists || [])) {
               const apid = assist.participantId;
-              if (!playerMap[apid]) {
-                playerMap[apid] = {
+              const akey = `${apid}-${schedId}`;
+              if (!playerMap[akey]) {
+                playerMap[akey] = {
                   participantId: apid,
                   name: assist.fullName,
                   number: assist.number,
@@ -239,7 +243,7 @@ async function fetchPlayerStats(schedules) {
                   teamName: team?.name || '',
                   divisionName: schedule.divisionName,
                   scheduleName: schedule.name,
-                  scheduleId: schedule.id,
+                  scheduleId: schedId,
                   categoryName: schedule.category?.name || '',
                   goals: 0,
                   assists: 0,
@@ -252,9 +256,9 @@ async function fetchPlayerStats(schedules) {
                   isAffiliate: assist.isAffiliate || false,
                 };
               }
-              playerMap[apid].assists++;
-              playerMap[apid].points++;
-              gamePlayers.add(apid);
+              playerMap[akey].assists++;
+              playerMap[akey].points++;
+              gamePlayers.add(akey);
 
               if (!teamPlayerMap[goal.teamId]) teamPlayerMap[goal.teamId] = new Set();
               teamPlayerMap[goal.teamId].add(apid);
@@ -265,9 +269,10 @@ async function fetchPlayerStats(schedules) {
           for (const penalty of (boxscore.penalties || [])) {
             if (!penalty.participant) continue;
             const pid = penalty.participant.participantId;
+            const key = `${pid}-${schedId}`;
 
-            if (!playerMap[pid]) {
-              playerMap[pid] = {
+            if (!playerMap[key]) {
+              playerMap[key] = {
                 participantId: pid,
                 name: penalty.participant.fullName,
                 number: penalty.participant.number,
@@ -275,7 +280,7 @@ async function fetchPlayerStats(schedules) {
                 teamName: '',
                 divisionName: schedule.divisionName,
                 scheduleName: schedule.name,
-                scheduleId: schedule.id,
+                scheduleId: schedId,
                 categoryName: schedule.category?.name || '',
                 goals: 0,
                 assists: 0,
@@ -297,19 +302,19 @@ async function fetchPlayerStats(schedules) {
             else if (durName.includes('misconduct')) pimValue = 10;
             else if (durName.includes('match')) pimValue = 5;
 
-            playerMap[pid].pim += pimValue;
-            gamePlayers.add(pid);
+            playerMap[key].pim += pimValue;
+            gamePlayers.add(key);
 
             const team = boxscore.teams?.find(t => t.id === penalty.teamId);
-            if (team) playerMap[pid].teamName = team.name;
+            if (team) playerMap[key].teamName = team.name;
 
             if (!teamPlayerMap[penalty.teamId]) teamPlayerMap[penalty.teamId] = new Set();
             teamPlayerMap[penalty.teamId].add(pid);
           }
 
           // Increment games played for all players who appeared in this game
-          for (const pid of gamePlayers) {
-            if (playerMap[pid]) playerMap[pid].gamesPlayed++;
+          for (const key of gamePlayers) {
+            if (playerMap[key]) playerMap[key].gamesPlayed++;
           }
 
           processedGames++;
@@ -328,7 +333,7 @@ async function fetchPlayerStats(schedules) {
     }
   }
 
-  log(`Processed ${processedGames} games total, found ${Object.keys(playerMap).length} players`);
+  log(`Processed ${processedGames} games total, found ${Object.keys(playerMap).length} player-schedule entries`);
   return { playerMap, teamPlayerMap, totalGames: processedGames };
 }
 
@@ -339,34 +344,33 @@ async function fetchPlayerStats(schedules) {
 async function enrichWithRosters(playerMap, standings, schedules) {
   log('Fetching team rosters to fix GP...');
 
-  // Build a map of teamId -> { teamGP, schedule info }
-  const teamInfo = {};
+  // Build a list of all team-schedule entries (one entry per team per schedule)
+  const teamScheduleEntries = [];
+  const uniqueTeamIds = new Set();
   for (const [schedId, data] of Object.entries(standings)) {
     const schedule = schedules.find(s => s.id === parseInt(schedId));
     if (!schedule) continue;
 
     for (const team of data.teams) {
-      // Use the highest GP if a team appears in multiple schedules
-      if (!teamInfo[team.teamId] || team.gamesPlayed > teamInfo[team.teamId].gamesPlayed) {
-        teamInfo[team.teamId] = {
-          teamId: team.teamId,
-          teamName: team.teamName,
-          gamesPlayed: team.gamesPlayed,
-          divisionName: data.divisionName,
-          scheduleName: data.scheduleName,
-          scheduleId: parseInt(schedId),
-          categoryName: data.categoryName,
-        };
-      }
+      teamScheduleEntries.push({
+        teamId: team.teamId,
+        teamName: team.teamName,
+        gamesPlayed: team.gamesPlayed,
+        divisionName: data.divisionName,
+        scheduleName: data.scheduleName,
+        scheduleId: parseInt(schedId),
+        categoryName: data.categoryName,
+      });
+      uniqueTeamIds.add(team.teamId);
     }
   }
 
-  const teamIds = Object.keys(teamInfo).map(Number);
-  log(`  Fetching rosters for ${teamIds.length} teams...`);
+  const teamIds = Array.from(uniqueTeamIds);
+  log(`  Fetching rosters for ${teamIds.length} teams (${teamScheduleEntries.length} team-schedule entries)...`);
 
+  // Cache rosters by teamId (same roster serves multiple schedules)
+  const rosterCache = {};
   let fetched = 0;
-  let rosterPlayers = 0;
-  let newPlayers = 0;
 
   for (let i = 0; i < teamIds.length; i += 5) {
     const batch = teamIds.slice(i, i + 5);
@@ -382,44 +386,8 @@ async function enrichWithRosters(playerMap, standings, schedules) {
     );
 
     for (const { teamId, members } of rosters) {
-      const info = teamInfo[teamId];
-      if (!info) continue;
-
       // Filter to actual players (have a jersey number)
-      const players = members.filter(m => m.number && m.number > 0 && m.participant);
-
-      for (const member of players) {
-        const pid = member.participantId;
-        rosterPlayers++;
-
-        if (playerMap[pid]) {
-          // Player exists from boxscore data — update GP to team GP
-          playerMap[pid].gamesPlayed = info.gamesPlayed;
-        } else {
-          // New player — never appeared in a boxscore but is on the roster
-          newPlayers++;
-          playerMap[pid] = {
-            participantId: pid,
-            name: member.participant.fullName || 'Unknown',
-            number: member.number || 0,
-            teamId: teamId,
-            teamName: info.teamName,
-            divisionName: info.divisionName,
-            scheduleName: info.scheduleName,
-            scheduleId: info.scheduleId,
-            categoryName: info.categoryName,
-            goals: 0,
-            assists: 0,
-            points: 0,
-            pim: 0,
-            ppGoals: 0,
-            shGoals: 0,
-            gwGoals: 0,
-            gamesPlayed: info.gamesPlayed,
-            isAffiliate: member.isAffiliate || false,
-          };
-        }
-      }
+      rosterCache[teamId] = members.filter(m => m.number && m.number > 0 && m.participant);
     }
 
     fetched += batch.length;
@@ -430,7 +398,50 @@ async function enrichWithRosters(playerMap, standings, schedules) {
     await api.sleep(50);
   }
 
-  log(`  Roster enrichment: ${rosterPlayers} roster players processed, ${newPlayers} new players added`);
+  // Now create/update player entries for EACH team-schedule combination
+  let rosterPlayers = 0;
+  let newEntries = 0;
+
+  for (const entry of teamScheduleEntries) {
+    const roster = rosterCache[entry.teamId];
+    if (!roster) continue;
+
+    for (const member of roster) {
+      const pid = member.participantId;
+      const key = `${pid}-${entry.scheduleId}`;
+      rosterPlayers++;
+
+      if (playerMap[key]) {
+        // Player exists from boxscore data for this schedule — update GP to team GP
+        playerMap[key].gamesPlayed = entry.gamesPlayed;
+      } else {
+        // New entry — player on roster but didn't appear in boxscore for this schedule
+        newEntries++;
+        playerMap[key] = {
+          participantId: pid,
+          name: member.participant.fullName || 'Unknown',
+          number: member.number || 0,
+          teamId: entry.teamId,
+          teamName: entry.teamName,
+          divisionName: entry.divisionName,
+          scheduleName: entry.scheduleName,
+          scheduleId: entry.scheduleId,
+          categoryName: entry.categoryName,
+          goals: 0,
+          assists: 0,
+          points: 0,
+          pim: 0,
+          ppGoals: 0,
+          shGoals: 0,
+          gwGoals: 0,
+          gamesPlayed: entry.gamesPlayed,
+          isAffiliate: member.isAffiliate || false,
+        };
+      }
+    }
+  }
+
+  log(`  Roster enrichment: ${rosterPlayers} roster-schedule entries processed, ${newEntries} new entries added`);
 }
 
 /**
@@ -543,7 +554,13 @@ function generateLeaders(players, divisions) {
   const leaders = {};
 
   for (const division of divisions) {
-    const divPlayers = players.filter(p => p.divisionName === division.name && p.gamesPlayed >= 3);
+    // Only use regular season (League) entries for leaders, skip playoff/placement duplicates
+    const divPlayers = players.filter(p =>
+      p.divisionName === division.name &&
+      p.gamesPlayed >= 3 &&
+      !p.scheduleName.toLowerCase().includes('playoff') &&
+      !p.scheduleName.toLowerCase().includes('placement')
+    );
 
     leaders[division.name] = {
       topScorers: divPlayers
