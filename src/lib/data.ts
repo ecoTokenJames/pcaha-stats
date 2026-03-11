@@ -66,6 +66,7 @@ export interface PlayerStat {
   gwGoals: number;
   gamesPlayed: number;
   isAffiliate: boolean;
+  position: string;
 }
 
 export interface DivisionMeta {

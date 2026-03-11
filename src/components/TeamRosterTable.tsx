@@ -65,6 +65,11 @@ export function TeamRosterTable({ players }: { players: PlayerStat[] }) {
                     <span className="font-medium text-gray-900">
                       {player.name}
                     </span>
+                    {player.position && (
+                      <span className="text-xs text-gray-400 ml-1">
+                        ({player.position})
+                      </span>
+                    )}
                     {player.isAffiliate && (
                       <span
                         className="text-xs text-orange-500 ml-1"

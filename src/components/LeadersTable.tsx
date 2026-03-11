@@ -67,6 +67,7 @@ export function LeadersTable({
   const [scheduleFilter, setScheduleFilter] =
     useState<ScheduleFilter>("League");
   const [tierFilter, setTierFilter] = useState<string | null>(null);
+  const [positionFilter, setPositionFilter] = useState<string | null>(null);
   const [statCategory, setStatCategory] = useState<StatCategory>("points");
   const [showCount, setShowCount] = useState(PAGE_SIZE);
 
@@ -92,8 +93,13 @@ export function LeadersTable({
       filtered = filtered.filter((p) => p.groupName === tierFilter);
     }
 
+    // Apply position filter
+    if (positionFilter !== null) {
+      filtered = filtered.filter((p) => p.position === positionFilter);
+    }
+
     return filtered;
-  }, [players, scheduleFilter, tierFilter]);
+  }, [players, scheduleFilter, tierFilter, positionFilter]);
 
   // Sort players by selected stat category
   const sortedPlayers = useMemo(() => {
@@ -174,6 +180,30 @@ export function LeadersTable({
         </div>
       )}
 
+      {/* Position Filter */}
+      <div className="flex gap-1 mb-4">
+        {[
+          { key: null, label: "All Positions" },
+          { key: "F", label: "Forwards" },
+          { key: "D", label: "Defence" },
+        ].map((opt) => (
+          <button
+            key={opt.label}
+            onClick={() => {
+              setPositionFilter(opt.key);
+              setShowCount(PAGE_SIZE);
+            }}
+            className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+              positionFilter === opt.key
+                ? "bg-gray-700 text-white"
+                : "bg-white text-gray-600 border border-gray-200 hover:border-gray-400 hover:text-gray-900"
+            }`}
+          >
+            {opt.label}
+          </button>
+        ))}
+      </div>
+
       {/* Stat Category Tabs */}
       <div className="flex gap-1 mb-6">
         {STAT_TABS.map((tab) => (
@@ -249,6 +279,11 @@ export function LeadersTable({
                     {player.number > 0 && (
                       <span className="text-gray-400 text-xs ml-1">
                         #{player.number}
+                      </span>
+                    )}
+                    {player.position && (
+                      <span className="text-xs text-gray-400 ml-1">
+                        ({player.position})
                       </span>
                     )}
                   </td>

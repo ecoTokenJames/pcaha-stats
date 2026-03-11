@@ -213,6 +213,7 @@ async function fetchPlayerStats(schedules) {
                 gwGoals: 0,
                 gamesPlayed: 0,
                 isAffiliate: goal.participant.isAffiliate || false,
+                position: '',
               };
             }
 
@@ -254,6 +255,7 @@ async function fetchPlayerStats(schedules) {
                   gwGoals: 0,
                   gamesPlayed: 0,
                   isAffiliate: assist.isAffiliate || false,
+                  position: '',
                 };
               }
               playerMap[akey].assists++;
@@ -291,6 +293,7 @@ async function fetchPlayerStats(schedules) {
                 gwGoals: 0,
                 gamesPlayed: 0,
                 isAffiliate: penalty.participant.isAffiliate || false,
+                position: '',
               };
             }
 
@@ -411,9 +414,14 @@ async function enrichWithRosters(playerMap, standings, schedules) {
       const key = `${pid}-${entry.scheduleId}`;
       rosterPlayers++;
 
+      // Normalize position: C → F, keep D/F/G as-is
+      const rawPos = (member.positions && member.positions[0]) || '';
+      const position = rawPos === 'C' ? 'F' : (['F', 'D', 'G'].includes(rawPos) ? rawPos : '');
+
       if (playerMap[key]) {
-        // Player exists from boxscore data for this schedule — update GP to team GP
+        // Player exists from boxscore data for this schedule — update GP and position
         playerMap[key].gamesPlayed = entry.gamesPlayed;
+        playerMap[key].position = position;
       } else {
         // New entry — player on roster but didn't appear in boxscore for this schedule
         newEntries++;
@@ -436,6 +444,7 @@ async function enrichWithRosters(playerMap, standings, schedules) {
           gwGoals: 0,
           gamesPlayed: entry.gamesPlayed,
           isAffiliate: member.isAffiliate || false,
+          position,
         };
       }
     }
