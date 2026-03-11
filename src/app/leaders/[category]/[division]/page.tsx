@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import {
   getFilteredPlayers,
   getDivisionsForCategory,
+  getScheduleType,
   getTeamGroupLookup,
   getAvailableGroups,
   type HockeyCategory,
@@ -68,13 +69,19 @@ export default async function LeadersDivisionPage({
   const groupLookup = getTeamGroupLookup(divName, category as HockeyCategory);
   const availableGroups = getAvailableGroups(divName, category as HockeyCategory);
 
-  // Add groupName field and filter to min 3 GP
+  // Add scheduleType + groupName fields and filter to min 3 GP
   const qualifiedPlayers: LeaderPlayer[] = players
     .filter((p) => p.gamesPlayed >= 3)
     .map((p) => ({
       ...p,
+      scheduleType: getScheduleType(p.scheduleName),
       groupName: groupLookup.get(p.teamId) ?? null,
     }));
+
+  // Check if any tournament data exists for this division
+  const hasTournaments = qualifiedPlayers.some(
+    (p) => p.scheduleType === "Tournament"
+  );
 
   if (qualifiedPlayers.length === 0) {
     return (
@@ -84,5 +91,11 @@ export default async function LeadersDivisionPage({
     );
   }
 
-  return <LeadersTable players={qualifiedPlayers} groups={availableGroups} />;
+  return (
+    <LeadersTable
+      players={qualifiedPlayers}
+      groups={availableGroups}
+      hasTournaments={hasTournaments}
+    />
+  );
 }
