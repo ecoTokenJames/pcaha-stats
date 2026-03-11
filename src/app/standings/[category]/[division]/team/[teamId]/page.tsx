@@ -6,13 +6,10 @@ import {
   getFilteredStandings,
   getDivisionsForCategory,
   getLeagueAbbrev,
-  getScheduleType,
+  mergePlayerStats,
   type HockeyCategory,
 } from "@/lib/data";
-import {
-  TeamRosterTable,
-  type RosterPlayer,
-} from "@/components/TeamRosterTable";
+import { TeamRosterTable } from "@/components/TeamRosterTable";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
 
@@ -64,15 +61,10 @@ export default async function TeamDetailPage({
     notFound();
   }
 
-  // Get ALL players for this team (both regular season and playoffs)
+  // Get ALL players for this team and merge across schedule types into overall stats
   const allPlayers = getTeamPlayers(divName, teamId);
   const abbrev = getLeagueAbbrev(teamInfo.scheduleName);
-
-  // Add scheduleType field for the client component
-  const playersWithType: RosterPlayer[] = allPlayers.map((p) => ({
-    ...p,
-    scheduleType: getScheduleType(p.scheduleName),
-  }));
+  const mergedPlayers = mergePlayerStats(allPlayers);
 
   return (
     <div className="space-y-6">
@@ -120,7 +112,7 @@ export default async function TeamDetailPage({
       </div>
 
       {/* Player Roster */}
-      <TeamRosterTable players={playersWithType} />
+      <TeamRosterTable players={mergedPlayers} />
     </div>
   );
 }

@@ -22,6 +22,7 @@ const PAGE_SIZE = 50;
 
 export interface LeaderPlayer extends PlayerStat {
   scheduleType: string;
+  groupName: string | null;
 }
 
 /**
@@ -56,9 +57,16 @@ function mergeByPlayer(players: LeaderPlayer[]): LeaderPlayer[] {
   return merged;
 }
 
-export function LeadersTable({ players }: { players: LeaderPlayer[] }) {
+export function LeadersTable({
+  players,
+  groups,
+}: {
+  players: LeaderPlayer[];
+  groups: string[];
+}) {
   const [scheduleFilter, setScheduleFilter] =
     useState<ScheduleFilter>("League");
+  const [tierFilter, setTierFilter] = useState<string | null>(null);
   const [statCategory, setStatCategory] = useState<StatCategory>("points");
   const [showCount, setShowCount] = useState(PAGE_SIZE);
 
@@ -68,7 +76,7 @@ export function LeadersTable({ players }: { players: LeaderPlayer[] }) {
     [players]
   );
 
-  // Filter by schedule type, then merge duplicates (e.g. playoff + placement)
+  // Filter by schedule type, then merge duplicates (e.g. playoff + placement), then filter by tier
   const filteredPlayers = useMemo(() => {
     let filtered: LeaderPlayer[];
     if (scheduleFilter === "League") {
@@ -78,8 +86,14 @@ export function LeadersTable({ players }: { players: LeaderPlayer[] }) {
       filtered = players.filter((p) => p.scheduleType !== "League");
       filtered = mergeByPlayer(filtered);
     }
+
+    // Apply tier/group filter
+    if (tierFilter !== null) {
+      filtered = filtered.filter((p) => p.groupName === tierFilter);
+    }
+
     return filtered;
-  }, [players, scheduleFilter]);
+  }, [players, scheduleFilter, tierFilter]);
 
   // Sort players by selected stat category
   const sortedPlayers = useMemo(() => {
@@ -110,6 +124,7 @@ export function LeadersTable({ players }: { players: LeaderPlayer[] }) {
               key={tab.key}
               onClick={() => {
                 setScheduleFilter(tab.key);
+                setTierFilter(null);
                 setShowCount(PAGE_SIZE);
               }}
               className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
@@ -119,6 +134,41 @@ export function LeadersTable({ players }: { players: LeaderPlayer[] }) {
               }`}
             >
               {tab.label}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Tier/Flight Filter */}
+      {groups.length > 0 && (
+        <div className="flex flex-wrap gap-1 mb-4">
+          <button
+            onClick={() => {
+              setTierFilter(null);
+              setShowCount(PAGE_SIZE);
+            }}
+            className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+              tierFilter === null
+                ? "bg-blue-700 text-white"
+                : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-900"
+            }`}
+          >
+            All Tiers
+          </button>
+          {groups.map((group) => (
+            <button
+              key={group}
+              onClick={() => {
+                setTierFilter(group);
+                setShowCount(PAGE_SIZE);
+              }}
+              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                tierFilter === group
+                  ? "bg-blue-700 text-white"
+                  : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-900"
+              }`}
+            >
+              {group}
             </button>
           ))}
         </div>

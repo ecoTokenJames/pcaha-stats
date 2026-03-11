@@ -409,3 +409,86 @@ export function getLeagueAbbrev(name: string): string {
   if (lower.startsWith("u") && lower.includes("c ")) return "PCAHA-C";
   return "PCAHA";
 }
+
+// ==================== Tier / Group Helpers ====================
+
+/**
+ * Normalize a group name by stripping conference prefixes (FVC/GVC).
+ * "FVC Flight 1" → "Flight 1", "GVC Tier 2" → "Tier 2"
+ */
+export function normalizeGroupName(groupName: string): string {
+  return groupName.replace(/^(fvc|gvc)\s+/i, "").trim();
+}
+
+/**
+ * Sort group names logically:
+ * - "Inter-Conference" first
+ * - Numbered patterns (Flight N, Tier N, Group N) by number
+ * - Non-numbered alphabetically
+ */
+function sortGroupNames(groups: string[]): string[] {
+  return groups.sort((a, b) => {
+    const aIsInter = a.toLowerCase().includes("inter-conference");
+    const bIsInter = b.toLowerCase().includes("inter-conference");
+    if (aIsInter && !bIsInter) return -1;
+    if (!aIsInter && bIsInter) return 1;
+
+    const parseGroup = (name: string) => {
+      const match = name
+        .toLowerCase()
+        .match(/^(flight|tier|group|division|presidents series)\s*(\d+)/);
+      return match ? parseInt(match[2]) : 999;
+    };
+
+    const aNum = parseGroup(a);
+    const bNum = parseGroup(b);
+    if (aNum !== bNum) return aNum - bNum;
+
+    return a.localeCompare(b);
+  });
+}
+
+/**
+ * Build a lookup from teamId → normalized groupName using League-type standings.
+ */
+export function getTeamGroupLookup(
+  division: string,
+  category: HockeyCategory
+): Map<number, string | null> {
+  const standings = getFilteredStandings(division, category);
+  const lookup = new Map<number, string | null>();
+
+  for (const data of Object.values(standings)) {
+    if (getScheduleType(data.scheduleName) !== "League") continue;
+
+    for (const team of data.teams) {
+      if (!lookup.has(team.teamId)) {
+        lookup.set(
+          team.teamId,
+          team.groupName ? normalizeGroupName(team.groupName) : null
+        );
+      }
+    }
+  }
+
+  return lookup;
+}
+
+/**
+ * Get sorted unique group names available for a division+category.
+ */
+export function getAvailableGroups(
+  division: string,
+  category: HockeyCategory
+): string[] {
+  const lookup = getTeamGroupLookup(division, category);
+  const groups = new Set<string>();
+
+  for (const groupName of lookup.values()) {
+    if (groupName !== null) {
+      groups.add(groupName);
+    }
+  }
+
+  return sortGroupNames([...groups]);
+}
