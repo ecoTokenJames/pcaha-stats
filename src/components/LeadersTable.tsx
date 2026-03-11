@@ -4,7 +4,6 @@ import { useState, useMemo } from "react";
 import type { PlayerStat } from "@/lib/data";
 
 type StatCategory = "points" | "goals" | "assists" | "pim";
-type ScheduleFilter = "League" | "Playoffs";
 
 const STAT_TABS: { key: StatCategory; label: string }[] = [
   { key: "points", label: "Points" },
@@ -13,15 +12,9 @@ const STAT_TABS: { key: StatCategory; label: string }[] = [
   { key: "pim", label: "PIM" },
 ];
 
-const SCHEDULE_TABS: { key: ScheduleFilter; label: string }[] = [
-  { key: "League", label: "Regular Season" },
-  { key: "Playoffs", label: "Playoffs" },
-];
-
 const PAGE_SIZE = 50;
 
 export interface LeaderPlayer extends PlayerStat {
-  scheduleType: string;
   groupName: string | null;
 }
 
@@ -64,29 +57,14 @@ export function LeadersTable({
   players: LeaderPlayer[];
   groups: string[];
 }) {
-  const [scheduleFilter, setScheduleFilter] =
-    useState<ScheduleFilter>("League");
   const [tierFilter, setTierFilter] = useState<string | null>(null);
   const [positionFilter, setPositionFilter] = useState<string | null>(null);
   const [statCategory, setStatCategory] = useState<StatCategory>("points");
   const [showCount, setShowCount] = useState(PAGE_SIZE);
 
-  // Check if there are any playoff players
-  const hasPlayoffs = useMemo(
-    () => players.some((p) => p.scheduleType !== "League"),
-    [players]
-  );
-
-  // Filter by schedule type, then merge duplicates (e.g. playoff + placement), then filter by tier
+  // Merge all schedule types (regular season + playoffs + placement) per player, then filter
   const filteredPlayers = useMemo(() => {
-    let filtered: LeaderPlayer[];
-    if (scheduleFilter === "League") {
-      filtered = players.filter((p) => p.scheduleType === "League");
-    } else {
-      // Playoffs includes both "Playoffs" and "Placement"
-      filtered = players.filter((p) => p.scheduleType !== "League");
-      filtered = mergeByPlayer(filtered);
-    }
+    let filtered = mergeByPlayer(players);
 
     // Apply tier/group filter
     if (tierFilter !== null) {
@@ -99,7 +77,7 @@ export function LeadersTable({
     }
 
     return filtered;
-  }, [players, scheduleFilter, tierFilter, positionFilter]);
+  }, [players, tierFilter, positionFilter]);
 
   // Sort players by selected stat category
   const sortedPlayers = useMemo(() => {
@@ -122,29 +100,6 @@ export function LeadersTable({
 
   return (
     <div>
-      {/* Schedule Type Toggle */}
-      {hasPlayoffs && (
-        <div className="flex gap-1 mb-4">
-          {SCHEDULE_TABS.map((tab) => (
-            <button
-              key={tab.key}
-              onClick={() => {
-                setScheduleFilter(tab.key);
-                setTierFilter(null);
-                setShowCount(PAGE_SIZE);
-              }}
-              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-                scheduleFilter === tab.key
-                  ? "bg-blue-900 text-white"
-                  : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-900"
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-      )}
-
       {/* Tier/Flight Filter */}
       {groups.length > 0 && (
         <div className="flex flex-wrap gap-1 mb-4">

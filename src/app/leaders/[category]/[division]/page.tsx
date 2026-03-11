@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import {
   getFilteredPlayers,
   getDivisionsForCategory,
-  getScheduleType,
   getTeamGroupLookup,
   getAvailableGroups,
   type HockeyCategory,
@@ -41,12 +40,11 @@ export default async function LeadersDivisionPage({
   const groupLookup = getTeamGroupLookup(divName, category as HockeyCategory);
   const availableGroups = getAvailableGroups(divName, category as HockeyCategory);
 
-  // Add scheduleType + groupName fields and filter to min 3 GP
+  // Add groupName field and filter to min 3 GP
   const qualifiedPlayers: LeaderPlayer[] = players
     .filter((p) => p.gamesPlayed >= 3)
     .map((p) => ({
       ...p,
-      scheduleType: getScheduleType(p.scheduleName),
       groupName: groupLookup.get(p.teamId) ?? null,
     }));
 
