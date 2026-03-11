@@ -149,10 +149,23 @@ export function classifyScheduleCategory(categoryName: string): "rep" | "house" 
 }
 
 /**
- * Check if a team is a Female hockey team based on team name.
+ * Check if a team name indicates a female/girls hockey team.
  */
 export function isTeamFemale(teamName: string): boolean {
-  return teamName.toUpperCase().includes("FEMALE");
+  const upper = teamName.toUpperCase();
+  return upper.includes("FEMALE") || upper.includes("GIRLS");
+}
+
+/**
+ * Check if a schedule is a female league.
+ * If the majority of teams are female-named, the entire league is female.
+ * This correctly handles mixed VIAHA leagues (few female teams in a male league)
+ * while still classifying all-female leagues that have a couple non-female-named teams.
+ */
+function isScheduleFemale(teams: TeamStanding[]): boolean {
+  if (teams.length === 0) return false;
+  const femaleCount = teams.filter((t) => isTeamFemale(t.teamName)).length;
+  return femaleCount / teams.length > 0.5;
 }
 
 /**
@@ -164,13 +177,14 @@ export function getDivisionsForCategory(category: HockeyCategory): DivisionMeta[
 
   for (const s of Object.values(standings)) {
     const schedCat = classifyScheduleCategory(s.categoryName);
+    const schedIsFemale = isScheduleFemale(s.teams);
 
     if (category === "female") {
-      if (s.teams.some((t) => isTeamFemale(t.teamName))) {
+      if (schedIsFemale) {
         divNames.add(s.divisionName);
       }
     } else {
-      if (schedCat === category && s.teams.some((t) => !isTeamFemale(t.teamName))) {
+      if (schedCat === category && !schedIsFemale) {
         divNames.add(s.divisionName);
       }
     }
@@ -187,8 +201,8 @@ export function getDivisionsForCategory(category: HockeyCategory): DivisionMeta[
 
 /**
  * Get standings for a division filtered by hockey category.
- * For rep/house: filters schedules by categoryName, removes female teams.
- * For female: keeps all schedules but only female teams.
+ * Female: includes entire schedules where majority of teams are female-named.
+ * Rep/House: filters by categoryName, excludes female-majority schedules.
  */
 export function getFilteredStandings(
   division: string,
@@ -199,18 +213,16 @@ export function getFilteredStandings(
 
   for (const [schedId, data] of Object.entries(allStandings)) {
     const schedCat = classifyScheduleCategory(data.categoryName);
+    const schedIsFemale = isScheduleFemale(data.teams);
 
     if (category === "female") {
-      const femaleTeams = data.teams.filter((t) => isTeamFemale(t.teamName));
-      if (femaleTeams.length > 0) {
-        filtered[schedId] = { ...data, teams: femaleTeams };
+      if (schedIsFemale) {
+        // Include ALL teams in a female schedule (even non-female-named ones)
+        filtered[schedId] = data;
       }
     } else {
-      if (schedCat === category) {
-        const nonFemaleTeams = data.teams.filter((t) => !isTeamFemale(t.teamName));
-        if (nonFemaleTeams.length > 0) {
-          filtered[schedId] = { ...data, teams: nonFemaleTeams };
-        }
+      if (schedCat === category && !schedIsFemale) {
+        filtered[schedId] = data;
       }
     }
   }
@@ -220,19 +232,30 @@ export function getFilteredStandings(
 
 /**
  * Get players for a division filtered by hockey category.
+ * Uses schedule-level female detection: players in a female-majority schedule
+ * are all classified as female regardless of individual team name.
  */
 export function getFilteredPlayers(
   division: string,
   category: HockeyCategory
 ): PlayerStat[] {
   const allPlayers = getDivisionPlayers(division);
+  const standings = getDivisionStandings(division);
+
+  // Build a set of schedule IDs that are female leagues
+  const femaleScheduleIds = new Set<number>();
+  for (const data of Object.values(standings)) {
+    if (isScheduleFemale(data.teams)) {
+      femaleScheduleIds.add(data.scheduleId);
+    }
+  }
 
   return allPlayers.filter((player) => {
     const schedCat = classifyScheduleCategory(player.categoryName);
-    const isFemale = isTeamFemale(player.teamName);
+    const inFemaleSchedule = femaleScheduleIds.has(player.scheduleId);
 
-    if (category === "female") return isFemale;
-    return schedCat === category && !isFemale;
+    if (category === "female") return inFemaleSchedule;
+    return schedCat === category && !inFemaleSchedule;
   });
 }
 
