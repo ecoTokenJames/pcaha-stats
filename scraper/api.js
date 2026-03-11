@@ -99,7 +99,7 @@ async function getSchedules(seasonId, divisionId) {
  */
 async function getTeamStats(scheduleId) {
   const filter = JSON.stringify({
-    include: 'team',
+    include: ['team', 'group'],
     order: ['group.name ASC', 'ranking ASC']
   });
   return fetchWithRetry(`/schedules/${scheduleId}/teamStats?filter=${encodeURIComponent(filter)}`);

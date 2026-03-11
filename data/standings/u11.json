@@ -474,7 +474,7 @@
         "gaPerGame": 3,
         "pim": 70,
         "pimPerGame": 4.38,
-        "groupName": null
+        "groupName": "FVC Flight 1"
       },
       {
         "rank": 2,
@@ -497,7 +497,7 @@
         "gaPerGame": 2.69,
         "pim": 62,
         "pimPerGame": 3.88,
-        "groupName": null
+        "groupName": "FVC Flight 1"
       },
       {
         "rank": 3,
@@ -520,7 +520,7 @@
         "gaPerGame": 2.88,
         "pim": 98,
         "pimPerGame": 6.13,
-        "groupName": null
+        "groupName": "FVC Flight 1"
       },
       {
         "rank": 4,
@@ -543,7 +543,7 @@
         "gaPerGame": 3.06,
         "pim": 80,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "FVC Flight 1"
       },
       {
         "rank": 5,
@@ -566,7 +566,7 @@
         "gaPerGame": 3.88,
         "pim": 72,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "FVC Flight 1"
       },
       {
         "rank": 6,
@@ -589,7 +589,7 @@
         "gaPerGame": 3.31,
         "pim": 74,
         "pimPerGame": 4.63,
-        "groupName": null
+        "groupName": "FVC Flight 1"
       },
       {
         "rank": 7,
@@ -612,7 +612,7 @@
         "gaPerGame": 4.19,
         "pim": 105,
         "pimPerGame": 6.56,
-        "groupName": null
+        "groupName": "FVC Flight 1"
       },
       {
         "rank": 8,
@@ -635,7 +635,7 @@
         "gaPerGame": 3.56,
         "pim": 90,
         "pimPerGame": 5.63,
-        "groupName": null
+        "groupName": "FVC Flight 1"
       },
       {
         "rank": 9,
@@ -658,7 +658,7 @@
         "gaPerGame": 3.5,
         "pim": 92,
         "pimPerGame": 5.75,
-        "groupName": null
+        "groupName": "FVC Flight 1"
       },
       {
         "rank": 1,
@@ -681,7 +681,7 @@
         "gaPerGame": 2.94,
         "pim": 104,
         "pimPerGame": 6.5,
-        "groupName": null
+        "groupName": "FVC Flight 2"
       },
       {
         "rank": 2,
@@ -704,7 +704,7 @@
         "gaPerGame": 2.31,
         "pim": 110,
         "pimPerGame": 6.88,
-        "groupName": null
+        "groupName": "FVC Flight 2"
       },
       {
         "rank": 3,
@@ -727,7 +727,7 @@
         "gaPerGame": 2.75,
         "pim": 78,
         "pimPerGame": 4.88,
-        "groupName": null
+        "groupName": "FVC Flight 2"
       },
       {
         "rank": 4,
@@ -750,7 +750,7 @@
         "gaPerGame": 4,
         "pim": 44,
         "pimPerGame": 2.75,
-        "groupName": null
+        "groupName": "FVC Flight 2"
       },
       {
         "rank": 5,
@@ -773,7 +773,7 @@
         "gaPerGame": 3.75,
         "pim": 72,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "FVC Flight 2"
       },
       {
         "rank": 6,
@@ -796,7 +796,7 @@
         "gaPerGame": 4.56,
         "pim": 80,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "FVC Flight 2"
       },
       {
         "rank": 7,
@@ -819,7 +819,7 @@
         "gaPerGame": 3.94,
         "pim": 102,
         "pimPerGame": 6.38,
-        "groupName": null
+        "groupName": "FVC Flight 2"
       },
       {
         "rank": 1,
@@ -842,7 +842,7 @@
         "gaPerGame": 3.63,
         "pim": 74,
         "pimPerGame": 4.63,
-        "groupName": null
+        "groupName": "FVC Flight 3"
       },
       {
         "rank": 2,
@@ -865,7 +865,7 @@
         "gaPerGame": 4.13,
         "pim": 129,
         "pimPerGame": 8.06,
-        "groupName": null
+        "groupName": "FVC Flight 3"
       },
       {
         "rank": 3,
@@ -888,7 +888,7 @@
         "gaPerGame": 3.38,
         "pim": 98,
         "pimPerGame": 6.13,
-        "groupName": null
+        "groupName": "FVC Flight 3"
       },
       {
         "rank": 4,
@@ -911,7 +911,7 @@
         "gaPerGame": 3.6,
         "pim": 67,
         "pimPerGame": 6.7,
-        "groupName": null
+        "groupName": "FVC Flight 3"
       },
       {
         "rank": 5,
@@ -934,7 +934,7 @@
         "gaPerGame": 3.38,
         "pim": 116,
         "pimPerGame": 7.25,
-        "groupName": null
+        "groupName": "FVC Flight 3"
       },
       {
         "rank": 6,
@@ -957,7 +957,7 @@
         "gaPerGame": 3.88,
         "pim": 68,
         "pimPerGame": 4.25,
-        "groupName": null
+        "groupName": "FVC Flight 3"
       },
       {
         "rank": 7,
@@ -980,7 +980,7 @@
         "gaPerGame": 3.44,
         "pim": 98,
         "pimPerGame": 6.13,
-        "groupName": null
+        "groupName": "FVC Flight 3"
       },
       {
         "rank": 8,
@@ -1003,7 +1003,7 @@
         "gaPerGame": 4.13,
         "pim": 110,
         "pimPerGame": 6.88,
-        "groupName": null
+        "groupName": "FVC Flight 3"
       },
       {
         "rank": 9,
@@ -1026,7 +1026,7 @@
         "gaPerGame": 5.31,
         "pim": 70,
         "pimPerGame": 4.38,
-        "groupName": null
+        "groupName": "FVC Flight 3"
       },
       {
         "rank": 1,
@@ -1049,7 +1049,7 @@
         "gaPerGame": 2.38,
         "pim": 76,
         "pimPerGame": 4.75,
-        "groupName": null
+        "groupName": "FVC Flight 4"
       },
       {
         "rank": 2,
@@ -1072,7 +1072,7 @@
         "gaPerGame": 3.13,
         "pim": 50,
         "pimPerGame": 3.13,
-        "groupName": null
+        "groupName": "FVC Flight 4"
       },
       {
         "rank": 3,
@@ -1095,7 +1095,7 @@
         "gaPerGame": 3.06,
         "pim": 92,
         "pimPerGame": 5.75,
-        "groupName": null
+        "groupName": "FVC Flight 4"
       },
       {
         "rank": 4,
@@ -1118,7 +1118,7 @@
         "gaPerGame": 2.88,
         "pim": 100,
         "pimPerGame": 6.25,
-        "groupName": null
+        "groupName": "FVC Flight 4"
       },
       {
         "rank": 5,
@@ -1141,7 +1141,7 @@
         "gaPerGame": 3,
         "pim": 74,
         "pimPerGame": 4.63,
-        "groupName": null
+        "groupName": "FVC Flight 4"
       },
       {
         "rank": 6,
@@ -1164,7 +1164,7 @@
         "gaPerGame": 4.2,
         "pim": 38,
         "pimPerGame": 3.8,
-        "groupName": null
+        "groupName": "FVC Flight 4"
       },
       {
         "rank": 7,
@@ -1187,7 +1187,7 @@
         "gaPerGame": 4.44,
         "pim": 117,
         "pimPerGame": 7.31,
-        "groupName": null
+        "groupName": "FVC Flight 4"
       },
       {
         "rank": 8,
@@ -1210,7 +1210,7 @@
         "gaPerGame": 4.06,
         "pim": 87,
         "pimPerGame": 5.44,
-        "groupName": null
+        "groupName": "FVC Flight 4"
       },
       {
         "rank": 9,
@@ -1233,7 +1233,7 @@
         "gaPerGame": 4.7,
         "pim": 75,
         "pimPerGame": 7.5,
-        "groupName": null
+        "groupName": "FVC Flight 4"
       },
       {
         "rank": 1,
@@ -1256,7 +1256,7 @@
         "gaPerGame": 3.69,
         "pim": 60,
         "pimPerGame": 3.75,
-        "groupName": null
+        "groupName": "FVC Flight 5"
       },
       {
         "rank": 2,
@@ -1279,7 +1279,7 @@
         "gaPerGame": 2.63,
         "pim": 90,
         "pimPerGame": 5.63,
-        "groupName": null
+        "groupName": "FVC Flight 5"
       },
       {
         "rank": 3,
@@ -1302,7 +1302,7 @@
         "gaPerGame": 2.81,
         "pim": 84,
         "pimPerGame": 5.25,
-        "groupName": null
+        "groupName": "FVC Flight 5"
       },
       {
         "rank": 4,
@@ -1325,7 +1325,7 @@
         "gaPerGame": 4.25,
         "pim": 60,
         "pimPerGame": 3.75,
-        "groupName": null
+        "groupName": "FVC Flight 5"
       },
       {
         "rank": 5,
@@ -1348,7 +1348,7 @@
         "gaPerGame": 4.56,
         "pim": 58,
         "pimPerGame": 3.63,
-        "groupName": null
+        "groupName": "FVC Flight 5"
       },
       {
         "rank": 6,
@@ -1371,7 +1371,7 @@
         "gaPerGame": 3.75,
         "pim": 80,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "FVC Flight 5"
       },
       {
         "rank": 7,
@@ -1394,7 +1394,7 @@
         "gaPerGame": 6.69,
         "pim": 60,
         "pimPerGame": 3.75,
-        "groupName": null
+        "groupName": "FVC Flight 5"
       },
       {
         "rank": 8,
@@ -1417,7 +1417,7 @@
         "gaPerGame": 4.5,
         "pim": 70,
         "pimPerGame": 4.38,
-        "groupName": null
+        "groupName": "FVC Flight 5"
       },
       {
         "rank": 1,
@@ -1440,7 +1440,7 @@
         "gaPerGame": 1.94,
         "pim": 64,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "GVC Flight 1"
       },
       {
         "rank": 2,
@@ -1463,7 +1463,7 @@
         "gaPerGame": 2.88,
         "pim": 46,
         "pimPerGame": 2.88,
-        "groupName": null
+        "groupName": "GVC Flight 1"
       },
       {
         "rank": 3,
@@ -1486,7 +1486,7 @@
         "gaPerGame": 3.38,
         "pim": 80,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "GVC Flight 1"
       },
       {
         "rank": 4,
@@ -1509,7 +1509,7 @@
         "gaPerGame": 4.69,
         "pim": 72,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "GVC Flight 1"
       },
       {
         "rank": 5,
@@ -1532,7 +1532,7 @@
         "gaPerGame": 4.5,
         "pim": 44,
         "pimPerGame": 2.75,
-        "groupName": null
+        "groupName": "GVC Flight 1"
       },
       {
         "rank": 6,
@@ -1555,7 +1555,7 @@
         "gaPerGame": 4.69,
         "pim": 106,
         "pimPerGame": 6.63,
-        "groupName": null
+        "groupName": "GVC Flight 1"
       },
       {
         "rank": 1,
@@ -1578,7 +1578,7 @@
         "gaPerGame": 2.44,
         "pim": 46,
         "pimPerGame": 2.88,
-        "groupName": null
+        "groupName": "GVC Flight 2"
       },
       {
         "rank": 2,
@@ -1601,7 +1601,7 @@
         "gaPerGame": 3.06,
         "pim": 64,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "GVC Flight 2"
       },
       {
         "rank": 3,
@@ -1624,7 +1624,7 @@
         "gaPerGame": 1.63,
         "pim": 106,
         "pimPerGame": 6.63,
-        "groupName": null
+        "groupName": "GVC Flight 2"
       },
       {
         "rank": 4,
@@ -1647,7 +1647,7 @@
         "gaPerGame": 3,
         "pim": 74,
         "pimPerGame": 4.63,
-        "groupName": null
+        "groupName": "GVC Flight 2"
       },
       {
         "rank": 5,
@@ -1670,7 +1670,7 @@
         "gaPerGame": 2.5,
         "pim": 118,
         "pimPerGame": 7.38,
-        "groupName": null
+        "groupName": "GVC Flight 2"
       },
       {
         "rank": 6,
@@ -1693,7 +1693,7 @@
         "gaPerGame": 3.1,
         "pim": 38,
         "pimPerGame": 3.8,
-        "groupName": null
+        "groupName": "GVC Flight 2"
       },
       {
         "rank": 7,
@@ -1716,7 +1716,7 @@
         "gaPerGame": 5,
         "pim": 80,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "GVC Flight 2"
       },
       {
         "rank": 8,
@@ -1739,7 +1739,7 @@
         "gaPerGame": 4.44,
         "pim": 106,
         "pimPerGame": 6.63,
-        "groupName": null
+        "groupName": "GVC Flight 2"
       },
       {
         "rank": 9,
@@ -1762,7 +1762,7 @@
         "gaPerGame": 7.8,
         "pim": 64,
         "pimPerGame": 6.4,
-        "groupName": null
+        "groupName": "GVC Flight 2"
       },
       {
         "rank": 1,
@@ -1785,7 +1785,7 @@
         "gaPerGame": 3.31,
         "pim": 36,
         "pimPerGame": 2.25,
-        "groupName": null
+        "groupName": "GVC Flight 3"
       },
       {
         "rank": 2,
@@ -1808,7 +1808,7 @@
         "gaPerGame": 4.5,
         "pim": 62,
         "pimPerGame": 3.88,
-        "groupName": null
+        "groupName": "GVC Flight 3"
       },
       {
         "rank": 3,
@@ -1831,7 +1831,7 @@
         "gaPerGame": 3.06,
         "pim": 99,
         "pimPerGame": 6.19,
-        "groupName": null
+        "groupName": "GVC Flight 3"
       },
       {
         "rank": 4,
@@ -1854,7 +1854,7 @@
         "gaPerGame": 3.88,
         "pim": 93,
         "pimPerGame": 5.81,
-        "groupName": null
+        "groupName": "GVC Flight 3"
       },
       {
         "rank": 5,
@@ -1877,7 +1877,7 @@
         "gaPerGame": 4.06,
         "pim": 52,
         "pimPerGame": 3.25,
-        "groupName": null
+        "groupName": "GVC Flight 3"
       },
       {
         "rank": 6,
@@ -1900,7 +1900,7 @@
         "gaPerGame": 4.6,
         "pim": 56,
         "pimPerGame": 5.6,
-        "groupName": null
+        "groupName": "GVC Flight 3"
       },
       {
         "rank": 7,
@@ -1923,7 +1923,7 @@
         "gaPerGame": 4,
         "pim": 46,
         "pimPerGame": 4.6,
-        "groupName": null
+        "groupName": "GVC Flight 3"
       },
       {
         "rank": 8,
@@ -1946,7 +1946,7 @@
         "gaPerGame": 6.1,
         "pim": 42,
         "pimPerGame": 4.2,
-        "groupName": null
+        "groupName": "GVC Flight 3"
       },
       {
         "rank": 1,
@@ -1969,7 +1969,7 @@
         "gaPerGame": 2.13,
         "pim": 56,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "GVC Flight 4"
       },
       {
         "rank": 2,
@@ -1992,7 +1992,7 @@
         "gaPerGame": 1.94,
         "pim": 56,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "GVC Flight 4"
       },
       {
         "rank": 3,
@@ -2015,7 +2015,7 @@
         "gaPerGame": 2.88,
         "pim": 58,
         "pimPerGame": 3.63,
-        "groupName": null
+        "groupName": "GVC Flight 4"
       },
       {
         "rank": 4,
@@ -2038,7 +2038,7 @@
         "gaPerGame": 3.2,
         "pim": 18,
         "pimPerGame": 1.8,
-        "groupName": null
+        "groupName": "GVC Flight 4"
       },
       {
         "rank": 5,
@@ -2061,7 +2061,7 @@
         "gaPerGame": 4.31,
         "pim": 32,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "GVC Flight 4"
       },
       {
         "rank": 6,
@@ -2084,7 +2084,7 @@
         "gaPerGame": 6.88,
         "pim": 32,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "GVC Flight 4"
       },
       {
         "rank": 7,
@@ -2107,7 +2107,7 @@
         "gaPerGame": 10.19,
         "pim": 28,
         "pimPerGame": 1.75,
-        "groupName": null
+        "groupName": "GVC Flight 4"
       },
       {
         "rank": 1,
@@ -2130,7 +2130,7 @@
         "gaPerGame": 3.06,
         "pim": 90,
         "pimPerGame": 5.63,
-        "groupName": null
+        "groupName": "Inter-Conference"
       },
       {
         "rank": 2,
@@ -2153,7 +2153,7 @@
         "gaPerGame": 2.19,
         "pim": 72,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "Inter-Conference"
       },
       {
         "rank": 3,
@@ -2176,7 +2176,7 @@
         "gaPerGame": 2.31,
         "pim": 104,
         "pimPerGame": 6.5,
-        "groupName": null
+        "groupName": "Inter-Conference"
       },
       {
         "rank": 4,
@@ -2199,7 +2199,7 @@
         "gaPerGame": 4.06,
         "pim": 116,
         "pimPerGame": 7.25,
-        "groupName": null
+        "groupName": "Inter-Conference"
       },
       {
         "rank": 5,
@@ -2222,7 +2222,7 @@
         "gaPerGame": 2.81,
         "pim": 102,
         "pimPerGame": 6.38,
-        "groupName": null
+        "groupName": "Inter-Conference"
       },
       {
         "rank": 6,
@@ -2245,7 +2245,7 @@
         "gaPerGame": 4.38,
         "pim": 112,
         "pimPerGame": 7,
-        "groupName": null
+        "groupName": "Inter-Conference"
       },
       {
         "rank": 7,
@@ -2268,7 +2268,7 @@
         "gaPerGame": 6.19,
         "pim": 72,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "Inter-Conference"
       },
       {
         "rank": 8,
@@ -2291,7 +2291,7 @@
         "gaPerGame": 5,
         "pim": 109,
         "pimPerGame": 6.81,
-        "groupName": null
+        "groupName": "Inter-Conference"
       },
       {
         "rank": 9,
@@ -2314,7 +2314,7 @@
         "gaPerGame": 6,
         "pim": 107,
         "pimPerGame": 10.7,
-        "groupName": null
+        "groupName": "Inter-Conference"
       }
     ]
   },
@@ -2343,7 +2343,7 @@
         "gaPerGame": 0.33,
         "pim": 2,
         "pimPerGame": 0.33,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 2,
@@ -2364,7 +2364,7 @@
         "gaPerGame": 1.4,
         "pim": 12,
         "pimPerGame": 2.4,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 3,
@@ -2385,7 +2385,7 @@
         "gaPerGame": 3,
         "pim": 8,
         "pimPerGame": 1.6,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 4,
@@ -2406,7 +2406,7 @@
         "gaPerGame": 4.2,
         "pim": 8,
         "pimPerGame": 1.6,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 5,
@@ -2427,7 +2427,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 1,
@@ -2448,7 +2448,7 @@
         "gaPerGame": 1.8,
         "pim": 2,
         "pimPerGame": 0.4,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 2,
@@ -2469,7 +2469,7 @@
         "gaPerGame": 1.2,
         "pim": 8,
         "pimPerGame": 1.6,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 3,
@@ -2490,7 +2490,7 @@
         "gaPerGame": 4,
         "pim": 8,
         "pimPerGame": 1.6,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 4,
@@ -2511,7 +2511,7 @@
         "gaPerGame": 4.2,
         "pim": 2,
         "pimPerGame": 0.4,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 5,
@@ -2532,7 +2532,7 @@
         "gaPerGame": 11.4,
         "pim": 2,
         "pimPerGame": 0.4,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 6,
@@ -2553,7 +2553,7 @@
         "gaPerGame": 7.8,
         "pim": 6,
         "pimPerGame": 1.2,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 7,
@@ -2574,7 +2574,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 1,
@@ -2595,7 +2595,7 @@
         "gaPerGame": 2.4,
         "pim": 6,
         "pimPerGame": 1.2,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 2,
@@ -2616,7 +2616,7 @@
         "gaPerGame": 0.6,
         "pim": 12,
         "pimPerGame": 2.4,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 3,
@@ -2637,7 +2637,7 @@
         "gaPerGame": 2,
         "pim": 2,
         "pimPerGame": 0.4,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 4,
@@ -2658,7 +2658,7 @@
         "gaPerGame": 1.6,
         "pim": 2,
         "pimPerGame": 0.4,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 5,
@@ -2679,7 +2679,7 @@
         "gaPerGame": 3.5,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 6,
@@ -2700,7 +2700,7 @@
         "gaPerGame": 4,
         "pim": 2,
         "pimPerGame": 0.4,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 7,
@@ -2721,7 +2721,7 @@
         "gaPerGame": 2.8,
         "pim": 4,
         "pimPerGame": 0.8,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 8,
@@ -2742,7 +2742,7 @@
         "gaPerGame": 2.8,
         "pim": 6,
         "pimPerGame": 1.2,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 9,
@@ -2763,7 +2763,7 @@
         "gaPerGame": 3.6,
         "pim": 2,
         "pimPerGame": 0.4,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 10,
@@ -2784,7 +2784,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 1,
@@ -2805,7 +2805,7 @@
         "gaPerGame": 1.8,
         "pim": 8,
         "pimPerGame": 1.6,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 2,
@@ -2826,7 +2826,7 @@
         "gaPerGame": 3.6,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 3,
@@ -2847,7 +2847,7 @@
         "gaPerGame": 5.2,
         "pim": 2,
         "pimPerGame": 0.4,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 4,
@@ -2868,7 +2868,7 @@
         "gaPerGame": 2.4,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 5,
@@ -2889,7 +2889,7 @@
         "gaPerGame": 3.6,
         "pim": 10,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 6,
@@ -2910,7 +2910,7 @@
         "gaPerGame": 4.4,
         "pim": 2,
         "pimPerGame": 0.4,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 1,
@@ -2960,7 +2960,7 @@
         "gaPerGame": 0.78,
         "pim": 4,
         "pimPerGame": 0.44,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 2,
@@ -2981,7 +2981,7 @@
         "gaPerGame": 1.67,
         "pim": 10,
         "pimPerGame": 1.11,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 3,
@@ -3002,7 +3002,7 @@
         "gaPerGame": 3.4,
         "pim": 32,
         "pimPerGame": 3.2,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 4,
@@ -3023,7 +3023,7 @@
         "gaPerGame": 0.83,
         "pim": 4,
         "pimPerGame": 0.67,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 5,
@@ -3044,7 +3044,7 @@
         "gaPerGame": 3.44,
         "pim": 12,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 6,
@@ -3065,7 +3065,7 @@
         "gaPerGame": 3.11,
         "pim": 10,
         "pimPerGame": 1.11,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 1,
@@ -3086,7 +3086,7 @@
         "gaPerGame": 2.11,
         "pim": 16,
         "pimPerGame": 1.78,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 2,
@@ -3107,7 +3107,7 @@
         "gaPerGame": 3,
         "pim": 24,
         "pimPerGame": 2.4,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 3,
@@ -3128,7 +3128,7 @@
         "gaPerGame": 1.33,
         "pim": 12,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 4,
@@ -3149,7 +3149,7 @@
         "gaPerGame": 5.11,
         "pim": 14,
         "pimPerGame": 1.56,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 5,
@@ -3170,7 +3170,7 @@
         "gaPerGame": 4.22,
         "pim": 20,
         "pimPerGame": 2.22,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 6,
@@ -3191,7 +3191,7 @@
         "gaPerGame": 6.67,
         "pim": 4,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 7,
@@ -3212,7 +3212,7 @@
         "gaPerGame": 1.33,
         "pim": 4,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 1,
@@ -3233,7 +3233,7 @@
         "gaPerGame": 0.89,
         "pim": 6,
         "pimPerGame": 0.67,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 2,
@@ -3254,7 +3254,7 @@
         "gaPerGame": 1.67,
         "pim": 10,
         "pimPerGame": 1.11,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 3,
@@ -3275,7 +3275,7 @@
         "gaPerGame": 1.67,
         "pim": 4,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 4,
@@ -3296,7 +3296,7 @@
         "gaPerGame": 4.22,
         "pim": 12,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 5,
@@ -3317,7 +3317,7 @@
         "gaPerGame": 4.11,
         "pim": 2,
         "pimPerGame": 0.22,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 6,
@@ -3338,7 +3338,7 @@
         "gaPerGame": 4.67,
         "pim": 2,
         "pimPerGame": 0.22,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 7,
@@ -3359,7 +3359,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 1,
@@ -3380,7 +3380,7 @@
         "gaPerGame": 1.4,
         "pim": 4,
         "pimPerGame": 0.4,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 2,
@@ -3401,7 +3401,7 @@
         "gaPerGame": 3.64,
         "pim": 14,
         "pimPerGame": 1.27,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 3,
@@ -3422,7 +3422,7 @@
         "gaPerGame": 2.36,
         "pim": 6,
         "pimPerGame": 0.55,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 4,
@@ -3443,7 +3443,7 @@
         "gaPerGame": 2.8,
         "pim": 12,
         "pimPerGame": 1.2,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 5,
@@ -3464,7 +3464,7 @@
         "gaPerGame": 4,
         "pim": 6,
         "pimPerGame": 0.6,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 6,
@@ -3485,7 +3485,7 @@
         "gaPerGame": 5,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 7,
@@ -3506,7 +3506,7 @@
         "gaPerGame": 5.6,
         "pim": 16,
         "pimPerGame": 1.6,
-        "groupName": null
+        "groupName": "Red Flight - West"
       }
     ]
   },
@@ -3934,7 +3934,7 @@
         "gaPerGame": 2.9,
         "pim": 38,
         "pimPerGame": 3.8,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 2,
@@ -3955,7 +3955,7 @@
         "gaPerGame": 2.1,
         "pim": 40,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 3,
@@ -3976,7 +3976,7 @@
         "gaPerGame": 4.1,
         "pim": 44,
         "pimPerGame": 4.4,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 4,
@@ -3997,7 +3997,7 @@
         "gaPerGame": 4.3,
         "pim": 26,
         "pimPerGame": 2.6,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 5,
@@ -4018,7 +4018,7 @@
         "gaPerGame": 2.4,
         "pim": 26,
         "pimPerGame": 2.6,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 6,
@@ -4039,7 +4039,7 @@
         "gaPerGame": 6.3,
         "pim": 22,
         "pimPerGame": 2.2,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 7,
@@ -4060,7 +4060,7 @@
         "gaPerGame": 8.8,
         "pim": 34,
         "pimPerGame": 3.4,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 8,
@@ -4081,7 +4081,7 @@
         "gaPerGame": 5.6,
         "pim": 40,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 9,
@@ -4102,7 +4102,7 @@
         "gaPerGame": 8.6,
         "pim": 10,
         "pimPerGame": 1,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 10,
@@ -4123,7 +4123,7 @@
         "gaPerGame": 6.2,
         "pim": 50,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 1,
@@ -4144,7 +4144,7 @@
         "gaPerGame": 3.3,
         "pim": 28,
         "pimPerGame": 2.8,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 2,
@@ -4165,7 +4165,7 @@
         "gaPerGame": 4.3,
         "pim": 30,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 3,
@@ -4186,7 +4186,7 @@
         "gaPerGame": 3.3,
         "pim": 40,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 4,
@@ -4207,7 +4207,7 @@
         "gaPerGame": 3.6,
         "pim": 20,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 5,
@@ -4228,7 +4228,7 @@
         "gaPerGame": 4.1,
         "pim": 36,
         "pimPerGame": 3.6,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 6,
@@ -4249,7 +4249,7 @@
         "gaPerGame": 5.5,
         "pim": 36,
         "pimPerGame": 3.6,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 7,
@@ -4270,7 +4270,7 @@
         "gaPerGame": 3.3,
         "pim": 22,
         "pimPerGame": 2.2,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 8,
@@ -4291,7 +4291,7 @@
         "gaPerGame": 5.5,
         "pim": 26,
         "pimPerGame": 2.6,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 9,
@@ -4312,7 +4312,7 @@
         "gaPerGame": 5.6,
         "pim": 51,
         "pimPerGame": 5.1,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 10,
@@ -4333,7 +4333,7 @@
         "gaPerGame": 7,
         "pim": 32,
         "pimPerGame": 3.2,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 1,
@@ -4354,7 +4354,7 @@
         "gaPerGame": 1.7,
         "pim": 38,
         "pimPerGame": 3.8,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 2,
@@ -4375,7 +4375,7 @@
         "gaPerGame": 2.3,
         "pim": 28,
         "pimPerGame": 2.8,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 3,
@@ -4396,7 +4396,7 @@
         "gaPerGame": 3.8,
         "pim": 30,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 4,
@@ -4417,7 +4417,7 @@
         "gaPerGame": 3.2,
         "pim": 42,
         "pimPerGame": 4.2,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 5,
@@ -4438,7 +4438,7 @@
         "gaPerGame": 3.8,
         "pim": 38,
         "pimPerGame": 3.8,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 6,
@@ -4459,7 +4459,7 @@
         "gaPerGame": 5.2,
         "pim": 10,
         "pimPerGame": 1,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 7,
@@ -4480,7 +4480,7 @@
         "gaPerGame": 3.7,
         "pim": 38,
         "pimPerGame": 3.8,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 8,
@@ -4501,7 +4501,7 @@
         "gaPerGame": 8,
         "pim": 44,
         "pimPerGame": 4.4,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 9,
@@ -4522,7 +4522,7 @@
         "gaPerGame": 8.9,
         "pim": 34,
         "pimPerGame": 3.4,
-        "groupName": null
+        "groupName": "Red"
       }
     ]
   },
@@ -4538,20 +4538,20 @@
         "teamName": "LANGLEY MHA U11 C7",
         "teamShortName": "LMHA U11 C7",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6706-93b0-6240-b490-068fc9a36a40/logos/1ebc017f-38ed-642a-95ea-06d7167eb1a8.jpg",
-        "gamesPlayed": 4,
-        "wins": 4,
+        "gamesPlayed": 5,
+        "wins": 5,
         "losses": 0,
         "ties": 0,
-        "points": 12,
+        "points": 15,
         "pointsPct": 1,
-        "goalsFor": 21,
-        "goalsAgainst": 13,
-        "diff": 8,
-        "gfPerGame": 5.25,
-        "gaPerGame": 3.25,
+        "goalsFor": 27,
+        "goalsAgainst": 17,
+        "diff": 10,
+        "gfPerGame": 5.4,
+        "gaPerGame": 3.4,
         "pim": 14,
-        "pimPerGame": 3.5,
-        "groupName": null
+        "pimPerGame": 2.8,
+        "groupName": "Gold"
       },
       {
         "rank": 2,
@@ -4559,20 +4559,20 @@
         "teamName": "SEMIAHMOO MHA U11 C1 (SE1)",
         "teamShortName": "U11 C1",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6707-39e1-6c36-bde4-068fc9a36a40/logos/1ebc017f-3ee1-6f48-a3eb-02d407c77c5a.png",
-        "gamesPlayed": 4,
+        "gamesPlayed": 5,
         "wins": 2,
-        "losses": 1,
+        "losses": 2,
         "ties": 1,
-        "points": 9,
-        "pointsPct": 0.75,
-        "goalsFor": 28,
-        "goalsAgainst": 17,
-        "diff": 11,
-        "gfPerGame": 7,
-        "gaPerGame": 4.25,
+        "points": 10,
+        "pointsPct": 0.667,
+        "goalsFor": 32,
+        "goalsAgainst": 23,
+        "diff": 9,
+        "gfPerGame": 6.4,
+        "gaPerGame": 4.6,
         "pim": 10,
-        "pimPerGame": 2.5,
-        "groupName": null
+        "pimPerGame": 2,
+        "groupName": "Gold"
       },
       {
         "rank": 3,
@@ -4593,7 +4593,7 @@
         "gaPerGame": 3,
         "pim": 26,
         "pimPerGame": 6.5,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 4,
@@ -4614,7 +4614,7 @@
         "gaPerGame": 5.75,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 5,
@@ -4635,7 +4635,7 @@
         "gaPerGame": 3.75,
         "pim": 16,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 1,
@@ -4656,7 +4656,7 @@
         "gaPerGame": 5.25,
         "pim": 14,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 2,
@@ -4677,7 +4677,7 @@
         "gaPerGame": 5.25,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 3,
@@ -4698,7 +4698,7 @@
         "gaPerGame": 5.67,
         "pim": 2,
         "pimPerGame": 0.67,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 4,
@@ -4719,7 +4719,7 @@
         "gaPerGame": 5.67,
         "pim": 14,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 1,
@@ -4740,7 +4740,7 @@
         "gaPerGame": 2.2,
         "pim": 24,
         "pimPerGame": 4.8,
-        "groupName": null
+        "groupName": "Navy"
       },
       {
         "rank": 2,
@@ -4761,7 +4761,7 @@
         "gaPerGame": 4,
         "pim": 16,
         "pimPerGame": 3.2,
-        "groupName": null
+        "groupName": "Navy"
       },
       {
         "rank": 3,
@@ -4782,7 +4782,7 @@
         "gaPerGame": 5.25,
         "pim": 14,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "Navy"
       },
       {
         "rank": 4,
@@ -4803,7 +4803,7 @@
         "gaPerGame": 3.5,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Navy"
       },
       {
         "rank": 5,
@@ -4824,7 +4824,7 @@
         "gaPerGame": 7.75,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Navy"
       },
       {
         "rank": 1,
@@ -4845,7 +4845,7 @@
         "gaPerGame": 4,
         "pim": 12,
         "pimPerGame": 2.4,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 2,
@@ -4866,7 +4866,7 @@
         "gaPerGame": 5,
         "pim": 20,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 3,
@@ -4887,7 +4887,7 @@
         "gaPerGame": 4.25,
         "pim": 8,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 4,
@@ -4908,7 +4908,7 @@
         "gaPerGame": 4.25,
         "pim": 18,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 5,
@@ -4929,7 +4929,7 @@
         "gaPerGame": 5,
         "pim": 22,
         "pimPerGame": 5.5,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 1,
@@ -4950,7 +4950,7 @@
         "gaPerGame": 0.6,
         "pim": 16,
         "pimPerGame": 3.2,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 2,
@@ -4971,7 +4971,7 @@
         "gaPerGame": 4.2,
         "pim": 6,
         "pimPerGame": 1.2,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 3,
@@ -4992,7 +4992,7 @@
         "gaPerGame": 3.25,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 4,
@@ -5013,7 +5013,7 @@
         "gaPerGame": 3.5,
         "pim": 26,
         "pimPerGame": 6.5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 5,
@@ -5034,7 +5034,7 @@
         "gaPerGame": 5.25,
         "pim": 26,
         "pimPerGame": 6.5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 1,
@@ -5055,7 +5055,7 @@
         "gaPerGame": 2.5,
         "pim": 14,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "Yellow"
       },
       {
         "rank": 2,
@@ -5076,7 +5076,7 @@
         "gaPerGame": 2.5,
         "pim": 14,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "Yellow"
       },
       {
         "rank": 3,
@@ -5097,7 +5097,7 @@
         "gaPerGame": 3.25,
         "pim": 14,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "Yellow"
       },
       {
         "rank": 4,
@@ -5118,7 +5118,7 @@
         "gaPerGame": 5.5,
         "pim": 14,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "Yellow"
       },
       {
         "rank": 5,
@@ -5139,7 +5139,7 @@
         "gaPerGame": 3.75,
         "pim": 14,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "Yellow"
       }
     ]
   },
@@ -5598,7 +5598,7 @@
         "gaPerGame": 4.29,
         "pim": 46,
         "pimPerGame": 3.29,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 2,
@@ -5621,7 +5621,7 @@
         "gaPerGame": 4.5,
         "pim": 70,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 3,
@@ -5644,7 +5644,7 @@
         "gaPerGame": 4.86,
         "pim": 70,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 4,
@@ -5667,7 +5667,7 @@
         "gaPerGame": 4.57,
         "pim": 30,
         "pimPerGame": 2.14,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 5,
@@ -5690,7 +5690,7 @@
         "gaPerGame": 3.86,
         "pim": 82,
         "pimPerGame": 5.86,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 6,
@@ -5713,7 +5713,7 @@
         "gaPerGame": 8.79,
         "pim": 10,
         "pimPerGame": 0.71,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 1,
@@ -5736,7 +5736,7 @@
         "gaPerGame": 3.71,
         "pim": 22,
         "pimPerGame": 1.57,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 2,
@@ -5759,7 +5759,7 @@
         "gaPerGame": 3.93,
         "pim": 24,
         "pimPerGame": 1.71,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 3,
@@ -5782,7 +5782,7 @@
         "gaPerGame": 4,
         "pim": 52,
         "pimPerGame": 3.71,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 4,
@@ -5805,7 +5805,7 @@
         "gaPerGame": 4.36,
         "pim": 78,
         "pimPerGame": 5.57,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 1,
@@ -5828,7 +5828,7 @@
         "gaPerGame": 7.71,
         "pim": 46,
         "pimPerGame": 3.29,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 2,
@@ -5851,7 +5851,7 @@
         "gaPerGame": 4.79,
         "pim": 30,
         "pimPerGame": 2.14,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 3,
@@ -5874,7 +5874,7 @@
         "gaPerGame": 3.86,
         "pim": 24,
         "pimPerGame": 1.71,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 4,
@@ -5897,7 +5897,7 @@
         "gaPerGame": 4.5,
         "pim": 58,
         "pimPerGame": 4.14,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 5,
@@ -5920,7 +5920,7 @@
         "gaPerGame": 7.21,
         "pim": 34,
         "pimPerGame": 2.43,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 6,
@@ -5943,7 +5943,7 @@
         "gaPerGame": 5.71,
         "pim": 28,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 7,
@@ -5966,7 +5966,7 @@
         "gaPerGame": 3.63,
         "pim": 44,
         "pimPerGame": 5.5,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 8,
@@ -5989,7 +5989,7 @@
         "gaPerGame": 6.5,
         "pim": 20,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 1,
@@ -6012,7 +6012,7 @@
         "gaPerGame": 2.36,
         "pim": 36,
         "pimPerGame": 2.57,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 2,
@@ -6035,7 +6035,7 @@
         "gaPerGame": 2.36,
         "pim": 22,
         "pimPerGame": 1.57,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 3,
@@ -6058,7 +6058,7 @@
         "gaPerGame": 4.07,
         "pim": 54,
         "pimPerGame": 3.86,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 4,
@@ -6081,7 +6081,7 @@
         "gaPerGame": 5.29,
         "pim": 40,
         "pimPerGame": 2.86,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 5,
@@ -6104,7 +6104,7 @@
         "gaPerGame": 6.29,
         "pim": 50,
         "pimPerGame": 3.57,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 1,
@@ -6127,7 +6127,7 @@
         "gaPerGame": 3.14,
         "pim": 26,
         "pimPerGame": 1.86,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 2,
@@ -6150,7 +6150,7 @@
         "gaPerGame": 3.57,
         "pim": 41,
         "pimPerGame": 2.93,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 3,
@@ -6173,7 +6173,7 @@
         "gaPerGame": 4.07,
         "pim": 30,
         "pimPerGame": 2.14,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 4,
@@ -6196,7 +6196,7 @@
         "gaPerGame": 2.5,
         "pim": 12,
         "pimPerGame": 1.5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 5,
@@ -6219,7 +6219,7 @@
         "gaPerGame": 5.57,
         "pim": 30,
         "pimPerGame": 2.14,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 6,
@@ -6242,7 +6242,7 @@
         "gaPerGame": 5.57,
         "pim": 38,
         "pimPerGame": 2.71,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 1,
@@ -6296,7 +6296,7 @@
         "gaPerGame": 1.17,
         "pim": 18,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "FVC Group 1"
       },
       {
         "rank": 2,
@@ -6319,7 +6319,7 @@
         "gaPerGame": 1.33,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "FVC Group 1"
       },
       {
         "rank": 3,
@@ -6342,7 +6342,7 @@
         "gaPerGame": 3.17,
         "pim": 40,
         "pimPerGame": 6.67,
-        "groupName": null
+        "groupName": "FVC Group 1"
       },
       {
         "rank": 4,
@@ -6365,7 +6365,7 @@
         "gaPerGame": 3,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "FVC Group 1"
       },
       {
         "rank": 5,
@@ -6388,7 +6388,7 @@
         "gaPerGame": 6,
         "pim": 32,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Group 1"
       },
       {
         "rank": 6,
@@ -6411,7 +6411,7 @@
         "gaPerGame": 8.17,
         "pim": 24,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Group 1"
       },
       {
         "rank": 7,
@@ -6434,7 +6434,7 @@
         "gaPerGame": 5.17,
         "pim": 36,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Group 1"
       },
       {
         "rank": 1,
@@ -6457,7 +6457,7 @@
         "gaPerGame": 1.83,
         "pim": 34,
         "pimPerGame": 5.67,
-        "groupName": null
+        "groupName": "FVC Group 2"
       },
       {
         "rank": 2,
@@ -6480,7 +6480,7 @@
         "gaPerGame": 2.33,
         "pim": 30,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "FVC Group 2"
       },
       {
         "rank": 3,
@@ -6503,7 +6503,7 @@
         "gaPerGame": 5.5,
         "pim": 22,
         "pimPerGame": 3.67,
-        "groupName": null
+        "groupName": "FVC Group 2"
       },
       {
         "rank": 4,
@@ -6526,7 +6526,7 @@
         "gaPerGame": 3.33,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "FVC Group 2"
       },
       {
         "rank": 5,
@@ -6549,7 +6549,7 @@
         "gaPerGame": 4,
         "pim": 39,
         "pimPerGame": 6.5,
-        "groupName": null
+        "groupName": "FVC Group 2"
       },
       {
         "rank": 6,
@@ -6572,7 +6572,7 @@
         "gaPerGame": 4.67,
         "pim": 32,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Group 2"
       },
       {
         "rank": 7,
@@ -6595,7 +6595,7 @@
         "gaPerGame": 3.67,
         "pim": 34,
         "pimPerGame": 5.67,
-        "groupName": null
+        "groupName": "FVC Group 2"
       },
       {
         "rank": 1,
@@ -6618,7 +6618,7 @@
         "gaPerGame": 1.5,
         "pim": 40,
         "pimPerGame": 6.67,
-        "groupName": null
+        "groupName": "FVC Group 3"
       },
       {
         "rank": 2,
@@ -6641,7 +6641,7 @@
         "gaPerGame": 2.33,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "FVC Group 3"
       },
       {
         "rank": 3,
@@ -6664,7 +6664,7 @@
         "gaPerGame": 2.83,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "FVC Group 3"
       },
       {
         "rank": 4,
@@ -6687,7 +6687,7 @@
         "gaPerGame": 5.5,
         "pim": 28,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "FVC Group 3"
       },
       {
         "rank": 5,
@@ -6710,7 +6710,7 @@
         "gaPerGame": 4,
         "pim": 42,
         "pimPerGame": 7,
-        "groupName": null
+        "groupName": "FVC Group 3"
       },
       {
         "rank": 6,
@@ -6733,7 +6733,7 @@
         "gaPerGame": 7.17,
         "pim": 36,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Group 3"
       },
       {
         "rank": 7,
@@ -6756,7 +6756,7 @@
         "gaPerGame": 6.5,
         "pim": 12,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "FVC Group 3"
       },
       {
         "rank": 1,
@@ -6779,7 +6779,7 @@
         "gaPerGame": 2.33,
         "pim": 48,
         "pimPerGame": 8,
-        "groupName": null
+        "groupName": "FVC Group 4"
       },
       {
         "rank": 2,
@@ -6802,7 +6802,7 @@
         "gaPerGame": 3.67,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "FVC Group 4"
       },
       {
         "rank": 3,
@@ -6825,7 +6825,7 @@
         "gaPerGame": 3.83,
         "pim": 22,
         "pimPerGame": 3.67,
-        "groupName": null
+        "groupName": "FVC Group 4"
       },
       {
         "rank": 4,
@@ -6848,7 +6848,7 @@
         "gaPerGame": 6,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "FVC Group 4"
       },
       {
         "rank": 5,
@@ -6871,7 +6871,7 @@
         "gaPerGame": 3,
         "pim": 40,
         "pimPerGame": 6.67,
-        "groupName": null
+        "groupName": "FVC Group 4"
       },
       {
         "rank": 6,
@@ -6894,7 +6894,7 @@
         "gaPerGame": 7.17,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "FVC Group 4"
       },
       {
         "rank": 1,
@@ -6917,7 +6917,7 @@
         "gaPerGame": 3,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "FVC Group 5"
       },
       {
         "rank": 2,
@@ -6940,7 +6940,7 @@
         "gaPerGame": 2.67,
         "pim": 24,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Group 5"
       },
       {
         "rank": 3,
@@ -6963,7 +6963,7 @@
         "gaPerGame": 2,
         "pim": 40,
         "pimPerGame": 6.67,
-        "groupName": null
+        "groupName": "FVC Group 5"
       },
       {
         "rank": 4,
@@ -6986,7 +6986,7 @@
         "gaPerGame": 5.5,
         "pim": 28,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "FVC Group 5"
       },
       {
         "rank": 5,
@@ -7009,7 +7009,7 @@
         "gaPerGame": 4.83,
         "pim": 68,
         "pimPerGame": 11.33,
-        "groupName": null
+        "groupName": "FVC Group 5"
       },
       {
         "rank": 6,
@@ -7032,7 +7032,7 @@
         "gaPerGame": 7.33,
         "pim": 14,
         "pimPerGame": 2.33,
-        "groupName": null
+        "groupName": "FVC Group 5"
       },
       {
         "rank": 7,
@@ -7055,7 +7055,7 @@
         "gaPerGame": 8,
         "pim": 44,
         "pimPerGame": 7.33,
-        "groupName": null
+        "groupName": "FVC Group 5"
       },
       {
         "rank": 1,
@@ -7078,7 +7078,7 @@
         "gaPerGame": 2,
         "pim": 24,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Group 6"
       },
       {
         "rank": 2,
@@ -7101,7 +7101,7 @@
         "gaPerGame": 3.17,
         "pim": 28,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "FVC Group 6"
       },
       {
         "rank": 3,
@@ -7124,7 +7124,7 @@
         "gaPerGame": 6.5,
         "pim": 14,
         "pimPerGame": 2.33,
-        "groupName": null
+        "groupName": "FVC Group 6"
       },
       {
         "rank": 4,
@@ -7147,7 +7147,7 @@
         "gaPerGame": 7.33,
         "pim": 18,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "FVC Group 6"
       },
       {
         "rank": 5,
@@ -7170,7 +7170,7 @@
         "gaPerGame": 5.67,
         "pim": 30,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "FVC Group 6"
       },
       {
         "rank": 6,
@@ -7193,7 +7193,7 @@
         "gaPerGame": 4.83,
         "pim": 42,
         "pimPerGame": 7,
-        "groupName": null
+        "groupName": "FVC Group 6"
       },
       {
         "rank": 1,
@@ -7216,7 +7216,7 @@
         "gaPerGame": 1.67,
         "pim": 16,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "FVC Group 7"
       },
       {
         "rank": 2,
@@ -7239,7 +7239,7 @@
         "gaPerGame": 2.33,
         "pim": 34,
         "pimPerGame": 5.67,
-        "groupName": null
+        "groupName": "FVC Group 7"
       },
       {
         "rank": 3,
@@ -7262,7 +7262,7 @@
         "gaPerGame": 4.83,
         "pim": 22,
         "pimPerGame": 3.67,
-        "groupName": null
+        "groupName": "FVC Group 7"
       },
       {
         "rank": 4,
@@ -7285,7 +7285,7 @@
         "gaPerGame": 3.5,
         "pim": 34,
         "pimPerGame": 5.67,
-        "groupName": null
+        "groupName": "FVC Group 7"
       },
       {
         "rank": 5,
@@ -7308,7 +7308,7 @@
         "gaPerGame": 4.67,
         "pim": 22,
         "pimPerGame": 3.67,
-        "groupName": null
+        "groupName": "FVC Group 7"
       },
       {
         "rank": 6,
@@ -7331,7 +7331,7 @@
         "gaPerGame": 8.17,
         "pim": 27,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "FVC Group 7"
       },
       {
         "rank": 1,
@@ -7354,7 +7354,7 @@
         "gaPerGame": 1.33,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "GVC Group 1"
       },
       {
         "rank": 2,
@@ -7377,7 +7377,7 @@
         "gaPerGame": 1.33,
         "pim": 16,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "GVC Group 1"
       },
       {
         "rank": 3,
@@ -7400,7 +7400,7 @@
         "gaPerGame": 3.5,
         "pim": 36,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "GVC Group 1"
       },
       {
         "rank": 4,
@@ -7423,7 +7423,7 @@
         "gaPerGame": 4.17,
         "pim": 34,
         "pimPerGame": 5.67,
-        "groupName": null
+        "groupName": "GVC Group 1"
       },
       {
         "rank": 5,
@@ -7446,7 +7446,7 @@
         "gaPerGame": 5,
         "pim": 18,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "GVC Group 1"
       },
       {
         "rank": 6,
@@ -7469,7 +7469,7 @@
         "gaPerGame": 5,
         "pim": 50,
         "pimPerGame": 8.33,
-        "groupName": null
+        "groupName": "GVC Group 1"
       },
       {
         "rank": 7,
@@ -7492,7 +7492,7 @@
         "gaPerGame": 10.33,
         "pim": 54,
         "pimPerGame": 9,
-        "groupName": null
+        "groupName": "GVC Group 1"
       },
       {
         "rank": 1,
@@ -7515,7 +7515,7 @@
         "gaPerGame": 1.83,
         "pim": 59,
         "pimPerGame": 9.83,
-        "groupName": null
+        "groupName": "GVC Group 2"
       },
       {
         "rank": 2,
@@ -7538,7 +7538,7 @@
         "gaPerGame": 2.83,
         "pim": 30,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "GVC Group 2"
       },
       {
         "rank": 3,
@@ -7561,7 +7561,7 @@
         "gaPerGame": 3.67,
         "pim": 18,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "GVC Group 2"
       },
       {
         "rank": 4,
@@ -7584,7 +7584,7 @@
         "gaPerGame": 5.17,
         "pim": 12,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "GVC Group 2"
       },
       {
         "rank": 5,
@@ -7607,7 +7607,7 @@
         "gaPerGame": 6.17,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "GVC Group 2"
       },
       {
         "rank": 6,
@@ -7630,7 +7630,7 @@
         "gaPerGame": 5.33,
         "pim": 16,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "GVC Group 2"
       },
       {
         "rank": 7,
@@ -7653,7 +7653,7 @@
         "gaPerGame": 10,
         "pim": 40,
         "pimPerGame": 6.67,
-        "groupName": null
+        "groupName": "GVC Group 2"
       },
       {
         "rank": 1,
@@ -7676,7 +7676,7 @@
         "gaPerGame": 1.33,
         "pim": 34,
         "pimPerGame": 5.67,
-        "groupName": null
+        "groupName": "GVC Group 3"
       },
       {
         "rank": 2,
@@ -7699,7 +7699,7 @@
         "gaPerGame": 2.33,
         "pim": 14,
         "pimPerGame": 2.33,
-        "groupName": null
+        "groupName": "GVC Group 3"
       },
       {
         "rank": 3,
@@ -7722,7 +7722,7 @@
         "gaPerGame": 3.83,
         "pim": 12,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "GVC Group 3"
       },
       {
         "rank": 4,
@@ -7745,7 +7745,7 @@
         "gaPerGame": 3.5,
         "pim": 16,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "GVC Group 3"
       },
       {
         "rank": 5,
@@ -7768,7 +7768,7 @@
         "gaPerGame": 4.67,
         "pim": 18,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "GVC Group 3"
       },
       {
         "rank": 6,
@@ -7791,7 +7791,7 @@
         "gaPerGame": 7,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "GVC Group 3"
       },
       {
         "rank": 7,
@@ -7814,7 +7814,7 @@
         "gaPerGame": 4,
         "pim": 22,
         "pimPerGame": 3.67,
-        "groupName": null
+        "groupName": "GVC Group 3"
       },
       {
         "rank": 1,
@@ -7837,7 +7837,7 @@
         "gaPerGame": 2.33,
         "pim": 35,
         "pimPerGame": 5.83,
-        "groupName": null
+        "groupName": "GVC Group 4"
       },
       {
         "rank": 2,
@@ -7860,7 +7860,7 @@
         "gaPerGame": 1.67,
         "pim": 14,
         "pimPerGame": 2.33,
-        "groupName": null
+        "groupName": "GVC Group 4"
       },
       {
         "rank": 3,
@@ -7883,7 +7883,7 @@
         "gaPerGame": 2.83,
         "pim": 24,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "GVC Group 4"
       },
       {
         "rank": 4,
@@ -7906,7 +7906,7 @@
         "gaPerGame": 5.5,
         "pim": 14,
         "pimPerGame": 2.33,
-        "groupName": null
+        "groupName": "GVC Group 4"
       },
       {
         "rank": 5,
@@ -7929,7 +7929,7 @@
         "gaPerGame": 4.33,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "GVC Group 4"
       },
       {
         "rank": 6,
@@ -7952,7 +7952,7 @@
         "gaPerGame": 6.67,
         "pim": 8,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "GVC Group 4"
       },
       {
         "rank": 7,
@@ -7975,7 +7975,7 @@
         "gaPerGame": 7.17,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "GVC Group 4"
       },
       {
         "rank": 1,
@@ -7998,7 +7998,7 @@
         "gaPerGame": 1.33,
         "pim": 14,
         "pimPerGame": 2.33,
-        "groupName": null
+        "groupName": "GVC Group 5"
       },
       {
         "rank": 2,
@@ -8021,7 +8021,7 @@
         "gaPerGame": 3,
         "pim": 10,
         "pimPerGame": 1.67,
-        "groupName": null
+        "groupName": "GVC Group 5"
       },
       {
         "rank": 3,
@@ -8044,7 +8044,7 @@
         "gaPerGame": 3.83,
         "pim": 22,
         "pimPerGame": 3.67,
-        "groupName": null
+        "groupName": "GVC Group 5"
       },
       {
         "rank": 4,
@@ -8067,7 +8067,7 @@
         "gaPerGame": 4.83,
         "pim": 16,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "GVC Group 5"
       },
       {
         "rank": 5,
@@ -8090,7 +8090,7 @@
         "gaPerGame": 3.5,
         "pim": 12,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "GVC Group 5"
       },
       {
         "rank": 6,
@@ -8113,7 +8113,7 @@
         "gaPerGame": 8.83,
         "pim": 16,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "GVC Group 5"
       },
       {
         "rank": 7,
@@ -8136,7 +8136,7 @@
         "gaPerGame": 16.17,
         "pim": 10,
         "pimPerGame": 1.67,
-        "groupName": null
+        "groupName": "GVC Group 5"
       }
     ]
   },
@@ -8472,7 +8472,7 @@
         "gaPerGame": 1.6,
         "pim": 16,
         "pimPerGame": 3.2,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 2,
@@ -8493,7 +8493,7 @@
         "gaPerGame": 2,
         "pim": 8,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 3,
@@ -8514,7 +8514,7 @@
         "gaPerGame": 3.2,
         "pim": 12,
         "pimPerGame": 2.4,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 4,
@@ -8535,7 +8535,7 @@
         "gaPerGame": 3.5,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 5,
@@ -8556,7 +8556,7 @@
         "gaPerGame": 4.25,
         "pim": 10,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 1,
@@ -8577,7 +8577,7 @@
         "gaPerGame": 1.25,
         "pim": 6,
         "pimPerGame": 1.5,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 2,
@@ -8598,7 +8598,7 @@
         "gaPerGame": 2.75,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 3,
@@ -8619,7 +8619,7 @@
         "gaPerGame": 2.75,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 4,
@@ -8640,7 +8640,7 @@
         "gaPerGame": 3.25,
         "pim": 10,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 5,
@@ -8661,7 +8661,7 @@
         "gaPerGame": 3,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 1,
@@ -8682,7 +8682,7 @@
         "gaPerGame": 1.5,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Purple"
       },
       {
         "rank": 2,
@@ -8703,7 +8703,7 @@
         "gaPerGame": 2,
         "pim": 18,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "Purple"
       },
       {
         "rank": 3,
@@ -8724,7 +8724,7 @@
         "gaPerGame": 2,
         "pim": 2,
         "pimPerGame": 0.5,
-        "groupName": null
+        "groupName": "Purple"
       },
       {
         "rank": 4,
@@ -8745,7 +8745,7 @@
         "gaPerGame": 3,
         "pim": 2,
         "pimPerGame": 0.5,
-        "groupName": null
+        "groupName": "Purple"
       },
       {
         "rank": 5,
@@ -8766,7 +8766,7 @@
         "gaPerGame": 1.25,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Purple"
       },
       {
         "rank": 1,
@@ -8787,7 +8787,7 @@
         "gaPerGame": 0.75,
         "pim": 10,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 2,
@@ -8808,7 +8808,7 @@
         "gaPerGame": 2.25,
         "pim": 10,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 3,
@@ -8829,7 +8829,7 @@
         "gaPerGame": 1.75,
         "pim": 6,
         "pimPerGame": 1.5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 4,
@@ -8850,7 +8850,7 @@
         "gaPerGame": 4.5,
         "pim": 10,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 5,
@@ -8871,7 +8871,7 @@
         "gaPerGame": 4.25,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Red"
       }
     ]
   },
@@ -8902,7 +8902,7 @@
         "gaPerGame": 2,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "District - Championship Series"
       },
       {
         "rank": 2,
@@ -8925,7 +8925,7 @@
         "gaPerGame": 1.67,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "District - Championship Series"
       },
       {
         "rank": 3,
@@ -8948,7 +8948,7 @@
         "gaPerGame": 2.33,
         "pim": 24,
         "pimPerGame": 8,
-        "groupName": null
+        "groupName": "District - Championship Series"
       },
       {
         "rank": 4,
@@ -8971,7 +8971,7 @@
         "gaPerGame": 3.67,
         "pim": 22,
         "pimPerGame": 7.33,
-        "groupName": null
+        "groupName": "District - Championship Series"
       },
       {
         "rank": 1,
@@ -8994,7 +8994,7 @@
         "gaPerGame": 2.25,
         "pim": 22,
         "pimPerGame": 5.5,
-        "groupName": null
+        "groupName": "District - Presidents Series"
       },
       {
         "rank": 2,
@@ -9017,7 +9017,7 @@
         "gaPerGame": 4.25,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "District - Presidents Series"
       },
       {
         "rank": 3,
@@ -9040,7 +9040,7 @@
         "gaPerGame": 4,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "District - Presidents Series"
       },
       {
         "rank": 4,
@@ -9063,7 +9063,7 @@
         "gaPerGame": 3,
         "pim": 14,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "District - Presidents Series"
       },
       {
         "rank": 5,
@@ -9086,7 +9086,7 @@
         "gaPerGame": 4.25,
         "pim": 30,
         "pimPerGame": 7.5,
-        "groupName": null
+        "groupName": "District - Presidents Series"
       },
       {
         "rank": 1,
@@ -9109,7 +9109,7 @@
         "gaPerGame": 1.5,
         "pim": 24,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "District - Round Robin - Group A"
       },
       {
         "rank": 2,
@@ -9132,7 +9132,7 @@
         "gaPerGame": 3.5,
         "pim": 30,
         "pimPerGame": 7.5,
-        "groupName": null
+        "groupName": "District - Round Robin - Group A"
       },
       {
         "rank": 3,
@@ -9155,7 +9155,7 @@
         "gaPerGame": 4,
         "pim": 18,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "District - Round Robin - Group A"
       },
       {
         "rank": 4,
@@ -9178,7 +9178,7 @@
         "gaPerGame": 4.25,
         "pim": 18,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "District - Round Robin - Group A"
       },
       {
         "rank": 5,
@@ -9201,7 +9201,7 @@
         "gaPerGame": 5.25,
         "pim": 32,
         "pimPerGame": 8,
-        "groupName": null
+        "groupName": "District - Round Robin - Group A"
       },
       {
         "rank": 1,
@@ -9224,7 +9224,7 @@
         "gaPerGame": 0.67,
         "pim": 8,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "District - Round Robin - Group B"
       },
       {
         "rank": 2,
@@ -9247,7 +9247,7 @@
         "gaPerGame": 1.33,
         "pim": 8,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "District - Round Robin - Group B"
       },
       {
         "rank": 3,
@@ -9270,7 +9270,7 @@
         "gaPerGame": 6.33,
         "pim": 4,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "District - Round Robin - Group B"
       },
       {
         "rank": 4,
@@ -9293,7 +9293,7 @@
         "gaPerGame": 5.67,
         "pim": 8,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "District - Round Robin - Group B"
       },
       {
         "rank": 1,
@@ -9316,7 +9316,7 @@
         "gaPerGame": 3,
         "pim": 8,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Championship Series"
       },
       {
         "rank": 2,
@@ -9339,7 +9339,7 @@
         "gaPerGame": 1.67,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Championship Series"
       },
       {
         "rank": 3,
@@ -9362,7 +9362,7 @@
         "gaPerGame": 5,
         "pim": 14,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Championship Series"
       },
       {
         "rank": 4,
@@ -9385,7 +9385,7 @@
         "gaPerGame": 4,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Championship Series"
       },
       {
         "rank": 1,
@@ -9408,7 +9408,7 @@
         "gaPerGame": 1.75,
         "pim": 10,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Presidents Series"
       },
       {
         "rank": 2,
@@ -9416,25 +9416,48 @@
         "teamName": "COQUITLAM MHA U11 A1",
         "teamShortName": "U11 A1",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1f021fd5-77df-66aa-aa62-06ee120d0117/logos/1f021fd5-77c9-6ec2-b3f1-06ee120d0117.png",
-        "gamesPlayed": 3,
+        "gamesPlayed": 4,
         "wins": 1,
-        "losses": 0,
+        "losses": 1,
         "ties": 2,
         "otWins": 0,
         "otLosses": 0,
-        "points": 7,
-        "pointsPct": 0.778,
-        "goalsFor": 10,
-        "goalsAgainst": 8,
-        "diff": 2,
-        "gfPerGame": 3.33,
-        "gaPerGame": 2.67,
-        "pim": 14,
-        "pimPerGame": 4.67,
-        "groupName": null
+        "points": 8,
+        "pointsPct": 0.667,
+        "goalsFor": 13,
+        "goalsAgainst": 13,
+        "diff": 0,
+        "gfPerGame": 3.25,
+        "gaPerGame": 3.25,
+        "pim": 20,
+        "pimPerGame": 5,
+        "groupName": "FVC Flight 1 - Presidents Series"
       },
       {
         "rank": 3,
+        "teamId": 114204,
+        "teamName": "SOUTH DELTA MHA U11 A1 STORM",
+        "teamShortName": "U11 A1 STORM",
+        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1f024798-8859-6c3e-b2d3-0281acc700a5/logos/1f024798-8843-6740-a56e-0281acc700a5.jpg",
+        "gamesPlayed": 3,
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "otWins": 0,
+        "otLosses": 0,
+        "points": 6,
+        "pointsPct": 0.667,
+        "goalsFor": 8,
+        "goalsAgainst": 9,
+        "diff": -1,
+        "gfPerGame": 2.67,
+        "gaPerGame": 3,
+        "pim": 24,
+        "pimPerGame": 8,
+        "groupName": "FVC Flight 1 - Presidents Series"
+      },
+      {
+        "rank": 4,
         "teamId": 113438,
         "teamName": "CLOVERDALE MHA U11 A1",
         "teamShortName": "U11 A1",
@@ -9454,30 +9477,7 @@
         "gaPerGame": 2.67,
         "pim": 18,
         "pimPerGame": 6,
-        "groupName": null
-      },
-      {
-        "rank": 4,
-        "teamId": 114204,
-        "teamName": "SOUTH DELTA MHA U11 A1 STORM",
-        "teamShortName": "U11 A1 STORM",
-        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1f024798-8859-6c3e-b2d3-0281acc700a5/logos/1f024798-8843-6740-a56e-0281acc700a5.jpg",
-        "gamesPlayed": 2,
-        "wins": 1,
-        "losses": 1,
-        "ties": 0,
-        "otWins": 0,
-        "otLosses": 0,
-        "points": 3,
-        "pointsPct": 0.5,
-        "goalsFor": 3,
-        "goalsAgainst": 6,
-        "diff": -3,
-        "gfPerGame": 1.5,
-        "gaPerGame": 3,
-        "pim": 18,
-        "pimPerGame": 9,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Presidents Series"
       },
       {
         "rank": 5,
@@ -9500,7 +9500,7 @@
         "gaPerGame": 4,
         "pim": 30,
         "pimPerGame": 7.5,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Presidents Series"
       },
       {
         "rank": 1,
@@ -9523,7 +9523,7 @@
         "gaPerGame": 1.75,
         "pim": 14,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Round Robin - Group A"
       },
       {
         "rank": 2,
@@ -9546,7 +9546,7 @@
         "gaPerGame": 1.75,
         "pim": 16,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Round Robin - Group A"
       },
       {
         "rank": 3,
@@ -9569,7 +9569,7 @@
         "gaPerGame": 3.25,
         "pim": 14,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Round Robin - Group A"
       },
       {
         "rank": 4,
@@ -9592,7 +9592,7 @@
         "gaPerGame": 3.25,
         "pim": 34,
         "pimPerGame": 8.5,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Round Robin - Group A"
       },
       {
         "rank": 5,
@@ -9615,7 +9615,7 @@
         "gaPerGame": 4,
         "pim": 4,
         "pimPerGame": 1,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Round Robin - Group A"
       },
       {
         "rank": 1,
@@ -9638,7 +9638,7 @@
         "gaPerGame": 2.25,
         "pim": 16,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Round Robin - Group B"
       },
       {
         "rank": 2,
@@ -9661,7 +9661,7 @@
         "gaPerGame": 3,
         "pim": 18,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Round Robin - Group B"
       },
       {
         "rank": 3,
@@ -9684,7 +9684,7 @@
         "gaPerGame": 4,
         "pim": 26,
         "pimPerGame": 6.5,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Round Robin - Group B"
       },
       {
         "rank": 4,
@@ -9707,7 +9707,7 @@
         "gaPerGame": 5,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Flight 1 - Round Robin - Group B"
       },
       {
         "rank": 1,
@@ -9715,22 +9715,22 @@
         "teamName": "LANGLEY MHA U11 A2 EAGLES",
         "teamShortName": "LY U11 A2 EAGLES",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1ede5de5-e0c1-67f2-a1ac-06bba40fa00c/logos/1ede5de5-e0ae-6a80-a28f-06bba40fa00c.jpg",
-        "gamesPlayed": 1,
-        "wins": 1,
+        "gamesPlayed": 2,
+        "wins": 2,
         "losses": 0,
         "ties": 0,
         "otWins": 0,
         "otLosses": 0,
-        "points": 2,
+        "points": 4,
         "pointsPct": 0.667,
-        "goalsFor": 2,
-        "goalsAgainst": 1,
-        "diff": 1,
-        "gfPerGame": 2,
-        "gaPerGame": 1,
-        "pim": 10,
-        "pimPerGame": 10,
-        "groupName": null
+        "goalsFor": 8,
+        "goalsAgainst": 6,
+        "diff": 2,
+        "gfPerGame": 4,
+        "gaPerGame": 3,
+        "pim": 16,
+        "pimPerGame": 8,
+        "groupName": "FVC Flight 2 - Championship Series"
       },
       {
         "rank": 2,
@@ -9738,25 +9738,25 @@
         "teamName": "COQUITLAM MHA U11 A2",
         "teamShortName": "U11 A2",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1f021fd5-77c9-6cce-b8c7-06ee120d0117/logos/1f021fd5-77b2-6d44-9828-06ee120d0117.png",
-        "gamesPlayed": 0,
+        "gamesPlayed": 1,
         "wins": 0,
-        "losses": 0,
+        "losses": 1,
         "ties": 0,
         "otWins": 0,
         "otLosses": 0,
         "points": 0,
         "pointsPct": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "diff": 0,
-        "gfPerGame": 0,
-        "gaPerGame": 0,
-        "pim": 0,
-        "pimPerGame": 0,
-        "groupName": null
+        "goalsFor": 5,
+        "goalsAgainst": 6,
+        "diff": -1,
+        "gfPerGame": 5,
+        "gaPerGame": 6,
+        "pim": 4,
+        "pimPerGame": 4,
+        "groupName": "FVC Flight 2 - Championship Series"
       },
       {
-        "rank": 3,
+        "rank": 2,
         "teamId": 111779,
         "teamName": "ABBOTSFORD MHA U11 A2 HAWKS",
         "teamShortName": "U11 A2",
@@ -9776,7 +9776,7 @@
         "gaPerGame": 2,
         "pim": 10,
         "pimPerGame": 10,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Championship Series"
       },
       {
         "rank": 1,
@@ -9799,7 +9799,7 @@
         "gaPerGame": 2,
         "pim": 10,
         "pimPerGame": 10,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Presidents Series"
       },
       {
         "rank": 2,
@@ -9822,7 +9822,7 @@
         "gaPerGame": 0,
         "pim": 12,
         "pimPerGame": 12,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Presidents Series"
       },
       {
         "rank": 3,
@@ -9845,7 +9845,7 @@
         "gaPerGame": 5,
         "pim": 12,
         "pimPerGame": 12,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Presidents Series"
       },
       {
         "rank": 4,
@@ -9868,7 +9868,7 @@
         "gaPerGame": 6,
         "pim": 10,
         "pimPerGame": 10,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Presidents Series"
       },
       {
         "rank": 1,
@@ -9891,7 +9891,7 @@
         "gaPerGame": 4.33,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Round Robin Series"
       },
       {
         "rank": 2,
@@ -9914,7 +9914,7 @@
         "gaPerGame": 2.17,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Round Robin Series"
       },
       {
         "rank": 3,
@@ -9937,7 +9937,7 @@
         "gaPerGame": 2.33,
         "pim": 60,
         "pimPerGame": 10,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Round Robin Series"
       },
       {
         "rank": 4,
@@ -9960,7 +9960,7 @@
         "gaPerGame": 2.5,
         "pim": 36,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Round Robin Series"
       },
       {
         "rank": 5,
@@ -9983,7 +9983,7 @@
         "gaPerGame": 3.83,
         "pim": 44,
         "pimPerGame": 7.33,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Round Robin Series"
       },
       {
         "rank": 6,
@@ -10006,7 +10006,7 @@
         "gaPerGame": 3,
         "pim": 36,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Round Robin Series"
       },
       {
         "rank": 7,
@@ -10029,7 +10029,7 @@
         "gaPerGame": 4.5,
         "pim": 32,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Flight 2 - Round Robin Series"
       },
       {
         "rank": 1,
@@ -10052,7 +10052,7 @@
         "gaPerGame": 3,
         "pim": 10,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Championship Series"
       },
       {
         "rank": 2,
@@ -10075,7 +10075,7 @@
         "gaPerGame": 4.67,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Championship Series"
       },
       {
         "rank": 3,
@@ -10098,7 +10098,7 @@
         "gaPerGame": 4.67,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Championship Series"
       },
       {
         "rank": 4,
@@ -10121,7 +10121,7 @@
         "gaPerGame": 5,
         "pim": 14,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Championship Series"
       },
       {
         "rank": 1,
@@ -10144,7 +10144,7 @@
         "gaPerGame": 3,
         "pim": 12,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Presidents Series"
       },
       {
         "rank": 2,
@@ -10167,7 +10167,7 @@
         "gaPerGame": 2,
         "pim": 12,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Presidents Series"
       },
       {
         "rank": 3,
@@ -10175,22 +10175,22 @@
         "teamName": "PORT COQUITLAM MHA U11 A2",
         "teamShortName": "U11 A2",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6706-f6e3-6de4-b572-0220ca96f6a8/logos/1ebc017f-455f-6898-9c57-020ca418dc48.png",
-        "gamesPlayed": 2,
+        "gamesPlayed": 3,
         "wins": 0,
         "losses": 1,
-        "ties": 1,
+        "ties": 2,
         "otWins": 0,
         "otLosses": 0,
-        "points": 2,
-        "pointsPct": 0.333,
-        "goalsFor": 6,
-        "goalsAgainst": 7,
+        "points": 4,
+        "pointsPct": 0.444,
+        "goalsFor": 8,
+        "goalsAgainst": 9,
         "diff": -1,
-        "gfPerGame": 3,
-        "gaPerGame": 3.5,
-        "pim": 8,
-        "pimPerGame": 4,
-        "groupName": null
+        "gfPerGame": 2.67,
+        "gaPerGame": 3,
+        "pim": 10,
+        "pimPerGame": 3.33,
+        "groupName": "FVC Flight 3 - Presidents Series"
       },
       {
         "rank": 4,
@@ -10198,22 +10198,22 @@
         "teamName": "ALDERGROVE MHA U11 A1 TIER 3",
         "teamShortName": "U11 A1",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6706-1365-6a2c-b02d-0220ca96f6a8/logos/1ebc017f-2020-6c76-b2a6-02d407c77c5a.gif",
-        "gamesPlayed": 2,
+        "gamesPlayed": 3,
         "wins": 0,
         "losses": 2,
-        "ties": 0,
+        "ties": 1,
         "otWins": 0,
         "otLosses": 0,
-        "points": 2,
-        "pointsPct": 0.333,
-        "goalsFor": 4,
-        "goalsAgainst": 10,
+        "points": 4,
+        "pointsPct": 0.444,
+        "goalsFor": 6,
+        "goalsAgainst": 12,
         "diff": -6,
         "gfPerGame": 2,
-        "gaPerGame": 5,
-        "pim": 4,
-        "pimPerGame": 2,
-        "groupName": null
+        "gaPerGame": 4,
+        "pim": 8,
+        "pimPerGame": 2.67,
+        "groupName": "FVC Flight 3 - Presidents Series"
       },
       {
         "rank": 5,
@@ -10236,7 +10236,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Presidents Series"
       },
       {
         "rank": 1,
@@ -10259,7 +10259,7 @@
         "gaPerGame": 1.75,
         "pim": 22,
         "pimPerGame": 5.5,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Round Robin - Group A"
       },
       {
         "rank": 2,
@@ -10282,7 +10282,7 @@
         "gaPerGame": 3.5,
         "pim": 24,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Round Robin - Group A"
       },
       {
         "rank": 3,
@@ -10305,7 +10305,7 @@
         "gaPerGame": 7,
         "pim": 10,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Round Robin - Group A"
       },
       {
         "rank": 4,
@@ -10328,7 +10328,7 @@
         "gaPerGame": 4.25,
         "pim": 28,
         "pimPerGame": 7,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Round Robin - Group A"
       },
       {
         "rank": 5,
@@ -10351,7 +10351,7 @@
         "gaPerGame": 6.5,
         "pim": 36,
         "pimPerGame": 9,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Round Robin - Group A"
       },
       {
         "rank": 1,
@@ -10374,7 +10374,7 @@
         "gaPerGame": 2.67,
         "pim": 10,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Round Robin - Group B"
       },
       {
         "rank": 2,
@@ -10397,7 +10397,7 @@
         "gaPerGame": 4.33,
         "pim": 22,
         "pimPerGame": 7.33,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Round Robin - Group B"
       },
       {
         "rank": 3,
@@ -10420,7 +10420,7 @@
         "gaPerGame": 3.33,
         "pim": 33,
         "pimPerGame": 11,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Round Robin - Group B"
       },
       {
         "rank": 4,
@@ -10443,7 +10443,7 @@
         "gaPerGame": 5,
         "pim": 18,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Flight 3 - Round Robin - Group B"
       },
       {
         "rank": 1,
@@ -10466,7 +10466,7 @@
         "gaPerGame": 3.33,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Championship Series"
       },
       {
         "rank": 2,
@@ -10489,7 +10489,7 @@
         "gaPerGame": 3.33,
         "pim": 14,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Championship Series"
       },
       {
         "rank": 3,
@@ -10512,7 +10512,7 @@
         "gaPerGame": 2,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Championship Series"
       },
       {
         "rank": 4,
@@ -10535,7 +10535,7 @@
         "gaPerGame": 4,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Championship Series"
       },
       {
         "rank": 1,
@@ -10558,7 +10558,7 @@
         "gaPerGame": 2.75,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Presidents Series"
       },
       {
         "rank": 2,
@@ -10581,7 +10581,7 @@
         "gaPerGame": 3.25,
         "pim": 16,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Presidents Series"
       },
       {
         "rank": 3,
@@ -10604,7 +10604,7 @@
         "gaPerGame": 2.5,
         "pim": 36,
         "pimPerGame": 9,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Presidents Series"
       },
       {
         "rank": 4,
@@ -10627,7 +10627,7 @@
         "gaPerGame": 3.75,
         "pim": 27,
         "pimPerGame": 6.75,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Presidents Series"
       },
       {
         "rank": 5,
@@ -10650,7 +10650,7 @@
         "gaPerGame": 4.5,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Presidents Series"
       },
       {
         "rank": 1,
@@ -10673,7 +10673,7 @@
         "gaPerGame": 2,
         "pim": 18,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Round Robin - Group A"
       },
       {
         "rank": 2,
@@ -10696,7 +10696,7 @@
         "gaPerGame": 3,
         "pim": 10,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Round Robin - Group A"
       },
       {
         "rank": 3,
@@ -10719,7 +10719,7 @@
         "gaPerGame": 2.25,
         "pim": 16,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Round Robin - Group A"
       },
       {
         "rank": 4,
@@ -10742,7 +10742,7 @@
         "gaPerGame": 5,
         "pim": 10,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Round Robin - Group A"
       },
       {
         "rank": 5,
@@ -10765,7 +10765,7 @@
         "gaPerGame": 2.75,
         "pim": 24,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Round Robin - Group A"
       },
       {
         "rank": 1,
@@ -10788,7 +10788,7 @@
         "gaPerGame": 2.33,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Round Robin - Group B"
       },
       {
         "rank": 2,
@@ -10811,7 +10811,7 @@
         "gaPerGame": 3,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Round Robin - Group B"
       },
       {
         "rank": 3,
@@ -10834,7 +10834,7 @@
         "gaPerGame": 2.67,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Round Robin - Group B"
       },
       {
         "rank": 4,
@@ -10857,30 +10857,30 @@
         "gaPerGame": 6.67,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 4 - Round Robin - Group B"
       },
       {
         "rank": 1,
-        "teamId": 139486,
-        "teamName": "WCAHA U11A1",
-        "teamShortName": null,
-        "teamLogoUrl": "https://hisports-logos.s3-ca-central-1.amazonaws.com/1729079338535.png",
-        "gamesPlayed": 3,
-        "wins": 2,
+        "teamId": 114708,
+        "teamName": "SEMIAHMOO MHA U11 A5",
+        "teamShortName": "SMHA U11 A5",
+        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6707-39e1-6c36-bde4-068fc9a36a40/logos/1ebc017f-3ee1-6f48-a3eb-02d407c77c5a.png",
+        "gamesPlayed": 4,
+        "wins": 3,
         "losses": 1,
         "ties": 0,
         "otWins": 0,
         "otLosses": 0,
-        "points": 4,
-        "pointsPct": 0.444,
-        "goalsFor": 15,
-        "goalsAgainst": 11,
-        "diff": 4,
-        "gfPerGame": 5,
-        "gaPerGame": 3.67,
-        "pim": 10,
-        "pimPerGame": 3.33,
-        "groupName": null
+        "points": 6,
+        "pointsPct": 0.5,
+        "goalsFor": 19,
+        "goalsAgainst": 8,
+        "diff": 11,
+        "gfPerGame": 4.75,
+        "gaPerGame": 2,
+        "pim": 18,
+        "pimPerGame": 4.5,
+        "groupName": "FVC Flight 5 - Championship Series"
       },
       {
         "rank": 2,
@@ -10903,30 +10903,30 @@
         "gaPerGame": 4.33,
         "pim": 8,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Championship Series"
       },
       {
         "rank": 3,
-        "teamId": 114708,
-        "teamName": "SEMIAHMOO MHA U11 A5",
-        "teamShortName": "SMHA U11 A5",
-        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6707-39e1-6c36-bde4-068fc9a36a40/logos/1ebc017f-3ee1-6f48-a3eb-02d407c77c5a.png",
-        "gamesPlayed": 3,
+        "teamId": 139486,
+        "teamName": "WCAHA U11A1",
+        "teamShortName": null,
+        "teamLogoUrl": "https://hisports-logos.s3-ca-central-1.amazonaws.com/1729079338535.png",
+        "gamesPlayed": 4,
         "wins": 2,
-        "losses": 1,
+        "losses": 2,
         "ties": 0,
         "otWins": 0,
         "otLosses": 0,
         "points": 4,
-        "pointsPct": 0.444,
-        "goalsFor": 15,
-        "goalsAgainst": 7,
-        "diff": 8,
-        "gfPerGame": 5,
-        "gaPerGame": 2.33,
-        "pim": 10,
-        "pimPerGame": 3.33,
-        "groupName": null
+        "pointsPct": 0.333,
+        "goalsFor": 16,
+        "goalsAgainst": 15,
+        "diff": 1,
+        "gfPerGame": 4,
+        "gaPerGame": 3.75,
+        "pim": 14,
+        "pimPerGame": 3.5,
+        "groupName": "FVC Flight 5 - Championship Series"
       },
       {
         "rank": 4,
@@ -10949,53 +10949,53 @@
         "gaPerGame": 5.67,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Championship Series"
       },
       {
         "rank": 1,
-        "teamId": 114111,
-        "teamName": "RIDGE MEADOWS MHA U11 A4-WHITE",
-        "teamShortName": "U11 A4-WHITE",
-        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6707-1315-6fda-a100-068fc9a36a40/logos/1ebc017f-3898-670e-a0c7-0682f9c65d50.png",
-        "gamesPlayed": 3,
-        "wins": 2,
-        "losses": 0,
-        "ties": 1,
-        "otWins": 0,
-        "otLosses": 0,
-        "points": 8,
-        "pointsPct": 0.889,
-        "goalsFor": 18,
-        "goalsAgainst": 9,
-        "diff": 9,
-        "gfPerGame": 6,
-        "gaPerGame": 3,
-        "pim": 10,
-        "pimPerGame": 3.33,
-        "groupName": null
-      },
-      {
-        "rank": 2,
         "teamId": 143797,
         "teamName": "CHILLIWACK MHA U11 A4 JR BRUINS",
         "teamShortName": "U11 A4 JR BRUINS",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6706-483e-65f0-8118-0220ca96f6a8/logos/1ebc017f-3246-6234-aefc-0255dd204abc.png",
-        "gamesPlayed": 3,
-        "wins": 1,
+        "gamesPlayed": 4,
+        "wins": 2,
         "losses": 0,
         "ties": 2,
         "otWins": 0,
         "otLosses": 0,
-        "points": 7,
-        "pointsPct": 0.778,
-        "goalsFor": 10,
-        "goalsAgainst": 5,
-        "diff": 5,
-        "gfPerGame": 3.33,
-        "gaPerGame": 1.67,
-        "pim": 16,
-        "pimPerGame": 5.33,
-        "groupName": null
+        "points": 9,
+        "pointsPct": 0.75,
+        "goalsFor": 19,
+        "goalsAgainst": 6,
+        "diff": 13,
+        "gfPerGame": 4.75,
+        "gaPerGame": 1.5,
+        "pim": 24,
+        "pimPerGame": 6,
+        "groupName": "FVC Flight 5 - Presidents Series"
+      },
+      {
+        "rank": 2,
+        "teamId": 114111,
+        "teamName": "RIDGE MEADOWS MHA U11 A4-WHITE",
+        "teamShortName": "U11 A4-WHITE",
+        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6707-1315-6fda-a100-068fc9a36a40/logos/1ebc017f-3898-670e-a0c7-0682f9c65d50.png",
+        "gamesPlayed": 4,
+        "wins": 2,
+        "losses": 1,
+        "ties": 1,
+        "otWins": 0,
+        "otLosses": 0,
+        "points": 8,
+        "pointsPct": 0.667,
+        "goalsFor": 19,
+        "goalsAgainst": 18,
+        "diff": 1,
+        "gfPerGame": 4.75,
+        "gaPerGame": 4.5,
+        "pim": 18,
+        "pimPerGame": 4.5,
+        "groupName": "FVC Flight 5 - Presidents Series"
       },
       {
         "rank": 3,
@@ -11018,7 +11018,7 @@
         "gaPerGame": 3.67,
         "pim": 18,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Presidents Series"
       },
       {
         "rank": 4,
@@ -11041,7 +11041,7 @@
         "gaPerGame": 5.67,
         "pim": 18,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Presidents Series"
       },
       {
         "rank": 1,
@@ -11064,7 +11064,7 @@
         "gaPerGame": 1.33,
         "pim": 14,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Round Robin - Group A"
       },
       {
         "rank": 2,
@@ -11087,7 +11087,7 @@
         "gaPerGame": 3.33,
         "pim": 6,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Round Robin - Group A"
       },
       {
         "rank": 3,
@@ -11110,7 +11110,7 @@
         "gaPerGame": 5.33,
         "pim": 8,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Round Robin - Group A"
       },
       {
         "rank": 4,
@@ -11133,7 +11133,7 @@
         "gaPerGame": 3,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Round Robin - Group A"
       },
       {
         "rank": 1,
@@ -11156,7 +11156,7 @@
         "gaPerGame": 2,
         "pim": 10,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Round Robin - Group B"
       },
       {
         "rank": 2,
@@ -11179,7 +11179,7 @@
         "gaPerGame": 2.67,
         "pim": 14,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Round Robin - Group B"
       },
       {
         "rank": 3,
@@ -11202,7 +11202,7 @@
         "gaPerGame": 4,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Round Robin - Group B"
       },
       {
         "rank": 4,
@@ -11225,7 +11225,7 @@
         "gaPerGame": 5.67,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "FVC Flight 5 - Round Robin - Group B"
       },
       {
         "rank": 1,
@@ -11248,7 +11248,7 @@
         "gaPerGame": 1,
         "pim": 4,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Championship Series"
       },
       {
         "rank": 2,
@@ -11271,7 +11271,7 @@
         "gaPerGame": 3,
         "pim": 6,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Championship Series"
       },
       {
         "rank": 3,
@@ -11294,7 +11294,7 @@
         "gaPerGame": 4,
         "pim": 2,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Championship Series"
       },
       {
         "rank": 1,
@@ -11302,6 +11302,29 @@
         "teamName": "SUNSHINE COAST MHA U11 A",
         "teamShortName": "U11 BLUES",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1f0247c0-8610-6644-aec1-06ee120d0117/logos/1f0247c0-85fa-6d26-ba40-06ee120d0117.jpg",
+        "gamesPlayed": 2,
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "otWins": 0,
+        "otLosses": 0,
+        "points": 4,
+        "pointsPct": 0.667,
+        "goalsFor": 10,
+        "goalsAgainst": 10,
+        "diff": 0,
+        "gfPerGame": 5,
+        "gaPerGame": 5,
+        "pim": 10,
+        "pimPerGame": 5,
+        "groupName": "GVC Flight 1 - Presidents Series"
+      },
+      {
+        "rank": 2,
+        "teamId": 113642,
+        "teamName": "NORTH SHORE WINTER CLUB MHA U11 A2",
+        "teamShortName": "U11 A2",
+        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6706-d6ac-69f4-ab53-068fc9a36a40/logos/1ebc017f-329e-6146-97c0-06d7167eb1a8.png",
         "gamesPlayed": 1,
         "wins": 1,
         "losses": 0,
@@ -11310,17 +11333,17 @@
         "otLosses": 0,
         "points": 3,
         "pointsPct": 1,
-        "goalsFor": 6,
-        "goalsAgainst": 5,
+        "goalsFor": 5,
+        "goalsAgainst": 4,
         "diff": 1,
-        "gfPerGame": 6,
-        "gaPerGame": 5,
+        "gfPerGame": 5,
+        "gaPerGame": 4,
         "pim": 6,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Presidents Series"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "teamId": 114338,
         "teamName": "VANCOUVER THUNDERBIRD MHA U11 A2",
         "teamShortName": "U11 A2",
@@ -11340,30 +11363,7 @@
         "gaPerGame": 6,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
-      },
-      {
-        "rank": 3,
-        "teamId": 113642,
-        "teamName": "NORTH SHORE WINTER CLUB MHA U11 A2",
-        "teamShortName": "U11 A2",
-        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6706-d6ac-69f4-ab53-068fc9a36a40/logos/1ebc017f-329e-6146-97c0-06d7167eb1a8.png",
-        "gamesPlayed": 0,
-        "wins": 0,
-        "losses": 0,
-        "ties": 0,
-        "otWins": 0,
-        "otLosses": 0,
-        "points": 0,
-        "pointsPct": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "diff": 0,
-        "gfPerGame": 0,
-        "gaPerGame": 0,
-        "pim": 0,
-        "pimPerGame": 0,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Presidents Series"
       },
       {
         "rank": 1,
@@ -11386,7 +11386,7 @@
         "gaPerGame": 1.5,
         "pim": 26,
         "pimPerGame": 4.33,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Round Robin Series"
       },
       {
         "rank": 2,
@@ -11409,7 +11409,7 @@
         "gaPerGame": 1.67,
         "pim": 28,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Round Robin Series"
       },
       {
         "rank": 3,
@@ -11432,7 +11432,7 @@
         "gaPerGame": 2.6,
         "pim": 36,
         "pimPerGame": 7.2,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Round Robin Series"
       },
       {
         "rank": 4,
@@ -11455,7 +11455,7 @@
         "gaPerGame": 4.2,
         "pim": 24,
         "pimPerGame": 4.8,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Round Robin Series"
       },
       {
         "rank": 5,
@@ -11478,7 +11478,7 @@
         "gaPerGame": 5.4,
         "pim": 36,
         "pimPerGame": 7.2,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Round Robin Series"
       },
       {
         "rank": 6,
@@ -11501,7 +11501,7 @@
         "gaPerGame": 6,
         "pim": 26,
         "pimPerGame": 5.2,
-        "groupName": null
+        "groupName": "GVC Flight 1 - Round Robin Series"
       },
       {
         "rank": 1,
@@ -11524,7 +11524,7 @@
         "gaPerGame": 2.67,
         "pim": 24,
         "pimPerGame": 8,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Championship Series"
       },
       {
         "rank": 2,
@@ -11547,7 +11547,7 @@
         "gaPerGame": 2,
         "pim": 22,
         "pimPerGame": 7.33,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Championship Series"
       },
       {
         "rank": 3,
@@ -11570,7 +11570,7 @@
         "gaPerGame": 5.33,
         "pim": 18,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Championship Series"
       },
       {
         "rank": 4,
@@ -11593,7 +11593,7 @@
         "gaPerGame": 2.67,
         "pim": 22,
         "pimPerGame": 7.33,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Championship Series"
       },
       {
         "rank": 1,
@@ -11616,10 +11616,33 @@
         "gaPerGame": 1.5,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Presidents Series"
       },
       {
         "rank": 2,
+        "teamId": 113207,
+        "teamName": "BURNABY MHA U11 A1",
+        "teamShortName": "BMHA U11 A1",
+        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6706-2ffa-62f0-a5e6-0220ca96f6a8/logos/1ebc017f-20d9-6ea6-a2b1-06d7167eb1a8.jpg",
+        "gamesPlayed": 4,
+        "wins": 3,
+        "losses": 1,
+        "ties": 0,
+        "otWins": 0,
+        "otLosses": 0,
+        "points": 9,
+        "pointsPct": 0.75,
+        "goalsFor": 17,
+        "goalsAgainst": 2,
+        "diff": 15,
+        "gfPerGame": 4.25,
+        "gaPerGame": 0.5,
+        "pim": 14,
+        "pimPerGame": 3.5,
+        "groupName": "GVC Flight 2 - Presidents Series"
+      },
+      {
+        "rank": 3,
         "teamId": 113644,
         "teamName": "NORTH SHORE WINTER CLUB MHA U11 A3",
         "teamShortName": "U11 A3",
@@ -11639,30 +11662,7 @@
         "gaPerGame": 2.75,
         "pim": 22,
         "pimPerGame": 5.5,
-        "groupName": null
-      },
-      {
-        "rank": 3,
-        "teamId": 113207,
-        "teamName": "BURNABY MHA U11 A1",
-        "teamShortName": "BMHA U11 A1",
-        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6706-2ffa-62f0-a5e6-0220ca96f6a8/logos/1ebc017f-20d9-6ea6-a2b1-06d7167eb1a8.jpg",
-        "gamesPlayed": 3,
-        "wins": 2,
-        "losses": 1,
-        "ties": 0,
-        "otWins": 0,
-        "otLosses": 0,
-        "points": 6,
-        "pointsPct": 0.667,
-        "goalsFor": 10,
-        "goalsAgainst": 1,
-        "diff": 9,
-        "gfPerGame": 3.33,
-        "gaPerGame": 0.33,
-        "pim": 8,
-        "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Presidents Series"
       },
       {
         "rank": 4,
@@ -11670,22 +11670,22 @@
         "teamName": "NORTH SHORE WINTER CLUB MHA U11 A4",
         "teamShortName": "U11 A4",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6706-d6ac-69f4-ab53-068fc9a36a40/logos/1ebc017f-329e-6146-97c0-06d7167eb1a8.png",
-        "gamesPlayed": 3,
+        "gamesPlayed": 4,
         "wins": 1,
-        "losses": 2,
+        "losses": 3,
         "ties": 0,
         "otWins": 0,
         "otLosses": 0,
-        "points": 3,
+        "points": 4,
         "pointsPct": 0.333,
-        "goalsFor": 9,
-        "goalsAgainst": 18,
-        "diff": -9,
-        "gfPerGame": 3,
-        "gaPerGame": 6,
-        "pim": 18,
-        "pimPerGame": 6,
-        "groupName": null
+        "goalsFor": 10,
+        "goalsAgainst": 25,
+        "diff": -15,
+        "gfPerGame": 2.5,
+        "gaPerGame": 6.25,
+        "pim": 22,
+        "pimPerGame": 5.5,
+        "groupName": "GVC Flight 2 - Presidents Series"
       },
       {
         "rank": 5,
@@ -11708,7 +11708,7 @@
         "gaPerGame": 4.75,
         "pim": 28,
         "pimPerGame": 7,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Presidents Series"
       },
       {
         "rank": 1,
@@ -11731,7 +11731,7 @@
         "gaPerGame": 1.75,
         "pim": 18,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Round Robin - Group A"
       },
       {
         "rank": 2,
@@ -11754,7 +11754,7 @@
         "gaPerGame": 3,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Round Robin - Group A"
       },
       {
         "rank": 3,
@@ -11777,7 +11777,7 @@
         "gaPerGame": 3,
         "pim": 22,
         "pimPerGame": 5.5,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Round Robin - Group A"
       },
       {
         "rank": 3,
@@ -11800,7 +11800,7 @@
         "gaPerGame": 3.5,
         "pim": 28,
         "pimPerGame": 7,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Round Robin - Group A"
       },
       {
         "rank": 5,
@@ -11823,7 +11823,7 @@
         "gaPerGame": 10.25,
         "pim": 30,
         "pimPerGame": 7.5,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Round Robin - Group A"
       },
       {
         "rank": 1,
@@ -11846,7 +11846,7 @@
         "gaPerGame": 1.33,
         "pim": 10,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Round Robin - Group B"
       },
       {
         "rank": 2,
@@ -11869,7 +11869,7 @@
         "gaPerGame": 1.67,
         "pim": 4,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Round Robin - Group B"
       },
       {
         "rank": 3,
@@ -11892,7 +11892,7 @@
         "gaPerGame": 4,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Round Robin - Group B"
       },
       {
         "rank": 4,
@@ -11915,7 +11915,7 @@
         "gaPerGame": 4,
         "pim": 24,
         "pimPerGame": 8,
-        "groupName": null
+        "groupName": "GVC Flight 2 - Round Robin - Group B"
       },
       {
         "rank": 1,
@@ -11923,22 +11923,22 @@
         "teamName": "WEST VANCOUVER MHA U11 A1",
         "teamShortName": "U11 A1",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6707-834a-624c-b763-0220ca96f6a8/logos/1ebc017f-4540-69c0-88b7-020ca418dc48.png",
-        "gamesPlayed": 3,
-        "wins": 2,
+        "gamesPlayed": 4,
+        "wins": 3,
         "losses": 1,
         "ties": 0,
         "otWins": 0,
         "otLosses": 0,
-        "points": 4,
-        "pointsPct": 0.444,
-        "goalsFor": 15,
-        "goalsAgainst": 8,
-        "diff": 7,
+        "points": 6,
+        "pointsPct": 0.5,
+        "goalsFor": 20,
+        "goalsAgainst": 10,
+        "diff": 10,
         "gfPerGame": 5,
-        "gaPerGame": 2.67,
-        "pim": 32,
-        "pimPerGame": 10.67,
-        "groupName": null
+        "gaPerGame": 2.5,
+        "pim": 34,
+        "pimPerGame": 8.5,
+        "groupName": "GVC Flight 3 - Championship Series"
       },
       {
         "rank": 2,
@@ -11946,22 +11946,22 @@
         "teamName": "NORTH VANCOUVER MHA U11 A3",
         "teamShortName": "U11 A3",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1f0246c5-ef36-6610-8437-06ee120d0117/logos/1f0246c5-ef1d-6df4-9e30-06ee120d0117.png",
-        "gamesPlayed": 3,
+        "gamesPlayed": 4,
         "wins": 2,
-        "losses": 1,
+        "losses": 2,
         "ties": 0,
         "otWins": 0,
         "otLosses": 0,
         "points": 4,
-        "pointsPct": 0.444,
-        "goalsFor": 11,
-        "goalsAgainst": 13,
-        "diff": -2,
-        "gfPerGame": 3.67,
-        "gaPerGame": 4.33,
-        "pim": 10,
-        "pimPerGame": 3.33,
-        "groupName": null
+        "pointsPct": 0.333,
+        "goalsFor": 13,
+        "goalsAgainst": 18,
+        "diff": -5,
+        "gfPerGame": 3.25,
+        "gaPerGame": 4.5,
+        "pim": 14,
+        "pimPerGame": 3.5,
+        "groupName": "GVC Flight 3 - Championship Series"
       },
       {
         "rank": 3,
@@ -11984,7 +11984,7 @@
         "gaPerGame": 4.33,
         "pim": 30,
         "pimPerGame": 10,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Championship Series"
       },
       {
         "rank": 4,
@@ -12007,53 +12007,53 @@
         "gaPerGame": 3.33,
         "pim": 22,
         "pimPerGame": 7.33,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Championship Series"
       },
       {
         "rank": 1,
-        "teamId": 141487,
-        "teamName": "WHISTLER MHA U11 A1 WINTERHAWKS",
-        "teamShortName": "WMHA U11 A1",
-        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1f08e70f-6b80-6bae-991d-06d853421783/logos/1f08e70f-6b61-67a4-be6e-06d853421783.png",
-        "gamesPlayed": 4,
-        "wins": 2,
-        "losses": 1,
-        "ties": 1,
-        "otWins": 1,
-        "otLosses": 0,
-        "points": 9,
-        "pointsPct": 0.75,
-        "goalsFor": 17,
-        "goalsAgainst": 15,
-        "diff": 2,
-        "gfPerGame": 4.25,
-        "gaPerGame": 3.75,
-        "pim": 18,
-        "pimPerGame": 4.5,
-        "groupName": null
-      },
-      {
-        "rank": 2,
         "teamId": 114336,
         "teamName": "VANCOUVER THUNDERBIRD MHA U11 A3",
         "teamShortName": "U11 A3",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6707-76aa-6a00-b380-068fc9a36a40/logos/1ebc017f-4508-671e-aac5-0255dd204abc.gif",
-        "gamesPlayed": 3,
-        "wins": 2,
+        "gamesPlayed": 4,
+        "wins": 3,
         "losses": 1,
         "ties": 0,
         "otWins": 0,
         "otLosses": 0,
-        "points": 7,
-        "pointsPct": 0.778,
-        "goalsFor": 12,
-        "goalsAgainst": 6,
-        "diff": 6,
-        "gfPerGame": 4,
+        "points": 10,
+        "pointsPct": 0.833,
+        "goalsFor": 15,
+        "goalsAgainst": 8,
+        "diff": 7,
+        "gfPerGame": 3.75,
         "gaPerGame": 2,
-        "pim": 12,
-        "pimPerGame": 4,
-        "groupName": null
+        "pim": 18,
+        "pimPerGame": 4.5,
+        "groupName": "GVC Flight 3 - Presidents Series"
+      },
+      {
+        "rank": 2,
+        "teamId": 141487,
+        "teamName": "WHISTLER MHA U11 A1 WINTERHAWKS",
+        "teamShortName": "WMHA U11 A1",
+        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/teams/1f08e70f-6b80-6bae-991d-06d853421783/logos/1f08e70f-6b61-67a4-be6e-06d853421783.png",
+        "gamesPlayed": 5,
+        "wins": 2,
+        "losses": 2,
+        "ties": 1,
+        "otWins": 1,
+        "otLosses": 0,
+        "points": 10,
+        "pointsPct": 0.667,
+        "goalsFor": 19,
+        "goalsAgainst": 18,
+        "diff": 1,
+        "gfPerGame": 3.8,
+        "gaPerGame": 3.6,
+        "pim": 18,
+        "pimPerGame": 3.6,
+        "groupName": "GVC Flight 3 - Presidents Series"
       },
       {
         "rank": 3,
@@ -12076,7 +12076,7 @@
         "gaPerGame": 4.25,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Presidents Series"
       },
       {
         "rank": 4,
@@ -12099,7 +12099,7 @@
         "gaPerGame": 4.67,
         "pim": 8,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Presidents Series"
       },
       {
         "rank": 1,
@@ -12122,7 +12122,7 @@
         "gaPerGame": 1.33,
         "pim": 22,
         "pimPerGame": 7.33,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Round Robin - Group A"
       },
       {
         "rank": 2,
@@ -12145,7 +12145,7 @@
         "gaPerGame": 2.67,
         "pim": 6,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Round Robin - Group A"
       },
       {
         "rank": 3,
@@ -12168,7 +12168,7 @@
         "gaPerGame": 4,
         "pim": 26,
         "pimPerGame": 8.67,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Round Robin - Group A"
       },
       {
         "rank": 4,
@@ -12191,7 +12191,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Round Robin - Group A"
       },
       {
         "rank": 5,
@@ -12214,7 +12214,7 @@
         "gaPerGame": 4.67,
         "pim": 6,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Round Robin - Group A"
       },
       {
         "rank": 1,
@@ -12237,7 +12237,7 @@
         "gaPerGame": 3,
         "pim": 10,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Round Robin - Group B"
       },
       {
         "rank": 2,
@@ -12260,7 +12260,7 @@
         "gaPerGame": 4,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Round Robin - Group B"
       },
       {
         "rank": 3,
@@ -12283,7 +12283,7 @@
         "gaPerGame": 4.67,
         "pim": 2,
         "pimPerGame": 0.67,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Round Robin - Group B"
       },
       {
         "rank": 4,
@@ -12306,7 +12306,7 @@
         "gaPerGame": 5,
         "pim": 14,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "GVC Flight 3 - Round Robin - Group B"
       },
       {
         "rank": 1,
@@ -12329,7 +12329,7 @@
         "gaPerGame": 1,
         "pim": 8,
         "pimPerGame": 8,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Championship Series"
       },
       {
         "rank": 2,
@@ -12352,7 +12352,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Championship Series"
       },
       {
         "rank": 3,
@@ -12375,53 +12375,53 @@
         "gaPerGame": 2,
         "pim": 8,
         "pimPerGame": 8,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Championship Series"
       },
       {
         "rank": 1,
-        "teamId": 114335,
-        "teamName": "VANCOUVER THUNDERBIRD MHA U11 A4",
-        "teamShortName": "U11 A4",
-        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6707-76aa-6a00-b380-068fc9a36a40/logos/1ebc017f-4508-671e-aac5-0255dd204abc.gif",
-        "gamesPlayed": 1,
-        "wins": 1,
-        "losses": 0,
-        "ties": 0,
-        "otWins": 0,
-        "otLosses": 0,
-        "points": 3,
-        "pointsPct": 1,
-        "goalsFor": 6,
-        "goalsAgainst": 1,
-        "diff": 5,
-        "gfPerGame": 6,
-        "gaPerGame": 1,
-        "pim": 6,
-        "pimPerGame": 6,
-        "groupName": null
-      },
-      {
-        "rank": 2,
         "teamId": 114303,
         "teamName": "VANCOUVER MHA U11 A2",
         "teamShortName": "U11 A2",
         "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6707-6d2c-6974-84e7-0220ca96f6a8/logos/1ebc017f-44f3-6094-82e0-0682f9c65d50.jpg",
-        "gamesPlayed": 1,
-        "wins": 1,
+        "gamesPlayed": 2,
+        "wins": 2,
         "losses": 0,
         "ties": 0,
         "otWins": 0,
         "otLosses": 0,
-        "points": 2,
+        "points": 5,
+        "pointsPct": 0.833,
+        "goalsFor": 16,
+        "goalsAgainst": 2,
+        "diff": 14,
+        "gfPerGame": 8,
+        "gaPerGame": 1,
+        "pim": 12,
+        "pimPerGame": 6,
+        "groupName": "GVC Flight 4 - Presidents Series"
+      },
+      {
+        "rank": 2,
+        "teamId": 114335,
+        "teamName": "VANCOUVER THUNDERBIRD MHA U11 A4",
+        "teamShortName": "U11 A4",
+        "teamLogoUrl": "https://d1yykh3c16sa22.cloudfront.net/organizations/1ebb6707-76aa-6a00-b380-068fc9a36a40/logos/1ebc017f-4508-671e-aac5-0255dd204abc.gif",
+        "gamesPlayed": 2,
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "otWins": 0,
+        "otLosses": 0,
+        "points": 4,
         "pointsPct": 0.667,
-        "goalsFor": 13,
-        "goalsAgainst": 0,
-        "diff": 13,
-        "gfPerGame": 13,
-        "gaPerGame": 0,
-        "pim": 8,
-        "pimPerGame": 8,
-        "groupName": null
+        "goalsFor": 8,
+        "goalsAgainst": 4,
+        "diff": 4,
+        "gfPerGame": 4,
+        "gaPerGame": 2,
+        "pim": 10,
+        "pimPerGame": 5,
+        "groupName": "GVC Flight 4 - Presidents Series"
       },
       {
         "rank": 3,
@@ -12444,7 +12444,7 @@
         "gaPerGame": 13,
         "pim": 4,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Presidents Series"
       },
       {
         "rank": 4,
@@ -12467,7 +12467,7 @@
         "gaPerGame": 6,
         "pim": 4,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Presidents Series"
       },
       {
         "rank": 1,
@@ -12490,7 +12490,7 @@
         "gaPerGame": 2.5,
         "pim": 8,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Round Robin Series"
       },
       {
         "rank": 2,
@@ -12513,7 +12513,7 @@
         "gaPerGame": 2,
         "pim": 10,
         "pimPerGame": 1.67,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Round Robin Series"
       },
       {
         "rank": 3,
@@ -12536,7 +12536,7 @@
         "gaPerGame": 2.17,
         "pim": 30,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Round Robin Series"
       },
       {
         "rank": 4,
@@ -12559,7 +12559,7 @@
         "gaPerGame": 2.5,
         "pim": 24,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Round Robin Series"
       },
       {
         "rank": 5,
@@ -12582,7 +12582,7 @@
         "gaPerGame": 3.33,
         "pim": 12,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Round Robin Series"
       },
       {
         "rank": 6,
@@ -12605,7 +12605,7 @@
         "gaPerGame": 7.17,
         "pim": 6,
         "pimPerGame": 1,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Round Robin Series"
       },
       {
         "rank": 7,
@@ -12628,7 +12628,7 @@
         "gaPerGame": 12.33,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "GVC Flight 4 - Round Robin Series"
       }
     ]
   },
@@ -12657,7 +12657,7 @@
         "gaPerGame": 3.2,
         "pim": 14,
         "pimPerGame": 2.8,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 2,
@@ -12678,7 +12678,7 @@
         "gaPerGame": 3,
         "pim": 14,
         "pimPerGame": 2.8,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 3,
@@ -12699,7 +12699,7 @@
         "gaPerGame": 2.25,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 4,
@@ -12720,7 +12720,7 @@
         "gaPerGame": 5.25,
         "pim": 22,
         "pimPerGame": 5.5,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 5,
@@ -12741,7 +12741,7 @@
         "gaPerGame": 6,
         "pim": 8,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 1,
@@ -12762,7 +12762,7 @@
         "gaPerGame": 3.25,
         "pim": 8,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 2,
@@ -12783,7 +12783,7 @@
         "gaPerGame": 4.75,
         "pim": 6,
         "pimPerGame": 1.5,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 3,
@@ -12804,7 +12804,7 @@
         "gaPerGame": 3,
         "pim": 2,
         "pimPerGame": 0.67,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 4,
@@ -12825,7 +12825,7 @@
         "gaPerGame": 4.67,
         "pim": 6,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 1,
@@ -12846,7 +12846,7 @@
         "gaPerGame": 3.25,
         "pim": 10,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "White"
       },
       {
         "rank": 2,
@@ -12867,7 +12867,7 @@
         "gaPerGame": 3.5,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "White"
       },
       {
         "rank": 3,
@@ -12888,7 +12888,7 @@
         "gaPerGame": 4.67,
         "pim": 12,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "White"
       },
       {
         "rank": 4,
@@ -12909,7 +12909,7 @@
         "gaPerGame": 10,
         "pim": 10,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "White"
       }
     ]
   },
@@ -12938,7 +12938,7 @@
         "gaPerGame": 3,
         "pim": 37,
         "pimPerGame": 4.63,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 2,
@@ -12959,7 +12959,7 @@
         "gaPerGame": 3.63,
         "pim": 24,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 3,
@@ -12980,7 +12980,7 @@
         "gaPerGame": 5.13,
         "pim": 34,
         "pimPerGame": 4.25,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 4,
@@ -13001,7 +13001,7 @@
         "gaPerGame": 5.88,
         "pim": 40,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 5,
@@ -13022,7 +13022,7 @@
         "gaPerGame": 5.38,
         "pim": 26,
         "pimPerGame": 3.25,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 1,
@@ -13043,7 +13043,7 @@
         "gaPerGame": 6,
         "pim": 10,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 2,
@@ -13064,7 +13064,7 @@
         "gaPerGame": 4.6,
         "pim": 6,
         "pimPerGame": 1.2,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 3,
@@ -13085,7 +13085,7 @@
         "gaPerGame": 4.8,
         "pim": 4,
         "pimPerGame": 0.8,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 4,
@@ -13106,7 +13106,7 @@
         "gaPerGame": 3.6,
         "pim": 10,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 5,
@@ -13127,7 +13127,7 @@
         "gaPerGame": 4.2,
         "pim": 28,
         "pimPerGame": 5.6,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 6,
@@ -13148,7 +13148,7 @@
         "gaPerGame": 9.6,
         "pim": 4,
         "pimPerGame": 0.8,
-        "groupName": null
+        "groupName": "Gold"
       },
       {
         "rank": 1,
@@ -13169,7 +13169,7 @@
         "gaPerGame": 1,
         "pim": 24,
         "pimPerGame": 4.8,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 2,
@@ -13190,7 +13190,7 @@
         "gaPerGame": 1.4,
         "pim": 6,
         "pimPerGame": 1.2,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 3,
@@ -13211,7 +13211,7 @@
         "gaPerGame": 4.6,
         "pim": 18,
         "pimPerGame": 3.6,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 4,
@@ -13232,7 +13232,7 @@
         "gaPerGame": 3.4,
         "pim": 32,
         "pimPerGame": 6.4,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 5,
@@ -13253,7 +13253,7 @@
         "gaPerGame": 3.2,
         "pim": 36,
         "pimPerGame": 7.2,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 6,
@@ -13274,7 +13274,7 @@
         "gaPerGame": 6,
         "pim": 30,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 1,
@@ -13295,7 +13295,7 @@
         "gaPerGame": 4,
         "pim": 20,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 2,
@@ -13316,7 +13316,7 @@
         "gaPerGame": 2.63,
         "pim": 27,
         "pimPerGame": 3.38,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 3,
@@ -13337,7 +13337,7 @@
         "gaPerGame": 5.5,
         "pim": 20,
         "pimPerGame": 2.5,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 4,
@@ -13358,7 +13358,7 @@
         "gaPerGame": 3.75,
         "pim": 22,
         "pimPerGame": 2.75,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 5,
@@ -13379,7 +13379,7 @@
         "gaPerGame": 6.13,
         "pim": 28,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "Orange"
       },
       {
         "rank": 1,
@@ -13400,7 +13400,7 @@
         "gaPerGame": 3.5,
         "pim": 14,
         "pimPerGame": 2.33,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 2,
@@ -13421,7 +13421,7 @@
         "gaPerGame": 4.17,
         "pim": 6,
         "pimPerGame": 1,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 3,
@@ -13442,7 +13442,7 @@
         "gaPerGame": 4.83,
         "pim": 8,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 4,
@@ -13463,7 +13463,7 @@
         "gaPerGame": 3.83,
         "pim": 33,
         "pimPerGame": 5.5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 5,
@@ -13484,7 +13484,7 @@
         "gaPerGame": 3.17,
         "pim": 16,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 6,
@@ -13505,7 +13505,7 @@
         "gaPerGame": 4.5,
         "pim": 6,
         "pimPerGame": 1,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 7,
@@ -13526,7 +13526,7 @@
         "gaPerGame": 5.67,
         "pim": 45,
         "pimPerGame": 7.5,
-        "groupName": null
+        "groupName": "Red"
       }
     ]
   },
@@ -13555,7 +13555,7 @@
         "gaPerGame": 1.5,
         "pim": 4,
         "pimPerGame": 0.67,
-        "groupName": null
+        "groupName": "Orange Flight - East"
       },
       {
         "rank": 2,
@@ -13576,7 +13576,7 @@
         "gaPerGame": 3,
         "pim": 6,
         "pimPerGame": 1,
-        "groupName": null
+        "groupName": "Orange Flight - East"
       },
       {
         "rank": 3,
@@ -13597,7 +13597,7 @@
         "gaPerGame": 1.5,
         "pim": 8,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "Orange Flight - East"
       },
       {
         "rank": 4,
@@ -13618,7 +13618,7 @@
         "gaPerGame": 2.33,
         "pim": 6,
         "pimPerGame": 1,
-        "groupName": null
+        "groupName": "Orange Flight - East"
       },
       {
         "rank": 5,
@@ -13639,7 +13639,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Orange Flight - East"
       },
       {
         "rank": 5,
@@ -13660,7 +13660,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Orange Flight - East"
       },
       {
         "rank": 5,
@@ -13681,7 +13681,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Orange Flight - East"
       },
       {
         "rank": 5,
@@ -13702,7 +13702,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Orange Flight - East"
       },
       {
         "rank": 1,
@@ -13723,7 +13723,7 @@
         "gaPerGame": 0.63,
         "pim": 10,
         "pimPerGame": 1.25,
-        "groupName": null
+        "groupName": "Orange Flight - West"
       },
       {
         "rank": 2,
@@ -13744,7 +13744,7 @@
         "gaPerGame": 2.75,
         "pim": 12,
         "pimPerGame": 1.5,
-        "groupName": null
+        "groupName": "Orange Flight - West"
       },
       {
         "rank": 3,
@@ -13765,7 +13765,7 @@
         "gaPerGame": 2.25,
         "pim": 14,
         "pimPerGame": 1.75,
-        "groupName": null
+        "groupName": "Orange Flight - West"
       },
       {
         "rank": 4,
@@ -13786,7 +13786,7 @@
         "gaPerGame": 5.63,
         "pim": 16,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Orange Flight - West"
       },
       {
         "rank": 5,
@@ -13807,7 +13807,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Orange Flight - West"
       },
       {
         "rank": 1,
@@ -13828,7 +13828,7 @@
         "gaPerGame": 0.67,
         "pim": 8,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 2,
@@ -13849,7 +13849,7 @@
         "gaPerGame": 1.17,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 3,
@@ -13870,7 +13870,7 @@
         "gaPerGame": 2.33,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 4,
@@ -13891,7 +13891,7 @@
         "gaPerGame": 5.83,
         "pim": 12,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 5,
@@ -13912,7 +13912,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 5,
@@ -13933,7 +13933,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 5,
@@ -13954,7 +13954,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 5,
@@ -13975,7 +13975,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Purple Flight - East"
       },
       {
         "rank": 1,
@@ -13996,7 +13996,7 @@
         "gaPerGame": 2.33,
         "pim": 8,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 2,
@@ -14017,7 +14017,7 @@
         "gaPerGame": 2.5,
         "pim": 22,
         "pimPerGame": 3.67,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 3,
@@ -14038,7 +14038,7 @@
         "gaPerGame": 2.33,
         "pim": 14,
         "pimPerGame": 2.33,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 4,
@@ -14059,7 +14059,7 @@
         "gaPerGame": 3.83,
         "pim": 16,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "Purple Flight - West"
       },
       {
         "rank": 1,
@@ -14080,7 +14080,7 @@
         "gaPerGame": 3,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 2,
@@ -14101,7 +14101,7 @@
         "gaPerGame": 4.5,
         "pim": 4,
         "pimPerGame": 1,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 3,
@@ -14122,7 +14122,7 @@
         "gaPerGame": 4.25,
         "pim": 6,
         "pimPerGame": 1.5,
-        "groupName": null
+        "groupName": "Red Flight - East"
       },
       {
         "rank": 1,
@@ -14143,7 +14143,7 @@
         "gaPerGame": 0.71,
         "pim": 8,
         "pimPerGame": 1.14,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 2,
@@ -14164,7 +14164,7 @@
         "gaPerGame": 1.57,
         "pim": 6,
         "pimPerGame": 0.86,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 3,
@@ -14185,7 +14185,7 @@
         "gaPerGame": 3.17,
         "pim": 2,
         "pimPerGame": 0.33,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 4,
@@ -14206,7 +14206,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Red Flight - West"
       },
       {
         "rank": 1,
@@ -14256,7 +14256,7 @@
         "gaPerGame": 4.25,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 2,
@@ -14277,7 +14277,7 @@
         "gaPerGame": 5.25,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 3,
@@ -14298,7 +14298,7 @@
         "gaPerGame": 6.33,
         "pim": 8,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 4,
@@ -14319,7 +14319,7 @@
         "gaPerGame": 5,
         "pim": 20,
         "pimPerGame": 6.67,
-        "groupName": null
+        "groupName": "Blue"
       },
       {
         "rank": 1,
@@ -14340,7 +14340,7 @@
         "gaPerGame": 4.25,
         "pim": 18,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 2,
@@ -14361,7 +14361,7 @@
         "gaPerGame": 4,
         "pim": 24,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 3,
@@ -14382,7 +14382,7 @@
         "gaPerGame": 7,
         "pim": 20,
         "pimPerGame": 6.67,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 4,
@@ -14403,7 +14403,7 @@
         "gaPerGame": 5,
         "pim": 8,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "Green"
       },
       {
         "rank": 1,
@@ -14424,7 +14424,7 @@
         "gaPerGame": 3.25,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Purple"
       },
       {
         "rank": 2,
@@ -14445,7 +14445,7 @@
         "gaPerGame": 5.67,
         "pim": 20,
         "pimPerGame": 6.67,
-        "groupName": null
+        "groupName": "Purple"
       },
       {
         "rank": 3,
@@ -14466,7 +14466,7 @@
         "gaPerGame": 3.75,
         "pim": 24,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "Purple"
       },
       {
         "rank": 4,
@@ -14487,7 +14487,7 @@
         "gaPerGame": 8,
         "pim": 16,
         "pimPerGame": 5.33,
-        "groupName": null
+        "groupName": "Purple"
       },
       {
         "rank": 1,
@@ -14508,7 +14508,7 @@
         "gaPerGame": 4.25,
         "pim": 18,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 2,
@@ -14529,7 +14529,7 @@
         "gaPerGame": 4,
         "pim": 20,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 3,
@@ -14550,7 +14550,7 @@
         "gaPerGame": 5.25,
         "pim": 12,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 4,
@@ -14571,7 +14571,7 @@
         "gaPerGame": 6.5,
         "pim": 30,
         "pimPerGame": 7.5,
-        "groupName": null
+        "groupName": "Red"
       },
       {
         "rank": 5,
@@ -14592,7 +14592,7 @@
         "gaPerGame": 5.5,
         "pim": 22,
         "pimPerGame": 5.5,
-        "groupName": null
+        "groupName": "Red"
       }
     ]
   },
@@ -15067,7 +15067,7 @@
         "gaPerGame": 3,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 2,
@@ -15089,7 +15089,7 @@
         "gaPerGame": 2,
         "pim": 10,
         "pimPerGame": 1.67,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 3,
@@ -15111,7 +15111,7 @@
         "gaPerGame": 2.5,
         "pim": 16,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 4,
@@ -15133,7 +15133,7 @@
         "gaPerGame": 2.83,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 5,
@@ -15155,7 +15155,7 @@
         "gaPerGame": 3,
         "pim": 28,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 6,
@@ -15177,7 +15177,7 @@
         "gaPerGame": 2.5,
         "pim": 30,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 7,
@@ -15199,7 +15199,7 @@
         "gaPerGame": 6,
         "pim": 33,
         "pimPerGame": 5.5,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 8,
@@ -15221,7 +15221,7 @@
         "gaPerGame": 4,
         "pim": 18,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 1,
@@ -15243,7 +15243,7 @@
         "gaPerGame": 1,
         "pim": 10,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 2,
@@ -15265,7 +15265,7 @@
         "gaPerGame": 2.8,
         "pim": 8,
         "pimPerGame": 1.6,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 3,
@@ -15287,7 +15287,7 @@
         "gaPerGame": 3.83,
         "pim": 6,
         "pimPerGame": 1,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 4,
@@ -15309,7 +15309,7 @@
         "gaPerGame": 6.4,
         "pim": 10,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 5,
@@ -15331,7 +15331,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 1,
@@ -15384,7 +15384,7 @@
         "gaPerGame": 1.7,
         "pim": 45,
         "pimPerGame": 4.5,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 2,
@@ -15407,7 +15407,7 @@
         "gaPerGame": 2.1,
         "pim": 24,
         "pimPerGame": 2.4,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 3,
@@ -15430,7 +15430,7 @@
         "gaPerGame": 1.6,
         "pim": 22,
         "pimPerGame": 2.2,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 4,
@@ -15453,7 +15453,7 @@
         "gaPerGame": 2.4,
         "pim": 28,
         "pimPerGame": 2.8,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 5,
@@ -15476,7 +15476,7 @@
         "gaPerGame": 2.2,
         "pim": 34,
         "pimPerGame": 3.4,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 6,
@@ -15499,7 +15499,7 @@
         "gaPerGame": 5,
         "pim": 40,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 7,
@@ -15522,7 +15522,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 7,
@@ -15545,7 +15545,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Tier 1"
       },
       {
         "rank": 1,
@@ -15568,7 +15568,7 @@
         "gaPerGame": 1,
         "pim": 20,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 2,
@@ -15591,7 +15591,7 @@
         "gaPerGame": 2,
         "pim": 32,
         "pimPerGame": 2.91,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 3,
@@ -15614,7 +15614,7 @@
         "gaPerGame": 1.5,
         "pim": 26,
         "pimPerGame": 2.6,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 4,
@@ -15637,7 +15637,7 @@
         "gaPerGame": 3.5,
         "pim": 14,
         "pimPerGame": 1.4,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 5,
@@ -15660,7 +15660,7 @@
         "gaPerGame": 1.33,
         "pim": 2,
         "pimPerGame": 0.67,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 6,
@@ -15683,7 +15683,7 @@
         "gaPerGame": 1,
         "pim": 8,
         "pimPerGame": 2.67,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 7,
@@ -15706,7 +15706,7 @@
         "gaPerGame": 4.3,
         "pim": 26,
         "pimPerGame": 2.6,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 8,
@@ -15729,7 +15729,7 @@
         "gaPerGame": 5.14,
         "pim": 16,
         "pimPerGame": 2.29,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 9,
@@ -15752,7 +15752,7 @@
         "gaPerGame": 3.33,
         "pim": 4,
         "pimPerGame": 1.33,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 10,
@@ -15775,7 +15775,7 @@
         "gaPerGame": 3.33,
         "pim": 18,
         "pimPerGame": 6,
-        "groupName": null
+        "groupName": "Tier 2"
       },
       {
         "rank": 11,
@@ -15798,7 +15798,7 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": "Tier 2"
       }
     ]
   },
@@ -15829,7 +15829,7 @@
         "gaPerGame": 1.33,
         "pim": 20,
         "pimPerGame": 3.33,
-        "groupName": null
+        "groupName": "Tier 1 - Round 1"
       },
       {
         "rank": 2,
@@ -15852,7 +15852,7 @@
         "gaPerGame": 3,
         "pim": 12,
         "pimPerGame": 2,
-        "groupName": null
+        "groupName": "Tier 1 - Round 1"
       },
       {
         "rank": 3,
@@ -15875,7 +15875,7 @@
         "gaPerGame": 1.8,
         "pim": 12,
         "pimPerGame": 2.4,
-        "groupName": null
+        "groupName": "Tier 1 - Round 1"
       },
       {
         "rank": 4,
@@ -15898,7 +15898,7 @@
         "gaPerGame": 2.6,
         "pim": 16,
         "pimPerGame": 3.2,
-        "groupName": null
+        "groupName": "Tier 1 - Round 1"
       },
       {
         "rank": 5,
@@ -15921,7 +15921,7 @@
         "gaPerGame": 2.2,
         "pim": 20,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "Tier 1 - Round 1"
       },
       {
         "rank": 6,
@@ -15944,7 +15944,7 @@
         "gaPerGame": 5.4,
         "pim": 22,
         "pimPerGame": 4.4,
-        "groupName": null
+        "groupName": "Tier 1 - Round 1"
       },
       {
         "rank": 1,
@@ -15967,7 +15967,7 @@
         "gaPerGame": 1.67,
         "pim": 38,
         "pimPerGame": 4.22,
-        "groupName": null
+        "groupName": "Tier 2 - Round 1"
       },
       {
         "rank": 2,
@@ -15990,7 +15990,7 @@
         "gaPerGame": 1.89,
         "pim": 42,
         "pimPerGame": 4.67,
-        "groupName": null
+        "groupName": "Tier 2 - Round 1"
       },
       {
         "rank": 3,
@@ -16013,7 +16013,7 @@
         "gaPerGame": 1.38,
         "pim": 22,
         "pimPerGame": 2.75,
-        "groupName": null
+        "groupName": "Tier 2 - Round 1"
       },
       {
         "rank": 4,
@@ -16036,7 +16036,7 @@
         "gaPerGame": 2.75,
         "pim": 59,
         "pimPerGame": 7.38,
-        "groupName": null
+        "groupName": "Tier 2 - Round 1"
       },
       {
         "rank": 5,
@@ -16059,7 +16059,7 @@
         "gaPerGame": 3.5,
         "pim": 24,
         "pimPerGame": 3,
-        "groupName": null
+        "groupName": "Tier 2 - Round 1"
       },
       {
         "rank": 6,
@@ -16082,7 +16082,7 @@
         "gaPerGame": 5,
         "pim": 28,
         "pimPerGame": 3.5,
-        "groupName": null
+        "groupName": "Tier 2 - Round 1"
       },
       {
         "rank": 7,
@@ -16105,7 +16105,7 @@
         "gaPerGame": 3.38,
         "pim": 22,
         "pimPerGame": 2.75,
-        "groupName": null
+        "groupName": "Tier 2 - Round 1"
       },
       {
         "rank": 8,
@@ -16128,7 +16128,7 @@
         "gaPerGame": 5.75,
         "pim": 40,
         "pimPerGame": 5,
-        "groupName": null
+        "groupName": "Tier 2 - Round 1"
       },
       {
         "rank": 9,
@@ -16151,7 +16151,7 @@
         "gaPerGame": 4.13,
         "pim": 32,
         "pimPerGame": 4,
-        "groupName": null
+        "groupName": "Tier 2 - Round 1"
       }
     ]
   },

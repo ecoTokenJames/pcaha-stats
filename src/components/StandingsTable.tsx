@@ -39,7 +39,7 @@ export function StandingsTable({
     return sortAsc ? cmp : -cmp;
   });
 
-  // Split into groups if needed
+  // Split into groups if needed, sorted by tier level (highest first)
   const groups: { name: string | null; teams: TeamStanding[] }[] = [];
   if (hasGroups) {
     const groupMap = new Map<string, TeamStanding[]>();
@@ -48,9 +48,53 @@ export function StandingsTable({
       if (!groupMap.has(g)) groupMap.set(g, []);
       groupMap.get(g)!.push(t);
     }
-    for (const [name, gTeams] of groupMap) {
-      groups.push({ name, teams: gTeams });
-    }
+    const unsorted = Array.from(groupMap.entries()).map(([name, gTeams]) => ({
+      name,
+      teams: gTeams,
+    }));
+
+    // Sort groups: Inter-Conference first, then by conference prefix + flight number
+    unsorted.sort((a, b) => {
+      const aName = a.name || "";
+      const bName = b.name || "";
+
+      // Inter-Conference is always first (highest level)
+      const aIsInter = aName.toLowerCase().includes("inter-conference");
+      const bIsInter = bName.toLowerCase().includes("inter-conference");
+      if (aIsInter && !bIsInter) return -1;
+      if (!aIsInter && bIsInter) return 1;
+
+      // Extract conference prefix (FVC, GVC) and flight/tier number
+      const parseGroup = (name: string) => {
+        const lower = name.toLowerCase();
+        // Match patterns like "FVC Flight 3", "GVC Flight 1", "Tier 2", "Flight 5"
+        const match = lower.match(
+          /^(fvc|gvc)?\s*(flight|tier|group)\s*(\d+)/
+        );
+        if (match) {
+          return {
+            conference: match[1] || "",
+            number: parseInt(match[3]),
+          };
+        }
+        return { conference: "", number: 999 };
+      };
+
+      const aParsed = parseGroup(aName);
+      const bParsed = parseGroup(bName);
+
+      // Sort by conference first (FVC before GVC), then by number
+      if (aParsed.conference !== bParsed.conference) {
+        return aParsed.conference.localeCompare(bParsed.conference);
+      }
+      if (aParsed.number !== bParsed.number) {
+        return aParsed.number - bParsed.number;
+      }
+
+      return aName.localeCompare(bName);
+    });
+
+    groups.push(...unsorted);
   } else {
     groups.push({ name: null, teams: sortedTeams });
   }
