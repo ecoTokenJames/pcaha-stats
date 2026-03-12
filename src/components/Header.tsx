@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { href: "/", label: "Home" },
   { href: "/standings", label: "Standings" },
   { href: "/leaders", label: "Leaders" },
+  { href: "/tournaments", label: "Tournaments" },
 ];
 
 export function Header() {

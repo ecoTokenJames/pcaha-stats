@@ -10,7 +10,6 @@ import {
   getScheduleType,
   mergePlayerStats,
   type HockeyCategory,
-  type PlayerStat,
 } from "@/lib/data";
 import { TeamRosterTable } from "@/components/TeamRosterTable";
 
@@ -99,24 +98,6 @@ export default async function TeamDetailPage({
   );
   const mergedPlayers = mergePlayerStats(leaguePlayers);
 
-  // Separate tournament players and group by tournament name
-  const tournamentPlayers = allPlayers.filter(
-    (p) => getScheduleType(p.scheduleName) === "Tournament"
-  );
-  const tournamentsByName = new Map<string, PlayerStat[]>();
-  for (const p of tournamentPlayers) {
-    const entries = tournamentsByName.get(p.scheduleName) || [];
-    entries.push(p);
-    tournamentsByName.set(p.scheduleName, entries);
-  }
-  // Sort each tournament's players by points
-  for (const [name, players] of tournamentsByName) {
-    tournamentsByName.set(
-      name,
-      players.sort((a, b) => b.points - a.points || b.goals - a.goals)
-    );
-  }
-
   return (
     <div className="space-y-6">
       {/* Back Link */}
@@ -162,25 +143,8 @@ export default async function TeamDetailPage({
         </div>
       </div>
 
-      {/* Player Roster — Overall Stats */}
+      {/* Player Roster — Overall Stats (excludes tournaments) */}
       <TeamRosterTable players={mergedPlayers} />
-
-      {/* Tournament Stats */}
-      {tournamentsByName.size > 0 && (
-        <div className="space-y-4">
-          <h3 className="text-lg font-semibold text-gray-900">
-            Tournament Stats
-          </h3>
-          {[...tournamentsByName.entries()].map(([tournamentName, players]) => (
-            <div key={tournamentName}>
-              <p className="text-sm font-medium text-gray-600 mb-2">
-                {tournamentName}
-              </p>
-              <TeamRosterTable players={players} />
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
 }

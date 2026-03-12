@@ -4,7 +4,6 @@ import { useState, useMemo } from "react";
 import type { PlayerStat } from "@/lib/data";
 
 type StatCategory = "points" | "goals" | "assists" | "pim";
-type ScheduleView = "overall" | "league" | "tournament";
 
 const STAT_TABS: { key: StatCategory; label: string }[] = [
   { key: "points", label: "Points" },
@@ -16,7 +15,6 @@ const STAT_TABS: { key: StatCategory; label: string }[] = [
 const PAGE_SIZE = 50;
 
 export interface LeaderPlayer extends PlayerStat {
-  scheduleType: string;
   groupName: string | null;
 }
 
@@ -55,32 +53,21 @@ function mergeByPlayer(players: LeaderPlayer[]): LeaderPlayer[] {
 export function LeadersTable({
   players,
   groups,
-  hasTournaments,
 }: {
   players: LeaderPlayer[];
   groups: string[];
-  hasTournaments: boolean;
 }) {
-  const [scheduleView, setScheduleView] = useState<ScheduleView>("overall");
   const [tierFilter, setTierFilter] = useState<string | null>(null);
   const [positionFilter, setPositionFilter] = useState<string | null>(null);
   const [statCategory, setStatCategory] = useState<StatCategory>("points");
   const [showCount, setShowCount] = useState(PAGE_SIZE);
 
-  // Filter by schedule view, merge duplicates, then filter by tier and position
+  // Merge all players (league + playoffs, tournaments excluded upstream), then filter
   const filteredPlayers = useMemo(() => {
-    let filtered: LeaderPlayer[];
-    if (scheduleView === "tournament") {
-      filtered = players.filter((p) => p.scheduleType === "Tournament");
-    } else {
-      // "overall" = everything EXCEPT tournaments (League + Playoffs + Placement)
-      filtered = players.filter((p) => p.scheduleType !== "Tournament");
-    }
+    let filtered = mergeByPlayer(players);
 
-    filtered = mergeByPlayer(filtered);
-
-    // Apply tier/group filter (only for non-tournament views)
-    if (tierFilter !== null && scheduleView !== "tournament") {
+    // Apply tier/group filter
+    if (tierFilter !== null) {
       filtered = filtered.filter((p) => p.groupName === tierFilter);
     }
 
@@ -90,7 +77,7 @@ export function LeadersTable({
     }
 
     return filtered;
-  }, [players, scheduleView, tierFilter, positionFilter]);
+  }, [players, tierFilter, positionFilter]);
 
   // Sort players by selected stat category
   const sortedPlayers = useMemo(() => {
@@ -113,36 +100,8 @@ export function LeadersTable({
 
   return (
     <div>
-      {/* Schedule View Toggle */}
-      {hasTournaments && (
-        <div className="flex gap-1 mb-4">
-          {(
-            [
-              { key: "overall", label: "Overall" },
-              { key: "tournament", label: "Tournaments" },
-            ] as const
-          ).map((tab) => (
-            <button
-              key={tab.key}
-              onClick={() => {
-                setScheduleView(tab.key);
-                setTierFilter(null);
-                setShowCount(PAGE_SIZE);
-              }}
-              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-                scheduleView === tab.key
-                  ? "bg-blue-900 text-white"
-                  : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-900"
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-      )}
-
-      {/* Tier/Flight Filter — hidden for tournament view */}
-      {groups.length > 0 && scheduleView !== "tournament" && (
+      {/* Tier/Flight Filter */}
+      {groups.length > 0 && (
         <div className="flex flex-wrap gap-1 mb-4">
           <button
             onClick={() => {

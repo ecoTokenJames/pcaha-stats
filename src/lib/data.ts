@@ -411,6 +411,56 @@ export function getLeagueAbbrev(name: string): string {
   return "PCAHA";
 }
 
+// ==================== Tournament Helpers ====================
+
+export interface TournamentInfo {
+  scheduleId: number;
+  scheduleName: string;
+  divisionName: string;
+  categoryName: string;
+  teams: TeamStanding[];
+}
+
+/**
+ * Get all tournaments from standings data.
+ */
+export function getAllTournaments(): TournamentInfo[] {
+  const allStandings = getAllStandings();
+  const tournaments: TournamentInfo[] = [];
+
+  for (const data of Object.values(allStandings)) {
+    if (getScheduleType(data.scheduleName) === "Tournament") {
+      tournaments.push({
+        scheduleId: data.scheduleId,
+        scheduleName: data.scheduleName,
+        divisionName: data.divisionName,
+        categoryName: data.categoryName,
+        teams: data.teams,
+      });
+    }
+  }
+
+  // Sort by division then name
+  tournaments.sort((a, b) => {
+    const divA = parseInt(a.divisionName.replace("U", ""));
+    const divB = parseInt(b.divisionName.replace("U", ""));
+    if (divA !== divB) return divA - divB;
+    return a.scheduleName.localeCompare(b.scheduleName);
+  });
+
+  return tournaments;
+}
+
+/**
+ * Get players for a specific tournament (by scheduleId).
+ */
+export function getTournamentPlayers(scheduleId: number): PlayerStat[] {
+  const allPlayers = getAllPlayers();
+  return allPlayers
+    .filter((p) => p.scheduleId === scheduleId)
+    .sort((a, b) => b.points - a.points || b.goals - a.goals);
+}
+
 // ==================== Tier / Group Helpers ====================
 
 /**

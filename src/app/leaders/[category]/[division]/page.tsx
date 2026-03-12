@@ -62,26 +62,26 @@ export default async function LeadersDivisionPage({
     notFound();
   }
 
-  // Get ALL players (both regular season and playoffs)
+  // Get all players, exclude tournaments (tournaments have their own section)
   const players = getFilteredPlayers(divName, category as HockeyCategory);
+  const leaguePlayers = players.filter(
+    (p) => getScheduleType(p.scheduleName) !== "Tournament"
+  );
 
   // Build team → group lookup from League standings for tier filtering
   const groupLookup = getTeamGroupLookup(divName, category as HockeyCategory);
-  const availableGroups = getAvailableGroups(divName, category as HockeyCategory);
+  const availableGroups = getAvailableGroups(
+    divName,
+    category as HockeyCategory
+  );
 
-  // Add scheduleType + groupName fields and filter to min 3 GP
-  const qualifiedPlayers: LeaderPlayer[] = players
+  // Add groupName field and filter to min 3 GP
+  const qualifiedPlayers: LeaderPlayer[] = leaguePlayers
     .filter((p) => p.gamesPlayed >= 3)
     .map((p) => ({
       ...p,
-      scheduleType: getScheduleType(p.scheduleName),
       groupName: groupLookup.get(p.teamId) ?? null,
     }));
-
-  // Check if any tournament data exists for this division
-  const hasTournaments = qualifiedPlayers.some(
-    (p) => p.scheduleType === "Tournament"
-  );
 
   if (qualifiedPlayers.length === 0) {
     return (
@@ -91,11 +91,5 @@ export default async function LeadersDivisionPage({
     );
   }
 
-  return (
-    <LeadersTable
-      players={qualifiedPlayers}
-      groups={availableGroups}
-      hasTournaments={hasTournaments}
-    />
-  );
+  return <LeadersTable players={qualifiedPlayers} groups={availableGroups} />;
 }

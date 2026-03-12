@@ -60,5 +60,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // Tournaments page
+  entries.push({
+    url: `${SITE_URL}/tournaments`,
+    lastModified: new Date(),
+    changeFrequency: "daily",
+    priority: 0.7,
+  });
+
   return entries;
 }
