@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import type { PlayerStat, TeamStanding } from "@/lib/data";
 
 interface TournamentData {
@@ -72,6 +72,16 @@ export function TournamentView({
     if (divFilter === null) return tournaments;
     return tournaments.filter((t) => t.divisionName === divFilter);
   }, [tournaments, divFilter]);
+
+  // Auto-select first tournament when filter changes and current selection is no longer visible
+  useEffect(() => {
+    const isSelectedVisible = filteredTournaments.some(
+      (t) => t.scheduleId === selectedId
+    );
+    if (!isSelectedVisible && filteredTournaments.length > 0) {
+      setSelectedId(filteredTournaments[0].scheduleId);
+    }
+  }, [filteredTournaments, selectedId]);
 
   return (
     <div>

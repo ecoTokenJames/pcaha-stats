@@ -1,5 +1,17 @@
 [
   {
+    "id": 183058,
+    "name": "WEST COAST FALL CLASSIC",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 183890,
+    "name": "18TH ANNUAL BURNABY WILDCATS REMEMBRANCE DAY TOURNAMENT",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
     "id": 181229,
     "name": "FVE U9 League",
     "divisionName": "U9",
@@ -32,6 +44,156 @@
   {
     "id": 181070,
     "name": "U9 C League",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 186216,
+    "name": "TNT TOURNAMENT - U9 C",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 186233,
+    "name": "CANDY CANE TOURNAMENT - U9",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 186887,
+    "name": "U9 MAJOR WINTER CLASSIC",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 186429,
+    "name": "U9 TOURNAMENT",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 186454,
+    "name": "U9 WINTER BREAK TOURNAMENT",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 186886,
+    "name": "U9 MINOR WINTER CLASSIC",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 186948,
+    "name": "HOPE WILDCATS U9 MAJOR/MINOR TOURNAMENT",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 187743,
+    "name": "FEMALE U9 SUNSHINE COAST CREDIT UNION WINTER CLASSIC",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 187741,
+    "name": "SUNSHINE COAST WINTER CLASSIC U9 MINOR",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 187384,
+    "name": "CHILLIWACK FEMALE WINTER CLASSIC - U9 C",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 188346,
+    "name": "ABBOTSFORD U9 FULL ICE MINOR TOURNAMENT",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 189548,
+    "name": "BURNABY WINTER CLUB WINTER CLASSIC U9 MINOR B (Alzner)",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 189760,
+    "name": "2026 FAMILY DAY WINTER CLASSIC - U9 MAJOR",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 190010,
+    "name": "2026 FAMILY DAY WINTER CLASSIC - U9 MINOR",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 189509,
+    "name": "BURNABY WINTER CLUB WINTER CLASSIC U9 MAJOR A (Barzal)",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 189521,
+    "name": "BURNABY WINTER CLUB WINTER CLASSIC U9 MAJOR B (Hopkins)",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 189547,
+    "name": "BURNABY WINTER CLUB WINTER CLASSIC U9 MINOR A (Wright)",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 190418,
+    "name": "FAMILY DAY TOURNAMENT - U9 MAJOR",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 190405,
+    "name": "FAMILY DAY TOURNAMENT - U9 MINOR",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 192057,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U9",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 191692,
+    "name": "FRIENDSHIP TOURNAMENT - U9 MAJOR",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 191693,
+    "name": "FRIENDSHIP TOURNAMENT - U9 MINOR",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 192551,
+    "name": "ABBOTSFORD U9 MINOR MARCH FULL ICE TOURNAMENT",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 192020,
+    "name": "JEAN ADAMS MEMORIAL - U9 MAJOR",
+    "divisionName": "U9",
+    "categoryName": "U9 C"
+  },
+  {
+    "id": 192021,
+    "name": "JEAN ADAMS MEMORIAL - U9 MINOR",
     "divisionName": "U9",
     "categoryName": "U9 C"
   },
@@ -72,6 +234,60 @@
     "categoryName": "U11 C"
   },
   {
+    "id": 183077,
+    "name": "VIAHA South Island VRCMHA U11C Thanksgiving Tournament \"Turkey Cup\"",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 182848,
+    "name": "U11 REP THANKSGIVING TOURNAMENT - TIER 2",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 182849,
+    "name": "U11 REP THANKSGIVING TOURNAMENT - TIER 3",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 182876,
+    "name": "U11 REP THANKSGIVING TOURNAMENT - TIER 4",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 183047,
+    "name": "ICE BREAKER REP TOURNAMENT - U11A - TIER 1",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 183048,
+    "name": "ICE BREAKER REP TOURNAMENT - U11A - TIER 2",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 183049,
+    "name": "ICE BREAKER REP TOURNAMENT - U11A - TIER 3",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 182973,
+    "name": "U11 REP THANKSGIVING TOURNAMENT - TIER 1",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 182518,
+    "name": "VIAHA U11 Development Cowichan Valley Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
     "id": 181148,
     "name": "FVN U11C League",
     "divisionName": "U11",
@@ -102,16 +318,190 @@
     "categoryName": "U11 A"
   },
   {
+    "id": 184432,
+    "name": "REMEMBRANCE DAY CLASSIC",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
     "id": 181172,
     "name": "PL U11C League",
     "divisionName": "U11",
     "categoryName": "U11 C"
   },
   {
+    "id": 183934,
+    "name": "MORGAN RIELLY TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
     "id": 181051,
     "name": "U11A League",
     "divisionName": "U11",
     "categoryName": "U11 A"
+  },
+  {
+    "id": 183887,
+    "name": "18TH ANNUAL BURNABY WILDCATS REMEMBRANCE DAY TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 183528,
+    "name": "HOPE WILDCATS U11 TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 184470,
+    "name": "VIAHA South Island Peninsula U11 Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 184289,
+    "name": "VIAHA U11 Development Powell River Kings Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 184417,
+    "name": "2025 REMEMBRANCE DAY CUP",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 184472,
+    "name": "ICEBREAKER \"C\" TOURNAMENT - U11 ",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 183563,
+    "name": "VIAHA South Island U11 C Kerry Park Fall Classic",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 184752,
+    "name": "SUNSHINE COAST WINTER CLASSIC U11 FEMALE TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 184754,
+    "name": "U11 C SUNSHINE COAST WINTER CLASSIC",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 185866,
+    "name": "Abbotsford U11 REP TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 186110,
+    "name": "U11A WINTER CLASSIC",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 186537,
+    "name": "PMAHA WINTER CLASSIC - BELCARRA",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 186550,
+    "name": "PMAHA WINTER CLASSIC - ROCKY POINT",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 186395,
+    "name": "VANCOUVER MINOR HOCKEY 18TH ANNUAL CANUCK PLACE CHARITY TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 186506,
+    "name": "NVMHA WINTER CLASSIC",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 186062,
+    "name": "PIRATES CUP TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 186402,
+    "name": "VANCOUVER MINOR HOCKEY 18TH ANNUAL CANUCK PLACE CHARITY TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 185108,
+    "name": "VIAHA U11 Development Oceanside 2025 Holiday Classic",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 186444,
+    "name": "Abbotsford U11 REC TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 186768,
+    "name": "CMHA U11 C WINTER CLASSIC",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 187017,
+    "name": "HOLIDAY BASH \"C\" TOURNAMENT - U11 C",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 186883,
+    "name": "VIAHA U11 Development Alberni Valley New Year's Classic",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 185123,
+    "name": "VIAHA U11 Development Nanaimo Coastal Classic Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 187324,
+    "name": "GIRLS WITH GOALS TOURNAMENT - U11 C - POOL A",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 187740,
+    "name": "MISSION STARS WINTER CLASSIC",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 187327,
+    "name": "GIRLS WITH GOALS TOURNAMENT - U11 C - POOL B",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 187356,
+    "name": "CHILLIWACK FEMALE WINTER CLASSIC - U11 C",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
   },
   {
     "id": 188359,
@@ -150,10 +540,52 @@
     "categoryName": "U11 C"
   },
   {
+    "id": 189746,
+    "name": "CMHA U11A PUP TOURNAMENT - BLACK GROUP",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 189666,
+    "name": "CMHA U11A PUP TOURNAMENT - GOLD GROUP 1",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 189673,
+    "name": "CMHA U11A PUP TOURNAMENT - GOLD GROUP 2",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 189754,
+    "name": "CMHA U11A PUP TOURNAMENT - WHITE GROUP",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 188715,
+    "name": "KEN ELMER MEMORIAL - U11",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
     "id": 181252,
     "name": "U11A Playoffs",
     "divisionName": "U11",
     "categoryName": "U11 A"
+  },
+  {
+    "id": 190078,
+    "name": "PAUL BENNETT TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 189662,
+    "name": "U11 C MEMORIAL TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
   },
   {
     "id": 181260,
@@ -188,6 +620,54 @@
   {
     "id": 191180,
     "name": "VIAHA U11 Development Division 4 Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 191817,
+    "name": "RUSTLERS CUP - U11 C",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 192054,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U11A - GROUP 1",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 192055,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U11A - GROUP 2",
+    "divisionName": "U11",
+    "categoryName": "U11 A"
+  },
+  {
+    "id": 192053,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U11 C - GROUP 1",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 192052,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U11 C - GROUP 2",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 191519,
+    "name": "2026 BOBBY LOVE MEMORIAL U11 C TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 192045,
+    "name": "LANGLEY CUP - U11 C",
+    "divisionName": "U11",
+    "categoryName": "U11 C"
+  },
+  {
+    "id": 191706,
+    "name": "VIAHA South Island U11 C JDF Debbie Cooper Memorial Tournament",
     "divisionName": "U11",
     "categoryName": "U11 C"
   },
@@ -228,6 +708,24 @@
     "categoryName": "U13 C"
   },
   {
+    "id": 182966,
+    "name": "CMHA FALL CLASSIC - U13A BLACK TIER",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 182967,
+    "name": "CMHA FALL CLASSIC - U13A GOLD TIER",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 182968,
+    "name": "CMHA FALL CLASSIC - U13A WHITE TIER",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
     "id": 182991,
     "name": "VIAHA Island League U13 Alberni Valley Turkey Classic",
     "divisionName": "U13",
@@ -236,6 +734,30 @@
   {
     "id": 182517,
     "name": "VIAHA Island League U13 Oceanside Thanksgiving Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 183054,
+    "name": "ICE BREAKER REP TOURNAMENT - U13A - TIER 1",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 183055,
+    "name": "ICE BREAKER REP TOURNAMENT - U13A - TIER 2",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 183056,
+    "name": "ICE BREAKER REP TOURNAMENT - U13A - TIER 3",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 182953,
+    "name": "VIAHA Female A Capital Regional U13 Female Thanksgiving Tournament",
     "divisionName": "U13",
     "categoryName": "U13 A"
   },
@@ -256,6 +778,18 @@
     "name": "VIAHA South Island League U13 Regular Season",
     "divisionName": "U13",
     "categoryName": "U13 C"
+  },
+  {
+    "id": 183500,
+    "name": "12TH ANNUAL PACIFIC COAST FEMALE REP CLASSIC - U13 A",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 183542,
+    "name": "12TH ANNUAL PACIFIC COAST FEMALE REP CLASSIC - U13 AA",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
   },
   {
     "id": 183622,
@@ -300,10 +834,28 @@
     "categoryName": "U13 A"
   },
   {
+    "id": 183772,
+    "name": "COLETON NELSON MEMORIAL TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
     "id": 181160,
     "name": "PL U13C League",
     "divisionName": "U13",
     "categoryName": "U13 C"
+  },
+  {
+    "id": 183950,
+    "name": "U13 REMEMBRANCE DAY CLASSIC - BELCARRA",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 183953,
+    "name": "U13 REMEMBRANCE DAY CLASSIC - ROCKY POINT",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
   },
   {
     "id": 184611,
@@ -318,6 +870,84 @@
     "categoryName": "U13 A"
   },
   {
+    "id": 183877,
+    "name": "18TH ANNUAL BURNABY WILDCATS REMEMBRANCE DAY TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 183770,
+    "name": "GIL MARTIN MEMORIAL TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 184473,
+    "name": "ICE BREAKER \"C\" TOURNAMENT - U13",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 184945,
+    "name": "ABBOTSFORD U13 REP TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 184951,
+    "name": "HOPE WILDCATS U13 TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 185738,
+    "name": "U13 C SUNSHINE COAST WINTER CLASSIC",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 186222,
+    "name": "2025 HERB HOUSE U13A TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 186397,
+    "name": "VANCOUVER MINOR HOCKEY 18TH ANNUAL CANUCK PLACE CHARITY TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 186458,
+    "name": "ICE CRUSHER TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 186521,
+    "name": "NVMHA WINTER CLASSIC",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 186064,
+    "name": "PIRATES CUP TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 186396,
+    "name": "VANCOUVER MINOR HOCKEY 18TH ANNUAL CANUCK PLACE CHARITY TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 184954,
+    "name": "VIAHA South Island Kerry Park U13 Holiday Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
     "id": 185996,
     "name": "VIAHA Island League U13 Comox Valley Tournament",
     "divisionName": "U13",
@@ -330,8 +960,44 @@
     "categoryName": "U13 A"
   },
   {
+    "id": 186769,
+    "name": "CMHA U13 C WINTER CLASSIC",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 187019,
+    "name": "HOLIDAY BASH \"C\" TOURNAMENT - U13 C",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 186445,
+    "name": "U13 REC TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
     "id": 181134,
     "name": "FVE U13C Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 187329,
+    "name": "GIRLS WITH GOALS TOURNAMENT - U13 C - POOL A",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 187331,
+    "name": "GIRLS WITH GOALS TOURNAMENT - U13 C - POOL B",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 187355,
+    "name": "CHILLIWACK FEMALE WINTER CLASSIC - U13 C",
     "divisionName": "U13",
     "categoryName": "U13 C"
   },
@@ -396,10 +1062,82 @@
     "categoryName": "U13 C"
   },
   {
+    "id": 188717,
+    "name": "KEN ELMER MEMORIAL - U13",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 190282,
+    "name": "U13A SUNSHINE COAST WINTER CLASSIC",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 189670,
+    "name": "U13 C MEMORIAL TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
     "id": 191111,
     "name": "VIAHA South Island U13 Playoffs",
     "divisionName": "U13",
     "categoryName": "U13 C"
+  },
+  {
+    "id": 191813,
+    "name": "RUSTLERS CUP - U13 C",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 192527,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U13A - GROUP 1",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 192051,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U13A - GROUP 2",
+    "divisionName": "U13",
+    "categoryName": "U13 A"
+  },
+  {
+    "id": 192050,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U13 C",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 191520,
+    "name": "2026 AL HUGHES MEMORIAL TOURNAMENT U13 C TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 192046,
+    "name": "LANGLEY CUP - U13 C",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 191707,
+    "name": "VIAHA South Island U13 C JDF Debbie Cooper Memorial Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 C"
+  },
+  {
+    "id": 181082,
+    "name": "U15 A Tournaments",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 181088,
+    "name": "U15 C Tournaments",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
   },
   {
     "id": 181714,
@@ -444,6 +1182,42 @@
     "categoryName": "U15 C"
   },
   {
+    "id": 182969,
+    "name": "CMHA FALL CLASSIC - U15A BLACK TIER",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 182970,
+    "name": "CMHA FALL CLASSIC - U15A GOLD TIER",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 182972,
+    "name": "CMHA FALL CLASSIC - U15A WHITE TIER",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 182899,
+    "name": "VIAHA South Island JDF U15 Turkey Cup",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 182976,
+    "name": "U15 TURKEY TOURNAMENT - BELCARRA",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 182974,
+    "name": "U15 TURKEY TOURNAMENT - ROCKY POINT",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
     "id": 182621,
     "name": "VIAHA Island League U15 Peninsula Larry Orr Tournament",
     "divisionName": "U15",
@@ -458,6 +1232,24 @@
   {
     "id": 181891,
     "name": "VIAHA South Island League U15 Regular Season",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 183512,
+    "name": "12TH ANNUAL PACIFIC COAST FEMALE REP CLASSIC - U15 A",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 183513,
+    "name": "12TH ANNUAL PACIFIC COAST FEMALE REP CLASSIC - U15 AA",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 183094,
+    "name": "ABBOTSFORD U15 REC TOURNAMENT",
     "divisionName": "U15",
     "categoryName": "U15 C"
   },
@@ -516,14 +1308,80 @@
     "categoryName": "U15 C"
   },
   {
+    "id": 183837,
+    "name": "TIM JARDINE MEMORIAL TOURNAMENT",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
     "id": 184290,
     "name": "VIAHA Island League U15 Powell River Kings Tournament",
     "divisionName": "U15",
     "categoryName": "U15 A"
   },
   {
+    "id": 183869,
+    "name": "18TH ANNUAL BURNABY WILDCATS REMEMBRANCE DAY TOURNAMENT",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
     "id": 183209,
     "name": "VIAHA Island League U15 Oceanside Remembrance Day Classic",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 184474,
+    "name": "ICEBREAKER \"C\" TOURNAMENT - U15",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 185994,
+    "name": "RICHMOND U15 ELITE WINTER CLASSIC",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 186583,
+    "name": "INTERNATIONAL BANTAM/MIDGET HOCKEY TOURNAMENT - U15A - TIER 1",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 186639,
+    "name": "INTERNATIONAL BANTAM/MIDGET HOCKEY TOURNAMENT - U15A - TIER 2",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 186403,
+    "name": "VANCOUVER MINOR HOCKEY 18TH ANNUAL CANUCK PLACE CHARITY TOURNAMENT",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 186456,
+    "name": "ICE CRUSHER TOURNAMENT",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 186067,
+    "name": "PIRATES CUP TOURNAMENT",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 186681,
+    "name": "VANCOUVER MINOR HOCKEY 18TH ANNUAL CANUCK PLACE CHARITY TOURNAMENT",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 186096,
+    "name": "PIRATES CUP",
     "divisionName": "U15",
     "categoryName": "U15 A"
   },
@@ -540,8 +1398,20 @@
     "categoryName": "U15 A"
   },
   {
+    "id": 187021,
+    "name": "HOLIDAY BASH \"C\" TOURNAMENT - U15 C",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
     "id": 181146,
     "name": "FVE U15C Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 187354,
+    "name": "CHILLIWACK FEMALE WINTER CLASSIC - U15 C",
     "divisionName": "U15",
     "categoryName": "U15 C"
   },
@@ -606,6 +1476,30 @@
     "categoryName": "U15 C"
   },
   {
+    "id": 188725,
+    "name": "KEN ELMER MEMORIAL - U15",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 189566,
+    "name": "U15 REP DALLAS SAUNDERS MEMORIAL TOURNAMENT",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 188350,
+    "name": "LANGLEY U15 EAGLES CLASSIC",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 189671,
+    "name": "U15 C MEMORIAL TOURNAMENT",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
     "id": 191115,
     "name": "VIAHA South Island U15 Playoffs",
     "divisionName": "U15",
@@ -618,10 +1512,58 @@
     "categoryName": "U15 AA"
   },
   {
+    "id": 191814,
+    "name": "RUSTLERS CUP - U15 C",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 192044,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U15A - GROUP 1",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 192529,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U15A - GROUP 2",
+    "divisionName": "U15",
+    "categoryName": "U15 A"
+  },
+  {
+    "id": 192042,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U15 C",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 192047,
+    "name": "LANGLEY CUP - U15 C",
+    "divisionName": "U15",
+    "categoryName": "U15 C"
+  },
+  {
+    "id": 181059,
+    "name": "U18 A Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 181081,
+    "name": "U18 C Tournaments",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
     "id": 180511,
     "name": "VIAHA Island League U18 Placement Games",
     "divisionName": "U18",
     "categoryName": "U18 A"
+  },
+  {
+    "id": 182549,
+    "name": "VMHA U18 RK Memorial Cup",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
   },
   {
     "id": 181057,
@@ -660,6 +1602,12 @@
     "categoryName": "U18 A"
   },
   {
+    "id": 182952,
+    "name": "VIAHA Female A Capital Regional U18 Female Thanksgiving Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
     "id": 181143,
     "name": "FVN U18C League",
     "divisionName": "U18",
@@ -676,6 +1624,18 @@
     "name": "VIAHA South Island League U18 Regular Season",
     "divisionName": "U18",
     "categoryName": "U18 C"
+  },
+  {
+    "id": 183511,
+    "name": "12TH ANNUAL PACIFIC COAST FEMALE REP CLASSIC - U18 AA",
+    "divisionName": "U18",
+    "categoryName": "U18 AA"
+  },
+  {
+    "id": 183510,
+    "name": "12TH ANNUAL PACIFIC COAST FEMALE REP CLASSIC - U18 A",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
   },
   {
     "id": 183610,
@@ -726,14 +1686,188 @@
     "categoryName": "U18 C"
   },
   {
+    "id": 184380,
+    "name": "CMHA GOLD CLASSIC - U18A - BLACK TIER",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 184378,
+    "name": "CMHA GOLD CLASSIC - U18A - GOLD TIER",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 184385,
+    "name": "CMHA GOLD CLASSIC - U18A - WHITE TIER",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 183831,
+    "name": "TIM JARDINE MEMORIAL TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 183867,
+    "name": "18TH ANNUAL BURNABY WILDCATS REMEMBRANCE DAY TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 184396,
+    "name": "CMHA GOLD CLASSIC - U18 C",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 183749,
+    "name": "U18 REP MEMORIAL TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 184476,
+    "name": "ICEBREAKER \"C\" TOURNAMENT - U18",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 184461,
+    "name": "MEMORIAL TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 183833,
+    "name": "U18 C BRAD BECKETT MEMORIAL TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 184753,
+    "name": "ABBOTSFORD U18 REC TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 181208,
+    "name": "JOE MORELLATO U18 C SCHOLARSHIP TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 186138,
+    "name": "JIM LINDSAY MEMORIAL TOURNAMENT - U18A",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 186199,
+    "name": "JIM LINDSAY MEMORIAL TOURNAMENT - U18 C",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
     "id": 183157,
     "name": "VIAHA Island League U18 Kerry Park Tournament",
     "divisionName": "U18",
     "categoryName": "U18 A"
   },
   {
+    "id": 185156,
+    "name": "VIAHA South Island U18C Juan de Fuca Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 186616,
+    "name": "INTERNATIONAL BANTAM/MIDGET HOCKEY TOURNAMENT - U18A - TIER 1",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 186618,
+    "name": "INTERNATIONAL BANTAM/MIDGET HOCKEY TOURNAMENT - U18A - TIER 2",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 186634,
+    "name": "INTERNATIONAL BANTAM/MIDGET HOCKEY TOURNAMENT - U18A - TIER 3",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 186461,
+    "name": "VANCOUVER MINOR HOCKEY 18TH ANNUAL CANUCK PLACE CHARITY TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 186227,
+    "name": "2025 HERB HOUSE U18 C TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 186499,
+    "name": "VANCOUVER MINOR HOCKEY 18TH ANNUAL CANUCK PLACE CHARITY TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 185868,
+    "name": "U18 REP TOURNAMENT - TIER 1",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 185870,
+    "name": "U18 REP TOURNAMENT - TIER 2",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 185874,
+    "name": "U18 REP TOURNAMENT - TIER 3",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 187028,
+    "name": "HOLIDAY BASH \"C\" TOURNAMENT - U18 C",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 186949,
+    "name": "VMHA U18 Winter Whiteout Tournament ",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 186409,
+    "name": "FRASER VALLEY U18 C SCHOLARSHIP TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
     "id": 181157,
     "name": "FVE U18C Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 181235,
+    "name": "FVC U18 \"C\" SCHOLARSHIP TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 187351,
+    "name": "CHILLIWACK FEMALE WINTER CLASSIC - U18 C",
     "divisionName": "U18",
     "categoryName": "U18 C"
   },
@@ -762,10 +1896,22 @@
     "categoryName": "U18 A"
   },
   {
+    "id": 181210,
+    "name": "JIM FRYER MEMORIAL U18 \"C\" SCHOLARSHIP TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
     "id": 181080,
     "name": "U18 C Playoffs",
     "divisionName": "U18",
     "categoryName": "U18 C"
+  },
+  {
+    "id": 187917,
+    "name": "U18A SCHOLARSHIP TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
   },
   {
     "id": 181264,
@@ -798,8 +1944,56 @@
     "categoryName": "U18 C"
   },
   {
+    "id": 188726,
+    "name": "KEN ELMER MEMORIAL - U18",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 189672,
+    "name": "U18 C MEMORIAL TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
     "id": 191116,
     "name": "VIAHA South Island U18 Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 191816,
+    "name": "RUSTLERS CUP - U18 C",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 190818,
+    "name": "FEMALE SCHOLARSHIP TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18"
+  },
+  {
+    "id": 181267,
+    "name": "FEMALE U18 SCHOLARSHIP TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 192041,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U18A",
+    "divisionName": "U18",
+    "categoryName": "U18 A"
+  },
+  {
+    "id": 192040,
+    "name": "TRI-CITIES FEMALE ICE CLASSIC TOURNAMENT - U18 C",
+    "divisionName": "U18",
+    "categoryName": "U18 C"
+  },
+  {
+    "id": 192048,
+    "name": "LANGLEY CUP - U18 C",
     "divisionName": "U18",
     "categoryName": "U18 C"
   }

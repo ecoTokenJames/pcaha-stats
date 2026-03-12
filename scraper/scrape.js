@@ -60,17 +60,21 @@ async function fetchSchedules(divisions) {
     const schedules = await api.getSchedules(SEASON, division.id);
     if (!schedules) continue;
 
-    // Filter to regular season and playoff schedules
+    // Filter to regular season, playoff, and tournament schedules
     const filtered = schedules.filter(s => {
       const name = (s.name || '').toLowerCase();
       const isLeague = name.includes('league');
       const isPlayoff = name.includes('playoff');
       const isPlacement = name.includes('placement');
-      // Exclude: pre-season, exhibition, tryouts, tournaments out-of-district, camps
+      const isTournament = name.includes('tournament') || name.includes('classic') ||
+        name.includes('cup') || name.includes('memorial');
+      // Exclude: pre-season, exhibition, tryouts, out-of-district, camps, spring, showcase, jamboree, celebration, face-off, bash
       const isExcluded = name.includes('pre-season') || name.includes('exhibition') ||
         name.includes('tryout') || name.includes('camp') || name.includes('spring') ||
-        name.includes('out of district') || name.includes('out-of-district');
-      return (isLeague || isPlayoff || isPlacement) && !isExcluded;
+        name.includes('out of district') || name.includes('out-of-district') ||
+        name.includes('showcase') || name.includes('jamboree') || name.includes('celebration') ||
+        name.includes('face-off') || name.includes('face off');
+      return (isLeague || isPlayoff || isPlacement || isTournament) && !isExcluded;
     });
 
     for (const schedule of filtered) {
@@ -158,8 +162,8 @@ async function fetchPlayerStats(schedules) {
       const games = await api.getGames(schedule.id);
       if (!games || games.length === 0) continue;
 
-      // Only process certified/completed games
-      const completedGames = games.filter(g => g.isCertified);
+      // Process certified games, plus approved games with team stats (tournament games aren't certified)
+      const completedGames = games.filter(g => g.isCertified || (g.isApproved && g.homeTeamStats && g.awayTeamStats));
       totalGames += completedGames.length;
       log(`    ${completedGames.length} completed games (of ${games.length} total)`);
 
