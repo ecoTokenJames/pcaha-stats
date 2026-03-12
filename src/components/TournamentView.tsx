@@ -89,7 +89,7 @@ export function TournamentView({
       <div className="flex flex-wrap gap-1 mb-4">
         <button
           onClick={() => setDivFilter(null)}
-          className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+          className={`px-2.5 py-1.5 rounded-md text-sm font-medium transition-colors ${
             divFilter === null
               ? "bg-blue-900 text-white"
               : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-900"
@@ -101,7 +101,7 @@ export function TournamentView({
           <button
             key={div}
             onClick={() => setDivFilter(div)}
-            className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+            className={`px-2.5 py-1.5 rounded-md text-sm font-medium transition-colors ${
               divFilter === div
                 ? "bg-blue-900 text-white"
                 : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-900"
@@ -133,43 +133,43 @@ export function TournamentView({
         <div className="space-y-6">
           {/* Tournament Standings */}
           <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-            <div className="px-4 py-3 border-b border-gray-100">
+            <div className="px-3 sm:px-4 py-3 border-b border-gray-100">
               <h3 className="font-semibold text-gray-900 text-sm">
                 Standings
               </h3>
-              <p className="text-xs text-gray-500 mt-0.5">
+              <p className="text-xs text-gray-500 mt-0.5 break-words">
                 {selected.scheduleName}
               </p>
             </div>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm">
+              <table className="w-full text-xs sm:text-sm">
                 <thead>
                   <tr className="border-b border-gray-100">
-                    <th className="px-2 py-2 text-center font-medium text-gray-500 w-8">
+                    <th className="px-1 sm:px-2 py-2 text-center font-medium text-gray-500 w-5 sm:w-8">
                       #
                     </th>
-                    <th className="px-2 py-2 text-left font-medium text-gray-500">
+                    <th className="px-1 sm:px-2 py-2 text-left font-medium text-gray-500">
                       Team
                     </th>
-                    <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                    <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10">
                       GP
                     </th>
-                    <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                    <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-5 sm:w-10">
                       W
                     </th>
-                    <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                    <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-5 sm:w-10">
                       L
                     </th>
-                    <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                    <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-5 sm:w-10">
                       T
                     </th>
-                    <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                    <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10">
                       PTS
                     </th>
-                    <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                    <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10">
                       GF
                     </th>
-                    <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                    <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10">
                       GA
                     </th>
                   </tr>
@@ -182,29 +182,31 @@ export function TournamentView({
                         i % 2 === 0 ? "bg-white" : "bg-gray-50/30"
                       }`}
                     >
-                      <td className="px-2 py-2 text-center text-gray-400 font-medium">
+                      <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-center text-gray-400 font-medium">
                         {i + 1}
                       </td>
-                      <td className="px-2 py-2 text-left font-medium text-gray-900 text-xs">
+                      <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-left font-medium text-gray-900 text-[11px] sm:text-xs">
                         {team.teamName}
                       </td>
-                      <td className="px-2 py-2 text-center">
+                      <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">
                         {team.gamesPlayed}
                       </td>
-                      <td className="px-2 py-2 text-center text-green-700 font-medium">
+                      <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center text-green-700 font-medium">
                         {team.wins}
                       </td>
-                      <td className="px-2 py-2 text-center text-red-600 font-medium">
+                      <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center text-red-600 font-medium">
                         {team.losses}
                       </td>
-                      <td className="px-2 py-2 text-center">{team.ties}</td>
-                      <td className="px-2 py-2 text-center font-bold text-blue-900">
+                      <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">
+                        {team.ties}
+                      </td>
+                      <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center font-bold text-blue-900">
                         {team.points}
                       </td>
-                      <td className="px-2 py-2 text-center">
+                      <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">
                         {team.goalsFor}
                       </td>
-                      <td className="px-2 py-2 text-center">
+                      <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">
                         {team.goalsAgainst}
                       </td>
                     </tr>
@@ -226,8 +228,8 @@ export function TournamentView({
                 key={team.teamId}
                 className="bg-white rounded-lg border border-gray-200 overflow-hidden"
               >
-                <div className="px-4 py-3 border-b border-gray-100">
-                  <h4 className="font-semibold text-gray-900 text-sm">
+                <div className="px-3 sm:px-4 py-3 border-b border-gray-100">
+                  <h4 className="font-semibold text-gray-900 text-sm break-words">
                     {team.teamName}
                   </h4>
                   <p className="text-xs text-gray-400">
@@ -235,28 +237,28 @@ export function TournamentView({
                   </p>
                 </div>
                 <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
+                  <table className="w-full text-xs sm:text-sm">
                     <thead>
                       <tr className="border-b border-gray-100">
-                        <th className="px-2 py-2 text-center font-medium text-gray-500 w-8">
+                        <th className="px-1 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-8">
                           #
                         </th>
-                        <th className="px-2 py-2 text-left font-medium text-gray-500">
+                        <th className="px-1 sm:px-2 py-2 text-left font-medium text-gray-500">
                           Player
                         </th>
-                        <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                        <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10">
                           GP
                         </th>
-                        <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                        <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-5 sm:w-10">
                           G
                         </th>
-                        <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                        <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-5 sm:w-10">
                           A
                         </th>
-                        <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                        <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10">
                           PTS
                         </th>
-                        <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                        <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10">
                           PIM
                         </th>
                       </tr>
@@ -269,32 +271,32 @@ export function TournamentView({
                             i % 2 === 0 ? "bg-white" : "bg-gray-50/30"
                           }`}
                         >
-                          <td className="px-2 py-2 text-center text-gray-400">
+                          <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-center text-gray-400">
                             {player.number > 0 ? player.number : "—"}
                           </td>
-                          <td className="px-2 py-2 text-left whitespace-nowrap">
+                          <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-left">
                             <span className="font-medium text-gray-900">
                               {player.name}
                             </span>
                             {player.position && (
-                              <span className="text-xs text-gray-400 ml-1">
+                              <span className="text-[10px] sm:text-xs text-gray-400 ml-0.5">
                                 ({player.position})
                               </span>
                             )}
                           </td>
-                          <td className="px-2 py-2 text-center">
+                          <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">
                             {player.gamesPlayed}
                           </td>
-                          <td className="px-2 py-2 text-center font-medium text-green-700">
+                          <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center font-medium text-green-700">
                             {player.goals}
                           </td>
-                          <td className="px-2 py-2 text-center font-medium">
+                          <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center font-medium">
                             {player.assists}
                           </td>
-                          <td className="px-2 py-2 text-center font-bold text-blue-900">
+                          <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center font-bold text-blue-900">
                             {player.points}
                           </td>
-                          <td className="px-2 py-2 text-center">
+                          <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">
                             {player.pim}
                           </td>
                         </tr>

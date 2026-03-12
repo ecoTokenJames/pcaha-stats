@@ -4,10 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Home" },
-  { href: "/standings", label: "Standings" },
-  { href: "/leaders", label: "Leaders" },
-  { href: "/tournaments", label: "Tournaments" },
+  { href: "/", label: "Home", mobileLabel: "Home" },
+  { href: "/standings", label: "Standings", mobileLabel: "Standings" },
+  { href: "/leaders", label: "Leaders", mobileLabel: "Leaders" },
+  { href: "/tournaments", label: "Tournaments", mobileLabel: "Tourneys" },
 ];
 
 export function Header() {
@@ -38,13 +38,14 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`px-2.5 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                  className={`px-2 sm:px-2.5 py-1.5 rounded-md text-xs sm:text-sm font-medium transition-colors ${
                     isActive
                       ? "bg-blue-50 text-blue-900"
                       : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                   }`}
                 >
-                  {item.label}
+                  <span className="sm:hidden">{item.mobileLabel}</span>
+                  <span className="hidden sm:inline">{item.label}</span>
                 </Link>
               );
             })}
