@@ -10,6 +10,7 @@ import {
   getScheduleType,
   mergePlayerStats,
   type HockeyCategory,
+  SEASON,
 } from "@/lib/data";
 import { TeamRosterTable } from "@/components/TeamRosterTable";
 
@@ -30,7 +31,7 @@ export async function generateMetadata({
   }
 
   const title = teamInfo.teamName;
-  const description = `Player stats and roster for ${teamInfo.teamName} in the 2025-26 PCAHA ${divName} season.`;
+  const description = `Player stats and roster for ${teamInfo.teamName} in the ${SEASON} PCAHA ${divName} season.`;
 
   return {
     title,

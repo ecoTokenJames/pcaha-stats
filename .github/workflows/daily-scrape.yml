@@ -1,0 +1,62 @@
+name: Daily scrape
+
+# Pulls fresh standings + player stats from Spordle and commits them to main.
+# The push to main triggers Vercel to rebuild and redeploy the site.
+on:
+  schedule:
+    - cron: "0 11 * * *" # 11:00 UTC = 4am Pacific (3am in winter)
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season override, e.g. 2026-27 (blank = auto)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # Scraper only uses Node built-ins + fetch, so no npm install needed.
+
+      - name: Scrape
+        env:
+          PCAHA_SEASON: ${{ inputs.season }}
+        run: |
+          # Start clean so last season's per-division files don't linger
+          rm -rf data/standings data/players
+          node scraper/scrape.js
+
+      - name: Sanity check
+        run: |
+          node -e "
+            const s = require('./data/standings/all-standings.json');
+            const n = Object.keys(s).length;
+            console.log('schedules with standings:', n);
+            if (n === 0) { console.error('No standings scraped — refusing to commit'); process.exit(1); }
+          "
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet -- data/standings data/players; then
+            echo "No stat changes — skipping commit"
+            exit 0
+          fi
+          git commit -m "Daily data update $(date -u +%Y-%m-%d)"
+          git pull --rebase
+          git push

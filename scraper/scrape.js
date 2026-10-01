@@ -14,10 +14,18 @@
 const fs = require('fs');
 const path = require('path');
 const api = require('./api');
-const config = require('./config.json');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
-const SEASON = config.season;
+const DATA_DIR = process.env.PCAHA_DATA_DIR || path.join(__dirname, '..', 'data');
+const SEASON = process.env.PCAHA_SEASON || currentSeason();
+
+/**
+ * Season id like "2026-27". Rolls over on Aug 1, when the new season's
+ * schedules start appearing in Spordle. Override with PCAHA_SEASON.
+ */
+function currentSeason(now = new Date()) {
+  const startYear = now.getUTCMonth() >= 7 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;
+  return `${startYear}-${String((startYear + 1) % 100).padStart(2, '0')}`;
+}
 
 // Divisions we care about (U9-U18)
 const TARGET_DIVISIONS = ['U9', 'U10', 'U11', 'U12', 'U13', 'U14', 'U15', 'U16', 'U17', 'U18'];

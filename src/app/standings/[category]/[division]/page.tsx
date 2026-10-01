@@ -6,6 +6,7 @@ import {
   getScheduleType,
   getLeagueAbbrev,
   type HockeyCategory,
+  SEASON,
 } from "@/lib/data";
 import { StandingsTable } from "@/components/StandingsTable";
 
@@ -26,7 +27,7 @@ export async function generateMetadata({
   const divName = division.toUpperCase();
   const catLabel = CATEGORY_LABELS[category] || category;
   const title = `${divName} ${catLabel} Standings`;
-  const description = `${divName} ${catLabel} hockey standings for the 2025-26 PCAHA season. View team records, points, goals, and rankings.`;
+  const description = `${divName} ${catLabel} hockey standings for the ${SEASON} PCAHA season. View team records, points, goals, and rankings.`;
 
   return {
     title,
