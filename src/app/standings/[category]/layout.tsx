@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import { getDivisionsForCategory, type HockeyCategory } from "@/lib/data";
 import { DivisionTabs } from "@/components/DivisionTabs";
 
@@ -13,7 +14,7 @@ export default async function CategoryLayout({
   const { category } = await params;
 
   if (!VALID_CATEGORIES.includes(category as HockeyCategory)) {
-    return <div className="text-center py-12 text-gray-500">Invalid category.</div>;
+    notFound();
   }
 
   const divisions = getDivisionsForCategory(category as HockeyCategory);

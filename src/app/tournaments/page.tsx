@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Tournaments",
   description:
     `Tournament standings and player stats for PCAHA minor hockey tournaments in the ${SEASON} season.`,
+  alternates: { canonical: "/tournaments" },
 };
 
 export default function TournamentsPage() {

@@ -21,7 +21,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ category: string; division: string; teamId: string }>;
 }): Promise<Metadata> {
-  const { division, teamId: teamIdStr } = await params;
+  const { category, division, teamId: teamIdStr } = await params;
   const divName = division.toUpperCase();
   const teamId = parseInt(teamIdStr);
   const teamInfo = getTeamInfo(divName, teamId);
@@ -36,12 +36,18 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: {
+      canonical: `/standings/${category}/${division}/team/${teamId}`,
+    },
     openGraph: {
       title: `${title} | PCAHA Stats`,
       description,
+      images: ["/opengraph-image"],
     },
   };
 }
+
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   const params: { category: string; division: string; teamId: string }[] = [];

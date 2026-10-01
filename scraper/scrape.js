@@ -30,9 +30,6 @@ function currentSeason(now = new Date()) {
 // Divisions we care about (U9-U18)
 const TARGET_DIVISIONS = ['U9', 'U10', 'U11', 'U12', 'U13', 'U14', 'U15', 'U16', 'U17', 'U18'];
 
-// Schedule types we want (skip pre-season, tryouts, etc.)
-const WANTED_SCHEDULE_TYPES = ['Regular Season', 'Playoffs', 'League'];
-
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
@@ -185,6 +182,7 @@ async function fetchPlayerStats(schedules) {
             try {
               return await api.getBoxscore(gameId);
             } catch (e) {
+              log(`  WARN: boxscore ${gameId} failed: ${e.message}`);
               return null;
             }
           })
@@ -395,6 +393,7 @@ async function enrichWithRosters(playerMap, standings, schedules) {
           const members = await api.getTeamMembers(teamId);
           return { teamId, members: members || [] };
         } catch (e) {
+          log(`  WARN: roster for team ${teamId} failed: ${e.message}`);
           return { teamId, members: [] };
         }
       })
@@ -527,7 +526,7 @@ async function main() {
 
   // Step 4: Fetch player stats (unless --standings flag)
   if (!standingsOnly) {
-    const { playerMap, totalGames } = await fetchPlayerStats(schedules);
+    const { playerMap } = await fetchPlayerStats(schedules);
 
     // Step 5: Fetch team rosters and fix GP
     // The boxscore only records players who scored/assisted/penalized.

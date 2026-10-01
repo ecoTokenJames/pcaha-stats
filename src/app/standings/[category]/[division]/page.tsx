@@ -32,12 +32,17 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: { canonical: `/standings/${category}/${division}` },
     openGraph: {
       title: `${title} | PCAHA Stats`,
       description,
+      images: ["/opengraph-image"],
     },
   };
 }
+
+// Only the category/division combos that have data; anything else 404s
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   const params: { category: string; division: string }[] = [];

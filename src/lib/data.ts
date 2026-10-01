@@ -339,19 +339,23 @@ export function getTeamInfo(
   division: string,
   teamId: number
 ): { teamName: string; scheduleName: string; categoryName: string; scheduleId: number } | null {
-  const standings = getDivisionStandings(division);
-  for (const data of Object.values(standings)) {
-    const team = data.teams.find((t) => t.teamId === teamId);
-    if (team) {
-      return {
-        teamName: team.teamName,
-        scheduleName: data.scheduleName,
-        categoryName: data.categoryName,
-        scheduleId: data.scheduleId,
-      };
-    }
-  }
-  return null;
+  const typeRank = ["League", "Playoffs", "Placement", "Tournament"];
+  const matches = Object.values(getDivisionStandings(division))
+    .map((data) => ({ data, team: data.teams.find((t) => t.teamId === teamId) }))
+    .filter((m) => m.team)
+    .sort(
+      (a, b) =>
+        typeRank.indexOf(getScheduleType(a.data.scheduleName)) -
+        typeRank.indexOf(getScheduleType(b.data.scheduleName))
+    );
+  if (matches.length === 0) return null;
+  const { data, team } = matches[0];
+  return {
+    teamName: team!.teamName,
+    scheduleName: data.scheduleName,
+    categoryName: data.categoryName,
+    scheduleId: data.scheduleId,
+  };
 }
 
 // ==================== Helpers ====================

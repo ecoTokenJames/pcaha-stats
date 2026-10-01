@@ -17,7 +17,7 @@ export function DivisionTabs({
     <div className="flex flex-wrap gap-1 mb-6">
       {divisions.map((div) => {
         const href = `${basePath}/${div.name.toLowerCase()}`;
-        const isActive = pathname === href;
+        const isActive = pathname === href || pathname.startsWith(`${href}/`);
 
         return (
           <Link

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import type { PlayerStat, TeamStanding } from "@/lib/data";
 
 interface TournamentData {
@@ -32,10 +32,20 @@ export function TournamentView({
     tournaments[0]?.scheduleId ?? 0
   );
 
-  const selected = useMemo(
-    () => tournaments.find((t) => t.scheduleId === selectedId) ?? null,
-    [tournaments, selectedId]
-  );
+
+  const [divFilter, setDivFilter] = useState<string | null>(null);
+
+  const filteredTournaments = useMemo(() => {
+    if (divFilter === null) return tournaments;
+    return tournaments.filter((t) => t.divisionName === divFilter);
+  }, [tournaments, divFilter]);
+
+  // If the division filter hides the chosen tournament, fall back to the first visible one
+  const selected =
+    filteredTournaments.find((t) => t.scheduleId === selectedId) ??
+    filteredTournaments[0] ??
+    null;
+  const activeId = selected?.scheduleId ?? 0;
 
   // Group players by teamId for the selected tournament
   const teamPlayers = useMemo(() => {
@@ -66,22 +76,7 @@ export function TournamentView({
     });
   }, [tournaments]);
 
-  const [divFilter, setDivFilter] = useState<string | null>(null);
 
-  const filteredTournaments = useMemo(() => {
-    if (divFilter === null) return tournaments;
-    return tournaments.filter((t) => t.divisionName === divFilter);
-  }, [tournaments, divFilter]);
-
-  // Auto-select first tournament when filter changes and current selection is no longer visible
-  useEffect(() => {
-    const isSelectedVisible = filteredTournaments.some(
-      (t) => t.scheduleId === selectedId
-    );
-    if (!isSelectedVisible && filteredTournaments.length > 0) {
-      setSelectedId(filteredTournaments[0].scheduleId);
-    }
-  }, [filteredTournaments, selectedId]);
 
   return (
     <div>
@@ -115,7 +110,7 @@ export function TournamentView({
       {/* Tournament Selector */}
       <div className="mb-6">
         <select
-          value={selectedId}
+          value={activeId}
           onChange={(e) => setSelectedId(Number(e.target.value))}
           className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         >

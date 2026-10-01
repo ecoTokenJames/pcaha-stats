@@ -6,6 +6,7 @@ import {
   getScheduleType,
   getTeamGroupLookup,
   getAvailableGroups,
+  mergePlayerStats,
   type HockeyCategory,
   SEASON,
 } from "@/lib/data";
@@ -33,12 +34,17 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: { canonical: `/leaders/${category}/${division}` },
     openGraph: {
       title: `${title} | PCAHA Stats`,
       description,
+      images: ["/opengraph-image"],
     },
   };
 }
+
+// Only the category/division combos that have data; anything else 404s
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   const params: { category: string; division: string }[] = [];
@@ -76,18 +82,18 @@ export default async function LeadersDivisionPage({
     category as HockeyCategory
   );
 
-  // Add groupName field and filter to min 3 GP
+  // Add groupName field (3 GP minimum is applied after merging, in LeadersTable)
   const qualifiedPlayers: LeaderPlayer[] = leaguePlayers
-    .filter((p) => p.gamesPlayed >= 3)
     .map((p) => ({
       ...p,
       groupName: groupLookup.get(p.teamId) ?? null,
     }));
 
-  if (qualifiedPlayers.length === 0) {
+  if (!mergePlayerStats(leaguePlayers).some((p) => p.gamesPlayed >= 3)) {
     return (
       <div className="text-center py-12 text-gray-500">
-        No player stats available for {divName} {category}.
+        No {divName} {category} players have 3+ games yet — leaders will
+        appear here as the season gets going.
       </div>
     );
   }

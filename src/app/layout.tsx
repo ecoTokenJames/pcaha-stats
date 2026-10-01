@@ -59,9 +59,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
     },
   },
-  alternates: {
-    canonical: SITE_URL,
-  },
 };
 
 const jsonLd = {
@@ -70,11 +67,6 @@ const jsonLd = {
   name: SITE_NAME,
   url: SITE_URL,
   description: SITE_DESCRIPTION,
-  potentialAction: {
-    "@type": "SearchAction",
-    target: `${SITE_URL}/standings/rep/{search_term_string}`,
-    "query-input": "required name=search_term_string",
-  },
 };
 
 export default function RootLayout({
