@@ -44,6 +44,9 @@ export interface ScheduleStandings {
   scheduleName: string;
   divisionName: string;
   categoryName: string;
+  scheduleType?: string;
+  startDate?: string;
+  endDate?: string;
   teams: TeamStanding[];
 }
 
@@ -57,6 +60,7 @@ export interface PlayerStat {
   scheduleName: string;
   scheduleId: number;
   categoryName: string;
+  scheduleType?: string;
   goals: number;
   assists: number;
   points: number;
@@ -269,7 +273,7 @@ export function getFilteredPlayers(
 
     // Schedule type filter
     if (scheduleType) {
-      const type = getScheduleType(player.scheduleName);
+      const type = getScheduleType(player);
       if (scheduleType === "League") return type === "League";
       if (scheduleType === "Playoffs") return type === "Playoffs" || type === "Placement";
     }
@@ -291,7 +295,7 @@ export function getTeamPlayers(
     .filter((p) => {
       if (p.teamId !== teamId) return false;
       if (scheduleType) {
-        const type = getScheduleType(p.scheduleName);
+        const type = getScheduleType(p);
         if (scheduleType === "League") return type === "League";
         if (scheduleType === "Playoffs") return type === "Playoffs" || type === "Placement";
       }
@@ -345,8 +349,8 @@ export function getTeamInfo(
     .filter((m) => m.team)
     .sort(
       (a, b) =>
-        typeRank.indexOf(getScheduleType(a.data.scheduleName)) -
-        typeRank.indexOf(getScheduleType(b.data.scheduleName))
+        typeRank.indexOf(getScheduleType(a.data)) -
+        typeRank.indexOf(getScheduleType(b.data))
     );
   if (matches.length === 0) return null;
   const { data, team } = matches[0];
@@ -390,15 +394,40 @@ export function getSchedulesByDivision(): Record<string, ScheduleMeta[]> {
   return grouped;
 }
 
+export type ScheduleType = "League" | "Playoffs" | "Placement" | "Tournament";
+
 /**
- * Categorize a schedule name into League, Playoffs, Placement, or Tournament
+ * League, Playoffs, Placement or Tournament. Uses Spordle's schedule type when the
+ * scrape recorded it, and falls back to guessing from the name for older data.
  */
-export function getScheduleType(name: string): string {
-  const lower = name.toLowerCase();
+export function getScheduleType(s: {
+  scheduleName: string;
+  scheduleType?: string;
+}): ScheduleType {
+  if (
+    s.scheduleType === "League" ||
+    s.scheduleType === "Playoffs" ||
+    s.scheduleType === "Placement" ||
+    s.scheduleType === "Tournament"
+  ) {
+    return s.scheduleType;
+  }
+  const lower = s.scheduleName.toLowerCase();
   if (lower.includes("playoff")) return "Playoffs";
-  if (lower.includes("placement")) return "Placement";
+  if (lower.includes("placement") || lower.includes("balancing")) return "Placement";
   if (lower.includes("tournament") || lower.includes("classic") || lower.includes("cup") || lower.includes("memorial")) return "Tournament";
   return "League";
+}
+
+/** Where a schedule is relative to today, from its start/end dates (YYYY-MM-DD). */
+export function getSchedulePhase(
+  s: { startDate?: string; endDate?: string },
+  today: string = new Date().toISOString().slice(0, 10)
+): "current" | "upcoming" | "finished" | "unknown" {
+  if (!s.startDate || !s.endDate) return "unknown";
+  if (today < s.startDate) return "upcoming";
+  if (today > s.endDate) return "finished";
+  return "current";
 }
 
 /**
@@ -436,7 +465,7 @@ export function getAllTournaments(): TournamentInfo[] {
   const tournaments: TournamentInfo[] = [];
 
   for (const data of Object.values(allStandings)) {
-    if (getScheduleType(data.scheduleName) === "Tournament") {
+    if (getScheduleType(data) === "Tournament") {
       tournaments.push({
         scheduleId: data.scheduleId,
         scheduleName: data.scheduleName,
@@ -517,7 +546,7 @@ export function getTeamGroupLookup(
   const lookup = new Map<number, string | null>();
 
   for (const data of Object.values(standings)) {
-    if (getScheduleType(data.scheduleName) !== "League") continue;
+    if (getScheduleType(data) !== "League") continue;
 
     for (const team of data.teams) {
       if (!lookup.has(team.teamId)) {

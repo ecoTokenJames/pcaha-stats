@@ -30,6 +30,33 @@ function currentSeason(now = new Date()) {
 // Divisions we care about (U9-U18)
 const TARGET_DIVISIONS = ['U9', 'U10', 'U11', 'U12', 'U13', 'U14', 'U15', 'U16', 'U17', 'U18'];
 
+const WANTED_TYPES = ['League', 'Playoffs', 'Placement', 'Tournament'];
+
+/**
+ * Keep League/Playoffs/Placement/Tournament schedules, minus ones whose games
+ * happen outside PCAHA (out-of-district tournaments, camps, tryouts, etc).
+ */
+function isWantedSchedule(s) {
+  if (!WANTED_TYPES.includes(s.type)) return false;
+  const name = (s.name || '').toLowerCase();
+  const isExcluded = name.includes('pre-season') || name.includes('exhibition') ||
+    name.includes('tryout') || name.includes('camp') || name.includes('spring') ||
+    name.includes('out of district') || name.includes('out-of-district') ||
+    name.includes('showcase') || name.includes('jamboree') || name.includes('celebration') ||
+    name.includes('face-off') || name.includes('face off') ||
+    /\btest\b/.test(name);
+  return !isExcluded;
+}
+
+/** Schedule fields copied onto standings and player rows */
+function scheduleFields(schedule) {
+  return {
+    scheduleType: schedule.type,
+    startDate: (schedule.startDate || '').slice(0, 10),
+    endDate: (schedule.endDate || '').slice(0, 10),
+  };
+}
+
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
@@ -65,22 +92,9 @@ async function fetchSchedules(divisions) {
     const schedules = await api.getSchedules(SEASON, division.id);
     if (!schedules) continue;
 
-    // Filter to regular season, playoff, and tournament schedules
-    const filtered = schedules.filter(s => {
-      const name = (s.name || '').toLowerCase();
-      const isLeague = name.includes('league');
-      const isPlayoff = name.includes('playoff');
-      const isPlacement = name.includes('placement');
-      const isTournament = name.includes('tournament') || name.includes('classic') ||
-        name.includes('cup') || name.includes('memorial');
-      // Exclude: pre-season, exhibition, tryouts, out-of-district, camps, spring, showcase, jamboree, celebration, face-off, bash
-      const isExcluded = name.includes('pre-season') || name.includes('exhibition') ||
-        name.includes('tryout') || name.includes('camp') || name.includes('spring') ||
-        name.includes('out of district') || name.includes('out-of-district') ||
-        name.includes('showcase') || name.includes('jamboree') || name.includes('celebration') ||
-        name.includes('face-off') || name.includes('face off');
-      return (isLeague || isPlayoff || isPlacement || isTournament) && !isExcluded;
-    });
+    // Use Spordle's own schedule type (League / Playoffs / Placement / Tournament).
+    // Matching on names missed rounds like "FVW U11C Balancing" (a Placement round).
+    const filtered = schedules.filter(s => isWantedSchedule(s));
 
     for (const schedule of filtered) {
       allSchedules.push({
@@ -114,6 +128,7 @@ async function fetchStandings(schedules) {
         scheduleName: schedule.name,
         divisionName: schedule.divisionName,
         categoryName: schedule.category?.name || '',
+        ...scheduleFields(schedule),
         teams: teamStats.map(ts => ({
           rank: ts.ranking,
           teamId: ts.teamId,
@@ -214,6 +229,7 @@ async function fetchPlayerStats(schedules) {
                 scheduleName: schedule.name,
                 scheduleId: schedId,
                 categoryName: schedule.category?.name || '',
+                scheduleType: schedule.type,
                 goals: 0,
                 assists: 0,
                 points: 0,
@@ -256,6 +272,7 @@ async function fetchPlayerStats(schedules) {
                   scheduleName: schedule.name,
                   scheduleId: schedId,
                   categoryName: schedule.category?.name || '',
+                  scheduleType: schedule.type,
                   goals: 0,
                   assists: 0,
                   points: 0,
@@ -294,6 +311,7 @@ async function fetchPlayerStats(schedules) {
                 scheduleName: schedule.name,
                 scheduleId: schedId,
                 categoryName: schedule.category?.name || '',
+                scheduleType: schedule.type,
                 goals: 0,
                 assists: 0,
                 points: 0,
@@ -373,6 +391,7 @@ async function enrichWithRosters(playerMap, standings, schedules) {
         scheduleName: data.scheduleName,
         scheduleId: parseInt(schedId),
         categoryName: data.categoryName,
+        scheduleType: data.scheduleType,
       });
       uniqueTeamIds.add(team.teamId);
     }
@@ -446,6 +465,7 @@ async function enrichWithRosters(playerMap, standings, schedules) {
           scheduleName: entry.scheduleName,
           scheduleId: entry.scheduleId,
           categoryName: entry.categoryName,
+          scheduleType: entry.scheduleType,
           goals: 0,
           assists: 0,
           points: 0,
@@ -498,6 +518,7 @@ async function main() {
     divisionName: s.divisionName,
     categoryName: s.category?.name || '',
     groupId: s.groupId,
+    ...scheduleFields(s),
   }));
   saveJson(path.join(DATA_DIR, 'meta', 'schedules.json'), scheduleMeta);
   saveJson(path.join(DATA_DIR, 'meta', 'divisions.json'), divisions.map(d => ({

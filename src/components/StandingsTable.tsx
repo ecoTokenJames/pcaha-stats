@@ -156,7 +156,7 @@ export function StandingsTable({
                   }`}
                 >
                   <td className="px-2 py-2 text-center text-gray-400 font-medium">
-                    {team.rank}
+                    {team.gamesPlayed > 0 ? team.rank : "–"}
                   </td>
                   <td className="px-2 py-2 text-left font-medium text-gray-900 whitespace-nowrap">
                     <span className="inline-flex items-center gap-1.5">
