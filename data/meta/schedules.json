@@ -3,420 +3,756 @@
     "id": 199261,
     "name": "FVW U9C Major League",
     "divisionName": "U9",
-    "categoryName": "U9 C"
+    "categoryName": "U9 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-16",
+    "endDate": "2027-03-12"
   },
   {
     "id": 199253,
     "name": "FVW U9C Minor League",
     "divisionName": "U9",
-    "categoryName": "U9 C"
+    "categoryName": "U9 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-16",
+    "endDate": "2027-03-12"
   },
   {
     "id": 199393,
     "name": "U9 League",
     "divisionName": "U9",
-    "categoryName": "U9 C"
+    "categoryName": "U9 C",
+    "scheduleType": "League",
+    "startDate": "2026-12-01",
+    "endDate": "2027-03-07"
   },
   {
     "id": 199308,
     "name": "U11 A Interconference Placement",
     "divisionName": "U11",
-    "categoryName": "U11 A"
+    "categoryName": "U11 A",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-25"
   },
   {
     "id": 199319,
     "name": "U11 C Placement",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-25"
   },
   {
     "id": 199701,
     "name": "U11A Placement",
     "divisionName": "U11",
-    "categoryName": "U11 SELECT"
+    "categoryName": "U11 SELECT",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-28",
+    "endDate": "2026-11-01"
   },
   {
     "id": 195272,
     "name": "VIAHA U11 Development Placement Games",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-03",
+    "endDate": "2026-11-13"
   },
   {
     "id": 199298,
     "name": "FVE U11C League",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-09",
+    "endDate": "2027-01-29"
   },
   {
     "id": 199709,
     "name": "LG U11C League",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-09",
+    "endDate": "2027-02-04"
+  },
+  {
+    "id": 199720,
+    "name": "PL U11C Balancing",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-09",
+    "endDate": "2026-11-05"
   },
   {
     "id": 200712,
     "name": "U11A THANKSGIVING TOURNAMENT - GAMES - TIERS 2-4",
     "divisionName": "U11",
-    "categoryName": "U11 SELECT"
+    "categoryName": "U11 SELECT",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-12"
   },
   {
     "id": 200723,
     "name": "U11A THANKSGIVING TOURNAMENT - PLAYOFFS - FLIGHT 1",
     "divisionName": "U11",
-    "categoryName": "U11 SELECT"
+    "categoryName": "U11 SELECT",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-11",
+    "endDate": "2026-10-12"
   },
   {
     "id": 200724,
     "name": "U11A THANKSGIVING TOURNAMENT - PLAYOFFS - FLIGHT 2",
     "divisionName": "U11",
-    "categoryName": "U11 SELECT"
+    "categoryName": "U11 SELECT",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-11",
+    "endDate": "2026-10-12"
   },
   {
     "id": 200725,
     "name": "U11A THANKSGIVING TOURNAMENT - PLAYOFFS - FLIGHT 3",
     "divisionName": "U11",
-    "categoryName": "U11 SELECT"
+    "categoryName": "U11 SELECT",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-11",
+    "endDate": "2026-10-12"
+  },
+  {
+    "id": 199248,
+    "name": "FVW U11C Balancing",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-13",
+    "endDate": "2026-11-09"
   },
   {
     "id": 199683,
     "name": "FVN U11C League",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-16",
+    "endDate": "2027-02-28"
   },
   {
     "id": 199356,
     "name": "VIAHA South Island League U11 Regular Season",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-17",
+    "endDate": "2027-02-21"
   },
   {
     "id": 199311,
     "name": "U11 A Interconference League ",
     "divisionName": "U11",
-    "categoryName": "U11 A"
+    "categoryName": "U11 A",
+    "scheduleType": "League",
+    "startDate": "2026-11-02",
+    "endDate": "2027-01-24"
   },
   {
     "id": 199320,
     "name": "U11 C League",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-02",
+    "endDate": "2027-01-24"
   },
   {
     "id": 199254,
     "name": "FVW U11C League",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-06",
+    "endDate": "2027-01-31"
   },
   {
     "id": 199299,
     "name": "FVE U11C Playoffs",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-01-08",
+    "endDate": "2027-03-12"
   },
   {
     "id": 199314,
     "name": "U11 A Interconference Playoffs",
     "divisionName": "U11",
-    "categoryName": "U11 A"
+    "categoryName": "U11 A",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-01",
+    "endDate": "2027-03-07"
   },
   {
     "id": 199321,
     "name": "U11 C Playoffs",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-01",
+    "endDate": "2027-03-07"
   },
   {
     "id": 199272,
     "name": "FVW U11C Playoffs",
     "divisionName": "U11",
-    "categoryName": "U11 C"
+    "categoryName": "U11 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-05",
+    "endDate": "2027-03-12"
+  },
+  {
+    "id": 199790,
+    "name": "PCEHL U13 AA Regular Season",
+    "divisionName": "U13",
+    "categoryName": "U13 AA",
+    "scheduleType": "League",
+    "startDate": "2026-09-01",
+    "endDate": "2027-02-15"
   },
   {
     "id": 195246,
     "name": "VIAHA Island League U13 Placement Schedule",
     "divisionName": "U13",
-    "categoryName": "U13 A"
+    "categoryName": "U13 A",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-18",
+    "endDate": "2026-10-18"
   },
   {
     "id": 199396,
     "name": "U13 A Placement",
     "divisionName": "U13",
-    "categoryName": "U13 A"
+    "categoryName": "U13 A",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-26"
   },
   {
     "id": 199401,
     "name": "U13 C Placement",
     "divisionName": "U13",
-    "categoryName": "U13 C"
+    "categoryName": "U13 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-26"
   },
   {
     "id": 199699,
     "name": "U13A Placement",
     "divisionName": "U13",
-    "categoryName": "U13 A"
+    "categoryName": "U13 A",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-05",
+    "endDate": "2026-11-09"
   },
   {
     "id": 199302,
     "name": "FVE U13C League",
     "divisionName": "U13",
-    "categoryName": "U13 C"
+    "categoryName": "U13 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-09",
+    "endDate": "2026-12-18"
   },
   {
     "id": 199708,
     "name": "LG U13C League",
     "divisionName": "U13",
-    "categoryName": "U13 C"
+    "categoryName": "U13 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-09",
+    "endDate": "2027-02-04"
+  },
+  {
+    "id": 199719,
+    "name": "PL U13C Balancing",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-09",
+    "endDate": "2026-11-05"
+  },
+  {
+    "id": 199249,
+    "name": "FVW U13C Balancing",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-13",
+    "endDate": "2026-11-09"
   },
   {
     "id": 199682,
     "name": "FVN U13C League",
     "divisionName": "U13",
-    "categoryName": "U13 C"
+    "categoryName": "U13 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-16",
+    "endDate": "2027-02-28"
   },
   {
     "id": 199357,
     "name": "VIAHA South Island League U13 Regular Season",
     "divisionName": "U13",
-    "categoryName": "U13 C"
+    "categoryName": "U13 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-17",
+    "endDate": "2027-02-21"
   },
   {
     "id": 199397,
     "name": "U13 A League",
     "divisionName": "U13",
-    "categoryName": "U13 A"
+    "categoryName": "U13 A",
+    "scheduleType": "League",
+    "startDate": "2026-11-02",
+    "endDate": "2027-01-24"
   },
   {
     "id": 199402,
     "name": "U13 C League",
     "divisionName": "U13",
-    "categoryName": "U13 C"
+    "categoryName": "U13 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-02",
+    "endDate": "2027-01-24"
   },
   {
     "id": 199255,
     "name": "FVW U13C League",
     "divisionName": "U13",
-    "categoryName": "U13 C"
+    "categoryName": "U13 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-06",
+    "endDate": "2027-01-31"
   },
   {
     "id": 199303,
     "name": "FVE U13C Playoffs",
     "divisionName": "U13",
-    "categoryName": "U13 C"
+    "categoryName": "U13 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-01-08",
+    "endDate": "2027-03-12"
   },
   {
     "id": 199398,
     "name": "U13 A Playoffs",
     "divisionName": "U13",
-    "categoryName": "U13 A"
+    "categoryName": "U13 A",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-01",
+    "endDate": "2027-03-07"
   },
   {
     "id": 199404,
     "name": "U13 C Playoffs",
     "divisionName": "U13",
-    "categoryName": "U13 C"
+    "categoryName": "U13 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-01",
+    "endDate": "2027-03-07"
   },
   {
     "id": 199273,
     "name": "FVW U13C Playoffs",
     "divisionName": "U13",
-    "categoryName": "U13 C"
+    "categoryName": "U13 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-05",
+    "endDate": "2027-03-12"
+  },
+  {
+    "id": 198475,
+    "name": "PCEHL U15 AA Regular Season",
+    "divisionName": "U15",
+    "categoryName": "U15 AA",
+    "scheduleType": "League",
+    "startDate": "2026-09-15",
+    "endDate": "2027-03-10"
+  },
+  {
+    "id": 198799,
+    "name": "BCEHL - U15 AAA",
+    "divisionName": "U15",
+    "categoryName": "U15 AAA",
+    "scheduleType": "League",
+    "startDate": "2026-09-18",
+    "endDate": "2027-02-15"
   },
   {
     "id": 195245,
     "name": "VIAHA Island League U15 Placement Schedule",
     "divisionName": "U15",
-    "categoryName": "U15 A"
+    "categoryName": "U15 A",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-25",
+    "endDate": "2026-10-18"
   },
   {
     "id": 199408,
     "name": "U15 A Placement",
     "divisionName": "U15",
-    "categoryName": "U15 A"
+    "categoryName": "U15 A",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-25"
   },
   {
     "id": 199413,
     "name": "U15 C Placement",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-25"
   },
   {
     "id": 199416,
     "name": "U15 C Placement",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-25"
   },
   {
     "id": 199697,
     "name": "U15A Placement",
     "divisionName": "U15",
-    "categoryName": "U15 A"
+    "categoryName": "U15 A",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-04",
+    "endDate": "2026-11-09"
   },
   {
     "id": 199305,
     "name": "FVE U15C League",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-05",
+    "endDate": "2026-12-18"
   },
   {
     "id": 199707,
     "name": "LG U15C League",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-09",
+    "endDate": "2027-01-28"
+  },
+  {
+    "id": 199250,
+    "name": "FVW U15C Balancing",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-13",
+    "endDate": "2026-11-09"
   },
   {
     "id": 199681,
     "name": "FVN U15C League",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-16",
+    "endDate": "2027-02-28"
   },
   {
     "id": 199358,
     "name": "VIAHA South Island League U15 Regular Season",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-17",
+    "endDate": "2027-02-21"
   },
   {
     "id": 199409,
     "name": "U15 A League",
     "divisionName": "U15",
-    "categoryName": "U15 A"
+    "categoryName": "U15 A",
+    "scheduleType": "League",
+    "startDate": "2026-11-02",
+    "endDate": "2027-01-24"
   },
   {
     "id": 199414,
     "name": "U15 C League",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-02",
+    "endDate": "2027-01-24"
   },
   {
     "id": 199256,
     "name": "FVW U15C League",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-06",
+    "endDate": "2027-01-31"
   },
   {
     "id": 199306,
     "name": "FVE U15C Playoffs",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-01-08",
+    "endDate": "2027-03-12"
   },
   {
     "id": 199410,
     "name": "U15 A Playoffs",
     "divisionName": "U15",
-    "categoryName": "U15 A"
+    "categoryName": "U15 A",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-01",
+    "endDate": "2027-03-07"
   },
   {
     "id": 199415,
     "name": "U15 C Playoffs",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-01",
+    "endDate": "2027-03-07"
   },
   {
     "id": 199274,
     "name": "FVW U15C Playoffs",
     "divisionName": "U15",
-    "categoryName": "U15 C"
+    "categoryName": "U15 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-05",
+    "endDate": "2027-03-12"
   },
   {
     "id": 198485,
     "name": "PCEHL U15 AA Playoffs",
     "divisionName": "U15",
-    "categoryName": "U15 AA"
+    "categoryName": "U15 AA",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-03-10",
+    "endDate": "2027-03-15"
+  },
+  {
+    "id": 198801,
+    "name": "BCEHL - U17 AAA",
+    "divisionName": "U17",
+    "categoryName": "U17 AAA",
+    "scheduleType": "League",
+    "startDate": "2026-09-11",
+    "endDate": "2027-02-16"
+  },
+  {
+    "id": 198804,
+    "name": "BCEHL - U18 AAA",
+    "divisionName": "U18",
+    "categoryName": "U18 AAA",
+    "scheduleType": "League",
+    "startDate": "2026-09-11",
+    "endDate": "2027-02-22"
+  },
+  {
+    "id": 198268,
+    "name": "BCEHL - Women's U18 AAA",
+    "divisionName": "U18",
+    "categoryName": "U18 AAA",
+    "scheduleType": "League",
+    "startDate": "2026-09-19",
+    "endDate": "2027-02-15"
   },
   {
     "id": 195244,
     "name": "VIAHA Island League U18 Placement Schedule",
     "divisionName": "U18",
-    "categoryName": "U18 A"
+    "categoryName": "U18 A",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-25",
+    "endDate": "2026-10-18"
   },
   {
     "id": 199419,
     "name": "U18 A Placement",
     "divisionName": "U18",
-    "categoryName": "U18 A"
+    "categoryName": "U18 A",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-27",
+    "endDate": "2026-10-25"
   },
   {
     "id": 199424,
     "name": "U18 C Placement",
     "divisionName": "U18",
-    "categoryName": "U18 C"
+    "categoryName": "U18 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-09-27",
+    "endDate": "2026-10-25"
   },
   {
     "id": 200107,
     "name": "U17A League",
     "divisionName": "U18",
-    "categoryName": "U18 A"
+    "categoryName": "U18 A",
+    "scheduleType": "League",
+    "startDate": "2026-10-05",
+    "endDate": "2027-01-29"
   },
   {
     "id": 199694,
     "name": "U18A Placement",
     "divisionName": "U18",
-    "categoryName": "U18 A"
+    "categoryName": "U18 A",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-06",
+    "endDate": "2026-11-09"
   },
   {
     "id": 199309,
     "name": "FVE U18C League",
     "divisionName": "U18",
-    "categoryName": "U18 C"
+    "categoryName": "U18 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-09",
+    "endDate": "2026-12-18"
   },
   {
     "id": 199706,
     "name": "LG U18C League",
     "divisionName": "U18",
-    "categoryName": "U18 C"
+    "categoryName": "U18 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-09",
+    "endDate": "2027-02-04"
+  },
+  {
+    "id": 199718,
+    "name": "PL U15C Balancing",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-09",
+    "endDate": "2026-11-05"
+  },
+  {
+    "id": 199717,
+    "name": "PL U18C Balancing",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-09",
+    "endDate": "2026-11-05"
+  },
+  {
+    "id": 199251,
+    "name": "FVW U18C Balancing",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-13",
+    "endDate": "2026-11-09"
   },
   {
     "id": 199680,
     "name": "FVN U18C League",
     "divisionName": "U18",
-    "categoryName": "U18 C"
+    "categoryName": "U18 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-16",
+    "endDate": "2027-02-28"
   },
   {
     "id": 199359,
     "name": "VIAHA South Island League U18 Regular Season",
     "divisionName": "U18",
-    "categoryName": "U18 C"
+    "categoryName": "U18 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-17",
+    "endDate": "2027-02-21"
   },
   {
     "id": 199420,
     "name": "U18 A League",
     "divisionName": "U18",
-    "categoryName": "U18 A"
+    "categoryName": "U18 A",
+    "scheduleType": "League",
+    "startDate": "2026-11-02",
+    "endDate": "2027-01-24"
   },
   {
     "id": 199425,
     "name": "U18 C League",
     "divisionName": "U18",
-    "categoryName": "U18 C"
+    "categoryName": "U18 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-02",
+    "endDate": "2027-01-24"
   },
   {
     "id": 199257,
     "name": "FVW U18C League",
     "divisionName": "U18",
-    "categoryName": "U18 C"
+    "categoryName": "U18 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-06",
+    "endDate": "2027-01-31"
   },
   {
     "id": 199310,
     "name": "FVE U18C Playoffs",
     "divisionName": "U18",
-    "categoryName": "U18 C"
+    "categoryName": "U18 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-01-08",
+    "endDate": "2027-03-12"
   },
   {
     "id": 199421,
     "name": "U18 A Playoffs",
     "divisionName": "U18",
-    "categoryName": "U18 A"
+    "categoryName": "U18 A",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-01",
+    "endDate": "2027-03-07"
   },
   {
     "id": 199426,
     "name": "U18 C Playoffs",
     "divisionName": "U18",
-    "categoryName": "U18 C"
+    "categoryName": "U18 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-01",
+    "endDate": "2027-03-07"
   },
   {
     "id": 199275,
     "name": "FVW U18C Playoffs",
     "divisionName": "U18",
-    "categoryName": "U18 C"
+    "categoryName": "U18 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-05",
+    "endDate": "2027-03-12"
   }
 ]
