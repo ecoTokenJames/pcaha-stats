@@ -13,6 +13,7 @@ const STAT_TABS: { key: StatCategory; label: string }[] = [
 ];
 
 const PAGE_SIZE = 50;
+const MIN_GP = 3;
 
 export interface LeaderPlayer extends PlayerStat {
   groupName: string | null;
@@ -64,7 +65,9 @@ export function LeadersTable({
 
   // Merge all players (league + playoffs, tournaments excluded upstream), then filter
   const filteredPlayers = useMemo(() => {
-    let filtered = mergeByPlayer(players);
+    let filtered = mergeByPlayer(players).filter(
+      (p) => p.gamesPlayed >= MIN_GP
+    );
 
     // Apply tier/group filter
     if (tierFilter !== null) {
@@ -181,7 +184,7 @@ export function LeadersTable({
 
       {/* Total count */}
       <p className="text-xs text-gray-400 mb-2">
-        {sortedPlayers.length} players (min. 3 GP)
+        {sortedPlayers.length} players (min. {MIN_GP} GP)
       </p>
 
       {/* Leaders Table */}

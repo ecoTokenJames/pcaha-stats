@@ -128,9 +128,6 @@ async function getBoxscore(gameId) {
  * Get groups (flights) for a schedule
  */
 async function getGroups(scheduleId) {
-  const filter = JSON.stringify({
-    where: { scheduleId }
-  });
   return fetchWithRetry(`/schedules/${scheduleId}/groups`);
 }
 

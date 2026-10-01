@@ -1,5 +1,19 @@
-import { getActiveDivisions, getAllStandings, getScrapeInfo, SEASON } from "@/lib/data";
+import {
+  getActiveDivisions,
+  getAllStandings,
+  getDivisionsForCategory,
+  getScrapeInfo,
+  SEASON,
+  type HockeyCategory,
+} from "@/lib/data";
+import type { Metadata } from "next";
 import { DivisionGrid } from "@/components/DivisionGrid";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
+
+const CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
 
 export default function Home() {
   const divisions = getActiveDivisions();
@@ -16,7 +30,13 @@ export default function Home() {
       0
     );
     const totalSchedules = divSchedules.length;
-    return { ...div, totalTeams, totalSchedules };
+    // Link to the first category that actually has this division (U9 has no rep teams)
+    const category =
+      CATEGORIES.find((c) =>
+        getDivisionsForCategory(c).some((d) => d.name === div.name)
+      ) ?? "rep";
+    const href = `/standings/${category}/${div.name.toLowerCase()}`;
+    return { ...div, totalTeams, totalSchedules, href };
   });
 
   // Sort divisions by age (U9, U10, ... U18)
@@ -71,6 +91,8 @@ export default function Home() {
                   day: "numeric",
                   hour: "numeric",
                   minute: "2-digit",
+                  timeZone: "America/Vancouver",
+                  timeZoneName: "short",
                 })}
               </div>
               <div className="text-xs text-gray-500">Last Updated</div>
