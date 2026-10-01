@@ -1,4 +1,4 @@
-import { getActiveDivisions, getAllStandings, getScrapeInfo } from "@/lib/data";
+import { getActiveDivisions, getAllStandings, getScrapeInfo, SEASON } from "@/lib/data";
 import { DivisionGrid } from "@/components/DivisionGrid";
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
       {/* Hero */}
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">
-          2025-26 Season Dashboard
+          {SEASON} Season Dashboard
         </h2>
         <p className="text-gray-600">
           Standings and stats for all PCAHA hockey divisions, updated daily.

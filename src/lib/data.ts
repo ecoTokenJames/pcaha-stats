@@ -133,6 +133,9 @@ export function getScrapeInfo(): ScrapeInfo | null {
   return readJson<ScrapeInfo>("meta/last-scrape.json");
 }
 
+/** Season label (e.g. "2026-27") taken from the most recent scrape. */
+export const SEASON = getScrapeInfo()?.season ?? "";
+
 // ==================== Category Types ====================
 
 export type HockeyCategory = "rep" | "house" | "female";

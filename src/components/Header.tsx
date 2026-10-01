@@ -10,7 +10,7 @@ const NAV_ITEMS = [
   { href: "/tournaments", label: "Tournaments", mobileLabel: "Tourneys" },
 ];
 
-export function Header() {
+export function Header({ season }: { season: string }) {
   const pathname = usePathname();
 
   return (
@@ -23,7 +23,7 @@ export function Header() {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-base font-bold leading-tight text-gray-900">PCAHA Stats</h1>
-              <p className="text-[10px] text-gray-500 leading-tight -mt-0.5">2025-26 Season</p>
+              <p className="text-[10px] text-gray-500 leading-tight -mt-0.5">{season} Season</p>
             </div>
             <span className="sm:hidden text-sm font-bold text-gray-900">PCAHA</span>
           </Link>

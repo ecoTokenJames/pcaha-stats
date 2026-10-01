@@ -7,6 +7,7 @@ import {
   getTeamGroupLookup,
   getAvailableGroups,
   type HockeyCategory,
+  SEASON,
 } from "@/lib/data";
 import { LeadersTable, type LeaderPlayer } from "@/components/LeadersTable";
 
@@ -27,7 +28,7 @@ export async function generateMetadata({
   const divName = division.toUpperCase();
   const catLabel = CATEGORY_LABELS[category] || category;
   const title = `${divName} ${catLabel} Scoring Leaders`;
-  const description = `Top scorers and scoring leaders for ${divName} ${catLabel} hockey in the 2025-26 PCAHA season. View points, goals, assists, and penalty minutes.`;
+  const description = `Top scorers and scoring leaders for ${divName} ${catLabel} hockey in the ${SEASON} PCAHA season. View points, goals, assists, and penalty minutes.`;
 
   return {
     title,

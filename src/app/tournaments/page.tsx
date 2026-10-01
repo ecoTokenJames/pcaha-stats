@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { getAllTournaments, getTournamentPlayers } from "@/lib/data";
+import { getAllTournaments, getTournamentPlayers, SEASON } from "@/lib/data";
 import { TournamentView } from "@/components/TournamentView";
 
 export const metadata: Metadata = {
   title: "Tournaments",
   description:
-    "Tournament standings and player stats for PCAHA minor hockey tournaments in the 2025-26 season.",
+    `Tournament standings and player stats for PCAHA minor hockey tournaments in the ${SEASON} season.`,
 };
 
 export default function TournamentsPage() {

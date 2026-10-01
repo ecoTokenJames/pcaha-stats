@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
+import { SEASON } from "@/lib/data";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -10,7 +11,7 @@ const inter = Inter({
 const SITE_URL = "https://www.pcahastats.com";
 const SITE_NAME = "PCAHA Stats";
 const SITE_DESCRIPTION =
-  "Live standings, player stats, and league leaders for all PCAHA minor hockey divisions in British Columbia. Updated daily for the 2025-26 season.";
+  `Live standings, player stats, and league leaders for all PCAHA minor hockey divisions in British Columbia. Updated daily for the ${SEASON} season.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     "PCAHA leaders",
     "hockey player stats",
     "British Columbia hockey",
-    "2025-26 hockey season",
+    `${SEASON} hockey season`,
   ],
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
@@ -92,7 +93,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-gray-50 text-gray-900 min-h-screen`}
       >
-        <Header />
+        <Header season={SEASON} />
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {children}
         </main>
