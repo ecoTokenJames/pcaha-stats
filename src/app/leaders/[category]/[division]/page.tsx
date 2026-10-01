@@ -72,7 +72,7 @@ export default async function LeadersDivisionPage({
   // Get all players, exclude tournaments (tournaments have their own section)
   const players = getFilteredPlayers(divName, category as HockeyCategory);
   const leaguePlayers = players.filter(
-    (p) => getScheduleType(p.scheduleName) !== "Tournament"
+    (p) => getScheduleType(p) !== "Tournament"
   );
 
   // Build team → group lookup from League standings for tier filtering

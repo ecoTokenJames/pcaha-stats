@@ -101,7 +101,7 @@ export default async function TeamDetailPage({
   const allPlayers = getTeamPlayers(divName, teamId);
   const abbrev = getLeagueAbbrev(teamInfo.scheduleName);
   const leaguePlayers = allPlayers.filter(
-    (p) => getScheduleType(p.scheduleName) !== "Tournament"
+    (p) => getScheduleType(p) !== "Tournament"
   );
   const mergedPlayers = mergePlayerStats(leaguePlayers);
 

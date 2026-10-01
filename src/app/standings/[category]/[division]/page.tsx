@@ -5,6 +5,8 @@ import {
   getDivisionsForCategory,
   getScheduleType,
   getLeagueAbbrev,
+  getSchedulePhase,
+  type ScheduleStandings,
   type HockeyCategory,
   SEASON,
 } from "@/lib/data";
@@ -17,6 +19,31 @@ const CATEGORY_LABELS: Record<string, string> = {
   house: "House",
   female: "Female",
 };
+
+const SECTION_LABELS: Record<string, string> = {
+  Placement: "Tiering (Placement)",
+};
+
+function formatDate(ymd: string): string {
+  return new Date(`${ymd}T12:00:00Z`).toLocaleDateString("en-CA", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
+
+function phaseLabel(s: ScheduleStandings): string | null {
+  switch (getSchedulePhase(s)) {
+    case "current":
+      return `In progress · until ${formatDate(s.endDate!)}`;
+    case "upcoming":
+      return `Starts ${formatDate(s.startDate!)}`;
+    case "finished":
+      return "Final";
+    default:
+      return null;
+  }
+}
 
 export async function generateMetadata({
   params,
@@ -78,23 +105,31 @@ export default async function DivisionStandingsPage({
   }
 
   // Group schedules by type (League, Playoffs, Placement, Tournament)
-  const grouped: Record<
-    string,
-    { scheduleId: string; scheduleName: string; categoryName: string }[]
-  > = {};
-  for (const [schedId, data] of Object.entries(standings)) {
-    const type = getScheduleType(data.scheduleName);
+  const grouped: Record<string, ScheduleStandings[]> = {};
+  for (const data of Object.values(standings)) {
+    const type = getScheduleType(data);
     if (!grouped[type]) grouped[type] = [];
-    grouped[type].push({
-      scheduleId: schedId,
-      scheduleName: data.scheduleName,
-      categoryName: data.categoryName,
-    });
+    grouped[type].push(data);
   }
 
+  // Whatever is being played right now goes first (e.g. tiering in the fall,
+  // playoffs in the spring), then what's coming up, then what's finished.
+  const PHASE_RANK = { current: 0, upcoming: 1, unknown: 1, finished: 2 };
+  const scheduleRank = (s: ScheduleStandings) =>
+    PHASE_RANK[getSchedulePhase(s)];
+  const sectionRank = (type: string) =>
+    Math.min(...grouped[type].map(scheduleRank));
+  // Among sections that haven't started, the one starting soonest goes first
+  const sectionStart = (type: string) =>
+    grouped[type].map((s) => s.startDate ?? "").sort()[0] ?? "";
   const typeOrder = ["League", "Playoffs", "Placement", "Tournament"];
   const sortedTypes = Object.keys(grouped).sort(
-    (a, b) => typeOrder.indexOf(a) - typeOrder.indexOf(b)
+    (a, b) =>
+      sectionRank(a) - sectionRank(b) ||
+      (sectionRank(a) === PHASE_RANK.upcoming
+        ? sectionStart(a).localeCompare(sectionStart(b))
+        : 0) ||
+      typeOrder.indexOf(a) - typeOrder.indexOf(b)
   );
 
   const teamLinkBase = `/standings/${category}/${division}/team`;
@@ -105,7 +140,7 @@ export default async function DivisionStandingsPage({
         <div key={type}>
           {sortedTypes.length > 1 && (
             <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
-              {type}
+              {SECTION_LABELS[type] ?? type}
               <span className="text-xs font-normal text-gray-400">
                 ({grouped[type].length})
               </span>
@@ -114,11 +149,15 @@ export default async function DivisionStandingsPage({
 
           <div className="space-y-6">
             {grouped[type]
-              .sort((a, b) => a.scheduleName.localeCompare(b.scheduleName))
-              .map(({ scheduleId, scheduleName }) => {
-                const data = standings[parseInt(scheduleId)];
-                if (!data) return null;
+              .sort(
+                (a, b) =>
+                  scheduleRank(a) - scheduleRank(b) ||
+                  a.scheduleName.localeCompare(b.scheduleName)
+              )
+              .map((data) => {
+                const { scheduleId, scheduleName } = data;
                 const abbrev = getLeagueAbbrev(scheduleName);
+                const status = phaseLabel(data);
 
                 return (
                   <div
@@ -130,11 +169,11 @@ export default async function DivisionStandingsPage({
                         <h4 className="font-semibold text-gray-900 text-sm">
                           {scheduleName}
                         </h4>
-                        {data.categoryName && (
-                          <span className="text-xs text-gray-500">
-                            {data.categoryName}
-                          </span>
-                        )}
+                        <span className="text-xs text-gray-500">
+                          {[data.categoryName, status]
+                            .filter(Boolean)
+                            .join(" · ")}
+                        </span>
                       </div>
                       <span className="text-xs font-medium text-blue-900 bg-blue-50 px-2 py-0.5 rounded">
                         {abbrev}
