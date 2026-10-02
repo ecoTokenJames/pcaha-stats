@@ -362,6 +362,29 @@ export function getTeamInfo(
   };
 }
 
+/**
+ * Games a team has played this season, split by schedule type
+ * (League, Placement, Playoffs, Tournament), from the standings.
+ */
+export function getTeamGamesByType(
+  division: string,
+  teamId: number
+): Record<ScheduleType, number> {
+  const games: Record<ScheduleType, number> = {
+    League: 0,
+    Placement: 0,
+    Playoffs: 0,
+    Tournament: 0,
+  };
+  for (const data of Object.values(getDivisionStandings(division))) {
+    // A team can appear in several groups of one schedule (playoff rounds)
+    for (const team of data.teams) {
+      if (team.teamId === teamId) games[getScheduleType(data)] += team.gamesPlayed;
+    }
+  }
+  return games;
+}
+
 // ==================== Helpers ====================
 
 /**

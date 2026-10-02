@@ -7,7 +7,7 @@ import {
   getFilteredStandings,
   getDivisionsForCategory,
   getLeagueAbbrev,
-  getScheduleType,
+  getTeamGamesByType,
   mergePlayerStats,
   type HockeyCategory,
   SEASON,
@@ -97,13 +97,23 @@ export default async function TeamDetailPage({
     notFound();
   }
 
-  // Get ALL players for this team, exclude tournaments from overall stats
+  // Season totals: every game the team played — league, tiering, playoffs, tournaments
   const allPlayers = getTeamPlayers(divName, teamId);
   const abbrev = getLeagueAbbrev(teamInfo.scheduleName);
-  const leaguePlayers = allPlayers.filter(
-    (p) => getScheduleType(p) !== "Tournament"
-  );
-  const mergedPlayers = mergePlayerStats(leaguePlayers);
+  const mergedPlayers = mergePlayerStats(allPlayers);
+  const gamesByType = getTeamGamesByType(divName, teamId);
+  const totalGames = Object.values(gamesByType).reduce((a, b) => a + b, 0);
+  const breakdown = (
+    [
+      ["League", "league"],
+      ["Placement", "tiering"],
+      ["Playoffs", "playoff"],
+      ["Tournament", "tournament"],
+    ] as const
+  )
+    .filter(([type]) => gamesByType[type] > 0)
+    .map(([type, label]) => `${gamesByType[type]} ${label}`)
+    .join(", ");
 
   return (
     <div className="space-y-6">
@@ -150,7 +160,28 @@ export default async function TeamDetailPage({
         </div>
       </div>
 
-      {/* Player Roster — Overall Stats (excludes tournaments) */}
+      {/* What the totals include */}
+      <div className="rounded-lg border border-blue-100 bg-blue-50 px-4 py-3 text-sm text-blue-900">
+        <p>
+          <span className="font-semibold">Season totals.</span> Player stats
+          add up every game this team has played in {SEASON}: league,
+          tiering, playoffs and tournaments.
+          {totalGames > 0 && (
+            <>
+              {" "}
+              That&apos;s {totalGames} game{totalGames === 1 ? "" : "s"} so far
+              ({breakdown}).
+            </>
+          )}
+        </p>
+        <p className="mt-1 text-xs text-blue-800/80">
+          GP is the team&apos;s games played. Spordle doesn&apos;t publish who
+          dressed for each game, so a player who missed games still shows the
+          team total. Goals, assists and PIM are exact.
+        </p>
+      </div>
+
+      {/* Player Roster — season totals across all schedules */}
       <TeamRosterTable players={mergedPlayers} />
     </div>
   );

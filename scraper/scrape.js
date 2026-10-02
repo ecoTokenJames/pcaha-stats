@@ -383,6 +383,15 @@ async function enrichWithRosters(playerMap, standings, schedules) {
     if (!schedule) continue;
 
     for (const team of data.teams) {
+      // A team can sit in several groups of one schedule (e.g. playoff rounds);
+      // its games in this schedule are the sum across those groups
+      const existing = teamScheduleEntries.find(
+        e => e.teamId === team.teamId && e.scheduleId === parseInt(schedId)
+      );
+      if (existing) {
+        existing.gamesPlayed += team.gamesPlayed;
+        continue;
+      }
       teamScheduleEntries.push({
         teamId: team.teamId,
         teamName: team.teamName,
