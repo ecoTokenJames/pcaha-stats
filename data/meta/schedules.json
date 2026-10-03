@@ -270,6 +270,15 @@
     "endDate": "2026-12-18"
   },
   {
+    "id": 201017,
+    "name": "FALL CLASSIC - GOLD TIER",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-12"
+  },
+  {
     "id": 199708,
     "name": "LG U13C League",
     "divisionName": "U13",
@@ -277,6 +286,15 @@
     "scheduleType": "League",
     "startDate": "2026-10-09",
     "endDate": "2027-02-04"
+  },
+  {
+    "id": 201010,
+    "name": "MISSION STARS U13 ICEBREAKER",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-11"
   },
   {
     "id": 199719,
