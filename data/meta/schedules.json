@@ -90,6 +90,15 @@
     "endDate": "2026-11-05"
   },
   {
+    "id": 201064,
+    "name": "SDMHA U11 Recreational Costal Clash",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-12"
+  },
+  {
     "id": 200712,
     "name": "U11A THANKSGIVING TOURNAMENT - GAMES - TIERS 2-4",
     "divisionName": "U11",
@@ -132,7 +141,7 @@
     "categoryName": "U11 C",
     "scheduleType": "Placement",
     "startDate": "2026-10-13",
-    "endDate": "2026-11-09"
+    "endDate": "2026-10-30"
   },
   {
     "id": 199683,
@@ -312,7 +321,7 @@
     "categoryName": "U13 C",
     "scheduleType": "Placement",
     "startDate": "2026-10-13",
-    "endDate": "2026-11-09"
+    "endDate": "2026-10-30"
   },
   {
     "id": 199682,
@@ -456,7 +465,7 @@
     "categoryName": "U15 A",
     "scheduleType": "Placement",
     "startDate": "2026-10-04",
-    "endDate": "2026-11-09"
+    "endDate": "2026-11-02"
   },
   {
     "id": 199305,
@@ -465,7 +474,7 @@
     "categoryName": "U15 C",
     "scheduleType": "League",
     "startDate": "2026-10-05",
-    "endDate": "2026-12-18"
+    "endDate": "2026-12-22"
   },
   {
     "id": 199707,
@@ -483,7 +492,7 @@
     "categoryName": "U15 C",
     "scheduleType": "Placement",
     "startDate": "2026-10-13",
-    "endDate": "2026-11-09"
+    "endDate": "2026-10-30"
   },
   {
     "id": 199681,
@@ -653,8 +662,8 @@
     "divisionName": "U18",
     "categoryName": "U18 C",
     "scheduleType": "League",
-    "startDate": "2026-10-09",
-    "endDate": "2026-12-18"
+    "startDate": "2026-10-06",
+    "endDate": "2026-12-23"
   },
   {
     "id": 199706,
@@ -690,7 +699,7 @@
     "categoryName": "U18 C",
     "scheduleType": "Placement",
     "startDate": "2026-10-13",
-    "endDate": "2026-11-09"
+    "endDate": "2026-10-30"
   },
   {
     "id": 199680,
