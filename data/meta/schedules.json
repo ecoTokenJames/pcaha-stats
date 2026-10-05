@@ -72,6 +72,15 @@
     "endDate": "2027-01-29"
   },
   {
+    "id": 199248,
+    "name": "FVW U11C Balancing",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-30"
+  },
+  {
     "id": 199709,
     "name": "LG U11C League",
     "divisionName": "U11",
@@ -90,21 +99,39 @@
     "endDate": "2026-11-05"
   },
   {
-    "id": 201064,
-    "name": "SDMHA U11 Recreational Costal Clash",
-    "divisionName": "U11",
-    "categoryName": "U11 C",
-    "scheduleType": "Tournament",
-    "startDate": "2026-10-09",
-    "endDate": "2026-10-12"
-  },
-  {
     "id": 200712,
     "name": "U11A THANKSGIVING TOURNAMENT - GAMES - TIERS 2-4",
     "divisionName": "U11",
     "categoryName": "U11 SELECT",
     "scheduleType": "Tournament",
     "startDate": "2026-10-09",
+    "endDate": "2026-10-12"
+  },
+  {
+    "id": 201133,
+    "name": "ICE BREAKER REP TOURNAMENT - U11A - TIER 1",
+    "divisionName": "U11",
+    "categoryName": "U11 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-12"
+  },
+  {
+    "id": 201143,
+    "name": "ICE BREAKER REP TOURNAMENT - U11A - TIER 2",
+    "divisionName": "U11",
+    "categoryName": "U11 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-12"
+  },
+  {
+    "id": 201145,
+    "name": "ICE BREAKER REP TOURNAMENT - U11A - TIER 3",
+    "divisionName": "U11",
+    "categoryName": "U11 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-10",
     "endDate": "2026-10-12"
   },
   {
@@ -133,15 +160,6 @@
     "scheduleType": "Tournament",
     "startDate": "2026-10-11",
     "endDate": "2026-10-12"
-  },
-  {
-    "id": 199248,
-    "name": "FVW U11C Balancing",
-    "divisionName": "U11",
-    "categoryName": "U11 C",
-    "scheduleType": "Placement",
-    "startDate": "2026-10-13",
-    "endDate": "2026-10-30"
   },
   {
     "id": 199683,
@@ -280,12 +298,39 @@
   },
   {
     "id": 201017,
-    "name": "FALL CLASSIC - GOLD TIER",
+    "name": "FALL CLASSIC - 13A - GOLD TIER",
     "divisionName": "U13",
     "categoryName": "U13 A",
     "scheduleType": "Tournament",
     "startDate": "2026-10-08",
     "endDate": "2026-10-12"
+  },
+  {
+    "id": 201110,
+    "name": "FALL CLASSIC - U13A - BLACK TIER",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-12"
+  },
+  {
+    "id": 201108,
+    "name": "FALL CLASSIC - U13A - WHITE TIER",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-12"
+  },
+  {
+    "id": 199249,
+    "name": "FVW U13C Balancing",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-30"
   },
   {
     "id": 199708,
@@ -315,13 +360,13 @@
     "endDate": "2026-11-05"
   },
   {
-    "id": 199249,
-    "name": "FVW U13C Balancing",
+    "id": 201150,
+    "name": "ICE BREAKER REP TOURNAMENT - U13A - TIER 1",
     "divisionName": "U13",
-    "categoryName": "U13 C",
-    "scheduleType": "Placement",
-    "startDate": "2026-10-13",
-    "endDate": "2026-10-30"
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-12"
   },
   {
     "id": 199682,
@@ -477,13 +522,13 @@
     "endDate": "2026-12-22"
   },
   {
-    "id": 199707,
-    "name": "LG U15C League",
+    "id": 201112,
+    "name": "FALL CLASSIC - U15A - GOLD TIER",
     "divisionName": "U15",
-    "categoryName": "U15 C",
-    "scheduleType": "League",
-    "startDate": "2026-10-09",
-    "endDate": "2027-01-28"
+    "categoryName": "U15 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-12"
   },
   {
     "id": 199250,
@@ -491,8 +536,17 @@
     "divisionName": "U15",
     "categoryName": "U15 C",
     "scheduleType": "Placement",
-    "startDate": "2026-10-13",
+    "startDate": "2026-10-09",
     "endDate": "2026-10-30"
+  },
+  {
+    "id": 199707,
+    "name": "LG U15C League",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "League",
+    "startDate": "2026-10-09",
+    "endDate": "2027-01-28"
   },
   {
     "id": 199681,
@@ -666,6 +720,33 @@
     "endDate": "2026-12-23"
   },
   {
+    "id": 199251,
+    "name": "FVW U18C Balancing",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-30"
+  },
+  {
+    "id": 201104,
+    "name": "ICEBREAKER - POOL A",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-11"
+  },
+  {
+    "id": 201107,
+    "name": "ICEBREAKER - POOL B",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-11"
+  },
+  {
     "id": 199706,
     "name": "LG U18C League",
     "divisionName": "U18",
@@ -691,15 +772,6 @@
     "scheduleType": "Placement",
     "startDate": "2026-10-09",
     "endDate": "2026-11-05"
-  },
-  {
-    "id": 199251,
-    "name": "FVW U18C Balancing",
-    "divisionName": "U18",
-    "categoryName": "U18 C",
-    "scheduleType": "Placement",
-    "startDate": "2026-10-13",
-    "endDate": "2026-10-30"
   },
   {
     "id": 199680,
