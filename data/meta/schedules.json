@@ -96,7 +96,7 @@
     "categoryName": "U11 C",
     "scheduleType": "Placement",
     "startDate": "2026-10-09",
-    "endDate": "2026-11-05"
+    "endDate": "2026-11-08"
   },
   {
     "id": 200712,
@@ -294,7 +294,7 @@
     "categoryName": "U13 C",
     "scheduleType": "League",
     "startDate": "2026-10-06",
-    "endDate": "2026-12-18"
+    "endDate": "2026-12-23"
   },
   {
     "id": 201017,
@@ -357,11 +357,29 @@
     "categoryName": "U13 C",
     "scheduleType": "Placement",
     "startDate": "2026-10-09",
-    "endDate": "2026-11-05"
+    "endDate": "2026-11-08"
   },
   {
     "id": 201150,
     "name": "ICE BREAKER REP TOURNAMENT - U13A - TIER 1",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-12"
+  },
+  {
+    "id": 201157,
+    "name": "ICE BREAKER REP TOURNAMENT - U13A - TIER 2",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-12"
+  },
+  {
+    "id": 201160,
+    "name": "ICE BREAKER REP TOURNAMENT - U13A - TIER 3",
     "divisionName": "U13",
     "categoryName": "U13 A",
     "scheduleType": "Tournament",
@@ -762,7 +780,7 @@
     "categoryName": "U18 C",
     "scheduleType": "Placement",
     "startDate": "2026-10-09",
-    "endDate": "2026-11-05"
+    "endDate": "2026-11-08"
   },
   {
     "id": 199717,
@@ -771,7 +789,7 @@
     "categoryName": "U18 C",
     "scheduleType": "Placement",
     "startDate": "2026-10-09",
-    "endDate": "2026-11-05"
+    "endDate": "2026-11-08"
   },
   {
     "id": 199680,
