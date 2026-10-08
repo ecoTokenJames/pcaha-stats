@@ -577,7 +577,16 @@
   },
   {
     "id": 201259,
-    "name": "U15A THANKSGIVING CLASSIC TOURNAMENT - BELCARRA POOL",
+    "name": "U15A TURKEY TOURNEY - BELCARRA POOL",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-12"
+  },
+  {
+    "id": 201313,
+    "name": "U15A TURKEY TOURNEY - ROCKY POINT POOL",
     "divisionName": "U15",
     "categoryName": "U15 A",
     "scheduleType": "Tournament",
@@ -601,6 +610,15 @@
     "scheduleType": "League",
     "startDate": "2026-10-09",
     "endDate": "2027-01-28"
+  },
+  {
+    "id": 199718,
+    "name": "PL U15C Balancing",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-09",
+    "endDate": "2026-11-08"
   },
   {
     "id": 199681,
@@ -810,15 +828,6 @@
     "endDate": "2027-02-04"
   },
   {
-    "id": 199718,
-    "name": "PL U15C Balancing",
-    "divisionName": "U18",
-    "categoryName": "U18 C",
-    "scheduleType": "Placement",
-    "startDate": "2026-10-09",
-    "endDate": "2026-11-08"
-  },
-  {
     "id": 199717,
     "name": "PL U18C Balancing",
     "divisionName": "U18",
@@ -828,7 +837,7 @@
     "endDate": "2026-11-08"
   },
   {
-    "id": 201257,
+    "id": 201334,
     "name": "ICE BREAKER TOURNAMENT ",
     "divisionName": "U18",
     "categoryName": "U18 C",
