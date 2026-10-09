@@ -86,7 +86,7 @@
     "divisionName": "U11",
     "categoryName": "U11 C",
     "scheduleType": "Placement",
-    "startDate": "2026-10-09",
+    "startDate": "2026-10-08",
     "endDate": "2026-10-30"
   },
   {
@@ -324,6 +324,15 @@
     "endDate": "2026-10-12"
   },
   {
+    "id": 199249,
+    "name": "FVW U13C Balancing",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-30"
+  },
+  {
     "id": 201108,
     "name": "FALL CLASSIC - U13A - WHITE TIER",
     "divisionName": "U13",
@@ -331,15 +340,6 @@
     "scheduleType": "Tournament",
     "startDate": "2026-10-09",
     "endDate": "2026-10-12"
-  },
-  {
-    "id": 199249,
-    "name": "FVW U13C Balancing",
-    "divisionName": "U13",
-    "categoryName": "U13 C",
-    "scheduleType": "Placement",
-    "startDate": "2026-10-09",
-    "endDate": "2026-10-30"
   },
   {
     "id": 199708,
@@ -576,6 +576,15 @@
     "endDate": "2026-10-12"
   },
   {
+    "id": 199250,
+    "name": "FVW U15C Balancing",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "Placement",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-30"
+  },
+  {
     "id": 201259,
     "name": "U15A TURKEY TOURNEY - BELCARRA POOL",
     "divisionName": "U15",
@@ -592,15 +601,6 @@
     "scheduleType": "Tournament",
     "startDate": "2026-10-09",
     "endDate": "2026-10-12"
-  },
-  {
-    "id": 199250,
-    "name": "FVW U15C Balancing",
-    "divisionName": "U15",
-    "categoryName": "U15 C",
-    "scheduleType": "Placement",
-    "startDate": "2026-10-09",
-    "endDate": "2026-10-30"
   },
   {
     "id": 199707,
@@ -637,6 +637,15 @@
     "scheduleType": "League",
     "startDate": "2026-10-17",
     "endDate": "2027-02-21"
+  },
+  {
+    "id": 201544,
+    "name": "ABBOTSFORD U15 REC TOURNAMENT",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-25"
   },
   {
     "id": 199409,
@@ -797,7 +806,7 @@
     "divisionName": "U18",
     "categoryName": "U18 C",
     "scheduleType": "Placement",
-    "startDate": "2026-10-09",
+    "startDate": "2026-10-08",
     "endDate": "2026-10-30"
   },
   {
