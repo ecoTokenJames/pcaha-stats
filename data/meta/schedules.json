@@ -177,7 +177,7 @@
     "categoryName": "U11 C",
     "scheduleType": "League",
     "startDate": "2026-10-16",
-    "endDate": "2027-02-28"
+    "endDate": "2027-01-28"
   },
   {
     "id": 199356,
@@ -402,7 +402,7 @@
     "categoryName": "U13 C",
     "scheduleType": "League",
     "startDate": "2026-10-16",
-    "endDate": "2027-02-28"
+    "endDate": "2027-01-28"
   },
   {
     "id": 199357,
@@ -627,7 +627,7 @@
     "categoryName": "U15 C",
     "scheduleType": "League",
     "startDate": "2026-10-16",
-    "endDate": "2027-02-28"
+    "endDate": "2027-01-28"
   },
   {
     "id": 199358,
@@ -861,7 +861,7 @@
     "categoryName": "U18 C",
     "scheduleType": "League",
     "startDate": "2026-10-16",
-    "endDate": "2027-02-28"
+    "endDate": "2027-01-28"
   },
   {
     "id": 199359,
@@ -897,6 +897,24 @@
     "categoryName": "U18 C",
     "scheduleType": "League",
     "startDate": "2026-11-06",
+    "endDate": "2027-01-31"
+  },
+  {
+    "id": 201705,
+    "name": "U18A League",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "scheduleType": "League",
+    "startDate": "2026-11-10",
+    "endDate": "2027-01-31"
+  },
+  {
+    "id": 201706,
+    "name": "U18A League",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "scheduleType": "League",
+    "startDate": "2026-11-10",
     "endDate": "2027-01-31"
   },
   {
