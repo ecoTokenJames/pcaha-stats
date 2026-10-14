@@ -16,7 +16,15 @@ const PAGE_SIZE = 50;
 const MIN_GP = 3;
 
 export interface LeaderPlayer extends PlayerStat {
+  /** League the player's team plays in, e.g. "U11A" or "FVE U11C" */
+  league: string | null;
+  /** Tier/flight/group in the team's current round */
   groupName: string | null;
+}
+
+export interface LeagueOption {
+  name: string;
+  groups: string[];
 }
 
 /**
@@ -53,23 +61,42 @@ function mergeByPlayer(players: LeaderPlayer[]): LeaderPlayer[] {
 
 export function LeadersTable({
   players,
-  groups,
+  leagues,
 }: {
   players: LeaderPlayer[];
-  groups: string[];
+  leagues: LeagueOption[];
 }) {
-  const [tierFilter, setTierFilter] = useState<string | null>(null);
+  // Players who qualify (min GP), merged across their schedules
+  const qualified = useMemo(
+    () => mergeByPlayer(players).filter((p) => p.gamesPlayed >= MIN_GP),
+    [players]
+  );
+  // Open on a tier that has leaders: the first tier (in order) with a qualifying player
+  const firstTierWithPlayers = (l: LeagueOption | undefined) =>
+    l?.groups.find((g) =>
+      qualified.some((p) => p.league === l.name && p.groupName === g)
+    ) ?? null;
+  const startLeague =
+    leagues.find((l) => qualified.some((p) => p.league === l.name)) ?? leagues[0];
+
+  // Always scoped to one league, and to one tier unless "All tiers" is picked
+  const [league, setLeague] = useState<string | null>(startLeague?.name ?? null);
+  const groups = leagues.find((l) => l.name === league)?.groups ?? [];
+  const [tierFilter, setTierFilter] = useState<string | null>(
+    firstTierWithPlayers(startLeague)
+  );
   const [positionFilter, setPositionFilter] = useState<string | null>(null);
   const [statCategory, setStatCategory] = useState<StatCategory>("points");
   const [showCount, setShowCount] = useState(PAGE_SIZE);
 
   // Merge all players (league + playoffs, tournaments excluded upstream), then filter
   const filteredPlayers = useMemo(() => {
-    let filtered = mergeByPlayer(players).filter(
-      (p) => p.gamesPlayed >= MIN_GP
-    );
+    let filtered = qualified;
 
-    // Apply tier/group filter
+    // League, then tier/group
+    if (league !== null) {
+      filtered = filtered.filter((p) => p.league === league);
+    }
     if (tierFilter !== null) {
       filtered = filtered.filter((p) => p.groupName === tierFilter);
     }
@@ -80,7 +107,7 @@ export function LeadersTable({
     }
 
     return filtered;
-  }, [players, tierFilter, positionFilter]);
+  }, [qualified, league, tierFilter, positionFilter]);
 
   // Sort players by selected stat category
   const sortedPlayers = useMemo(() => {
@@ -103,7 +130,40 @@ export function LeadersTable({
 
   return (
     <div>
+      {/* League filter */}
+      {leagues.length > 0 && (
+        <div className="mb-3">
+          <div className="text-xs font-medium uppercase tracking-wide text-gray-500 mb-1">
+            League
+          </div>
+          <div className="flex flex-wrap gap-1">
+            {leagues.map((l) => (
+              <button
+                key={l.name}
+                onClick={() => {
+                  setLeague(l.name);
+                  setTierFilter(firstTierWithPlayers(l));
+                  setShowCount(PAGE_SIZE);
+                }}
+                className={`px-3 py-1.5 rounded-md text-sm font-semibold transition-colors ${
+                  league === l.name
+                    ? "bg-blue-900 text-white"
+                    : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-900"
+                }`}
+              >
+                {l.name}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Tier/Flight Filter */}
+      {groups.length > 0 && (
+        <div className="text-xs font-medium uppercase tracking-wide text-gray-500 mb-1">
+          Tier
+        </div>
+      )}
       {groups.length > 0 && (
         <div className="flex flex-wrap gap-1 mb-4">
           <button
@@ -117,7 +177,7 @@ export function LeadersTable({
                 : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-900"
             }`}
           >
-            All Tiers
+            All tiers
           </button>
           {groups.map((group) => (
             <button
@@ -184,7 +244,9 @@ export function LeadersTable({
 
       {/* Total count */}
       <p className="text-xs text-gray-400 mb-2">
-        {sortedPlayers.length} players (min. {MIN_GP} GP)
+        {sortedPlayers.length === 0
+          ? `No players with ${MIN_GP}+ games in ${[league, tierFilter].filter(Boolean).join(" · ") || "this group"} yet.`
+          : `${sortedPlayers.length} players in ${[league, tierFilter ?? (groups.length ? "all tiers" : null)].filter(Boolean).join(" · ")} (min. ${MIN_GP} GP)`}
       </p>
 
       {/* Leaders Table */}

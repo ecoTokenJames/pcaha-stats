@@ -4,8 +4,8 @@ import {
   getFilteredPlayers,
   getDivisionsForCategory,
   getScheduleType,
-  getTeamGroupLookup,
-  getAvailableGroups,
+  getTeamDivisions,
+  sortGroups,
   mergePlayerStats,
   type HockeyCategory,
   SEASON,
@@ -75,19 +75,27 @@ export default async function LeadersDivisionPage({
     (p) => getScheduleType(p) !== "Tournament"
   );
 
-  // Build team → group lookup from League standings for tier filtering
-  const groupLookup = getTeamGroupLookup(divName, category as HockeyCategory);
-  const availableGroups = getAvailableGroups(
-    divName,
-    category as HockeyCategory
-  );
+  // Each team's league and current tier, so leaders are split by division
+  const teamDivisions = getTeamDivisions(divName, category as HockeyCategory);
 
-  // Add groupName field (3 GP minimum is applied after merging, in LeadersTable)
-  const qualifiedPlayers: LeaderPlayer[] = leaguePlayers
-    .map((p) => ({
-      ...p,
-      groupName: groupLookup.get(p.teamId) ?? null,
-    }));
+  // 3 GP minimum is applied after merging, in LeadersTable
+  const qualifiedPlayers: LeaderPlayer[] = leaguePlayers.map((p) => ({
+    ...p,
+    league: teamDivisions.get(p.teamId)?.league ?? null,
+    groupName: teamDivisions.get(p.teamId)?.group ?? null,
+  }));
+
+  // Leagues (biggest first) and the tiers in each
+  const leagueTeams = new Map<string, { teams: number; groups: Set<string> }>();
+  for (const { league, group } of teamDivisions.values()) {
+    const entry = leagueTeams.get(league) ?? { teams: 0, groups: new Set() };
+    entry.teams++;
+    if (group) entry.groups.add(group);
+    leagueTeams.set(league, entry);
+  }
+  const leagues = [...leagueTeams]
+    .sort((a, b) => b[1].teams - a[1].teams || a[0].localeCompare(b[0]))
+    .map(([name, { groups }]) => ({ name, groups: sortGroups([...groups]) }));
 
   if (!mergePlayerStats(leaguePlayers).some((p) => p.gamesPlayed >= 3)) {
     return (
@@ -98,5 +106,5 @@ export default async function LeadersDivisionPage({
     );
   }
 
-  return <LeadersTable players={qualifiedPlayers} groups={availableGroups} />;
+  return <LeadersTable players={qualifiedPlayers} leagues={leagues} />;
 }
