@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
+import { LevelUpFooter } from "@/components/LevelUpAd";
 import { SEASON } from "@/lib/data";
 
 const inter = Inter({
@@ -101,6 +102,7 @@ export default function RootLayout({
               Contact us · Remove a player&apos;s name
             </a>
           </p>
+          <LevelUpFooter />
         </footer>
         {/* Cookieless page-view counts (Vercel Web Analytics) */}
         <Analytics />
