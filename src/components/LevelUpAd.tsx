@@ -47,15 +47,20 @@ export function LevelUpCard() {
           🏆 Compete with friends. Climb from Novice to G.O.A.T and dominate
           the leaderboard.
         </p>
-        <a
-          href={levelUpLink("team-page")}
-          target="_blank"
-          rel="sponsored noopener"
-          className="mt-4 inline-block rounded-md px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
-          style={{ backgroundColor: BRAND }}
-        >
-          Start your 7-day free trial →
-        </a>
+        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
+          <a
+            href={levelUpLink("team-page")}
+            target="_blank"
+            rel="sponsored noopener"
+            className="inline-block rounded-md px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+            style={{ backgroundColor: BRAND }}
+          >
+            Start your 7-day free trial →
+          </a>
+          <span className="text-xs font-medium text-gray-500">
+            Available on iOS &amp; Android
+          </span>
+        </div>
       </div>
     </aside>
   );
@@ -79,7 +84,7 @@ export function LevelUpLine() {
           className="font-semibold underline"
           style={{ color: BRAND }}
         >
-          Try it free for 7 days →
+          Try it free for 7 days on iOS &amp; Android →
         </a>
       </span>
     </p>
