@@ -103,23 +103,6 @@
       "arena": "Langley Sportsplex 2"
     },
     {
-      "id": 944546,
-      "number": "U13Q6180",
-      "date": "2026-10-25",
-      "startTime": "2026-10-25T23:45:00.000Z",
-      "groupId": 7266,
-      "groupName": "Orange",
-      "homeTeamId": 178322,
-      "homeTeamName": "LANGLEY MHA U13 C1",
-      "awayTeamId": 178355,
-      "awayTeamName": "SOUTH DELTA MHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Langley Sportsplex 2"
-    },
-    {
       "id": 944547,
       "number": "U13Q6179",
       "date": "2026-10-25",
@@ -509,6 +492,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sportsplex Arena 1"
+    },
+    {
+      "id": 944546,
+      "number": "U13Q6180",
+      "date": "2026-10-17",
+      "startTime": "2026-10-18T02:00:00.000Z",
+      "groupId": 7266,
+      "groupName": "Orange",
+      "homeTeamId": 178322,
+      "homeTeamName": "LANGLEY MHA U13 C1",
+      "awayTeamId": 178355,
+      "awayTeamName": "SOUTH DELTA MHA U13 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "The Arenas at LEC 2"
     },
     {
       "id": 944512,
