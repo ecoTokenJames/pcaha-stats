@@ -1,0 +1,4 @@
+{
+  "_readme": "Spordle participant ids of players whose names must not appear on the site (removal requests sent to contact@pcahastats.com). Their stats still count toward team totals; the name shows as 'Name withheld'. Add the id and a short note; takes effect on the next nightly update.",
+  "hidden": []
+}

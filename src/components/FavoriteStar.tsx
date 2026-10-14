@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useSyncExternalStore } from "react";
 import {
   toggleFavoriteTeam,
   toggleFavoriteDivision,
@@ -8,12 +8,29 @@ import {
   isDivisionFavorite,
 } from "@/lib/favorites";
 
-export function TeamStar({ teamId }: { teamId: number }) {
-  const [starred, setStarred] = useState(false);
+// Favorites live in localStorage; re-render stars when they change in this tab
+// (custom event) or another tab ("storage" event). Server render: not starred.
+const CHANGE_EVENT = "pcaha-favorites-change";
 
-  useEffect(() => {
-    setStarred(isTeamFavorite(teamId));
-  }, [teamId]);
+function subscribe(onChange: () => void) {
+  window.addEventListener(CHANGE_EVENT, onChange);
+  window.addEventListener("storage", onChange);
+  return () => {
+    window.removeEventListener(CHANGE_EVENT, onChange);
+    window.removeEventListener("storage", onChange);
+  };
+}
+
+function useStarred(isStarred: () => boolean): boolean {
+  return useSyncExternalStore(subscribe, isStarred, () => false);
+}
+
+function notifyChange() {
+  window.dispatchEvent(new Event(CHANGE_EVENT));
+}
+
+export function TeamStar({ teamId }: { teamId: number }) {
+  const starred = useStarred(() => isTeamFavorite(teamId));
 
   return (
     <button
@@ -21,7 +38,7 @@ export function TeamStar({ teamId }: { teamId: number }) {
         e.preventDefault();
         e.stopPropagation();
         toggleFavoriteTeam(teamId);
-        setStarred(!starred);
+        notifyChange();
       }}
       className="text-gray-300 hover:text-yellow-400 transition-colors"
       title={starred ? "Remove from favorites" : "Add to favorites"}
@@ -40,11 +57,7 @@ export function TeamStar({ teamId }: { teamId: number }) {
 }
 
 export function DivisionStar({ divName }: { divName: string }) {
-  const [starred, setStarred] = useState(false);
-
-  useEffect(() => {
-    setStarred(isDivisionFavorite(divName));
-  }, [divName]);
+  const starred = useStarred(() => isDivisionFavorite(divName));
 
   return (
     <button
@@ -52,7 +65,7 @@ export function DivisionStar({ divName }: { divName: string }) {
         e.preventDefault();
         e.stopPropagation();
         toggleFavoriteDivision(divName);
-        setStarred(!starred);
+        notifyChange();
       }}
       className="text-gray-300 hover:text-yellow-400 transition-colors"
       title={starred ? "Remove from favorites" : "Add to favorites"}

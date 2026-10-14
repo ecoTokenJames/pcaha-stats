@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
 import { SEASON } from "@/lib/data";
 
@@ -95,7 +96,14 @@ export default function RootLayout({
             PCAHA or Spordle.
           </p>
           <p className="mt-1">Data sourced from games.pcaha.ca</p>
+          <p className="mt-1">
+            <a href="/contact" className="underline hover:text-gray-700">
+              Contact us · Remove a player&apos;s name
+            </a>
+          </p>
         </footer>
+        {/* Cookieless page-view counts (Vercel Web Analytics) */}
+        <Analytics />
       </body>
     </html>
   );

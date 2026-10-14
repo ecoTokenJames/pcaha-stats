@@ -68,6 +68,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "daily",
     priority: 0.7,
   });
+  entries.push({ url: `${SITE_URL}/contact`, changeFrequency: "yearly", priority: 0.2 });
+  entries.push({ url: `${SITE_URL}/search`, changeFrequency: "daily", priority: 0.5 });
   for (const t of getAllTournaments()) {
     entries.push({
       url: `${SITE_URL}/tournaments/${t.scheduleId}`,
