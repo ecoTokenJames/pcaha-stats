@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { LevelUpLine } from "@/components/LevelUpAd";
 import type { Metadata } from "next";
 import {
   getFilteredPlayers,
@@ -131,10 +132,13 @@ export default async function LeadersDivisionPage({
           appear here as the season gets going.
         </div>
       ) : (
+        <>
+        <LevelUpLine />
         <LeadersTable
           players={leaders.filter((p) => p.league && leagueTeams.has(p.league))}
           leagues={leagues}
         />
+        </>
       )}
     </div>
   );
