@@ -4,7 +4,7 @@
  * levelup.hockey/mobile sends phones to the right app store.
  */
 
-type Placement = "team-page" | "leaders" | "footer";
+type Placement = "team-page" | "home" | "leaders" | "footer";
 
 export function levelUpLink(placement: Placement): string {
   return `https://levelup.hockey/mobile?utm_source=pcahastats&utm_medium=sponsor&utm_campaign=pcaha-stats&utm_content=${placement}`;
@@ -20,8 +20,12 @@ function SponsorTag() {
   );
 }
 
-/** Main ad: a card on team pages, under the player stats. */
-export function LevelUpCard() {
+/** Main ad card: on team pages (under the player stats) and the home page. */
+export function LevelUpCard({
+  placement = "team-page",
+}: {
+  placement?: "team-page" | "home";
+}) {
   return (
     <aside
       aria-label="Sponsor: Level Up Hockey"
@@ -49,7 +53,7 @@ export function LevelUpCard() {
         </p>
         <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
           <a
-            href={levelUpLink("team-page")}
+            href={levelUpLink(placement)}
             target="_blank"
             rel="sponsored noopener"
             className="inline-block rounded-md px-4 py-2 text-sm font-semibold text-white hover:opacity-90"

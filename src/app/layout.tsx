@@ -91,7 +91,7 @@ export default function RootLayout({
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {children}
         </main>
-        <footer className="border-t border-gray-200 mt-12 py-6 text-center text-sm text-gray-500">
+        <footer className="border-t border-gray-200 mt-12 px-4 py-6 text-center text-sm text-gray-500">
           <p>
             PCAHA Stats is an unofficial stats tracker. Not affiliated with
             PCAHA or Spordle.

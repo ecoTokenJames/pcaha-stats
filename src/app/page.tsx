@@ -8,6 +8,7 @@ import {
 } from "@/lib/data";
 import type { Metadata } from "next";
 import { DivisionGrid } from "@/components/DivisionGrid";
+import { LevelUpCard } from "@/components/LevelUpAd";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -106,6 +107,11 @@ export default function Home() {
         Select a Division
       </h3>
       <DivisionGrid divisions={divisionStats} />
+
+      {/* Sponsor, after the navigation so it never gets in the way */}
+      <div className="mt-8">
+        <LevelUpCard placement="home" />
+      </div>
     </div>
   );
 }

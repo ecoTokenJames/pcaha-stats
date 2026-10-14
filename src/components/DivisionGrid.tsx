@@ -27,7 +27,8 @@ export function DivisionGrid({ divisions }: { divisions: DivisionCardData[] }) {
             <DivisionStar divName={div.name} />
           </div>
           <div className="text-xs text-gray-500 mt-1">
-            {div.totalSchedules} leagues &middot; {div.totalTeams} teams
+            {div.totalSchedules} {div.totalSchedules === 1 ? "league" : "leagues"}{" "}
+            &middot; {div.totalTeams} {div.totalTeams === 1 ? "team" : "teams"}
           </div>
         </Link>
       ))}
