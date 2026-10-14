@@ -15,6 +15,7 @@ import {
 import { Fragment } from "react";
 import { StandingsTable } from "@/components/StandingsTable";
 import { FalconsCard, FALCONS_DIVISIONS } from "@/components/FalconsAd";
+import { SponsorStrip } from "@/components/SponsorStrip";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
 
@@ -148,6 +149,7 @@ export default async function DivisionStandingsPage({
 
   return (
     <div className="space-y-8">
+      <SponsorStrip page="standings" division={divName} />
       {sortedTypes.map((type, i) => (
         <Fragment key={type}>
         <div>

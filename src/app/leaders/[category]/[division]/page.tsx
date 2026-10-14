@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { LevelUpLine } from "@/components/LevelUpAd";
+import { SponsorStrip } from "@/components/SponsorStrip";
 import { DismissibleNote } from "@/components/DismissibleNote";
 import type { Metadata } from "next";
 import {
@@ -119,6 +119,7 @@ export default async function LeadersDivisionPage({
 
   return (
     <div>
+      <SponsorStrip page="leaders" division={divName} levelUpLead="Want to top this list?" />
       <DismissibleNote id="leaders-tournaments" className="mb-4">
         <p>
         <span className="font-semibold">Leaders count league, tiering and playoff games.</span>{" "}
@@ -136,7 +137,6 @@ export default async function LeadersDivisionPage({
         </div>
       ) : (
         <>
-        <LevelUpLine />
         <LeadersTable
           players={leaders.filter((p) => p.league && leagueTeams.has(p.league))}
           leagues={leagues}

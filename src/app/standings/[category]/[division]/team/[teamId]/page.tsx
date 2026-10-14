@@ -16,6 +16,7 @@ import {
 import { TeamRosterTable } from "@/components/TeamRosterTable";
 import { GamesList } from "@/components/GamesList";
 import { LevelUpCard } from "@/components/LevelUpAd";
+import { SponsorStrip } from "@/components/SponsorStrip";
 import { DismissibleNote } from "@/components/DismissibleNote";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
@@ -149,6 +150,8 @@ export default async function TeamDetailPage({
         </svg>
         Back to {divName} Standings
       </Link>
+
+      <SponsorStrip page="team" division={divName} />
 
       {/* Team Header */}
       <div className="bg-white rounded-lg border border-gray-200 p-5">

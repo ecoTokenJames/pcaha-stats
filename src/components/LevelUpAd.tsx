@@ -4,7 +4,16 @@
  * levelup.hockey/mobile sends phones to the right app store.
  */
 
-type Placement = "team-page" | "team-page-coach" | "home" | "leaders" | "footer";
+type Placement =
+  | "team-page"
+  | "team-page-coach"
+  | "home"
+  | "leaders"
+  | "footer"
+  | "top-home"
+  | "top-standings"
+  | "top-leaders"
+  | "top-team";
 
 const UTM = "utm_source=pcahastats&utm_medium=sponsor&utm_campaign=pcaha-stats";
 
@@ -19,7 +28,7 @@ function levelUpCoachLink(): string {
 
 const BRAND = "#FF3D00";
 
-function SponsorTag() {
+export function SponsorTag() {
   return (
     <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-gray-500">
       Sponsor
@@ -131,18 +140,27 @@ export function LevelUpCard({
 }
 
 /** Short line above the Leaders table. */
-export function LevelUpLine() {
+/**
+ * Mini one-line ad, for the sponsor strip at the top of pages.
+ * `lead` is the bold opener (e.g. "Want to top this list?" on Leaders).
+ */
+export function LevelUpMini({
+  lead = "Elite hockey training. Right at home.",
+  placement,
+}: {
+  lead?: string;
+  placement: Placement;
+}) {
   return (
-    <p className="mb-4 flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-700">
+    <p className="flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-700">
       <SponsorTag />
       <span>
-        <span className="font-semibold text-gray-900">Want to top this list?</span>{" "}
-        Get elite training at home with{" "}
+        <span className="font-semibold text-gray-900">{lead}</span>{" "}
         <span className="font-semibold">Level Up Hockey</span>: step-by-step
         drills, every rep scored, and leaderboards to dominate with your
         friends.{" "}
         <a
-          href={levelUpLink("leaders")}
+          href={levelUpLink(placement)}
           target="_blank"
           rel="sponsored noopener"
           className="font-semibold underline"
