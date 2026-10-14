@@ -1,3 +1,5 @@
+import { SponsorTag } from "./LevelUpAd";
+
 /**
  * BC Falcons spring hockey sponsor card. Plain link, no scripts or cookies;
  * the link is tagged with where it was clicked. Copy comes from bcfalcons.com.
@@ -14,7 +16,8 @@ function falconsLink(placement: Placement): string {
 /** Falcons spring teams are for 2013–2018 birth years: U9 through U15 this season. */
 export const FALCONS_DIVISIONS = ["U9", "U10", "U11", "U12", "U13", "U14", "U15"];
 
-const GOLD = "#F5B83D";
+// Falcons accent (from the crest), used the same way Level Up uses its orange
+const FALCONS_BLACK = "#111111";
 
 interface FalconsSession {
   name: string;
@@ -117,18 +120,16 @@ export async function FalconsCard({ placement }: { placement: Placement }) {
   return (
     <aside
       aria-label="Sponsor: BC Falcons Hockey"
-      className="overflow-hidden rounded-lg border border-gray-800 bg-gray-950 text-white"
+      className="overflow-hidden rounded-lg border border-gray-200 bg-white"
     >
-      <div className="h-1" style={{ backgroundColor: GOLD }} />
+      <div className="h-1" style={{ backgroundColor: FALCONS_BLACK }} />
       <div className="flex gap-4 p-5">
         <div className="min-w-0 flex-1">
           <div className="mb-2 flex items-center justify-between gap-3">
-            <span className="text-xs font-bold uppercase tracking-widest" style={{ color: GOLD }}>
+            <span className="text-xs font-bold uppercase tracking-widest text-gray-500">
               BC Falcons Spring Hockey
             </span>
-            <span className="rounded bg-white/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-gray-300">
-              Sponsor
-            </span>
+            <SponsorTag />
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element -- small static crest */}
           <img
@@ -140,26 +141,26 @@ export async function FalconsCard({ placement }: { placement: Placement }) {
             loading="lazy"
             className="float-right mb-1 ml-3 h-16 w-auto sm:hidden"
           />
-          <h3 className="text-lg font-bold">
+          <h3 className="text-lg font-bold text-gray-900">
             Looking to take the next step this spring?
           </h3>
           {idSkates ? (
             <>
-              <p className="mt-1.5 text-sm text-gray-300">
+              <p className="mt-1.5 text-sm text-gray-700">
                 Top-end AAA competition, built around development: two
                 practices a week, forwards and defence trained separately, and
                 three AAA tournaments with a paid professional coaching staff.
               </p>
-              <div className="mt-3 rounded-md border border-white/10 bg-white/5 p-3">
-                <p className="text-sm font-bold" style={{ color: GOLD }}>
+              <div className="mt-3 rounded-md border border-gray-200 bg-gray-50 p-3">
+                <p className="text-sm font-bold text-gray-900">
                   ID skates: {idSkates.day}
                 </p>
-                <p className="text-xs text-gray-400">{idSkates.location}</p>
+                <p className="text-xs text-gray-500">{idSkates.location}</p>
                 <ul className="mt-2 grid grid-cols-1 gap-x-6 gap-y-1 text-sm sm:grid-cols-2">
                   {idSkates.skates.map((s) => (
                     <li key={s.birthYears + s.time} className="flex justify-between gap-3">
-                      <span className="font-medium">{s.birthYears}s</span>
-                      <span className="tabular-nums text-gray-300">{s.time}</span>
+                      <span className="font-medium text-gray-900">{s.birthYears}s</span>
+                      <span className="tabular-nums text-gray-700">{s.time}</span>
                     </li>
                   ))}
                 </ul>
@@ -167,14 +168,14 @@ export async function FalconsCard({ placement }: { placement: Placement }) {
             </>
           ) : (
             <>
-              <p className="mt-1.5 text-sm text-gray-300">
+              <p className="mt-1.5 text-sm text-gray-700">
                 Top-end AAA competition, built around development. Two practices
                 every week, one skills and one team, with forwards and defence
                 trained separately on the skills their position demands. Then three
                 AAA tournaments to put it all to the test, with a paid professional
                 coaching staff.
               </p>
-              <p className="mt-2 text-sm font-semibold">
+              <p className="mt-2 text-sm font-semibold text-gray-900">
                 More than just tournaments: real improvement.
               </p>
             </>
@@ -184,12 +185,12 @@ export async function FalconsCard({ placement }: { placement: Placement }) {
               href={falconsLink(placement)}
               target="_blank"
               rel="sponsored noopener"
-              className="inline-block rounded-md px-4 py-2 text-sm font-bold text-gray-950 hover:opacity-90"
-              style={{ backgroundColor: GOLD }}
+              className="inline-block rounded-md px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+              style={{ backgroundColor: FALCONS_BLACK }}
             >
               {idSkates ? "Register for an ID skate →" : "Apply for spring →"}
             </a>
-            <span className="text-xs text-gray-400">
+            <span className="text-xs font-medium text-gray-500">
               {idSkates
                 ? `Skaters ${idSkates.skaterPrice}${idSkates.goaliePrice ? ` · Goalies ${idSkates.goaliePrice}` : ""} · Spots are limited`
                 : "2013–2018 birth years · Langley, BC · Spots are limited"}
@@ -214,14 +215,12 @@ export async function FalconsCard({ placement }: { placement: Placement }) {
 export async function FalconsMini({ placement }: { placement: Placement }) {
   const idSkates = await getUpcomingIdSkates();
   return (
-    <p className="flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg border border-gray-800 bg-gray-950 px-4 py-2.5 text-sm text-gray-300">
-      <span className="rounded bg-white/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-gray-300">
-        Sponsor
-      </span>
+    <p className="flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-700">
+      <SponsorTag />
       <span>
         {idSkates ? (
           <>
-            <span className="font-semibold" style={{ color: GOLD }}>
+            <span className="font-semibold text-gray-900">
               BC Falcons ID skates: {idSkates.day}
             </span>{" "}
             at {idSkates.location}
@@ -230,7 +229,7 @@ export async function FalconsMini({ placement }: { placement: Placement }) {
           </>
         ) : (
           <>
-            <span className="font-semibold" style={{ color: GOLD }}>
+            <span className="font-semibold text-gray-900">
               Looking to take the next step this spring?
             </span>{" "}
             BC Falcons: top-end AAA competition, built around development.{" "}
@@ -240,7 +239,7 @@ export async function FalconsMini({ placement }: { placement: Placement }) {
           href={falconsLink(placement)}
           target="_blank"
           rel="sponsored noopener"
-          className="font-semibold text-white underline"
+          className="font-semibold text-gray-900 underline"
         >
           {idSkates ? "Register here →" : "Apply for spring →"}
         </a>
