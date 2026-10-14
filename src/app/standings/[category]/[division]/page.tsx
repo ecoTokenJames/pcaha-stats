@@ -168,6 +168,10 @@ export default async function DivisionStandingsPage({
                 const { scheduleId, scheduleName } = data;
                 const abbrev = getLeagueAbbrev(scheduleName);
                 const status = phaseLabel(data);
+                // Spordle shares standings but not game sheets for some leagues (VIAHA)
+                const standingsOnly =
+                  !divisionGames[scheduleId]?.length &&
+                  data.teams.some((t) => t.gamesPlayed > 0);
 
                 return (
                   <div
@@ -180,7 +184,12 @@ export default async function DivisionStandingsPage({
                           {scheduleName}
                         </h4>
                         <span className="text-xs text-gray-500">
-                          {[data.categoryName, status]
+                          {[
+                            data.categoryName,
+                            status,
+                            standingsOnly &&
+                              "Standings only: game sheets aren't published for this league",
+                          ]
                             .filter(Boolean)
                             .join(" · ")}
                         </span>

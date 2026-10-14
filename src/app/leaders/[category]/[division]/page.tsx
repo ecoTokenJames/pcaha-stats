@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import type { Metadata } from "next";
 import {
   getFilteredPlayers,
@@ -78,16 +79,33 @@ export default async function LeadersDivisionPage({
   // Each team's league and current tier, so leaders are split by division
   const teamDivisions = getTeamDivisions(divName, category as HockeyCategory);
 
-  // 3 GP minimum is applied after merging, in LeadersTable
-  const qualifiedPlayers: LeaderPlayer[] = leaguePlayers.map((p) => ({
-    ...p,
-    league: teamDivisions.get(p.teamId)?.league ?? null,
-    groupName: teamDivisions.get(p.teamId)?.group ?? null,
-  }));
+  // One row per player (season totals without tournaments), only what the table shows
+  const leaders: LeaderPlayer[] = mergePlayerStats(leaguePlayers)
+    .filter((p) => p.gamesPlayed > 0)
+    .map((p) => ({
+      id: p.participantId,
+      name: p.name,
+      number: p.number,
+      position: p.position,
+      teamName: p.teamName,
+      gamesPlayed: p.gamesPlayed,
+      goals: p.goals,
+      assists: p.assists,
+      points: p.points,
+      pim: p.pim,
+      league: teamDivisions.get(p.teamId)?.league ?? null,
+      groupName: teamDivisions.get(p.teamId)?.group ?? null,
+    }));
 
-  // Leagues (biggest first) and the tiers in each
+  // Leagues with game sheets (biggest first) and the tiers in each. Leagues where
+  // nobody has a goal, assist or penalty (e.g. VIAHA: Spordle only shares their
+  // standings) are left out rather than shown as an empty list.
+  const hasStats = new Set(
+    leaders.filter((p) => p.goals + p.assists + p.pim > 0).map((p) => p.league)
+  );
   const leagueTeams = new Map<string, { teams: number; groups: Set<string> }>();
   for (const { league, group } of teamDivisions.values()) {
+    if (!hasStats.has(league)) continue;
     const entry = leagueTeams.get(league) ?? { teams: 0, groups: new Set() };
     entry.teams++;
     if (group) entry.groups.add(group);
@@ -97,14 +115,27 @@ export default async function LeadersDivisionPage({
     .sort((a, b) => b[1].teams - a[1].teams || a[0].localeCompare(b[0]))
     .map(([name, { groups }]) => ({ name, groups: sortGroups([...groups]) }));
 
-  if (!mergePlayerStats(leaguePlayers).some((p) => p.gamesPlayed >= 3)) {
-    return (
-      <div className="text-center py-12 text-gray-500">
-        No {divName} {category} players have 3+ games yet — leaders will
-        appear here as the season gets going.
-      </div>
-    );
-  }
-
-  return <LeadersTable players={qualifiedPlayers} leagues={leagues} />;
+  return (
+    <div>
+      <p className="mb-4 rounded-lg border border-blue-100 bg-blue-50 px-4 py-3 text-sm text-blue-900">
+        <span className="font-semibold">Leaders count league, tiering and playoff games.</span>{" "}
+        Tournament games aren&apos;t included; see{" "}
+        <Link href="/tournaments" className="underline hover:text-blue-700">
+          Tournaments
+        </Link>{" "}
+        for those. Team pages show full season totals including tournaments.
+      </p>
+      {leagues.length === 0 ? (
+        <div className="text-center py-12 text-gray-500">
+          No {divName} {category} games with player stats yet. Leaders will
+          appear here as the season gets going.
+        </div>
+      ) : (
+        <LeadersTable
+          players={leaders.filter((p) => p.league && leagueTeams.has(p.league))}
+          leagues={leagues}
+        />
+      )}
+    </div>
+  );
 }
