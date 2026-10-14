@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import {
   getDivisionsForCategory,
   getFilteredStandings,
+  getAllTournaments,
   type HockeyCategory,
 } from "@/lib/data";
 
@@ -67,6 +68,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "daily",
     priority: 0.7,
   });
+  for (const t of getAllTournaments()) {
+    entries.push({
+      url: `${SITE_URL}/tournaments/${t.scheduleId}`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.5,
+    });
+  }
 
   return entries;
 }

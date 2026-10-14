@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getAllTournaments, getTournamentPlayers, SEASON } from "@/lib/data";
+import { getAllTournaments, getSchedulePhase, SEASON } from "@/lib/data";
 import { TournamentView } from "@/components/TournamentView";
 
 export const metadata: Metadata = {
@@ -8,6 +8,14 @@ export const metadata: Metadata = {
     `Tournament standings and player stats for PCAHA minor hockey tournaments in the ${SEASON} season.`,
   alternates: { canonical: "/tournaments" },
 };
+
+function formatDay(ymd: string): string {
+  return new Date(`${ymd}T12:00:00Z`).toLocaleDateString("en-CA", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
 
 export default function TournamentsPage() {
   const tournaments = getAllTournaments();
@@ -20,16 +28,25 @@ export default function TournamentsPage() {
     );
   }
 
-  // Pre-load player stats for each tournament
-  const tournamentData = tournaments.map((t) => ({
-    ...t,
-    players: getTournamentPlayers(t.scheduleId),
+  // Just the list; each tournament's standings, games and players are on its own page
+  const summaries = tournaments.map((t) => ({
+    scheduleId: t.scheduleId,
+    scheduleName: t.scheduleName,
+    divisionName: t.divisionName,
+    teamCount: new Set(t.teams.map((team) => team.teamId)).size,
+    when:
+      t.startDate && t.endDate
+        ? t.startDate === t.endDate
+          ? formatDay(t.startDate)
+          : `${formatDay(t.startDate)} – ${formatDay(t.endDate)}`
+        : "",
+    phase: getSchedulePhase(t),
   }));
 
   return (
     <div>
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Tournaments</h2>
-      <TournamentView tournaments={tournamentData} />
+      <TournamentView tournaments={summaries} />
     </div>
   );
 }
