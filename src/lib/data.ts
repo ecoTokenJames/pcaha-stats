@@ -543,6 +543,8 @@ export interface TournamentInfo {
   scheduleName: string;
   divisionName: string;
   categoryName: string;
+  startDate?: string;
+  endDate?: string;
   teams: TeamStanding[];
 }
 
@@ -560,6 +562,8 @@ export function getAllTournaments(): TournamentInfo[] {
         scheduleName: data.scheduleName,
         divisionName: data.divisionName,
         categoryName: data.categoryName,
+        startDate: data.startDate,
+        endDate: data.endDate,
         teams: data.teams,
       });
     }
