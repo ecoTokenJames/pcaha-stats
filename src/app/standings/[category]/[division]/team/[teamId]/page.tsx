@@ -8,11 +8,13 @@ import {
   getDivisionsForCategory,
   getLeagueAbbrev,
   getTeamGamesByType,
+  getTeamGames,
   mergePlayerStats,
   type HockeyCategory,
   SEASON,
 } from "@/lib/data";
 import { TeamRosterTable } from "@/components/TeamRosterTable";
+import { GamesList } from "@/components/GamesList";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
 
@@ -102,6 +104,14 @@ export default async function TeamDetailPage({
   const abbrev = getLeagueAbbrev(teamInfo.scheduleName);
   const mergedPlayers = mergePlayerStats(allPlayers);
   const gamesByType = getTeamGamesByType(divName, teamId);
+  const teamGames = getTeamGames(divName, teamId);
+  // Opponents get a link only if they have a page in this category
+  const linkableTeamIds = [
+    ...new Set(
+      Object.values(getFilteredStandings(divName, category as HockeyCategory))
+        .flatMap((s) => s.teams.map((t) => t.teamId))
+    ),
+  ];
   const totalGames = Object.values(gamesByType).reduce((a, b) => a + b, 0);
   const breakdown = (
     [
@@ -183,6 +193,25 @@ export default async function TeamDetailPage({
 
       {/* Player Roster — season totals across all schedules */}
       <TeamRosterTable players={mergedPlayers} />
+
+      {/* Every game this team is in: league, tiering, playoffs, tournaments */}
+      <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+        <div className="px-4 py-3 border-b border-gray-100">
+          <h4 className="font-semibold text-gray-900 text-sm">
+            Games
+            <span className="text-xs font-normal text-gray-400 ml-2">
+              ({teamGames.filter((g) => g.status === "final").length} played)
+            </span>
+          </h4>
+        </div>
+        <GamesList
+          games={teamGames}
+          teamLinkBase={`/standings/${category}/${division}/team`}
+          linkableTeamIds={linkableTeamIds}
+          showContext
+          emptyText="No games for this team yet."
+        />
+      </div>
     </div>
   );
 }

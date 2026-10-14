@@ -154,11 +154,35 @@ export interface GameRow {
 /** A game ready to render: start time already formatted in Pacific time. */
 export interface GameView extends GameRow {
   when: string;
+  /** Set on the team page, where games come from several schedules */
+  scheduleName?: string;
 }
 
 /** Games for each schedule in a division, newest first. */
 export function getDivisionGames(division: string): Record<string, GameRow[]> {
   return readJson<Record<string, GameRow[]>>(`games/${division.toLowerCase()}.json`) || {};
+}
+
+/**
+ * Every game a team is in this season across all its schedules in the division
+ * (league, tiering, playoffs, tournaments), newest first, tagged with the schedule.
+ */
+export function getTeamGames(division: string, teamId: number): GameView[] {
+  const standings = getDivisionStandings(division);
+  const seen = new Set<number>();
+  const games: GameView[] = [];
+  for (const [scheduleId, list] of Object.entries(getDivisionGames(division))) {
+    for (const g of list) {
+      if (g.homeTeamId !== teamId && g.awayTeamId !== teamId) continue;
+      if (seen.has(g.id)) continue;
+      seen.add(g.id);
+      games.push({
+        ...toGameView(g),
+        scheduleName: standings[scheduleId]?.scheduleName,
+      });
+    }
+  }
+  return games.sort((a, b) => (b.startTime ?? "").localeCompare(a.startTime ?? ""));
 }
 
 export function toGameView(game: GameRow): GameView {
