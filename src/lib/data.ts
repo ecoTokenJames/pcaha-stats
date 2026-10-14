@@ -625,46 +625,79 @@ function sortGroupNames(groups: string[]): string[] {
 }
 
 /**
- * Build a lookup from teamId → normalized groupName using League-type standings.
+ * League name without the round, e.g. "U11A Placement" → "U11A",
+ * "FVW U11C Balancing" → "FVW U11C", "PCEHL U13 AA Regular Season" → "PCEHL U13 AA".
  */
-export function getTeamGroupLookup(
+export function leagueLabel(scheduleName: string): string {
+  let name = scheduleName.trim();
+  const round =
+    /\s*(regular season|league|placement( games| schedule)?|balancing|playoffs?|championship day|\(.*\))\s*$/i;
+  while (round.test(name)) {
+    const next = name.replace(round, "").trim();
+    if (!next || next === name) break;
+    name = next;
+  }
+  return name || scheduleName;
+}
+
+export interface TeamDivision {
+  /** League the team plays in, e.g. "U11A" or "FVE U11C" */
+  league: string;
+  /** Tier/flight/group within that league for the current round */
+  group: string | null;
+}
+
+/**
+ * Where each team plays right now: its league and its tier in the current round.
+ * Uses the round in progress (else the latest one that has started, else the
+ * next one), preferring League over Playoffs over Placement. Tournaments are ignored.
+ */
+export function getTeamDivisions(
   division: string,
-  category: HockeyCategory
-): Map<number, string | null> {
-  const standings = getFilteredStandings(division, category);
-  const lookup = new Map<number, string | null>();
+  category: HockeyCategory,
+  today: string = new Date().toISOString().slice(0, 10)
+): Map<number, TeamDivision> {
+  const phaseRank = { current: 0, finished: 1, upcoming: 2, unknown: 1 };
+  const typeRank: Record<string, number> = { League: 0, Playoffs: 1, Placement: 2 };
+  const best = new Map<number, { score: number[]; value: TeamDivision }>();
 
-  for (const data of Object.values(standings)) {
-    if (getScheduleType(data) !== "League") continue;
-
+  for (const data of Object.values(getFilteredStandings(division, category))) {
+    const type = getScheduleType(data);
+    if (type === "Tournament") continue;
+    const phase = getSchedulePhase(data, today);
+    // Lower is better; among finished rounds the most recent wins
+    const score = [
+      phaseRank[phase],
+      phase === "finished" ? -Number((data.endDate ?? "").replace(/-/g, "")) : 0,
+      typeRank[type],
+    ];
     for (const team of data.teams) {
-      if (!lookup.has(team.teamId)) {
-        lookup.set(
-          team.teamId,
-          team.groupName ? normalizeGroupName(team.groupName) : null
-        );
+      const value: TeamDivision = {
+        league: leagueLabel(data.scheduleName),
+        group: team.groupName
+          ? type === "League"
+            ? normalizeGroupName(team.groupName)
+            : team.groupName
+          : null,
+      };
+      const prev = best.get(team.teamId);
+      if (!prev || compareScores(score, prev.score) < 0) {
+        best.set(team.teamId, { score, value });
       }
     }
   }
 
-  return lookup;
+  return new Map([...best].map(([id, { value }]) => [id, value]));
 }
 
-/**
- * Get sorted unique group names available for a division+category.
- */
-export function getAvailableGroups(
-  division: string,
-  category: HockeyCategory
-): string[] {
-  const lookup = getTeamGroupLookup(division, category);
-  const groups = new Set<string>();
-
-  for (const groupName of lookup.values()) {
-    if (groupName !== null) {
-      groups.add(groupName);
-    }
-  }
-
-  return sortGroupNames([...groups]);
+/** Compare two number arrays element by element (first difference decides). */
+function compareScores(a: number[], b: number[]): number {
+  for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return a[i] - b[i];
+  return 0;
 }
+
+/** Sort tier/flight/group names sensibly (Tier 1 before Tier 2, etc). */
+export function sortGroups(groups: string[]): string[] {
+  return sortGroupNames(groups);
+}
+
