@@ -6,6 +6,8 @@ import {
   getScheduleType,
   getLeagueAbbrev,
   getSchedulePhase,
+  getDivisionGames,
+  toGameView,
   type ScheduleStandings,
   type HockeyCategory,
   SEASON,
@@ -23,6 +25,11 @@ const CATEGORY_LABELS: Record<string, string> = {
 const SECTION_LABELS: Record<string, string> = {
   Placement: "Tiering (Placement)",
 };
+
+/** ISO timestamp N days from now (pages are built daily by the scrape). */
+function daysFromNow(days: number): string {
+  return new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString();
+}
 
 function formatDate(ymd: string): string {
   return new Date(`${ymd}T12:00:00Z`).toLocaleDateString("en-CA", {
@@ -95,6 +102,9 @@ export default async function DivisionStandingsPage({
   }
 
   const standings = getFilteredStandings(divName, category as HockeyCategory);
+  const divisionGames = getDivisionGames(divName);
+  // Results are all kept; upcoming games only for the next two weeks
+  const upcomingCutoff = daysFromNow(14);
 
   if (Object.keys(standings).length === 0) {
     return (
@@ -182,6 +192,13 @@ export default async function DivisionStandingsPage({
                     <StandingsTable
                       teams={data.teams}
                       teamLinkBase={teamLinkBase}
+                      games={(divisionGames[scheduleId] ?? [])
+                        .filter(
+                          (g) =>
+                            g.status !== "scheduled" ||
+                            (g.startTime ?? "") < upcomingCutoff
+                        )
+                        .map(toGameView)}
                     />
                   </div>
                 );

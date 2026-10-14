@@ -57,6 +57,61 @@ function scheduleFields(schedule) {
   };
 }
 
+/**
+ * Final score from a boxscore: goals per team, plus OT / shootout flags.
+ */
+function scoreFromBoxscore(boxscore, game) {
+  const goals = boxscore.goals || [];
+  const homeScore = goals.filter(g => g.teamId === game.homeTeamId).length;
+  const awayScore = goals.filter(g => g.teamId === game.awayTeamId).length;
+  const shootout = boxscore.shootout || [];
+  let decidedBy = null;
+  if (shootout.length > 0) decidedBy = 'SO';
+  else if (goals.some(g => g.gameTime?.period === 'OT')) decidedBy = 'OT';
+  return { homeScore, awayScore, decidedBy };
+}
+
+const arenaCache = {};
+async function arenaName(arenaId) {
+  if (!arenaId) return null;
+  if (!(arenaId in arenaCache)) {
+    try {
+      const arena = await api.getArena(arenaId);
+      arenaCache[arenaId] = arena ? [arena.name, arena.rink].filter(Boolean).join(' ') : null;
+    } catch {
+      arenaCache[arenaId] = null;
+    }
+  }
+  return arenaCache[arenaId];
+}
+
+/**
+ * One game as shown on the site. Score is filled in once the boxscore is read.
+ */
+async function gameRow(game, groupNames) {
+  let status = 'scheduled';
+  if (game.status === 'Cancelled') status = 'cancelled';
+  else if (game.status === 'Postponed') status = 'postponed';
+  else if (game.startTime && new Date(game.startTime) < new Date()) status = 'awaiting';
+  return {
+    id: game.id,
+    number: game.number || null,
+    date: game.date || null,
+    startTime: game.startTime || null,
+    groupId: game.groupId ?? null,
+    groupName: groupNames[game.groupId] || null,
+    homeTeamId: game.homeTeamId,
+    homeTeamName: game.homeTeam?.name || 'TBD',
+    awayTeamId: game.awayTeamId,
+    awayTeamName: game.awayTeam?.name || 'TBD',
+    homeScore: null,
+    awayScore: null,
+    decidedBy: null,
+    status,
+    arena: await arenaName(game.arenaId),
+  };
+}
+
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
@@ -151,6 +206,7 @@ async function fetchStandings(schedules) {
           pim: ts.pim,
           pimPerGame: ts.pimPerGame,
           groupName: ts.group?.name || null,
+          groupId: ts.group?.id ?? null,
         })),
       };
 
@@ -166,8 +222,10 @@ async function fetchStandings(schedules) {
 /**
  * Step 4: Fetch all games and boxscores for player stats
  */
-async function fetchPlayerStats(schedules) {
+async function fetchPlayerStats(schedules, groupNames) {
   log('Fetching games and player stats...');
+  // scheduleId -> game rows (scores, dates, tier group) for the Games tab
+  const gamesBySchedule = {};
   // Keyed by `${participantId}-${scheduleId}` so stats are per-schedule
   const playerMap = {};
   const teamPlayerMap = {}; // teamId -> Set of participantIds
@@ -181,6 +239,10 @@ async function fetchPlayerStats(schedules) {
     try {
       const games = await api.getGames(schedule.id);
       if (!games || games.length === 0) continue;
+
+      const rows = {};
+      for (const g of games) rows[g.id] = await gameRow(g, groupNames);
+      gamesBySchedule[schedId] = Object.values(rows);
 
       // Process certified games, plus approved games with team stats (tournament games aren't certified)
       const completedGames = games.filter(g => g.isCertified || (g.isApproved && g.homeTeamStats && g.awayTeamStats));
@@ -207,6 +269,11 @@ async function fetchPlayerStats(schedules) {
           const boxscore = boxscores[j];
           const game = completedGames.find(g => g.id === batch[j]);
           if (!boxscore || !game) continue;
+
+          // Spordle marks some future games approved; only a game that has started has a result
+          if (game.startTime && new Date(game.startTime) < new Date()) {
+            Object.assign(rows[game.id], scoreFromBoxscore(boxscore, game), { status: 'final' });
+          }
 
           // Track which players played in this game (composite keys)
           const gamePlayers = new Set();
@@ -365,7 +432,7 @@ async function fetchPlayerStats(schedules) {
   }
 
   log(`Processed ${processedGames} games total, found ${Object.keys(playerMap).length} player-schedule entries`);
-  return { playerMap, teamPlayerMap, totalGames: processedGames };
+  return { playerMap, teamPlayerMap, gamesBySchedule, totalGames: processedGames };
 }
 
 /**
@@ -556,7 +623,24 @@ async function main() {
 
   // Step 4: Fetch player stats (unless --standings flag)
   if (!standingsOnly) {
-    const { playerMap } = await fetchPlayerStats(schedules);
+    const groupNames = {};
+    for (const data of Object.values(standings)) {
+      for (const t of data.teams) if (t.groupId != null) groupNames[t.groupId] = t.groupName;
+    }
+    const { playerMap, gamesBySchedule } = await fetchPlayerStats(schedules, groupNames);
+
+    // Save game results/schedule per division, newest first
+    for (const division of divisions) {
+      const divGames = {};
+      for (const schedule of schedules) {
+        if (schedule.divisionName !== division.name || !gamesBySchedule[schedule.id]) continue;
+        divGames[schedule.id] = gamesBySchedule[schedule.id].sort((a, b) =>
+          (b.startTime || '').localeCompare(a.startTime || ''));
+      }
+      if (Object.keys(divGames).length > 0) {
+        saveJson(path.join(DATA_DIR, 'games', `${division.name.toLowerCase()}.json`), divGames);
+      }
+    }
 
     // Step 5: Fetch team rosters and fix GP
     // The boxscore only records players who scored/assisted/penalized.
