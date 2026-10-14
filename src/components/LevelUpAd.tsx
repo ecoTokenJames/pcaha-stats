@@ -4,10 +4,17 @@
  * levelup.hockey/mobile sends phones to the right app store.
  */
 
-type Placement = "team-page" | "home" | "leaders" | "footer";
+type Placement = "team-page" | "team-page-coach" | "home" | "leaders" | "footer";
+
+const UTM = "utm_source=pcahastats&utm_medium=sponsor&utm_campaign=pcaha-stats";
 
 export function levelUpLink(placement: Placement): string {
-  return `https://levelup.hockey/mobile?utm_source=pcahastats&utm_medium=sponsor&utm_campaign=pcaha-stats&utm_content=${placement}`;
+  return `https://levelup.hockey/mobile?${UTM}&utm_content=${placement}`;
+}
+
+/** Coach sign-up: creates the coach account and the team in one step. */
+function levelUpCoachLink(): string {
+  return `https://levelup.hockey/coach/signup?${UTM}&utm_content=team-page-coach`;
 }
 
 const BRAND = "#FF3D00";
@@ -66,6 +73,33 @@ export function LevelUpCard({
           </span>
         </div>
       </div>
+
+      {/* On team pages, pitch the whole team too (coaches and managers read these) */}
+      {placement === "team-page" && (
+        <div className="border-t border-gray-100 bg-gray-50 px-5 py-4">
+          <h4 className="font-bold text-gray-900">Get your whole team on Level Up.</h4>
+          <ul className="mt-2 space-y-1 text-sm text-gray-700">
+            <li>✅ Coaches set up the team in minutes</li>
+            <li>📋 Assign homework that shows up right in each player&apos;s app</li>
+            <li>📈 Track every player&apos;s progress</li>
+            <li>🏒 Players compete with teammates all season on the team leaderboards</li>
+          </ul>
+          <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
+            <a
+              href={levelUpCoachLink()}
+              target="_blank"
+              rel="sponsored noopener"
+              className="inline-block rounded-md border px-4 py-2 text-sm font-semibold hover:bg-white"
+              style={{ borderColor: BRAND, color: BRAND }}
+            >
+              Set up your team →
+            </a>
+            <span className="text-xs font-medium text-gray-500">
+              Group pricing for teams of 15+
+            </span>
+          </div>
+        </div>
+      )}
     </aside>
   );
 }
