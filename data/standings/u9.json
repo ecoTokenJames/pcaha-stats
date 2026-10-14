@@ -29,7 +29,8 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": null,
+        "groupId": null
       },
       {
         "rank": 1,
@@ -52,7 +53,8 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": null,
+        "groupId": null
       },
       {
         "rank": 1,
@@ -75,7 +77,8 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": null,
+        "groupId": null
       },
       {
         "rank": 1,
@@ -98,7 +101,8 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": null,
+        "groupId": null
       },
       {
         "rank": 1,
@@ -121,7 +125,8 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": null,
+        "groupId": null
       },
       {
         "rank": 1,
@@ -144,7 +149,8 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": null,
+        "groupId": null
       },
       {
         "rank": 7,
@@ -167,7 +173,8 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": null,
+        "groupId": null
       },
       {
         "rank": 7,
@@ -190,7 +197,8 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": null,
+        "groupId": null
       },
       {
         "rank": 7,
@@ -213,7 +221,8 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": null,
+        "groupId": null
       },
       {
         "rank": 10,
@@ -236,7 +245,8 @@
         "gaPerGame": 0,
         "pim": 0,
         "pimPerGame": 0,
-        "groupName": null
+        "groupName": null,
+        "groupId": null
       }
     ]
   }
