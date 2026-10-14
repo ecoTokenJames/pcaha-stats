@@ -16,7 +16,86 @@ export const FALCONS_DIVISIONS = ["U9", "U10", "U11", "U12", "U13", "U14", "U15"
 
 const GOLD = "#F5B83D";
 
-export function FalconsCard({ placement }: { placement: Placement }) {
+interface FalconsSession {
+  name: string;
+  date: string; // YYYY-MM-DD
+  time: string; // HH:MM, 24h
+  location: string;
+  price: number; // cents
+  goaliePrice?: number; // cents
+}
+
+export interface IdSkate {
+  /** e.g. "2017" or "2014/13" */
+  birthYears: string;
+  time: string; // "8:00 AM"
+}
+
+interface IdSkateDay {
+  /** e.g. "Friday, Oct 23" */
+  day: string;
+  location: string;
+  skaterPrice: string;
+  goaliePrice: string | null;
+  skates: IdSkate[];
+}
+
+function todayPacific(): string {
+  return new Date().toLocaleDateString("en-CA", { timeZone: "America/Vancouver" });
+}
+
+function formatTime(hhmm: string): string {
+  const [h, m] = hhmm.split(":").map(Number);
+  return `${h % 12 || 12}:${String(m).padStart(2, "0")} ${h < 12 ? "AM" : "PM"}`;
+}
+
+function dollars(cents: number): string {
+  return `$${(cents / 100).toFixed(cents % 100 ? 2 : 0)}`;
+}
+
+/**
+ * The next day with Falcons ID skates, read from the Falcons site's public
+ * session list when the page is built (nightly). Null if there are none coming
+ * up or the Falcons site can't be reached, and the card falls back to the
+ * general spring pitch.
+ */
+async function getUpcomingIdSkates(): Promise<IdSkateDay | null> {
+  try {
+    const res = await fetch("https://www.bcfalcons.com/api/sessions");
+    if (!res.ok) return null;
+    const body = await res.json();
+    const sessions: FalconsSession[] = Array.isArray(body) ? body : body.sessions ?? [];
+    const today = todayPacific();
+    const idSkates = sessions
+      .filter((s) => /\bID Skate\b/i.test(s.name) && s.date >= today)
+      .sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
+    if (idSkates.length === 0) return null;
+
+    const date = idSkates[0].date;
+    const day = idSkates.filter((s) => s.date === date);
+    return {
+      day: new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", {
+        weekday: "long",
+        month: "short",
+        day: "numeric",
+        timeZone: "UTC",
+      }),
+      location: day[0].location,
+      skaterPrice: dollars(day[0].price),
+      goaliePrice: day[0].goaliePrice ? dollars(day[0].goaliePrice) : null,
+      skates: day.map((s) => ({
+        // "2017 Falcons ID Skate #2" -> "2017"
+        birthYears: s.name.split(/\s+Falcons/i)[0].trim(),
+        time: formatTime(s.time),
+      })),
+    };
+  } catch {
+    return null;
+  }
+}
+
+export async function FalconsCard({ placement }: { placement: Placement }) {
+  const idSkates = await getUpcomingIdSkates();
   return (
     <aside
       aria-label="Sponsor: BC Falcons Hockey"
@@ -46,16 +125,42 @@ export function FalconsCard({ placement }: { placement: Placement }) {
           <h3 className="text-lg font-bold">
             Looking to take the next step this spring?
           </h3>
-          <p className="mt-1.5 text-sm text-gray-300">
-            Top-end AAA competition, built around development. Two practices
-            every week, one skills and one team, with forwards and defence
-            trained separately on the skills their position demands. Then three
-            AAA tournaments to put it all to the test, with a paid professional
-            coaching staff.
-          </p>
-          <p className="mt-2 text-sm font-semibold">
-            More than just tournaments: real improvement.
-          </p>
+          {idSkates ? (
+            <>
+              <p className="mt-1.5 text-sm text-gray-300">
+                Top-end AAA competition, built around development: two
+                practices a week, forwards and defence trained separately, and
+                three AAA tournaments with a paid professional coaching staff.
+              </p>
+              <div className="mt-3 rounded-md border border-white/10 bg-white/5 p-3">
+                <p className="text-sm font-bold" style={{ color: GOLD }}>
+                  ID skates: {idSkates.day}
+                </p>
+                <p className="text-xs text-gray-400">{idSkates.location}</p>
+                <ul className="mt-2 grid grid-cols-1 gap-x-6 gap-y-1 text-sm sm:grid-cols-2">
+                  {idSkates.skates.map((s) => (
+                    <li key={s.birthYears + s.time} className="flex justify-between gap-3">
+                      <span className="font-medium">{s.birthYears}s</span>
+                      <span className="tabular-nums text-gray-300">{s.time}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="mt-1.5 text-sm text-gray-300">
+                Top-end AAA competition, built around development. Two practices
+                every week, one skills and one team, with forwards and defence
+                trained separately on the skills their position demands. Then three
+                AAA tournaments to put it all to the test, with a paid professional
+                coaching staff.
+              </p>
+              <p className="mt-2 text-sm font-semibold">
+                More than just tournaments: real improvement.
+              </p>
+            </>
+          )}
           <div className="clear-both mt-4 flex flex-wrap items-center gap-x-3 gap-y-2 pt-1">
             <a
               href={falconsLink(placement)}
@@ -64,10 +169,12 @@ export function FalconsCard({ placement }: { placement: Placement }) {
               className="inline-block rounded-md px-4 py-2 text-sm font-bold text-gray-950 hover:opacity-90"
               style={{ backgroundColor: GOLD }}
             >
-              Apply for spring →
+              {idSkates ? "Register for an ID skate →" : "Apply for spring →"}
             </a>
             <span className="text-xs text-gray-400">
-              2013–2018 birth years · Langley, BC · Spots are limited
+              {idSkates
+                ? `Skaters ${idSkates.skaterPrice}${idSkates.goaliePrice ? ` · Goalies ${idSkates.goaliePrice}` : ""} · Spots are limited`
+                : "2013–2018 birth years · Langley, BC · Spots are limited"}
             </span>
           </div>
         </div>
