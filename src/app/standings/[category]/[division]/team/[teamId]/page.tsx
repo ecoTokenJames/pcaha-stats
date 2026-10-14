@@ -16,6 +16,7 @@ import {
 import { TeamRosterTable } from "@/components/TeamRosterTable";
 import { GamesList } from "@/components/GamesList";
 import { LevelUpCard } from "@/components/LevelUpAd";
+import { DismissibleNote } from "@/components/DismissibleNote";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
 
@@ -172,7 +173,7 @@ export default async function TeamDetailPage({
       </div>
 
       {/* What the totals include */}
-      <div className="rounded-lg border border-blue-100 bg-blue-50 px-4 py-3 text-sm text-blue-900">
+      <DismissibleNote id="team-season-totals">
         <p>
           <span className="font-semibold">Season totals.</span> Player stats
           add up every game this team has played in {SEASON}: league,
@@ -190,7 +191,7 @@ export default async function TeamDetailPage({
           dressed for each game, so a player who missed games still shows the
           team total. Goals, assists and PIM are exact.
         </p>
-      </div>
+      </DismissibleNote>
 
       {/* Player Roster — season totals across all schedules */}
       <TeamRosterTable players={mergedPlayers} />

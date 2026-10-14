@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { LevelUpLine } from "@/components/LevelUpAd";
+import { DismissibleNote } from "@/components/DismissibleNote";
 import type { Metadata } from "next";
 import {
   getFilteredPlayers,
@@ -118,14 +119,16 @@ export default async function LeadersDivisionPage({
 
   return (
     <div>
-      <p className="mb-4 rounded-lg border border-blue-100 bg-blue-50 px-4 py-3 text-sm text-blue-900">
+      <DismissibleNote id="leaders-tournaments" className="mb-4">
+        <p>
         <span className="font-semibold">Leaders count league, tiering and playoff games.</span>{" "}
         Tournament games aren&apos;t included; see{" "}
         <Link href="/tournaments" className="underline hover:text-blue-700">
           Tournaments
         </Link>{" "}
         for those. Team pages show full season totals including tournaments.
-      </p>
+        </p>
+      </DismissibleNote>
       {leagues.length === 0 ? (
         <div className="text-center py-12 text-gray-500">
           No {divName} {category} games with player stats yet. Leaders will
