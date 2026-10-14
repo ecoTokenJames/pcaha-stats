@@ -10,6 +10,7 @@ import type { Metadata } from "next";
 import { DivisionGrid } from "@/components/DivisionGrid";
 import { LevelUpCard } from "@/components/LevelUpAd";
 import { FalconsCard } from "@/components/FalconsAd";
+import { SponsorStrip } from "@/components/SponsorStrip";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -102,6 +103,8 @@ export default function Home() {
           )}
         </div>
       </div>
+
+      <SponsorStrip page="home" />
 
       {/* Division Grid */}
       <h3 className="text-lg font-semibold text-gray-900 mb-3">

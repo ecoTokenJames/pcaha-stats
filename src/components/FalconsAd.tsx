@@ -3,7 +3,7 @@
  * the link is tagged with where it was clicked. Copy comes from bcfalcons.com.
  */
 
-type Placement = "home" | "standings";
+type Placement = "home" | "standings" | "top-home" | "top-standings" | "top-leaders" | "top-team";
 
 const UTM = "utm_source=pcahastats&utm_medium=sponsor&utm_campaign=pcaha-stats";
 
@@ -23,6 +23,8 @@ interface FalconsSession {
   location: string;
   price: number; // cents
   goaliePrice?: number; // cents
+  birthYearMin?: number;
+  birthYearMax?: number;
 }
 
 export interface IdSkate {
@@ -37,6 +39,8 @@ interface IdSkateDay {
   location: string;
   skaterPrice: string;
   goaliePrice: string | null;
+  /** e.g. "2013–2019", across all of that day's skates */
+  birthYearRange: string | null;
   skates: IdSkate[];
 }
 
@@ -59,7 +63,15 @@ function dollars(cents: number): string {
  * up or the Falcons site can't be reached, and the card falls back to the
  * general spring pitch.
  */
-async function getUpcomingIdSkates(): Promise<IdSkateDay | null> {
+// One request per build worker: every page that shows the Falcons ad shares it
+let idSkatesPromise: Promise<IdSkateDay | null> | null = null;
+
+function getUpcomingIdSkates(): Promise<IdSkateDay | null> {
+  idSkatesPromise ??= fetchUpcomingIdSkates();
+  return idSkatesPromise;
+}
+
+async function fetchUpcomingIdSkates(): Promise<IdSkateDay | null> {
   try {
     const res = await fetch("https://www.bcfalcons.com/api/sessions");
     if (!res.ok) return null;
@@ -73,7 +85,13 @@ async function getUpcomingIdSkates(): Promise<IdSkateDay | null> {
 
     const date = idSkates[0].date;
     const day = idSkates.filter((s) => s.date === date);
+    const mins = day.map((s) => s.birthYearMin).filter((y): y is number => !!y);
+    const maxes = day.map((s) => s.birthYearMax).filter((y): y is number => !!y);
     return {
+      birthYearRange:
+        mins.length && maxes.length
+          ? `${Math.min(...mins)}–${Math.max(...maxes)}`
+          : null,
       day: new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", {
         weekday: "long",
         month: "short",
@@ -189,5 +207,44 @@ export async function FalconsCard({ placement }: { placement: Placement }) {
         />
       </div>
     </aside>
+  );
+}
+
+/** Mini one-line ad for the sponsor strip at the top of pages. */
+export async function FalconsMini({ placement }: { placement: Placement }) {
+  const idSkates = await getUpcomingIdSkates();
+  return (
+    <p className="flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg border border-gray-800 bg-gray-950 px-4 py-2.5 text-sm text-gray-300">
+      <span className="rounded bg-white/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-gray-300">
+        Sponsor
+      </span>
+      <span>
+        {idSkates ? (
+          <>
+            <span className="font-semibold" style={{ color: GOLD }}>
+              BC Falcons ID skates: {idSkates.day}
+            </span>{" "}
+            at {idSkates.location}
+            {idSkates.birthYearRange ? ` for ${idSkates.birthYearRange} birth years` : ""}.
+            Take the next step this spring.{" "}
+          </>
+        ) : (
+          <>
+            <span className="font-semibold" style={{ color: GOLD }}>
+              Looking to take the next step this spring?
+            </span>{" "}
+            BC Falcons: top-end AAA competition, built around development.{" "}
+          </>
+        )}
+        <a
+          href={falconsLink(placement)}
+          target="_blank"
+          rel="sponsored noopener"
+          className="font-semibold text-white underline"
+        >
+          {idSkates ? "Register here →" : "Apply for spring →"}
+        </a>
+      </span>
+    </p>
   );
 }
