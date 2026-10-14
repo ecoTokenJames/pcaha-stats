@@ -9,6 +9,7 @@ import {
 import type { Metadata } from "next";
 import { DivisionGrid } from "@/components/DivisionGrid";
 import { LevelUpCard } from "@/components/LevelUpAd";
+import { FalconsCard } from "@/components/FalconsAd";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -109,8 +110,9 @@ export default function Home() {
       <DivisionGrid divisions={divisionStats} />
 
       {/* Sponsor, after the navigation so it never gets in the way */}
-      <div className="mt-8">
+      <div className="mt-8 space-y-4">
         <LevelUpCard placement="home" />
+        <FalconsCard placement="home" />
       </div>
     </div>
   );

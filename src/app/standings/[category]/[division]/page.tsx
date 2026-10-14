@@ -12,7 +12,9 @@ import {
   type HockeyCategory,
   SEASON,
 } from "@/lib/data";
+import { Fragment } from "react";
 import { StandingsTable } from "@/components/StandingsTable";
+import { FalconsCard, FALCONS_DIVISIONS } from "@/components/FalconsAd";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
 
@@ -146,8 +148,9 @@ export default async function DivisionStandingsPage({
 
   return (
     <div className="space-y-8">
-      {sortedTypes.map((type) => (
-        <div key={type}>
+      {sortedTypes.map((type, i) => (
+        <Fragment key={type}>
+        <div>
           {sortedTypes.length > 1 && (
             <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
               {SECTION_LABELS[type] ?? type}
@@ -214,6 +217,11 @@ export default async function DivisionStandingsPage({
               })}
           </div>
         </div>
+        {/* Sponsor for the age groups the Falcons spring teams cover, after the first section */}
+        {i === 0 && FALCONS_DIVISIONS.includes(divName) && (
+          <FalconsCard placement="standings" />
+        )}
+        </Fragment>
       ))}
     </div>
   );

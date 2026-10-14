@@ -39,12 +39,25 @@ export function LevelUpCard({
       className="overflow-hidden rounded-lg border border-gray-200 bg-white"
     >
       <div className="h-1" style={{ backgroundColor: BRAND }} />
-      <div className="p-5">
+      <div className="flex gap-4 p-5">
+        <div className="min-w-0 flex-1">
         <div className="mb-3 flex items-center justify-between gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element -- small static logo */}
           <img src="/levelup-logo.png" alt="Level Up Hockey" width={180} height={46} className="h-8 w-auto" />
           <SponsorTag />
         </div>
+        {placement === "home" && (
+          // eslint-disable-next-line @next/next/no-img-element -- small static screenshot
+          <img
+            src="/levelup-app-training.jpg"
+            alt=""
+            aria-hidden="true"
+            width={360}
+            height={721}
+            loading="lazy"
+            className="float-right mb-2 ml-3 w-20 rounded-xl border border-gray-200 shadow-sm sm:hidden"
+          />
+        )}
         <h3 className="text-lg font-bold text-gray-900">
           Elite hockey training. Right at home.
         </h3>
@@ -58,7 +71,7 @@ export function LevelUpCard({
           🏆 Compete with friends. Climb from Novice to G.O.A.T and dominate
           the leaderboard.
         </p>
-        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
+        <div className="clear-both mt-4 flex flex-wrap items-center gap-x-3 gap-y-2 pt-1">
           <a
             href={levelUpLink(placement)}
             target="_blank"
@@ -72,6 +85,19 @@ export function LevelUpCard({
             Available on iOS &amp; Android
           </span>
         </div>
+        </div>
+        {/* Home page: show the app in action next to the pitch */}
+        {placement === "home" && (
+          // eslint-disable-next-line @next/next/no-img-element -- small static screenshot
+          <img
+            src="/levelup-app-training.jpg"
+            alt="The Level Up app timing a player's stickhandling drill at home"
+            width={360}
+            height={721}
+            loading="lazy"
+            className="hidden w-36 shrink-0 self-center rounded-2xl border border-gray-200 shadow-sm sm:block"
+          />
+        )}
       </div>
 
       {/* On team pages, pitch the whole team too (coaches and managers read these) */}
