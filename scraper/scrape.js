@@ -648,6 +648,15 @@ async function main() {
     await enrichWithRosters(playerMap, standings, schedules);
 
     // Convert player map to sorted arrays
+    // Removal requests: keep the stats, withhold the name
+    const hidden = new Set(
+      (require('./hidden-players.json').hidden || []).map(h => Number(h.participantId ?? h))
+    );
+    for (const p of Object.values(playerMap)) {
+      if (hidden.has(p.participantId)) p.name = 'Name withheld';
+    }
+    if (hidden.size > 0) log(`  Withheld ${hidden.size} player name(s) on request`);
+
     const players = Object.values(playerMap).sort((a, b) => b.points - a.points);
     saveJson(path.join(DATA_DIR, 'players', 'all-players.json'), players);
 
