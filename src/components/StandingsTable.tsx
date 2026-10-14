@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import type { TeamStanding } from "@/lib/data";
+import type { GameView, TeamStanding } from "@/lib/data";
+import { GamesList } from "./GamesList";
 import { TeamStar } from "./FavoriteStar";
 
 type SortKey = keyof TeamStanding;
@@ -10,10 +11,14 @@ type SortKey = keyof TeamStanding;
 export function StandingsTable({
   teams,
   teamLinkBase,
+  games = [],
 }: {
   teams: TeamStanding[];
   teamLinkBase?: string;
+  games?: GameView[];
 }) {
+  // Standings or Games, per tier/group (keyed by group name)
+  const [views, setViews] = useState<Record<string, "standings" | "games">>({});
   const [sortKey, setSortKey] = useState<SortKey>("rank");
   const [sortAsc, setSortAsc] = useState(true);
 
@@ -114,15 +119,64 @@ export function StandingsTable({
     { key: "diff", label: "DIFF", title: "Goal Differential" },
   ];
 
+  // Which group each game belongs to: Spordle's group, else the home/away team's
+  const teamGroup = new Map<number, string>();
+  for (const t of teams) teamGroup.set(t.teamId, t.groupName || "Other");
+  const gamesFor = (groupName: string | null) =>
+    groupName === null
+      ? games
+      : games.filter(
+          (g) =>
+            (g.groupName ??
+              teamGroup.get(g.homeTeamId) ??
+              teamGroup.get(g.awayTeamId)) === groupName
+        );
+
   return (
-    <div className="overflow-x-auto">
-      {groups.map((group, gi) => (
+    <div>
+      {groups.map((group, gi) => {
+        const key = group.name ?? "";
+        const view = views[key] ?? "standings";
+        const groupGames = gamesFor(group.name);
+        const showToggle = games.length > 0;
+        return (
         <div key={gi}>
-          {group.name && (
-            <div className="px-4 py-1.5 bg-gray-50 text-xs font-semibold text-gray-600 border-b border-gray-100">
-              {group.name}
+          {(group.name || showToggle) && (
+            <div className="px-4 py-1.5 bg-gray-50 border-b border-gray-100 flex items-center justify-between gap-2">
+              <span className="text-xs font-semibold text-gray-600">
+                {group.name}
+              </span>
+              {showToggle && (
+                <div
+                  role="tablist"
+                  aria-label={`${group.name ?? "Schedule"} view`}
+                  className="inline-flex rounded-md bg-white border border-gray-200 p-0.5 text-xs font-medium"
+                >
+                  {(["standings", "games"] as const).map((v) => (
+                    <button
+                      key={v}
+                      role="tab"
+                      aria-selected={view === v}
+                      onClick={() => setViews((prev) => ({ ...prev, [key]: v }))}
+                      className={`px-2.5 py-1 rounded ${
+                        view === v
+                          ? "bg-blue-900 text-white"
+                          : "text-gray-600 hover:text-gray-900"
+                      }`}
+                    >
+                      {v === "standings"
+                        ? "Standings"
+                        : `Games (${groupGames.filter((g) => g.status === "final").length})`}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           )}
+          {view === "games" ? (
+            <GamesList games={groupGames} teamLinkBase={teamLinkBase} />
+          ) : (
+          <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-gray-100">
@@ -203,8 +257,11 @@ export function StandingsTable({
               ))}
             </tbody>
           </table>
+          </div>
+          )}
         </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

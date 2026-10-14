@@ -148,7 +148,15 @@ async function getTeamMembers(teamId) {
   return fetchWithRetry(`/teams/${teamId}/members?filter=${encodeURIComponent(filter)}`);
 }
 
+/**
+ * Get an arena (name, city) by id
+ */
+async function getArena(arenaId) {
+  return fetchWithRetry(`/arenas/${arenaId}`);
+}
+
 module.exports = {
+  getArena,
   fetchApi,
   fetchWithRetry,
   batchProcess,

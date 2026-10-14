@@ -133,6 +133,48 @@ export function getLeaders(): Leaders {
   return readJson<Leaders>("players/leaders.json") || {};
 }
 
+export interface GameRow {
+  id: number;
+  number: string | null;
+  date: string | null;
+  startTime: string | null;
+  groupId: number | null;
+  groupName: string | null;
+  homeTeamId: number;
+  homeTeamName: string;
+  awayTeamId: number;
+  awayTeamName: string;
+  homeScore: number | null;
+  awayScore: number | null;
+  decidedBy: "OT" | "SO" | null;
+  status: "final" | "scheduled" | "awaiting" | "cancelled" | "postponed";
+  arena: string | null;
+}
+
+/** A game ready to render: start time already formatted in Pacific time. */
+export interface GameView extends GameRow {
+  when: string;
+}
+
+/** Games for each schedule in a division, newest first. */
+export function getDivisionGames(division: string): Record<string, GameRow[]> {
+  return readJson<Record<string, GameRow[]>>(`games/${division.toLowerCase()}.json`) || {};
+}
+
+export function toGameView(game: GameRow): GameView {
+  const when = game.startTime
+    ? new Date(game.startTime).toLocaleString("en-US", {
+        weekday: "short",
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        timeZone: "America/Vancouver",
+      })
+    : game.date ?? "";
+  return { ...game, when };
+}
+
 export function getScrapeInfo(): ScrapeInfo | null {
   return readJson<ScrapeInfo>("meta/last-scrape.json");
 }
