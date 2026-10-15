@@ -414,6 +414,15 @@
     "endDate": "2027-02-21"
   },
   {
+    "id": 201838,
+    "name": "COLETON NELSON MEMORIAL TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-25"
+  },
+  {
     "id": 199397,
     "name": "U13 A League",
     "divisionName": "U13",
