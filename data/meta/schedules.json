@@ -267,7 +267,7 @@
     "categoryName": "U13 A",
     "scheduleType": "Placement",
     "startDate": "2026-09-18",
-    "endDate": "2026-10-18"
+    "endDate": "2026-10-23"
   },
   {
     "id": 199396,
@@ -412,6 +412,33 @@
     "scheduleType": "League",
     "startDate": "2026-10-17",
     "endDate": "2027-02-21"
+  },
+  {
+    "id": 201900,
+    "name": "PACIFIC COAST FEMALE REP CLASSIC - U13 TIER 1",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-25"
+  },
+  {
+    "id": 201905,
+    "name": "PACIFIC COAST FEMALE REP CLASSIC - U13 TIER 2",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-25"
+  },
+  {
+    "id": 201913,
+    "name": "PACIFIC COAST FEMALE REP CLASSIC - U13 TIER 3",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-25"
   },
   {
     "id": 201838,
@@ -648,6 +675,15 @@
     "endDate": "2027-02-21"
   },
   {
+    "id": 201924,
+    "name": "PACIFIC COAST FEMALE REP CLASSIC - U15 TIER 1",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-25"
+  },
+  {
     "id": 201544,
     "name": "ABBOTSFORD U15 REC TOURNAMENT",
     "divisionName": "U15",
@@ -880,6 +916,24 @@
     "scheduleType": "League",
     "startDate": "2026-10-17",
     "endDate": "2027-02-21"
+  },
+  {
+    "id": 201927,
+    "name": "PACIFIC COAST FEMALE REP CLASSIC - U18 TIER 1",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-25"
+  },
+  {
+    "id": 201931,
+    "name": "PACIFIC COAST FEMALE REP CLASSIC - U18 TIER 2",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-25"
   },
   {
     "id": 199420,

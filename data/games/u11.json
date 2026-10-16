@@ -776,10 +776,10 @@
       "homeTeamName": "LANGLEY MHA U11 C7",
       "awayTeamId": 177680,
       "awayTeamName": "SEMIAHMOO MHA U11 C3 (SE3)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 9,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 3"
     },
     {
@@ -793,10 +793,10 @@
       "homeTeamName": "NORTH DELTA MHA U11 C3",
       "awayTeamId": 177696,
       "awayTeamName": "LANGLEY MHA U11 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
@@ -810,10 +810,10 @@
       "homeTeamName": "SEMIAHMOO MHA U11 C5 (SE5)",
       "awayTeamId": 221473,
       "awayTeamName": "WCAHA 10UC (PCAHA U11 C1)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 17,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Newton Arena"
     }
   ],
@@ -2410,10 +2410,10 @@
       "homeTeamName": "HOPE & DISTRICT U11 C1",
       "awayTeamId": 177749,
       "awayTeamName": "MISSION MHA U11 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hope & District Recreation Centre"
     },
     {
@@ -2427,10 +2427,10 @@
       "homeTeamName": "ABBOTSFORD MHA U11 C3",
       "awayTeamId": 177766,
       "awayTeamName": "CHILLIWACK MHA U11 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Abbotsford Recreation Centre 1"
     },
     {
@@ -2653,7 +2653,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "cancelled",
       "arena": "Surrey Sport & Leisure Centre Arena 2"
     },
     {
@@ -2874,7 +2874,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "cancelled",
       "arena": "Canlan Ice Sports North Shore 2 Blue"
     },
     {
@@ -3995,10 +3995,10 @@
       "homeTeamName": "ABBOTSFORD FEMALE HA U11 C1",
       "awayTeamId": 223845,
       "awayTeamName": "ABBOTSFORD FEMALE HA U11 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 15,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -4063,10 +4063,10 @@
       "homeTeamName": "NORTH SHORE FEMALE IHA U11 C1",
       "awayTeamId": 177624,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA FEMALE U11 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 9,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "West Vancouver Ice Arena"
     },
     {
@@ -4437,10 +4437,10 @@
       "homeTeamName": "RICHMOND RAVENS U11 C2",
       "awayTeamId": 177603,
       "awayTeamName": "BURNABY FEMALE IHA U11 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Richmond Ice Centre Forum"
     },
     {
@@ -4590,10 +4590,10 @@
       "homeTeamName": "RICHMOND RAVENS U11 C2",
       "awayTeamId": 177601,
       "awayTeamName": "VANCOUVER FEMALE IHA U11 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
@@ -5925,23 +5925,6 @@
       "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
-      "id": 968734,
-      "number": "U11L5048",
-      "date": "2026-11-15",
-      "startTime": "2026-11-15T21:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177692,
-      "homeTeamName": "COQUITLAM MHA U11 C5",
-      "awayTeamId": 177757,
-      "awayTeamName": "COQUITLAM MHA U11 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Poirier Sport & Leisure Complex 1"
-    },
-    {
       "id": 968735,
       "number": "U11L5047",
       "date": "2026-11-15",
@@ -6008,23 +5991,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Port Moody Recreation Complex 2"
-    },
-    {
-      "id": 968739,
-      "number": "U11L5042",
-      "date": "2026-11-14",
-      "startTime": "2026-11-14T21:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177731,
-      "homeTeamName": "RIDGE MEADOWS MHA U11 C3",
-      "awayTeamId": 177689,
-      "awayTeamName": "RIDGE MEADOWS MHA U11 C7",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
       "id": 968738,
@@ -6452,6 +6418,23 @@
       "arena": "Planet Ice Coquitlam 1 Mars"
     },
     {
+      "id": 968734,
+      "number": "U11L5048",
+      "date": "2026-10-25",
+      "startTime": "2026-10-25T20:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177692,
+      "homeTeamName": "COQUITLAM MHA U11 C5",
+      "awayTeamId": 177757,
+      "awayTeamName": "COQUITLAM MHA U11 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Poirier Sport & Leisure Complex 1"
+    },
+    {
       "id": 968656,
       "number": "U11L5016",
       "date": "2026-10-25",
@@ -6637,6 +6620,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
+    },
+    {
+      "id": 968739,
+      "number": "U11L5042",
+      "date": "2026-10-18",
+      "startTime": "2026-10-18T17:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177731,
+      "homeTeamName": "RIDGE MEADOWS MHA U11 C3",
+      "awayTeamId": 177689,
+      "awayTeamName": "RIDGE MEADOWS MHA U11 C7",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
       "id": 968646,
@@ -7426,7 +7426,7 @@
       "id": 932220,
       "number": "U11Q2305",
       "date": "2026-10-29",
-      "startTime": "2026-10-30T00:45:00.000Z",
+      "startTime": "2026-10-30T01:00:00.000Z",
       "groupId": 7092,
       "groupName": "GVC Group 2",
       "homeTeamId": 178266,
@@ -9626,10 +9626,10 @@
       "homeTeamName": "SEMIAHMOO MHA U11 A5",
       "awayTeamId": 178268,
       "awayTeamName": "PORT MOODY AHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "South Surrey Arena"
     },
     {
@@ -9646,7 +9646,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
@@ -9660,10 +9660,10 @@
       "homeTeamName": "RICHMOND JETS MHA U11 A3",
       "awayTeamId": 178301,
       "awayTeamName": "BURNABY MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Pond"
     },
     {
@@ -9677,10 +9677,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U11 A1",
       "awayTeamId": 178233,
       "awayTeamName": "SEMIAHMOO MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
@@ -9694,10 +9694,10 @@
       "homeTeamName": "RICHMOND JETS MHA U11 A1",
       "awayTeamId": 178294,
       "awayTeamName": "BURNABY WINTER CLUB U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Forum"
     },
     {
@@ -9711,10 +9711,10 @@
       "homeTeamName": "COQUITLAM MHA U11 A3",
       "awayTeamId": 178260,
       "awayTeamName": "RIDGE MEADOWS MHA U11 A4-WHITE",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
@@ -9728,10 +9728,10 @@
       "homeTeamName": "ALDERGROVE MHA U11 A2",
       "awayTeamId": 221100,
       "awayTeamName": "EYH 10UA2 Jr. Silvertips (PNAHA/PCAHA U11 A2)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 2"
     },
     {
@@ -9745,10 +9745,10 @@
       "homeTeamName": "LANGLEY MHA U11 A4 EAGLES - BURGUNDY",
       "awayTeamId": 178296,
       "awayTeamName": "CHILLIWACK MHA U11 A3 JR BRUINS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 1"
     },
     {
@@ -9762,10 +9762,10 @@
       "homeTeamName": "SOUTH DELTA MHA U11 A2 STORM",
       "awayTeamId": 220932,
       "awayTeamName": "LANGLEY MHA U11 A4 EAGLES - WHITE",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "South Delta Recreation Centre Main Rink (SDRC)"
     },
     {
@@ -11182,23 +11182,6 @@
       "arena": "Canlan Ice Sports North Shore 2 Blue"
     },
     {
-      "id": 939004,
-      "number": "U11L7265",
-      "date": "2027-01-09",
-      "startTime": "2027-01-09T18:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177727,
-      "homeTeamName": "SQUAMISH MHA U11 C1",
-      "awayTeamId": 177719,
-      "awayTeamName": "SUNSHINE COAST MHA U11 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Brennan Park Arena"
-    },
-    {
       "id": 939012,
       "number": "U11L7264",
       "date": "2027-01-09",
@@ -11231,6 +11214,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Meadow Park Sports Centre"
+    },
+    {
+      "id": 939004,
+      "number": "U11L7265",
+      "date": "2027-01-02",
+      "startTime": "2027-01-02T18:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177727,
+      "homeTeamName": "SQUAMISH MHA U11 C1",
+      "awayTeamId": 177719,
+      "awayTeamName": "SUNSHINE COAST MHA U11 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Brennan Park Arena"
     },
     {
       "id": 938981,
@@ -11641,6 +11641,23 @@
       "arena": "Canlan Ice Sports North Shore 2 Blue"
     },
     {
+      "id": 939041,
+      "number": "U11L7228",
+      "date": "2026-11-22",
+      "startTime": "2026-11-23T01:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 223539,
+      "homeTeamName": "WHISTLER MHA U11 C2 WINTERHAWKS",
+      "awayTeamId": 177670,
+      "awayTeamName": "NORTH VANCOUVER MHA U11 C5",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Meadow Park Sports Centre"
+    },
+    {
       "id": 939033,
       "number": "U11L7239",
       "date": "2026-11-21",
@@ -11809,23 +11826,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Canlan Ice Sports North Shore 3 Green"
-    },
-    {
-      "id": 939041,
-      "number": "U11L7228",
-      "date": "2026-11-14",
-      "startTime": "2026-11-14T16:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 223539,
-      "homeTeamName": "WHISTLER MHA U11 C2 WINTERHAWKS",
-      "awayTeamId": 177670,
-      "awayTeamName": "NORTH VANCOUVER MHA U11 C5",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Meadow Park Sports Centre"
     },
     {
       "id": 939045,
