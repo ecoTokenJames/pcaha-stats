@@ -27,6 +27,42 @@
     "endDate": "2027-03-12"
   },
   {
+    "id": 201974,
+    "name": "FVE U9 League",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-27",
+    "endDate": "2027-03-30"
+  },
+  {
+    "id": 201998,
+    "name": "FVN U9 League",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-27",
+    "endDate": "2027-03-30"
+  },
+  {
+    "id": 202007,
+    "name": "LG U9 League",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-27",
+    "endDate": "2027-03-30"
+  },
+  {
+    "id": 201971,
+    "name": "PL U9 League",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-27",
+    "endDate": "2027-03-30"
+  },
+  {
     "id": 199393,
     "name": "U9 League",
     "divisionName": "U9",
@@ -216,6 +252,15 @@
     "endDate": "2027-01-31"
   },
   {
+    "id": 201966,
+    "name": "PL U11C League",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-09",
+    "endDate": "2027-02-04"
+  },
+  {
     "id": 199299,
     "name": "FVE U11C Playoffs",
     "divisionName": "U11",
@@ -223,6 +268,15 @@
     "scheduleType": "Playoffs",
     "startDate": "2027-01-08",
     "endDate": "2027-03-12"
+  },
+  {
+    "id": 201996,
+    "name": "FVN U11C Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-01-29",
+    "endDate": "2027-03-30"
   },
   {
     "id": 199314,
@@ -250,6 +304,15 @@
     "scheduleType": "Playoffs",
     "startDate": "2027-02-05",
     "endDate": "2027-03-12"
+  },
+  {
+    "id": 202006,
+    "name": "LG U11C Playoffs",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-05",
+    "endDate": "2027-03-30"
   },
   {
     "id": 199790,
@@ -477,6 +540,15 @@
     "endDate": "2027-01-31"
   },
   {
+    "id": 201965,
+    "name": "PL U13C League",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-09",
+    "endDate": "2027-02-04"
+  },
+  {
     "id": 199303,
     "name": "FVE U13C Playoffs",
     "divisionName": "U13",
@@ -484,6 +556,15 @@
     "scheduleType": "Playoffs",
     "startDate": "2027-01-08",
     "endDate": "2027-03-12"
+  },
+  {
+    "id": 201994,
+    "name": "FVN U13C Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-01-29",
+    "endDate": "2027-03-30"
   },
   {
     "id": 199398,
@@ -511,6 +592,15 @@
     "scheduleType": "Playoffs",
     "startDate": "2027-02-05",
     "endDate": "2027-03-12"
+  },
+  {
+    "id": 202004,
+    "name": "LG U13C Playoffs",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-05",
+    "endDate": "2027-03-30"
   },
   {
     "id": 198475,
@@ -720,6 +810,15 @@
     "endDate": "2027-01-31"
   },
   {
+    "id": 201964,
+    "name": "PL U15C League",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-09",
+    "endDate": "2027-02-04"
+  },
+  {
     "id": 199306,
     "name": "FVE U15C Playoffs",
     "divisionName": "U15",
@@ -727,6 +826,15 @@
     "scheduleType": "Playoffs",
     "startDate": "2027-01-08",
     "endDate": "2027-03-12"
+  },
+  {
+    "id": 201990,
+    "name": "FVN U15C Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-01-29",
+    "endDate": "2027-03-30"
   },
   {
     "id": 199410,
@@ -754,6 +862,15 @@
     "scheduleType": "Playoffs",
     "startDate": "2027-02-05",
     "endDate": "2027-03-12"
+  },
+  {
+    "id": 202003,
+    "name": "LG U15C Playoffs",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-05",
+    "endDate": "2027-03-30"
   },
   {
     "id": 198485,
@@ -963,13 +1080,13 @@
     "endDate": "2027-01-31"
   },
   {
-    "id": 201705,
-    "name": "U18A League",
+    "id": 201963,
+    "name": "PL U18C League",
     "divisionName": "U18",
-    "categoryName": "U18 A",
+    "categoryName": "U18 C",
     "scheduleType": "League",
-    "startDate": "2026-11-10",
-    "endDate": "2027-01-31"
+    "startDate": "2026-11-09",
+    "endDate": "2027-02-04"
   },
   {
     "id": 201706,
@@ -988,6 +1105,15 @@
     "scheduleType": "Playoffs",
     "startDate": "2027-01-08",
     "endDate": "2027-03-12"
+  },
+  {
+    "id": 201988,
+    "name": "FVN U18C Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-01-29",
+    "endDate": "2027-03-30"
   },
   {
     "id": 199421,
@@ -1015,5 +1141,14 @@
     "scheduleType": "Playoffs",
     "startDate": "2027-02-05",
     "endDate": "2027-03-12"
+  },
+  {
+    "id": 202002,
+    "name": "LG U18C Playoffs",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Playoffs",
+    "startDate": "2027-02-05",
+    "endDate": "2027-03-30"
   }
 ]
