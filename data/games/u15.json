@@ -1184,10 +1184,10 @@
       "homeTeamName": "PACIFIC COAST AHA FEMALE U15AA NORTH COAST THUNDER",
       "awayTeamId": 215301,
       "awayTeamName": "SEATTLE RED HAWKS 14U AA (PCAHA U15 Elite)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Coquitlam 4 Saturn"
     },
     {
@@ -1201,10 +1201,10 @@
       "homeTeamName": "PACIFIC COAST AHA FEMALE U15AA SOUTH VALLEY HAVOC",
       "awayTeamId": 176818,
       "awayTeamName": "TBD",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 10,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Surrey Sport & Leisure Centre Arena 2"
     },
     {
@@ -2002,10 +2002,10 @@
       "homeTeamName": "SEMIAHMOO MHA U15 C3 (SE3)",
       "awayTeamId": 178577,
       "awayTeamName": "SURREY MHA U15 C2 SY2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "South Surrey Arena"
     },
     {
@@ -2019,10 +2019,10 @@
       "homeTeamName": "CLOVERDALE MHA U15 C3",
       "awayTeamId": 178552,
       "awayTeamName": "LANGLEY MHA U15 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 10,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Cloverdale Sport & Ice Complex 1-Blue"
     },
     {
@@ -2036,10 +2036,10 @@
       "homeTeamName": "SOUTH DELTA MHA U15 C4",
       "awayTeamId": 178544,
       "awayTeamName": "SEMIAHMOO MHA U15 C2 (SE2)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 13,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "South Delta Recreation Centre Main Rink (SDRC)"
     },
     {
@@ -2053,10 +2053,10 @@
       "homeTeamName": "LANGLEY MHA U15 C3",
       "awayTeamId": 178604,
       "awayTeamName": "CLOVERDALE MHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 2"
     },
     {
@@ -3220,8 +3220,8 @@
     {
       "id": 935306,
       "number": "U15L9029",
-      "date": "2026-10-29",
-      "startTime": "2026-10-30T03:00:00.000Z",
+      "date": "2026-11-01",
+      "startTime": "2026-11-02T00:15:00.000Z",
       "groupId": null,
       "groupName": null,
       "homeTeamId": 178600,
@@ -3466,10 +3466,10 @@
       "homeTeamName": "CHILLIWACK MHA U15 C2",
       "awayTeamId": 178612,
       "awayTeamName": "ABBOTSFORD MHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC2"
     },
     {
@@ -3723,10 +3723,10 @@
       "homeTeamName": "SURREY FEMALE HA U15 A1 FALCONS",
       "awayTeamId": 223847,
       "awayTeamName": "BURNABY FEMALE IHA U15 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Surrey Sport & Leisure Centre Arena 3"
     },
     {
@@ -3743,7 +3743,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "The Arenas at LEC 3"
     },
     {
@@ -3757,10 +3757,10 @@
       "homeTeamName": "SEATTLE RED HAWKS 14U A (PCAHA U15 A2)",
       "awayTeamId": 177496,
       "awayTeamName": "RICHMOND RAVENS U15 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Olympic View Arena Main"
     },
     {
@@ -3774,10 +3774,10 @@
       "homeTeamName": "BURNABY FEMALE IHA U15 A1",
       "awayTeamId": 220336,
       "awayTeamName": "VANCOUVER FEMALE IHA U15 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 4"
     },
     {
@@ -4507,10 +4507,10 @@
       "homeTeamName": "TRI CITIES FEMALE IHA U15 C4",
       "awayTeamId": 177666,
       "awayTeamName": "VANCOUVER FEMALE IHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 2"
     },
     {
@@ -4524,10 +4524,10 @@
       "homeTeamName": "SURREY FEMALE HA U15 C1",
       "awayTeamId": 223852,
       "awayTeamName": "LANGLEY GIRLS IHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
@@ -4541,10 +4541,10 @@
       "homeTeamName": "DELTA FEMALE U15",
       "awayTeamId": 177661,
       "awayTeamName": "TRI CITIES FEMALE IHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "South Delta Recreation Centre Main Rink (SDRC)"
     },
     {
@@ -4558,10 +4558,10 @@
       "homeTeamName": "BURNABY FEMALE IHA U15 C2",
       "awayTeamId": 177658,
       "awayTeamName": "VANCOUVER FEMALE IHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 10,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Kensington Arena"
     },
     {
@@ -4575,10 +4575,10 @@
       "homeTeamName": "LANGLEY GIRLS IHA U15 C1",
       "awayTeamId": 177650,
       "awayTeamName": "ABBOTSFORD FEMALE HA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 3"
     },
     {
@@ -4609,10 +4609,10 @@
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA FEMALE U15 C1",
       "awayTeamId": 177652,
       "awayTeamName": "BURNABY FEMALE IHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Shore Winter Club Main Rink"
     },
     {
@@ -7875,10 +7875,10 @@
       "homeTeamName": "PORT MOODY AHA U15 C2",
       "awayTeamId": 178573,
       "awayTeamName": "RIDGE MEADOWS MHA U15 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -7892,10 +7892,10 @@
       "homeTeamName": "COQUITLAM MHA U15 C4",
       "awayTeamId": 178575,
       "awayTeamName": "RIDGE MEADOWS MHA U15 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
@@ -9689,7 +9689,7 @@
       "id": 936363,
       "number": "U15Q2517",
       "date": "2026-10-23",
-      "startTime": "2026-10-24T01:30:00.000Z",
+      "startTime": "2026-10-24T01:45:00.000Z",
       "groupId": 7064,
       "groupName": "Group 6",
       "homeTeamId": 177810,
@@ -10427,10 +10427,10 @@
       "homeTeamName": "THUNDER HUSKIES U15 A2 TIER 3",
       "awayTeamId": 219669,
       "awayTeamName": "WHISTLER MHA (4) U15 A2 TIER 4 WINTERHAWKS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
@@ -10444,10 +10444,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U15 A2 TIER 2",
       "awayTeamId": 177789,
       "awayTeamName": "VANCOUVER MHA (2) U15 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
@@ -10461,10 +10461,10 @@
       "homeTeamName": "ABBOTSFORD MHA (1) U15 A2 TIER 2 HAWKS",
       "awayTeamId": 177779,
       "awayTeamName": "HYDRA U15 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Abbotsford Recreation Centre 1"
     },
     {
@@ -10478,10 +10478,10 @@
       "homeTeamName": "THUNDER HUSKIES U15 A1 TIER 2",
       "awayTeamId": 177791,
       "awayTeamName": "LANGLEY MHA (1) U15 A2 TIER 2 EAGLES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "West Vancouver Ice Arena"
     },
     {
@@ -10495,10 +10495,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U15 A3 TIER 3",
       "awayTeamId": 221103,
       "awayTeamName": "EYH 14UA1 Jr. Silvertips (PNAHA/PCAHA U15 A1)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Kitsilano Community Centre Kitsilano Rink"
     },
     {
@@ -10512,10 +10512,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U15 A1 TIER 1",
       "awayTeamId": 177816,
       "awayTeamName": "NORTH VANCOUVER MHA (1) U15 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
@@ -10529,10 +10529,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U15 A1 TIER 1",
       "awayTeamId": 177827,
       "awayTeamName": "COQUITLAM MHA (1) U15 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Kitsilano Community Centre Kitsilano Rink"
     },
     {
@@ -10546,10 +10546,10 @@
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA (1) U15 A2 TIER 2",
       "awayTeamId": 177808,
       "awayTeamName": "NORTH DELTA MHA (2) U15 A2 TIER 3 SUN DEVILS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 11,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Shore Winter Club Main Rink"
     },
     {
@@ -10563,10 +10563,10 @@
       "homeTeamName": "RICHMOND JETS MHA (1) U15 A3 TIER 3",
       "awayTeamId": 177802,
       "awayTeamName": "RIDGE MEADOWS MHA (1) U15 A4 TIER 4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Forum"
     },
     {
@@ -10580,10 +10580,10 @@
       "homeTeamName": "WCAHA 14UA (PCAHA U15 A1)",
       "awayTeamId": 177818,
       "awayTeamName": "COQUITLAM MHA (1) U15 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sportsplex Arena 1"
     },
     {
@@ -10597,10 +10597,10 @@
       "homeTeamName": "NORTH DELTA MHA (2) U15 A1 TIER 2 SUN DEVILS",
       "awayTeamId": 177824,
       "awayTeamName": "CHILLIWACK MHA (1) U15 A2 TIER 2 JR BRUINS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sungod Recreation Centre"
     },
     {
@@ -10614,10 +10614,10 @@
       "homeTeamName": "CHILLIWACK MHA (1) U15 A3 TIER 3 JR BRUINS",
       "awayTeamId": 177829,
       "awayTeamName": "BURNABY MHA (1) U15 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC3"
     },
     {
@@ -10631,10 +10631,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA (1) U15 A2 TIER 2",
       "awayTeamId": 215116,
       "awayTeamName": "SJHA 14UAA JR METS (PNAHA/PCAHA)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Canlan Ice Sports North Shore 3 Green"
     },
     {
@@ -10648,10 +10648,10 @@
       "homeTeamName": "CHILLIWACK MHA (1) U15 A1 TIER 1 JR BRUINS",
       "awayTeamId": 177778,
       "awayTeamName": "LANGLEY MHA (1) U15 A1 TIER 1 EAGLES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC2"
     },
     {
@@ -10665,10 +10665,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA (1) U15 A3 - TIER 3",
       "awayTeamId": 177782,
       "awayTeamName": "THUNDER HUSKIES U15 A2 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Canlan Ice Sports North Shore 3 Green"
     },
     {
@@ -10682,10 +10682,10 @@
       "homeTeamName": "SNO-KING JR. THUNDERBIRDS 14U AA (PCAHA U15 A1)",
       "awayTeamId": 177819,
       "awayTeamName": "CLOVERDALE MHA (1) U15 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sno-King Ice Arena Snoqualmie"
     },
     {
@@ -10699,10 +10699,10 @@
       "homeTeamName": "MISSION MHA (3) U15 A2 TIER 4",
       "awayTeamId": 177798,
       "awayTeamName": "SOUTH DELTA MHA (2) U15 A2 TIER 3 STORM",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Mission Leisure Centre North"
     },
     {
@@ -10716,10 +10716,10 @@
       "homeTeamName": "WHISTLER MHA (4) U15 A2 TIER 4 WINTERHAWKS",
       "awayTeamId": 177822,
       "awayTeamName": "CLOVERDALE MHA (1) U15 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Meadow Park Sports Centre"
     },
     {
@@ -10733,10 +10733,10 @@
       "homeTeamName": "SNO-KING JR. THUNDERBIRDS 14U A2 (PCAHA U15 A2)",
       "awayTeamId": 177788,
       "awayTeamName": "SQUAMISH MHA (3) U15 TIER 3 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sno-King Ice Arena Snoqualmie"
     },
     {
@@ -13863,10 +13863,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U15 C2",
       "awayTeamId": 178586,
       "awayTeamName": "NORTH VANCOUVER MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Karen Magnussen Arena"
     },
     {
@@ -13880,10 +13880,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U15 C4",
       "awayTeamId": 178561,
       "awayTeamName": "WEST VANCOUVER MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Canlan Ice Sports North Shore 3 Green"
     },
     {
@@ -13897,10 +13897,10 @@
       "homeTeamName": "WHISTLER MHA U15 C1 WINTERHAWKS",
       "awayTeamId": 219549,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 18,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Meadow Park Sports Centre"
     },
     {
@@ -13914,10 +13914,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U15 C1",
       "awayTeamId": 178584,
       "awayTeamName": "NORTH VANCOUVER MHA U15 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 6"
     },
     {
@@ -13931,10 +13931,10 @@
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA U15 C2",
       "awayTeamId": 178545,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Shore Winter Club Main Rink"
     },
     {
@@ -13991,6 +13991,23 @@
       "arena": "PNE Agrodome"
     },
     {
+      "id": 954359,
+      "number": "U15Q8115",
+      "date": "2026-11-08",
+      "startTime": "2026-11-09T03:15:00.000Z",
+      "groupId": 7309,
+      "groupName": "Gold",
+      "homeTeamId": 178563,
+      "homeTeamName": "VANCOUVER THUNDERBIRD MHA U15 C4",
+      "awayTeamId": 178565,
+      "awayTeamName": "VANCOUVER MHA U15 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "UBC B Father David Bauer Arena"
+    },
+    {
       "id": 954401,
       "number": "U15Q8230",
       "date": "2026-11-08",
@@ -14045,13 +14062,30 @@
       "id": 954342,
       "number": "U15Q8025",
       "date": "2026-11-07",
-      "startTime": "2026-11-08T04:00:00.000Z",
+      "startTime": "2026-11-08T04:30:00.000Z",
       "groupId": 7308,
       "groupName": "Blue",
       "homeTeamId": 178559,
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA U15 C2",
       "awayTeamId": 222450,
       "awayTeamName": "RICHMOND JETS MHA U15 C5",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Kitsilano Community Centre Kitsilano Rink"
+    },
+    {
+      "id": 954352,
+      "number": "U15Q8107",
+      "date": "2026-11-07",
+      "startTime": "2026-11-08T04:00:00.000Z",
+      "groupId": 7309,
+      "groupName": "Gold",
+      "homeTeamId": 178563,
+      "homeTeamName": "VANCOUVER THUNDERBIRD MHA U15 C4",
+      "awayTeamId": 178617,
+      "awayTeamName": "ARBUTUS CLUB U15 C1",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -14773,23 +14807,6 @@
       "arena": "Minoru Arena Silver"
     },
     {
-      "id": 954359,
-      "number": "U15Q8115",
-      "date": "2026-10-25",
-      "startTime": "2026-10-26T01:15:00.000Z",
-      "groupId": 7309,
-      "groupName": "Gold",
-      "homeTeamId": 178563,
-      "homeTeamName": "VANCOUVER THUNDERBIRD MHA U15 C4",
-      "awayTeamId": 178565,
-      "awayTeamName": "VANCOUVER MHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Richmond Olympic Oval South "
-    },
-    {
       "id": 954351,
       "number": "U15Q8114",
       "date": "2026-10-25",
@@ -15147,23 +15164,6 @@
       "arena": "Richmond Olympic Oval South "
     },
     {
-      "id": 954352,
-      "number": "U15Q8107",
-      "date": "2026-10-18",
-      "startTime": "2026-10-19T01:15:00.000Z",
-      "groupId": 7309,
-      "groupName": "Gold",
-      "homeTeamId": 178563,
-      "homeTeamName": "VANCOUVER THUNDERBIRD MHA U15 C4",
-      "awayTeamId": 178617,
-      "awayTeamName": "ARBUTUS CLUB U15 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Richmond Olympic Oval South "
-    },
-    {
       "id": 954396,
       "number": "U15Q8207",
       "date": "2026-10-18",
@@ -15225,10 +15225,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA U15 C2",
       "awayTeamId": 178614,
       "awayTeamName": "BURNABY MHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hillcrest Centre Arena"
     },
     {
@@ -15242,10 +15242,10 @@
       "homeTeamName": "BURNABY MHA U15 C4",
       "awayTeamId": 178560,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U15 C6",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Rosemary Brown Recreation Centre B"
     },
     {
@@ -15259,10 +15259,10 @@
       "homeTeamName": "BURNABY MHA U15 C1",
       "awayTeamId": 178569,
       "awayTeamName": "VANCOUVER MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Rosemary Brown Recreation Centre B"
     },
     {
@@ -15276,10 +15276,10 @@
       "homeTeamName": "RICHMOND JETS MHA U15 C1",
       "awayTeamId": 178566,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
@@ -15293,10 +15293,10 @@
       "homeTeamName": "BURNABY MHA U15 C5",
       "awayTeamId": 178567,
       "awayTeamName": "VANCOUVER MHA U15 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Rosemary Brown Recreation Centre B"
     },
     {
@@ -15310,10 +15310,10 @@
       "homeTeamName": "NEW WESTMINSTER MHA U15 C1",
       "awayTeamId": 178564,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U15 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Queens Park Arena 1"
     },
     {
@@ -15327,10 +15327,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA U15 C4",
       "awayTeamId": 178609,
       "awayTeamName": "BURNABY MHA U15 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Kerrisdale Cyclone Taylor Arena"
     },
     {
@@ -15347,7 +15347,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Richmond Ice Centre Forum"
     },
     {

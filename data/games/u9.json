@@ -357,5 +357,41 @@
       "status": "final",
       "arena": "Planet Ice Delta Legends"
     }
+  ],
+  "201971": [
+    {
+      "id": 980823,
+      "number": "U9E8006",
+      "date": "2026-12-06",
+      "startTime": "2026-12-06T21:00:00.000Z",
+      "groupId": 7034,
+      "groupName": "Blue Major",
+      "homeTeamId": 178109,
+      "homeTeamName": "ARBUTUS CLUB U9 C1",
+      "awayTeamId": 178059,
+      "awayTeamName": "NORTH SHORE WINTER CLUB MHA U9 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Arbutus Club Ice Rink"
+    },
+    {
+      "id": 980822,
+      "number": "U9E8005",
+      "date": "2026-11-29",
+      "startTime": "2026-11-29T21:00:00.000Z",
+      "groupId": 7034,
+      "groupName": "Blue Major",
+      "homeTeamId": 178109,
+      "homeTeamName": "ARBUTUS CLUB U9 C1",
+      "awayTeamId": 178116,
+      "awayTeamName": "BURNABY MHA U9 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Arbutus Club Ice Rink"
+    }
   ]
 }
