@@ -691,10 +691,10 @@
       "homeTeamName": "SEMIAHMOO MHA U18 C2 (SE2)",
       "awayTeamId": 177915,
       "awayTeamName": "CLOVERDALE MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "South Surrey Arena"
     },
     {
@@ -708,10 +708,10 @@
       "homeTeamName": "SOUTH DELTA MHA U18 C2",
       "awayTeamId": 177878,
       "awayTeamName": "SURREY MHA U18 C3 SY3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Ladner Leisure Centre"
     },
     {
@@ -725,10 +725,10 @@
       "homeTeamName": "LANGLEY MHA U18 C3",
       "awayTeamId": 177848,
       "awayTeamName": "LANGLEY MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 3"
     },
     {
@@ -742,10 +742,10 @@
       "homeTeamName": "SOUTH DELTA MHA U18 C3",
       "awayTeamId": 177840,
       "awayTeamName": "SURREY MHA U18 C4 SY4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "South Delta Recreation Centre Main Rink (SDRC)"
     },
     {
@@ -759,10 +759,10 @@
       "homeTeamName": "SURREY MHA U18 C5 SY5",
       "awayTeamId": 223546,
       "awayTeamName": "LANGLEY MHA U18 C8",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
@@ -776,10 +776,10 @@
       "homeTeamName": "LANGLEY MHA U18 C7",
       "awayTeamId": 177907,
       "awayTeamName": "NORTH DELTA MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 1"
     },
     {
@@ -793,10 +793,10 @@
       "homeTeamName": "SURREY MHA U18 C1 SY1",
       "awayTeamId": 227580,
       "awayTeamName": "SOUTH DELTA MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 9,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #1"
     },
     {
@@ -3124,10 +3124,10 @@
       "homeTeamName": "MISSION MHA U18 C1",
       "awayTeamId": 177930,
       "awayTeamName": "ABBOTSFORD MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Mission Leisure Centre North"
     },
     {
@@ -3653,10 +3653,10 @@
       "homeTeamName": "ABBOTSFORD FEMALE HA U18 A1",
       "awayTeamId": 222942,
       "awayTeamName": "SURREY FEMALE HA U18 A2 FALCONS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -3670,10 +3670,10 @@
       "homeTeamName": "SEATTLE RED HAWKS 16U AA (PCAHA U18 A2)",
       "awayTeamId": 177499,
       "awayTeamName": "SURREY FEMALE HA U18 A1 FALCONS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Lynnwood Ice Centre 1"
     },
     {
@@ -3687,10 +3687,10 @@
       "homeTeamName": "RICHMOND RAVENS U18 A1",
       "awayTeamId": 177506,
       "awayTeamName": "TRI CITIES FEMALE IHA U18 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Forum"
     },
     {
@@ -3707,7 +3707,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Lynnwood Ice Centre 1"
     },
     {
@@ -4777,10 +4777,10 @@
       "homeTeamName": "SURREY FEMALE HA U18 C1",
       "awayTeamId": 177580,
       "awayTeamName": "ABBOTSFORD FEMALE HA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #1"
     },
     {
@@ -4811,10 +4811,10 @@
       "homeTeamName": "RICHMOND RAVENS U18 C2",
       "awayTeamId": 177569,
       "awayTeamName": "VANCOUVER FEMALE IHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Igloo"
     },
     {
@@ -4828,10 +4828,10 @@
       "homeTeamName": "CHILLIWACK MHA FEMALE U18 C1",
       "awayTeamId": 177594,
       "awayTeamName": "TRI CITIES FEMALE IHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC1"
     },
     {
@@ -4845,10 +4845,10 @@
       "homeTeamName": "DELTA FEMALE U18",
       "awayTeamId": 223850,
       "awayTeamName": "CHILLIWACK MHA FEMALE U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 13,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sungod Recreation Centre"
     },
     {
@@ -4862,10 +4862,10 @@
       "homeTeamName": "MEADOW RIDGE FEMALE MHA U18 C2",
       "awayTeamId": 223651,
       "awayTeamName": "NORTH SHORE FEMALE IHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
@@ -4879,10 +4879,10 @@
       "homeTeamName": "NORTH SHORE FEMALE IHA U18 C1",
       "awayTeamId": 177581,
       "awayTeamName": "SUNSHINE COAST MHA FEMALE U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Canlan Ice Sports North Shore 2 Blue"
     },
     {
@@ -5874,6 +5874,57 @@
   ],
   "199680": [
     {
+      "id": 968192,
+      "number": "U18L5156",
+      "date": "2027-01-24",
+      "startTime": "2027-01-25T03:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177895,
+      "homeTeamName": "PORT MOODY AHA U18 C1",
+      "awayTeamId": 177888,
+      "awayTeamName": "RIDGE MEADOWS MHA U18 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Moody Recreation Complex 1"
+    },
+    {
+      "id": 968184,
+      "number": "U18L5165",
+      "date": "2027-01-19",
+      "startTime": "2027-01-20T05:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177896,
+      "homeTeamName": "PORT MOODY AHA U18 C2",
+      "awayTeamId": 177889,
+      "awayTeamName": "RIDGE MEADOWS MHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Moody Recreation Complex 1"
+    },
+    {
+      "id": 968275,
+      "number": "U18L5071",
+      "date": "2027-01-17",
+      "startTime": "2027-01-18T03:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177895,
+      "homeTeamName": "PORT MOODY AHA U18 C1",
+      "awayTeamId": 177910,
+      "awayTeamName": "COQUITLAM MHA U18 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Moody Recreation Complex 1"
+    },
+    {
       "id": 968180,
       "number": "U18L5169",
       "date": "2027-01-14",
@@ -5940,23 +5991,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
-    },
-    {
-      "id": 968184,
-      "number": "U18L5165",
-      "date": "2027-01-12",
-      "startTime": "2027-01-13T05:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177896,
-      "homeTeamName": "PORT MOODY AHA U18 C2",
-      "awayTeamId": 177889,
-      "awayTeamName": "RIDGE MEADOWS MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Moody Recreation Complex 1"
     },
     {
       "id": 968186,
@@ -6095,23 +6129,6 @@
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
-      "id": 968192,
-      "number": "U18L5156",
-      "date": "2027-01-10",
-      "startTime": "2027-01-11T03:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177895,
-      "homeTeamName": "PORT MOODY AHA U18 C1",
-      "awayTeamId": 177888,
-      "awayTeamName": "RIDGE MEADOWS MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Moody Recreation Complex 1"
-    },
-    {
       "id": 968196,
       "number": "U18L5155",
       "date": "2027-01-09",
@@ -6161,6 +6178,40 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
+    },
+    {
+      "id": 968241,
+      "number": "U18L5108",
+      "date": "2026-12-20",
+      "startTime": "2026-12-21T05:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177890,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C3",
+      "awayTeamId": 177892,
+      "awayTeamName": "RIDGE MEADOWS MHA U18 C6",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Jeep Blue"
+    },
+    {
+      "id": 968300,
+      "number": "U18L5054",
+      "date": "2026-12-19",
+      "startTime": "2026-12-19T23:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177895,
+      "homeTeamName": "PORT MOODY AHA U18 C1",
+      "awayTeamId": 177911,
+      "awayTeamName": "COQUITLAM MHA U18 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Moody Recreation Complex 1"
     },
     {
       "id": 968194,
@@ -6911,23 +6962,6 @@
       "arena": "Planet Ice Coquitlam 1 Mars"
     },
     {
-      "id": 968241,
-      "number": "U18L5108",
-      "date": "2026-11-29",
-      "startTime": "2026-11-30T05:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177890,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C3",
-      "awayTeamId": 177892,
-      "awayTeamName": "RIDGE MEADOWS MHA U18 C6",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Pitt Meadows Arena Complex Jeep Blue"
-    },
-    {
       "id": 968244,
       "number": "U18L5107",
       "date": "2026-11-29",
@@ -7047,38 +7081,21 @@
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
-      "id": 968250,
-      "number": "U18L5101",
+      "id": 968294,
+      "number": "U18L5051",
       "date": "2026-11-26",
       "startTime": "2026-11-27T05:15:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": 177889,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C1",
-      "awayTeamId": 177892,
-      "awayTeamName": "RIDGE MEADOWS MHA U18 C6",
+      "homeTeamId": 177888,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C2",
+      "awayTeamId": 177893,
+      "awayTeamName": "PORT COQUITLAM MHA U18 C2",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Maple Ridge 2"
-    },
-    {
-      "id": 968246,
-      "number": "U18L5100",
-      "date": "2026-11-26",
-      "startTime": "2026-11-27T05:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177892,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C6",
-      "awayTeamId": 177895,
-      "awayTeamName": "PORT MOODY AHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
       "id": 968247,
@@ -7234,6 +7251,23 @@
       "arena": "Poirier Sport & Leisure Complex 2"
     },
     {
+      "id": 968250,
+      "number": "U18L5101",
+      "date": "2026-11-22",
+      "startTime": "2026-11-23T04:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177889,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C1",
+      "awayTeamId": 177892,
+      "awayTeamName": "RIDGE MEADOWS MHA U18 C6",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Ram Red"
+    },
+    {
       "id": 968256,
       "number": "U18L5089",
       "date": "2026-11-22",
@@ -7249,6 +7283,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Pitt Meadows Arena Complex Ram Red"
+    },
+    {
+      "id": 968283,
+      "number": "U18L5062",
+      "date": "2026-11-22",
+      "startTime": "2026-11-23T04:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177891,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C5",
+      "awayTeamId": 177896,
+      "awayTeamName": "PORT MOODY AHA U18 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
       "id": 968257,
@@ -7574,23 +7625,6 @@
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
-      "id": 968275,
-      "number": "U18L5071",
-      "date": "2026-11-15",
-      "startTime": "2026-11-16T03:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177895,
-      "homeTeamName": "PORT MOODY AHA U18 C1",
-      "awayTeamId": 177910,
-      "awayTeamName": "COQUITLAM MHA U18 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Moody Recreation Complex 1"
-    },
-    {
       "id": 968279,
       "number": "U18L5070",
       "date": "2026-11-14",
@@ -7727,23 +7761,6 @@
       "arena": "Port Moody Recreation Complex 1"
     },
     {
-      "id": 968283,
-      "number": "U18L5062",
-      "date": "2026-11-10",
-      "startTime": "2026-11-11T05:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177891,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C5",
-      "awayTeamId": 177896,
-      "awayTeamName": "PORT MOODY AHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Pitt Meadows Arena Complex Jeep Blue"
-    },
-    {
       "id": 968288,
       "number": "U18L5061",
       "date": "2026-11-10",
@@ -7812,16 +7829,16 @@
       "arena": "Planet Ice Coquitlam 1 Mars"
     },
     {
-      "id": 968291,
-      "number": "U18L5057",
+      "id": 968319,
+      "number": "U18L5027",
       "date": "2026-11-08",
       "startTime": "2026-11-09T05:00:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": 177890,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C3",
-      "awayTeamId": 177895,
-      "awayTeamName": "PORT MOODY AHA U18 C1",
+      "homeTeamId": 177846,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C7",
+      "awayTeamId": 177893,
+      "awayTeamName": "PORT COQUITLAM MHA U18 C2",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -7863,23 +7880,6 @@
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
-      "id": 968300,
-      "number": "U18L5054",
-      "date": "2026-11-08",
-      "startTime": "2026-11-09T03:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177895,
-      "homeTeamName": "PORT MOODY AHA U18 C1",
-      "awayTeamId": 177911,
-      "awayTeamName": "COQUITLAM MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Moody Recreation Complex 1"
-    },
-    {
       "id": 968299,
       "number": "U18L5053",
       "date": "2026-11-07",
@@ -7912,23 +7912,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Coquitlam 1 Mars"
-    },
-    {
-      "id": 968294,
-      "number": "U18L5051",
-      "date": "2026-11-07",
-      "startTime": "2026-11-07T23:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177888,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C2",
-      "awayTeamId": 177893,
-      "awayTeamName": "PORT COQUITLAM MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
       "id": 968298,
@@ -7997,6 +7980,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
+    },
+    {
+      "id": 968291,
+      "number": "U18L5057",
+      "date": "2026-11-04",
+      "startTime": "2026-11-05T04:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177890,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C3",
+      "awayTeamId": 177895,
+      "awayTeamName": "PORT MOODY AHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 2"
     },
     {
       "id": 968303,
@@ -8135,6 +8135,23 @@
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
+      "id": 968313,
+      "number": "U18L5034",
+      "date": "2026-11-01",
+      "startTime": "2026-11-02T04:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177888,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C2",
+      "awayTeamId": 177894,
+      "awayTeamName": "PORT MOODY AHA U18 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Ram Red"
+    },
+    {
       "id": 968310,
       "number": "U18L5037",
       "date": "2026-11-01",
@@ -8150,6 +8167,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Port Moody Recreation Complex 1"
+    },
+    {
+      "id": 968169,
+      "number": "U18L5016",
+      "date": "2026-11-01",
+      "startTime": "2026-11-01T20:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177889,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C1",
+      "awayTeamId": 177897,
+      "awayTeamName": "PORT COQUITLAM MHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
       "id": 968315,
@@ -8169,27 +8203,10 @@
       "arena": "Planet Ice Coquitlam 1 Mars"
     },
     {
-      "id": 968313,
-      "number": "U18L5034",
-      "date": "2026-10-31",
-      "startTime": "2026-10-31T22:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177888,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C2",
-      "awayTeamId": 177894,
-      "awayTeamName": "PORT MOODY AHA U18 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Pitt Meadows Arena Complex Chrysler Gold"
-    },
-    {
       "id": 968311,
       "number": "U18L5036",
       "date": "2026-10-30",
-      "startTime": "2026-10-31T04:30:00.000Z",
+      "startTime": "2026-10-31T04:15:00.000Z",
       "groupId": null,
       "groupName": null,
       "homeTeamId": 177911,
@@ -8339,21 +8356,21 @@
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
-      "id": 968319,
-      "number": "U18L5027",
+      "id": 968246,
+      "number": "U18L5100",
       "date": "2026-10-27",
-      "startTime": "2026-10-28T03:45:00.000Z",
+      "startTime": "2026-10-28T03:30:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": 177846,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C7",
-      "awayTeamId": 177893,
-      "awayTeamName": "PORT COQUITLAM MHA U18 C2",
+      "homeTeamId": 177892,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C6",
+      "awayTeamId": 177895,
+      "awayTeamName": "PORT MOODY AHA U18 C1",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Planet Ice Maple Ridge 2"
+      "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
       "id": 968323,
@@ -8509,23 +8526,6 @@
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
-      "id": 968169,
-      "number": "U18L5016",
-      "date": "2026-10-22",
-      "startTime": "2026-10-23T04:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177889,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C1",
-      "awayTeamId": 177897,
-      "awayTeamName": "PORT COQUITLAM MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Planet Ice Maple Ridge 2"
-    },
-    {
       "id": 968165,
       "number": "U18L5015",
       "date": "2026-10-22",
@@ -8672,10 +8672,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U18 C3",
       "awayTeamId": 177908,
       "awayTeamName": "COQUITLAM MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
@@ -8689,10 +8689,10 @@
       "homeTeamName": "COQUITLAM MHA U18 C5",
       "awayTeamId": 177893,
       "awayTeamName": "PORT COQUITLAM MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Poirier Sport & Leisure Complex 2"
     },
     {
@@ -8706,10 +8706,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U18 C4",
       "awayTeamId": 177895,
       "awayTeamName": "PORT MOODY AHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
@@ -9240,6 +9240,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Arbutus Club Ice Rink"
+    },
+    {
+      "id": 936489,
+      "number": "U18Q1026",
+      "date": "2026-10-30",
+      "startTime": "2026-10-31T01:45:00.000Z",
+      "groupId": 7087,
+      "groupName": "Group 1",
+      "homeTeamId": 178638,
+      "homeTeamName": "RIDGE MEADOWS MHA (1) U18 A1 TIER 1",
+      "awayTeamId": 178641,
+      "awayTeamName": "PORT MOODY AHA (2) U18 A1 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 2"
     },
     {
       "id": 936596,
@@ -9820,23 +9837,6 @@
       "arena": "Brennan Park Arena"
     },
     {
-      "id": 936487,
-      "number": "U18Q1028",
-      "date": "2026-10-24",
-      "startTime": "2026-10-25T01:45:00.000Z",
-      "groupId": 7087,
-      "groupName": "Group 1",
-      "homeTeamId": 178636,
-      "homeTeamName": "RICHMOND JETS MHA (1) U18 A1 TIER 1",
-      "awayTeamId": 178639,
-      "awayTeamName": "NORTH VANCOUVER MHA (1) U18 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Minoru Arena Stadium"
-    },
-    {
       "id": 936553,
       "number": "U18Q1923",
       "date": "2026-10-24",
@@ -9852,6 +9852,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sardis Sports Complex SSC1"
+    },
+    {
+      "id": 936487,
+      "number": "U18Q1028",
+      "date": "2026-10-24",
+      "startTime": "2026-10-25T00:15:00.000Z",
+      "groupId": 7087,
+      "groupName": "Group 1",
+      "homeTeamId": 178636,
+      "homeTeamName": "RICHMOND JETS MHA (1) U18 A1 TIER 1",
+      "awayTeamId": 178639,
+      "awayTeamName": "NORTH VANCOUVER MHA (1) U18 A1 TIER 1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Minoru Arena Stadium"
     },
     {
       "id": 936595,
@@ -10039,23 +10056,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Aldergrove Community Centre 1"
-    },
-    {
-      "id": 936489,
-      "number": "U18Q1026",
-      "date": "2026-10-22",
-      "startTime": "2026-10-23T03:30:00.000Z",
-      "groupId": 7087,
-      "groupName": "Group 1",
-      "homeTeamId": 178638,
-      "homeTeamName": "RIDGE MEADOWS MHA (1) U18 A1 TIER 1",
-      "awayTeamId": 178641,
-      "awayTeamName": "PORT MOODY AHA (2) U18 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
       "id": 936563,
@@ -10374,10 +10374,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA (1) U18 A1 TIER 1",
       "awayTeamId": 177462,
       "awayTeamName": "BURNABY MHA (1) U18 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
@@ -10391,10 +10391,10 @@
       "homeTeamName": "LANGLEY MHA (1) U18 A3 TIER 3 EAGLES",
       "awayTeamId": 178649,
       "awayTeamName": "TRICITY HYDRA U18 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 1"
     },
     {
@@ -10408,10 +10408,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U18 A3 TIER 3",
       "awayTeamId": 221459,
       "awayTeamName": "ARBUTUS CLUB (3) U18 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
@@ -10425,10 +10425,10 @@
       "homeTeamName": "ALDERGROVE MHA (3) U18 A1 TIER 3",
       "awayTeamId": 178632,
       "awayTeamName": "SUNSHINE COAST MHA (3) U18 A1 TIER 3 BLUES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 1"
     },
     {
@@ -10442,10 +10442,10 @@
       "homeTeamName": "COQUITLAM MHA (1) U18 A1 TIER 1",
       "awayTeamId": 178636,
       "awayTeamName": "RICHMOND JETS MHA (1) U18 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
@@ -10459,10 +10459,10 @@
       "homeTeamName": "BURNABY MHA (1) U18 A2 TIER 2",
       "awayTeamId": 178630,
       "awayTeamName": "SQUAMISH MHA (3) U18 TIER 3 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Bill Copeland Sports Centre BCSC"
     },
     {
@@ -10476,10 +10476,10 @@
       "homeTeamName": "SOUTH DELTA MHA (2) U18 A1 TIER 2 STORM",
       "awayTeamId": 178650,
       "awayTeamName": "MISSION MHA (3) U18 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Ladner Leisure Centre"
     },
     {
@@ -10493,10 +10493,10 @@
       "homeTeamName": "SURREY MHA (2) U18 A1 TIER 2 THUNDER",
       "awayTeamId": 178645,
       "awayTeamName": "RIDGE MEADOWS MHA (1) U18 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #2"
     },
     {
@@ -10510,10 +10510,10 @@
       "homeTeamName": "ABBOTSFORD MHA (1) U18 A1 TIER 1 HAWKS",
       "awayTeamId": 178631,
       "awayTeamName": "VANCOUVER MHA (2) U18 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 9,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -10527,10 +10527,10 @@
       "homeTeamName": "EYH Jr. Silvertips High School (PNAHA/PCAHA U18 A)",
       "awayTeamId": 178616,
       "awayTeamName": "THUNDER HUSKIES (2) U18 A2 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Angel of the Winds Arena Community"
     },
     {
@@ -10544,10 +10544,10 @@
       "homeTeamName": "PORT MOODY AHA (2) U18 A1 TIER 2",
       "awayTeamId": 177463,
       "awayTeamName": "CHILLIWACK MHA (1) U18 A1 TIER 1 JR BRUINS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -10561,10 +10561,10 @@
       "homeTeamName": "THUNDER HUSKIES (2) U18 A1 TIER 2",
       "awayTeamId": 178644,
       "awayTeamName": "PORT COQUITLAM MHA (2) U18 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
@@ -12066,6 +12066,23 @@
       "arena": "Brennan Park Arena"
     },
     {
+      "id": 952247,
+      "number": "U18L7818",
+      "date": "2027-01-09",
+      "startTime": "2027-01-09T23:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177881,
+      "homeTeamName": "SUNSHINE COAST MHA U18 C1",
+      "awayTeamId": 177866,
+      "awayTeamName": "WHISTLER MHA U18 C1 WINTERHAWKS",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sunshine Coast Arena"
+    },
+    {
       "id": 952292,
       "number": "U18L7918",
       "date": "2027-01-09",
@@ -12149,23 +12166,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sunshine Coast Arena"
-    },
-    {
-      "id": 952294,
-      "number": "U18L7915",
-      "date": "2026-12-14",
-      "startTime": "2026-12-15T05:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177880,
-      "homeTeamName": "SQUAMISH MHA U18 C1",
-      "awayTeamId": 177858,
-      "awayTeamName": "WEST VANCOUVER MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Brennan Park Arena"
     },
     {
       "id": 952301,
@@ -12423,23 +12423,6 @@
       "arena": "Meadow Park Sports Centre"
     },
     {
-      "id": 952311,
-      "number": "U18L7896",
-      "date": "2026-12-06",
-      "startTime": "2026-12-06T19:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177881,
-      "homeTeamName": "SUNSHINE COAST MHA U18 C1",
-      "awayTeamId": 177858,
-      "awayTeamName": "WEST VANCOUVER MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sunshine Coast Arena"
-    },
-    {
       "id": 952314,
       "number": "U18L7895",
       "date": "2026-12-05",
@@ -12506,6 +12489,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Canlan Ice Sports North Shore 2 Blue"
+    },
+    {
+      "id": 952311,
+      "number": "U18L7896",
+      "date": "2026-12-05",
+      "startTime": "2026-12-05T19:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177881,
+      "homeTeamName": "SUNSHINE COAST MHA U18 C1",
+      "awayTeamId": 177858,
+      "awayTeamName": "WEST VANCOUVER MHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Gibsons & Area Community Centre"
     },
     {
       "id": 952322,
@@ -12761,6 +12761,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Meadow Park Sports Centre"
+    },
+    {
+      "id": 952294,
+      "number": "U18L7915",
+      "date": "2026-11-23",
+      "startTime": "2026-11-24T05:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177880,
+      "homeTeamName": "SQUAMISH MHA U18 C1",
+      "awayTeamId": 177858,
+      "awayTeamName": "WEST VANCOUVER MHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Brennan Park Arena"
     },
     {
       "id": 952336,
@@ -13715,23 +13732,6 @@
       "arena": "Brennan Park Arena"
     },
     {
-      "id": 952247,
-      "number": "U18L7818",
-      "date": "2026-10-25",
-      "startTime": "2026-10-25T18:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177881,
-      "homeTeamName": "SUNSHINE COAST MHA U18 C1",
-      "awayTeamId": 177866,
-      "awayTeamName": "WHISTLER MHA U18 C1 WINTERHAWKS",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sunshine Coast Arena"
-    },
-    {
       "id": 952241,
       "number": "U18L7817",
       "date": "2026-10-24",
@@ -13929,10 +13929,10 @@
       "homeTeamName": "WEST VANCOUVER MHA U18 C1",
       "awayTeamId": 177900,
       "awayTeamName": "NORTH VANCOUVER MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "West Vancouver Ice Arena"
     },
     {
@@ -13946,10 +13946,10 @@
       "homeTeamName": "WHISTLER MHA U18 C1 WINTERHAWKS",
       "awayTeamId": 177899,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Meadow Park Sports Centre"
     },
     {
@@ -13963,10 +13963,10 @@
       "homeTeamName": "SUNSHINE COAST MHA U18 C1",
       "awayTeamId": 177883,
       "awayTeamName": "SQUAMISH MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 15,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -15546,10 +15546,10 @@
       "homeTeamName": "RICHMOND JETS MHA U18 C4",
       "awayTeamId": 177859,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U18 C8",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Minoru Arena Silver"
     },
     {
@@ -15563,10 +15563,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA U18 C1",
       "awayTeamId": 177851,
       "awayTeamName": "RICHMOND JETS MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "UBC A Thunderbird Arena"
     },
     {
@@ -15580,10 +15580,10 @@
       "homeTeamName": "NEW WESTMINSTER MHA U18 C3",
       "awayTeamId": 177871,
       "awayTeamName": "VANCOUVER MHA U18 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Queens Park Arena 1"
     },
     {
@@ -15597,10 +15597,10 @@
       "homeTeamName": "BURNABY MHA U18 C6",
       "awayTeamId": 177864,
       "awayTeamName": "RICHMOND JETS MHA U18 C6",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Bill Copeland Sports Centre BCSC"
     },
     {
@@ -15614,10 +15614,10 @@
       "homeTeamName": "BURNABY MHA U18 C5",
       "awayTeamId": 177867,
       "awayTeamName": "RICHMOND JETS MHA U18 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Bill Copeland Sports Centre BCSC"
     },
     {
@@ -15631,10 +15631,10 @@
       "homeTeamName": "VANCOUVER MHA U18 C4",
       "awayTeamId": 177869,
       "awayTeamName": "VANCOUVER MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Britannia Community Centre"
     },
     {
@@ -17044,10 +17044,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U18 A3 TIER 3 (U17A)",
       "awayTeamId": 178621,
       "awayTeamName": "NORTH VANCOUVER MHA (1) U18 A3 TIER 3 (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 13,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hillcrest Centre Arena"
     },
     {
@@ -17061,10 +17061,10 @@
       "homeTeamName": "LANGLEY MHA (1) U18 A4 TIER 4 EAGLES (U17A)",
       "awayTeamId": 178642,
       "awayTeamName": "SOUTH DELTA MHA (2) U18 A2 TIER 3 STORM (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 1"
     },
     {
