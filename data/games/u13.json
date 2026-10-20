@@ -10714,10 +10714,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U13 A1 TIER 1",
       "awayTeamId": 178196,
       "awayTeamName": "BURNABY WINTER CLUB (1) U13 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Kitsilano Community Centre Kitsilano Rink"
     },
     {
@@ -10731,10 +10731,10 @@
       "homeTeamName": "CLOVERDALE MHA (1) U13 A4 TIER 4",
       "awayTeamId": 178151,
       "awayTeamName": "SOUTH DELTA MHA (2) U13 A2 TIER 3 STORM",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Surrey Sport & Leisure Centre Arena 1"
     },
     {
@@ -10765,10 +10765,10 @@
       "homeTeamName": "ABBOTSFORD MHA (1) U13 A3 TIER 3 HAWKS",
       "awayTeamId": 178140,
       "awayTeamName": "WEST VANCOUVER MHA U13 A2 TIER 4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 9,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
