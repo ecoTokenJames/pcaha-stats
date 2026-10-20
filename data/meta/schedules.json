@@ -477,6 +477,15 @@
     "endDate": "2027-02-21"
   },
   {
+    "id": 202171,
+    "name": "HOMETOWN HEROES - 13A",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-22",
+    "endDate": "2026-10-26"
+  },
+  {
     "id": 201900,
     "name": "PACIFIC COAST FEMALE REP CLASSIC - U13 TIER 1",
     "divisionName": "U13",
@@ -763,6 +772,15 @@
     "scheduleType": "League",
     "startDate": "2026-10-17",
     "endDate": "2027-02-21"
+  },
+  {
+    "id": 202187,
+    "name": "HOMETOWN HEROES - 15A",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-22",
+    "endDate": "2026-10-26"
   },
   {
     "id": 201924,
@@ -1069,6 +1087,15 @@
     "scheduleType": "League",
     "startDate": "2026-11-02",
     "endDate": "2027-01-24"
+  },
+  {
+    "id": 202198,
+    "name": "ABBOTSFORD U18 MEMORIAL TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-09"
   },
   {
     "id": 199257,
