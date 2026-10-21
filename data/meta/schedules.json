@@ -225,6 +225,15 @@
     "endDate": "2027-02-21"
   },
   {
+    "id": 202241,
+    "name": "BARRACUDAS SHOWDOWN",
+    "divisionName": "U11",
+    "categoryName": "U11 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-10-22",
+    "endDate": "2026-10-25"
+  },
+  {
     "id": 199311,
     "name": "U11 A Interconference League ",
     "divisionName": "U11",
