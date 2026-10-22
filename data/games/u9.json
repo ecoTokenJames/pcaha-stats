@@ -96,10 +96,10 @@
       "homeTeamName": "PENTICTON MHA (2) U9 B",
       "awayTeamId": 177958,
       "awayTeamName": "SEMIAHMOO MHA U9 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Planet Ice Delta International"
     },
     {
@@ -181,10 +181,10 @@
       "homeTeamName": "PENTICTON MHA (2) U9 B",
       "awayTeamId": 177963,
       "awayTeamName": "SEMIAHMOO MHA U9 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Planet Ice Delta Legends"
     },
     {
@@ -232,10 +232,10 @@
       "homeTeamName": "PENTICTON MHA (2) U9 B",
       "awayTeamId": 178063,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA U9 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Planet Ice Delta International"
     },
     {
