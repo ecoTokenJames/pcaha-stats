@@ -1,4 +1,5 @@
 import { SponsorTag } from "./LevelUpAd";
+import { ShowUntil } from "./ShowUntil";
 
 /**
  * BC Falcons spring hockey sponsor card. Plain link, no scripts or cookies;
@@ -11,6 +12,17 @@ const UTM = "utm_source=pcahastats&utm_medium=sponsor&utm_campaign=pcaha-stats";
 
 function falconsLink(placement: Placement): string {
   return `https://www.bcfalcons.com/register?${UTM}&utm_content=${placement}`;
+}
+
+/**
+ * When the Falcons ads come down: 8pm Friday Oct 23, the evening update after
+ * the ID skates (James, 2026-10-22). Visitors' browsers hide them at this
+ * moment; builds after it leave them out entirely.
+ */
+export const FALCONS_AD_END = "2026-10-23T20:00:00-07:00";
+
+export function falconsAdActive(now: number = Date.now()): boolean {
+  return now < Date.parse(FALCONS_AD_END);
 }
 
 /** Falcons spring teams are for 2013–2018 birth years: U9 through U15 this season. */
@@ -116,8 +128,10 @@ async function fetchUpcomingIdSkates(): Promise<IdSkateDay | null> {
 }
 
 export async function FalconsCard({ placement }: { placement: Placement }) {
+  if (!falconsAdActive()) return null;
   const idSkates = await getUpcomingIdSkates();
   return (
+    <ShowUntil until={FALCONS_AD_END}>
     <aside
       aria-label="Sponsor: BC Falcons Hockey"
       className="overflow-hidden rounded-lg border border-gray-200 bg-white"
@@ -208,13 +222,16 @@ export async function FalconsCard({ placement }: { placement: Placement }) {
         />
       </div>
     </aside>
+    </ShowUntil>
   );
 }
 
 /** Mini one-line ad for the sponsor strip at the top of pages. */
 export async function FalconsMini({ placement }: { placement: Placement }) {
+  if (!falconsAdActive()) return null;
   const idSkates = await getUpcomingIdSkates();
   return (
+    <ShowUntil until={FALCONS_AD_END}>
     <p className="flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-700">
       <SponsorTag />
       <span>
@@ -245,5 +262,6 @@ export async function FalconsMini({ placement }: { placement: Placement }) {
         </a>
       </span>
     </p>
+    </ShowUntil>
   );
 }
