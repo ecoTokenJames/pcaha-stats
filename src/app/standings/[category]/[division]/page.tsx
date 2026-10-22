@@ -14,7 +14,14 @@ import {
 } from "@/lib/data";
 import { Fragment } from "react";
 import { StandingsTable } from "@/components/StandingsTable";
-import { FalconsCard, FALCONS_DIVISIONS } from "@/components/FalconsAd";
+import {
+  FalconsCard,
+  FALCONS_DIVISIONS,
+  FALCONS_AD_END,
+  falconsAdActive,
+} from "@/components/FalconsAd";
+import { LevelUpDivisionCard } from "@/components/LevelUpAd";
+import { ShowFrom } from "@/components/ShowUntil";
 import { SponsorStrip } from "@/components/SponsorStrip";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
@@ -219,10 +226,19 @@ export default async function DivisionStandingsPage({
               })}
           </div>
         </div>
-        {/* Sponsor for the age groups the Falcons spring teams cover, after the first section */}
+        {/* Mid-page sponsor after the first section: Falcons (U9–U15) until
+            their cut-off, then a Level Up card for this age group everywhere */}
         {i === 0 && FALCONS_DIVISIONS.includes(divName) && (
           <FalconsCard placement="standings" />
         )}
+        {i === 0 &&
+          (falconsAdActive() ? (
+            <ShowFrom from={FALCONS_AD_END}>
+              <LevelUpDivisionCard division={divName} />
+            </ShowFrom>
+          ) : (
+            <LevelUpDivisionCard division={divName} />
+          ))}
         </Fragment>
       ))}
     </div>

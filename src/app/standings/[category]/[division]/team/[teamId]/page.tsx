@@ -200,7 +200,7 @@ export default async function TeamDetailPage({
       <TeamRosterTable players={mergedPlayers} />
 
       {/* Sponsor: right where parents are looking at their player's numbers */}
-      <LevelUpCard />
+      <LevelUpCard teamName={teamInfo.teamName} />
 
       {/* Every game this team is in: league, tiering, playoffs, tournaments */}
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
