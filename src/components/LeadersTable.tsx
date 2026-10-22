@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { levelUpLink, SponsorTag } from "./LevelUpAd";
 
 type StatCategory = "points" | "goals" | "assists" | "pim";
@@ -205,8 +205,8 @@ export function LeadersTable({
             </thead>
             <tbody>
               {visiblePlayers.map((player, i) => (
-                <Fragment key={player.id}>
                 <tr
+                  key={player.id}
                   className={`border-b border-gray-50 hover:bg-blue-50/50 transition-colors ${
                     i % 2 === 0 ? "bg-white" : "bg-gray-50/30"
                   }`}
@@ -236,31 +236,6 @@ export function LeadersTable({
                     {player.pim}
                   </td>
                 </tr>
-                {/* Sponsor line right under the top 3 */}
-                {i === 2 && visiblePlayers.length > 3 && (
-                  <tr className="border-b border-gray-100 bg-orange-50/60">
-                    <td colSpan={8} className="px-2 py-2">
-                      {/* sticky so it stays on screen when the table scrolls sideways on phones */}
-                      <div className="sticky left-2 flex max-w-[calc(100vw-4rem)] flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-700 sm:max-w-none">
-                        <SponsorTag />
-                        <span>
-                          <span className="font-semibold text-gray-900">Want to be up here?</span>{" "}
-                          Players climb with Level Up&apos;s at-home drills.{" "}
-                          <a
-                            href={levelUpLink("leaders-row")}
-                            target="_blank"
-                            rel="sponsored noopener"
-                            className="font-semibold underline"
-                            style={{ color: "#FF3D00" }}
-                          >
-                            Try it free →
-                          </a>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                )}
-                </Fragment>
               ))}
             </tbody>
           </table>
@@ -277,6 +252,26 @@ export function LeadersTable({
           </div>
         )}
       </div>
+
+      {/* Sponsor line below the leaders table */}
+      {sortedPlayers.length > 0 && (
+        <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-700">
+          <SponsorTag />
+          <span>
+            <span className="font-semibold text-gray-900">Want to be on this list?</span>{" "}
+            Players climb with Level Up&apos;s at-home drills.{" "}
+            <a
+              href={levelUpLink("leaders-row")}
+              target="_blank"
+              rel="sponsored noopener"
+              className="font-semibold underline"
+              style={{ color: "#FF3D00" }}
+            >
+              Try it free →
+            </a>
+          </span>
+        </p>
+      )}
     </div>
   );
 }
