@@ -555,10 +555,10 @@
       "homeTeamName": "SOUTH DELTA MHA U18 C4",
       "awayTeamId": 177849,
       "awayTeamName": "LANGLEY MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Ladner Leisure Centre"
     },
     {
@@ -572,10 +572,10 @@
       "homeTeamName": "LANGLEY MHA U18 C5",
       "awayTeamId": 177885,
       "awayTeamName": "SOUTH DELTA MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "The Arenas at LEC 2"
     },
     {
@@ -4607,10 +4607,10 @@
       "homeTeamName": "NORTH SHORE FEMALE IHA U18 C2",
       "awayTeamId": 177586,
       "awayTeamName": "VANCOUVER FEMALE IHA U18 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 11,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Karen Magnussen Arena"
     },
     {
@@ -8553,10 +8553,10 @@
       "homeTeamName": "COQUITLAM MHA U18 C1",
       "awayTeamId": 177889,
       "awayTeamName": "RIDGE MEADOWS MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Coquitlam 1 Mars"
     },
     {
@@ -8570,10 +8570,10 @@
       "homeTeamName": "PORT COQUITLAM MHA U18 C2",
       "awayTeamId": 177912,
       "awayTeamName": "COQUITLAM MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
@@ -10136,10 +10136,10 @@
       "homeTeamName": "RICHMOND JETS MHA (1) U18 A1 TIER 1",
       "awayTeamId": 177459,
       "awayTeamName": "CLOVERDALE MHA (1) U18 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Minoru Arena Stadium"
     },
     {
@@ -15325,10 +15325,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA U18 C5",
       "awayTeamId": 177875,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U18 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunset Arena"
     },
     {
@@ -15342,10 +15342,10 @@
       "homeTeamName": "RICHMOND JETS MHA U18 C3",
       "awayTeamId": 177926,
       "awayTeamName": "BURNABY MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Forum"
     },
     {
@@ -15359,10 +15359,10 @@
       "homeTeamName": "RICHMOND JETS MHA U18 C2",
       "awayTeamId": 177927,
       "awayTeamName": "BURNABY MHA U18 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
@@ -15376,10 +15376,10 @@
       "homeTeamName": "VANCOUVER MHA U18 C2",
       "awayTeamId": 177928,
       "awayTeamName": "ARBUTUS CLUB U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Trout Lake Community Centre 1"
     },
     {
@@ -15393,10 +15393,10 @@
       "homeTeamName": "BURNABY MHA U18 C1",
       "awayTeamId": 177857,
       "awayTeamName": "RICHMOND JETS MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Rosemary Brown Recreation Centre B"
     },
     {

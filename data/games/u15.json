@@ -3347,10 +3347,10 @@
       "homeTeamName": "ABBOTSFORD MHA U15 C2",
       "awayTeamId": 178590,
       "awayTeamName": "MISSION MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -9781,10 +9781,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U15 A1 TIER 1",
       "awayTeamId": 177827,
       "awayTeamName": "COQUITLAM MHA (1) U15 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
@@ -9798,10 +9798,10 @@
       "homeTeamName": "VANCOUVER MHA (2) U15 A2 TIER 3",
       "awayTeamId": 177808,
       "awayTeamName": "NORTH DELTA MHA (2) U15 A2 TIER 3 SUN DEVILS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Britannia Community Centre"
     },
     {
@@ -14970,10 +14970,10 @@
       "homeTeamName": "VANCOUVER MHA U15 C4",
       "awayTeamId": 178540,
       "awayTeamName": "BURNABY MHA U15 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "PNE Agrodome"
     },
     {

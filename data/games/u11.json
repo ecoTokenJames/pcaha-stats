@@ -3655,10 +3655,10 @@
       "homeTeamName": "VANCOUVER FEMALE IHA U11 C2",
       "awayTeamId": 177606,
       "awayTeamName": "SUNSHINE COAST MHA FEMALE U11 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Killarney Community Centre 1"
     },
     {
@@ -3692,7 +3692,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "cancelled",
       "arena": "Rosemary Brown Recreation Centre A"
     },
     {

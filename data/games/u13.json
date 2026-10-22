@@ -1210,23 +1210,6 @@
       "arena": "MSA Arena"
     },
     {
-      "id": 935108,
-      "number": "U13L9140",
-      "date": "2026-12-05",
-      "startTime": "2026-12-05T23:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178391,
-      "homeTeamName": "ABBOTSFORD MHA U13 C4",
-      "awayTeamId": 178377,
-      "awayTeamName": "MISSION MHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "MSA Arena"
-    },
-    {
       "id": 935103,
       "number": "U13L9139",
       "date": "2026-12-05",
@@ -2672,6 +2655,23 @@
       "arena": "Matsqui Recreation Centre"
     },
     {
+      "id": 935108,
+      "number": "U13L9140",
+      "date": "2026-10-25",
+      "startTime": "2026-10-26T00:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178391,
+      "homeTeamName": "ABBOTSFORD MHA U13 C4",
+      "awayTeamId": 178377,
+      "awayTeamName": "MISSION MHA U13 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Matsqui Recreation Centre"
+    },
+    {
       "id": 935197,
       "number": "U13L9041",
       "date": "2026-10-25",
@@ -2838,7 +2838,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "postponed",
       "arena": "MSA Arena"
     },
     {
@@ -10425,10 +10425,10 @@
       "homeTeamName": "EYH 12UA2 Jr. Silvertips (PCAHA U13 A2)",
       "awayTeamId": 178195,
       "awayTeamName": "ABBOTSFORD MHA (1) U13 A3 TIER 3 HAWKS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Angel of the Winds Arena Community"
     },
     {
