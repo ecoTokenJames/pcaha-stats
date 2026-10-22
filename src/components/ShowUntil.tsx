@@ -29,3 +29,29 @@ export function ShowUntil({
   );
   return visible ? <>{children}</> : null;
 }
+
+/**
+ * The opposite of ShowUntil: hidden until `from`, then shown in the visitor's
+ * browser (a page left open across the switch-over shows it too). Server
+ * render: hidden, so pages built before `from` don't flash it.
+ */
+export function ShowFrom({
+  from,
+  children,
+}: {
+  from: string;
+  children: React.ReactNode;
+}) {
+  const start = Date.parse(from);
+  const visible = useSyncExternalStore(
+    (onChange) => {
+      const ms = start - Date.now();
+      if (ms <= 0) return () => {};
+      const timer = setTimeout(onChange, Math.min(ms, 2 ** 31 - 1));
+      return () => clearTimeout(timer);
+    },
+    () => Date.now() >= start,
+    () => false
+  );
+  return visible ? <>{children}</> : null;
+}
