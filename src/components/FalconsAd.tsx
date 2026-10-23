@@ -1,3 +1,4 @@
+import { sponsorHref } from "@/lib/sponsor-links";
 import { SponsorTag } from "./LevelUpAd";
 import { ShowUntil } from "./ShowUntil";
 
@@ -8,10 +9,10 @@ import { ShowUntil } from "./ShowUntil";
 
 type Placement = "home" | "standings" | "top-home" | "top-standings" | "top-leaders" | "top-team";
 
-const UTM = "utm_source=pcahastats&utm_medium=sponsor&utm_campaign=pcaha-stats";
 
+/** Tracked link: /go/falcons/<placement> counts the click, then forwards to the Falcons. */
 function falconsLink(placement: Placement): string {
-  return `https://www.bcfalcons.com/register?${UTM}&utm_content=${placement}`;
+  return sponsorHref("falcons", placement);
 }
 
 /**

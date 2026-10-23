@@ -4,6 +4,8 @@
  * levelup.hockey/mobile sends phones to the right app store.
  */
 
+import { sponsorHref } from "@/lib/sponsor-links";
+
 type Placement =
   | "team-page"
   | "team-page-coach"
@@ -17,15 +19,15 @@ type Placement =
   | "standings-card"
   | "leaders-row";
 
-const UTM = "utm_source=pcahastats&utm_medium=sponsor&utm_campaign=pcaha-stats";
 
+/** Tracked link: /go/levelup/<placement> counts the click, then forwards to Level Up. */
 export function levelUpLink(placement: Placement): string {
-  return `https://levelup.hockey/mobile?${UTM}&utm_content=${placement}`;
+  return sponsorHref("levelup", placement);
 }
 
 /** Coach sign-up: creates the coach account and the team in one step. */
 function levelUpCoachLink(): string {
-  return `https://levelup.hockey/coach/signup?${UTM}&utm_content=team-page-coach`;
+  return sponsorHref("levelup-coach", "team-page-coach");
 }
 
 const BRAND = "#FF3D00";
