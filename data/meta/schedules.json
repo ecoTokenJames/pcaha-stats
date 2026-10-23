@@ -1116,6 +1116,15 @@
     "endDate": "2027-01-31"
   },
   {
+    "id": 202465,
+    "name": "U18 C MEMORIAL TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-08"
+  },
+  {
     "id": 201963,
     "name": "PL U18C League",
     "divisionName": "U18",
