@@ -210,7 +210,7 @@ export function getDivisionGameLogs(division: string): Record<string, GameLogRow
 /** One past season for a player (built by scraper/build-history.js). */
 export interface PlayerSeasonHistory {
   season: string;
-  /** Name as it appeared that season ("Name withheld" if removed on request) */
+  /** Latest name on file ("Name withheld" if removed on request) */
   name: string;
   number: number;
   division: string;
@@ -228,10 +228,42 @@ export interface PlayerSeasonHistory {
 /** Past seasons (2023-24 onward) by participantId. */
 let playerHistory: Record<string, PlayerSeasonHistory[]> | null = null;
 
+/** history/players.json as packed by build-history.js */
+interface PackedHistory {
+  types: string[];
+  /** [season, teamId, teamName, division] */
+  teams: Array<[string, number, string, string]>;
+  /** participantId -> [latestName, [[teamIdx, number, typeIdx, gp, g, a, pim], ...]] */
+  players: Record<string, [string, Array<[number, number, number, number, number, number, number]>]>;
+}
+
 export function getPlayerHistory(): Record<string, PlayerSeasonHistory[]> {
-  // Large and fixed between deploys: parse once per server instance
-  playerHistory ??=
-    readJson<Record<string, PlayerSeasonHistory[]>>("history/players.json") || {};
+  // Large and fixed between deploys: unpack once per server instance
+  if (!playerHistory) {
+    const packed = readJson<PackedHistory>("history/players.json");
+    playerHistory = {};
+    if (packed) {
+      for (const [pid, [name, rows]] of Object.entries(packed.players)) {
+        playerHistory[pid] = rows.map(([t, number, type, gamesPlayed, goals, assists, pim]) => {
+          const [season, teamId, teamName, division] = packed.teams[t];
+          return {
+            season,
+            name,
+            number,
+            division,
+            teamName,
+            teamId,
+            type: packed.types[type],
+            gamesPlayed,
+            goals,
+            assists,
+            points: goals + assists,
+            pim,
+          };
+        });
+      }
+    }
+  }
   return playerHistory;
 }
 

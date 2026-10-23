@@ -8,9 +8,9 @@
  * Usage: node scraper/build-history.js <dir-with-season-folders> [season ...]
  * Seasons are past and final, so this runs once per season, not nightly.
  *
- * Output: { [participantId]: [{ season, name, number, division, teamName, teamId,
- *           type, gamesPlayed, goals, assists, points, pim }, ...] } (oldest first),
- * one row per player per team per schedule type (League / Placement / Playoffs / Tournament).
+ * Output (packed): { types, teams: [[season, teamId, teamName, division]],
+ *   players: { [participantId]: [latestName, [[teamIdx, number, typeIdx, gp, g, a, pim], ...]] } },
+ * oldest first, one row per player per team per schedule type. Points = g + a.
  */
 
 const fs = require('fs');
@@ -81,7 +81,27 @@ for (const season of seasons) {
 
 for (const rows of Object.values(history)) rows.sort((a, b) => a.season.localeCompare(b.season));
 
+// Packed to keep the file small (~190k rows): teams and schedule types become indexes,
+// each player's name is stored once (latest season). src/lib/data.ts unpacks it.
+const TYPES = ['League', 'Placement', 'Playoffs', 'Tournament'];
+const teams = [];
+const teamIndex = new Map();
+const players = {};
+for (const [pid, rows] of Object.entries(history)) {
+  players[pid] = [
+    rows[rows.length - 1].name,
+    rows.map(r => {
+      const key = `${r.season}|${r.teamId}|${r.teamName}|${r.division}`;
+      if (!teamIndex.has(key)) {
+        teamIndex.set(key, teams.length);
+        teams.push([r.season, r.teamId, r.teamName, r.division]);
+      }
+      return [teamIndex.get(key), r.number, TYPES.indexOf(r.type), r.gamesPlayed, r.goals, r.assists, r.pim];
+    }),
+  ];
+}
+
 const out = path.join(__dirname, '..', 'data', 'history', 'players.json');
 fs.mkdirSync(path.dirname(out), { recursive: true });
-fs.writeFileSync(out, JSON.stringify(history));
-console.log(`Wrote ${Object.keys(history).length} players to ${out} (${(fs.statSync(out).size / 1e6).toFixed(1)} MB)`);
+fs.writeFileSync(out, JSON.stringify({ types: TYPES, teams, players }));
+console.log(`Wrote ${Object.keys(players).length} players to ${out} (${(fs.statSync(out).size / 1e6).toFixed(1)} MB)`);
