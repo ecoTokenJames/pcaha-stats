@@ -37,7 +37,7 @@ jobs:
           PCAHA_SEASON: ${{ inputs.season }}
         run: |
           # Start clean so last season's per-division files don't linger
-          rm -rf data/standings data/players data/games
+          rm -rf data/standings data/players data/games data/gamelogs
           node scraper/scrape.js
 
       - name: Sanity check
@@ -54,7 +54,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
-          if git diff --cached --quiet -- data/standings data/players data/games; then
+          if git diff --cached --quiet -- data/standings data/players data/games data/gamelogs; then
             echo "No stat changes — skipping commit"
             exit 0
           fi

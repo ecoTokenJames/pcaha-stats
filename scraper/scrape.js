@@ -226,6 +226,8 @@ async function fetchPlayerStats(schedules, groupNames) {
   log('Fetching games and player stats...');
   // scheduleId -> game rows (scores, dates, tier group) for the Games tab
   const gamesBySchedule = {};
+  // division -> participantId -> [[gameId, scheduleId, goals, assists, pim], ...] (games with events)
+  const gameLogs = {};
   // Keyed by `${participantId}-${scheduleId}` so stats are per-schedule
   const playerMap = {};
   const teamPlayerMap = {}; // teamId -> Set of participantIds
@@ -277,6 +279,11 @@ async function fetchPlayerStats(schedules, groupNames) {
 
           // Track which players played in this game (composite keys)
           const gamePlayers = new Set();
+          // This game's goals/assists/PIM per player, for the game-by-game log
+          const perGame = {};
+          const bump = (pid, field, n = 1) => {
+            (perGame[pid] ||= { g: 0, a: 0, pim: 0 })[field] += n;
+          };
 
           // Process goals
           for (const goal of (boxscore.goals || [])) {
@@ -312,6 +319,7 @@ async function fetchPlayerStats(schedules, groupNames) {
 
             playerMap[key].goals++;
             playerMap[key].points++;
+            bump(pid, 'g');
             if (goal.isPowerplay) playerMap[key].ppGoals++;
             if (goal.isShorthanded) playerMap[key].shGoals++;
             gamePlayers.add(key);
@@ -354,6 +362,7 @@ async function fetchPlayerStats(schedules, groupNames) {
               }
               playerMap[akey].assists++;
               playerMap[akey].points++;
+              bump(apid, 'a');
               gamePlayers.add(akey);
 
               if (!teamPlayerMap[goal.teamId]) teamPlayerMap[goal.teamId] = new Set();
@@ -401,6 +410,7 @@ async function fetchPlayerStats(schedules, groupNames) {
             else if (durName.includes('match')) pimValue = 5;
 
             playerMap[key].pim += pimValue;
+            bump(pid, 'pim', pimValue);
             gamePlayers.add(key);
 
             const team = boxscore.teams?.find(t => t.id === penalty.teamId);
@@ -408,6 +418,14 @@ async function fetchPlayerStats(schedules, groupNames) {
 
             if (!teamPlayerMap[penalty.teamId]) teamPlayerMap[penalty.teamId] = new Set();
             teamPlayerMap[penalty.teamId].add(pid);
+          }
+
+          // Game-by-game log (only games that have actually started)
+          if (game.startTime && new Date(game.startTime) < new Date()) {
+            const divLog = (gameLogs[schedule.divisionName] ||= {});
+            for (const [pid, e] of Object.entries(perGame)) {
+              (divLog[pid] ||= []).push([game.id, schedId, e.g, e.a, e.pim]);
+            }
           }
 
           // Increment games played for all players who appeared in this game
@@ -432,7 +450,7 @@ async function fetchPlayerStats(schedules, groupNames) {
   }
 
   log(`Processed ${processedGames} games total, found ${Object.keys(playerMap).length} player-schedule entries`);
-  return { playerMap, teamPlayerMap, gamesBySchedule, totalGames: processedGames };
+  return { playerMap, teamPlayerMap, gamesBySchedule, gameLogs, totalGames: processedGames };
 }
 
 /**
@@ -627,7 +645,12 @@ async function main() {
     for (const data of Object.values(standings)) {
       for (const t of data.teams) if (t.groupId != null) groupNames[t.groupId] = t.groupName;
     }
-    const { playerMap, gamesBySchedule } = await fetchPlayerStats(schedules, groupNames);
+    const { playerMap, gamesBySchedule, gameLogs } = await fetchPlayerStats(schedules, groupNames);
+
+    // Game-by-game player logs per division (used by the stats agent for trends)
+    for (const [div, log] of Object.entries(gameLogs)) {
+      saveJson(path.join(DATA_DIR, 'gamelogs', `${div.toLowerCase()}.json`), log);
+    }
 
     // Save game results/schedule per division, newest first
     for (const division of divisions) {

@@ -199,6 +199,42 @@ export function toGameView(game: GameRow): GameView {
   return { ...game, when };
 }
 
+/** [gameId, scheduleId, goals, assists, pim] for each game a player had a goal, assist or penalty in. */
+export type GameLogRow = [number, number, number, number, number];
+
+/** Game-by-game player logs for a division (participantId -> rows). */
+export function getDivisionGameLogs(division: string): Record<string, GameLogRow[]> {
+  return readJson<Record<string, GameLogRow[]>>(`gamelogs/${division.toLowerCase()}.json`) || {};
+}
+
+/** One past season for a player (built by scraper/build-history.js). */
+export interface PlayerSeasonHistory {
+  season: string;
+  /** Name as it appeared that season ("Name withheld" if removed on request) */
+  name: string;
+  number: number;
+  division: string;
+  teamName: string;
+  teamId: number;
+  /** League, Placement, Playoffs or Tournament */
+  type: string;
+  gamesPlayed: number;
+  goals: number;
+  assists: number;
+  points: number;
+  pim: number;
+}
+
+/** Past seasons (2023-24 onward) by participantId. */
+let playerHistory: Record<string, PlayerSeasonHistory[]> | null = null;
+
+export function getPlayerHistory(): Record<string, PlayerSeasonHistory[]> {
+  // Large and fixed between deploys: parse once per server instance
+  playerHistory ??=
+    readJson<Record<string, PlayerSeasonHistory[]>>("history/players.json") || {};
+  return playerHistory;
+}
+
 export function getScrapeInfo(): ScrapeInfo | null {
   return readJson<ScrapeInfo>("meta/last-scrape.json");
 }
