@@ -9463,6 +9463,23 @@
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
+      "id": 936162,
+      "number": "U13Q1632",
+      "date": "2026-10-29",
+      "startTime": "2026-10-30T02:30:00.000Z",
+      "groupId": 7089,
+      "groupName": "Group 3",
+      "homeTeamId": 178154,
+      "homeTeamName": "SQUAMISH MHA (3) U13 TIER 3 A1",
+      "awayTeamId": 178155,
+      "awayTeamName": "SOUTH DELTA MHA (2) U13 A1 TIER 2 STORM",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Brennan Park Arena"
+    },
+    {
       "id": 936193,
       "number": "U13Q1900",
       "date": "2026-10-29",
@@ -9478,23 +9495,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Rosemary Brown Recreation Centre B"
-    },
-    {
-      "id": 936162,
-      "number": "U13Q1632",
-      "date": "2026-10-29",
-      "startTime": "2026-10-30T02:15:00.000Z",
-      "groupId": 7089,
-      "groupName": "Group 3",
-      "homeTeamId": 178154,
-      "homeTeamName": "SQUAMISH MHA (3) U13 TIER 3 A1",
-      "awayTeamId": 178155,
-      "awayTeamName": "SOUTH DELTA MHA (2) U13 A1 TIER 2 STORM",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Brennan Park Arena"
     },
     {
       "id": 936025,
