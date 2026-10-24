@@ -8487,10 +8487,10 @@
       "homeTeamName": "SURREY MHA U11 A1 THUNDER",
       "awayTeamId": 216437,
       "awayTeamName": "SNO-KING JR. THUNDERBIRDS 10U A (PCAHA U11 A1)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
@@ -8504,10 +8504,10 @@
       "homeTeamName": "MISSION MHA U11 A2",
       "awayTeamId": 178296,
       "awayTeamName": "CHILLIWACK MHA U11 A3 JR BRUINS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 13,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Mission Leisure Centre North"
     },
     {
@@ -8521,10 +8521,10 @@
       "homeTeamName": "SJHA 10U A JR METS (PCAHA/PNAHA)",
       "awayTeamId": 178276,
       "awayTeamName": "PORT COQUITLAM MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Lynnwood Ice Centre 1"
     },
     {
@@ -8538,10 +8538,10 @@
       "homeTeamName": "HOLLYBURN MHA U11 A1",
       "awayTeamId": 178252,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
@@ -8555,10 +8555,10 @@
       "homeTeamName": "PORT MOODY AHA U11 A2",
       "awayTeamId": 220893,
       "awayTeamName": "WCAHA 10UA (PCAHA U11 A1)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -8572,10 +8572,10 @@
       "homeTeamName": "BURNABY WINTER CLUB U11 A4",
       "awayTeamId": 178300,
       "awayTeamName": "BURNABY MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 12,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Burnaby Winter Club Main"
     },
     {
@@ -15851,10 +15851,10 @@
       "homeTeamName": "SNO-KING JR. THUNDERBIRDS 10U B Girls",
       "awayTeamId": 223856,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA FEMALE U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
@@ -15868,10 +15868,10 @@
       "homeTeamName": "SURREY FEMALE HA U11 C1",
       "awayTeamId": 177614,
       "awayTeamName": "VANCOUVER FEMALE IHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
@@ -15885,10 +15885,10 @@
       "homeTeamName": "TRI CITIES FEMALE IHA U11 A1",
       "awayTeamId": 177474,
       "awayTeamName": "BURNABY FEMALE IHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
@@ -15902,10 +15902,10 @@
       "homeTeamName": "SEATTLE RED HAWKS 10U A (PCAHA U11 A1)",
       "awayTeamId": 220822,
       "awayTeamName": "RICHMOND RAVENS U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
@@ -15919,10 +15919,10 @@
       "homeTeamName": "SNO-KING JR. THUNDERBIRDS 10U B Girls",
       "awayTeamId": 177476,
       "awayTeamName": "LANGLEY GIRLS IHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
@@ -15936,10 +15936,10 @@
       "homeTeamName": "VANCOUVER FEMALE IHA U11 A1",
       "awayTeamId": 177473,
       "awayTeamName": "MEADOW RIDGE FEMALE MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
@@ -15953,10 +15953,10 @@
       "homeTeamName": "BURNABY FEMALE IHA U11 A1",
       "awayTeamId": 223856,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA FEMALE U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
@@ -15970,10 +15970,10 @@
       "homeTeamName": "SEATTLE RED HAWKS 10U A (PCAHA U11 A1)",
       "awayTeamId": 177613,
       "awayTeamName": "SURREY FEMALE HA U11 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
@@ -15987,10 +15987,10 @@
       "homeTeamName": "RICHMOND RAVENS U11 A1",
       "awayTeamId": 177473,
       "awayTeamName": "MEADOW RIDGE FEMALE MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {

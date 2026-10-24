@@ -360,6 +360,23 @@
   ],
   "201971": [
     {
+      "id": 998338,
+      "number": "U9E80010",
+      "date": "2026-12-12",
+      "startTime": "2026-12-12T15:00:00.000Z",
+      "groupId": 7034,
+      "groupName": "Blue Major",
+      "homeTeamId": 178107,
+      "homeTeamName": "BURNABY WINTER CLUB U9 C1",
+      "awayTeamId": 178038,
+      "awayTeamName": "RIDGE MEADOWS MHA U9 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Burnaby Winter Club Training"
+    },
+    {
       "id": 980823,
       "number": "U9E8006",
       "date": "2026-12-06",
@@ -375,6 +392,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Arbutus Club Ice Rink"
+    },
+    {
+      "id": 998174,
+      "number": "U9E8008",
+      "date": "2026-12-05",
+      "startTime": "2026-12-05T15:00:00.000Z",
+      "groupId": 7034,
+      "groupName": "Blue Major",
+      "homeTeamId": 178107,
+      "homeTeamName": "BURNABY WINTER CLUB U9 C1",
+      "awayTeamId": 178039,
+      "awayTeamName": "RIDGE MEADOWS MHA U9 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Burnaby Winter Club Training"
     },
     {
       "id": 980822,
