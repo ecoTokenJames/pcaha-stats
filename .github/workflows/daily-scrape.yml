@@ -4,6 +4,7 @@ name: Daily scrape
 # The push to main triggers Vercel to rebuild and redeploy the site.
 on:
   schedule:
+    - cron: "0 3 * * *" # 03:00 UTC = 7pm PST (8pm PDT in summer): early evening, the site's busiest hour
     - cron: "0 4 * * *" # 04:00 UTC = 8pm PST (9pm PDT in summer): picks up the day's games
     - cron: "0 8 * * *" # 08:00 UTC = midnight PST (1am PDT in summer)
   workflow_dispatch:
