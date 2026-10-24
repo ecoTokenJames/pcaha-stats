@@ -190,9 +190,9 @@ export default async function TeamDetailPage({
           )}
         </p>
         <p className="mt-1 text-xs text-blue-800/80">
-          GP is the team&apos;s games played. Spordle doesn&apos;t publish who
-          dressed for each game, so a player who missed games still shows the
-          team total. Goals, assists and PIM are exact.
+          GP counts the games a player was listed on the game sheet, so missed
+          games don&apos;t count. If a team leaves an absent player on the sheet,
+          that game still counts. Goals, assists and PIM are exact.
         </p>
       </DismissibleNote>
 

@@ -125,6 +125,13 @@ async function getBoxscore(gameId) {
 }
 
 /**
+ * Get the full game sheet for a game (includes each team's lineup: who dressed)
+ */
+async function getScoresheet(gameId) {
+  return fetchWithRetry(`/games/${gameId}/scoresheet`);
+}
+
+/**
  * Get groups (flights) for a schedule
  */
 async function getGroups(scheduleId) {
@@ -156,6 +163,7 @@ async function getArena(arenaId) {
 }
 
 module.exports = {
+  getScoresheet,
   getArena,
   fetchApi,
   fetchWithRetry,

@@ -219,6 +219,25 @@ async function fetchStandings(schedules) {
   return standings;
 }
 
+const PLAYER_POSITIONS = new Set(['F', 'D', 'G', 'C', 'LW', 'RW', 'W']);
+
+/**
+ * Players who dressed, from one team's game-sheet lineup: skaters and goalies listed
+ * (members + extras such as call-ups), minus staff and anyone serving a suspension.
+ */
+function dressedPlayers(lineup) {
+  const seen = new Set();
+  const out = [];
+  for (const m of [...(lineup.members || []), ...(lineup.extras || [])]) {
+    if (!m.participantId || seen.has(m.participantId)) continue;
+    if (m.suspension) continue; // listed on the sheet but serving a suspension
+    if (!(m.positions || []).some(p => PLAYER_POSITIONS.has(p))) continue;
+    seen.add(m.participantId);
+    out.push(m);
+  }
+  return out;
+}
+
 /**
  * Step 4: Fetch all games and boxscores for player stats
  */
@@ -231,6 +250,8 @@ async function fetchPlayerStats(schedules, groupNames) {
   // Keyed by `${participantId}-${scheduleId}` so stats are per-schedule
   const playerMap = {};
   const teamPlayerMap = {}; // teamId -> Set of participantIds
+  // `${teamId}-${scheduleId}` -> { games: games with a lineup, played: {pid: games dressed}, members: {pid: lineup entry} }
+  const lineupStats = {};
   let totalGames = 0;
   let processedGames = 0;
 
@@ -256,6 +277,8 @@ async function fetchPlayerStats(schedules, groupNames) {
 
       for (let i = 0; i < gameIds.length; i += 5) {
         const batch = gameIds.slice(i, i + 5);
+        // Game sheets carry the lineups (who actually dressed); optional, GP falls back without them
+        const sheetsP = Promise.all(batch.map(gameId => api.getScoresheet(gameId).catch(() => null)));
         const boxscores = await Promise.all(
           batch.map(async (gameId) => {
             try {
@@ -266,6 +289,7 @@ async function fetchPlayerStats(schedules, groupNames) {
             }
           })
         );
+        const sheets = await sheetsP;
 
         for (let j = 0; j < batch.length; j++) {
           const boxscore = boxscores[j];
@@ -420,8 +444,27 @@ async function fetchPlayerStats(schedules, groupNames) {
             teamPlayerMap[penalty.teamId].add(pid);
           }
 
+          const started = game.startTime && new Date(game.startTime) < new Date();
+
+          // Lineups: who dressed for each team (anyone with a goal, assist or penalty counts too)
+          const lineups = started ? sheets[j]?.scoresheet?.lineups : null;
+          for (const lineup of Object.values(lineups || {})) {
+            const dressed = dressedPlayers(lineup);
+            if (dressed.length === 0) continue; // empty sheet: treat this game as unknown
+            const t = (lineupStats[`${lineup.teamId}-${schedId}`] ||= { games: 0, played: {}, members: {} });
+            t.games++;
+            const ids = new Set(dressed.map(m => m.participantId));
+            for (const key of gamePlayers) {
+              if (playerMap[key]?.teamId === lineup.teamId) ids.add(playerMap[key].participantId);
+            }
+            for (const pid of ids) t.played[pid] = (t.played[pid] || 0) + 1;
+            for (const m of dressed) t.members[m.participantId] ||= m;
+            // Dressed but no points or penalties: still a game in their log
+            for (const pid of ids) perGame[pid] ||= { g: 0, a: 0, pim: 0 };
+          }
+
           // Game-by-game log (only games that have actually started)
-          if (game.startTime && new Date(game.startTime) < new Date()) {
+          if (started) {
             const divLog = (gameLogs[schedule.divisionName] ||= {});
             for (const [pid, e] of Object.entries(perGame)) {
               (divLog[pid] ||= []).push([game.id, schedId, e.g, e.a, e.pim]);
@@ -450,14 +493,16 @@ async function fetchPlayerStats(schedules, groupNames) {
   }
 
   log(`Processed ${processedGames} games total, found ${Object.keys(playerMap).length} player-schedule entries`);
-  return { playerMap, teamPlayerMap, gamesBySchedule, gameLogs, totalGames: processedGames };
+  return { playerMap, teamPlayerMap, gamesBySchedule, gameLogs, lineupStats, totalGames: processedGames };
 }
 
 /**
- * Step 5: Fetch team rosters and set GP = team GP from standings.
- * Also adds players who never appeared in a boxscore but are on the roster.
+ * Step 5: Fetch team rosters and set each player's GP.
+ * GP = games the player dressed for (from game-sheet lineups), plus the team's games
+ * that have no lineup on file (we can't tell who played those, so everyone gets them).
+ * Also adds roster players and dressed call-ups who never appeared in a boxscore.
  */
-async function enrichWithRosters(playerMap, standings, schedules) {
+async function enrichWithRosters(playerMap, standings, schedules, lineupStats = {}) {
   log('Fetching team rosters to fix GP...');
 
   // Build a list of all team-schedule entries (one entry per team per schedule)
@@ -528,12 +573,25 @@ async function enrichWithRosters(playerMap, standings, schedules) {
   // Now create/update player entries for EACH team-schedule combination
   let rosterPlayers = 0;
   let newEntries = 0;
+  const gpFor = (entry, pid) => {
+    const l = lineupStats[`${entry.teamId}-${entry.scheduleId}`];
+    if (!l) return entry.gamesPlayed;
+    // Capped at the team's GP: standings can lag a game behind the sheets
+    return Math.min(entry.gamesPlayed, (l.played[pid] || 0) + Math.max(0, entry.gamesPlayed - l.games));
+  };
 
   for (const entry of teamScheduleEntries) {
     const roster = rosterCache[entry.teamId];
     if (!roster) continue;
 
-    for (const member of roster) {
+    // Call-ups who dressed for this team but aren't on its roster
+    const rosterIds = new Set(roster.map(m => m.participantId));
+    const l = lineupStats[`${entry.teamId}-${entry.scheduleId}`];
+    const callUps = Object.values(l?.members || {})
+      .filter(m => !rosterIds.has(m.participantId))
+      .map(m => ({ ...m, number: m.number || 0, isAffiliate: true }));
+
+    for (const member of [...roster, ...callUps]) {
       const pid = member.participantId;
       const key = `${pid}-${entry.scheduleId}`;
       rosterPlayers++;
@@ -544,7 +602,7 @@ async function enrichWithRosters(playerMap, standings, schedules) {
 
       if (playerMap[key]) {
         // Player exists from boxscore data for this schedule — update GP and position
-        playerMap[key].gamesPlayed = entry.gamesPlayed;
+        playerMap[key].gamesPlayed = gpFor(entry, pid);
         playerMap[key].position = position;
       } else {
         // New entry — player on roster but didn't appear in boxscore for this schedule
@@ -567,7 +625,7 @@ async function enrichWithRosters(playerMap, standings, schedules) {
           ppGoals: 0,
           shGoals: 0,
           gwGoals: 0,
-          gamesPlayed: entry.gamesPlayed,
+          gamesPlayed: gpFor(entry, pid),
           isAffiliate: member.isAffiliate || false,
           position,
         };
@@ -645,7 +703,7 @@ async function main() {
     for (const data of Object.values(standings)) {
       for (const t of data.teams) if (t.groupId != null) groupNames[t.groupId] = t.groupName;
     }
-    const { playerMap, gamesBySchedule, gameLogs } = await fetchPlayerStats(schedules, groupNames);
+    const { playerMap, gamesBySchedule, gameLogs, lineupStats } = await fetchPlayerStats(schedules, groupNames);
 
     // Game-by-game player logs per division (used by the stats agent for trends)
     for (const [div, log] of Object.entries(gameLogs)) {
@@ -667,8 +725,8 @@ async function main() {
 
     // Step 5: Fetch team rosters and fix GP
     // The boxscore only records players who scored/assisted/penalized.
-    // We use team rosters + team GP from standings for accurate games played.
-    await enrichWithRosters(playerMap, standings, schedules);
+    // Game-sheet lineups say who dressed; team GP from standings covers games without one.
+    await enrichWithRosters(playerMap, standings, schedules, lineupStats);
 
     // Convert player map to sorted arrays
     // Removal requests: keep the stats, withhold the name
