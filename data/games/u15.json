@@ -4303,10 +4303,10 @@
       "homeTeamName": "TRI CITIES FEMALE IHA U15 C3",
       "awayTeamId": 177660,
       "awayTeamName": "TRI CITIES FEMALE IHA U15 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Poirier Sport & Leisure Complex 2"
     },
     {
@@ -9662,10 +9662,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U15 A2 TIER 2",
       "awayTeamId": 177811,
       "awayTeamName": "NEW WESTMINSTER MHA (3) U15 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Killarney Community Centre 1"
     },
     {
@@ -17175,10 +17175,10 @@
       "homeTeamName": "ALDERGROVE MHA U15 C1",
       "awayTeamId": 178839,
       "awayTeamName": "CLEARWATER MHA (4) U15 REC",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Abbotsford Recreation Centre 1"
     },
     {
@@ -17192,10 +17192,10 @@
       "homeTeamName": "WCAHA 14UC (PCAHA U15 C1)",
       "awayTeamId": 178545,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 17,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -18726,10 +18726,10 @@
       "homeTeamName": "SEMIAHMOO MHA (1) U15 A1 TIER 1",
       "awayTeamId": 233657,
       "awayTeamName": "JR KRAKEN 14U AAA (NAPHL-PNAHA)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
@@ -18743,10 +18743,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U15 A3 TIER 3",
       "awayTeamId": 215464,
       "awayTeamName": "LOGAN LAKE/KAMLOOPS MHA U15 TIER 4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {

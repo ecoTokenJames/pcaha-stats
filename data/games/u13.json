@@ -8111,10 +8111,10 @@
       "homeTeamName": "PORT MOODY AHA U13 C2",
       "awayTeamId": 178350,
       "awayTeamName": "RIDGE MEADOWS MHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -21905,10 +21905,10 @@
       "homeTeamName": "LANGLEY MHA U13 C4",
       "awayTeamId": 178885,
       "awayTeamName": "KAMLOOPS MHA (1) U13 REC #6",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 12,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Aldergrove Community Centre 1"
     },
     {

@@ -487,10 +487,10 @@
       "homeTeamName": "SURREY MHA U18 C4 SY4",
       "awayTeamId": 223565,
       "awayTeamName": "SEMIAHMOO MHA U18 C7 (SE7)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Surrey Sport & Leisure Centre Arena 3"
     },
     {
@@ -504,10 +504,10 @@
       "homeTeamName": "CLOVERDALE MHA U18 C1",
       "awayTeamId": 177849,
       "awayTeamName": "LANGLEY MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 12,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Cloverdale Sport & Ice Complex 1-Blue"
     },
     {
@@ -2971,10 +2971,10 @@
       "homeTeamName": "CHILLIWACK MHA U18 C2",
       "awayTeamId": 177934,
       "awayTeamName": "ALDERGROVE MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC1"
     },
     {
@@ -4539,10 +4539,10 @@
       "homeTeamName": "BURNABY FEMALE IHA U18 C2",
       "awayTeamId": 215419,
       "awayTeamName": "SUNSHINE COAST MHA FEMALE U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Kensington Arena"
     },
     {
@@ -4556,10 +4556,10 @@
       "homeTeamName": "NORTH SHORE FEMALE IHA U18 C1",
       "awayTeamId": 177594,
       "awayTeamName": "TRI CITIES FEMALE IHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "West Vancouver Ice Arena"
     },
     {
@@ -9915,10 +9915,10 @@
       "homeTeamName": "SOUTH DELTA MHA (2) U18 A1 TIER 2 STORM",
       "awayTeamId": 178645,
       "awayTeamName": "RIDGE MEADOWS MHA (1) U18 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Ladner Leisure Centre"
     },
     {
@@ -9932,10 +9932,10 @@
       "homeTeamName": "THUNDER HUSKIES (2) U18 A1 TIER 2",
       "awayTeamId": 178637,
       "awayTeamName": "SURREY MHA (2) U18 A1 TIER 2 THUNDER",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
@@ -9949,10 +9949,10 @@
       "homeTeamName": "SQUAMISH MHA (3) U18 TIER 3 A1",
       "awayTeamId": 178634,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA (1) U18 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Brennan Park Arena"
     },
     {
@@ -9966,10 +9966,10 @@
       "homeTeamName": "NORTH DELTA MHA (2) U18 A1 TIER 2 SUN DEVILS",
       "awayTeamId": 177461,
       "awayTeamName": "CLOVERDALE MHA (1) U18 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Sungod Recreation Centre"
     },
     {
@@ -9983,10 +9983,10 @@
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA (1) U18 A1 TIER 2",
       "awayTeamId": 177458,
       "awayTeamName": "ABBOTSFORD MHA (1) U18 A1 TIER 1 HAWKS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "North Shore Winter Club Main Rink"
     },
     {
@@ -10000,10 +10000,10 @@
       "homeTeamName": "SURREY MHA (2) U18 A2 TIER 3 THUNDER",
       "awayTeamId": 221104,
       "awayTeamName": "EYH Jr. Silvertips High School (PNAHA/PCAHA U18 A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
@@ -13810,10 +13810,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U18 C3",
       "awayTeamId": 177906,
       "awayTeamName": "NORTH VANCOUVER MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
@@ -15172,10 +15172,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA U18 C3",
       "awayTeamId": 177873,
       "awayTeamName": "VANCOUVER MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Kerrisdale Cyclone Taylor Arena"
     },
     {
@@ -15189,10 +15189,10 @@
       "homeTeamName": "RICHMOND JETS MHA U18 C5",
       "awayTeamId": 177909,
       "awayTeamName": "NEW WESTMINSTER MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Olympic Oval South "
     },
     {
@@ -15206,10 +15206,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA U18 C8",
       "awayTeamId": 177864,
       "awayTeamName": "RICHMOND JETS MHA U18 C6",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Sunset Arena"
     },
     {
@@ -15223,10 +15223,10 @@
       "homeTeamName": "BURNABY MHA U18 C4",
       "awayTeamId": 177862,
       "awayTeamName": "RICHMOND JETS MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Rosemary Brown Recreation Centre A"
     },
     {
@@ -15257,10 +15257,10 @@
       "homeTeamName": "VANCOUVER MHA U18 C3",
       "awayTeamId": 177922,
       "awayTeamName": "BURNABY MHA U18 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Britannia Community Centre"
     },
     {
@@ -18635,10 +18635,10 @@
       "homeTeamName": "PRINCE GEORGE MHA U18 CAPITALS",
       "awayTeamId": 224232,
       "awayTeamName": "SEATTLE RED HAWKS 16U AA (PCAHA U18 A2)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Richmond Ice Centre Garage"
     },
     {
@@ -18652,10 +18652,10 @@
       "homeTeamName": "PENTICTON MHA (2) U18 FEMALE A",
       "awayTeamId": 177592,
       "awayTeamName": "RICHMOND RAVENS U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Richmond Ice Centre Igloo"
     },
     {
@@ -18669,10 +18669,10 @@
       "homeTeamName": "KELOWNA MHA (1) U18 FEMALE A",
       "awayTeamId": 177490,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA FEMALE U18 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
@@ -18686,10 +18686,10 @@
       "homeTeamName": "SALMON ARM MHA (2) U18 FEMALE A",
       "awayTeamId": 222942,
       "awayTeamName": "SURREY FEMALE HA U18 A2 FALCONS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 11,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Richmond Ice Centre Forum"
     },
     {
@@ -19109,8 +19109,8 @@
       "startTime": "2026-11-08T19:15:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": 234167,
-      "homeTeamName": "SNO-KING JR. THUNDERBIRDS HS-V (PNAHA)",
+      "homeTeamId": 179080,
+      "homeTeamName": "WINFIELD/GREATER VERNON U18 TIER 3",
       "awayTeamId": 178621,
       "awayTeamName": "NORTH VANCOUVER MHA (1) U18 A3 TIER 3 (U17A)",
       "homeScore": null,
@@ -19434,8 +19434,8 @@
       "groupName": null,
       "homeTeamId": 178627,
       "homeTeamName": "CLOVERDALE MHA (1) U18 A3 TIER 3 (U17A)",
-      "awayTeamId": 234167,
-      "awayTeamName": "SNO-KING JR. THUNDERBIRDS HS-V (PNAHA)",
+      "awayTeamId": 179080,
+      "awayTeamName": "WINFIELD/GREATER VERNON U18 TIER 3",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -19551,8 +19551,8 @@
       "startTime": "2026-11-06T21:15:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": 234167,
-      "homeTeamName": "SNO-KING JR. THUNDERBIRDS HS-V (PNAHA)",
+      "homeTeamId": 179080,
+      "homeTeamName": "WINFIELD/GREATER VERNON U18 TIER 3",
       "awayTeamId": 222002,
       "awayTeamName": "RIDGE MEADOWS MHA (1) U18 A4 TIER 4 (U17A)",
       "homeScore": null,
