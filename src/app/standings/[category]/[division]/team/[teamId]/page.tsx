@@ -190,9 +190,7 @@ export default async function TeamDetailPage({
           )}
         </p>
         <p className="mt-1 text-xs text-blue-800/80">
-          GP counts the games a player was listed on the game sheet, so missed
-          games don&apos;t count. If a team leaves an absent player on the sheet,
-          that game still counts. Goals, assists and PIM are exact.
+          All stats are based on official game sheets.
         </p>
       </DismissibleNote>
 
