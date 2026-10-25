@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { stripCurrentSeason } from "@/lib/season-path";
 
 const CATEGORIES = [
   { slug: "rep", label: "Rep" },
@@ -9,8 +10,8 @@ const CATEGORIES = [
   { slug: "female", label: "Female" },
 ] as const;
 
-export function CategoryTabs({ basePath }: { basePath: string }) {
-  const pathname = usePathname();
+export function CategoryTabs({ basePath, current }: { basePath: string; current: string }) {
+  const pathname = stripCurrentSeason(usePathname(), current);
 
   return (
     <div className="flex gap-1.5 mb-4">

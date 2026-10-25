@@ -1,12 +1,28 @@
 import fs from "fs";
 import path from "path";
+import zlib from "zlib";
 
 const DATA_DIR = path.join(process.cwd(), "data");
+/** Finished seasons, packaged by scraper/package-season.js: data/seasons/<season>/**.json.gz */
+const SEASONS_DIR = path.join(DATA_DIR, "seasons");
 
-function readJson<T>(filePath: string): T | null {
+/** Past seasons never change, so each file is parsed once per process. */
+const pastCache = new Map<string, unknown>();
+
+/**
+ * Reads a data file. Without a season (or for the current one) it's the nightly
+ * data in data/; for a past season it's that season's packaged copy.
+ */
+function readJson<T>(filePath: string, season?: string): T | null {
   try {
-    const fullPath = path.join(DATA_DIR, filePath);
-    const content = fs.readFileSync(fullPath, "utf-8");
+    if (season && season !== SEASON) {
+      const fullPath = path.join(SEASONS_DIR, season, `${filePath}.gz`);
+      if (!pastCache.has(fullPath)) {
+        pastCache.set(fullPath, JSON.parse(zlib.gunzipSync(fs.readFileSync(fullPath)).toString("utf-8")));
+      }
+      return pastCache.get(fullPath) as T;
+    }
+    const content = fs.readFileSync(path.join(DATA_DIR, filePath), "utf-8");
     return JSON.parse(content) as T;
   } catch {
     return null;
@@ -105,28 +121,64 @@ export interface ScrapeInfo {
 
 // ==================== Data Loaders ====================
 
-export function getDivisions(): DivisionMeta[] {
-  return readJson<DivisionMeta[]>("meta/divisions.json") || [];
+export function getDivisions(season?: string): DivisionMeta[] {
+  return readJson<DivisionMeta[]>("meta/divisions.json", season) || [];
 }
 
-export function getSchedules(): ScheduleMeta[] {
-  return readJson<ScheduleMeta[]>("meta/schedules.json") || [];
+export function getSchedules(season?: string): ScheduleMeta[] {
+  return readJson<ScheduleMeta[]>("meta/schedules.json", season) || [];
 }
 
-export function getAllStandings(): Record<string, ScheduleStandings> {
-  return readJson<Record<string, ScheduleStandings>>("standings/all-standings.json") || {};
+export function getAllStandings(season?: string): Record<string, ScheduleStandings> {
+  return readJson<Record<string, ScheduleStandings>>("standings/all-standings.json", season) || {};
 }
 
-export function getDivisionStandings(division: string): Record<string, ScheduleStandings> {
-  return readJson<Record<string, ScheduleStandings>>(`standings/${division.toLowerCase()}.json`) || {};
+export function getDivisionStandings(division: string, season?: string): Record<string, ScheduleStandings> {
+  return readJson<Record<string, ScheduleStandings>>(`standings/${division.toLowerCase()}.json`, season) || {};
 }
 
-export function getAllPlayers(): PlayerStat[] {
+export function getAllPlayers(season?: string): PlayerStat[] {
+  if (season && season !== SEASON) {
+    // Past seasons ship per-division files only
+    return getDivisions(season).flatMap((d) => getDivisionPlayers(d.name, season));
+  }
   return readJson<PlayerStat[]>("players/all-players.json") || [];
 }
 
-export function getDivisionPlayers(division: string): PlayerStat[] {
-  return readJson<PlayerStat[]>(`players/${division.toLowerCase()}.json`) || [];
+/** Players removed on request; past seasons were packaged earlier, so apply the list on read. */
+let hiddenIds: Set<number> | null = null;
+function hiddenPlayerIds(): Set<number> {
+  if (!hiddenIds) {
+    try {
+      const file = JSON.parse(
+        fs.readFileSync(path.join(process.cwd(), "scraper", "hidden-players.json"), "utf-8")
+      ) as { hidden?: Array<number | { participantId: number }> };
+      hiddenIds = new Set(
+        (file.hidden ?? []).map((h) => Number(typeof h === "object" ? h.participantId : h))
+      );
+    } catch {
+      hiddenIds = new Set();
+    }
+  }
+  return hiddenIds;
+}
+
+const withheldCache = new Map<string, PlayerStat[]>();
+
+export function getDivisionPlayers(division: string, season?: string): PlayerStat[] {
+  const file = `players/${division.toLowerCase()}.json`;
+  if (!season || season === SEASON) return readJson<PlayerStat[]>(file) || [];
+  const key = `${season}/${file}`;
+  if (!withheldCache.has(key)) {
+    const hidden = hiddenPlayerIds();
+    withheldCache.set(
+      key,
+      (readJson<PlayerStat[]>(file, season) || []).map((p) =>
+        hidden.has(p.participantId) ? { ...p, name: "Name withheld" } : p
+      )
+    );
+  }
+  return withheldCache.get(key)!;
 }
 
 export function getLeaders(): Leaders {
@@ -159,19 +211,19 @@ export interface GameView extends GameRow {
 }
 
 /** Games for each schedule in a division, newest first. */
-export function getDivisionGames(division: string): Record<string, GameRow[]> {
-  return readJson<Record<string, GameRow[]>>(`games/${division.toLowerCase()}.json`) || {};
+export function getDivisionGames(division: string, season?: string): Record<string, GameRow[]> {
+  return readJson<Record<string, GameRow[]>>(`games/${division.toLowerCase()}.json`, season) || {};
 }
 
 /**
  * Every game a team is in this season across all its schedules in the division
  * (league, tiering, playoffs, tournaments), newest first, tagged with the schedule.
  */
-export function getTeamGames(division: string, teamId: number): GameView[] {
-  const standings = getDivisionStandings(division);
+export function getTeamGames(division: string, teamId: number, season?: string): GameView[] {
+  const standings = getDivisionStandings(division, season);
   const seen = new Set<number>();
   const games: GameView[] = [];
-  for (const [scheduleId, list] of Object.entries(getDivisionGames(division))) {
+  for (const [scheduleId, list] of Object.entries(getDivisionGames(division, season))) {
     for (const g of list) {
       if (g.homeTeamId !== teamId && g.awayTeamId !== teamId) continue;
       if (seen.has(g.id)) continue;
@@ -272,7 +324,37 @@ export function getScrapeInfo(): ScrapeInfo | null {
 }
 
 /** Season label (e.g. "2026-27") taken from the most recent scrape. */
-export const SEASON = getScrapeInfo()?.season ?? "";
+export const SEASON: string = (() => {
+  try {
+    const info = JSON.parse(
+      fs.readFileSync(path.join(DATA_DIR, "meta", "last-scrape.json"), "utf-8")
+    ) as ScrapeInfo;
+    return info.season ?? "";
+  } catch {
+    return "";
+  }
+})();
+
+/** Finished seasons that can be browsed, newest first (the current season isn't included). */
+export const PAST_SEASONS: string[] = (() => {
+  try {
+    return fs
+      .readdirSync(SEASONS_DIR)
+      .filter((d) => /^\d{4}-\d{2}$/.test(d) && d !== SEASON)
+      .sort()
+      .reverse();
+  } catch {
+    return [];
+  }
+})();
+
+/** Every season with pages, current first. */
+export const ALL_SEASONS: string[] = [SEASON, ...PAST_SEASONS];
+
+/** URL prefix for a season's pages: "" for the current season, /seasons/<season> for past ones. */
+export function seasonBase(season: string): string {
+  return season === SEASON ? "" : `/seasons/${season}`;
+}
 
 // ==================== Category Types ====================
 
@@ -313,8 +395,8 @@ function isScheduleFemale(teams: TeamStanding[]): boolean {
 /**
  * Get divisions that have data for a given hockey category.
  */
-export function getDivisionsForCategory(category: HockeyCategory): DivisionMeta[] {
-  const standings = getAllStandings();
+export function getDivisionsForCategory(category: HockeyCategory, season?: string): DivisionMeta[] {
+  const standings = getAllStandings(season);
   const divNames = new Set<string>();
 
   for (const s of Object.values(standings)) {
@@ -348,9 +430,10 @@ export function getDivisionsForCategory(category: HockeyCategory): DivisionMeta[
  */
 export function getFilteredStandings(
   division: string,
-  category: HockeyCategory
+  category: HockeyCategory,
+  season?: string
 ): Record<string, ScheduleStandings> {
-  const allStandings = getDivisionStandings(division);
+  const allStandings = getDivisionStandings(division, season);
   const filtered: Record<string, ScheduleStandings> = {};
 
   for (const [schedId, data] of Object.entries(allStandings)) {
@@ -384,10 +467,11 @@ export type ScheduleTypeFilter = "League" | "Playoffs";
 export function getFilteredPlayers(
   division: string,
   category: HockeyCategory,
-  scheduleType?: ScheduleTypeFilter
+  scheduleType?: ScheduleTypeFilter,
+  season?: string
 ): PlayerStat[] {
-  const allPlayers = getDivisionPlayers(division);
-  const standings = getDivisionStandings(division);
+  const allPlayers = getDivisionPlayers(division, season);
+  const standings = getDivisionStandings(division, season);
 
   // Build a set of schedule IDs that are female leagues
   const femaleScheduleIds = new Set<number>();
@@ -422,9 +506,10 @@ export function getFilteredPlayers(
 export function getTeamPlayers(
   division: string,
   teamId: number,
-  scheduleType?: ScheduleTypeFilter
+  scheduleType?: ScheduleTypeFilter,
+  season?: string
 ): PlayerStat[] {
-  const allPlayers = getDivisionPlayers(division);
+  const allPlayers = getDivisionPlayers(division, season);
   return allPlayers
     .filter((p) => {
       if (p.teamId !== teamId) return false;
@@ -475,10 +560,11 @@ export function mergePlayerStats(players: PlayerStat[]): PlayerStat[] {
  */
 export function getTeamInfo(
   division: string,
-  teamId: number
+  teamId: number,
+  season?: string
 ): { teamName: string; scheduleName: string; categoryName: string; scheduleId: number } | null {
   const typeRank = ["League", "Playoffs", "Placement", "Tournament"];
-  const matches = Object.values(getDivisionStandings(division))
+  const matches = Object.values(getDivisionStandings(division, season))
     .map((data) => ({ data, team: data.teams.find((t) => t.teamId === teamId) }))
     .filter((m) => m.team)
     .sort(
@@ -502,7 +588,8 @@ export function getTeamInfo(
  */
 export function getTeamGamesByType(
   division: string,
-  teamId: number
+  teamId: number,
+  season?: string
 ): Record<ScheduleType, number> {
   const games: Record<ScheduleType, number> = {
     League: 0,
@@ -510,7 +597,7 @@ export function getTeamGamesByType(
     Playoffs: 0,
     Tournament: 0,
   };
-  for (const data of Object.values(getDivisionStandings(division))) {
+  for (const data of Object.values(getDivisionStandings(division, season))) {
     // A team can appear in several groups of one schedule (playoff rounds)
     for (const team of data.teams) {
       if (team.teamId === teamId) games[getScheduleType(data)] += team.gamesPlayed;
@@ -619,8 +706,8 @@ export interface TournamentInfo {
 /**
  * Get all tournaments from standings data.
  */
-export function getAllTournaments(): TournamentInfo[] {
-  const allStandings = getAllStandings();
+export function getAllTournaments(season?: string): TournamentInfo[] {
+  const allStandings = getAllStandings(season);
   const tournaments: TournamentInfo[] = [];
 
   for (const data of Object.values(allStandings)) {
@@ -651,8 +738,8 @@ export function getAllTournaments(): TournamentInfo[] {
 /**
  * Get players for a specific tournament (by scheduleId).
  */
-export function getTournamentPlayers(scheduleId: number): PlayerStat[] {
-  const allPlayers = getAllPlayers();
+export function getTournamentPlayers(scheduleId: number, season?: string): PlayerStat[] {
+  const allPlayers = getAllPlayers(season);
   return allPlayers
     .filter((p) => p.scheduleId === scheduleId)
     .sort((a, b) => b.points - a.points || b.goals - a.goals);
@@ -727,13 +814,14 @@ export interface TeamDivision {
 export function getTeamDivisions(
   division: string,
   category: HockeyCategory,
-  today: string = new Date().toISOString().slice(0, 10)
+  today: string = new Date().toISOString().slice(0, 10),
+  season?: string
 ): Map<number, TeamDivision> {
   const phaseRank = { current: 0, finished: 1, upcoming: 2, unknown: 1 };
   const typeRank: Record<string, number> = { League: 0, Playoffs: 1, Placement: 2 };
   const best = new Map<number, { score: number[]; value: TeamDivision }>();
 
-  for (const data of Object.values(getFilteredStandings(division, category))) {
+  for (const data of Object.values(getFilteredStandings(division, category, season))) {
     const type = getScheduleType(data);
     if (type === "Tournament") continue;
     const phase = getSchedulePhase(data, today);

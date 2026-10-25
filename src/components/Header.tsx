@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { seasonFromPath, seasonHref, stripCurrentSeason } from "@/lib/season-path";
 
 // On phones the logo is the way home and Search is an icon, so everything fits
 const NAV_ITEMS = [
@@ -21,8 +22,12 @@ function SearchIcon() {
   );
 }
 
+/** Sections that exist per season: in a past season, the nav stays in that season */
+const SEASON_SECTIONS = ["/standings", "/leaders", "/tournaments"];
+
 export function Header({ season }: { season: string }) {
-  const pathname = usePathname();
+  const pathname = stripCurrentSeason(usePathname(), season);
+  const viewing = seasonFromPath(pathname, season);
 
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -34,21 +39,24 @@ export function Header({ season }: { season: string }) {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-base font-bold leading-tight text-gray-900">PCAHA Stats</h1>
-              <p className="text-[10px] text-gray-500 leading-tight -mt-0.5">{season} Season</p>
+              <p className="text-[10px] text-gray-500 leading-tight -mt-0.5">{viewing} Season</p>
             </div>
             <span className="sm:hidden text-sm font-bold text-gray-900">PCAHA</span>
           </Link>
 
           <nav className="flex items-center gap-0.5">
             {NAV_ITEMS.map((item) => {
+              const href = SEASON_SECTIONS.includes(item.href)
+                ? seasonHref(viewing, season, item.href)
+                : item.href;
               const isActive = item.href === "/"
                 ? pathname === "/"
-                : pathname.startsWith(item.href);
+                : pathname.startsWith(href);
 
               return (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={href}
                   aria-label={item.label}
                   className={`${item.mobileLabel === null ? "hidden sm:inline-flex" : "inline-flex"} items-center px-2 sm:px-2.5 py-1.5 rounded-md text-xs sm:text-sm font-medium transition-colors ${
                     isActive

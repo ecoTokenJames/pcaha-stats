@@ -3,6 +3,7 @@ import {
   getDivisionsForCategory,
   getFilteredStandings,
   getAllTournaments,
+  PAST_SEASONS,
   type HockeyCategory,
 } from "@/lib/data";
 
@@ -77,6 +78,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.5,
     });
+  }
+
+  // Past seasons: final standings and leaders per division (team pages are linked from these)
+  for (const season of PAST_SEASONS) {
+    for (const category of CATEGORIES) {
+      for (const div of getDivisionsForCategory(category, season)) {
+        for (const section of ["standings", "leaders"]) {
+          entries.push({
+            url: `${SITE_URL}/seasons/${season}/${section}/${category}/${div.name.toLowerCase()}`,
+            changeFrequency: "yearly",
+            priority: 0.4,
+          });
+        }
+      }
+    }
   }
 
   return entries;
