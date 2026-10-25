@@ -190,7 +190,7 @@ export default async function TeamDetailPage({
           )}
         </p>
         <p className="mt-1 text-xs text-blue-800/80">
-          All stats are based on official game sheets.
+          All stats are based on game sheets.
         </p>
       </DismissibleNote>
 
