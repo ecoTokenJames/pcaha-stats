@@ -3,15 +3,19 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { DivisionMeta } from "@/lib/data";
+import { stripCurrentSeason } from "@/lib/season-path";
 
 export function DivisionTabs({
   divisions,
   basePath,
+  current,
 }: {
   divisions: DivisionMeta[];
   basePath: string;
+  /** Current season, so its internal /seasons/<current> path matches the public one */
+  current: string;
 }) {
-  const pathname = usePathname();
+  const pathname = stripCurrentSeason(usePathname(), current);
 
   return (
     <div className="flex flex-wrap gap-1 mb-6">

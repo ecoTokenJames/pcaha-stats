@@ -32,8 +32,11 @@ const PHASE_ORDER = { current: 0, upcoming: 1, unknown: 2, finished: 3 };
 /** Tournament list with a division filter; each row links to its own page. */
 export function TournamentView({
   tournaments,
+  basePath = "/tournaments",
 }: {
   tournaments: TournamentSummary[];
+  /** Where tournament pages live for this season */
+  basePath?: string;
 }) {
   const [divFilter, setDivFilter] = useState<string | null>(null);
 
@@ -78,7 +81,7 @@ export function TournamentView({
         {shown.map((t) => (
           <li key={t.scheduleId}>
             <Link
-              href={`/tournaments/${t.scheduleId}`}
+              href={`${basePath}/${t.scheduleId}`}
               className="flex items-center justify-between gap-3 px-4 py-3 hover:bg-blue-50/50"
             >
               <div className="min-w-0">
