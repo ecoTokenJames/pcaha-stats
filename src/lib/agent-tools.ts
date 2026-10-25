@@ -282,7 +282,7 @@ function getTeam(teamId: number) {
       .slice(0, 5)
       .map(view),
     players,
-    note: "Player GP counts games the player was listed on the game sheet. Player totals include tournaments.",
+    note: "All stats are based on official game sheets. Player totals include tournaments.",
   };
 }
 
@@ -389,7 +389,7 @@ function getPlayer(participantId: number) {
     trend,
     pastSeasons: history,
     notes: [
-      "GP counts games the player was listed on the game sheet; if a team left an absent player on the sheet, that game still counts.",
+      "All stats are based on official game sheets.",
       "Moving up a tier (or age group) usually lowers points against tougher opponents; that is not a decline.",
       "Past seasons start in 2023-24; Spordle has no player stats before that.",
     ],
