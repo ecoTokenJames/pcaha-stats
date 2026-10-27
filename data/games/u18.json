@@ -164,10 +164,10 @@
       "homeTeamName": "SEMIAHMOO MHA U18 C2 (SE2)",
       "awayTeamId": 177853,
       "awayTeamName": "LANGLEY MHA U18 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Newton Arena"
     },
     {
@@ -181,10 +181,10 @@
       "homeTeamName": "LANGLEY MHA U18 C2",
       "awayTeamId": 177913,
       "awayTeamName": "CLOVERDALE MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "The Arenas at LEC 2"
     },
     {
@@ -2852,10 +2852,10 @@
       "homeTeamName": "ABBOTSFORD MHA U18 C5",
       "awayTeamId": 177916,
       "awayTeamName": "MISSION MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -2869,10 +2869,10 @@
       "homeTeamName": "CHILLIWACK MHA U18 C1",
       "awayTeamId": 177932,
       "awayTeamName": "ABBOTSFORD MHA U18 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC1"
     },
     {
@@ -8366,10 +8366,10 @@
       "homeTeamName": "PORT MOODY AHA U18 C3",
       "awayTeamId": 177912,
       "awayTeamName": "COQUITLAM MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 10,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -8383,10 +8383,10 @@
       "homeTeamName": "PORT COQUITLAM MHA U18 C1",
       "awayTeamId": 177884,
       "awayTeamName": "RIDGE MEADOWS MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
@@ -9541,10 +9541,10 @@
       "homeTeamName": "VANCOUVER MHA (2) U18 A1 TIER 2",
       "awayTeamId": 178643,
       "awayTeamName": "SOUTH DELTA MHA (2) U18 A1 TIER 2 STORM",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Britannia Community Centre"
     },
     {
@@ -9558,10 +9558,10 @@
       "homeTeamName": "MISSION MHA (3) U18 A1 TIER 3",
       "awayTeamId": 178620,
       "awayTeamName": "SEMIAHMOO MHA (1) U18 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Mission Leisure Centre North"
     },
     {
@@ -9575,10 +9575,10 @@
       "homeTeamName": "SQUAMISH MHA (3) U18 TIER 3 A1",
       "awayTeamId": 178640,
       "awayTeamName": "NORTH VANCOUVER MHA (1) U18 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Brennan Park Arena"
     },
     {
@@ -9592,10 +9592,10 @@
       "homeTeamName": "CLOVERDALE MHA (1) U18 A2 TIER 2",
       "awayTeamId": 177467,
       "awayTeamName": "ALDERGROVE MHA (3) U18 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 10,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Cloverdale Sport & Ice Complex 2-Red"
     },
     {
@@ -9609,10 +9609,10 @@
       "homeTeamName": "LANGLEY MHA (1) U18 A2 TIER 2 EAGLES",
       "awayTeamId": 178632,
       "awayTeamName": "SUNSHINE COAST MHA (3) U18 A1 TIER 3 BLUES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "The Arenas at LEC 1"
     },
     {
@@ -12474,23 +12474,6 @@
       "arena": "Meadow Park Sports Centre"
     },
     {
-      "id": 952314,
-      "number": "U18L7895",
-      "date": "2026-12-05",
-      "startTime": "2026-12-06T03:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177902,
-      "homeTeamName": "NORTH VANCOUVER MHA U18 C1",
-      "awayTeamId": 177882,
-      "awayTeamName": "SUNSHINE COAST MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Karen Magnussen Arena"
-    },
-    {
       "id": 952317,
       "number": "U18L7894",
       "date": "2026-12-05",
@@ -13273,6 +13256,23 @@
       "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
+      "id": 952314,
+      "number": "U18L7895",
+      "date": "2026-11-08",
+      "startTime": "2026-11-09T02:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177902,
+      "homeTeamName": "NORTH VANCOUVER MHA U18 C1",
+      "awayTeamId": 177882,
+      "awayTeamName": "SUNSHINE COAST MHA U18 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Harry Jerome Recreative Centre Harry Jerome Rec Centre"
+    },
+    {
       "id": 952367,
       "number": "U18L7845",
       "date": "2026-11-08",
@@ -13640,10 +13640,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U18 C6",
       "awayTeamId": 177858,
       "awayTeamName": "WEST VANCOUVER MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 13,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Canlan Ice Sports North Shore 3 Green"
     },
     {
@@ -13657,10 +13657,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U18 C4",
       "awayTeamId": 177901,
       "awayTeamName": "NORTH VANCOUVER MHA U18 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Canlan Ice Sports North Shore 2 Blue"
     },
     {
@@ -13674,10 +13674,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U18 C2",
       "awayTeamId": 177883,
       "awayTeamName": "SQUAMISH MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 10,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
@@ -14968,10 +14968,10 @@
       "homeTeamName": "RICHMOND JETS MHA U18 C1",
       "awayTeamId": 177865,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
@@ -14985,10 +14985,10 @@
       "homeTeamName": "BURNABY MHA U18 C2",
       "awayTeamId": 177924,
       "awayTeamName": "BURNABY MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Rosemary Brown Recreation Centre B"
     },
     {
@@ -16908,10 +16908,10 @@
       "homeTeamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
       "awayTeamId": 178633,
       "awayTeamName": "RICHMOND JETS MHA (1) U18 A2 TIER 2 (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sungod Recreation Centre"
     },
     {
@@ -16925,10 +16925,10 @@
       "homeTeamName": "SOUTH DELTA MHA (2) U18 A2 TIER 3 STORM (U17A)",
       "awayTeamId": 177460,
       "awayTeamName": "ABBOTSFORD MHA (1) U18 A2 TIER 2 HAWKS (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Ladner Leisure Centre"
     },
     {

@@ -1577,10 +1577,10 @@
       "homeTeamName": "NORTH DELTA MHA U15 C1",
       "awayTeamId": 223564,
       "awayTeamName": "SEMIAHMOO MHA U15 C6 (SE6)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
@@ -1594,10 +1594,10 @@
       "homeTeamName": "SOUTH DELTA MHA U15 C2",
       "awayTeamId": 178568,
       "awayTeamName": "SURREY MHA U15 C1 SY1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 11,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "South Delta Recreation Centre Main Rink (SDRC)"
     },
     {
@@ -7552,10 +7552,10 @@
       "homeTeamName": "COQUITLAM MHA U15 C2",
       "awayTeamId": 178578,
       "awayTeamName": "PORT COQUITLAM MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Poirier Sport & Leisure Complex 2"
     },
     {
@@ -7569,10 +7569,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U15 C6",
       "awayTeamId": 178581,
       "awayTeamName": "RIDGE MEADOWS MHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
@@ -9152,10 +9152,10 @@
       "homeTeamName": "ALDERGROVE MHA (3) U15 A1 TIER 3",
       "awayTeamId": 216440,
       "awayTeamName": "SNO-KING JR. THUNDERBIRDS 14U A2 (PCAHA U15 A2)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Aldergrove Community Centre 1"
     },
     {
@@ -9169,10 +9169,10 @@
       "homeTeamName": "COQUITLAM MHA (1) U15 A2 TIER 2",
       "awayTeamId": 177821,
       "awayTeamName": "CLOVERDALE MHA (1) U15 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
@@ -9186,10 +9186,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U15 A2 TIER 2",
       "awayTeamId": 177833,
       "awayTeamName": "ABBOTSFORD MHA (1) U15 A1 TIER 1 HAWKS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Hillcrest Centre Arena"
     },
     {
@@ -9220,10 +9220,10 @@
       "homeTeamName": "RICHMOND JETS MHA (1) U15 A3 TIER 3",
       "awayTeamId": 177822,
       "awayTeamName": "CLOVERDALE MHA (1) U15 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Richmond Ice Centre Garage"
     },
     {
@@ -9237,10 +9237,10 @@
       "homeTeamName": "NORTH DELTA MHA (2) U15 A2 TIER 3 SUN DEVILS",
       "awayTeamId": 177795,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA (1) U15 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Sungod Recreation Centre"
     },
     {
@@ -14732,10 +14732,10 @@
       "homeTeamName": "BURNABY MHA U15 C3",
       "awayTeamId": 178596,
       "awayTeamName": "NEW WESTMINSTER MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Kensington Arena"
     },
     {

@@ -9932,10 +9932,10 @@
       "homeTeamName": "ABBOTSFORD MHA (1) U13 A3 TIER 3 HAWKS",
       "awayTeamId": 178133,
       "awayTeamName": "SOUTH DELTA MHA (2) U13 A3 TIER 4 STORM",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -18676,10 +18676,10 @@
       "homeTeamName": "PCEHL U13 FRASER VALLEY APEX",
       "awayTeamId": 187964,
       "awayTeamName": "PCEHL U13 NORTH SHORE WINTER CLUB",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Matsqui Recreation Centre"
     },
     {
