@@ -163,6 +163,35 @@ function slimGame(box, sheet) {
 }
 
 const arenaCache = loadCache('arenas');
+
+// Schedules that ended more than a few days ago don't change: their standings and game
+// lists are kept here and not asked for again. scheduleId -> { standings, games }
+const scheduleCache = loadCache('schedules');
+
+function isFinished(schedule, days = REFETCH_DAYS) {
+  const end = (schedule.endDate || '').slice(0, 10);
+  const cutoff = new Date(Date.now() - days * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  return !!end && end < cutoff;
+}
+
+/** Just the game-list fields the scraper uses */
+const slimListGame = g => ({
+  id: g.id,
+  number: g.number || null,
+  date: g.date || null,
+  startTime: g.startTime || null,
+  groupId: g.groupId ?? null,
+  homeTeamId: g.homeTeamId,
+  homeTeam: { name: g.homeTeam?.name || 'TBD' },
+  awayTeamId: g.awayTeamId,
+  awayTeam: { name: g.awayTeam?.name || 'TBD' },
+  status: g.status || null,
+  arenaId: g.arenaId ?? null,
+  isCertified: !!g.isCertified,
+  isApproved: !!g.isApproved,
+  homeTeamStats: g.homeTeamStats ? 1 : null,
+  awayTeamStats: g.awayTeamStats ? 1 : null,
+});
 async function arenaName(arenaId) {
   if (!arenaId) return null;
   if (!(arenaId in arenaCache)) {
@@ -264,9 +293,17 @@ async function fetchStandings(schedules) {
   log('Fetching team standings...');
   const standings = {};
 
+  let reused = 0;
   for (const schedule of schedules) {
+    const cached = scheduleCache[schedule.id];
+    if (isFinished(schedule) && cached && 'standings' in cached) {
+      if (cached.standings) standings[schedule.id] = cached.standings;
+      reused++;
+      continue;
+    }
     try {
       const teamStats = await api.getTeamStats(schedule.id);
+      (scheduleCache[schedule.id] ||= {}).standings = null;
       if (!teamStats || teamStats.length === 0) continue;
 
       standings[schedule.id] = {
@@ -301,12 +338,14 @@ async function fetchStandings(schedules) {
         })),
       };
 
+      scheduleCache[schedule.id].standings = standings[schedule.id];
       log(`  ${schedule.divisionName} - ${schedule.name}: ${teamStats.length} teams`);
     } catch (e) {
       log(`  ERROR: ${schedule.name}: ${e.message}`);
     }
   }
 
+  log(`  Standings: ${reused} finished schedules re-used, ${schedules.length - reused} asked for`);
   return standings;
 }
 
@@ -356,8 +395,10 @@ async function fetchPlayerStats(schedules, groupNames) {
     const schedId = schedule.id;
 
     try {
-      const games = await api.getGames(schedule.id);
-      if (!games || games.length === 0) continue;
+      const cachedGames = isFinished(schedule) ? scheduleCache[schedId]?.games : null;
+      const games = cachedGames || (await api.getGames(schedule.id) || []).map(slimListGame);
+      (scheduleCache[schedId] ||= {}).games = games;
+      if (games.length === 0) continue;
 
       const rows = {};
       for (const g of games) rows[g.id] = await gameRow(g, groupNames);
@@ -853,6 +894,8 @@ async function main() {
 
     log(`Saved ${players.length} player stats`);
   }
+
+  saveCache('schedules', scheduleCache);
 
   // Save scrape metadata
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
