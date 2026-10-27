@@ -531,6 +531,33 @@
     "endDate": "2026-10-25"
   },
   {
+    "id": 202549,
+    "name": "VIAHA Island League U13 Division 1",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "League",
+    "startDate": "2026-10-31",
+    "endDate": "2027-01-24"
+  },
+  {
+    "id": 202550,
+    "name": "VIAHA Island League U13 Division 2",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "League",
+    "startDate": "2026-10-31",
+    "endDate": "2027-01-24"
+  },
+  {
+    "id": 202551,
+    "name": "VIAHA Island League U13 Division 3",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "League",
+    "startDate": "2026-10-31",
+    "endDate": "2027-01-24"
+  },
+  {
     "id": 199397,
     "name": "U13 A League",
     "divisionName": "U13",
@@ -547,6 +574,24 @@
     "scheduleType": "League",
     "startDate": "2026-11-02",
     "endDate": "2027-01-24"
+  },
+  {
+    "id": 202619,
+    "name": "REMEMBRANCE DAY CLASSIC - U13A - BELCARRA POOL",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-08"
+  },
+  {
+    "id": 202607,
+    "name": "REMEMBRANCE DAY CLASSIC - U13A - ROCKY POINT POOL",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-08"
   },
   {
     "id": 199255,
@@ -810,6 +855,33 @@
     "endDate": "2026-10-25"
   },
   {
+    "id": 202552,
+    "name": "VIAHA Island League U15 Division 1",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "scheduleType": "League",
+    "startDate": "2026-10-31",
+    "endDate": "2027-01-24"
+  },
+  {
+    "id": 202553,
+    "name": "VIAHA Island League U15 Division 2",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "scheduleType": "League",
+    "startDate": "2026-10-31",
+    "endDate": "2027-01-24"
+  },
+  {
+    "id": 202554,
+    "name": "VIAHA Island League U15 Division 3",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "scheduleType": "League",
+    "startDate": "2026-10-31",
+    "endDate": "2027-01-24"
+  },
+  {
     "id": 199409,
     "name": "U15 A League",
     "divisionName": "U15",
@@ -826,6 +898,15 @@
     "scheduleType": "League",
     "startDate": "2026-11-02",
     "endDate": "2027-01-24"
+  },
+  {
+    "id": 202567,
+    "name": "TIM JARDINE MEMORIAL TOURNAMENT - U15A",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-09"
   },
   {
     "id": 199256,
@@ -1080,6 +1161,33 @@
     "endDate": "2026-10-25"
   },
   {
+    "id": 202555,
+    "name": "VIAHA Island League U18 Division 1",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "scheduleType": "League",
+    "startDate": "2026-10-31",
+    "endDate": "2027-01-24"
+  },
+  {
+    "id": 202556,
+    "name": "VIAHA Island League U18 Division 2",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "scheduleType": "League",
+    "startDate": "2026-10-31",
+    "endDate": "2027-01-24"
+  },
+  {
+    "id": 202557,
+    "name": "VIAHA Island League U18 Division 3",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "scheduleType": "League",
+    "startDate": "2026-10-31",
+    "endDate": "2027-01-24"
+  },
+  {
     "id": 199420,
     "name": "U18 A League",
     "divisionName": "U18",
@@ -1100,6 +1208,15 @@
   {
     "id": 202198,
     "name": "ABBOTSFORD U18 MEMORIAL TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-09"
+  },
+  {
+    "id": 202588,
+    "name": "TIM JARDINE MEMORIAL TOURNAMENT - U18A",
     "divisionName": "U18",
     "categoryName": "U18 A",
     "scheduleType": "Tournament",
