@@ -40,8 +40,10 @@ export function TeamStar({ teamId }: { teamId: number }) {
         toggleFavoriteTeam(teamId);
         notifyChange();
       }}
-      className="text-gray-300 hover:text-yellow-400 transition-colors"
+      // Padding makes a thumb-sized target; the negative margin keeps the layout the same
+      className="-m-1.5 p-1.5 text-gray-400 hover:text-yellow-400 transition-colors"
       title={starred ? "Remove from favorites" : "Add to favorites"}
+      aria-label={starred ? "Remove from favorites" : "Add to favorites"}
     >
       {starred ? (
         <svg className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -67,7 +69,7 @@ export function DivisionStar({ divName }: { divName: string }) {
         toggleFavoriteDivision(divName);
         notifyChange();
       }}
-      className="text-gray-300 hover:text-yellow-400 transition-colors"
+      className="-m-1.5 p-1.5 text-gray-400 hover:text-yellow-400 transition-colors"
       title={starred ? "Remove from favorites" : "Add to favorites"}
     >
       {starred ? (

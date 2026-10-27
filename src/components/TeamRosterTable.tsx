@@ -6,7 +6,7 @@ export function TeamRosterTable({ players }: { players: PlayerStat[] }) {
       <div className="px-4 py-3 border-b border-gray-100">
         <h4 className="font-semibold text-gray-900 text-sm">
           Player Stats
-          <span className="text-xs font-normal text-gray-400 ml-2">
+          <span className="text-xs font-normal text-gray-500 ml-2">
             ({players.length} players)
           </span>
         </h4>
@@ -18,34 +18,34 @@ export function TeamRosterTable({ players }: { players: PlayerStat[] }) {
         </div>
       ) : (
         <div className="overflow-x-auto">
-          <table className="w-full text-sm min-w-[600px]">
+          <table className="w-full text-sm sm:min-w-[600px]">
             <thead>
               <tr className="border-b border-gray-100">
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">
                   #
                 </th>
-                <th className="px-2 py-2 text-left font-medium text-gray-500 min-w-[160px]">
+                <th className="sticky left-0 z-10 bg-white px-1.5 sm:px-2 py-2 text-left font-medium text-gray-500 sm:min-w-[160px]">
                   Player
                 </th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">
                   GP
                 </th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">
                   G
                 </th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">
                   A
                 </th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">
                   PTS
                 </th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">
                   PIM
                 </th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">
                   PPG
                 </th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">
                   SHG
                 </th>
               </tr>
@@ -54,19 +54,20 @@ export function TeamRosterTable({ players }: { players: PlayerStat[] }) {
               {players.map((player, i) => (
                 <tr
                   key={player.participantId}
-                  className={`border-b border-gray-50 hover:bg-blue-50/50 transition-colors ${
-                    i % 2 === 0 ? "bg-white" : "bg-gray-50/30"
+                  className={`border-b border-gray-50 hover:bg-blue-50 transition-colors ${
+                    i % 2 === 0 ? "bg-white" : "bg-gray-50"
                   }`}
                 >
-                  <td className="px-2 py-2 text-center text-gray-400">
+                  <td className="px-1.5 sm:px-2 py-2 text-center text-gray-500">
                     {player.number > 0 ? player.number : "-"}
                   </td>
-                  <td className="px-2 py-2 text-left whitespace-nowrap">
+                  {/* Pinned while the stats scroll sideways on phones */}
+                  <td className="sticky left-0 z-10 bg-inherit px-1.5 sm:px-2 py-2 text-left leading-tight sm:whitespace-nowrap">
                     <span className="font-medium text-gray-900">
                       {player.name}
                     </span>
                     {player.position && (
-                      <span className="text-xs text-gray-400 ml-1">
+                      <span className="text-xs text-gray-500 ml-1">
                         ({player.position})
                       </span>
                     )}
@@ -79,21 +80,21 @@ export function TeamRosterTable({ players }: { players: PlayerStat[] }) {
                       </span>
                     )}
                   </td>
-                  <td className="px-2 py-2 text-center">
+                  <td className="px-1.5 sm:px-2 py-2 text-center">
                     {player.gamesPlayed}
                   </td>
-                  <td className="px-2 py-2 text-center font-medium text-green-700">
+                  <td className="px-1.5 sm:px-2 py-2 text-center font-medium text-green-700">
                     {player.goals}
                   </td>
-                  <td className="px-2 py-2 text-center">{player.assists}</td>
-                  <td className="px-2 py-2 text-center font-bold text-blue-900">
+                  <td className="px-1.5 sm:px-2 py-2 text-center">{player.assists}</td>
+                  <td className="px-1.5 sm:px-2 py-2 text-center font-bold text-blue-900">
                     {player.points}
                   </td>
-                  <td className="px-2 py-2 text-center">{player.pim}</td>
-                  <td className="px-2 py-2 text-center text-gray-500">
+                  <td className="px-1.5 sm:px-2 py-2 text-center">{player.pim}</td>
+                  <td className="px-1.5 sm:px-2 py-2 text-center text-gray-500">
                     {player.ppGoals}
                   </td>
-                  <td className="px-2 py-2 text-center text-gray-500">
+                  <td className="px-1.5 sm:px-2 py-2 text-center text-gray-500">
                     {player.shGoals}
                   </td>
                 </tr>

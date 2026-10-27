@@ -57,7 +57,8 @@ export function Header({ season }: { season: string }) {
                 <Link
                   key={item.href}
                   href={href}
-                  aria-label={item.label}
+                  // Only the icon-only Search link needs a label; the others show their text
+                  aria-label={item.mobileLabel === "icon" ? item.label : undefined}
                   className={`${item.mobileLabel === null ? "hidden sm:inline-flex" : "inline-flex"} items-center px-2 sm:px-2.5 py-1.5 rounded-md text-xs sm:text-sm font-medium transition-colors ${
                     isActive
                       ? "bg-blue-50 text-blue-900"

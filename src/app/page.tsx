@@ -67,7 +67,7 @@ export default function Home() {
         </p>
 
         {/* Quick stats */}
-        <div className="mt-4 flex flex-wrap gap-4">
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:gap-4">
           <div className="bg-white rounded-lg border border-gray-200 px-4 py-3">
             <div className="text-2xl font-bold text-blue-900">
               {divisions.length}

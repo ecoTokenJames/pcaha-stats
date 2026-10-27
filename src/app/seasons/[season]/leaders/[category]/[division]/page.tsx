@@ -8,6 +8,7 @@ import {
   getDivisionsForCategory,
   getScheduleType,
   getTeamDivisions,
+  getShortTeamNames,
   sortGroups,
   mergePlayerStats,
   type HockeyCategory,
@@ -87,6 +88,8 @@ export default async function LeadersDivisionPage({
   // Each team's league and current tier, so leaders are split by division
   const teamDivisions = getTeamDivisions(divName, category as HockeyCategory, undefined, season);
 
+  const shortNames = getShortTeamNames(divName, season);
+
   // One row per player (season totals without tournaments), only what the table shows
   const leaders: LeaderPlayer[] = mergePlayerStats(leaguePlayers)
     .filter((p) => p.gamesPlayed > 0)
@@ -96,6 +99,7 @@ export default async function LeadersDivisionPage({
       number: p.number,
       position: p.position,
       teamName: p.teamName,
+      teamShort: shortNames.get(p.teamId),
       gamesPlayed: p.gamesPlayed,
       goals: p.goals,
       assists: p.assists,

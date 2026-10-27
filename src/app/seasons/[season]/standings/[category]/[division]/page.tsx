@@ -8,12 +8,14 @@ import {
   getSchedulePhase,
   getDivisionGames,
   toGameView,
+  withShortNames,
   type ScheduleStandings,
   type HockeyCategory,
   SEASON,
   seasonBase,
 } from "@/lib/data";
 import { Fragment } from "react";
+import { shortTeamNames } from "@/lib/team-names";
 import { StandingsTable } from "@/components/StandingsTable";
 import {
   FalconsCard,
@@ -169,7 +171,7 @@ export default async function DivisionStandingsPage({
           {sortedTypes.length > 1 && (
             <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
               {SECTION_LABELS[type] ?? type}
-              <span className="text-xs font-normal text-gray-400">
+              <span className="text-xs font-normal text-gray-500">
                 ({grouped[type].length})
               </span>
             </h3>
@@ -184,6 +186,14 @@ export default async function DivisionStandingsPage({
               )
               .map((data) => {
                 const { scheduleId, scheduleName } = data;
+                // Phone-size names, worked out per table so they never clash within it
+                const shortNames = shortTeamNames([
+                  ...data.teams,
+                  ...(divisionGames[scheduleId] ?? []).flatMap((g) => [
+                    { teamId: g.homeTeamId, teamName: g.homeTeamName },
+                    { teamId: g.awayTeamId, teamName: g.awayTeamName },
+                  ]),
+                ]);
                 const abbrev = getLeagueAbbrev(scheduleName);
                 const status = phaseLabel(data);
                 // Spordle shares standings but not game sheets for some leagues (VIAHA)
@@ -217,7 +227,7 @@ export default async function DivisionStandingsPage({
                       </span>
                     </div>
                     <StandingsTable
-                      teams={data.teams}
+                      teams={data.teams.map((t) => ({ ...t, shortName: shortNames.get(t.teamId) }))}
                       teamLinkBase={teamLinkBase}
                       games={(divisionGames[scheduleId] ?? [])
                         .filter(
@@ -225,7 +235,7 @@ export default async function DivisionStandingsPage({
                             g.status !== "scheduled" ||
                             (g.startTime ?? "") < upcomingCutoff
                         )
-                        .map(toGameView)}
+                        .map((g) => withShortNames(toGameView(g), shortNames))}
                     />
                   </div>
                 );

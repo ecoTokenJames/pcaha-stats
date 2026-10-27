@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import zlib from "zlib";
+import { shortTeamNames } from "./team-names";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 /** Finished seasons, packaged by scraper/package-season.js: data/seasons/<season>/**.json.gz */
@@ -53,6 +54,8 @@ export interface TeamStanding {
   pim: number;
   pimPerGame: number;
   groupName: string | null;
+  /** Short name for phones ("Langley A1"); set by the page, not in the data files */
+  shortName?: string;
 }
 
 export interface ScheduleStandings {
@@ -206,6 +209,9 @@ export interface GameRow {
 /** A game ready to render: start time already formatted in Pacific time. */
 export interface GameView extends GameRow {
   when: string;
+  /** Short team names for phones */
+  homeShort?: string;
+  awayShort?: string;
   /** Set on the team page, where games come from several schedules */
   scheduleName?: string;
 }
@@ -235,6 +241,33 @@ export function getTeamGames(division: string, teamId: number, season?: string):
     }
   }
   return games.sort((a, b) => (b.startTime ?? "").localeCompare(a.startTime ?? ""));
+}
+
+const shortNameCache = new Map<string, Map<number, string>>();
+
+/** Short names for every team in a division (games and leaders span its schedules). */
+export function getShortTeamNames(division: string, season?: string): Map<number, string> {
+  const key = `${season ?? SEASON}/${division}`;
+  if (!shortNameCache.has(key)) {
+    const teams = Object.values(getDivisionStandings(division, season)).flatMap((s) => s.teams);
+    const games = Object.values(getDivisionGames(division, season)).flat();
+    shortNameCache.set(
+      key,
+      shortTeamNames([
+        ...teams,
+        ...games.flatMap((g) => [
+          { teamId: g.homeTeamId, teamName: g.homeTeamName },
+          { teamId: g.awayTeamId, teamName: g.awayTeamName },
+        ]),
+      ])
+    );
+  }
+  return shortNameCache.get(key)!;
+}
+
+/** Adds phone-size team names to a game */
+export function withShortNames(game: GameView, names: Map<number, string>): GameView {
+  return { ...game, homeShort: names.get(game.homeTeamId), awayShort: names.get(game.awayTeamId) };
 }
 
 export function toGameView(game: GameRow): GameView {
