@@ -71,7 +71,98 @@ function scoreFromBoxscore(boxscore, game) {
   return { homeScore, awayScore, decidedBy };
 }
 
-const arenaCache = {};
+// ==================== Cache ====================
+// Each nightly run asks Spordle only for what's new. Game sheets, rosters and arena
+// names already read are kept in data/cache/ and re-used; a run fetches the sheets of
+// games from the last few days (late certifications, corrections) and anything new.
+const CACHE_DIR = path.join(DATA_DIR, 'cache');
+const REFETCH_DAYS = 3;
+
+/** Players removed on request: their names never get saved, in the cache or the site data */
+const HIDDEN = new Set(
+  (require('./hidden-players.json').hidden || []).map(h => Number(h.participantId ?? h))
+);
+
+function loadCache(name) {
+  try {
+    const cache = JSON.parse(fs.readFileSync(path.join(CACHE_DIR, `${name}.json`), 'utf8'));
+    return cache.season === SEASON ? cache.items : {};
+  } catch {
+    return {};
+  }
+}
+
+/** Replace the names of withheld players anywhere in a cached object */
+function scrubNames(o) {
+  if (Array.isArray(o)) return o.forEach(scrubNames);
+  if (!o || typeof o !== 'object') return;
+  if (HIDDEN.has(Number(o.participantId))) {
+    if ('fullName' in o) o.fullName = 'Name withheld';
+    if (o.participant) o.participant.fullName = 'Name withheld';
+  }
+  Object.values(o).forEach(scrubNames);
+}
+
+function saveCache(name, items) {
+  scrubNames(items);
+  ensureDir(CACHE_DIR);
+  // One entry per line, so the nightly commit only shows new or changed entries
+  const lines = Object.keys(items)
+    .sort((a, b) => Number(a) - Number(b) || a.localeCompare(b))
+    .map(k => `${JSON.stringify(k)}:${JSON.stringify(items[k])}`);
+  fs.writeFileSync(
+    path.join(CACHE_DIR, `${name}.json`),
+    `{"season":${JSON.stringify(SEASON)},"items":{\n${lines.join(',\n')}\n}}\n`
+  );
+}
+
+const slimPerson = p => p && {
+  participantId: p.participantId,
+  fullName: p.fullName,
+  number: p.number,
+  isAffiliate: p.isAffiliate || false,
+};
+
+const slimMember = m => ({
+  participantId: m.participantId,
+  number: m.number || 0,
+  positions: m.positions || [],
+  suspension: m.suspension ? 1 : null,
+  isAffiliate: m.isAffiliate || false,
+  participant: { fullName: m.participant?.fullName || 'Unknown' },
+});
+
+/** Just the parts of a boxscore + game sheet the stats use */
+function slimGame(box, sheet) {
+  return {
+    box: {
+      teams: (box.teams || []).map(t => ({ id: t.id, name: t.name })),
+      goals: (box.goals || []).map(g => ({
+        teamId: g.teamId,
+        participant: slimPerson(g.participant),
+        assists: (g.assists || []).map(slimPerson),
+        isPowerplay: !!g.isPowerplay,
+        isShorthanded: !!g.isShorthanded,
+        gameTime: g.gameTime ? { period: g.gameTime.period } : null,
+      })),
+      shootout: (box.shootout || []).map(() => ({})),
+      penalties: (box.penalties || []).map(p => ({
+        teamId: p.teamId,
+        participant: slimPerson(p.participant),
+        duration: { name: p.duration?.name || '' },
+      })),
+    },
+    lineups: sheet?.scoresheet?.lineups
+      ? Object.values(sheet.scoresheet.lineups).map(l => ({
+          teamId: l.teamId,
+          members: [...(l.members || []), ...(l.extras || [])].map(slimMember),
+          extras: [],
+        }))
+      : null,
+  };
+}
+
+const arenaCache = loadCache('arenas');
 async function arenaName(arenaId) {
   if (!arenaId) return null;
   if (!(arenaId in arenaCache)) {
@@ -79,7 +170,7 @@ async function arenaName(arenaId) {
       const arena = await api.getArena(arenaId);
       arenaCache[arenaId] = arena ? [arena.name, arena.rink].filter(Boolean).join(' ') : null;
     } catch {
-      arenaCache[arenaId] = null;
+      return null; // try again next run
     }
   }
   return arenaCache[arenaId];
@@ -252,8 +343,13 @@ async function fetchPlayerStats(schedules, groupNames) {
   const teamPlayerMap = {}; // teamId -> Set of participantIds
   // `${teamId}-${scheduleId}` -> { games: games with a lineup, played: {pid: games dressed}, members: {pid: lineup entry} }
   const lineupStats = {};
+  // gameId -> slimGame(); teams in games fetched this run (their rosters get refreshed)
+  const gameCache = loadCache('game-sheets');
+  const touchedTeams = new Set();
+  const recentSince = Date.now() - REFETCH_DAYS * 24 * 60 * 60 * 1000;
   let totalGames = 0;
   let processedGames = 0;
+  let fetchedGames = 0;
 
   for (const schedule of schedules) {
     log(`  Fetching games for ${schedule.divisionName} - ${schedule.name}...`);
@@ -272,29 +368,34 @@ async function fetchPlayerStats(schedules, groupNames) {
       totalGames += completedGames.length;
       log(`    ${completedGames.length} completed games (of ${games.length} total)`);
 
-      // Fetch boxscores in batches
-      const gameIds = completedGames.map(g => g.id);
-
-      for (let i = 0; i < gameIds.length; i += 5) {
-        const batch = gameIds.slice(i, i + 5);
+      // Fetch only games we haven't read yet, plus the last few days' (corrections)
+      const toFetch = completedGames.filter(g =>
+        !gameCache[g.id] || (g.startTime && new Date(g.startTime).getTime() > recentSince)
+      );
+      for (let i = 0; i < toFetch.length; i += 5) {
+        const batch = toFetch.slice(i, i + 5);
         // Game sheets carry the lineups (who actually dressed); optional, GP falls back without them
-        const sheetsP = Promise.all(batch.map(gameId => api.getScoresheet(gameId).catch(() => null)));
-        const boxscores = await Promise.all(
-          batch.map(async (gameId) => {
-            try {
-              return await api.getBoxscore(gameId);
-            } catch (e) {
-              log(`  WARN: boxscore ${gameId} failed: ${e.message}`);
-              return null;
-            }
-          })
-        );
-        const sheets = await sheetsP;
+        const [boxscores, sheets] = await Promise.all([
+          Promise.all(batch.map(g => api.getBoxscore(g.id).catch(e => {
+            log(`  WARN: boxscore ${g.id} failed: ${e.message}`);
+            return null;
+          }))),
+          Promise.all(batch.map(g => api.getScoresheet(g.id).catch(() => null))),
+        ]);
+        batch.forEach((g, j) => {
+          if (!boxscores[j]) return; // keep whatever we had; try again next run
+          // A missing game sheet doesn't replace one we already have
+          if (sheets[j] || !gameCache[g.id]) gameCache[g.id] = slimGame(boxscores[j], sheets[j]);
+          touchedTeams.add(g.homeTeamId).add(g.awayTeamId);
+        });
+        fetchedGames += batch.length;
+        await api.sleep(50);
+      }
 
-        for (let j = 0; j < batch.length; j++) {
-          const boxscore = boxscores[j];
-          const game = completedGames.find(g => g.id === batch[j]);
-          if (!boxscore || !game) continue;
+      for (const game of completedGames) {
+        const cached = gameCache[game.id];
+        if (!cached) continue;
+        const boxscore = cached.box;
 
           // Spordle marks some future games approved; only a game that has started has a result
           if (game.startTime && new Date(game.startTime) < new Date()) {
@@ -447,7 +548,7 @@ async function fetchPlayerStats(schedules, groupNames) {
           const started = game.startTime && new Date(game.startTime) < new Date();
 
           // Lineups: who dressed for each team (anyone with a goal, assist or penalty counts too)
-          const lineups = started ? sheets[j]?.scoresheet?.lineups : null;
+          const lineups = started ? cached.lineups : null;
           for (const lineup of Object.values(lineups || {})) {
             const dressed = dressedPlayers(lineup);
             if (dressed.length === 0) continue; // empty sheet: treat this game as unknown
@@ -477,10 +578,6 @@ async function fetchPlayerStats(schedules, groupNames) {
           }
 
           processedGames++;
-        }
-
-        // Rate limiting
-        await api.sleep(50);
       }
 
       // Progress update
@@ -492,8 +589,9 @@ async function fetchPlayerStats(schedules, groupNames) {
     }
   }
 
-  log(`Processed ${processedGames} games total, found ${Object.keys(playerMap).length} player-schedule entries`);
-  return { playerMap, teamPlayerMap, gamesBySchedule, gameLogs, lineupStats, totalGames: processedGames };
+  saveCache('game-sheets', gameCache);
+  log(`Processed ${processedGames} games total (fetched ${fetchedGames} game sheets, rest from cache), found ${Object.keys(playerMap).length} player-schedule entries`);
+  return { playerMap, teamPlayerMap, gamesBySchedule, gameLogs, lineupStats, touchedTeams, totalGames: processedGames };
 }
 
 /**
@@ -502,7 +600,7 @@ async function fetchPlayerStats(schedules, groupNames) {
  * that have no lineup on file (we can't tell who played those, so everyone gets them).
  * Also adds roster players and dressed call-ups who never appeared in a boxscore.
  */
-async function enrichWithRosters(playerMap, standings, schedules, lineupStats = {}) {
+async function enrichWithRosters(playerMap, standings, schedules, lineupStats = {}, touchedTeams = new Set()) {
   log('Fetching team rosters to fix GP...');
 
   // Build a list of all team-schedule entries (one entry per team per schedule)
@@ -536,11 +634,10 @@ async function enrichWithRosters(playerMap, standings, schedules, lineupStats = 
     }
   }
 
-  const teamIds = Array.from(uniqueTeamIds);
-  log(`  Fetching rosters for ${teamIds.length} teams (${teamScheduleEntries.length} team-schedule entries)...`);
-
-  // Cache rosters by teamId (same roster serves multiple schedules)
-  const rosterCache = {};
+  // Rosters are kept between runs; only new teams and teams that just played are re-read
+  const rosterCache = loadCache('rosters');
+  const teamIds = Array.from(uniqueTeamIds).filter(id => !rosterCache[id] || touchedTeams.has(id));
+  log(`  Fetching rosters for ${teamIds.length} teams (of ${uniqueTeamIds.size}; ${teamScheduleEntries.length} team-schedule entries)...`);
   let fetched = 0;
 
   for (let i = 0; i < teamIds.length; i += 5) {
@@ -552,14 +649,15 @@ async function enrichWithRosters(playerMap, standings, schedules, lineupStats = 
           return { teamId, members: members || [] };
         } catch (e) {
           log(`  WARN: roster for team ${teamId} failed: ${e.message}`);
-          return { teamId, members: [] };
+          return { teamId, members: [], failed: true };
         }
       })
     );
 
-    for (const { teamId, members } of rosters) {
+    for (const { teamId, members, failed } of rosters) {
+      if (failed && rosterCache[teamId]) continue; // keep the last good roster
       // Filter to actual players (have a jersey number)
-      rosterCache[teamId] = members.filter(m => m.number && m.number > 0 && m.participant);
+      rosterCache[teamId] = members.filter(m => m.number && m.number > 0 && m.participant).map(slimMember);
     }
 
     fetched += batch.length;
@@ -569,6 +667,7 @@ async function enrichWithRosters(playerMap, standings, schedules, lineupStats = 
 
     await api.sleep(50);
   }
+  saveCache('rosters', rosterCache);
 
   // Now create/update player entries for EACH team-schedule combination
   let rosterPlayers = 0;
@@ -703,12 +802,14 @@ async function main() {
     for (const data of Object.values(standings)) {
       for (const t of data.teams) if (t.groupId != null) groupNames[t.groupId] = t.groupName;
     }
-    const { playerMap, gamesBySchedule, gameLogs, lineupStats } = await fetchPlayerStats(schedules, groupNames);
+    const { playerMap, gamesBySchedule, gameLogs, lineupStats, touchedTeams } = await fetchPlayerStats(schedules, groupNames);
 
     // Game-by-game player logs per division (used by the stats agent for trends)
     for (const [div, log] of Object.entries(gameLogs)) {
       saveJson(path.join(DATA_DIR, 'gamelogs', `${div.toLowerCase()}.json`), log);
     }
+
+    saveCache('arenas', arenaCache);
 
     // Save game results/schedule per division, newest first
     for (const division of divisions) {
@@ -726,17 +827,14 @@ async function main() {
     // Step 5: Fetch team rosters and fix GP
     // The boxscore only records players who scored/assisted/penalized.
     // Game-sheet lineups say who dressed; team GP from standings covers games without one.
-    await enrichWithRosters(playerMap, standings, schedules, lineupStats);
+    await enrichWithRosters(playerMap, standings, schedules, lineupStats, touchedTeams);
 
     // Convert player map to sorted arrays
     // Removal requests: keep the stats, withhold the name
-    const hidden = new Set(
-      (require('./hidden-players.json').hidden || []).map(h => Number(h.participantId ?? h))
-    );
     for (const p of Object.values(playerMap)) {
-      if (hidden.has(p.participantId)) p.name = 'Name withheld';
+      if (HIDDEN.has(p.participantId)) p.name = 'Name withheld';
     }
-    if (hidden.size > 0) log(`  Withheld ${hidden.size} player name(s) on request`);
+    if (HIDDEN.size > 0) log(`  Withheld ${HIDDEN.size} player name(s) on request`);
 
     const players = Object.values(playerMap).sort((a, b) => b.points - a.points);
     saveJson(path.join(DATA_DIR, 'players', 'all-players.json'), players);
