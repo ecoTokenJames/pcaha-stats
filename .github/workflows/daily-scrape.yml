@@ -4,8 +4,10 @@ name: Daily scrape
 # The push to main triggers Vercel to rebuild and redeploy the site.
 on:
   schedule:
-    # Once a day, kept minimal on purpose: Spordle's firewall blocked us for two days
-    # (2026-10-24 to 10-26) after a run of heavy scraping.
+    # Twice a night, when families check, and each run only asks Spordle for new games
+    # (see data/cache). Kept minimal on purpose: Spordle's firewall blocked us for two
+    # days (2026-10-24 to 10-26) after a run of heavy scraping.
+    - cron: "0 3 * * *" # 03:00 UTC = 7pm PST (8pm during daylight time)
     - cron: "0 7 * * *" # 07:00 UTC = 11pm PST (midnight during daylight time)
   workflow_dispatch:
     inputs:
