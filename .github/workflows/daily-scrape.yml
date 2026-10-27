@@ -1,14 +1,12 @@
 name: Daily scrape
 
-# Pulls fresh standings + player stats from Spordle and commits them to main.
+# Pulls fresh standings + the day's games from Spordle and commits them to main.
 # The push to main triggers Vercel to rebuild and redeploy the site.
 on:
   schedule:
-    # Times are UTC, set for Pacific Standard Time (an hour later during daylight time).
-    # Kept to two runs a night: Spordle's firewall started blocking us on 2026-10-24
-    # after a run of heavy scraping, so stay gentle.
-    - cron: "0 4 * * *" # 04:00 UTC = 8pm PST: picks up the evening's games
-    - cron: "0 7 * * *" # 07:00 UTC = 11pm PST: final update of the day
+    # Once a day, kept minimal on purpose: Spordle's firewall blocked us for two days
+    # (2026-10-24 to 10-26) after a run of heavy scraping.
+    - cron: "0 7 * * *" # 07:00 UTC = 11pm PST (midnight during daylight time)
   workflow_dispatch:
     inputs:
       season:
@@ -39,7 +37,8 @@ jobs:
         env:
           PCAHA_SEASON: ${{ inputs.season }}
         run: |
-          # Start clean so last season's per-division files don't linger
+          # Start clean so last season's per-division files don't linger. data/cache stays:
+          # it holds the game sheets and rosters already read, so only new games are fetched
           rm -rf data/standings data/players data/games data/gamelogs
           node scraper/scrape.js
 
