@@ -3,6 +3,7 @@
 import { useMemo } from "react";
 import type { GameView, PlayerStat, TeamStanding } from "@/lib/data";
 import { GamesList } from "./GamesList";
+import { TeamName } from "./TeamName";
 
 /** Just the player fields this page shows */
 export type TournamentPlayer = Pick<
@@ -103,11 +104,11 @@ export function TournamentDetail({
                     i % 2 === 0 ? "bg-white" : "bg-gray-50/30"
                   }`}
                 >
-                  <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-center text-gray-400 font-medium">
+                  <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-center text-gray-500 font-medium">
                     {i + 1}
                   </td>
-                  <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-left font-medium text-gray-900 text-[11px] sm:text-xs">
-                    {team.teamName}
+                  <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-left font-medium text-gray-900 text-xs">
+                    <TeamName name={team.teamName} short={team.shortName} />
                   </td>
                   <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">
                     {team.gamesPlayed}
@@ -161,7 +162,7 @@ export function TournamentDetail({
               <h4 className="font-semibold text-gray-900 text-sm break-words">
                 {team.teamName}
               </h4>
-              <p className="text-xs text-gray-400">
+              <p className="text-xs text-gray-500">
                 {players.length} players
               </p>
             </div>
@@ -200,7 +201,7 @@ export function TournamentDetail({
                         i % 2 === 0 ? "bg-white" : "bg-gray-50/30"
                       }`}
                     >
-                      <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-center text-gray-400">
+                      <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-center text-gray-500">
                         {player.number > 0 ? player.number : "—"}
                       </td>
                       <td className="px-1 sm:px-2 py-1.5 sm:py-2 text-left">
@@ -208,7 +209,7 @@ export function TournamentDetail({
                           {player.name}
                         </span>
                         {player.position && (
-                          <span className="text-[10px] sm:text-xs text-gray-400 ml-0.5">
+                          <span className="text-[11px] sm:text-xs text-gray-500 ml-0.5">
                             ({player.position})
                           </span>
                         )}

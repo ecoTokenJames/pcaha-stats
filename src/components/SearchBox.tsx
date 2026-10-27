@@ -113,7 +113,7 @@ export function SearchBox() {
                   <div className="font-medium text-gray-900 text-sm">
                     {p.name}
                     {p.number > 0 && (
-                      <span className="ml-1 text-xs font-normal text-gray-400">#{p.number}</span>
+                      <span className="ml-1 text-xs font-normal text-gray-500">#{p.number}</span>
                     )}
                   </div>
                   <div className="text-xs text-gray-500">
@@ -145,7 +145,7 @@ function ResultSection({
       <h3 className="mb-2 text-sm font-semibold text-gray-900">
         {title}
         {count >= MAX_RESULTS && (
-          <span className="ml-2 text-xs font-normal text-gray-400">
+          <span className="ml-2 text-xs font-normal text-gray-500">
             showing first {MAX_RESULTS}, add more words to narrow it down
           </span>
         )}

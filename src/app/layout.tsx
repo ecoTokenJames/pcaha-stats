@@ -99,7 +99,7 @@ export default function RootLayout({
           </p>
           <p className="mt-1">Data sourced from games.pcaha.ca</p>
           <p className="mt-1">
-            <a href="/contact" className="underline hover:text-gray-700">
+            <a href="/contact" className="inline-block py-1.5 underline hover:text-gray-700">
               Contact us · Remove a player&apos;s name
             </a>
           </p>

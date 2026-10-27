@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { levelUpLink, SponsorTag } from "./LevelUpAd";
+import { BRAND_TEXT, levelUpLink, SponsorTag } from "./LevelUpAd";
 
 type StatCategory = "points" | "goals" | "assists" | "pim";
 
@@ -21,6 +21,8 @@ export interface LeaderPlayer {
   number: number;
   position: string;
   teamName: string;
+  /** Short team name for phones ("Langley A1") */
+  teamShort?: string;
   gamesPlayed: number;
   goals: number;
   assists: number;
@@ -190,49 +192,53 @@ export function LeadersTable({
 
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-sm min-w-[600px]">
+          <table className="w-full text-sm sm:min-w-[600px]">
             <thead>
               <tr className="border-b border-gray-100">
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-8">#</th>
-                <th className="px-2 py-2 text-left font-medium text-gray-500">Player</th>
-                <th className="px-2 py-2 text-left font-medium text-gray-500">Team</th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">GP</th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">G</th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">A</th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">PTS</th>
-                <th className="px-2 py-2 text-center font-medium text-gray-500 w-10">PIM</th>
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-8">#</th>
+                <th className="sticky left-0 z-10 bg-white px-1.5 sm:px-2 py-2 text-left font-medium text-gray-500">Player</th>
+                <th className="hidden sm:table-cell px-2 py-2 text-left font-medium text-gray-500">Team</th>
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">GP</th>
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">G</th>
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">A</th>
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">PTS</th>
+                <th className="px-1.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-10">PIM</th>
               </tr>
             </thead>
             <tbody>
               {visiblePlayers.map((player, i) => (
                 <tr
                   key={player.id}
-                  className={`border-b border-gray-50 hover:bg-blue-50/50 transition-colors ${
-                    i % 2 === 0 ? "bg-white" : "bg-gray-50/30"
+                  className={`border-b border-gray-50 hover:bg-blue-50 transition-colors ${
+                    i % 2 === 0 ? "bg-white" : "bg-gray-50"
                   }`}
                 >
-                  <td className="px-2 py-2 text-center text-gray-400 font-medium">{i + 1}</td>
-                  <td className="px-2 py-2 text-left whitespace-nowrap">
+                  <td className="px-1.5 sm:px-2 py-2 text-center text-gray-500 font-medium">{i + 1}</td>
+                  {/* Pinned on phones; the team goes under the name there instead of its own column */}
+                  <td className="sticky left-0 z-10 bg-inherit px-1.5 sm:px-2 py-2 text-left leading-tight sm:whitespace-nowrap">
                     <span className="font-medium text-gray-900">{player.name}</span>
                     {player.number > 0 && (
-                      <span className="text-gray-400 text-xs ml-1">#{player.number}</span>
+                      <span className="text-gray-500 text-xs ml-1">#{player.number}</span>
                     )}
                     {player.position && (
-                      <span className="text-gray-400 text-xs ml-1">({player.position})</span>
+                      <span className="text-gray-500 text-xs ml-1">({player.position})</span>
                     )}
+                    <span className="block text-xs text-gray-500 sm:hidden">
+                      {player.teamShort ?? player.teamName}
+                    </span>
                   </td>
-                  <td className="px-2 py-2 text-left text-gray-700 text-xs">{player.teamName}</td>
-                  <td className="px-2 py-2 text-center">{player.gamesPlayed}</td>
-                  <td className={`px-2 py-2 text-center font-medium ${statCategory === "goals" ? "text-blue-900 font-bold" : ""}`}>
+                  <td className="hidden sm:table-cell px-2 py-2 text-left text-gray-700 text-xs">{player.teamName}</td>
+                  <td className="px-1.5 sm:px-2 py-2 text-center">{player.gamesPlayed}</td>
+                  <td className={`px-1.5 sm:px-2 py-2 text-center font-medium ${statCategory === "goals" ? "text-blue-900 font-bold" : ""}`}>
                     {player.goals}
                   </td>
-                  <td className={`px-2 py-2 text-center font-medium ${statCategory === "assists" ? "text-blue-900 font-bold" : ""}`}>
+                  <td className={`px-1.5 sm:px-2 py-2 text-center font-medium ${statCategory === "assists" ? "text-blue-900 font-bold" : ""}`}>
                     {player.assists}
                   </td>
-                  <td className={`px-2 py-2 text-center font-bold ${statCategory === "points" ? "text-blue-900" : ""}`}>
+                  <td className={`px-1.5 sm:px-2 py-2 text-center font-bold ${statCategory === "points" ? "text-blue-900" : ""}`}>
                     {player.points}
                   </td>
-                  <td className={`px-2 py-2 text-center ${statCategory === "pim" ? "font-bold text-blue-900" : ""}`}>
+                  <td className={`px-1.5 sm:px-2 py-2 text-center ${statCategory === "pim" ? "font-bold text-blue-900" : ""}`}>
                     {player.pim}
                   </td>
                 </tr>
@@ -265,7 +271,7 @@ export function LeadersTable({
               target="_blank"
               rel="sponsored noopener"
               className="font-semibold underline"
-              style={{ color: "#FF3D00" }}
+              style={{ color: BRAND_TEXT }}
             >
               Try it free →
             </a>

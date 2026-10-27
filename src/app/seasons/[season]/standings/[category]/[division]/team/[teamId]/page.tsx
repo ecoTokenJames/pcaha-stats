@@ -9,6 +9,8 @@ import {
   getLeagueAbbrev,
   getTeamGamesByType,
   getTeamGames,
+  getShortTeamNames,
+  withShortNames,
   mergePlayerStats,
   type HockeyCategory,
   SEASON,
@@ -116,7 +118,8 @@ export default async function TeamDetailPage({
   const abbrev = getLeagueAbbrev(teamInfo.scheduleName);
   const mergedPlayers = mergePlayerStats(allPlayers);
   const gamesByType = getTeamGamesByType(divName, teamId, season);
-  const teamGames = getTeamGames(divName, teamId, season);
+  const shortNames = getShortTeamNames(divName, season);
+  const teamGames = getTeamGames(divName, teamId, season).map((g) => withShortNames(g, shortNames));
   // Opponents get a link only if they have a page in this category
   const linkableTeamIds = [
     ...new Set(
@@ -173,7 +176,7 @@ export default async function TeamDetailPage({
               {teamInfo.scheduleName}
             </p>
             {teamInfo.categoryName && (
-              <p className="text-xs text-gray-400 mt-0.5">
+              <p className="text-xs text-gray-500 mt-0.5">
                 {teamInfo.categoryName}
               </p>
             )}
@@ -214,7 +217,7 @@ export default async function TeamDetailPage({
         <div className="px-4 py-3 border-b border-gray-100">
           <h4 className="font-semibold text-gray-900 text-sm">
             Games
-            <span className="text-xs font-normal text-gray-400 ml-2">
+            <span className="text-xs font-normal text-gray-500 ml-2">
               ({teamGames.filter((g) => g.status === "final").length} played)
             </span>
           </h4>

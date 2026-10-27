@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { GameView, TeamStanding } from "@/lib/data";
 import { GamesList } from "./GamesList";
 import { TeamStar } from "./FavoriteStar";
+import { TeamName } from "./TeamName";
 
 type SortKey = keyof TeamStanding;
 
@@ -111,9 +112,10 @@ export function StandingsTable({
     { key: "wins", label: "W", title: "Wins" },
     { key: "losses", label: "L", title: "Losses" },
     { key: "ties", label: "T", title: "Ties" },
+    // Points straight after the record, so phones see it without scrolling
+    { key: "points", label: "PTS", title: "Points" },
     { key: "otWins", label: "OTW", title: "Overtime Wins" },
     { key: "otLosses", label: "OTL", title: "Overtime Losses" },
-    { key: "points", label: "PTS", title: "Points" },
     { key: "goalsFor", label: "GF", title: "Goals For" },
     { key: "goalsAgainst", label: "GA", title: "Goals Against" },
     { key: "diff", label: "DIFF", title: "Goal Differential" },
@@ -185,9 +187,9 @@ export function StandingsTable({
                     key={col.key}
                     title={col.title}
                     onClick={() => handleSort(col.key)}
-                    className={`px-2 py-2 font-medium text-gray-500 cursor-pointer hover:text-gray-900 select-none ${
+                    className={`px-1.5 sm:px-2 py-2 font-medium text-gray-500 cursor-pointer hover:text-gray-900 select-none ${
                       col.className || "text-center"
-                    } ${col.key === "teamName" ? "min-w-[160px]" : ""}`}
+                    } ${col.key === "teamName" ? "sticky left-0 z-10 bg-white sm:min-w-[160px]" : ""}`}
                   >
                     <span className="inline-flex items-center gap-0.5">
                       {col.label}
@@ -205,50 +207,51 @@ export function StandingsTable({
               {group.teams.map((team, i) => (
                 <tr
                   key={`${gi}-${i}`}
-                  className={`border-b border-gray-50 hover:bg-blue-50/50 transition-colors ${
-                    i % 2 === 0 ? "bg-white" : "bg-gray-50/30"
+                  className={`border-b border-gray-50 hover:bg-blue-50 transition-colors ${
+                    i % 2 === 0 ? "bg-white" : "bg-gray-50"
                   }`}
                 >
-                  <td className="px-2 py-2 text-center text-gray-400 font-medium">
+                  <td className="px-1.5 sm:px-2 py-2 text-center text-gray-500 font-medium">
                     {team.gamesPlayed > 0 ? team.rank : "–"}
                   </td>
-                  <td className="px-2 py-2 text-left font-medium text-gray-900 whitespace-nowrap">
+                  {/* Pinned while the stats scroll sideways on phones */}
+                  <td className="sticky left-0 z-10 bg-inherit px-1.5 sm:px-2 py-1 text-left font-medium text-gray-900 sm:whitespace-nowrap">
                     <span className="inline-flex items-center gap-1.5">
                       <TeamStar teamId={team.teamId} />
                       {teamLinkBase ? (
                         <Link
                           href={`${teamLinkBase}/${team.teamId}`}
-                          className="hover:text-blue-700 hover:underline"
+                          className="inline-block py-1 leading-tight hover:text-blue-700 hover:underline"
                         >
-                          {team.teamName}
+                          <TeamName name={team.teamName} short={team.shortName} />
                         </Link>
                       ) : (
-                        team.teamName
+                        <TeamName name={team.teamName} short={team.shortName} />
                       )}
                     </span>
                   </td>
-                  <td className="px-2 py-2 text-center">{team.gamesPlayed}</td>
-                  <td className="px-2 py-2 text-center font-medium text-green-700">
+                  <td className="px-1.5 sm:px-2 py-2 text-center">{team.gamesPlayed}</td>
+                  <td className="px-1.5 sm:px-2 py-2 text-center font-medium text-green-700">
                     {team.wins}
                   </td>
-                  <td className="px-2 py-2 text-center font-medium text-red-700">
+                  <td className="px-1.5 sm:px-2 py-2 text-center font-medium text-red-700">
                     {team.losses}
                   </td>
-                  <td className="px-2 py-2 text-center">{team.ties}</td>
-                  <td className="px-2 py-2 text-center">{team.otWins}</td>
-                  <td className="px-2 py-2 text-center">{team.otLosses}</td>
-                  <td className="px-2 py-2 text-center font-bold text-blue-900">
+                  <td className="px-1.5 sm:px-2 py-2 text-center">{team.ties}</td>
+                  <td className="px-1.5 sm:px-2 py-2 text-center font-bold text-blue-900">
                     {team.points}
                   </td>
-                  <td className="px-2 py-2 text-center">{team.goalsFor}</td>
-                  <td className="px-2 py-2 text-center">{team.goalsAgainst}</td>
+                  <td className="px-1.5 sm:px-2 py-2 text-center">{team.otWins}</td>
+                  <td className="px-1.5 sm:px-2 py-2 text-center">{team.otLosses}</td>
+                  <td className="px-1.5 sm:px-2 py-2 text-center">{team.goalsFor}</td>
+                  <td className="px-1.5 sm:px-2 py-2 text-center">{team.goalsAgainst}</td>
                   <td
-                    className={`px-2 py-2 text-center font-medium ${
+                    className={`px-1.5 sm:px-2 py-2 text-center font-medium ${
                       team.diff > 0
                         ? "text-green-700"
                         : team.diff < 0
                           ? "text-red-700"
-                          : "text-gray-400"
+                          : "text-gray-500"
                     }`}
                   >
                     {team.diff > 0 ? `+${team.diff}` : team.diff}

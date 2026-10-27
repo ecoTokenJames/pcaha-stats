@@ -215,7 +215,7 @@ export function StatsChat() {
               Ask
             </button>
           </form>
-          <p className="px-3 pb-2 text-[11px] text-gray-400">
+          <p className="px-3 pb-2 text-[11px] text-gray-500">
             AI answers from PCAHA Stats data; it can make mistakes. Powered by OpenImpact.
           </p>
         </div>

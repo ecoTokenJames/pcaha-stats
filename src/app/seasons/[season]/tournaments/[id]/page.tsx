@@ -6,10 +6,12 @@ import {
   getDivisionGames,
   getTournamentPlayers,
   toGameView,
+  withShortNames,
   SEASON,
   seasonBase,
 } from "@/lib/data";
 import { TournamentDetail } from "@/components/TournamentDetail";
+import { shortTeamNames } from "@/lib/team-names";
 
 // Only tournaments that exist in the data; anything else 404s.
 // This season's pages are built ahead; past seasons' are built on first visit and kept
@@ -50,7 +52,15 @@ export default async function TournamentPage({
   const t = findTournament(id, season);
   if (!t) notFound();
 
-  const games = (getDivisionGames(t.divisionName, season)[id] ?? []).map(toGameView);
+  const rawGames = getDivisionGames(t.divisionName, season)[id] ?? [];
+  const shortNames = shortTeamNames([
+    ...t.teams,
+    ...rawGames.flatMap((g) => [
+      { teamId: g.homeTeamId, teamName: g.homeTeamName },
+      { teamId: g.awayTeamId, teamName: g.awayTeamName },
+    ]),
+  ]);
+  const games = rawGames.map((g) => withShortNames(toGameView(g), shortNames));
 
   return (
     <div className="space-y-4">
@@ -67,6 +77,7 @@ export default async function TournamentPage({
       <TournamentDetail
         tournament={{
           ...t,
+          teams: t.teams.map((team) => ({ ...team, shortName: shortNames.get(team.teamId) })),
           players: getTournamentPlayers(t.scheduleId, season).map((p) => ({
             participantId: p.participantId,
             teamId: p.teamId,

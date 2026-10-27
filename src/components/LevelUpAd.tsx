@@ -31,10 +31,12 @@ function levelUpCoachLink(): string {
 }
 
 const BRAND = "#FF3D00";
+/** Brand orange darkened enough for text on white, or white text on it (4.8:1) */
+export const BRAND_TEXT = "#D63300";
 
 export function SponsorTag() {
   return (
-    <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-gray-500">
+    <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-gray-600">
       Sponsor
     </span>
   );
@@ -59,13 +61,13 @@ export function LevelUpCard({
         <div className="min-w-0 flex-1">
         <div className="mb-3 flex items-center justify-between gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element -- small static logo */}
-          <img src="/levelup-logo.png" alt="Level Up Hockey" width={180} height={46} className="h-8 w-auto" />
+          <img src="/levelup-logo.webp" alt="Level Up Hockey" width={180} height={46} className="h-8 w-auto" />
           <SponsorTag />
         </div>
         {placement === "home" && (
           // eslint-disable-next-line @next/next/no-img-element -- small static screenshot
           <img
-            src="/levelup-app-training.jpg"
+            src="/levelup-app-training.webp"
             alt=""
             aria-hidden="true"
             width={360}
@@ -93,7 +95,7 @@ export function LevelUpCard({
             target="_blank"
             rel="sponsored noopener"
             className="inline-block rounded-md px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
-            style={{ backgroundColor: BRAND }}
+            style={{ backgroundColor: BRAND_TEXT }}
           >
             Start your 7-day free trial →
           </a>
@@ -106,7 +108,7 @@ export function LevelUpCard({
         {placement === "home" && (
           // eslint-disable-next-line @next/next/no-img-element -- small static screenshot
           <img
-            src="/levelup-app-training.jpg"
+            src="/levelup-app-training.webp"
             alt="The Level Up app timing a player's stickhandling drill at home"
             width={360}
             height={721}
@@ -122,7 +124,7 @@ export function LevelUpCard({
           <h4 className="font-bold text-gray-900">
             {teamName ? (
               <>
-                Get <span style={{ color: BRAND }}>{teamName}</span> training
+                Get <span style={{ color: BRAND_TEXT }}>{teamName}</span> training
                 together on Level Up.
               </>
             ) : (
@@ -141,7 +143,7 @@ export function LevelUpCard({
               target="_blank"
               rel="sponsored noopener"
               className="inline-block rounded-md border px-4 py-2 text-sm font-semibold hover:bg-white"
-              style={{ borderColor: BRAND, color: BRAND }}
+              style={{ borderColor: BRAND, color: BRAND_TEXT }}
             >
               Set up your team →
             </a>
@@ -180,7 +182,7 @@ export function LevelUpMini({
           target="_blank"
           rel="sponsored noopener"
           className="font-semibold underline"
-          style={{ color: BRAND }}
+          style={{ color: BRAND_TEXT }}
         >
           Try it free for 7 days on iOS &amp; Android →
         </a>
@@ -198,8 +200,8 @@ export function LevelUpFooter() {
         href={levelUpLink("footer")}
         target="_blank"
         rel="sponsored noopener"
-        className="font-semibold hover:underline"
-        style={{ color: BRAND }}
+        className="inline-block py-1.5 font-semibold hover:underline"
+        style={{ color: BRAND_TEXT }}
       >
         Level Up Hockey
       </a>
@@ -208,7 +210,7 @@ export function LevelUpFooter() {
         href={levelUpLink("footer")}
         target="_blank"
         rel="sponsored noopener"
-        className="underline hover:text-gray-700"
+        className="inline-block py-1.5 underline hover:text-gray-700"
       >
         Become unstoppable →
       </a>
@@ -231,12 +233,12 @@ export function LevelUpDivisionCard({ division }: { division: string }) {
         <div className="min-w-0 flex-1">
           <div className="mb-3 flex items-center justify-between gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element -- small static logo */}
-            <img src="/levelup-logo.png" alt="Level Up Hockey" width={180} height={46} className="h-8 w-auto" />
+            <img src="/levelup-logo.webp" alt="Level Up Hockey" width={180} height={46} className="h-8 w-auto" />
             <SponsorTag />
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element -- small static screenshot */}
           <img
-            src="/levelup-app-training.jpg"
+            src="/levelup-app-training.webp"
             alt=""
             aria-hidden="true"
             width={360}
@@ -262,7 +264,7 @@ export function LevelUpDivisionCard({ division }: { division: string }) {
               target="_blank"
               rel="sponsored noopener"
               className="inline-block rounded-md px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
-              style={{ backgroundColor: BRAND }}
+              style={{ backgroundColor: BRAND_TEXT }}
             >
               Start your 7-day free trial →
             </a>
@@ -273,7 +275,7 @@ export function LevelUpDivisionCard({ division }: { division: string }) {
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element -- small static screenshot */}
         <img
-          src="/levelup-app-training.jpg"
+          src="/levelup-app-training.webp"
           alt="The Level Up app timing a player's stickhandling drill at home"
           width={360}
           height={721}

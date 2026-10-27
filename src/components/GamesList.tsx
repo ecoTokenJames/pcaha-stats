@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import type { GameView } from "@/lib/data";
+import { TeamName } from "./TeamName";
 
 const RESULTS_PAGE = 10;
 const UPCOMING_SHOWN = 5;
@@ -131,9 +132,10 @@ function GameItem({
   return (
     <li className="px-4 py-2.5 text-sm">
       <div className="flex items-center justify-between gap-3">
-        <div className="min-w-0 flex-1 space-y-0.5">
+        <div className="min-w-0 flex-1">
           <TeamLine
             name={game.awayTeamName}
+            short={game.awayShort}
             score={game.awayScore}
             won={awayWon}
             final={final}
@@ -141,6 +143,7 @@ function GameItem({
           />
           <TeamLine
             name={game.homeTeamName}
+            short={game.homeShort}
             score={game.homeScore}
             won={homeWon}
             final={final}
@@ -153,7 +156,7 @@ function GameItem({
           </span>
         )}
       </div>
-      <div className="mt-1 text-xs text-gray-400">
+      <div className="mt-1 text-xs text-gray-500">
         {[
           game.when,
           game.arena,
@@ -169,12 +172,14 @@ function GameItem({
 
 function TeamLine({
   name,
+  short,
   score,
   won,
   final,
   href,
 }: {
   name: string;
+  short?: string;
   score: number | null;
   won: boolean;
   final: boolean;
@@ -188,12 +193,12 @@ function TeamLine({
         {href ? (
           <Link
             href={href}
-            className="hover:text-blue-700 hover:underline"
+            className="inline-block py-1 hover:text-blue-700 hover:underline"
           >
-            {name}
+            <TeamName name={name} short={short} />
           </Link>
         ) : (
-          name
+          <TeamName name={name} short={short} />
         )}
       </span>
       {final && (
