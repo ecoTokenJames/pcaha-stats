@@ -718,7 +718,8 @@ export function getLeagueAbbrev(name: string): string {
   if (lower.includes("lg ") || lower.includes("lions gate")) return "LG";
   if (lower.includes("pl ") || lower.includes("pacific")) return "PL";
   if (lower.includes("viaha")) return "VIAHA";
-  if (lower.includes("pcehl") || lower.includes("bcehl")) return "BCEHL";
+  if (lower.includes("pcehl")) return "PCEHL";
+  if (lower.includes("bcehl")) return "BCEHL";
   if (lower.startsWith("u") && lower.includes("a ")) return "PCAHA-A";
   if (lower.startsWith("u") && lower.includes("c ")) return "PCAHA-C";
   return "PCAHA";

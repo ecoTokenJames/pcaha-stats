@@ -6,7 +6,7 @@
 const ASSOC_WORDS = new Set(["MHA", "AHA", "IHA", "HA", "MHC", "AMHA", "MINOR", "HOCKEY", "ASSOCIATION"]);
 const GENDER_WORDS = new Set(["FEMALE", "GIRLS"]);
 /** Kept upper-case when title-casing */
-const UPPER = new Set(["WC", "BCEHL", "PCEHL", "PCAHA", "SJHA", "EYH", "FVE", "FVW", "FVN", "FNVE", "MHA", "AHA", "IHA", "HA", "JR"]);
+const UPPER = new Set(["WC", "BCEHL", "PCEHL", "PCAHA", "SJHA", "EYH", "FVE", "FVW", "FVN", "FNVE", "DHA", "MHA", "AHA", "IHA", "HA", "JR"]);
 
 /** Small words that stay lower-case inside a name ("Sea to Sky", "Juan de Fuca") */
 const LOWER = new Set(["TO", "OF", "DE", "THE", "AND"]);
