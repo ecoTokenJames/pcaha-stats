@@ -603,6 +603,15 @@
     "endDate": "2027-01-31"
   },
   {
+    "id": 202675,
+    "name": "GIL MARTIN U13 MEMORIAL TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-08"
+  },
+  {
     "id": 201965,
     "name": "PL U13C League",
     "divisionName": "U13",
@@ -1258,6 +1267,15 @@
     "scheduleType": "League",
     "startDate": "2026-11-10",
     "endDate": "2027-01-31"
+  },
+  {
+    "id": 202682,
+    "name": "U18 BRAD BECKETT MEMORIAL TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-12",
+    "endDate": "2026-11-15"
   },
   {
     "id": 199310,

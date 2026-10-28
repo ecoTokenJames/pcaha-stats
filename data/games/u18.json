@@ -150,7 +150,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Newton Arena"
     },
     {
@@ -1397,23 +1397,6 @@
       "arena": "Matsqui Recreation Centre"
     },
     {
-      "id": 935365,
-      "number": "U18L9127",
-      "date": "2026-12-12",
-      "startTime": "2026-12-13T02:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 221135,
-      "homeTeamName": "CHILLIWACK MHA U18 C5",
-      "awayTeamId": 177932,
-      "awayTeamName": "ABBOTSFORD MHA U18 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sardis Sports Complex SSC2"
-    },
-    {
       "id": 935369,
       "number": "U18L9126",
       "date": "2026-12-11",
@@ -2451,6 +2434,23 @@
       "arena": "Sardis Sports Complex SSC1"
     },
     {
+      "id": 935453,
+      "number": "U18L9042",
+      "date": "2026-11-08",
+      "startTime": "2026-11-09T03:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177923,
+      "homeTeamName": "CHILLIWACK MHA U18 C2",
+      "awayTeamId": 177932,
+      "awayTeamName": "ABBOTSFORD MHA U18 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sardis Sports Complex SSC1"
+    },
+    {
       "id": 935445,
       "number": "U18L9049",
       "date": "2026-11-07",
@@ -2483,6 +2483,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "MSA Arena"
+    },
+    {
+      "id": 935365,
+      "number": "U18L9127",
+      "date": "2026-11-05",
+      "startTime": "2026-11-06T04:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 221135,
+      "homeTeamName": "CHILLIWACK MHA U18 C5",
+      "awayTeamId": 177932,
+      "awayTeamName": "ABBOTSFORD MHA U18 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sardis Sports Complex SSC1"
     },
     {
       "id": 935443,
@@ -2682,23 +2699,6 @@
       "homeTeamName": "CHILLIWACK MHA U18 C2",
       "awayTeamId": 177931,
       "awayTeamName": "ALDERGROVE MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sardis Sports Complex SSC1"
-    },
-    {
-      "id": 935453,
-      "number": "U18L9042",
-      "date": "2026-10-30",
-      "startTime": "2026-10-31T03:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177923,
-      "homeTeamName": "CHILLIWACK MHA U18 C2",
-      "awayTeamId": 177932,
-      "awayTeamName": "ABBOTSFORD MHA U18 C3",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -7897,6 +7897,23 @@
       "arena": "Planet Ice Coquitlam 1 Mars"
     },
     {
+      "id": 968176,
+      "number": "U18L5017",
+      "date": "2026-11-06",
+      "startTime": "2026-11-07T04:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177888,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C2",
+      "awayTeamId": 177895,
+      "awayTeamName": "PORT MOODY AHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Chrysler Gold"
+    },
+    {
       "id": 968285,
       "number": "U18L5064",
       "date": "2026-11-06",
@@ -8490,23 +8507,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Planet Ice Coquitlam 1 Mars"
-    },
-    {
-      "id": 968176,
-      "number": "U18L5017",
-      "date": "2026-10-24",
-      "startTime": "2026-10-24T22:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177888,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C2",
-      "awayTeamId": 177895,
-      "awayTeamName": "PORT MOODY AHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "awaiting",
-      "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
       "id": 968165,
@@ -9459,7 +9459,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Sardis Sports Complex SSC3"
     },
     {
@@ -9476,7 +9476,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Mission Leisure Centre South"
     },
     {
@@ -9493,7 +9493,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -9507,10 +9507,10 @@
       "homeTeamName": "THUNDER HUSKIES (2) U18 A2 TIER 3",
       "awayTeamId": 178618,
       "awayTeamName": "SQUAMISH MHA (3) U18 TIER 4 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "West Vancouver Ice Arena"
     },
     {
@@ -9524,10 +9524,10 @@
       "homeTeamName": "SUNSHINE COAST MHA (3) U18 A1 TIER 3 BLUES",
       "awayTeamId": 178648,
       "awayTeamName": "NORTH DELTA MHA (2) U18 A1 TIER 2 SUN DEVILS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -12321,6 +12321,23 @@
       "arena": "Sunshine Coast Arena"
     },
     {
+      "id": 952371,
+      "number": "U18L7839",
+      "date": "2026-12-12",
+      "startTime": "2026-12-12T22:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177904,
+      "homeTeamName": "NORTH VANCOUVER MHA U18 C3",
+      "awayTeamId": 177881,
+      "awayTeamName": "SUNSHINE COAST MHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Canlan Ice Sports North Shore 1 Red"
+    },
+    {
       "id": 952306,
       "number": "U18L7905",
       "date": "2026-12-12",
@@ -13356,23 +13373,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Canlan Ice Sports North Shore 2 Blue"
-    },
-    {
-      "id": 952371,
-      "number": "U18L7839",
-      "date": "2026-11-06",
-      "startTime": "2026-11-07T04:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177904,
-      "homeTeamName": "NORTH VANCOUVER MHA U18 C3",
-      "awayTeamId": 177881,
-      "awayTeamName": "SUNSHINE COAST MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
       "id": 952372,
@@ -14937,7 +14937,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Queens Park Arena 1"
     },
     {
@@ -14951,10 +14951,10 @@
       "homeTeamName": "ARBUTUS CLUB U18 C1",
       "awayTeamId": 177927,
       "awayTeamName": "BURNABY MHA U18 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Arbutus Club Ice Rink"
     },
     {

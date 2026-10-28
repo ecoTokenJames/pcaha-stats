@@ -360,6 +360,23 @@
   ],
   "201971": [
     {
+      "id": 1003654,
+      "number": "U9E8512",
+      "date": "2026-12-12",
+      "startTime": "2026-12-12T21:15:00.000Z",
+      "groupId": 7033,
+      "groupName": "Blue Minor",
+      "homeTeamId": 233411,
+      "homeTeamName": "BURNABY WINTER CLUB U9 C5",
+      "awayTeamId": 177964,
+      "awayTeamName": "BURNABY MHA U9 C7",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Burnaby Winter Club Training"
+    },
+    {
       "id": 998338,
       "number": "U9E80010",
       "date": "2026-12-12",
