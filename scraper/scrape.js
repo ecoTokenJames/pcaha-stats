@@ -83,6 +83,14 @@ const HIDDEN = new Set(
   (require('./hidden-players.json').hidden || []).map(h => Number(h.participantId ?? h))
 );
 
+/** Names of teams Spordle lists without one (BCEHL, VIAHA): teamId -> name */
+const TEAM_NAMES = require('./team-names.json').teams || {};
+
+/** A team's name, or the one we keep for it when Spordle leaves it out */
+function knownName(teamId, name, missing) {
+  return name && name !== missing ? name : TEAM_NAMES[teamId] || missing;
+}
+
 function loadCache(name) {
   try {
     const cache = JSON.parse(fs.readFileSync(path.join(CACHE_DIR, `${name}.json`), 'utf8'));
@@ -221,9 +229,9 @@ async function gameRow(game, groupNames) {
     groupId: game.groupId ?? null,
     groupName: groupNames[game.groupId] || null,
     homeTeamId: game.homeTeamId,
-    homeTeamName: game.homeTeam?.name || 'TBD',
+    homeTeamName: knownName(game.homeTeamId, game.homeTeam?.name, 'TBD'),
     awayTeamId: game.awayTeamId,
-    awayTeamName: game.awayTeam?.name || 'TBD',
+    awayTeamName: knownName(game.awayTeamId, game.awayTeam?.name, 'TBD'),
     homeScore: null,
     awayScore: null,
     decidedBy: null,
@@ -343,6 +351,11 @@ async function fetchStandings(schedules) {
     } catch (e) {
       log(`  ERROR: ${schedule.name}: ${e.message}`);
     }
+  }
+
+  // Teams from outside PCAHA come without a name; fill in the ones we know (re-used ones too)
+  for (const s of Object.values(standings)) {
+    for (const t of s.teams) t.teamName = knownName(t.teamId, t.teamName, 'Unknown');
   }
 
   log(`  Standings: ${reused} finished schedules re-used, ${schedules.length - reused} asked for`);
