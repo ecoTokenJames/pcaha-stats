@@ -1082,8 +1082,8 @@
   {
     "id": 200107,
     "name": "U17A League",
-    "divisionName": "U18",
-    "categoryName": "U18 A",
+    "divisionName": "U17",
+    "categoryName": "U17 A",
     "scheduleType": "League",
     "startDate": "2026-10-05",
     "endDate": "2027-01-29"
