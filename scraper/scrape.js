@@ -280,9 +280,12 @@ async function fetchSchedules(divisions) {
     const filtered = schedules.filter(s => isWantedSchedule(s));
 
     for (const schedule of filtered) {
+      // PCAHA runs U17 A as a tier of U18, so Spordle files it under U18; show it as U17
+      const u17 = division.name === 'U18' && /\bU17/i.test(schedule.name || '');
       allSchedules.push({
         ...schedule,
-        divisionName: division.name,
+        ...(u17 && { category: { ...schedule.category, name: (schedule.category?.name || '').replace(/^U18/, 'U17') } }),
+        divisionName: u17 ? 'U17' : division.name,
         divisionId: division.id,
       });
     }

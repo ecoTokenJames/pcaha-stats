@@ -39,6 +39,11 @@ const SECTION_LABELS: Record<string, string> = {
   Placement: "Tiering (Placement)",
 };
 
+/** Leagues outside PCAHA (BC Hockey's BCEHL, Vancouver Island's VIAHA): own section, last */
+const OTHER_LEAGUES = "Other leagues";
+const isOtherLeague = (s: ScheduleStandings) =>
+  ["BCEHL", "VIAHA"].includes(getLeagueAbbrev(s.scheduleName));
+
 /** ISO timestamp N days from now (pages are built daily by the scrape). */
 function daysFromNow(days: number): string {
   return new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString();
@@ -132,10 +137,10 @@ export default async function DivisionStandingsPage({
     );
   }
 
-  // Group schedules by type (League, Playoffs, Placement, Tournament)
+  // Group schedules by type (League, Playoffs, Placement, Tournament); other leagues apart
   const grouped: Record<string, ScheduleStandings[]> = {};
   for (const data of Object.values(standings)) {
-    const type = getScheduleType(data);
+    const type = isOtherLeague(data) ? OTHER_LEAGUES : getScheduleType(data);
     if (!grouped[type]) grouped[type] = [];
     grouped[type].push(data);
   }
@@ -151,8 +156,10 @@ export default async function DivisionStandingsPage({
   const sectionStart = (type: string) =>
     grouped[type].map((s) => s.startDate ?? "").sort()[0] ?? "";
   const typeOrder = ["League", "Playoffs", "Placement", "Tournament"];
+  const isLast = (type: string) => (type === OTHER_LEAGUES ? 1 : 0);
   const sortedTypes = Object.keys(grouped).sort(
     (a, b) =>
+      isLast(a) - isLast(b) ||
       sectionRank(a) - sectionRank(b) ||
       (sectionRank(a) === PHASE_RANK.upcoming
         ? sectionStart(a).localeCompare(sectionStart(b))
