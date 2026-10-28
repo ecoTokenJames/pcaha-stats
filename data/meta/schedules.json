@@ -252,6 +252,15 @@
     "endDate": "2027-01-24"
   },
   {
+    "id": 202704,
+    "name": "U11A League",
+    "divisionName": "U11",
+    "categoryName": "U11 SELECT",
+    "scheduleType": "League",
+    "startDate": "2026-11-02",
+    "endDate": "2027-01-31"
+  },
+  {
     "id": 199254,
     "name": "FVW U11C League",
     "divisionName": "U11",
@@ -621,6 +630,15 @@
     "endDate": "2027-02-04"
   },
   {
+    "id": 202703,
+    "name": "U13A League",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "League",
+    "startDate": "2026-11-10",
+    "endDate": "2027-01-31"
+  },
+  {
     "id": 199303,
     "name": "FVE U13C Playoffs",
     "divisionName": "U13",
@@ -898,6 +916,15 @@
     "scheduleType": "League",
     "startDate": "2026-11-02",
     "endDate": "2027-01-24"
+  },
+  {
+    "id": 202702,
+    "name": "U15A League",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "scheduleType": "League",
+    "startDate": "2026-11-02",
+    "endDate": "2027-01-31"
   },
   {
     "id": 199414,

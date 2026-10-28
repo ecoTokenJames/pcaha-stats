@@ -7552,10 +7552,10 @@
       "homeTeamName": "BURNABY MHA U11 A2",
       "awayTeamId": 178235,
       "awayTeamName": "WHISTLER MHA U11 A1 WINTERHAWKS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Bill Copeland Sports Centre BCSC"
     },
     {
@@ -7569,10 +7569,10 @@
       "homeTeamName": "SEMIAHMOO MHA U11 A2",
       "awayTeamId": 178280,
       "awayTeamName": "NORTH DELTA MHA U11 A1 SUN DEVILS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Centennial Arena Centennial"
     },
     {
