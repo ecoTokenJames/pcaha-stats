@@ -844,10 +844,10 @@
       "homeTeamName": "ABBOTSFORD MHA (1) U18 A2 TIER 2 HAWKS (U17A)",
       "awayTeamId": 178633,
       "awayTeamName": "RICHMOND JETS MHA (1) U18 A2 TIER 2 (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Abbotsford Recreation Centre 1"
     },
     {

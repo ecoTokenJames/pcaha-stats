@@ -45,10 +45,10 @@
       "homeTeamName": "CLOVERDALE MHA U13 C5",
       "awayTeamId": 178310,
       "awayTeamName": "SEMIAHMOO MHA U13 C5 (SE5)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Cloverdale Arena"
     },
     {
@@ -62,10 +62,10 @@
       "homeTeamName": "NORTH DELTA MHA U13 C1",
       "awayTeamId": 178309,
       "awayTeamName": "SEMIAHMOO MHA U13 C2 (SE2)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 9,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
@@ -2529,10 +2529,10 @@
       "homeTeamName": "CHILLIWACK MHA U13 C2",
       "awayTeamId": 178392,
       "awayTeamName": "ALDERGROVE MHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC1"
     },
     {
@@ -2546,10 +2546,10 @@
       "homeTeamName": "ABBOTSFORD MHA U13 C2",
       "awayTeamId": 221132,
       "awayTeamName": "ABBOTSFORD MHA U13 C6",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Abbotsford Recreation Centre 1"
     },
     {
@@ -9609,10 +9609,10 @@
       "homeTeamName": "VANCOUVER MHA (2) U13 A2 TIER 3",
       "awayTeamId": 178152,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA (1) U13 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Britannia Community Centre"
     },
     {
@@ -9626,10 +9626,10 @@
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA (1) U13 A2 TIER 2",
       "awayTeamId": 178188,
       "awayTeamName": "ARBUTUS CLUB (3) U13 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "North Shore Winter Club Main Rink"
     },
     {
@@ -18659,10 +18659,10 @@
       "homeTeamName": "PCEHL U13 FRASER FURY",
       "awayTeamId": 188077,
       "awayTeamName": "PCEHL U13 FORCE",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Richmond Ice Centre Forum"
     },
     {
