@@ -360,6 +360,23 @@
   ],
   "201971": [
     {
+      "id": 1005343,
+      "number": "U9E8016",
+      "date": "2027-01-09",
+      "startTime": "2027-01-09T15:00:00.000Z",
+      "groupId": 7034,
+      "groupName": "Blue Major",
+      "homeTeamId": 178107,
+      "homeTeamName": "BURNABY WINTER CLUB U9 C1",
+      "awayTeamId": 178059,
+      "awayTeamName": "NORTH SHORE WINTER CLUB MHA U9 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Burnaby Winter Club Training"
+    },
+    {
       "id": 1003654,
       "number": "U9E8512",
       "date": "2026-12-12",
@@ -441,7 +458,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "cancelled",
       "arena": "Arbutus Club Ice Rink"
     }
   ]

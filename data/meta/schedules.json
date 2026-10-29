@@ -261,6 +261,15 @@
     "endDate": "2027-01-31"
   },
   {
+    "id": 202729,
+    "name": "2026 REMEMBRANCE DAY CUP",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-08"
+  },
+  {
     "id": 199254,
     "name": "FVW U11C League",
     "divisionName": "U11",
@@ -639,6 +648,15 @@
     "endDate": "2027-01-31"
   },
   {
+    "id": 202716,
+    "name": "HOPE WILDCATS U13 TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-22"
+  },
+  {
     "id": 199303,
     "name": "FVE U13C Playoffs",
     "divisionName": "U13",
@@ -952,6 +970,15 @@
     "scheduleType": "League",
     "startDate": "2026-11-06",
     "endDate": "2027-01-31"
+  },
+  {
+    "id": 202728,
+    "name": "MISSION U15 FALLEN STARS",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-08"
   },
   {
     "id": 201964,
