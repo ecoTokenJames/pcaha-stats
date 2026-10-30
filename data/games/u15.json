@@ -1529,7 +1529,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Newton Arena"
     },
     {
@@ -3282,7 +3282,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Mission Leisure Centre North"
     },
     {
@@ -5383,6 +5383,23 @@
       "arena": "Port Moody Recreation Complex 1"
     },
     {
+      "id": 968465,
+      "number": "U15L5045",
+      "date": "2027-01-22",
+      "startTime": "2027-01-23T04:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178585,
+      "homeTeamName": "PORT MOODY AHA U15 C1",
+      "awayTeamId": 178593,
+      "awayTeamName": "COQUITLAM MHA U15 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Moody Recreation Complex 1"
+    },
+    {
       "id": 968346,
       "number": "U15L5015",
       "date": "2027-01-15",
@@ -6947,6 +6964,23 @@
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
+      "id": 968464,
+      "number": "U15L5044",
+      "date": "2026-11-15",
+      "startTime": "2026-11-15T20:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178538,
+      "homeTeamName": "PORT COQUITLAM MHA U15 C3",
+      "awayTeamId": 178579,
+      "awayTeamName": "RIDGE MEADOWS MHA U15 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Coquitlam Community Centre Arena 2"
+    },
+    {
       "id": 968436,
       "number": "U15L5063",
       "date": "2026-11-14",
@@ -7047,23 +7081,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
-    },
-    {
-      "id": 968442,
-      "number": "U15L5055",
-      "date": "2026-11-10",
-      "startTime": "2026-11-11T03:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178575,
-      "homeTeamName": "RIDGE MEADOWS MHA U15 C4",
-      "awayTeamId": 178581,
-      "awayTeamName": "RIDGE MEADOWS MHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
       "id": 968449,
@@ -7185,38 +7202,21 @@
       "arena": "Planet Ice Coquitlam 1 Mars"
     },
     {
-      "id": 968465,
-      "number": "U15L5045",
-      "date": "2026-11-06",
-      "startTime": "2026-11-07T04:00:00.000Z",
+      "id": 968442,
+      "number": "U15L5055",
+      "date": "2026-11-07",
+      "startTime": "2026-11-08T00:30:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": 178585,
-      "homeTeamName": "PORT MOODY AHA U15 C1",
-      "awayTeamId": 178593,
-      "awayTeamName": "COQUITLAM MHA U15 C2",
+      "homeTeamId": 178575,
+      "homeTeamName": "RIDGE MEADOWS MHA U15 C4",
+      "awayTeamId": 178581,
+      "awayTeamName": "RIDGE MEADOWS MHA U15 C2",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Port Moody Recreation Complex 1"
-    },
-    {
-      "id": 968464,
-      "number": "U15L5044",
-      "date": "2026-11-05",
-      "startTime": "2026-11-06T03:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178538,
-      "homeTeamName": "PORT COQUITLAM MHA U15 C3",
-      "awayTeamId": 178579,
-      "awayTeamName": "RIDGE MEADOWS MHA U15 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Coquitlam Community Centre Arena 3"
+      "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
       "id": 968455,
@@ -7450,10 +7450,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U15 C5",
       "awayTeamId": 178583,
       "awayTeamName": "RIDGE MEADOWS MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
@@ -8798,7 +8798,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "West Vancouver Ice Arena"
     },
     {
@@ -8815,7 +8815,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Port Coquitlam Community Centre Arena 2"
     },
     {
@@ -8832,7 +8832,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Aldergrove Community Centre 1"
     },
     {
@@ -8846,10 +8846,10 @@
       "homeTeamName": "CLOVERDALE MHA (1) U15 A3 TIER 3",
       "awayTeamId": 177802,
       "awayTeamName": "RIDGE MEADOWS MHA (1) U15 A4 TIER 4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Cloverdale Sport & Ice Complex 2-Red"
     },
     {
@@ -8863,10 +8863,10 @@
       "homeTeamName": "CHILLIWACK MHA (1) U15 A1 TIER 1 JR BRUINS",
       "awayTeamId": 177825,
       "awayTeamName": "BURNABY MHA (1) U15 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC3"
     },
     {
@@ -14579,10 +14579,10 @@
       "homeTeamName": "ARBUTUS CLUB U15 C1",
       "awayTeamId": 178609,
       "awayTeamName": "BURNABY MHA U15 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Arbutus Club Ice Rink"
     },
     {
@@ -14596,10 +14596,10 @@
       "homeTeamName": "NEW WESTMINSTER MHA U15 C2",
       "awayTeamId": 178553,
       "awayTeamName": "RICHMOND JETS MHA U15 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Queens Park Arena 1"
     },
     {

@@ -630,6 +630,24 @@
     "endDate": "2026-11-08"
   },
   {
+    "id": 202811,
+    "name": "U13 C FEMALE SUNSHINE COAST WINTER CLASSIC",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-08"
+  },
+  {
+    "id": 202764,
+    "name": "U13 C SUNSHINE COAST WINTER CLASSIC",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-08"
+  },
+  {
     "id": 201965,
     "name": "PL U13C League",
     "divisionName": "U13",
@@ -969,7 +987,7 @@
     "categoryName": "U15 C",
     "scheduleType": "League",
     "startDate": "2026-11-06",
-    "endDate": "2027-01-31"
+    "endDate": "2027-01-28"
   },
   {
     "id": 202728,
@@ -1321,6 +1339,15 @@
     "scheduleType": "League",
     "startDate": "2026-11-10",
     "endDate": "2027-01-31"
+  },
+  {
+    "id": 202755,
+    "name": "CMHA GOLD CLASSIC",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-15"
   },
   {
     "id": 202682,
