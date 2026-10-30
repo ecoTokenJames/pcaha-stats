@@ -7382,10 +7382,10 @@
       "homeTeamName": "PORT COQUITLAM MHA U11 A1",
       "awayTeamId": 178298,
       "awayTeamName": "ALDERGROVE MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 11,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 3"
     },
     {

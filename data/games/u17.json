@@ -827,10 +827,10 @@
       "homeTeamName": "RICHMOND JETS MHA (1) U18 A2 TIER 2 (U17A)",
       "awayTeamId": 222002,
       "awayTeamName": "RIDGE MEADOWS MHA (1) U18 A4 TIER 4 (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {

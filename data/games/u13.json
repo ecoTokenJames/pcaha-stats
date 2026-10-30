@@ -28,10 +28,10 @@
       "homeTeamName": "SURREY MHA U13 C1 SY1",
       "awayTeamId": 223556,
       "awayTeamName": "SOUTH DELTA MHA U13 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #1"
     },
     {
@@ -2512,10 +2512,10 @@
       "homeTeamName": "CHILLIWACK MHA U13 C3",
       "awayTeamId": 221125,
       "awayTeamName": "ALDERGROVE MHA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Chilliwack Coliseum 1 Blue"
     },
     {
@@ -9405,10 +9405,10 @@
       "homeTeamName": "ABBOTSFORD MHA (1) U13 A2 TIER 2 HAWKS",
       "awayTeamId": 178145,
       "awayTeamName": "RICHMOND JETS MHA (1) U13 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -9422,10 +9422,10 @@
       "homeTeamName": "RICHMOND JETS MHA (1) U13 A2 TIER 2",
       "awayTeamId": 178146,
       "awayTeamName": "LANGLEY MHA (1) U13 A2 TIER 2 EAGLES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
@@ -9439,10 +9439,10 @@
       "homeTeamName": "SEMIAHMOO MHA (1) U13 A1 TIER 1",
       "awayTeamId": 178135,
       "awayTeamName": "LANGLEY MHA (1) U13 A1 TIER 1 EAGLES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Centennial Arena Centennial"
     },
     {
@@ -9456,10 +9456,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U13 A2 TIER 2",
       "awayTeamId": 178184,
       "awayTeamName": "CLOVERDALE MHA (1) U13 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
@@ -9490,10 +9490,10 @@
       "homeTeamName": "BURNABY MHA (1) U13 A1 TIER 1",
       "awayTeamId": 178162,
       "awayTeamName": "PORT MOODY AHA (2) U13 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Rosemary Brown Recreation Centre B"
     },
     {
@@ -9507,10 +9507,10 @@
       "homeTeamName": "LANGLEY MHA (1) U13 A4 TIER 4 EAGLES",
       "awayTeamId": 178150,
       "awayTeamName": "VANCOUVER MHA (2) U13 A2 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "The Arenas at LEC 2"
     },
     {
