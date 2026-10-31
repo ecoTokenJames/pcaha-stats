@@ -1091,6 +1091,23 @@
   ],
   "199309": [
     {
+      "id": 935364,
+      "number": "U18L9130",
+      "date": "2026-12-21",
+      "startTime": "2026-12-22T04:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177916,
+      "homeTeamName": "MISSION MHA U18 C1",
+      "awayTeamId": 221131,
+      "awayTeamName": "ABBOTSFORD MHA U18 C5",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Mission Leisure Centre North"
+    },
+    {
       "id": 935437,
       "number": "U18L9060",
       "date": "2026-12-20",
@@ -1344,23 +1361,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sardis Sports Complex SSC1"
-    },
-    {
-      "id": 935364,
-      "number": "U18L9130",
-      "date": "2026-12-13",
-      "startTime": "2026-12-14T02:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177916,
-      "homeTeamName": "MISSION MHA U18 C1",
-      "awayTeamId": 221131,
-      "awayTeamName": "ABBOTSFORD MHA U18 C5",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Mission Leisure Centre North"
     },
     {
       "id": 935370,
@@ -2315,23 +2315,6 @@
       "arena": "Abbotsford Recreation Centre 1"
     },
     {
-      "id": 935430,
-      "number": "U18L9067",
-      "date": "2026-11-12",
-      "startTime": "2026-11-13T03:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177832,
-      "homeTeamName": "MISSION MHA U18 C2",
-      "awayTeamId": 177918,
-      "awayTeamName": "CHILLIWACK MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Mission Leisure Centre North"
-    },
-    {
       "id": 935428,
       "number": "U18L9066",
       "date": "2026-11-11",
@@ -2449,6 +2432,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sardis Sports Complex SSC1"
+    },
+    {
+      "id": 935430,
+      "number": "U18L9067",
+      "date": "2026-11-08",
+      "startTime": "2026-11-09T01:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177832,
+      "homeTeamName": "MISSION MHA U18 C2",
+      "awayTeamId": 177918,
+      "awayTeamName": "CHILLIWACK MHA U18 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Mission Leisure Centre South"
     },
     {
       "id": 935445,
@@ -9221,7 +9221,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
@@ -9238,7 +9238,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Arbutus Club Ice Rink"
     },
     {
@@ -9252,10 +9252,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U18 A1 TIER 1",
       "awayTeamId": 178641,
       "awayTeamName": "PORT MOODY AHA (2) U18 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
@@ -14074,6 +14074,23 @@
   ],
   "199717": [
     {
+      "id": 954638,
+      "number": "U18Q8120",
+      "date": "2026-11-08",
+      "startTime": "2026-11-09T04:15:00.000Z",
+      "groupId": 7309,
+      "groupName": "Gold",
+      "homeTeamId": 177921,
+      "homeTeamName": "BURNABY MHA U18 C4",
+      "awayTeamId": 177865,
+      "awayTeamName": "VANCOUVER THUNDERBIRD MHA U18 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Kensington Arena"
+    },
+    {
       "id": 954679,
       "number": "U18Q8220",
       "date": "2026-11-08",
@@ -14584,23 +14601,6 @@
       "arena": "Richmond Ice Centre Igloo"
     },
     {
-      "id": 954638,
-      "number": "U18Q8120",
-      "date": "2026-10-31",
-      "startTime": "2026-10-31T23:15:00.000Z",
-      "groupId": 7309,
-      "groupName": "Gold",
-      "homeTeamId": 177921,
-      "homeTeamName": "BURNABY MHA U18 C4",
-      "awayTeamId": 177865,
-      "awayTeamName": "VANCOUVER THUNDERBIRD MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Rosemary Brown Recreation Centre B"
-    },
-    {
       "id": 954584,
       "number": "U18Q8318",
       "date": "2026-10-30",
@@ -14682,7 +14682,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Queens Park Arena 1"
     },
     {
@@ -14699,7 +14699,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Britannia Community Centre"
     },
     {

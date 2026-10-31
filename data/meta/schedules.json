@@ -618,7 +618,7 @@
     "categoryName": "U13 C",
     "scheduleType": "League",
     "startDate": "2026-11-06",
-    "endDate": "2027-01-31"
+    "endDate": "2027-01-28"
   },
   {
     "id": 202675,
@@ -1008,6 +1008,15 @@
     "endDate": "2027-02-04"
   },
   {
+    "id": 202835,
+    "name": "Pat Quinn Classic - U15 AAA Elite",
+    "divisionName": "U15",
+    "categoryName": "U15 AAA Elite",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-19",
+    "endDate": "2026-11-22"
+  },
+  {
     "id": 199306,
     "name": "FVE U15C Playoffs",
     "divisionName": "U15",
@@ -1311,7 +1320,7 @@
     "categoryName": "U18 C",
     "scheduleType": "League",
     "startDate": "2026-11-06",
-    "endDate": "2027-01-31"
+    "endDate": "2027-01-28"
   },
   {
     "id": 202465,

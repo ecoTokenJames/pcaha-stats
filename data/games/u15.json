@@ -8662,7 +8662,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Ladner Leisure Centre"
     },
     {
@@ -8679,7 +8679,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
@@ -8696,7 +8696,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
@@ -8710,10 +8710,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA (1) U15 A1 TIER 1",
       "awayTeamId": 177827,
       "awayTeamName": "COQUITLAM MHA (1) U15 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Canlan Ice Sports North Shore 1 Red"
     },
     {
@@ -8730,7 +8730,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Karen Magnussen Arena"
     },
     {
@@ -8747,7 +8747,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Canlan Ice Sports North Shore 3 Green"
     },
     {
@@ -8761,10 +8761,10 @@
       "homeTeamName": "WCAHA 14UA (PCAHA U15 A1)",
       "awayTeamId": 177806,
       "awayTeamName": "SUNSHINE COAST MHA (3) U15 A1 TIER 3 BLUES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 12,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sportsplex Arena 1"
     },
     {
@@ -14548,7 +14548,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Kerrisdale Cyclone Taylor Arena"
     },
     {
@@ -14562,10 +14562,10 @@
       "homeTeamName": "BURNABY MHA U15 C2",
       "awayTeamId": 222450,
       "awayTeamName": "RICHMOND JETS MHA U15 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Rosemary Brown Recreation Centre B"
     },
     {

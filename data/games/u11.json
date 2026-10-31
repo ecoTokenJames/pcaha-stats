@@ -14,7 +14,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Centennial Arena Centennial"
     },
     {
@@ -5211,6 +5211,23 @@
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
+      "id": 968713,
+      "number": "U11L5067",
+      "date": "2026-12-20",
+      "startTime": "2026-12-20T18:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177735,
+      "homeTeamName": "RIDGE MEADOWS MHA U11 C2",
+      "awayTeamId": 177689,
+      "awayTeamName": "RIDGE MEADOWS MHA U11 C7",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Chrysler Gold"
+    },
+    {
       "id": 968748,
       "number": "U11L5032",
       "date": "2026-12-19",
@@ -5617,23 +5634,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Maple Ridge 2"
-    },
-    {
-      "id": 968713,
-      "number": "U11L5067",
-      "date": "2026-11-29",
-      "startTime": "2026-11-29T18:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177735,
-      "homeTeamName": "RIDGE MEADOWS MHA U11 C2",
-      "awayTeamId": 177689,
-      "awayTeamName": "RIDGE MEADOWS MHA U11 C7",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
       "id": 968711,
@@ -6309,10 +6309,10 @@
       "homeTeamName": "COQUITLAM MHA U11 C4",
       "awayTeamId": 177732,
       "awayTeamName": "RIDGE MEADOWS MHA U11 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
@@ -7246,10 +7246,10 @@
       "homeTeamName": "SURREY MHA U11 A1 THUNDER",
       "awayTeamId": 221093,
       "awayTeamName": "EYH 10UA1 Jr. Silvertips (PNAHA/PCAHA U11 A1)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
@@ -7263,10 +7263,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U11 A4-WHITE",
       "awayTeamId": 178265,
       "awayTeamName": "SOUTH DELTA MHA U11 A3 STORM",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
@@ -7280,10 +7280,10 @@
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA U11 A4",
       "awayTeamId": 178303,
       "awayTeamName": "ARBUTUS CLUB U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 14,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Arbutus Club Ice Rink"
     },
     {
@@ -7297,10 +7297,10 @@
       "homeTeamName": "COQUITLAM MHA U11 A2",
       "awayTeamId": 178288,
       "awayTeamName": "CLOVERDALE MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Coquitlam 3 Venus"
     },
     {
@@ -7314,10 +7314,10 @@
       "homeTeamName": "NORTH DELTA MHA U11 A1 SUN DEVILS",
       "awayTeamId": 178262,
       "awayTeamName": "RIDGE MEADOWS MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
@@ -7331,10 +7331,10 @@
       "homeTeamName": "HOLLYBURN MHA U11 A1",
       "awayTeamId": 178256,
       "awayTeamName": "RICHMOND JETS MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
@@ -7348,10 +7348,10 @@
       "homeTeamName": "PORT MOODY AHA U11 A2",
       "awayTeamId": 178295,
       "awayTeamName": "CLOVERDALE MHA U11 A3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -7365,10 +7365,10 @@
       "homeTeamName": "BURNABY WINTER CLUB U11 A4",
       "awayTeamId": 178258,
       "awayTeamName": "SUNSHINE COAST MHA U11 A",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 18,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Burnaby Winter Club Main"
     },
     {
@@ -12741,10 +12741,10 @@
       "homeTeamName": "NEW WESTMINSTER MHA U11 C1",
       "awayTeamId": 177716,
       "awayTeamName": "VANCOUVER MHA U11 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Queens Park Arena 1"
     },
     {
@@ -12758,10 +12758,10 @@
       "homeTeamName": "RICHMOND JETS MHA U11 C1",
       "awayTeamId": 177717,
       "awayTeamName": "VANCOUVER MHA U11 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 9,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
