@@ -759,10 +759,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U18 A3 TIER 3 (U17A)",
       "awayTeamId": 222001,
       "awayTeamName": "LANGLEY MHA (1) U18 A4 TIER 4 EAGLES (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 12,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hillcrest Centre Arena"
     },
     {
@@ -776,10 +776,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA (1) U18 A3 TIER 3 (U17A)",
       "awayTeamId": 178626,
       "awayTeamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
