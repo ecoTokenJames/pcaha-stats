@@ -708,10 +708,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U18 A3 TIER 3 (U17A)",
       "awayTeamId": 177460,
       "awayTeamName": "ABBOTSFORD MHA (1) U18 A2 TIER 2 HAWKS (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hillcrest Centre Arena"
     },
     {
@@ -725,10 +725,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U18 A4 TIER 4 (U17A)",
       "awayTeamId": 178642,
       "awayTeamName": "SOUTH DELTA MHA (2) U18 A2 TIER 3 STORM (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 10,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
@@ -742,10 +742,10 @@
       "homeTeamName": "LANGLEY MHA (1) U18 A4 TIER 4 EAGLES (U17A)",
       "awayTeamId": 178633,
       "awayTeamName": "RICHMOND JETS MHA (1) U18 A2 TIER 2 (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 1"
     },
     {
