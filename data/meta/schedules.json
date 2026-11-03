@@ -252,15 +252,6 @@
     "endDate": "2027-01-24"
   },
   {
-    "id": 202704,
-    "name": "U11A League",
-    "divisionName": "U11",
-    "categoryName": "U11 SELECT",
-    "scheduleType": "League",
-    "startDate": "2026-11-02",
-    "endDate": "2027-01-31"
-  },
-  {
     "id": 202729,
     "name": "2026 REMEMBRANCE DAY CUP",
     "divisionName": "U11",
@@ -279,6 +270,24 @@
     "endDate": "2027-01-28"
   },
   {
+    "id": 202704,
+    "name": "U11A League",
+    "divisionName": "U11",
+    "categoryName": "U11 SELECT",
+    "scheduleType": "League",
+    "startDate": "2026-11-06",
+    "endDate": "2027-02-07"
+  },
+  {
+    "id": 202977,
+    "name": "19TH ANNUAL BURNABY FEMALE REMEMBRANCE TOURNAMENT - U11 C",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-09"
+  },
+  {
     "id": 201966,
     "name": "PL U11C League",
     "divisionName": "U11",
@@ -286,6 +295,15 @@
     "scheduleType": "League",
     "startDate": "2026-11-09",
     "endDate": "2027-02-04"
+  },
+  {
+    "id": 203008,
+    "name": "ICE BREAKER \"C\" TOURNAMENT - U11",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-15"
   },
   {
     "id": 199299,
@@ -648,6 +666,15 @@
     "endDate": "2026-11-08"
   },
   {
+    "id": 202978,
+    "name": "19TH ANNUAL BURNABY FEMALE REMEMBRANCE TOURNAMENT - U13 C",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-09"
+  },
+  {
     "id": 201965,
     "name": "PL U13C League",
     "divisionName": "U13",
@@ -664,6 +691,15 @@
     "scheduleType": "League",
     "startDate": "2026-11-10",
     "endDate": "2027-01-31"
+  },
+  {
+    "id": 203009,
+    "name": "ICE BREAKER \"C\" TOURNAMENT - U13",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-15"
   },
   {
     "id": 202716,
@@ -999,6 +1035,15 @@
     "endDate": "2026-11-08"
   },
   {
+    "id": 202985,
+    "name": "19TH ANNUAL BURNABY FEMALE REMEMBRANCE TOURNAMENT - U15 C",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-09"
+  },
+  {
     "id": 201964,
     "name": "PL U15C League",
     "divisionName": "U15",
@@ -1008,8 +1053,26 @@
     "endDate": "2027-02-04"
   },
   {
+    "id": 203010,
+    "name": "ICE BREAKER \"C\" TOURNAMENT - U15",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-15"
+  },
+  {
     "id": 202835,
-    "name": "Pat Quinn Classic - U15 AAA Elite",
+    "name": "Pat Quinn Classic - U15 AAA Elite Flight 1",
+    "divisionName": "U15",
+    "categoryName": "U15 AAA Elite",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-19",
+    "endDate": "2026-11-22"
+  },
+  {
+    "id": 202984,
+    "name": "Pat Quinn Classic - U15 AAA Elite Flight 2",
     "divisionName": "U15",
     "categoryName": "U15 AAA Elite",
     "scheduleType": "Tournament",
@@ -1332,6 +1395,15 @@
     "endDate": "2026-11-08"
   },
   {
+    "id": 202987,
+    "name": "19TH ANNUAL BURNABY FEMALE REMEMBRANCE TOURNAMENT - U18 C",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-09"
+  },
+  {
     "id": 201963,
     "name": "PL U18C League",
     "divisionName": "U18",
@@ -1365,6 +1437,15 @@
     "categoryName": "U18 C",
     "scheduleType": "Tournament",
     "startDate": "2026-11-12",
+    "endDate": "2026-11-15"
+  },
+  {
+    "id": 203011,
+    "name": "ICE BREAKER \"C\" TOURNAMENT - U18",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-13",
     "endDate": "2026-11-15"
   },
   {
