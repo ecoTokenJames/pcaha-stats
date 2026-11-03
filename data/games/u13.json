@@ -1669,6 +1669,23 @@
       "arena": "Newton Arena"
     },
     {
+      "id": 1014090,
+      "number": "U13L6725",
+      "date": "2026-12-15",
+      "startTime": "2026-12-15T22:00:00.000Z",
+      "groupId": 7017,
+      "groupName": "Red",
+      "homeTeamId": 223655,
+      "homeTeamName": "WCAHA 12UC (PCAHA U13 C1)",
+      "awayTeamId": 178341,
+      "awayTeamName": "SURREY MHA U13 C2 SY2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
+    },
+    {
       "id": 1014136,
       "number": "U13L6326",
       "date": "2026-12-13",
@@ -1735,23 +1752,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "The Arenas at LEC 2"
-    },
-    {
-      "id": 1014090,
-      "number": "U13L6725",
-      "date": "2026-12-13",
-      "startTime": "2026-12-13T19:00:00.000Z",
-      "groupId": 7017,
-      "groupName": "Red",
-      "homeTeamId": 223655,
-      "homeTeamName": "WCAHA 12UC (PCAHA U13 C1)",
-      "awayTeamId": 178341,
-      "awayTeamName": "SURREY MHA U13 C2 SY2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1014064,
@@ -2007,6 +2007,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "The Arenas at LEC 2"
+    },
+    {
+      "id": 1014047,
+      "number": "U13L6701",
+      "date": "2026-12-06",
+      "startTime": "2026-12-06T22:00:00.000Z",
+      "groupId": 7017,
+      "groupName": "Red",
+      "homeTeamId": 223655,
+      "homeTeamName": "WCAHA 12UC (PCAHA U13 C1)",
+      "awayTeamId": 178339,
+      "awayTeamName": "SURREY MHA U13 C1 SY1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1014158,
@@ -2908,23 +2925,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Tilbury Ice"
-    },
-    {
-      "id": 1014047,
-      "number": "U13L6701",
-      "date": "2026-11-08",
-      "startTime": "2026-11-08T19:00:00.000Z",
-      "groupId": 7017,
-      "groupName": "Red",
-      "homeTeamId": 223655,
-      "homeTeamName": "WCAHA 12UC (PCAHA U13 C1)",
-      "awayTeamId": 178339,
-      "awayTeamName": "SURREY MHA U13 C1 SY1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1014141,
@@ -7133,7 +7133,7 @@
     },
     {
       "id": 1011100,
-      "number": "U15L4113",
+      "number": "U13L4113",
       "date": "2026-11-29",
       "startTime": "2026-11-29T16:35:00.000Z",
       "groupId": 6996,
@@ -7235,7 +7235,7 @@
     },
     {
       "id": 1011094,
-      "number": "U15L4112",
+      "number": "U13L4112",
       "date": "2026-11-28",
       "startTime": "2026-11-28T19:00:00.000Z",
       "groupId": 6996,
@@ -7269,7 +7269,7 @@
     },
     {
       "id": 1011093,
-      "number": "U15L4111",
+      "number": "U13L4111",
       "date": "2026-11-27",
       "startTime": "2026-11-28T01:30:00.000Z",
       "groupId": 6996,
@@ -7320,7 +7320,7 @@
     },
     {
       "id": 1011104,
-      "number": "U15L4110",
+      "number": "U13L4110",
       "date": "2026-11-24",
       "startTime": "2026-11-25T01:00:00.000Z",
       "groupId": 6996,
@@ -7371,7 +7371,7 @@
     },
     {
       "id": 1011099,
-      "number": "U15L4109",
+      "number": "U13L4109",
       "date": "2026-11-22",
       "startTime": "2026-11-22T16:35:00.000Z",
       "groupId": 6996,
@@ -7422,7 +7422,7 @@
     },
     {
       "id": 1011105,
-      "number": "U15L4108",
+      "number": "U13L4108",
       "date": "2026-11-21",
       "startTime": "2026-11-22T01:00:00.000Z",
       "groupId": 6996,
@@ -7456,7 +7456,7 @@
     },
     {
       "id": 1011098,
-      "number": "U15L4107",
+      "number": "U13L4107",
       "date": "2026-11-21",
       "startTime": "2026-11-21T19:00:00.000Z",
       "groupId": 6996,
@@ -7490,7 +7490,7 @@
     },
     {
       "id": 1011102,
-      "number": "U15L4106",
+      "number": "U13L4106",
       "date": "2026-11-20",
       "startTime": "2026-11-21T01:30:00.000Z",
       "groupId": 6996,
@@ -7592,7 +7592,7 @@
     },
     {
       "id": 1011106,
-      "number": "U15L4105",
+      "number": "U13L4105",
       "date": "2026-11-15",
       "startTime": "2026-11-15T16:35:00.000Z",
       "groupId": 6996,
@@ -7660,7 +7660,7 @@
     },
     {
       "id": 1011090,
-      "number": "U15L4104",
+      "number": "U13L4104",
       "date": "2026-11-14",
       "startTime": "2026-11-14T19:00:00.000Z",
       "groupId": 6996,
@@ -7762,7 +7762,7 @@
     },
     {
       "id": 1011086,
-      "number": "U15L4103",
+      "number": "U13L4103",
       "date": "2026-11-08",
       "startTime": "2026-11-08T16:35:00.000Z",
       "groupId": 6996,
@@ -7813,7 +7813,7 @@
     },
     {
       "id": 1011089,
-      "number": "U15L4102",
+      "number": "U13L4102",
       "date": "2026-11-07",
       "startTime": "2026-11-07T18:45:00.000Z",
       "groupId": 6996,
@@ -7830,7 +7830,7 @@
     },
     {
       "id": 1011091,
-      "number": "U15L4101",
+      "number": "U13L4101",
       "date": "2026-11-06",
       "startTime": "2026-11-07T03:15:00.000Z",
       "groupId": 6996,
@@ -7898,7 +7898,7 @@
     },
     {
       "id": 1011108,
-      "number": "U15L4100",
+      "number": "U13L4100",
       "date": "2026-11-03",
       "startTime": "2026-11-04T01:00:00.000Z",
       "groupId": 6996,
@@ -21220,6 +21220,23 @@
       "arena": "UBC A Thunderbird Arena"
     },
     {
+      "id": 954270,
+      "number": "U13Q8124",
+      "date": "2026-11-08",
+      "startTime": "2026-11-09T00:45:00.000Z",
+      "groupId": 7309,
+      "groupName": "Gold",
+      "homeTeamId": 178334,
+      "homeTeamName": "VANCOUVER THUNDERBIRD MHA U13 C2",
+      "awayTeamId": 178338,
+      "awayTeamName": "VANCOUVER MHA U13 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "UBC B Father David Bauer Arena"
+    },
+    {
       "id": 954313,
       "number": "U13Q8327",
       "date": "2026-11-08",
@@ -21388,23 +21405,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Kerrisdale Cyclone Taylor Arena"
-    },
-    {
-      "id": 954270,
-      "number": "U13Q8124",
-      "date": "2026-11-07",
-      "startTime": "2026-11-07T21:00:00.000Z",
-      "groupId": 7309,
-      "groupName": "Gold",
-      "homeTeamId": 178334,
-      "homeTeamName": "VANCOUVER THUNDERBIRD MHA U13 C2",
-      "awayTeamId": 178338,
-      "awayTeamName": "VANCOUVER MHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "UBC B Father David Bauer Arena"
     },
     {
       "id": 954288,
