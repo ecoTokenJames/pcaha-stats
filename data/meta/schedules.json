@@ -297,6 +297,15 @@
     "endDate": "2027-02-04"
   },
   {
+    "id": 203034,
+    "name": "MORGAN RIELLY U11 TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-15"
+  },
+  {
     "id": 203008,
     "name": "ICE BREAKER \"C\" TOURNAMENT - U11",
     "divisionName": "U11",

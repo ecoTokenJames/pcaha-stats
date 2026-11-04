@@ -2994,7 +2994,7 @@
   {
     "participantId": 42446,
     "name": "LANDON WHIDDEN",
-    "number": 31,
+    "number": 1,
     "teamId": 222001,
     "teamName": "LANGLEY MHA (1) U18 A4 TIER 4 EAGLES (U17A)",
     "divisionName": "U17",
@@ -3010,7 +3010,7 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 8,
-    "isAffiliate": false,
+    "isAffiliate": true,
     "position": "F"
   },
   {
@@ -3520,31 +3520,9 @@
     "position": "G"
   },
   {
-    "participantId": 83295,
-    "name": "ALEXANDER ZEMLAK",
-    "number": 35,
-    "teamId": 178626,
-    "teamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
-    "divisionName": "U17",
-    "scheduleName": "U17A League",
-    "scheduleId": 200107,
-    "categoryName": "U17 A",
-    "scheduleType": "League",
-    "goals": 0,
-    "assists": 0,
-    "points": 0,
-    "pim": 0,
-    "ppGoals": 0,
-    "shGoals": 0,
-    "gwGoals": 0,
-    "gamesPlayed": 6,
-    "isAffiliate": false,
-    "position": "G"
-  },
-  {
-    "participantId": 46807,
-    "name": "CHRISTOPHER PAVAO",
-    "number": 18,
+    "participantId": 39610,
+    "name": "BRADY MCBRIDE",
+    "number": 2,
     "teamId": 178626,
     "teamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
     "divisionName": "U17",
@@ -3560,8 +3538,8 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 5,
-    "isAffiliate": false,
-    "position": "D"
+    "isAffiliate": true,
+    "position": "F"
   },
   {
     "participantId": 45679,
@@ -3582,13 +3560,13 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 6,
-    "isAffiliate": false,
+    "isAffiliate": true,
     "position": "F"
   },
   {
-    "participantId": 39610,
-    "name": "BRADY MCBRIDE",
-    "number": 2,
+    "participantId": 46807,
+    "name": "CHRISTOPHER PAVAO",
+    "number": 18,
     "teamId": 178626,
     "teamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
     "divisionName": "U17",
@@ -3604,30 +3582,8 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 5,
-    "isAffiliate": false,
-    "position": "F"
-  },
-  {
-    "participantId": 158310,
-    "name": "TRYSTAN WEIR",
-    "number": 1,
-    "teamId": 178626,
-    "teamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
-    "divisionName": "U17",
-    "scheduleName": "U17A League",
-    "scheduleId": 200107,
-    "categoryName": "U17 A",
-    "scheduleType": "League",
-    "goals": 0,
-    "assists": 0,
-    "points": 0,
-    "pim": 0,
-    "ppGoals": 0,
-    "shGoals": 0,
-    "gwGoals": 0,
-    "gamesPlayed": 4,
-    "isAffiliate": false,
-    "position": "G"
+    "isAffiliate": true,
+    "position": "D"
   },
   {
     "participantId": 83276,
@@ -3652,6 +3608,28 @@
     "position": "F"
   },
   {
+    "participantId": 83295,
+    "name": "ALEXANDER ZEMLAK",
+    "number": 35,
+    "teamId": 178626,
+    "teamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
+    "divisionName": "U17",
+    "scheduleName": "U17A League",
+    "scheduleId": 200107,
+    "categoryName": "U17 A",
+    "scheduleType": "League",
+    "goals": 0,
+    "assists": 0,
+    "points": 0,
+    "pim": 0,
+    "ppGoals": 0,
+    "shGoals": 0,
+    "gwGoals": 0,
+    "gamesPlayed": 6,
+    "isAffiliate": true,
+    "position": "G"
+  },
+  {
     "participantId": 140318,
     "name": "CALVIN TREBICK",
     "number": 9,
@@ -3672,5 +3650,27 @@
     "gamesPlayed": 1,
     "isAffiliate": true,
     "position": "F"
+  },
+  {
+    "participantId": 158310,
+    "name": "TRYSTAN WEIR",
+    "number": 1,
+    "teamId": 178626,
+    "teamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
+    "divisionName": "U17",
+    "scheduleName": "U17A League",
+    "scheduleId": 200107,
+    "categoryName": "U17 A",
+    "scheduleType": "League",
+    "goals": 0,
+    "assists": 0,
+    "points": 0,
+    "pim": 0,
+    "ppGoals": 0,
+    "shGoals": 0,
+    "gwGoals": 0,
+    "gamesPlayed": 4,
+    "isAffiliate": true,
+    "position": "G"
   }
 ]
