@@ -1669,6 +1669,23 @@
       "arena": "Newton Arena"
     },
     {
+      "id": 1014100,
+      "number": "U13L6309",
+      "date": "2026-12-14",
+      "startTime": "2026-12-15T02:45:00.000Z",
+      "groupId": 7019,
+      "groupName": "Orange",
+      "homeTeamId": 178310,
+      "homeTeamName": "SEMIAHMOO MHA U13 C5 (SE5)",
+      "awayTeamId": 178313,
+      "awayTeamName": "SEMIAHMOO MHA U13 C4 (SE4)",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Cloverdale Sport & Ice Complex 1-Blue"
+    },
+    {
       "id": 1014136,
       "number": "U13L6326",
       "date": "2026-12-13",
@@ -2483,23 +2500,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "George Preston Recreation Centre Main"
-    },
-    {
-      "id": 1014100,
-      "number": "U13L6309",
-      "date": "2026-11-21",
-      "startTime": "2026-11-21T20:30:00.000Z",
-      "groupId": 7019,
-      "groupName": "Orange",
-      "homeTeamId": 178310,
-      "homeTeamName": "SEMIAHMOO MHA U13 C5 (SE5)",
-      "awayTeamId": 178313,
-      "awayTeamName": "SEMIAHMOO MHA U13 C4 (SE4)",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Newton Arena"
     },
     {
       "id": 1014106,
@@ -4286,7 +4286,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Aldergrove Community Centre 1"
+      "arena": "Langley Sportsplex 2"
     },
     {
       "id": 935157,
