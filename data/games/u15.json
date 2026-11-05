@@ -3337,6 +3337,23 @@
       "arena": "Newton Arena"
     },
     {
+      "id": 1013998,
+      "number": "U15L6502",
+      "date": "2026-12-03",
+      "startTime": "2026-12-04T01:30:00.000Z",
+      "groupId": 7019,
+      "groupName": "Orange",
+      "homeTeamId": 178549,
+      "homeTeamName": "LANGLEY MHA U15 C1",
+      "awayTeamId": 178577,
+      "awayTeamName": "SURREY MHA U15 C2 SY2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Langley Sportsplex 3"
+    },
+    {
       "id": 1013999,
       "number": "U15L6521",
       "date": "2026-12-02",
@@ -3458,8 +3475,8 @@
     {
       "id": 1013876,
       "number": "U15L6018",
-      "date": "2026-11-28",
-      "startTime": "2026-11-29T03:00:00.000Z",
+      "date": "2026-11-29",
+      "startTime": "2026-11-29T20:45:00.000Z",
       "groupId": 7018,
       "groupName": "Gold",
       "homeTeamId": 223564,
@@ -3998,23 +4015,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
-    },
-    {
-      "id": 1013998,
-      "number": "U15L6502",
-      "date": "2026-11-08",
-      "startTime": "2026-11-09T00:15:00.000Z",
-      "groupId": 7019,
-      "groupName": "Orange",
-      "homeTeamId": 178549,
-      "homeTeamName": "LANGLEY MHA U15 C1",
-      "awayTeamId": 178577,
-      "awayTeamName": "SURREY MHA U15 C2 SY2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "The Arenas at LEC 2"
     },
     {
       "id": 1014000,
@@ -4580,23 +4580,6 @@
       "arena": "Abbotsford Recreation Centre 1"
     },
     {
-      "id": 935301,
-      "number": "U15L9040",
-      "date": "2026-11-29",
-      "startTime": "2026-11-30T03:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178613,
-      "homeTeamName": "ABBOTSFORD MHA U15 C3",
-      "awayTeamId": 178601,
-      "awayTeamName": "CHILLIWACK MHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Abbotsford Recreation Centre 1"
-    },
-    {
       "id": 935274,
       "number": "U15L9069",
       "date": "2026-11-26",
@@ -4784,6 +4767,23 @@
       "arena": "Hope & District Recreation Centre"
     },
     {
+      "id": 935290,
+      "number": "U15L9047",
+      "date": "2026-11-18",
+      "startTime": "2026-11-19T03:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178612,
+      "homeTeamName": "ABBOTSFORD MHA U15 C2",
+      "awayTeamId": 178600,
+      "awayTeamName": "CHILLIWACK MHA U15 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "MSA Arena"
+    },
+    {
       "id": 935293,
       "number": "U15L9055",
       "date": "2026-11-18",
@@ -4937,23 +4937,6 @@
       "arena": "Mission Leisure Centre North"
     },
     {
-      "id": 935290,
-      "number": "U15L9047",
-      "date": "2026-11-11",
-      "startTime": "2026-11-12T03:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178612,
-      "homeTeamName": "ABBOTSFORD MHA U15 C2",
-      "awayTeamId": 178600,
-      "awayTeamName": "CHILLIWACK MHA U15 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "MSA Arena"
-    },
-    {
       "id": 935316,
       "number": "U15L9031",
       "date": "2026-11-11",
@@ -5039,6 +5022,23 @@
       "arena": "Aldergrove Community Centre 1"
     },
     {
+      "id": 935301,
+      "number": "U15L9040",
+      "date": "2026-11-08",
+      "startTime": "2026-11-09T03:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178613,
+      "homeTeamName": "ABBOTSFORD MHA U15 C3",
+      "awayTeamId": 178601,
+      "awayTeamName": "CHILLIWACK MHA U15 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Abbotsford Recreation Centre 1"
+    },
+    {
       "id": 935249,
       "number": "U15L9021",
       "date": "2026-11-08",
@@ -5100,10 +5100,10 @@
       "homeTeamName": "ABBOTSFORD MHA U15 C2",
       "awayTeamId": 178613,
       "awayTeamName": "ABBOTSFORD MHA U15 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -5117,10 +5117,10 @@
       "homeTeamName": "CHILLIWACK MHA U15 C2",
       "awayTeamId": 178602,
       "awayTeamName": "CHILLIWACK MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Chilliwack Coliseum 2 Red"
     },
     {
@@ -6841,7 +6841,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Harry Jerome Recreative Centre Harry Jerome Rec Centre"
     },
     {
@@ -6855,10 +6855,10 @@
       "homeTeamName": "RICHMOND RAVENS U15 A1",
       "awayTeamId": 177493,
       "awayTeamName": "TRI CITIES FEMALE IHA U15 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
@@ -6913,6 +6913,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "South Delta Recreation Centre Main Rink (SDRC)"
+    },
+    {
+      "id": 1010856,
+      "number": "U15L4231",
+      "date": "2026-12-21",
+      "startTime": "2026-12-21T19:30:00.000Z",
+      "groupId": 7000,
+      "groupName": "Gold Flight",
+      "homeTeamId": 177651,
+      "homeTeamName": "NORTH SHORE WINTER CLUB MHA FEMALE U15 C1",
+      "awayTeamId": 177657,
+      "awayTeamName": "NORTH SHORE FEMALE IHA U15 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Shore Winter Club Main Rink"
     },
     {
       "id": 1010844,
@@ -7083,23 +7100,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Bill Copeland Sports Centre BCSC"
-    },
-    {
-      "id": 1010849,
-      "number": "U15L4246",
-      "date": "2026-12-19",
-      "startTime": "2026-12-19T19:30:00.000Z",
-      "groupId": 7000,
-      "groupName": "Gold Flight",
-      "homeTeamId": 177651,
-      "homeTeamName": "NORTH SHORE WINTER CLUB MHA FEMALE U15 C1",
-      "awayTeamId": 177671,
-      "awayTeamName": "LANGLEY GIRLS IHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "North Shore Winter Club Main Rink"
     },
     {
       "id": 1010905,
@@ -7680,16 +7680,16 @@
       "arena": "Kensington Arena"
     },
     {
-      "id": 1010856,
-      "number": "U15L4231",
+      "id": 1010849,
+      "number": "U15L4246",
       "date": "2026-12-05",
       "startTime": "2026-12-05T19:30:00.000Z",
       "groupId": 7000,
       "groupName": "Gold Flight",
       "homeTeamId": 177651,
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA FEMALE U15 C1",
-      "awayTeamId": 177657,
-      "awayTeamName": "NORTH SHORE FEMALE IHA U15 C1",
+      "awayTeamId": 177671,
+      "awayTeamName": "LANGLEY GIRLS IHA U15 C1",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -8931,10 +8931,10 @@
       "homeTeamName": "ABBOTSFORD FEMALE HA U15 C1",
       "awayTeamId": 223846,
       "awayTeamName": "BURNABY FEMALE IHA U15 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -12097,10 +12097,10 @@
       "homeTeamName": "PORT COQUITLAM MHA U15 C2",
       "awayTeamId": 178591,
       "awayTeamName": "COQUITLAM MHA U15 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
@@ -18357,10 +18357,10 @@
       "homeTeamName": "WEST VANCOUVER MHA U15 C1",
       "awayTeamId": 178572,
       "awayTeamName": "SQUAMISH MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "West Vancouver Ice Arena"
     },
     {
@@ -19039,10 +19039,10 @@
       "homeTeamName": "VANCOUVER MHA U15 C4",
       "awayTeamId": 178560,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U15 C6",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "PNE Agrodome"
     },
     {
@@ -25122,6 +25122,23 @@
       "arena": "Planet Ice Delta Canadian "
     },
     {
+      "id": 1017151,
+      "number": "U15PQA127",
+      "date": "2026-11-20",
+      "startTime": "2026-11-20T23:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 233657,
+      "homeTeamName": "JR KRAKEN 14U AAA (NAPHL-PNAHA)",
+      "awayTeamId": 179451,
+      "awayTeamName": "GREATER VANCOUVER CANADIANS U15 AAA",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Burnaby Winter Club Main"
+    },
+    {
       "id": 1017141,
       "number": "U15PQA126",
       "date": "2026-11-20",
@@ -25137,23 +25154,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Burnaby Winter Club Main"
-    },
-    {
-      "id": 1017151,
-      "number": "U15PQA127",
-      "date": "2026-11-20",
-      "startTime": "2026-11-20T19:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 233657,
-      "homeTeamName": "JR KRAKEN 14U AAA (NAPHL-PNAHA)",
-      "awayTeamId": 179451,
-      "awayTeamName": "GREATER VANCOUVER CANADIANS U15 AAA",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Planet Ice Delta Canadian "
     },
     {
       "id": 1017138,

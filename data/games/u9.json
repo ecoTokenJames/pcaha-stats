@@ -374,7 +374,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Burnaby Winter Club Activity"
+      "arena": "Burnaby Winter Club Main"
     },
     {
       "id": 1009367,
@@ -391,7 +391,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Burnaby Winter Club Activity"
+      "arena": "Burnaby Winter Club Main"
     },
     {
       "id": 1005343,
@@ -468,15 +468,15 @@
       "startTime": "2026-12-06T15:00:00.000Z",
       "groupId": 7034,
       "groupName": "Blue Major",
-      "homeTeamId": 177943,
-      "homeTeamName": "LANGLEY MHA U9 C14",
-      "awayTeamId": 178107,
-      "awayTeamName": "BURNABY WINTER CLUB U9 C1",
+      "homeTeamId": 178107,
+      "homeTeamName": "BURNABY WINTER CLUB U9 C1",
+      "awayTeamId": 177943,
+      "awayTeamName": "LANGLEY MHA U9 C14",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Burnaby Winter Club Activity"
+      "arena": "Burnaby Winter Club Main"
     },
     {
       "id": 998174,

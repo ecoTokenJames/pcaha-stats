@@ -640,10 +640,10 @@
       "homeTeamName": "CLOVERDALE MHA (1) U18 A3 TIER 3 (U17A)",
       "awayTeamId": 178626,
       "awayTeamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Cloverdale Arena"
     },
     {
