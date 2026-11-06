@@ -297,6 +297,15 @@
     "endDate": "2027-02-04"
   },
   {
+    "id": 203110,
+    "name": "REMEMBRANCE DAY CLASSIC",
+    "divisionName": "U11",
+    "categoryName": "U11 SELECT",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-15"
+  },
+  {
     "id": 203034,
     "name": "MORGAN RIELLY U11 TOURNAMENT",
     "divisionName": "U11",
@@ -411,7 +420,7 @@
     "categoryName": "U13 A",
     "scheduleType": "Placement",
     "startDate": "2026-10-03",
-    "endDate": "2026-11-09"
+    "endDate": "2026-11-04"
   },
   {
     "id": 199302,
