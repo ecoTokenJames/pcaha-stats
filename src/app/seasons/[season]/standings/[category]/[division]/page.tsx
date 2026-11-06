@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   getFilteredStandings,
   getDivisionsForCategory,
@@ -124,29 +125,36 @@ export default async function DivisionStandingsPage({
     notFound();
   }
 
-  const standings = getFilteredStandings(divName, category as HockeyCategory, season);
+  // Tournaments have their own tab; standings are the season's tables only
+  const standings = Object.values(
+    getFilteredStandings(divName, category as HockeyCategory, season)
+  ).filter((s) => getScheduleType(s) !== "Tournament");
   const divisionGames = getDivisionGames(divName, season);
   // Results are all kept; upcoming games only for the next two weeks
   const upcomingCutoff = daysFromNow(14);
 
-  if (Object.keys(standings).length === 0) {
+  if (standings.length === 0) {
     return (
       <div className="text-center py-12 text-gray-500">
-        No standings data for {divName} {category}.
+        No league or tiering standings for {divName} {category}. Tournament results are on the{" "}
+        <Link href={`${seasonBase(season)}/tournaments`} className="text-blue-900 underline">
+          Tournaments
+        </Link>{" "}
+        page.
       </div>
     );
   }
 
-  // Group schedules by type (League, Playoffs, Placement, Tournament); other leagues apart
+  // Group schedules by type (League, Playoffs, Placement); other leagues apart
   const grouped: Record<string, ScheduleStandings[]> = {};
-  for (const data of Object.values(standings)) {
+  for (const data of standings) {
     const type = isOtherLeague(data) ? OTHER_LEAGUES : getScheduleType(data);
     if (!grouped[type]) grouped[type] = [];
     grouped[type].push(data);
   }
 
-  // Whatever is being played right now goes first (e.g. tiering in the fall,
-  // playoffs in the spring), then what's coming up, then what's finished.
+  // Regular season and tiering always lead, whichever is being played now on top
+  // (tiering in the fall, then the league); playoffs next, other leagues last.
   const PHASE_RANK = { current: 0, upcoming: 1, unknown: 1, finished: 2 };
   const scheduleRank = (s: ScheduleStandings) =>
     PHASE_RANK[getSchedulePhase(s)];
@@ -154,12 +162,16 @@ export default async function DivisionStandingsPage({
     Math.min(...grouped[type].map(scheduleRank));
   // Among sections that haven't started, the one starting soonest goes first
   const sectionStart = (type: string) =>
-    grouped[type].map((s) => s.startDate ?? "").sort()[0] ?? "";
-  const typeOrder = ["League", "Playoffs", "Placement", "Tournament"];
-  const isLast = (type: string) => (type === OTHER_LEAGUES ? 1 : 0);
+    grouped[type]
+      .filter((s) => getSchedulePhase(s) !== "finished")
+      .map((s) => s.startDate ?? "")
+      .sort()[0] ?? "";
+  const typeOrder = ["League", "Playoffs", "Placement"];
+  const SECTION_GROUP: Record<string, number> = { League: 0, Placement: 0, Playoffs: 1 };
+  const group = (type: string) => SECTION_GROUP[type] ?? 2;
   const sortedTypes = Object.keys(grouped).sort(
     (a, b) =>
-      isLast(a) - isLast(b) ||
+      group(a) - group(b) ||
       sectionRank(a) - sectionRank(b) ||
       (sectionRank(a) === PHASE_RANK.upcoming
         ? sectionStart(a).localeCompare(sectionStart(b))
