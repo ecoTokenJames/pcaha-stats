@@ -14686,6 +14686,23 @@
       "arena": "Port Moody Recreation Complex 1"
     },
     {
+      "id": 968167,
+      "number": "U18L5023",
+      "date": "2026-11-10",
+      "startTime": "2026-11-11T04:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177890,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C3",
+      "awayTeamId": 177897,
+      "awayTeamName": "PORT COQUITLAM MHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Jeep Blue"
+    },
+    {
       "id": 968288,
       "number": "U18L5061",
       "date": "2026-11-10",
@@ -15347,23 +15364,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Planet Ice Coquitlam 1 Mars"
-    },
-    {
-      "id": 968167,
-      "number": "U18L5023",
-      "date": "2026-10-25",
-      "startTime": "2026-10-26T04:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177890,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C3",
-      "awayTeamId": 177897,
-      "awayTeamName": "PORT COQUITLAM MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "awaiting",
-      "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
       "id": 968178,
@@ -26194,7 +26194,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Cloverdale Arena"
     }
   ],

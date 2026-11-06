@@ -31941,7 +31941,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Langley Sportsplex 4"
     },
     {
@@ -31958,7 +31958,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Langley Sportsplex 3"
     }
   ],
