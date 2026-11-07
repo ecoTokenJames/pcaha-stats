@@ -394,6 +394,23 @@
       "arena": "Burnaby Winter Club Main"
     },
     {
+      "id": 1022955,
+      "number": "U9E8021",
+      "date": "2027-01-16",
+      "startTime": "2027-01-16T15:00:00.000Z",
+      "groupId": 7034,
+      "groupName": "Blue Major",
+      "homeTeamId": 178109,
+      "homeTeamName": "ARBUTUS CLUB U9 C1",
+      "awayTeamId": 178026,
+      "awayTeamName": "SQUAMISH MHA U9 C1 MAJOR",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Burnaby Winter Club Training"
+    },
+    {
       "id": 1005343,
       "number": "U9E8016",
       "date": "2027-01-09",
