@@ -2808,6 +2808,23 @@
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
+      "id": 1014092,
+      "number": "U13L6303",
+      "date": "2026-11-12",
+      "startTime": "2026-11-13T01:30:00.000Z",
+      "groupId": 7019,
+      "groupName": "Orange",
+      "homeTeamId": 178322,
+      "homeTeamName": "LANGLEY MHA U13 C1",
+      "awayTeamId": 178349,
+      "awayTeamName": "SOUTH DELTA MHA U13 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Langley Sportsplex 3"
+    },
+    {
       "id": 1014054,
       "number": "U13L6704",
       "date": "2026-11-11",
@@ -2874,23 +2891,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Cloverdale Arena"
-    },
-    {
-      "id": 1014092,
-      "number": "U13L6303",
-      "date": "2026-11-08",
-      "startTime": "2026-11-08T23:45:00.000Z",
-      "groupId": 7019,
-      "groupName": "Orange",
-      "homeTeamId": 178322,
-      "homeTeamName": "LANGLEY MHA U13 C1",
-      "awayTeamId": 178349,
-      "awayTeamName": "SOUTH DELTA MHA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Langley Sportsplex 2"
     },
     {
       "id": 1014098,
@@ -2988,10 +2988,10 @@
       "homeTeamName": "SURREY MHA U13 C2 SY2",
       "awayTeamId": 178309,
       "awayTeamName": "SEMIAHMOO MHA U13 C2 (SE2)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 15,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #2"
     },
     {
@@ -3005,10 +3005,10 @@
       "homeTeamName": "SURREY MHA U13 C1 SY1",
       "awayTeamId": 178354,
       "awayTeamName": "SOUTH DELTA MHA U13 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Surrey Sport & Ice Complex Rink #2"
     }
   ],
@@ -4486,10 +4486,10 @@
       "homeTeamName": "ALDERGROVE MHA U13 C3",
       "awayTeamId": 178380,
       "awayTeamName": "CHILLIWACK MHA U13 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Aldergrove Community Centre 1"
     },
     {
@@ -6435,23 +6435,6 @@
   ],
   "199397": [
     {
-      "id": 1011038,
-      "number": "U13L4015",
-      "date": "2026-12-21",
-      "startTime": "2026-12-22T00:00:00.000Z",
-      "groupId": 7007,
-      "groupName": "Tier 1",
-      "homeTeamId": 177522,
-      "homeTeamName": "MEADOW RIDGE FEMALE MHA U13 A1",
-      "awayTeamId": 177517,
-      "awayTeamName": "NORTH SHORE FEMALE IHA U13 A1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Planet Ice Maple Ridge 2"
-    },
-    {
       "id": 1011044,
       "number": "U13L4020",
       "date": "2026-12-21",
@@ -7438,6 +7421,23 @@
       "arena": "Port Coquitlam Community Centre Arena 3"
     },
     {
+      "id": 1011038,
+      "number": "U13L4015",
+      "date": "2026-11-21",
+      "startTime": "2026-11-21T21:15:00.000Z",
+      "groupId": 7007,
+      "groupName": "Tier 1",
+      "homeTeamId": 177522,
+      "homeTeamName": "MEADOW RIDGE FEMALE MHA U13 A1",
+      "awayTeamId": 177517,
+      "awayTeamName": "NORTH SHORE FEMALE IHA U13 A1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Langley Sportsplex 2"
+    },
+    {
       "id": 1011059,
       "number": "U13L4049",
       "date": "2026-11-21",
@@ -7805,10 +7805,10 @@
       "homeTeamName": "BURNABY FEMALE IHA U13 A1",
       "awayTeamId": 177511,
       "awayTeamName": "RICHMOND RAVENS U13 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Bill Copeland Sports Centre BCSC"
     },
     {
@@ -7822,10 +7822,10 @@
       "homeTeamName": "SEATTLE RED HAWKS 12U A (PCAHA U13 A1)",
       "awayTeamId": 177517,
       "awayTeamName": "NORTH SHORE FEMALE IHA U13 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Lynnwood Ice Centre 1"
     },
     {
@@ -7839,10 +7839,10 @@
       "homeTeamName": "RICHMOND RAVENS U13 A2",
       "awayTeamId": 224933,
       "awayTeamName": "SEATTLE RED HAWKS 12U A (PCAHA U13 A2)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Pond"
     },
     {
@@ -12249,7 +12249,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -12266,7 +12266,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Rosemary Brown Recreation Centre A"
     },
     {
@@ -12280,10 +12280,10 @@
       "homeTeamName": "TRI CITIES FEMALE IHA U13 C3",
       "awayTeamId": 177641,
       "awayTeamName": "VANCOUVER FEMALE IHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
@@ -12297,10 +12297,10 @@
       "homeTeamName": "MEADOW RIDGE FEMALE MHA U13 C1",
       "awayTeamId": 177644,
       "awayTeamName": "NORTH SHORE FEMALE IHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
@@ -12314,10 +12314,10 @@
       "homeTeamName": "SURREY FEMALE HA U13 C3",
       "awayTeamId": 177642,
       "awayTeamName": "SURREY FEMALE HA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Surrey Sport & Leisure Centre Arena 2"
     },
     {
@@ -14356,10 +14356,10 @@
       "homeTeamName": "COQUITLAM MHA U13 C2",
       "awayTeamId": 178352,
       "awayTeamName": "RIDGE MEADOWS MHA U13 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Poirier Sport & Leisure Complex 2"
     },
     {
@@ -14373,10 +14373,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U13 C3",
       "awayTeamId": 178364,
       "awayTeamName": "PORT COQUITLAM MHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
@@ -14390,10 +14390,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U13 C6",
       "awayTeamId": 178366,
       "awayTeamName": "PORT MOODY AHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
@@ -14407,10 +14407,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U13 C5",
       "awayTeamId": 178367,
       "awayTeamName": "PORT COQUITLAM MHA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
@@ -20888,10 +20888,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U13 C1",
       "awayTeamId": 178362,
       "awayTeamName": "NORTH VANCOUVER MHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Canlan Ice Sports North Shore 2 Blue"
     },
     {
@@ -20905,10 +20905,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U13 C4",
       "awayTeamId": 178314,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Canlan Ice Sports North Shore 1 Red"
     },
     {
@@ -21369,7 +21369,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Bill Copeland Sports Centre BCSC"
     },
     {
@@ -21386,7 +21386,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Arbutus Club Ice Rink"
     },
     {
@@ -21400,10 +21400,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA U13 C7",
       "awayTeamId": 178396,
       "awayTeamName": "BURNABY MHA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 11,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Kerrisdale Cyclone Taylor Arena"
     },
     {
@@ -21417,10 +21417,10 @@
       "homeTeamName": "BURNABY MHA U13 C4",
       "awayTeamId": 226975,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U13 C9",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Rosemary Brown Recreation Centre A"
     },
     {
@@ -21434,10 +21434,10 @@
       "homeTeamName": "NEW WESTMINSTER MHA U13 C3",
       "awayTeamId": 178316,
       "awayTeamName": "VANCOUVER MHA U13 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Queens Park Arena 1"
     },
     {
@@ -21451,10 +21451,10 @@
       "homeTeamName": "BURNABY MHA U13 C2",
       "awayTeamId": 178334,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 14,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Kensington Arena"
     },
     {
@@ -25091,10 +25091,10 @@
       "homeTeamName": "PCEHL U13 FNVE MOUNTAINEERS",
       "awayTeamId": 187963,
       "awayTeamName": "PCEHL U13 BURNABY WINTER CLUB",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
@@ -25108,10 +25108,10 @@
       "homeTeamName": "PCEHL U13 SEA TO SKY REIGN",
       "awayTeamId": 188069,
       "awayTeamName": "PCEHL U13 VANCOUVER ORCAS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Canlan Ice Sports North Shore 1 Red"
     },
     {
@@ -25125,10 +25125,10 @@
       "homeTeamName": "PCEHL U13 SOUTH FRASER ALLIANCE",
       "awayTeamId": 186601,
       "awayTeamName": "PCEHL U13 WEST VALLEY WRANGLERS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Surrey Sport & Leisure Centre Arena 1"
     },
     {
@@ -30884,7 +30884,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Port Moody Recreation Complex 2"
+      "arena": "Port Moody Recreation Complex 1"
     },
     {
       "id": 1002286,
@@ -30999,10 +30999,10 @@
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA (1) U13 A2 TIER 2",
       "awayTeamId": 231088,
       "awayTeamName": "PJW 12U AA",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 2"
     },
     {
@@ -31016,10 +31016,10 @@
       "homeTeamName": "BURNABY MHA (1) U13 A1 TIER 1",
       "awayTeamId": 178190,
       "awayTeamName": "ALDERGROVE MHA (3) U13 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -31033,10 +31033,10 @@
       "homeTeamName": "MISSION MHA (3) U13 A1 TIER 3",
       "awayTeamId": 178162,
       "awayTeamName": "PORT MOODY AHA (2) U13 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -31050,10 +31050,10 @@
       "homeTeamName": "BURNABY MHA (1) U13 A1 TIER 1",
       "awayTeamId": 178177,
       "awayTeamName": "MISSION MHA (3) U13 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 2"
     },
     {
@@ -31208,7 +31208,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Port Moody Recreation Complex 2"
     },
     {
@@ -31225,7 +31225,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -31239,10 +31239,10 @@
       "homeTeamName": "JR KRAKEN 12U B (PNAHA)",
       "awayTeamId": 176727,
       "awayTeamName": "PENINSULA MHA (3) U13 TIER 3 EAGLES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -31256,10 +31256,10 @@
       "homeTeamName": "PORT MOODY AHA (2) U13 A2 TIER 3",
       "awayTeamId": 229669,
       "awayTeamName": "PJW 12U A",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {
@@ -31273,10 +31273,10 @@
       "homeTeamName": "SOUTH DELTA MHA (2) U13 A2 TIER 3 STORM",
       "awayTeamId": 230727,
       "awayTeamName": "JR KRAKEN 12U B (PNAHA)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 2"
     },
     {
@@ -31390,10 +31390,10 @@
       "startTime": "2026-11-08T19:45:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
-      "awayTeamId": null,
-      "awayTeamName": "TBD",
+      "homeTeamId": 178323,
+      "homeTeamName": "LANGLEY MHA U13 C2",
+      "awayTeamId": 223655,
+      "awayTeamName": "WCAHA 12UC (PCAHA U13 C1)",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -31407,10 +31407,10 @@
       "startTime": "2026-11-08T19:15:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
-      "awayTeamId": null,
-      "awayTeamName": "TBD",
+      "homeTeamId": 178373,
+      "homeTeamName": "COQUITLAM MHA U13 C3",
+      "awayTeamId": 178349,
+      "awayTeamName": "SOUTH DELTA MHA U13 C3",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -31424,10 +31424,10 @@
       "startTime": "2026-11-08T19:00:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
-      "awayTeamId": null,
-      "awayTeamName": "TBD",
+      "homeTeamId": 178368,
+      "homeTeamName": "NORTH DELTA MHA U13 C1",
+      "awayTeamId": 178360,
+      "awayTeamName": "NORTH VANCOUVER MHA U13 C3",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -31441,10 +31441,10 @@
       "startTime": "2026-11-08T17:30:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
-      "awayTeamId": null,
-      "awayTeamName": "TBD",
+      "homeTeamId": 178318,
+      "homeTeamName": "LANGLEY MHA U13 C5",
+      "awayTeamId": 178310,
+      "awayTeamName": "SEMIAHMOO MHA U13 C5 (SE5)",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -31475,8 +31475,8 @@
       "startTime": "2026-11-08T14:30:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
+      "homeTeamId": 221132,
+      "homeTeamName": "ABBOTSFORD MHA U13 C6",
       "awayTeamId": null,
       "awayTeamName": "TBD",
       "homeScore": null,
@@ -31492,14 +31492,14 @@
       "startTime": "2026-11-07T23:30:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
-      "awayTeamId": null,
-      "awayTeamName": "TBD",
-      "homeScore": null,
-      "awayScore": null,
+      "homeTeamId": 178328,
+      "homeTeamName": "RICHMOND JETS MHA U13 C3",
+      "awayTeamId": 176699,
+      "awayTeamName": "VICTORIA MHA (1) U13 C1 ADMIRALS",
+      "homeScore": 6,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 1"
     },
     {
@@ -31509,14 +31509,14 @@
       "startTime": "2026-11-07T22:45:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
-      "awayTeamId": null,
-      "awayTeamName": "TBD",
-      "homeScore": null,
-      "awayScore": null,
+      "homeTeamId": 226439,
+      "homeTeamName": "NANAIMO MHA (1) U13 'C'7 CLIPPERS",
+      "awayTeamId": 178343,
+      "awayTeamName": "VANCOUVER MHA U13 C4",
+      "homeScore": 6,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 2"
     },
     {
@@ -31526,14 +31526,14 @@
       "startTime": "2026-11-07T22:30:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
-      "awayTeamId": null,
-      "awayTeamName": "TBD",
-      "homeScore": null,
-      "awayScore": null,
+      "homeTeamId": 176690,
+      "homeTeamName": "VICTORIA MHA (1) U13 C4 ADMIRALS",
+      "awayTeamId": 178322,
+      "awayTeamName": "LANGLEY MHA U13 C1",
+      "homeScore": 4,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 2"
     },
     {
@@ -31543,14 +31543,14 @@
       "startTime": "2026-11-07T21:00:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
-      "awayTeamId": null,
-      "awayTeamName": "TBD",
-      "homeScore": null,
-      "awayScore": null,
+      "homeTeamId": 221132,
+      "homeTeamName": "ABBOTSFORD MHA U13 C6",
+      "awayTeamId": 176674,
+      "awayTeamName": "JUAN DE FUCA MHA (2) U13 C5 GRIZZLIES",
+      "homeScore": 4,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 3"
     },
     {
@@ -31564,10 +31564,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U13 C3",
       "awayTeamId": 226439,
       "awayTeamName": "NANAIMO MHA (1) U13 'C'7 CLIPPERS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 3"
     },
     {
@@ -31581,10 +31581,10 @@
       "homeTeamName": "COQUITLAM MHA U13 C3",
       "awayTeamId": 176699,
       "awayTeamName": "VICTORIA MHA (1) U13 C1 ADMIRALS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 1"
     },
     {
@@ -31598,10 +31598,10 @@
       "homeTeamName": "RICHMOND JETS MHA U13 C3",
       "awayTeamId": 178349,
       "awayTeamName": "SOUTH DELTA MHA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 9,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 2"
     },
     {
@@ -31615,10 +31615,10 @@
       "homeTeamName": "LANGLEY MHA U13 C2",
       "awayTeamId": 178343,
       "awayTeamName": "VANCOUVER MHA U13 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 3"
     },
     {
@@ -31632,10 +31632,10 @@
       "homeTeamName": "SEMIAHMOO MHA U13 C5 (SE5)",
       "awayTeamId": 221132,
       "awayTeamName": "ABBOTSFORD MHA U13 C6",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 1"
     },
     {
@@ -31649,10 +31649,10 @@
       "homeTeamName": "LANGLEY MHA U13 C1",
       "awayTeamId": 178368,
       "awayTeamName": "NORTH DELTA MHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 2"
     },
     {
@@ -31666,10 +31666,10 @@
       "homeTeamName": "JUAN DE FUCA MHA (2) U13 C5 GRIZZLIES",
       "awayTeamId": 223655,
       "awayTeamName": "WCAHA 12UC (PCAHA U13 C1)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 16,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 1"
     },
     {
@@ -31683,10 +31683,10 @@
       "homeTeamName": "LANGLEY MHA U13 C5",
       "awayTeamId": 176690,
       "awayTeamName": "VICTORIA MHA (1) U13 C4 ADMIRALS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Langley Sportsplex 2"
     },
     {
@@ -32299,10 +32299,10 @@
       "homeTeamName": "SUNSHINE COAST MHA U13 C2",
       "awayTeamId": 178325,
       "awayTeamName": "ABBOTSFORD MHA U13 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -32316,10 +32316,10 @@
       "homeTeamName": "SUNSHINE COAST MHA U13 C1",
       "awayTeamId": 178350,
       "awayTeamName": "RIDGE MEADOWS MHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -32333,10 +32333,10 @@
       "homeTeamName": "NEW WESTMINSTER MHA U13 C1",
       "awayTeamId": 178320,
       "awayTeamName": "SUNSHINE COAST MHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Gibsons & Area Community Centre"
     },
     {
@@ -32350,10 +32350,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U13 C2",
       "awayTeamId": 178321,
       "awayTeamName": "LANGLEY MHA U13 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Gibsons & Area Community Centre"
     },
     {
@@ -32367,10 +32367,10 @@
       "homeTeamName": "ABBOTSFORD MHA U13 C5",
       "awayTeamId": 178374,
       "awayTeamName": "NEW WESTMINSTER MHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -32384,10 +32384,10 @@
       "homeTeamName": "LANGLEY MHA U13 C4",
       "awayTeamId": 178347,
       "awayTeamName": "SUNSHINE COAST MHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -32508,7 +32508,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -32522,10 +32522,10 @@
       "homeTeamName": "SUNSHINE COAST MHA FEMALE U13 C1",
       "awayTeamId": 220148,
       "awayTeamName": "WHISTLER MHA FEMALE U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -32539,10 +32539,10 @@
       "homeTeamName": "TRI CITIES FEMALE IHA U13 C4",
       "awayTeamId": 177633,
       "awayTeamName": "VANCOUVER FEMALE IHA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -32556,10 +32556,10 @@
       "homeTeamName": "LANGLEY GIRLS IHA U13 C1",
       "awayTeamId": 215418,
       "awayTeamName": "SUNSHINE COAST MHA FEMALE U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -32573,10 +32573,10 @@
       "homeTeamName": "SURREY FEMALE HA U13 C1",
       "awayTeamId": 177631,
       "awayTeamName": "TRI CITIES FEMALE IHA U13 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 10,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Gibsons & Area Community Centre"
     },
     {
@@ -32590,10 +32590,10 @@
       "homeTeamName": "WHISTLER MHA FEMALE U13 C1",
       "awayTeamId": 177656,
       "awayTeamName": "LANGLEY GIRLS IHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Gibsons & Area Community Centre"
     },
     {
@@ -33136,10 +33136,10 @@
       "homeTeamName": "POWELL RIVER MHA (3) U13 C1 FEMALE",
       "awayTeamId": 177646,
       "awayTeamName": "TRI CITIES FEMALE IHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 4"
     },
     {
@@ -33153,10 +33153,10 @@
       "homeTeamName": "CHILLIWACK MHA FEMALE U13 C1",
       "awayTeamId": 178872,
       "awayTeamName": "KELOWNA MHA (1) U13 FEMALE REC TEAM 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 1"
     },
     {
@@ -33170,10 +33170,10 @@
       "homeTeamName": "RICHMOND RAVENS U13 C1",
       "awayTeamId": 177637,
       "awayTeamName": "BURNABY FEMALE IHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 11,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 1"
     },
     {
@@ -33187,10 +33187,10 @@
       "homeTeamName": "OCEANSIDE MHA (3) U13 FEMALE C1 ICEBREAKERS",
       "awayTeamId": 178871,
       "awayTeamName": "G. VERNON MHA (2) U13 FEMALE REC",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 6"
     },
     {
@@ -33204,10 +33204,10 @@
       "homeTeamName": "BURNABY FEMALE IHA U13 C3",
       "awayTeamId": 235803,
       "awayTeamName": "SNO-KING 12U C Girls Landgraf (MHL)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 3"
     },
     {
@@ -33221,10 +33221,10 @@
       "homeTeamName": "100 MILE HOUSE U13 (4) FEMALE REC",
       "awayTeamId": 176468,
       "awayTeamName": "NANAIMO MHA (1) U13 FEMALE 'C'1 SURGE",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 6"
     },
     {
@@ -33238,10 +33238,10 @@
       "homeTeamName": "SJHA 12U C RED HAWKS (MHL)",
       "awayTeamId": 235807,
       "awayTeamName": "SNO-KING 12U C Girls (Remembrance Day)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 2"
     },
     {
@@ -33255,10 +33255,10 @@
       "homeTeamName": "BURNABY FEMALE IHA U13 C2",
       "awayTeamId": 223853,
       "awayTeamName": "MEADOW RIDGE FEMALE MHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 4"
     }
   ],

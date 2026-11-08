@@ -9,15 +9,6 @@
     "endDate": "2026-10-11"
   },
   {
-    "id": 199253,
-    "name": "FVW U9C Minor League",
-    "divisionName": "U9",
-    "categoryName": "U9 C",
-    "scheduleType": "League",
-    "startDate": "2026-11-16",
-    "endDate": "2027-03-12"
-  },
-  {
     "id": 201974,
     "name": "FVE U9 League",
     "divisionName": "U9",
@@ -36,6 +27,15 @@
     "endDate": "2027-03-30"
   },
   {
+    "id": 199261,
+    "name": "FVW U9C League",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-27",
+    "endDate": "2027-03-11"
+  },
+  {
     "id": 202007,
     "name": "LG U9 League",
     "divisionName": "U9",
@@ -52,15 +52,6 @@
     "scheduleType": "League",
     "startDate": "2026-11-27",
     "endDate": "2027-03-30"
-  },
-  {
-    "id": 199261,
-    "name": "FVW U9C League",
-    "divisionName": "U9",
-    "categoryName": "U9 C",
-    "scheduleType": "League",
-    "startDate": "2026-12-01",
-    "endDate": "2027-03-12"
   },
   {
     "id": 199393,
