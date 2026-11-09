@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
 };
 
-export const CONTACT_EMAIL = "contact@pcahastats.com";
+export const CONTACT_EMAIL = "pcahastats@proton.me";
 
 export default function ContactPage() {
   const removalSubject = encodeURIComponent("Name removal request");
