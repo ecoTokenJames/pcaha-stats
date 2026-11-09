@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
-import { LevelUpFooter } from "@/components/LevelUpAd";
 import { StatsChat } from "@/components/StatsChat";
 import { SEASON } from "@/lib/data";
 
@@ -103,7 +102,6 @@ export default function RootLayout({
               Contact us · Remove a player&apos;s name
             </a>
           </p>
-          <LevelUpFooter />
         </footer>
         {/* The assistant appears once its OpenImpact key is set in Vercel */}
         {process.env.OPENIMPACT_API_KEY ? <StatsChat /> : null}

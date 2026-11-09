@@ -18,7 +18,6 @@ import {
 } from "@/lib/data";
 import { TeamRosterTable } from "@/components/TeamRosterTable";
 import { GamesList } from "@/components/GamesList";
-import { LevelUpCard } from "@/components/LevelUpAd";
 import { SponsorStrip } from "@/components/SponsorStrip";
 import { DismissibleNote } from "@/components/DismissibleNote";
 
@@ -208,9 +207,6 @@ export default async function TeamDetailPage({
 
       {/* Player Roster — season totals across all schedules */}
       <TeamRosterTable players={mergedPlayers} />
-
-      {/* Sponsor: right where parents are looking at their player's numbers */}
-      <LevelUpCard teamName={teamInfo.teamName} />
 
       {/* Every game this team is in: league, tiering, playoffs, tournaments */}
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
