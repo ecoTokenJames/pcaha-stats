@@ -129,7 +129,7 @@ export default async function LeadersDivisionPage({
 
   return (
     <div>
-      <SponsorStrip page="leaders" division={divName} levelUpLead="Want to top this list?" />
+      <SponsorStrip page="leaders" division={divName} />
       <DismissibleNote id="leaders-tournaments" className="mb-4">
         <p>
         <span className="font-semibold">Leaders count league, tiering and playoff games.</span>{" "}

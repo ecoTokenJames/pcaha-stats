@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { BRAND_TEXT, levelUpLink, SponsorTag } from "./LevelUpAd";
 
 type StatCategory = "points" | "goals" | "assists" | "pim";
 
@@ -259,25 +258,6 @@ export function LeadersTable({
         )}
       </div>
 
-      {/* Sponsor line below the leaders table */}
-      {sortedPlayers.length > 0 && (
-        <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-700">
-          <SponsorTag />
-          <span>
-            <span className="font-semibold text-gray-900">Want to be on this list?</span>{" "}
-            Players climb with Level Up&apos;s at-home drills.{" "}
-            <a
-              href={levelUpLink("leaders-row")}
-              target="_blank"
-              rel="sponsored noopener"
-              className="font-semibold underline"
-              style={{ color: BRAND_TEXT }}
-            >
-              Try it free →
-            </a>
-          </span>
-        </p>
-      )}
     </div>
   );
 }

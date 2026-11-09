@@ -1,5 +1,5 @@
 import { sponsorHref } from "@/lib/sponsor-links";
-import { SponsorTag } from "./LevelUpAd";
+import { SponsorTag } from "./SponsorTag";
 import { ShowUntil } from "./ShowUntil";
 
 /**
@@ -29,7 +29,7 @@ export function falconsAdActive(now: number = Date.now()): boolean {
 /** Falcons spring teams are for 2013–2018 birth years: U9 through U15 this season. */
 export const FALCONS_DIVISIONS = ["U9", "U10", "U11", "U12", "U13", "U14", "U15"];
 
-// Falcons accent (from the crest), used the same way Level Up uses its orange
+// Falcons accent (from the crest)
 const FALCONS_BLACK = "#111111";
 
 interface FalconsSession {
