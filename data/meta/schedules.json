@@ -1413,15 +1413,6 @@
     "endDate": "2026-11-09"
   },
   {
-    "id": 201963,
-    "name": "PL U18C League",
-    "divisionName": "U18",
-    "categoryName": "U18 C",
-    "scheduleType": "League",
-    "startDate": "2026-11-09",
-    "endDate": "2027-02-04"
-  },
-  {
     "id": 201706,
     "name": "U18A League",
     "divisionName": "U18",
@@ -1458,6 +1449,24 @@
     "endDate": "2026-11-15"
   },
   {
+    "id": 201963,
+    "name": "PL U18C League",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-14",
+    "endDate": "2026-12-18"
+  },
+  {
+    "id": 203171,
+    "name": "JOE MORELLATO MEMORIAL SCHOLARSHIP TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-05",
+    "endDate": "2026-12-14"
+  },
+  {
     "id": 199310,
     "name": "FVE U18C Playoffs",
     "divisionName": "U18",
@@ -1474,6 +1483,15 @@
     "scheduleType": "Playoffs",
     "startDate": "2027-01-29",
     "endDate": "2027-03-30"
+  },
+  {
+    "id": 203173,
+    "name": "JIM FRYER MEMORIAL SCHOLARSHIP TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Tournament",
+    "startDate": "2027-01-30",
+    "endDate": "2027-01-30"
   },
   {
     "id": 199421,
