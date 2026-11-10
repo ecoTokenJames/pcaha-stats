@@ -1416,8 +1416,8 @@
     {
       "id": 1014083,
       "number": "U13L6731",
-      "date": "2027-01-06",
-      "startTime": "2027-01-07T02:00:00.000Z",
+      "date": "2027-01-08",
+      "startTime": "2027-01-09T01:15:00.000Z",
       "groupId": 7017,
       "groupName": "Red",
       "homeTeamId": 178368,
@@ -6911,6 +6911,23 @@
       "arena": "Lynnwood Ice Centre 1"
     },
     {
+      "id": 1011086,
+      "number": "U13L4103",
+      "date": "2026-12-05",
+      "startTime": "2026-12-06T03:15:00.000Z",
+      "groupId": 6996,
+      "groupName": "Tier 2",
+      "homeTeamId": 224933,
+      "homeTeamName": "SEATTLE RED HAWKS 12U A (PCAHA U13 A2)",
+      "awayTeamId": 177516,
+      "awayTeamName": "TRI CITIES FEMALE IHA U13 A2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Lynnwood Ice Centre 1"
+    },
+    {
       "id": 1011097,
       "number": "U13L4116",
       "date": "2026-12-05",
@@ -7776,23 +7793,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Bill Copeland Sports Centre BCSC"
-    },
-    {
-      "id": 1011086,
-      "number": "U13L4103",
-      "date": "2026-11-08",
-      "startTime": "2026-11-08T16:35:00.000Z",
-      "groupId": 6996,
-      "groupName": "Tier 2",
-      "homeTeamId": 224933,
-      "homeTeamName": "SEATTLE RED HAWKS 12U A (PCAHA U13 A2)",
-      "awayTeamId": 177516,
-      "awayTeamName": "TRI CITIES FEMALE IHA U13 A2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "awaiting",
-      "arena": "Lynnwood Ice Centre 1"
     },
     {
       "id": 1011033,
@@ -32049,23 +32049,6 @@
       "arena": "MSA Arena"
     },
     {
-      "id": 1024171,
-      "number": "U13L2555",
-      "date": "2026-12-20",
-      "startTime": "2026-12-21T01:00:00.000Z",
-      "groupId": 6981,
-      "groupName": "Flight 6",
-      "homeTeamId": 178133,
-      "homeTeamName": "SOUTH DELTA MHA (2) U13 A3 TIER 4 STORM",
-      "awayTeamId": 178172,
-      "awayTeamName": "NORTH SHORE WINTER CLUB MHA (1) U13 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Planet Ice Delta International"
-    },
-    {
       "id": 1024228,
       "number": "U13L1658",
       "date": "2026-12-20",
@@ -34735,6 +34718,23 @@
       "arena": "Kitsilano Community Centre Kitsilano Rink"
     },
     {
+      "id": 1024146,
+      "number": "U13L2515",
+      "date": "2026-12-05",
+      "startTime": "2026-12-06T01:30:00.000Z",
+      "groupId": 6981,
+      "groupName": "Flight 6",
+      "homeTeamId": 178169,
+      "homeTeamName": "NORTH VANCOUVER MHA (1) U13 A3 TIER 3",
+      "awayTeamId": 178133,
+      "awayTeamName": "SOUTH DELTA MHA (2) U13 A3 TIER 4 STORM",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Karen Magnussen Arena"
+    },
+    {
       "id": 1024077,
       "number": "U13L1930",
       "date": "2026-12-05",
@@ -36894,23 +36894,6 @@
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
-      "id": 1024146,
-      "number": "U13L2515",
-      "date": "2026-11-22",
-      "startTime": "2026-11-22T21:30:00.000Z",
-      "groupId": 6981,
-      "groupName": "Flight 6",
-      "homeTeamId": 178169,
-      "homeTeamName": "NORTH VANCOUVER MHA (1) U13 A3 TIER 3",
-      "awayTeamId": 178133,
-      "awayTeamName": "SOUTH DELTA MHA (2) U13 A3 TIER 4 STORM",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Harry Jerome Recreative Centre Rink"
-    },
-    {
       "id": 1024225,
       "number": "U13L1617",
       "date": "2026-11-22",
@@ -37351,23 +37334,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Rosemary Brown Recreation Centre B"
-    },
-    {
-      "id": 1023990,
-      "number": "U13L2216",
-      "date": "2026-11-21",
-      "startTime": "2026-11-21T18:30:00.000Z",
-      "groupId": 6980,
-      "groupName": "Flight 5",
-      "homeTeamId": 178131,
-      "homeTeamName": "SEMIAHMOO MHA (1) U13 A4 TIER 4",
-      "awayTeamId": 178191,
-      "awayTeamName": "ABBOTSFORD MHA (1) U13 A2 TIER 2 HAWKS",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Surrey Sport & Leisure Centre Arena 2"
     },
     {
       "id": 1024114,
@@ -38509,6 +38475,23 @@
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
+      "id": 1024171,
+      "number": "U13L2555",
+      "date": "2026-11-14",
+      "startTime": "2026-11-14T21:00:00.000Z",
+      "groupId": 6981,
+      "groupName": "Flight 6",
+      "homeTeamId": 178133,
+      "homeTeamName": "SOUTH DELTA MHA (2) U13 A3 TIER 4 STORM",
+      "awayTeamId": 178172,
+      "awayTeamName": "NORTH SHORE WINTER CLUB MHA (1) U13 A3 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Ladner Leisure Centre"
+    },
+    {
       "id": 1024092,
       "number": "U13L1306",
       "date": "2026-11-14",
@@ -38558,6 +38541,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Mission Leisure Centre North"
+    },
+    {
+      "id": 1023990,
+      "number": "U13L2216",
+      "date": "2026-11-14",
+      "startTime": "2026-11-14T18:30:00.000Z",
+      "groupId": 6980,
+      "groupName": "Flight 5",
+      "homeTeamId": 178131,
+      "homeTeamName": "SEMIAHMOO MHA (1) U13 A4 TIER 4",
+      "awayTeamId": 178191,
+      "awayTeamName": "ABBOTSFORD MHA (1) U13 A2 TIER 2 HAWKS",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Surrey Sport & Leisure Centre Arena 2"
     },
     {
       "id": 1024100,

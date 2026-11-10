@@ -27617,23 +27617,6 @@
       "arena": "The Arenas at LEC 1"
     },
     {
-      "id": 1024468,
-      "number": "U15L1628",
-      "date": "2026-11-29",
-      "startTime": "2026-11-29T20:45:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 177791,
-      "homeTeamName": "LANGLEY MHA (1) U15 A2 TIER 2 EAGLES",
-      "awayTeamId": 177792,
-      "awayTeamName": "RICHMOND JETS MHA (1) U15 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "The Arenas at LEC 1"
-    },
-    {
       "id": 1024368,
       "number": "U15L1046",
       "date": "2026-11-29",
@@ -28620,6 +28603,23 @@
       "arena": "The Arenas at LEC 1"
     },
     {
+      "id": 1024468,
+      "number": "U15L1628",
+      "date": "2026-11-22",
+      "startTime": "2026-11-22T20:45:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 177791,
+      "homeTeamName": "LANGLEY MHA (1) U15 A2 TIER 2 EAGLES",
+      "awayTeamId": 177792,
+      "awayTeamName": "RICHMOND JETS MHA (1) U15 A2 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "The Arenas at LEC 1"
+    },
+    {
       "id": 1024492,
       "number": "U15L1313",
       "date": "2026-11-22",
@@ -28837,7 +28837,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "postponed",
+      "status": "scheduled",
       "arena": "Canlan Ice Sports North Shore 3 Green"
     },
     {

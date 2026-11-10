@@ -2893,6 +2893,23 @@
       "arena": "Ladner Leisure Centre"
     },
     {
+      "id": 1013342,
+      "number": "U18L6303",
+      "date": "2026-11-29",
+      "startTime": "2026-11-30T03:15:00.000Z",
+      "groupId": 7019,
+      "groupName": "Orange",
+      "homeTeamId": 227580,
+      "homeTeamName": "SOUTH DELTA MHA U18 C4",
+      "awayTeamId": 177905,
+      "awayTeamName": "NORTH DELTA MHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "South Delta Recreation Centre Main Rink (SDRC)"
+    },
+    {
       "id": 1013235,
       "number": "U18L6716",
       "date": "2026-11-28",
@@ -3639,23 +3656,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sungod Recreation Centre"
-    },
-    {
-      "id": 1013342,
-      "number": "U18L6303",
-      "date": "2026-11-11",
-      "startTime": "2026-11-12T04:00:00.000Z",
-      "groupId": 7019,
-      "groupName": "Orange",
-      "homeTeamId": 227580,
-      "homeTeamName": "SOUTH DELTA MHA U18 C4",
-      "awayTeamId": 177905,
-      "awayTeamName": "NORTH DELTA MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Ladner Leisure Centre"
     },
     {
       "id": 1013247,
@@ -7013,6 +7013,23 @@
   ],
   "199420": [
     {
+      "id": 1010484,
+      "number": "U18L4034",
+      "date": "2026-12-23",
+      "startTime": "2026-12-24T03:15:00.000Z",
+      "groupId": 7007,
+      "groupName": "Tier 1",
+      "homeTeamId": 224945,
+      "homeTeamName": "SEATTLE RED HAWKS 19UAA (PCAHA U18 A1)",
+      "awayTeamId": 177502,
+      "awayTeamName": "NORTH SHORE FEMALE IHA U18 A1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Lynnwood Ice Centre 1"
+    },
+    {
       "id": 1010459,
       "number": "U18L4020",
       "date": "2026-12-23",
@@ -7336,6 +7353,23 @@
       "arena": "North Surrey Sport & Ice Complex Rink #2"
     },
     {
+      "id": 1010461,
+      "number": "U18L4009",
+      "date": "2026-12-10",
+      "startTime": "2026-12-11T02:35:00.000Z",
+      "groupId": 7007,
+      "groupName": "Tier 1",
+      "homeTeamId": 224945,
+      "homeTeamName": "SEATTLE RED HAWKS 19UAA (PCAHA U18 A1)",
+      "awayTeamId": 224232,
+      "awayTeamName": "SEATTLE RED HAWKS 16U AA (PCAHA U18 A2)",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Lynnwood Ice Centre 1"
+    },
+    {
       "id": 1010494,
       "number": "U18L4040",
       "date": "2026-12-08",
@@ -7487,23 +7521,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Poirier Sport & Leisure Complex 2"
-    },
-    {
-      "id": 1010484,
-      "number": "U18L4034",
-      "date": "2026-12-05",
-      "startTime": "2026-12-06T03:15:00.000Z",
-      "groupId": 7007,
-      "groupName": "Tier 1",
-      "homeTeamId": 224945,
-      "homeTeamName": "SEATTLE RED HAWKS 19UAA (PCAHA U18 A1)",
-      "awayTeamId": 177502,
-      "awayTeamName": "NORTH SHORE FEMALE IHA U18 A1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Lynnwood Ice Centre 1"
     },
     {
       "id": 1010507,
@@ -8099,23 +8116,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Poirier Sport & Leisure Complex 2"
-    },
-    {
-      "id": 1010461,
-      "number": "U18L4009",
-      "date": "2026-11-14",
-      "startTime": "2026-11-15T03:15:00.000Z",
-      "groupId": 7007,
-      "groupName": "Tier 1",
-      "homeTeamId": 224945,
-      "homeTeamName": "SEATTLE RED HAWKS 19UAA (PCAHA U18 A1)",
-      "awayTeamId": 224232,
-      "awayTeamName": "SEATTLE RED HAWKS 16U AA (PCAHA U18 A2)",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Lynnwood Ice Centre 1"
     },
     {
       "id": 1010527,
@@ -11182,6 +11182,23 @@
       "arena": "Poirier Sport & Leisure Complex 2"
     },
     {
+      "id": 1010621,
+      "number": "U18L4419",
+      "date": "2026-11-30",
+      "startTime": "2026-12-01T01:30:00.000Z",
+      "groupId": 6997,
+      "groupName": "Blue Flight",
+      "homeTeamId": 186647,
+      "homeTeamName": "DELTA FEMALE U18",
+      "awayTeamId": 177589,
+      "awayTeamName": "SURREY FEMALE HA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Tilbury Ice"
+    },
+    {
       "id": 1010729,
       "number": "U18L4869",
       "date": "2026-11-30",
@@ -11656,23 +11673,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sardis Sports Complex SSC1"
-    },
-    {
-      "id": 1010621,
-      "number": "U18L4419",
-      "date": "2026-11-22",
-      "startTime": "2026-11-22T21:30:00.000Z",
-      "groupId": 6997,
-      "groupName": "Blue Flight",
-      "homeTeamId": 186647,
-      "homeTeamName": "DELTA FEMALE U18",
-      "awayTeamId": 177589,
-      "awayTeamName": "SURREY FEMALE HA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sungod Recreation Centre"
     },
     {
       "id": 1010701,
@@ -23863,6 +23863,23 @@
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
+      "id": 1023822,
+      "number": "U18L1358",
+      "date": "2026-12-19",
+      "startTime": "2026-12-20T02:30:00.000Z",
+      "groupId": 6977,
+      "groupName": "Flight 2",
+      "homeTeamId": 178630,
+      "homeTeamName": "SQUAMISH MHA (3) U18 TIER 3 A1",
+      "awayTeamId": 178637,
+      "awayTeamName": "SURREY MHA (2) U18 A1 TIER 2 THUNDER",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Brennan Park Arena"
+    },
+    {
       "id": 1023602,
       "number": "U18L1038",
       "date": "2026-12-19",
@@ -23878,23 +23895,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Minoru Arena Stadium"
-    },
-    {
-      "id": 1023822,
-      "number": "U18L1358",
-      "date": "2026-12-19",
-      "startTime": "2026-12-20T00:30:00.000Z",
-      "groupId": 6977,
-      "groupName": "Flight 2",
-      "homeTeamId": 178630,
-      "homeTeamName": "SQUAMISH MHA (3) U18 TIER 3 A1",
-      "awayTeamId": 178637,
-      "awayTeamName": "SURREY MHA (2) U18 A1 TIER 2 THUNDER",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Brennan Park Arena"
     },
     {
       "id": 1023606,
@@ -24422,6 +24422,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Surrey Sport & Ice Complex Rink #2"
+    },
+    {
+      "id": 1023658,
+      "number": "U18L1314",
+      "date": "2026-12-13",
+      "startTime": "2026-12-14T01:00:00.000Z",
+      "groupId": 6977,
+      "groupName": "Flight 2",
+      "homeTeamId": 177458,
+      "homeTeamName": "ABBOTSFORD MHA (1) U18 A1 TIER 1 HAWKS",
+      "awayTeamId": 178651,
+      "awayTeamName": "NEW WESTMINSTER MHA (3) U18 A1 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "MSA Arena"
     },
     {
       "id": 1023728,
@@ -25611,7 +25628,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Abbotsford Ice Rink"
+      "arena": "Abbotsford Recreation Centre 1"
     },
     {
       "id": 1023664,
@@ -26430,23 +26447,6 @@
       "arena": "North Surrey Sport & Ice Complex Rink #2"
     },
     {
-      "id": 1023658,
-      "number": "U18L1314",
-      "date": "2026-11-22",
-      "startTime": "2026-11-23T01:00:00.000Z",
-      "groupId": 6977,
-      "groupName": "Flight 2",
-      "homeTeamId": 177458,
-      "homeTeamName": "ABBOTSFORD MHA (1) U18 A1 TIER 1 HAWKS",
-      "awayTeamId": 178651,
-      "awayTeamName": "NEW WESTMINSTER MHA (3) U18 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "MSA Arena"
-    },
-    {
       "id": 1023698,
       "number": "U18L1610",
       "date": "2026-11-22",
@@ -26770,23 +26770,6 @@
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
-      "id": 1023796,
-      "number": "U18L1048",
-      "date": "2026-11-19",
-      "startTime": "2026-11-20T03:15:00.000Z",
-      "groupId": 6989,
-      "groupName": "Flight 1",
-      "homeTeamId": 177462,
-      "homeTeamName": "BURNABY MHA (1) U18 A1 TIER 1",
-      "awayTeamId": 178628,
-      "awayTeamName": "LANGLEY MHA (1) U18 A1 TIER 1 EAGLES",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Bill Copeland Sports Centre BCSC"
-    },
-    {
       "id": 1023834,
       "number": "U18L1656",
       "date": "2026-11-19",
@@ -26921,6 +26904,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
+    },
+    {
+      "id": 1023796,
+      "number": "U18L1048",
+      "date": "2026-11-17",
+      "startTime": "2026-11-18T04:15:00.000Z",
+      "groupId": 6989,
+      "groupName": "Flight 1",
+      "homeTeamId": 177462,
+      "homeTeamName": "BURNABY MHA (1) U18 A1 TIER 1",
+      "awayTeamId": 178628,
+      "awayTeamName": "LANGLEY MHA (1) U18 A1 TIER 1 EAGLES",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Bill Copeland Sports Centre BCSC"
     },
     {
       "id": 1023583,
