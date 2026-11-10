@@ -8,13 +8,16 @@ on:
     # (see data/cache). Kept minimal on purpose: Spordle's firewall blocked us for two
     # days (2026-10-24 to 10-26) after a run of heavy scraping.
     # Cron is UTC. B.C. is on permanent Pacific Time (UTC-7) since Nov 2026, so these
-    # don't shift with the seasons. Evening runs land on the next UTC day.
-    # Weekdays: games are 5-9pm, so 8pm and midnight.
-    - cron: "0 3 * * 2-6" # Mon-Fri 8pm PT
-    - cron: "0 7 * * 2-6" # Mon-Fri midnight PT
-    # Weekends: games run all day, so an afternoon run puts morning games up by 4pm.
-    - cron: "0 23 * * 6,0" # Sat-Sun 4pm PT
-    - cron: "0 5 * * 0,1" # Sat-Sun 10pm PT
+    # don't shift with the seasons.
+    # Since 2026-11-03 GitHub has been starting scheduled runs 3-8 hours late, so for
+    # now each day's runs are set 3 hours early and 12 hours apart: one lands in the
+    # evening, the other by morning.
+    # Weekdays: 5pm and 5am.
+    - cron: "0 0 * * 2-6" # Mon-Fri 5pm PT
+    - cron: "0 12 * * 2-6" # Tue-Sat 5am PT
+    # Weekends: 1pm and 1am.
+    - cron: "0 20 * * 6,0" # Sat-Sun 1pm PT
+    - cron: "0 8 * * 0,1" # Sun-Mon 1am PT
   workflow_dispatch:
     inputs:
       season:

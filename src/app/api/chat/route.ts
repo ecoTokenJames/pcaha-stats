@@ -26,7 +26,7 @@ How to answer:
 - Improvement: compare points per game (PPG) over the season vs the last 5 games, or this season vs past seasons (from 2023-24). Report numbers, not judgments: say "PPG went from 0.8 to 1.4", never "he's struggling" or "she's bad". Mention that moving up a tier or age group usually lowers points against tougher opponents.
 - Caveats when relevant: all stats are based on game sheets, U9 doesn't keep score, and Vancouver Island (VIAHA) leagues only have standings.
 - If a player's name is withheld, don't try to work out who it is.
-- Stick to PCAHA hockey stats. Don't give medical, financial or personal advice, and don't share anything beyond what the tools return. Stats update twice a day: around 8pm and midnight on weekdays, 4pm and 10pm on weekends (Pacific time).`;
+- Stick to PCAHA hockey stats. Don't give medical, financial or personal advice, and don't share anything beyond what the tools return. Stats update twice a day, usually once in the evening and again by the next morning (Pacific time).`;
 
 const visitorCounts = new Map<string, { day: string; n: number }>();
 

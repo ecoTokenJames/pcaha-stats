@@ -8,8 +8,8 @@ Standings, player stats and league leaders for PCAHA minor hockey — live at
 1. `scraper/scrape.js` pulls standings, games, boxscores and rosters from the
    Spordle Play API and writes JSON into `data/`.
 2. The Next.js site in `src/` reads `data/` at build time and renders static pages.
-3. `.github/workflows/daily-scrape.yml` runs the scraper twice a day (Pacific Time, UTC-7:
-   weekdays 8pm and midnight, weekends 4pm and 10pm),
+3. `.github/workflows/daily-scrape.yml` runs the scraper twice a day, 12 hours apart (Pacific Time, UTC-7:
+   weekdays 5pm and 5am, weekends 1pm and 1am; GitHub often starts them a few hours late),
    commits the new `data/` to `main`, and Vercel redeploys on that push.
 
 The season is picked automatically (rolls over on Aug 1). To force one, set
