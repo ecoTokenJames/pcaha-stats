@@ -6078,23 +6078,6 @@
       "arena": "Summit Centre West Rink"
     },
     {
-      "id": 1011326,
-      "number": "U11L4026",
-      "date": "2026-12-19",
-      "startTime": "2026-12-19T16:30:00.000Z",
-      "groupId": 7007,
-      "groupName": "Tier 1",
-      "homeTeamId": 223856,
-      "homeTeamName": "NORTH SHORE WINTER CLUB MHA FEMALE U11 A1",
-      "awayTeamId": 220821,
-      "awayTeamName": "RICHMOND RAVENS U11 A2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "North Shore Winter Club Main Rink"
-    },
-    {
       "id": 1011328,
       "number": "U11L4124",
       "date": "2026-12-17",
@@ -6722,6 +6705,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Coquitlam 1 Mars"
+    },
+    {
+      "id": 1011326,
+      "number": "U11L4026",
+      "date": "2026-11-14",
+      "startTime": "2026-11-14T16:30:00.000Z",
+      "groupId": 7007,
+      "groupName": "Tier 1",
+      "homeTeamId": 223856,
+      "homeTeamName": "NORTH SHORE WINTER CLUB MHA FEMALE U11 A1",
+      "awayTeamId": 220821,
+      "awayTeamName": "RICHMOND RAVENS U11 A2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Shore Winter Club Main Rink"
     },
     {
       "id": 1011344,
@@ -21544,23 +21544,6 @@
       "arena": "Meadow Park Sports Centre"
     },
     {
-      "id": 1023316,
-      "number": "U11L3119",
-      "date": "2026-12-20",
-      "startTime": "2026-12-20T16:15:00.000Z",
-      "groupId": 6993,
-      "groupName": "GVC Flight 4",
-      "homeTeamId": 178248,
-      "homeTeamName": "VANCOUVER THUNDERBIRD MHA U11 A3",
-      "awayTeamId": 178251,
-      "awayTeamName": "VANCOUVER MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "UBC A Thunderbird Arena"
-    },
-    {
       "id": 1023259,
       "number": "U11L1604",
       "date": "2026-12-19",
@@ -21576,6 +21559,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Newton Arena"
+    },
+    {
+      "id": 1023316,
+      "number": "U11L3119",
+      "date": "2026-12-19",
+      "startTime": "2026-12-20T01:30:00.000Z",
+      "groupId": 6993,
+      "groupName": "GVC Flight 4",
+      "homeTeamId": 178248,
+      "homeTeamName": "VANCOUVER THUNDERBIRD MHA U11 A3",
+      "awayTeamId": 178251,
+      "awayTeamName": "VANCOUVER MHA U11 A2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Hillcrest Centre Arena"
     },
     {
       "id": 1023283,
@@ -28996,7 +28996,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
@@ -29010,10 +29010,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U11 A3",
       "awayTeamId": 178247,
       "awayTeamName": "HOLLYBURN MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
@@ -29027,10 +29027,10 @@
       "homeTeamName": "MISSION MHA U11 A1",
       "awayTeamId": 178282,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
@@ -29044,10 +29044,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U11 A2",
       "awayTeamId": 178306,
       "awayTeamName": "ABBOTSFORD MHA U11 A2 HAWKS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
@@ -29061,10 +29061,10 @@
       "homeTeamName": "NORTH DELTA MHA U11 A1 SUN DEVILS",
       "awayTeamId": 178253,
       "awayTeamName": "VANCOUVER MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
@@ -29078,10 +29078,10 @@
       "homeTeamName": "SEMIAHMOO MHA U11 A2",
       "awayTeamId": 178287,
       "awayTeamName": "CLOVERDALE MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
@@ -29095,10 +29095,10 @@
       "homeTeamName": "BURNABY WINTER CLUB U11 A4",
       "awayTeamId": 178250,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA U11 A4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Ram Red"
     }
   ]
