@@ -530,6 +530,23 @@
       "arena": "Burnaby Winter Club Training"
     },
     {
+      "id": 1028799,
+      "number": "U9E8515",
+      "date": "2027-01-02",
+      "startTime": "2027-01-02T21:15:00.000Z",
+      "groupId": 7033,
+      "groupName": "Blue Minor",
+      "homeTeamId": 233411,
+      "homeTeamName": "BURNABY WINTER CLUB U9 C5",
+      "awayTeamId": 177985,
+      "awayTeamName": "RICHMOND JETS MHA U9 C5",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Burnaby Winter Club Main"
+    },
+    {
       "id": 1026475,
       "number": "U9E8024",
       "date": "2027-01-02",

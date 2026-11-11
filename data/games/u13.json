@@ -4367,10 +4367,10 @@
       "homeTeamName": "HOPE & DISTRICT U13 C1",
       "awayTeamId": 178379,
       "awayTeamName": "CHILLIWACK MHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hope & District Recreation Centre"
     },
     {
@@ -7754,10 +7754,10 @@
       "homeTeamName": "RICHMOND RAVENS U13 A1",
       "awayTeamId": 177509,
       "awayTeamName": "SURREY FEMALE HA U13 A1 FALCONS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Pond"
     },
     {
@@ -9499,23 +9499,6 @@
   ],
   "199402": [
     {
-      "id": 1011222,
-      "number": "U13L4606",
-      "date": "2026-12-22",
-      "startTime": "2026-12-23T00:30:00.000Z",
-      "groupId": 7005,
-      "groupName": null,
-      "homeTeamId": 177633,
-      "homeTeamName": "VANCOUVER FEMALE IHA U13 C3",
-      "awayTeamId": 177642,
-      "awayTeamName": "SURREY FEMALE HA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Hillcrest Centre Arena"
-    },
-    {
       "id": 1011241,
       "number": "U13L4641",
       "date": "2026-12-20",
@@ -10449,6 +10432,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Coquitlam 1 Mars"
+    },
+    {
+      "id": 1011222,
+      "number": "U13L4606",
+      "date": "2026-12-07",
+      "startTime": "2026-12-08T02:30:00.000Z",
+      "groupId": 7005,
+      "groupName": null,
+      "homeTeamId": 177633,
+      "homeTeamName": "VANCOUVER FEMALE IHA U13 C3",
+      "awayTeamId": 177642,
+      "awayTeamName": "SURREY FEMALE HA U13 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "PNE Agrodome"
     },
     {
       "id": 1011252,
@@ -12127,10 +12127,10 @@
       "homeTeamName": "ABBOTSFORD FEMALE HA U13 C2",
       "awayTeamId": 177642,
       "awayTeamName": "SURREY FEMALE HA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -12144,10 +12144,10 @@
       "homeTeamName": "TRI CITIES FEMALE IHA U13 C3",
       "awayTeamId": 186648,
       "awayTeamName": "DELTA FEMALE U13",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Poirier Sport & Leisure Complex 2"
     },
     {
@@ -12179,7 +12179,7 @@
       "awayTeamId": 177655,
       "awayTeamName": "MEADOW RIDGE FEMALE MHA U13 C1",
       "homeScore": 0,
-      "awayScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
       "status": "final",
       "arena": "Canlan Ice Sports Langley Twin Rinks 2"
@@ -14057,6 +14057,23 @@
       "arena": "Planet Ice Coquitlam 3 Venus"
     },
     {
+      "id": 968622,
+      "number": "U13L5035",
+      "date": "2026-11-16",
+      "startTime": "2026-11-17T01:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178353,
+      "homeTeamName": "RIDGE MEADOWS MHA U13 C3",
+      "awayTeamId": 178365,
+      "awayTeamName": "PORT MOODY AHA U13 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Jeep Blue"
+    },
+    {
       "id": 968587,
       "number": "U13L5073",
       "date": "2026-11-15",
@@ -14220,10 +14237,10 @@
       "homeTeamName": "PORT COQUITLAM MHA U13 C2",
       "awayTeamId": 178367,
       "awayTeamName": "PORT COQUITLAM MHA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 3"
     },
     {
@@ -14237,10 +14254,10 @@
       "homeTeamName": "PORT COQUITLAM MHA U13 C1",
       "awayTeamId": 178370,
       "awayTeamName": "COQUITLAM MHA U13 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 11,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 3"
     },
     {
@@ -14684,23 +14701,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 2"
-    },
-    {
-      "id": 968622,
-      "number": "U13L5035",
-      "date": "2026-10-31",
-      "startTime": "2026-10-31T23:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178353,
-      "homeTeamName": "RIDGE MEADOWS MHA U13 C3",
-      "awayTeamId": 178365,
-      "awayTeamName": "PORT MOODY AHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "awaiting",
-      "arena": "Planet Ice Maple Ridge 2"
     },
     {
       "id": 968626,
@@ -25006,10 +25006,10 @@
       "homeTeamName": "PCEHL U13 VANCOUVER ORCAS",
       "awayTeamId": 187964,
       "awayTeamName": "PCEHL U13 NORTH SHORE WINTER CLUB",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Trout Lake Community Centre 1"
     },
     {
@@ -32049,6 +32049,23 @@
       "arena": "MSA Arena"
     },
     {
+      "id": 1024064,
+      "number": "U13L1904",
+      "date": "2026-12-20",
+      "startTime": "2026-12-21T01:30:00.000Z",
+      "groupId": 6979,
+      "groupName": "Flight 4",
+      "homeTeamId": 178130,
+      "homeTeamName": "SEMIAHMOO MHA (1) U13 A3 TIER 3",
+      "awayTeamId": 221101,
+      "awayTeamName": "EYH 12UA1 Jr. Silvertips (PCAHA U13 A1)",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Newton Arena"
+    },
+    {
       "id": 1024228,
       "number": "U13L1658",
       "date": "2026-12-20",
@@ -32321,6 +32338,23 @@
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
+      "id": 1024304,
+      "number": "U13L1664",
+      "date": "2026-12-19",
+      "startTime": "2026-12-20T00:45:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 178154,
+      "homeTeamName": "SQUAMISH MHA (3) U13 TIER 3 A1",
+      "awayTeamId": 178148,
+      "awayTeamName": "VANCOUVER THUNDERBIRD MHA (1) U13 A2 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Brennan Park Arena"
+    },
+    {
       "id": 1024068,
       "number": "U13L1946",
       "date": "2026-12-19",
@@ -32387,23 +32421,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sportsplex Arena 1"
-    },
-    {
-      "id": 1024235,
-      "number": "U13L1652",
-      "date": "2026-12-19",
-      "startTime": "2026-12-19T22:00:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 178188,
-      "homeTeamName": "ARBUTUS CLUB (3) U13 A1 TIER 3",
-      "awayTeamId": 178162,
-      "awayTeamName": "PORT MOODY AHA (2) U13 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Arbutus Club Ice Rink"
     },
     {
       "id": 1024012,
@@ -32474,23 +32491,6 @@
       "arena": "Centennial Arena Centennial"
     },
     {
-      "id": 1024116,
-      "number": "U13L1352",
-      "date": "2026-12-19",
-      "startTime": "2026-12-19T20:15:00.000Z",
-      "groupId": 6977,
-      "groupName": "Flight 2",
-      "homeTeamId": 178129,
-      "homeTeamName": "SEMIAHMOO MHA (1) U13 A2 TIER 2",
-      "awayTeamId": 178178,
-      "awayTeamName": "COQUITLAM MHA (1) U13 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Centennial Arena Centennial"
-    },
-    {
       "id": 1024175,
       "number": "U13L2550",
       "date": "2026-12-19",
@@ -32506,6 +32506,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Rosemary Brown Recreation Centre B"
+    },
+    {
+      "id": 1024312,
+      "number": "U13L1359",
+      "date": "2026-12-19",
+      "startTime": "2026-12-19T19:45:00.000Z",
+      "groupId": 6977,
+      "groupName": "Flight 2",
+      "homeTeamId": 178177,
+      "homeTeamName": "MISSION MHA (3) U13 A1 TIER 3",
+      "awayTeamId": 178143,
+      "awayTeamName": "RICHMOND JETS MHA (1) U13 A1 TIER 1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Mission Leisure Centre North"
     },
     {
       "id": 1024070,
@@ -32693,6 +32710,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Shore Winter Club Main Rink"
+    },
+    {
+      "id": 1024235,
+      "number": "U13L1652",
+      "date": "2026-12-18",
+      "startTime": "2026-12-19T01:15:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 178188,
+      "homeTeamName": "ARBUTUS CLUB (3) U13 A1 TIER 3",
+      "awayTeamId": 178162,
+      "awayTeamName": "PORT MOODY AHA (2) U13 A1 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Arbutus Club Ice Rink"
     },
     {
       "id": 1024067,
@@ -33354,7 +33388,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
@@ -33388,7 +33422,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "postponed",
+      "status": "scheduled",
       "arena": "Angel of the Winds Arena Community"
     },
     {
@@ -33426,23 +33460,6 @@
       "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
-      "id": 1023964,
-      "number": "U13L2841",
-      "date": "2026-12-13",
-      "startTime": "2026-12-13T19:05:00.000Z",
-      "groupId": 6982,
-      "groupName": "Flight 7",
-      "homeTeamId": 221102,
-      "homeTeamName": "EYH 12UA2 Jr. Silvertips (PCAHA U13 A2)",
-      "awayTeamId": 178140,
-      "awayTeamName": "WEST VANCOUVER MHA U13 A2 TIER 4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Angel of the Winds Arena Community"
-    },
-    {
       "id": 1023908,
       "number": "U13L1049",
       "date": "2026-12-13",
@@ -33475,6 +33492,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "The Arenas at LEC 1"
+    },
+    {
+      "id": 1023964,
+      "number": "U13L2841",
+      "date": "2026-12-12",
+      "startTime": "2026-12-13T02:25:00.000Z",
+      "groupId": 6982,
+      "groupName": "Flight 7",
+      "homeTeamId": 221102,
+      "homeTeamName": "EYH 12UA2 Jr. Silvertips (PCAHA U13 A2)",
+      "awayTeamId": 178140,
+      "awayTeamName": "WEST VANCOUVER MHA U13 A2 TIER 4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Angel of the Winds Arena Community"
     },
     {
       "id": 1023910,
@@ -33560,23 +33594,6 @@
       "decidedBy": null,
       "status": "postponed",
       "arena": "North Shore Winter Club Main Rink"
-    },
-    {
-      "id": 1024185,
-      "number": "U13L2541",
-      "date": "2026-12-12",
-      "startTime": "2026-12-12T22:30:00.000Z",
-      "groupId": 6981,
-      "groupName": "Flight 6",
-      "homeTeamId": 220155,
-      "homeTeamName": "WCAHA 12UA (PCAHA U13 A1)",
-      "awayTeamId": 178172,
-      "awayTeamName": "NORTH SHORE WINTER CLUB MHA (1) U13 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1024246,
@@ -33713,6 +33730,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Rosemary Brown Recreation Centre B"
+    },
+    {
+      "id": 1024113,
+      "number": "U13L1314",
+      "date": "2026-12-12",
+      "startTime": "2026-12-12T19:30:00.000Z",
+      "groupId": 6977,
+      "groupName": "Flight 2",
+      "homeTeamId": 178197,
+      "homeTeamName": "ABBOTSFORD MHA (1) U13 A1 TIER 1 HAWKS",
+      "awayTeamId": 178177,
+      "awayTeamName": "MISSION MHA (3) U13 A1 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Mission Leisure Centre North"
     },
     {
       "id": 1024084,
@@ -34055,6 +34089,23 @@
       "arena": "Britannia Community Centre"
     },
     {
+      "id": 1023968,
+      "number": "U13L2837",
+      "date": "2026-12-09",
+      "startTime": "2026-12-10T01:45:00.000Z",
+      "groupId": 6982,
+      "groupName": "Flight 7",
+      "homeTeamId": 178180,
+      "homeTeamName": "CHILLIWACK MHA (1) U13 A3 TIER 3 JR BRUINS",
+      "awayTeamId": 222462,
+      "awayTeamName": "SURREY MHA (2) U13 A2 TIER 3 THUNDER",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Chilliwack Coliseum 1 Blue"
+    },
+    {
       "id": 1024132,
       "number": "U13L1338",
       "date": "2026-12-09",
@@ -34087,23 +34138,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Mission Leisure Centre North"
-    },
-    {
-      "id": 1023968,
-      "number": "U13L2837",
-      "date": "2026-12-09",
-      "startTime": "2026-12-10T01:15:00.000Z",
-      "groupId": 6982,
-      "groupName": "Flight 7",
-      "homeTeamId": 178180,
-      "homeTeamName": "CHILLIWACK MHA (1) U13 A3 TIER 3 JR BRUINS",
-      "awayTeamId": 222462,
-      "awayTeamName": "SURREY MHA (2) U13 A2 TIER 3 THUNDER",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Chilliwack Coliseum 2 Red"
     },
     {
       "id": 1024190,
@@ -34548,23 +34582,6 @@
       "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
-      "id": 1024304,
-      "number": "U13L1664",
-      "date": "2026-12-06",
-      "startTime": "2026-12-06T21:00:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 178154,
-      "homeTeamName": "SQUAMISH MHA (3) U13 TIER 3 A1",
-      "awayTeamId": 178148,
-      "awayTeamName": "VANCOUVER THUNDERBIRD MHA (1) U13 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Brennan Park Arena"
-    },
-    {
       "id": 1024252,
       "number": "U13L1635",
       "date": "2026-12-06",
@@ -34582,23 +34599,6 @@
       "arena": "Gibsons & Area Community Centre"
     },
     {
-      "id": 1024194,
-      "number": "U13L2532",
-      "date": "2026-12-06",
-      "startTime": "2026-12-06T19:15:00.000Z",
-      "groupId": 6981,
-      "groupName": "Flight 6",
-      "homeTeamId": 178186,
-      "homeTeamName": "COQUITLAM MHA (1) U13 A3 TIER 3",
-      "awayTeamId": 178147,
-      "awayTeamName": "LANGLEY MHA (1) U13 A4 TIER 4 EAGLES",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Poirier Sport & Leisure Complex 1"
-    },
-    {
       "id": 1023973,
       "number": "U13L2832",
       "date": "2026-12-06",
@@ -34614,6 +34614,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Angel of the Winds Arena Community"
+    },
+    {
+      "id": 1024077,
+      "number": "U13L1930",
+      "date": "2026-12-06",
+      "startTime": "2026-12-06T18:00:00.000Z",
+      "groupId": 6979,
+      "groupName": "Flight 4",
+      "homeTeamId": 215094,
+      "homeTeamName": "SJHA 12UA1 JR METS (PCAHA)",
+      "awayTeamId": 178149,
+      "awayTeamName": "SURREY MHA (2) U13 A1 TIER 2 THUNDER",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Lynnwood Ice Centre 1"
     },
     {
       "id": 1023916,
@@ -34733,40 +34750,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Karen Magnussen Arena"
-    },
-    {
-      "id": 1024077,
-      "number": "U13L1930",
-      "date": "2026-12-05",
-      "startTime": "2026-12-06T00:25:00.000Z",
-      "groupId": 6979,
-      "groupName": "Flight 4",
-      "homeTeamId": 215094,
-      "homeTeamName": "SJHA 12UA1 JR METS (PCAHA)",
-      "awayTeamId": 178149,
-      "awayTeamName": "SURREY MHA (2) U13 A1 TIER 2 THUNDER",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Lynnwood Ice Centre 1"
-    },
-    {
-      "id": 1024307,
-      "number": "U13L1663",
-      "date": "2026-12-05",
-      "startTime": "2026-12-05T23:45:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 178160,
-      "homeTeamName": "PORT COQUITLAM MHA (2) U13 A1 TIER 2",
-      "awayTeamId": 178154,
-      "awayTeamName": "SQUAMISH MHA (3) U13 TIER 3 A1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
       "id": 1024196,
@@ -35296,6 +35279,23 @@
       "arena": "Queens Park Arena 1"
     },
     {
+      "id": 1024307,
+      "number": "U13L1663",
+      "date": "2026-12-01",
+      "startTime": "2026-12-02T03:15:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 178160,
+      "homeTeamName": "PORT COQUITLAM MHA (2) U13 A1 TIER 2",
+      "awayTeamId": 178154,
+      "awayTeamName": "SQUAMISH MHA (3) U13 TIER 3 A1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Coquitlam Community Centre Arena 2"
+    },
+    {
       "id": 1023921,
       "number": "U13L1034",
       "date": "2026-12-01",
@@ -35666,7 +35666,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
@@ -35870,7 +35870,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Lynnwood Ice Centre 1"
     },
     {
@@ -36146,6 +36146,23 @@
       "arena": "Ladner Leisure Centre"
     },
     {
+      "id": 1024194,
+      "number": "U13L2532",
+      "date": "2026-11-27",
+      "startTime": "2026-11-28T01:00:00.000Z",
+      "groupId": 6981,
+      "groupName": "Flight 6",
+      "homeTeamId": 178186,
+      "homeTeamName": "COQUITLAM MHA (1) U13 A3 TIER 3",
+      "awayTeamId": 178147,
+      "awayTeamName": "LANGLEY MHA (1) U13 A4 TIER 4 EAGLES",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Coquitlam 3 Venus"
+    },
+    {
       "id": 1024003,
       "number": "U13L2223",
       "date": "2026-11-26",
@@ -36333,6 +36350,23 @@
       "arena": "Britannia Community Centre"
     },
     {
+      "id": 1023944,
+      "number": "U13L2819",
+      "date": "2026-11-25",
+      "startTime": "2026-11-26T01:45:00.000Z",
+      "groupId": 6982,
+      "groupName": "Flight 7",
+      "homeTeamId": 178180,
+      "homeTeamName": "CHILLIWACK MHA (1) U13 A3 TIER 3 JR BRUINS",
+      "awayTeamId": 178124,
+      "awayTeamName": "HOLLYBURN MHA (2) U13 A2 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Chilliwack Coliseum 1 Blue"
+    },
+    {
       "id": 1024090,
       "number": "U13L1318",
       "date": "2026-11-25",
@@ -36365,40 +36399,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Coquitlam 2 Pluto"
-    },
-    {
-      "id": 1024312,
-      "number": "U13L1359",
-      "date": "2026-11-25",
-      "startTime": "2026-11-26T01:30:00.000Z",
-      "groupId": 6977,
-      "groupName": "Flight 2",
-      "homeTeamId": 178177,
-      "homeTeamName": "MISSION MHA (3) U13 A1 TIER 3",
-      "awayTeamId": 178143,
-      "awayTeamName": "RICHMOND JETS MHA (1) U13 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Mission Leisure Centre North"
-    },
-    {
-      "id": 1023944,
-      "number": "U13L2819",
-      "date": "2026-11-25",
-      "startTime": "2026-11-26T01:15:00.000Z",
-      "groupId": 6982,
-      "groupName": "Flight 7",
-      "homeTeamId": 178180,
-      "homeTeamName": "CHILLIWACK MHA (1) U13 A3 TIER 3 JR BRUINS",
-      "awayTeamId": 178124,
-      "awayTeamName": "HOLLYBURN MHA (2) U13 A2 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Chilliwack Coliseum 2 Red"
     },
     {
       "id": 1024152,
@@ -36484,6 +36484,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "West Vancouver Ice Arena"
+    },
+    {
+      "id": 1024223,
+      "number": "U13L1614",
+      "date": "2026-11-24",
+      "startTime": "2026-11-25T03:00:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 178160,
+      "homeTeamName": "PORT COQUITLAM MHA (2) U13 A1 TIER 2",
+      "awayTeamId": 178148,
+      "awayTeamName": "VANCOUVER THUNDERBIRD MHA (1) U13 A2 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
       "id": 1023889,
@@ -36843,23 +36860,6 @@
       "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
-      "id": 1024113,
-      "number": "U13L1314",
-      "date": "2026-11-22",
-      "startTime": "2026-11-22T21:45:00.000Z",
-      "groupId": 6977,
-      "groupName": "Flight 2",
-      "homeTeamId": 178197,
-      "homeTeamName": "ABBOTSFORD MHA (1) U13 A1 TIER 1 HAWKS",
-      "awayTeamId": 178177,
-      "awayTeamName": "MISSION MHA (3) U13 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "MSA Arena"
-    },
-    {
       "id": 1023984,
       "number": "U13L2209",
       "date": "2026-11-22",
@@ -36996,6 +36996,23 @@
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
+      "id": 1024041,
+      "number": "U13L1911",
+      "date": "2026-11-22",
+      "startTime": "2026-11-22T18:30:00.000Z",
+      "groupId": 6979,
+      "groupName": "Flight 4",
+      "homeTeamId": 178130,
+      "homeTeamName": "SEMIAHMOO MHA (1) U13 A3 TIER 3",
+      "awayTeamId": 178185,
+      "awayTeamName": "CLOVERDALE MHA (1) U13 A3 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Centennial Arena Centennial"
+    },
+    {
       "id": 1023884,
       "number": "U13L1019",
       "date": "2026-11-22",
@@ -37115,6 +37132,23 @@
       "arena": "Cloverdale Arena"
     },
     {
+      "id": 1024215,
+      "number": "U13L1601",
+      "date": "2026-11-21",
+      "startTime": "2026-11-22T00:30:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 178193,
+      "homeTeamName": "BURNABY MHA (1) U13 A1 TIER 1",
+      "awayTeamId": 178162,
+      "awayTeamName": "PORT MOODY AHA (2) U13 A1 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Kensington Arena"
+    },
+    {
       "id": 1024044,
       "number": "U13L1912",
       "date": "2026-11-21",
@@ -37130,23 +37164,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Lynnwood Ice Centre 1"
-    },
-    {
-      "id": 1024223,
-      "number": "U13L1614",
-      "date": "2026-11-21",
-      "startTime": "2026-11-21T23:45:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 178160,
-      "homeTeamName": "PORT COQUITLAM MHA (2) U13 A1 TIER 2",
-      "awayTeamId": 178148,
-      "awayTeamName": "VANCOUVER THUNDERBIRD MHA (1) U13 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
       "id": 1023999,
@@ -37249,23 +37266,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Arbutus Club Ice Rink"
-    },
-    {
-      "id": 1024041,
-      "number": "U13L1911",
-      "date": "2026-11-21",
-      "startTime": "2026-11-21T21:45:00.000Z",
-      "groupId": 6979,
-      "groupName": "Flight 4",
-      "homeTeamId": 178130,
-      "homeTeamName": "SEMIAHMOO MHA (1) U13 A3 TIER 3",
-      "awayTeamId": 178185,
-      "awayTeamName": "CLOVERDALE MHA (1) U13 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Surrey Sport & Leisure Centre Arena 1"
     },
     {
       "id": 1024316,
@@ -37421,6 +37421,23 @@
       "arena": "Port Moody Recreation Complex 1"
     },
     {
+      "id": 1024185,
+      "number": "U13L2541",
+      "date": "2026-11-20",
+      "startTime": "2026-11-21T01:45:00.000Z",
+      "groupId": 6981,
+      "groupName": "Flight 6",
+      "homeTeamId": 220155,
+      "homeTeamName": "WCAHA 12UA (PCAHA U13 A1)",
+      "awayTeamId": 178172,
+      "awayTeamName": "NORTH SHORE WINTER CLUB MHA (1) U13 A3 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
+    },
+    {
       "id": 1024310,
       "number": "U13L1358",
       "date": "2026-11-20",
@@ -37555,6 +37572,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "The Arenas at LEC 2"
+    },
+    {
+      "id": 1024161,
+      "number": "U13L2506",
+      "date": "2026-11-19",
+      "startTime": "2026-11-20T01:45:00.000Z",
+      "groupId": 6981,
+      "groupName": "Flight 6",
+      "homeTeamId": 178121,
+      "homeTeamName": "CLOVERDALE MHA (1) U13 A4 TIER 4",
+      "awayTeamId": 178169,
+      "awayTeamName": "NORTH VANCOUVER MHA (1) U13 A3 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Cloverdale Sport & Ice Complex 2-Red"
     },
     {
       "id": 1024206,
@@ -38067,23 +38101,6 @@
       "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
-      "id": 1024161,
-      "number": "U13L2506",
-      "date": "2026-11-15",
-      "startTime": "2026-11-15T22:45:00.000Z",
-      "groupId": 6981,
-      "groupName": "Flight 6",
-      "homeTeamId": 178121,
-      "homeTeamName": "CLOVERDALE MHA (1) U13 A4 TIER 4",
-      "awayTeamId": 178169,
-      "awayTeamName": "NORTH VANCOUVER MHA (1) U13 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Cloverdale Arena"
-    },
-    {
       "id": 1024168,
       "number": "U13L2516",
       "date": "2026-11-15",
@@ -38152,6 +38169,23 @@
       "arena": "Brennan Park Arena"
     },
     {
+      "id": 1024116,
+      "number": "U13L1352",
+      "date": "2026-11-15",
+      "startTime": "2026-11-15T20:45:00.000Z",
+      "groupId": 6977,
+      "groupName": "Flight 2",
+      "homeTeamId": 178129,
+      "homeTeamName": "SEMIAHMOO MHA (1) U13 A2 TIER 2",
+      "awayTeamId": 178178,
+      "awayTeamName": "COQUITLAM MHA (1) U13 A1 TIER 1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "postponed",
+      "arena": "South Surrey Arena"
+    },
+    {
       "id": 1024302,
       "number": "U13L1950",
       "date": "2026-11-15",
@@ -38167,6 +38201,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Angel of the Winds Arena Community"
+    },
+    {
+      "id": 1024100,
+      "number": "U13L1305",
+      "date": "2026-11-15",
+      "startTime": "2026-11-15T20:15:00.000Z",
+      "groupId": 6977,
+      "groupName": "Flight 2",
+      "homeTeamId": 178178,
+      "homeTeamName": "COQUITLAM MHA (1) U13 A1 TIER 1",
+      "awayTeamId": 178129,
+      "awayTeamName": "SEMIAHMOO MHA (1) U13 A2 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "South Surrey Arena"
     },
     {
       "id": 1024219,
@@ -38233,7 +38284,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "postponed",
+      "status": "scheduled",
       "arena": "The Arenas at LEC 1"
     },
     {
@@ -38441,23 +38492,6 @@
       "arena": "Arbutus Club Ice Rink"
     },
     {
-      "id": 1024064,
-      "number": "U13L1904",
-      "date": "2026-11-14",
-      "startTime": "2026-11-14T21:45:00.000Z",
-      "groupId": 6979,
-      "groupName": "Flight 4",
-      "homeTeamId": 178130,
-      "homeTeamName": "SEMIAHMOO MHA (1) U13 A3 TIER 3",
-      "awayTeamId": 221101,
-      "awayTeamName": "EYH 12UA1 Jr. Silvertips (PCAHA U13 A1)",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Surrey Sport & Leisure Centre Arena 1"
-    },
-    {
       "id": 1023983,
       "number": "U13L2207",
       "date": "2026-11-14",
@@ -38558,23 +38592,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Surrey Sport & Leisure Centre Arena 2"
-    },
-    {
-      "id": 1024100,
-      "number": "U13L1305",
-      "date": "2026-11-14",
-      "startTime": "2026-11-14T18:00:00.000Z",
-      "groupId": 6977,
-      "groupName": "Flight 2",
-      "homeTeamId": 178178,
-      "homeTeamName": "COQUITLAM MHA (1) U13 A1 TIER 1",
-      "awayTeamId": 178129,
-      "awayTeamName": "SEMIAHMOO MHA (1) U13 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
       "id": 1023948,
@@ -38747,23 +38764,6 @@
       "arena": "Centennial Arena Centennial"
     },
     {
-      "id": 1024215,
-      "number": "U13L1601",
-      "date": "2026-11-12",
-      "startTime": "2026-11-13T02:30:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 178193,
-      "homeTeamName": "BURNABY MHA (1) U13 A1 TIER 1",
-      "awayTeamId": 178162,
-      "awayTeamName": "PORT MOODY AHA (2) U13 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Rosemary Brown Recreation Centre B"
-    },
-    {
       "id": 1024147,
       "number": "U13L2502",
       "date": "2026-11-12",
@@ -38866,6 +38866,23 @@
       "arena": "Britannia Community Centre"
     },
     {
+      "id": 1023946,
+      "number": "U13L2802",
+      "date": "2026-11-11",
+      "startTime": "2026-11-12T01:45:00.000Z",
+      "groupId": 6982,
+      "groupName": "Flight 7",
+      "homeTeamId": 178180,
+      "homeTeamName": "CHILLIWACK MHA (1) U13 A3 TIER 3 JR BRUINS",
+      "awayTeamId": 178165,
+      "awayTeamName": "RIDGE MEADOWS MHA (1) U13 A4 TIER 4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Chilliwack Coliseum 1 Blue"
+    },
+    {
       "id": 1024091,
       "number": "U13L1302",
       "date": "2026-11-11",
@@ -38881,23 +38898,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Burnaby Winter Club Main"
-    },
-    {
-      "id": 1023946,
-      "number": "U13L2802",
-      "date": "2026-11-11",
-      "startTime": "2026-11-12T01:15:00.000Z",
-      "groupId": 6982,
-      "groupName": "Flight 7",
-      "homeTeamId": 178180,
-      "homeTeamName": "CHILLIWACK MHA (1) U13 A3 TIER 3 JR BRUINS",
-      "awayTeamId": 178165,
-      "awayTeamName": "RIDGE MEADOWS MHA (1) U13 A4 TIER 4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Chilliwack Coliseum 2 Red"
     },
     {
       "id": 1024046,
@@ -38978,10 +38978,10 @@
       "homeTeamName": "BURNABY WINTER CLUB (1) U13 A1 TIER 1",
       "awayTeamId": 178135,
       "awayTeamName": "LANGLEY MHA (1) U13 A1 TIER 1 EAGLES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Burnaby Winter Club Main"
     },
     {
@@ -38995,10 +38995,10 @@
       "homeTeamName": "CHILLIWACK MHA (1) U13 A1 TIER 1 JR BRUINS",
       "awayTeamId": 178158,
       "awayTeamName": "RIDGE MEADOWS MHA (1) U13 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC1"
     },
     {
@@ -39012,10 +39012,10 @@
       "homeTeamName": "RICHMOND JETS MHA (1) U13 A1 TIER 1",
       "awayTeamId": 178184,
       "awayTeamName": "CLOVERDALE MHA (1) U13 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Minoru Arena Stadium"
     },
     {
@@ -39029,10 +39029,10 @@
       "homeTeamName": "SOUTH DELTA MHA (2) U13 A2 TIER 3 STORM",
       "awayTeamId": 178187,
       "awayTeamName": "COQUITLAM MHA (1) U13 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Ladner Leisure Centre"
     },
     {
@@ -39046,10 +39046,10 @@
       "homeTeamName": "LANGLEY MHA (1) U13 A3 TIER 3 EAGLES",
       "awayTeamId": 178130,
       "awayTeamName": "SEMIAHMOO MHA (1) U13 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 2"
     },
     {
@@ -39063,10 +39063,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U13 A3 TIER 3",
       "awayTeamId": 178174,
       "awayTeamName": "NORTH SHORE WINTER CLUB MHA (1) U13 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "UBC A Thunderbird Arena"
     },
     {
@@ -39097,10 +39097,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U13 A4 TIER 4",
       "awayTeamId": 178192,
       "awayTeamName": "BURNABY WINTER CLUB (1) U13 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     }
   ],
