@@ -51,7 +51,7 @@
     "categoryName": "U9 C",
     "scheduleType": "League",
     "startDate": "2026-11-27",
-    "endDate": "2027-03-30"
+    "endDate": "2027-03-08"
   },
   {
     "id": 199393,
@@ -285,7 +285,7 @@
     "categoryName": "U11 C",
     "scheduleType": "League",
     "startDate": "2026-11-09",
-    "endDate": "2027-02-04"
+    "endDate": "2027-03-01"
   },
   {
     "id": 203110,
@@ -317,6 +317,33 @@
   {
     "id": 203233,
     "name": "VIAHA U11 Development Rec. Division 1",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-20",
+    "endDate": "2027-02-22"
+  },
+  {
+    "id": 203243,
+    "name": "VIAHA U11 Development Rec. Division 2",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-20",
+    "endDate": "2027-02-22"
+  },
+  {
+    "id": 203253,
+    "name": "VIAHA U11 Development Rec. Division 3",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "League",
+    "startDate": "2026-11-20",
+    "endDate": "2027-02-22"
+  },
+  {
+    "id": 203255,
+    "name": "VIAHA U11 Development Rec. Division 4",
     "divisionName": "U11",
     "categoryName": "U11 C",
     "scheduleType": "League",
@@ -699,7 +726,7 @@
     "categoryName": "U13 C",
     "scheduleType": "League",
     "startDate": "2026-11-09",
-    "endDate": "2027-02-04"
+    "endDate": "2027-03-01"
   },
   {
     "id": 202703,
@@ -1068,7 +1095,7 @@
     "categoryName": "U15 C",
     "scheduleType": "League",
     "startDate": "2026-11-09",
-    "endDate": "2027-02-04"
+    "endDate": "2027-03-01"
   },
   {
     "id": 203010,
@@ -1464,7 +1491,7 @@
     "categoryName": "U18 C",
     "scheduleType": "League",
     "startDate": "2026-11-14",
-    "endDate": "2026-12-18"
+    "endDate": "2027-03-01"
   },
   {
     "id": 203171,

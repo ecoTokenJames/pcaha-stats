@@ -572,10 +572,10 @@
       "homeTeamName": "ABBOTSFORD MHA (1) U18 A2 TIER 2 HAWKS (U17A)",
       "awayTeamId": 178626,
       "awayTeamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Abbotsford Recreation Centre 1"
     },
     {
@@ -589,10 +589,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U18 A4 TIER 4 (U17A)",
       "awayTeamId": 222001,
       "awayTeamName": "LANGLEY MHA (1) U18 A4 TIER 4 EAGLES (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
