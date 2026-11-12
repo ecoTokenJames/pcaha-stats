@@ -54,6 +54,15 @@
     "endDate": "2027-03-08"
   },
   {
+    "id": 203307,
+    "name": "SUPERHEARTS",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29"
+  },
+  {
     "id": 199393,
     "name": "U9 League",
     "divisionName": "U9",
