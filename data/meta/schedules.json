@@ -1503,6 +1503,15 @@
     "endDate": "2027-03-01"
   },
   {
+    "id": 203308,
+    "name": "ABBOTSFORD U18 REC TOURNAMENT",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-22"
+  },
+  {
     "id": 203171,
     "name": "JOE MORELLATO MEMORIAL SCHOLARSHIP TOURNAMENT",
     "divisionName": "U18",
