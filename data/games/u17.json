@@ -521,10 +521,10 @@
       "homeTeamName": "CLOVERDALE MHA (1) U18 A3 TIER 3 (U17A)",
       "awayTeamId": 178642,
       "awayTeamName": "SOUTH DELTA MHA (2) U18 A2 TIER 3 STORM (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Cloverdale Sport & Ice Complex 1-Blue"
     },
     {
