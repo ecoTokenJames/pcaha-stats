@@ -735,7 +735,7 @@
       "id": 1032113,
       "number": "U9L6654",
       "date": "2027-02-27",
-      "startTime": "2027-02-27T19:30:00.000Z",
+      "startTime": "2027-02-27T19:45:00.000Z",
       "groupId": 7014,
       "groupName": "Minor",
       "homeTeamId": 226361,
@@ -1306,7 +1306,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
@@ -1908,7 +1908,7 @@
       "id": 1032157,
       "number": "U9L6612",
       "date": "2027-02-06",
-      "startTime": "2027-02-06T19:30:00.000Z",
+      "startTime": "2027-02-06T19:45:00.000Z",
       "groupId": 7014,
       "groupName": "Minor",
       "homeTeamId": 226362,
@@ -2004,7 +2004,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Cloverdale Sport & Ice Complex 1-Blue"
+      "arena": "Cloverdale Arena"
     },
     {
       "id": 1032030,
@@ -2024,23 +2024,6 @@
       "arena": "Tilbury Ice"
     },
     {
-      "id": 1032031,
-      "number": "U9L6054",
-      "date": "2027-01-31",
-      "startTime": "2027-01-31T19:45:00.000Z",
-      "groupId": 7015,
-      "groupName": "Major",
-      "homeTeamId": 178097,
-      "homeTeamName": "CLOVERDALE MHA U9 C2",
-      "awayTeamId": 177961,
-      "awayTeamName": "LANGLEY MHA U9 C12",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Cloverdale Sport & Ice Complex 1-Blue"
-    },
-    {
       "id": 1032154,
       "number": "U9L6611",
       "date": "2027-01-31",
@@ -2054,7 +2037,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Cloverdale Sport & Ice Complex 1-Blue"
     },
     {
@@ -2092,6 +2075,23 @@
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
+      "id": 1032031,
+      "number": "U9L6054",
+      "date": "2027-01-31",
+      "startTime": "2027-01-31T17:15:00.000Z",
+      "groupId": 7015,
+      "groupName": "Major",
+      "homeTeamId": 178097,
+      "homeTeamName": "CLOVERDALE MHA U9 C2",
+      "awayTeamId": 177961,
+      "awayTeamName": "LANGLEY MHA U9 C12",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Cloverdale Arena"
+    },
+    {
       "id": 1032159,
       "number": "U9L6608",
       "date": "2027-01-31",
@@ -2105,7 +2105,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Cloverdale Sport & Ice Complex 1-Blue"
     },
     {
@@ -2173,7 +2173,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Cloverdale Sport & Ice Complex 1-Blue"
     },
     {
@@ -2299,7 +2299,7 @@
       "id": 1032172,
       "number": "U9L6598",
       "date": "2027-01-30",
-      "startTime": "2027-01-30T19:30:00.000Z",
+      "startTime": "2027-01-30T19:45:00.000Z",
       "groupId": 7014,
       "groupName": "Minor",
       "homeTeamId": 226361,
@@ -2741,7 +2741,7 @@
       "id": 1032180,
       "number": "U9L6584",
       "date": "2027-01-23",
-      "startTime": "2027-01-23T19:30:00.000Z",
+      "startTime": "2027-01-23T19:45:00.000Z",
       "groupId": 7014,
       "groupName": "Minor",
       "homeTeamId": 226362,
@@ -3132,7 +3132,7 @@
       "id": 1032198,
       "number": "U9L6570",
       "date": "2027-01-16",
-      "startTime": "2027-01-16T19:30:00.000Z",
+      "startTime": "2027-01-16T19:45:00.000Z",
       "groupId": 7014,
       "groupName": "Minor",
       "homeTeamId": 226361,
@@ -3431,7 +3431,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Tilbury Ice"
     },
     {
@@ -3482,7 +3482,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
@@ -3557,7 +3557,7 @@
       "id": 1032211,
       "number": "U9L6556",
       "date": "2027-01-09",
-      "startTime": "2027-01-09T19:30:00.000Z",
+      "startTime": "2027-01-09T19:45:00.000Z",
       "groupId": 7014,
       "groupName": "Minor",
       "homeTeamId": 226362,
@@ -3567,7 +3567,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "postponed",
+      "status": "scheduled",
       "arena": "Sportsplex Arena 1"
     },
     {
@@ -3839,7 +3839,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Canlan Ice Sports Langley Twin Rinks 1"
     },
     {
@@ -4390,7 +4390,7 @@
       "id": 1032237,
       "number": "U9L6528",
       "date": "2026-12-12",
-      "startTime": "2026-12-12T19:30:00.000Z",
+      "startTime": "2026-12-12T19:45:00.000Z",
       "groupId": 7014,
       "groupName": "Minor",
       "homeTeamId": 226362,
@@ -4798,7 +4798,7 @@
       "id": 1032077,
       "number": "U9L6514",
       "date": "2026-12-05",
-      "startTime": "2026-12-05T19:30:00.000Z",
+      "startTime": "2026-12-05T19:45:00.000Z",
       "groupId": 7014,
       "groupName": "Minor",
       "homeTeamId": 226361,
@@ -5169,6 +5169,23 @@
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
+      "id": 1032064,
+      "number": "U9L6501",
+      "date": "2026-11-28",
+      "startTime": "2026-11-28T21:15:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 226361,
+      "homeTeamName": "WCAHA 8UC (PCAHA U9 C1)",
+      "awayTeamId": 178016,
+      "awayTeamName": "SURREY MHA U9 C2 SY2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
+    },
+    {
       "id": 1032080,
       "number": "U9L6502",
       "date": "2026-11-28",
@@ -5184,23 +5201,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Tilbury Ice"
-    },
-    {
-      "id": 1032064,
-      "number": "U9L6501",
-      "date": "2026-11-28",
-      "startTime": "2026-11-28T21:00:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 226361,
-      "homeTeamName": "WCAHA 8UC (PCAHA U9 C1)",
-      "awayTeamId": 178016,
-      "awayTeamName": "SURREY MHA U9 C2 SY2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1032251,
