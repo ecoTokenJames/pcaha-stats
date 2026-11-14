@@ -20123,10 +20123,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA U18 C3",
       "awayTeamId": 177880,
       "awayTeamName": "SQUAMISH MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
@@ -25444,6 +25444,23 @@
       "arena": "The Arenas at LEC 1"
     },
     {
+      "id": 1023800,
+      "number": "U18L1050",
+      "date": "2026-12-02",
+      "startTime": "2026-12-03T04:15:00.000Z",
+      "groupId": 6989,
+      "groupName": "Flight 1",
+      "homeTeamId": 178636,
+      "homeTeamName": "RICHMOND JETS MHA (1) U18 A1 TIER 1",
+      "awayTeamId": 178631,
+      "awayTeamName": "VANCOUVER MHA (2) U18 A1 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Minoru Arena Stadium"
+    },
+    {
       "id": 1023731,
       "number": "U18L1631",
       "date": "2026-12-02",
@@ -25833,23 +25850,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Brennan Park Arena"
-    },
-    {
-      "id": 1023800,
-      "number": "U18L1050",
-      "date": "2026-11-28",
-      "startTime": "2026-11-29T01:45:00.000Z",
-      "groupId": 6989,
-      "groupName": "Flight 1",
-      "homeTeamId": 178636,
-      "homeTeamName": "RICHMOND JETS MHA (1) U18 A1 TIER 1",
-      "awayTeamId": 178631,
-      "awayTeamName": "VANCOUVER MHA (2) U18 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Minoru Arena Stadium"
     },
     {
       "id": 1023847,
@@ -26753,23 +26753,6 @@
       "arena": "Aldergrove Community Centre 1"
     },
     {
-      "id": 1023709,
-      "number": "U18L1616",
-      "date": "2026-11-19",
-      "startTime": "2026-11-20T03:30:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 178648,
-      "homeTeamName": "NORTH DELTA MHA (2) U18 A1 TIER 2 SUN DEVILS",
-      "awayTeamId": 178632,
-      "awayTeamName": "SUNSHINE COAST MHA (3) U18 A1 TIER 3 BLUES",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
-    },
-    {
       "id": 1023799,
       "number": "U18L1049",
       "date": "2026-11-19",
@@ -26802,6 +26785,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Bill Copeland Sports Centre BCSC"
+    },
+    {
+      "id": 1023709,
+      "number": "U18L1616",
+      "date": "2026-11-19",
+      "startTime": "2026-11-20T03:00:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 178648,
+      "homeTeamName": "NORTH DELTA MHA (2) U18 A1 TIER 2 SUN DEVILS",
+      "awayTeamId": 178632,
+      "awayTeamName": "SUNSHINE COAST MHA (3) U18 A1 TIER 3 BLUES",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
       "id": 1023597,
@@ -27341,10 +27341,10 @@
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA (1) U18 A1 TIER 1",
       "awayTeamId": 221459,
       "awayTeamName": "ARBUTUS CLUB (3) U18 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "North Shore Winter Club Main Rink"
     },
     {
@@ -27375,10 +27375,10 @@
       "homeTeamName": "THUNDER HUSKIES (2) U18 A1 TIER 2",
       "awayTeamId": 178651,
       "awayTeamName": "NEW WESTMINSTER MHA (3) U18 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
@@ -33325,7 +33325,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Sardis Sports Complex SSC2"
     },
     {
@@ -33339,10 +33339,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA U18 C6",
       "awayTeamId": 177932,
       "awayTeamName": "ABBOTSFORD MHA U18 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC1"
     },
     {
@@ -33359,7 +33359,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Chilliwack Coliseum 2 Red"
     },
     {
@@ -33373,10 +33373,10 @@
       "homeTeamName": "CHILLIWACK MHA U18 C2",
       "awayTeamId": 221135,
       "awayTeamName": "CHILLIWACK MHA U18 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC2"
     },
     {
@@ -33390,10 +33390,10 @@
       "homeTeamName": "NORTH OKANAGAN MHA (4) - KNIGHTS - U18 RECREATION #2",
       "awayTeamId": 177920,
       "awayTeamName": "CHILLIWACK MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC1"
     },
     {
@@ -34075,7 +34075,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Planet Ice Coquitlam 3 Venus"
     },
     {
@@ -34092,7 +34092,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Planet Ice Coquitlam 2 Pluto"
     },
     {
@@ -34109,7 +34109,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
@@ -34123,10 +34123,10 @@
       "homeTeamName": "ABBOTSFORD MHA U18 C4",
       "awayTeamId": 177911,
       "awayTeamName": "COQUITLAM MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Coquitlam 3 Venus"
     },
     {
@@ -34140,10 +34140,10 @@
       "homeTeamName": "COQUITLAM MHA U18 C1",
       "awayTeamId": 177850,
       "awayTeamName": "LANGLEY MHA U18 C6",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Coquitlam 2 Pluto"
     },
     {
@@ -34157,10 +34157,10 @@
       "homeTeamName": "COQUITLAM MHA U18 C4",
       "awayTeamId": 177909,
       "awayTeamName": "NEW WESTMINSTER MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Planet Ice Coquitlam 1 Mars"
     },
     {
@@ -34276,10 +34276,10 @@
       "homeTeamName": "PENINSULA MHA (3) U18 C2 EAGLES",
       "awayTeamId": 177911,
       "awayTeamName": "COQUITLAM MHA U18 C2",
-      "homeScore": 2,
-      "awayScore": 8,
+      "homeScore": null,
+      "awayScore": null,
       "decidedBy": null,
-      "status": "final",
+      "status": "awaiting",
       "arena": "Planet Ice Coquitlam 1 Mars"
     },
     {

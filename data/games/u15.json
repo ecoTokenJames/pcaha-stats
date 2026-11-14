@@ -881,7 +881,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Planet Ice Delta Canadian "
     },
     {
@@ -26616,6 +26616,23 @@
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
+      "id": 1024724,
+      "number": "U15L2247",
+      "date": "2026-12-19",
+      "startTime": "2026-12-20T00:15:00.000Z",
+      "groupId": 6980,
+      "groupName": "Flight 5",
+      "homeTeamId": 177799,
+      "homeTeamName": "SURREY MHA (2) U15 A2 TIER 3 THUNDER",
+      "awayTeamId": 177787,
+      "awayTeamName": "LANGLEY MHA (1) U15 A3 TIER 3 EAGLES",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Surrey Sport & Ice Complex Rink #2"
+    },
+    {
       "id": 1024718,
       "number": "U15L2251",
       "date": "2026-12-19",
@@ -27092,6 +27109,23 @@
       "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
+      "id": 1024365,
+      "number": "U15L1053",
+      "date": "2026-12-14",
+      "startTime": "2026-12-15T02:45:00.000Z",
+      "groupId": 6989,
+      "groupName": "Flight 1",
+      "homeTeamId": 177793,
+      "homeTeamName": "RICHMOND JETS MHA (1) U15 A1 TIER 1",
+      "awayTeamId": 177783,
+      "awayTeamName": "SEMIAHMOO MHA (1) U15 A1 TIER 1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Richmond Ice Centre Garage"
+    },
+    {
       "id": 1024366,
       "number": "U15L1054",
       "date": "2026-12-14",
@@ -27158,23 +27192,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Mission Leisure Centre North"
-    },
-    {
-      "id": 1024365,
-      "number": "U15L1053",
-      "date": "2026-12-14",
-      "startTime": "2026-12-15T02:00:00.000Z",
-      "groupId": 6989,
-      "groupName": "Flight 1",
-      "homeTeamId": 177793,
-      "homeTeamName": "RICHMOND JETS MHA (1) U15 A1 TIER 1",
-      "awayTeamId": 177783,
-      "awayTeamName": "SEMIAHMOO MHA (1) U15 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Minoru Arena Stadium"
     },
     {
       "id": 1024723,
@@ -27277,23 +27294,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sungod Recreation Centre"
-    },
-    {
-      "id": 1024724,
-      "number": "U15L2247",
-      "date": "2026-12-13",
-      "startTime": "2026-12-14T01:45:00.000Z",
-      "groupId": 6980,
-      "groupName": "Flight 5",
-      "homeTeamId": 177799,
-      "homeTeamName": "SURREY MHA (2) U15 A2 TIER 3 THUNDER",
-      "awayTeamId": 177787,
-      "awayTeamName": "LANGLEY MHA (1) U15 A3 TIER 3 EAGLES",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "North Surrey Sport & Ice Complex Rink #1"
     },
     {
       "id": 1024364,
@@ -27736,23 +27736,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Meadow Park Sports Centre"
-    },
-    {
-      "id": 1024794,
-      "number": "U15L2560",
-      "date": "2026-12-12",
-      "startTime": "2026-12-12T23:00:00.000Z",
-      "groupId": 6981,
-      "groupName": "Flight 6",
-      "homeTeamId": 219689,
-      "homeTeamName": "RICHMOND JETS MHA (1) U15 A3 TIER 3",
-      "awayTeamId": 177822,
-      "awayTeamName": "CLOVERDALE MHA (1) U15 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Richmond Ice Centre Forum"
     },
     {
       "id": 1024793,
@@ -28622,23 +28605,6 @@
       "arena": "Ladner Leisure Centre"
     },
     {
-      "id": 1024737,
-      "number": "U15L2233",
-      "date": "2026-12-06",
-      "startTime": "2026-12-06T18:00:00.000Z",
-      "groupId": 6980,
-      "groupName": "Flight 5",
-      "homeTeamId": 215080,
-      "homeTeamName": "SJHA 14UA2 JR METS (PNAHA/PCAHA)",
-      "awayTeamId": 177799,
-      "awayTeamName": "SURREY MHA (2) U15 A2 TIER 3 THUNDER",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Lynnwood Ice Centre 1"
-    },
-    {
       "id": 1024455,
       "number": "U15L1639",
       "date": "2026-12-05",
@@ -28773,6 +28739,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
+    },
+    {
+      "id": 1024737,
+      "number": "U15L2233",
+      "date": "2026-12-05",
+      "startTime": "2026-12-06T00:25:00.000Z",
+      "groupId": 6980,
+      "groupName": "Flight 5",
+      "homeTeamId": 215080,
+      "homeTeamName": "SJHA 14UA2 JR METS (PNAHA/PCAHA)",
+      "awayTeamId": 177799,
+      "awayTeamName": "SURREY MHA (2) U15 A2 TIER 3 THUNDER",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Lynnwood Ice Centre 1"
     },
     {
       "id": 1024739,
@@ -28926,6 +28909,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Ladner Leisure Centre"
+    },
+    {
+      "id": 1024520,
+      "number": "U15L1901",
+      "date": "2026-12-04",
+      "startTime": "2026-12-05T02:15:00.000Z",
+      "groupId": 6979,
+      "groupName": "Flight 4",
+      "homeTeamId": 177801,
+      "homeTeamName": "RIDGE MEADOWS MHA (1) U15 A3 TIER 3",
+      "awayTeamId": 177780,
+      "awayTeamName": "WHISTLER MHA (4) U15 A1 TIER 4 WINTERHAWKS",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "postponed",
+      "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
       "id": 1024571,
@@ -29880,6 +29880,23 @@
       "arena": "Richmond Ice Centre Forum"
     },
     {
+      "id": 1024702,
+      "number": "U15L2216",
+      "date": "2026-11-28",
+      "startTime": "2026-11-28T22:20:00.000Z",
+      "groupId": 6980,
+      "groupName": "Flight 5",
+      "homeTeamId": 221103,
+      "homeTeamName": "EYH 14UA1 Jr. Silvertips (PNAHA/PCAHA U15 A1)",
+      "awayTeamId": 177810,
+      "awayTeamName": "NORTH SHORE WINTER CLUB MHA (1) U15 A2 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Angel of the Winds Arena Community"
+    },
+    {
       "id": 1024524,
       "number": "U15L1920",
       "date": "2026-11-28",
@@ -30322,6 +30339,23 @@
       "arena": "Sungod Recreation Centre"
     },
     {
+      "id": 1024794,
+      "number": "U15L2560",
+      "date": "2026-11-23",
+      "startTime": "2026-11-24T02:45:00.000Z",
+      "groupId": 6981,
+      "groupName": "Flight 6",
+      "homeTeamId": 219689,
+      "homeTeamName": "RICHMOND JETS MHA (1) U15 A3 TIER 3",
+      "awayTeamId": 177822,
+      "awayTeamName": "CLOVERDALE MHA (1) U15 A3 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Richmond Ice Centre Garage"
+    },
+    {
       "id": 1024335,
       "number": "U15L1020",
       "date": "2026-11-23",
@@ -30524,23 +30558,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Cloverdale Sport & Ice Complex 2-Red"
-    },
-    {
-      "id": 1024702,
-      "number": "U15L2216",
-      "date": "2026-11-22",
-      "startTime": "2026-11-23T00:10:00.000Z",
-      "groupId": 6980,
-      "groupName": "Flight 5",
-      "homeTeamId": 221103,
-      "homeTeamName": "EYH 14UA1 Jr. Silvertips (PNAHA/PCAHA U15 A1)",
-      "awayTeamId": 177810,
-      "awayTeamName": "NORTH SHORE WINTER CLUB MHA (1) U15 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Angel of the Winds Arena Community"
     },
     {
       "id": 1024412,
@@ -31138,6 +31155,23 @@
       "arena": "Canlan Ice Sports North Shore 1 Red"
     },
     {
+      "id": 1024706,
+      "number": "U15L2208",
+      "date": "2026-11-16",
+      "startTime": "2026-11-17T03:15:00.000Z",
+      "groupId": 6980,
+      "groupName": "Flight 5",
+      "homeTeamId": 177795,
+      "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U15 A3 TIER 3",
+      "awayTeamId": 177786,
+      "awayTeamName": "LANGLEY MHA (1) U15 A4 TIER 4 EAGLES",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Kitsilano Community Centre Kitsilano Rink"
+    },
+    {
       "id": 1024403,
       "number": "U15L1611",
       "date": "2026-11-16",
@@ -31323,23 +31357,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
-    },
-    {
-      "id": 1024706,
-      "number": "U15L2208",
-      "date": "2026-11-15",
-      "startTime": "2026-11-16T02:30:00.000Z",
-      "groupId": 6980,
-      "groupName": "Flight 5",
-      "homeTeamId": 177795,
-      "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U15 A3 TIER 3",
-      "awayTeamId": 177786,
-      "awayTeamName": "LANGLEY MHA (1) U15 A4 TIER 4 EAGLES",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sunset Arena"
     },
     {
       "id": 1024478,
@@ -31899,7 +31916,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Meadow Park Sports Centre"
     },
     {
@@ -31969,23 +31986,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Ladner Leisure Centre"
-    },
-    {
-      "id": 1024520,
-      "number": "U15L1901",
-      "date": "2026-11-13",
-      "startTime": "2026-11-14T02:15:00.000Z",
-      "groupId": 6979,
-      "groupName": "Flight 4",
-      "homeTeamId": 177801,
-      "homeTeamName": "RIDGE MEADOWS MHA (1) U15 A3 TIER 3",
-      "awayTeamId": 177780,
-      "awayTeamName": "WHISTLER MHA (4) U15 A1 TIER 4 WINTERHAWKS",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
       "id": 1024344,
