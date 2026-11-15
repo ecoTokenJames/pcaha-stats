@@ -4744,6 +4744,23 @@
       "arena": "Tilbury Ice"
     },
     {
+      "id": 1032243,
+      "number": "U9L6092",
+      "date": "2026-12-05",
+      "startTime": "2026-12-05T22:30:00.000Z",
+      "groupId": 7015,
+      "groupName": "Major",
+      "homeTeamId": 178022,
+      "homeTeamName": "SOUTH DELTA MHA U9 C7",
+      "awayTeamId": 177963,
+      "awayTeamName": "SEMIAHMOO MHA U9 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Tilbury Ice"
+    },
+    {
       "id": 1032081,
       "number": "U9L6517",
       "date": "2026-12-05",
@@ -5115,23 +5132,6 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Tilbury Ice"
-    },
-    {
-      "id": 1032243,
-      "number": "U9L6092",
-      "date": "2026-11-28",
-      "startTime": "2026-11-28T22:30:00.000Z",
-      "groupId": 7015,
-      "groupName": "Major",
-      "homeTeamId": 178022,
-      "homeTeamName": "SOUTH DELTA MHA U9 C7",
-      "awayTeamId": 177963,
-      "awayTeamName": "SEMIAHMOO MHA U9 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
       "arena": "Tilbury Ice"
     },
     {
@@ -6399,6 +6399,23 @@
       "arena": "Surrey Sport & Leisure Centre Arena 2"
     },
     {
+      "id": 1030730,
+      "number": "U9T4512",
+      "date": "2026-11-28",
+      "startTime": "2026-11-28T18:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177562,
+      "homeTeamName": "SURREY FEMALE HA U9 C3",
+      "awayTeamId": 177556,
+      "awayTeamName": "ABBOTSFORD FEMALE HA U9 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Surrey Sport & Leisure Centre Arena 1"
+    },
+    {
       "id": 1030749,
       "number": "U9T4513",
       "date": "2026-11-28",
@@ -6414,23 +6431,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Surrey Sport & Leisure Centre Arena 2"
-    },
-    {
-      "id": 1030730,
-      "number": "U9T4512",
-      "date": "2026-11-28",
-      "startTime": "2026-11-28T17:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177562,
-      "homeTeamName": "SURREY FEMALE HA U9 C3",
-      "awayTeamId": 177556,
-      "awayTeamName": "ABBOTSFORD FEMALE HA U9 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Surrey Sport & Leisure Centre Arena 1"
     },
     {
       "id": 1030747,
