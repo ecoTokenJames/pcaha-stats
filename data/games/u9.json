@@ -3673,23 +3673,6 @@
       "arena": "Tilbury Ice"
     },
     {
-      "id": 1032060,
-      "number": "U9L6025",
-      "date": "2026-12-20",
-      "startTime": "2026-12-20T19:45:00.000Z",
-      "groupId": 7015,
-      "groupName": "Major",
-      "homeTeamId": 178097,
-      "homeTeamName": "CLOVERDALE MHA U9 C2",
-      "awayTeamId": 227556,
-      "awayTeamName": "LANGLEY MHA U9 C15",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Cloverdale Sport & Ice Complex 1-Blue"
-    },
-    {
       "id": 1032215,
       "number": "U9L6555",
       "date": "2026-12-20",
@@ -4319,6 +4302,23 @@
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
+      "id": 1032077,
+      "number": "U9L6514",
+      "date": "2026-12-12",
+      "startTime": "2026-12-12T21:15:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 226361,
+      "homeTeamName": "WCAHA 8UC (PCAHA U9 C1)",
+      "awayTeamId": 178061,
+      "awayTeamName": "NORTH DELTA MHA U9 C3 Minor",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
+    },
+    {
       "id": 1032238,
       "number": "U9L6530",
       "date": "2026-12-12",
@@ -4370,6 +4370,23 @@
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
+      "id": 1032237,
+      "number": "U9L6528",
+      "date": "2026-12-12",
+      "startTime": "2026-12-12T20:15:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 226362,
+      "homeTeamName": "WCAHA 8UC2 (PCAHA U9 C2)",
+      "awayTeamId": 177962,
+      "awayTeamName": "NORTH DELTA MHA U9 C4 Minor",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
+    },
+    {
       "id": 1032239,
       "number": "U9L6529",
       "date": "2026-12-12",
@@ -4385,23 +4402,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Tilbury Ice"
-    },
-    {
-      "id": 1032237,
-      "number": "U9L6528",
-      "date": "2026-12-12",
-      "startTime": "2026-12-12T19:45:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 226362,
-      "homeTeamName": "WCAHA 8UC2 (PCAHA U9 C2)",
-      "awayTeamId": 177962,
-      "awayTeamName": "NORTH DELTA MHA U9 C4 Minor",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1032141,
@@ -4487,6 +4487,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Centennial Arena Centennial"
+    },
+    {
+      "id": 1032060,
+      "number": "U9L6025",
+      "date": "2026-12-09",
+      "startTime": "2026-12-10T02:30:00.000Z",
+      "groupId": 7015,
+      "groupName": "Major",
+      "homeTeamId": 178097,
+      "homeTeamName": "CLOVERDALE MHA U9 C2",
+      "awayTeamId": 227556,
+      "awayTeamName": "LANGLEY MHA U9 C15",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Cloverdale Arena"
     },
     {
       "id": 1031993,
@@ -4810,23 +4827,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Tilbury Ice"
-    },
-    {
-      "id": 1032077,
-      "number": "U9L6514",
-      "date": "2026-12-05",
-      "startTime": "2026-12-05T19:45:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 226361,
-      "homeTeamName": "WCAHA 8UC (PCAHA U9 C1)",
-      "awayTeamId": 178061,
-      "awayTeamName": "NORTH DELTA MHA U9 C3 Minor",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1031982,
