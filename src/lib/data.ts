@@ -2,7 +2,12 @@ import fs from "fs";
 import path from "path";
 import zlib from "zlib";
 import { shortTeamNames } from "./team-names";
-import { buildTournamentEvents, type TournamentEvent } from "./tournament-groups";
+import {
+  buildTournamentEvents,
+  tournamentSections,
+  type TournamentEvent,
+  type TournamentSection,
+} from "./tournament-groups";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 /** Finished seasons, packaged by scraper/package-season.js: data/seasons/<season>/**.json.gz */
@@ -807,35 +812,21 @@ export function findTournamentEvent(id: number | string, season?: string): Tourn
   return getTournamentEvents(season).find((e) => e.scheduleIds.includes(n));
 }
 
+/** A tournament's standings tables with their own games (as page-ready views). */
+export interface TournamentSectionView extends Omit<TournamentSection, "games"> {
+  games: GameView[];
+}
+
 /**
- * Every game in a tournament, newest first, each tagged with its standings table
- * ("Pool A") or "Playoffs" for games between pools.
+ * Each standings table in a tournament with the games played and coming up in it,
+ * plus "Playoffs" sections for games between pools.
  */
-export function getTournamentEventGames(event: TournamentEvent, season?: string): GameView[] {
-  const labelOf = new Map<string, string>();
-  for (const g of event.groups) {
-    for (const t of g.teams) labelOf.set(`${g.scheduleId}:${t.teamId}`, g.label);
-  }
-  const tag = (scheduleId: number, game: GameRow): string | undefined => {
-    if (event.groups.length < 2) return undefined;
-    const home = labelOf.get(`${scheduleId}:${game.homeTeamId}`);
-    const away = labelOf.get(`${scheduleId}:${game.awayTeamId}`);
-    if (home && home === away) return home;
-    if (!home || !away) return home ?? away;
-    // Pools meet only after the round robin: crossovers, semis and finals
-    const shared = home.split(" · ").filter((part, i) => part === away.split(" · ")[i] && !/^Pool /.test(part));
-    return [...shared, "Playoffs"].join(" · ");
-  };
-  const seen = new Set<number>();
-  const games: GameView[] = [];
-  for (const scheduleId of event.scheduleIds) {
-    for (const g of getDivisionGames(event.divisionName, season)[scheduleId] ?? []) {
-      if (seen.has(g.id)) continue;
-      seen.add(g.id);
-      games.push({ ...toGameView(g), scheduleName: tag(scheduleId, g) });
-    }
-  }
-  return games.sort((a, b) => (b.startTime ?? "").localeCompare(a.startTime ?? ""));
+export function getTournamentEventSections(event: TournamentEvent, season?: string): TournamentSectionView[] {
+  const games = getDivisionGames(event.divisionName, season);
+  return tournamentSections(event, (scheduleId) => games[scheduleId] ?? []).map((s) => ({
+    ...s,
+    games: s.games.map(toGameView),
+  }));
 }
 
 /** Player stats for a whole tournament: one row per player per team, summed over its schedules. */
