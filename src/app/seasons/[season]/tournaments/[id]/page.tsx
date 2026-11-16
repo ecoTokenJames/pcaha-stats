@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import type { Metadata } from "next";
 import {
-  getAllTournaments,
-  getDivisionGames,
-  getTournamentPlayers,
-  toGameView,
+  findTournamentEvent,
+  getTournamentEventGames,
+  getTournamentEventPlayers,
+  getTournamentEvents,
   withShortNames,
   SEASON,
   seasonBase,
@@ -19,11 +19,15 @@ export const dynamicParams = true;
 
 export function generateStaticParams() {
   const season = SEASON;
-  return getAllTournaments(season).map((t) => ({ season, id: String(t.scheduleId) }));
+  return getTournamentEvents(season).map((e) => ({ season, id: String(e.id) }));
 }
 
-function findTournament(id: string, season: string) {
-  return getAllTournaments(season).find((t) => String(t.scheduleId) === id);
+function formatDay(ymd: string): string {
+  return new Date(`${ymd}T12:00:00Z`).toLocaleDateString("en-CA", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
 }
 
 export async function generateMetadata({
@@ -32,14 +36,15 @@ export async function generateMetadata({
   params: Promise<{ season: string; id: string }>;
 }): Promise<Metadata> {
   const { season, id } = await params;
-  const t = findTournament(id, season);
-  if (!t) return { title: "Tournament Not Found" };
-  const description = `${t.scheduleName} (${t.divisionName}): standings, scores and player stats for the ${season} season.`;
+  const e = findTournamentEvent(id, season);
+  if (!e) return { title: "Tournament Not Found" };
+  const title = `${e.name} (${e.divisionName})`;
+  const description = `${e.name} (${e.divisionName}): standings, scores and player stats for the ${season} season.`;
   return {
-    title: season === SEASON ? t.scheduleName : `${t.scheduleName} (${season})`,
+    title: season === SEASON ? title : `${title} ${season}`,
     description,
-    alternates: { canonical: `${seasonBase(season)}/tournaments/${id}` },
-    openGraph: { title: `${t.scheduleName} | PCAHA Stats`, description, images: ["/opengraph-image"] },
+    alternates: { canonical: `${seasonBase(season)}/tournaments/${e.id}` },
+    openGraph: { title: `${title} | PCAHA Stats`, description, images: ["/opengraph-image"] },
   };
 }
 
@@ -49,18 +54,26 @@ export default async function TournamentPage({
   params: Promise<{ season: string; id: string }>;
 }) {
   const { season, id } = await params;
-  const t = findTournament(id, season);
-  if (!t) notFound();
+  const event = findTournamentEvent(id, season);
+  if (!event) notFound();
+  // Each tier/pool used to have its own page; they now all live on the tournament's page
+  if (String(event.id) !== id) permanentRedirect(`${seasonBase(season)}/tournaments/${event.id}`);
 
-  const rawGames = getDivisionGames(t.divisionName, season)[id] ?? [];
+  const rawGames = getTournamentEventGames(event, season);
   const shortNames = shortTeamNames([
-    ...t.teams,
+    ...event.groups.flatMap((g) => g.teams),
     ...rawGames.flatMap((g) => [
       { teamId: g.homeTeamId, teamName: g.homeTeamName },
       { teamId: g.awayTeamId, teamName: g.awayTeamName },
     ]),
   ]);
-  const games = rawGames.map((g) => withShortNames(toGameView(g), shortNames));
+  const games = rawGames.map((g) => withShortNames(g, shortNames));
+  const when =
+    event.startDate && event.endDate
+      ? event.startDate === event.endDate
+        ? formatDay(event.startDate)
+        : `${formatDay(event.startDate)} – ${formatDay(event.endDate)}`
+      : "";
 
   return (
     <div className="space-y-4">
@@ -71,26 +84,29 @@ export default async function TournamentPage({
         ← All tournaments
       </Link>
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 break-words">{t.scheduleName}</h2>
-        <p className="text-sm text-gray-500">{t.divisionName}</p>
+        <h2 className="text-2xl font-bold text-gray-900 break-words">{event.name}</h2>
+        <p className="text-sm text-gray-500">
+          {[event.divisionName, event.categoryNames.join(", "), when].filter(Boolean).join(" · ")}
+        </p>
       </div>
       <TournamentDetail
-        tournament={{
-          ...t,
-          teams: t.teams.map((team) => ({ ...team, shortName: shortNames.get(team.teamId) })),
-          players: getTournamentPlayers(t.scheduleId, season).map((p) => ({
-            participantId: p.participantId,
-            teamId: p.teamId,
-            name: p.name,
-            number: p.number,
-            position: p.position,
-            gamesPlayed: p.gamesPlayed,
-            goals: p.goals,
-            assists: p.assists,
-            points: p.points,
-            pim: p.pim,
-          })),
-        }}
+        groups={event.groups.map((g) => ({
+          label: g.label,
+          note: g.note,
+          teams: g.teams.map((team) => ({ ...team, shortName: shortNames.get(team.teamId) })),
+        }))}
+        players={getTournamentEventPlayers(event, season).map((p) => ({
+          participantId: p.participantId,
+          teamId: p.teamId,
+          name: p.name,
+          number: p.number,
+          position: p.position,
+          gamesPlayed: p.gamesPlayed,
+          goals: p.goals,
+          assists: p.assists,
+          points: p.points,
+          pim: p.pim,
+        }))}
         games={games}
       />
     </div>

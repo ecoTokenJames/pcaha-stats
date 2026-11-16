@@ -267,6 +267,9 @@ async function fetchDivisions() {
 /**
  * Step 2: Fetch all schedules (leagues) for each division
  */
+/** Schedules the filter above left out this run, saved to data/meta/skipped-schedules.json */
+const skippedSchedules = [];
+
 async function fetchSchedules(divisions) {
   log('Fetching schedules for all divisions...');
   const allSchedules = [];
@@ -278,6 +281,20 @@ async function fetchSchedules(divisions) {
     // Use Spordle's own schedule type (League / Playoffs / Placement / Tournament).
     // Matching on names missed rounds like "FVW U11C Balancing" (a Placement round).
     const filtered = schedules.filter(s => isWantedSchedule(s));
+    // Note what was left out (from the list we already have; no extra requests), so a
+    // missing tournament can be traced to the filter or to Spordle not listing it
+    for (const s of schedules) {
+      if (filtered.includes(s)) continue;
+      skippedSchedules.push({
+        id: s.id,
+        name: s.name,
+        type: s.type || null,
+        divisionName: division.name,
+        categoryName: s.category?.name || '',
+        startDate: (s.startDate || '').slice(0, 10),
+        endDate: (s.endDate || '').slice(0, 10),
+      });
+    }
 
     for (const schedule of filtered) {
       // PCAHA runs U17 A as a tier of U18, so Spordle files it under U18; show it as U17
@@ -829,6 +846,10 @@ async function main() {
     ...scheduleFields(s),
   }));
   saveJson(path.join(DATA_DIR, 'meta', 'schedules.json'), scheduleMeta);
+  saveJson(path.join(DATA_DIR, 'meta', 'skipped-schedules.json'), skippedSchedules);
+  const skippedTournaments = skippedSchedules.filter(s => s.type === 'Tournament');
+  log(`Skipped ${skippedSchedules.length} schedules (${skippedTournaments.length} tournaments):`);
+  for (const s of skippedTournaments) log(`  skipped tournament: ${s.divisionName} ${s.name}`);
   saveJson(path.join(DATA_DIR, 'meta', 'divisions.json'), divisions.map(d => ({
     id: d.id,
     name: d.name,
