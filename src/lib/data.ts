@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import zlib from "zlib";
 import { shortTeamNames } from "./team-names";
+import { buildTournamentEvents, type TournamentEvent } from "./tournament-groups";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 /** Finished seasons, packaged by scraper/package-season.js: data/seasons/<season>/**.json.gz */
@@ -777,6 +778,92 @@ export function getTournamentPlayers(scheduleId: number, season?: string): Playe
   return allPlayers
     .filter((p) => p.scheduleId === scheduleId)
     .sort((a, b) => b.points - a.points || b.goals - a.goals);
+}
+
+const eventCache = new Map<string, TournamentEvent[]>();
+
+/**
+ * Tournaments as families know them: one per tournament per age group, with a
+ * standings table per tier, flight or pool (see tournament-groups.ts).
+ * Built from data already saved; nothing extra is asked of Spordle.
+ */
+export function getTournamentEvents(season?: string): TournamentEvent[] {
+  const key = season ?? SEASON;
+  if (!eventCache.has(key)) {
+    eventCache.set(
+      key,
+      buildTournamentEvents(
+        getAllTournaments(season),
+        (s) => getDivisionGames(s.divisionName, season)[s.scheduleId] ?? []
+      )
+    );
+  }
+  return eventCache.get(key)!;
+}
+
+/** The tournament a schedule id belongs to (any of its schedules' ids work). */
+export function findTournamentEvent(id: number | string, season?: string): TournamentEvent | undefined {
+  const n = Number(id);
+  return getTournamentEvents(season).find((e) => e.scheduleIds.includes(n));
+}
+
+/**
+ * Every game in a tournament, newest first, each tagged with its standings table
+ * ("Pool A") or "Playoffs" for games between pools.
+ */
+export function getTournamentEventGames(event: TournamentEvent, season?: string): GameView[] {
+  const labelOf = new Map<string, string>();
+  for (const g of event.groups) {
+    for (const t of g.teams) labelOf.set(`${g.scheduleId}:${t.teamId}`, g.label);
+  }
+  const tag = (scheduleId: number, game: GameRow): string | undefined => {
+    if (event.groups.length < 2) return undefined;
+    const home = labelOf.get(`${scheduleId}:${game.homeTeamId}`);
+    const away = labelOf.get(`${scheduleId}:${game.awayTeamId}`);
+    if (home && home === away) return home;
+    if (!home || !away) return home ?? away;
+    // Pools meet only after the round robin: crossovers, semis and finals
+    const shared = home.split(" · ").filter((part, i) => part === away.split(" · ")[i] && !/^Pool /.test(part));
+    return [...shared, "Playoffs"].join(" · ");
+  };
+  const seen = new Set<number>();
+  const games: GameView[] = [];
+  for (const scheduleId of event.scheduleIds) {
+    for (const g of getDivisionGames(event.divisionName, season)[scheduleId] ?? []) {
+      if (seen.has(g.id)) continue;
+      seen.add(g.id);
+      games.push({ ...toGameView(g), scheduleName: tag(scheduleId, g) });
+    }
+  }
+  return games.sort((a, b) => (b.startTime ?? "").localeCompare(a.startTime ?? ""));
+}
+
+/** Player stats for a whole tournament: one row per player per team, summed over its schedules. */
+export function getTournamentEventPlayers(event: TournamentEvent, season?: string): PlayerStat[] {
+  const rows = new Map<string, PlayerStat>();
+  for (const scheduleId of event.scheduleIds) {
+    for (const p of getTournamentPlayers(scheduleId, season)) {
+      const key = `${p.teamId}:${p.participantId}`;
+      const prev = rows.get(key);
+      rows.set(
+        key,
+        prev
+          ? {
+              ...prev,
+              gamesPlayed: prev.gamesPlayed + p.gamesPlayed,
+              goals: prev.goals + p.goals,
+              assists: prev.assists + p.assists,
+              points: prev.points + p.points,
+              pim: prev.pim + p.pim,
+              ppGoals: prev.ppGoals + p.ppGoals,
+              shGoals: prev.shGoals + p.shGoals,
+              gwGoals: prev.gwGoals + p.gwGoals,
+            }
+          : p
+      );
+    }
+  }
+  return [...rows.values()].sort((a, b) => b.points - a.points || b.goals - a.goals);
 }
 
 // ==================== Tier / Group Helpers ====================

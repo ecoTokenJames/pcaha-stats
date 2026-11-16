@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { ALL_SEASONS, getAllTournaments, getSchedulePhase, SEASON, seasonBase } from "@/lib/data";
+import { ALL_SEASONS, getTournamentEvents, SEASON, seasonBase } from "@/lib/data";
+import { pacificToday } from "@/lib/tournament-groups";
 import { TournamentView } from "@/components/TournamentView";
 import { SeasonPicker } from "@/components/SeasonPicker";
 
@@ -34,7 +35,7 @@ export default async function TournamentsPage({
   params: Promise<{ season: string }>;
 }) {
   const { season } = await params;
-  const tournaments = getAllTournaments(season);
+  const events = getTournamentEvents(season);
   const heading = (
     <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
       <h2 className="text-2xl font-bold text-gray-900">Tournaments</h2>
@@ -42,7 +43,7 @@ export default async function TournamentsPage({
     </div>
   );
 
-  if (tournaments.length === 0) {
+  if (events.length === 0) {
     return (
       <div>
         {heading}
@@ -54,24 +55,31 @@ export default async function TournamentsPage({
   }
 
   // Just the list; each tournament's standings, games and players are on its own page
-  const summaries = tournaments.map((t) => ({
-    scheduleId: t.scheduleId,
-    scheduleName: t.scheduleName,
-    divisionName: t.divisionName,
-    teamCount: new Set(t.teams.map((team) => team.teamId)).size,
+  const summaries = events.map((e) => ({
+    id: e.id,
+    name: e.name,
+    divisionName: e.divisionName,
+    categories: e.categoryNames.join(", "),
+    teamCount: e.teamCount,
+    groupCount: e.groups.length,
+    startDate: e.startDate,
+    endDate: e.endDate,
     when:
-      t.startDate && t.endDate
-        ? t.startDate === t.endDate
-          ? formatDay(t.startDate)
-          : `${formatDay(t.startDate)} – ${formatDay(t.endDate)}`
+      e.startDate && e.endDate
+        ? e.startDate === e.endDate
+          ? formatDay(e.startDate)
+          : `${formatDay(e.startDate)} – ${formatDay(e.endDate)}`
         : "",
-    phase: getSchedulePhase(t),
   }));
 
   return (
     <div>
       {heading}
-      <TournamentView tournaments={summaries} basePath={`${seasonBase(season)}/tournaments`} />
+      <TournamentView
+        tournaments={summaries}
+        basePath={`${seasonBase(season)}/tournaments`}
+        builtOn={pacificToday()}
+      />
     </div>
   );
 }
