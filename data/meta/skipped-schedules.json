@@ -1,0 +1,1145 @@
+[
+  {
+    "id": 199243,
+    "name": "FVW U9C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-09-07",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199265,
+    "name": "FVW U9C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-09-07",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 201973,
+    "name": "FVE U9 Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-10-01",
+    "endDate": "2027-03-30"
+  },
+  {
+    "id": 199715,
+    "name": "PL U9 Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-10-01",
+    "endDate": "2026-11-26"
+  },
+  {
+    "id": 199394,
+    "name": "U9 Tournaments (Out of District)",
+    "type": "Tournament",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-10-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199684,
+    "name": "FVN U9 Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199710,
+    "name": "LG U9 Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-10-09",
+    "endDate": "2026-11-26"
+  },
+  {
+    "id": 199392,
+    "name": "U9 Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-10-15",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 202435,
+    "name": "VIAHA South Island U9 Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-10-22",
+    "endDate": "2027-04-01"
+  },
+  {
+    "id": 202010,
+    "name": "LG U9 Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-11-27",
+    "endDate": "2027-03-30"
+  },
+  {
+    "id": 197010,
+    "name": "U11 A Interconference Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 A",
+    "startDate": "2026-08-15",
+    "endDate": "2026-09-27"
+  },
+  {
+    "id": 197011,
+    "name": "U11 C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-08-15",
+    "endDate": "2026-09-27"
+  },
+  {
+    "id": 199286,
+    "name": "FVE U11C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-08"
+  },
+  {
+    "id": 199291,
+    "name": "FVN U11C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-15"
+  },
+  {
+    "id": 199264,
+    "name": "LG U11C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-15"
+  },
+  {
+    "id": 199295,
+    "name": "PL U11C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-11"
+  },
+  {
+    "id": 201970,
+    "name": "PL U11C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-30"
+  },
+  {
+    "id": 197001,
+    "name": "U11A Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 SELECT",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 195271,
+    "name": "VIAHA U11 Development Exhibition Games",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-04",
+    "endDate": "2027-04-01"
+  },
+  {
+    "id": 195270,
+    "name": "VIAHA South Island U11 Exhibition Games",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-05",
+    "endDate": "2027-04-01"
+  },
+  {
+    "id": 199238,
+    "name": "FVW U11C Pre-Season",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-07",
+    "endDate": "2026-10-11"
+  },
+  {
+    "id": 199268,
+    "name": "FVW U11C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-07",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 197000,
+    "name": "U11A Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 SELECT",
+    "startDate": "2026-09-08",
+    "endDate": "2026-10-04"
+  },
+  {
+    "id": 199871,
+    "name": "Ridge Meadows Pre-Season Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 SELECT",
+    "startDate": "2026-09-18",
+    "endDate": "2026-09-20"
+  },
+  {
+    "id": 199714,
+    "name": "PL U11C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-23",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199300,
+    "name": "U11 A Interconference Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 A",
+    "startDate": "2026-09-28",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199318,
+    "name": "U11 C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-09-28",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199317,
+    "name": "U11 A Interconference Tournaments (Out of District)",
+    "type": "Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 A",
+    "startDate": "2026-10-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199312,
+    "name": "FVE U11C Tournaments (out of district)",
+    "type": "Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-10-01",
+    "endDate": "2027-03-28"
+  },
+  {
+    "id": 199322,
+    "name": "U11 C Tournaments (Out of District)",
+    "type": "Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-10-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199700,
+    "name": "U11A Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 SELECT",
+    "startDate": "2026-10-05",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199297,
+    "name": "FVE U11C Exhibition ",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-28"
+  },
+  {
+    "id": 199693,
+    "name": "FVN U11C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199705,
+    "name": "LG U11C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199244,
+    "name": "FVW U11C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-10-12",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199689,
+    "name": "FVN U11C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "startDate": "2026-10-16",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 195056,
+    "name": "PCEHL U13 AA Pre-Season",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 AA",
+    "startDate": "2026-06-01",
+    "endDate": "2026-11-30"
+  },
+  {
+    "id": 196516,
+    "name": "Training Schedule",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "startDate": "2026-07-01",
+    "endDate": "2027-01-31"
+  },
+  {
+    "id": 197012,
+    "name": "U13 A Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "startDate": "2026-08-15",
+    "endDate": "2026-09-27"
+  },
+  {
+    "id": 197002,
+    "name": "U13A Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "startDate": "2026-08-15",
+    "endDate": "2026-10-05"
+  },
+  {
+    "id": 197013,
+    "name": "U13 C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-08-15",
+    "endDate": "2026-09-27"
+  },
+  {
+    "id": 198214,
+    "name": "VIAHA Female A U13 Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "startDate": "2026-08-29",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 195243,
+    "name": "VIAHA Island League U13 Exhibition Games",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "startDate": "2026-08-29",
+    "endDate": "2027-04-01"
+  },
+  {
+    "id": 199399,
+    "name": "U13 A Tournament (Out of District)",
+    "type": "Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 197003,
+    "name": "U13A Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199285,
+    "name": "FVE U13C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-08"
+  },
+  {
+    "id": 199289,
+    "name": "FVN U13C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-15"
+  },
+  {
+    "id": 199262,
+    "name": "LG U13C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-15"
+  },
+  {
+    "id": 199294,
+    "name": "PL U13C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-11"
+  },
+  {
+    "id": 201969,
+    "name": "PL U13C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-30"
+  },
+  {
+    "id": 199405,
+    "name": "U13 C Tournaments (Out of District)",
+    "type": "Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 195269,
+    "name": "VIAHA South Island U13 Exhibition Games",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-05",
+    "endDate": "2027-04-01"
+  },
+  {
+    "id": 199239,
+    "name": "FVW U13C Pre-Season",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-07",
+    "endDate": "2026-10-11"
+  },
+  {
+    "id": 199269,
+    "name": "FVW U13C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-07",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 203385,
+    "name": "PCEHL U13 AA Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 AA",
+    "startDate": "2026-09-21",
+    "endDate": "2027-03-12"
+  },
+  {
+    "id": 199713,
+    "name": "PL U13C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-23",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199395,
+    "name": "U13 A Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "startDate": "2026-09-26",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199400,
+    "name": "U13 C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-09-28",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199313,
+    "name": "FVE U13C Tournaments (out of district)",
+    "type": "Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-10-01",
+    "endDate": "2027-03-28"
+  },
+  {
+    "id": 199698,
+    "name": "U13A Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "startDate": "2026-10-06",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199301,
+    "name": "FVE U13C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-28"
+  },
+  {
+    "id": 199692,
+    "name": "FVN U13C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199704,
+    "name": "LG U13C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199245,
+    "name": "FVW U13C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-10-12",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199688,
+    "name": "FVN U13C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-10-16",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 203158,
+    "name": "U13 JAMBOREE",
+    "type": "Tournament",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29"
+  },
+  {
+    "id": 193073,
+    "name": "BCEHL - U15 AAA ID Camp Schedule",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 AAA",
+    "startDate": "2026-04-01",
+    "endDate": "2026-08-31"
+  },
+  {
+    "id": 197014,
+    "name": "U15 A Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "startDate": "2026-08-15",
+    "endDate": "2026-09-27"
+  },
+  {
+    "id": 197004,
+    "name": "U15A Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "startDate": "2026-08-15",
+    "endDate": "2026-10-05"
+  },
+  {
+    "id": 197015,
+    "name": "U15 C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-08-15",
+    "endDate": "2026-09-27"
+  },
+  {
+    "id": 198213,
+    "name": "VIAHA Female A U15 Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "startDate": "2026-08-29",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 195242,
+    "name": "VIAHA Island League U15 Exhibition Games",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "startDate": "2026-08-29",
+    "endDate": "2027-04-01"
+  },
+  {
+    "id": 199411,
+    "name": "U15 A Tournament (Out of District)",
+    "type": "Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 197005,
+    "name": "U15A Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199284,
+    "name": "FVE U15C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-08"
+  },
+  {
+    "id": 199288,
+    "name": "FVN U15C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-15"
+  },
+  {
+    "id": 199260,
+    "name": "LG U15C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-15"
+  },
+  {
+    "id": 199293,
+    "name": "PL U15C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-11"
+  },
+  {
+    "id": 201968,
+    "name": "PL U15C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-30"
+  },
+  {
+    "id": 199417,
+    "name": "U15 C Tournaments (Out of District)",
+    "type": "Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 195268,
+    "name": "VIAHA South Island U15 Exhibition Games",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-05",
+    "endDate": "2027-04-01"
+  },
+  {
+    "id": 199240,
+    "name": "FVW U15C Pre-Season",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-07",
+    "endDate": "2026-10-11"
+  },
+  {
+    "id": 199270,
+    "name": "FVW U15C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-07",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 198474,
+    "name": "PCEHL U15 AA Exhibition Games",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 AA",
+    "startDate": "2026-09-10",
+    "endDate": "2027-03-14"
+  },
+  {
+    "id": 199712,
+    "name": "PL U15C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-23",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199406,
+    "name": "U15 A Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "startDate": "2026-09-26",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199412,
+    "name": "U15 C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-09-28",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199315,
+    "name": "FVE U15C Tournaments (out of district)",
+    "type": "Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-10-01",
+    "endDate": "2027-03-28"
+  },
+  {
+    "id": 199696,
+    "name": "U15A Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 A",
+    "startDate": "2026-10-06",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199304,
+    "name": "FVE U15C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-28"
+  },
+  {
+    "id": 199691,
+    "name": "FVN U15C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199703,
+    "name": "LG U15C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199246,
+    "name": "FVW U15C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-10-12",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199687,
+    "name": "FVN U15C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-10-16",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 202440,
+    "name": "VIAHA Female U15 AA",
+    "type": "Exhibition",
+    "divisionName": "U15",
+    "categoryName": "U15 AA",
+    "startDate": "2026-10-22",
+    "endDate": "2027-04-01"
+  },
+  {
+    "id": 203138,
+    "name": "U15 JAMBOREE",
+    "type": "Tournament",
+    "divisionName": "U15",
+    "categoryName": "U15 C",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29"
+  },
+  {
+    "id": 193321,
+    "name": "BCEHL - Female U18 AAA ID Camp Schedule",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 AAA",
+    "startDate": "2026-04-01",
+    "endDate": "2026-08-31"
+  },
+  {
+    "id": 193098,
+    "name": "BCEHL - U17/18 AAA ID Camp Schedule",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 AAA",
+    "startDate": "2026-04-01",
+    "endDate": "2026-08-31"
+  },
+  {
+    "id": 193833,
+    "name": "BCEHL - Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 AAA",
+    "startDate": "2026-04-16",
+    "endDate": "2027-09-06"
+  },
+  {
+    "id": 197016,
+    "name": "U18 A Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "startDate": "2026-08-15",
+    "endDate": "2026-09-27"
+  },
+  {
+    "id": 197006,
+    "name": "U18A Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "startDate": "2026-08-15",
+    "endDate": "2026-10-05"
+  },
+  {
+    "id": 197017,
+    "name": "U18 C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-08-15",
+    "endDate": "2026-09-27"
+  },
+  {
+    "id": 198212,
+    "name": "VIAHA Female A U18 Exhibtion",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "startDate": "2026-08-29",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 195241,
+    "name": "VIAHA Island League U18 Exhibition Games",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "startDate": "2026-08-29",
+    "endDate": "2027-04-01"
+  },
+  {
+    "id": 200106,
+    "name": "U17A Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-05"
+  },
+  {
+    "id": 199422,
+    "name": "U18 A Tournament (Out of District)",
+    "type": "Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 197007,
+    "name": "U18A Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199266,
+    "name": "FVE U18C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-08"
+  },
+  {
+    "id": 199287,
+    "name": "FVN U18C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-15"
+  },
+  {
+    "id": 199258,
+    "name": "LG U18C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-15"
+  },
+  {
+    "id": 199292,
+    "name": "PL U18C Pre-season",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-01",
+    "endDate": "2026-10-11"
+  },
+  {
+    "id": 201967,
+    "name": "PL U18C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-30"
+  },
+  {
+    "id": 199427,
+    "name": "U18 C Tournament (Out of District)",
+    "type": "Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-01",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 195267,
+    "name": "VIAHA South Island U18 Exhibition Games",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-05",
+    "endDate": "2027-04-01"
+  },
+  {
+    "id": 199241,
+    "name": "FVW U18C Pre-Season",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-07",
+    "endDate": "2026-10-11"
+  },
+  {
+    "id": 199271,
+    "name": "FVW U18C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-07",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199711,
+    "name": "PL U18C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-23",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199418,
+    "name": "U18 A Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "startDate": "2026-09-26",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199423,
+    "name": "U18 C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-09-28",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199316,
+    "name": "FVE U18C Tournaments (out of district)",
+    "type": "Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-10-01",
+    "endDate": "2027-03-28"
+  },
+  {
+    "id": 201047,
+    "name": "U17 A Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "startDate": "2026-10-02",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199695,
+    "name": "U18A Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 A",
+    "startDate": "2026-10-06",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199307,
+    "name": "FVE U18C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-12"
+  },
+  {
+    "id": 199690,
+    "name": "FVN U18C Tournaments (Out of district)",
+    "type": "Tournament",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199702,
+    "name": "LG U18C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-10-09",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199247,
+    "name": "FVW U18C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-10-12",
+    "endDate": "2027-03-31"
+  },
+  {
+    "id": 199686,
+    "name": "FVN U18C Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U18",
+    "categoryName": "U18 C",
+    "startDate": "2026-10-16",
+    "endDate": "2027-03-31"
+  }
+]

@@ -4302,6 +4302,23 @@
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
+      "id": 1032237,
+      "number": "U9L6528",
+      "date": "2026-12-12",
+      "startTime": "2026-12-12T22:15:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 226362,
+      "homeTeamName": "WCAHA 8UC2 (PCAHA U9 C2)",
+      "awayTeamId": 177962,
+      "awayTeamName": "NORTH DELTA MHA U9 C4 Minor",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
+    },
+    {
       "id": 1032077,
       "number": "U9L6514",
       "date": "2026-12-12",
@@ -4368,23 +4385,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
-    },
-    {
-      "id": 1032237,
-      "number": "U9L6528",
-      "date": "2026-12-12",
-      "startTime": "2026-12-12T20:15:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 226362,
-      "homeTeamName": "WCAHA 8UC2 (PCAHA U9 C2)",
-      "awayTeamId": 177962,
-      "awayTeamName": "NORTH DELTA MHA U9 C4 Minor",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1032239,
