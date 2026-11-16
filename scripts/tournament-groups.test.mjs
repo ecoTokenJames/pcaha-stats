@@ -7,6 +7,7 @@ import {
   pacificToday,
   splitSchedule,
   splitTournamentName,
+  tournamentSections,
 } from "../src/lib/tournament-groups.ts";
 
 const team = (teamId, teamName, gamesPlayed = 3) => ({ teamId, teamName, gamesPlayed });
@@ -128,6 +129,38 @@ test("a tournament's tiers are merged into one entry; other weekends and ages st
       [300, "FALL CLASSIC", "U15", ["Gold Tier"], 2],
     ]
   );
+});
+
+test("each table gets its own games; games between pools go in a Playoffs section after them", () => {
+  const teams = [1, 2, 3, 4, 5, 6, 7, 8].map((id) => team(id, `TEAM ${id}`));
+  const games = [
+    ...roundRobin([1, 2, 3, 4], "2026-10-09", 1).slice(0, 3),
+    ...roundRobin([1, 2, 3, 4], "2026-10-10", 1).slice(3),
+    ...roundRobin([5, 6, 7, 8], "2026-10-09", 20).slice(0, 3),
+    ...roundRobin([5, 6, 7, 8], "2026-10-10", 20).slice(3),
+    game(40, "2026-10-11", 1, 5),
+    { ...game(41, "2026-10-11", null, null), status: "scheduled" }, // final, teams TBD
+  ];
+  const [event] = buildTournamentEvents([schedule(1, "X", teams)], () => games);
+  const sections = tournamentSections(event, () => games);
+  assert.deepEqual(
+    sections.map((s) => [s.label, s.teams.length, s.games.map((g) => g.id).sort((a, b) => a - b)]),
+    [
+      ["Pool A", 4, [1, 2, 3, 4, 5, 6]],
+      ["Pool B", 4, [20, 21, 22, 23, 24, 25]],
+      ["Playoffs", 0, [40, 41]],
+    ]
+  );
+  // newest first, like the rest of the site
+  assert.equal(sections[0].games[0].date, "2026-10-10");
+});
+
+test("a one-table tournament keeps all its games, even ones with teams still TBD", () => {
+  const teams = [team(1, "A"), team(2, "B"), team(3, "C")];
+  const games = [...roundRobin([1, 2, 3], "2026-10-10", 1), game(9, "2026-10-11", null, null)];
+  const [event] = buildTournamentEvents([schedule(1, "X", teams)], () => games);
+  const sections = tournamentSections(event, () => games);
+  assert.deepEqual(sections.map((s) => [s.label, s.games.length]), [["", 4]]);
 });
 
 test("pacificToday is B.C. time (UTC-7)", () => {

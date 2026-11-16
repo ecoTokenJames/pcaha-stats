@@ -3,7 +3,7 @@ import { notFound, permanentRedirect } from "next/navigation";
 import type { Metadata } from "next";
 import {
   findTournamentEvent,
-  getTournamentEventGames,
+  getTournamentEventSections,
   getTournamentEventPlayers,
   getTournamentEvents,
   withShortNames,
@@ -59,15 +59,16 @@ export default async function TournamentPage({
   // Each tier/pool used to have its own page; they now all live on the tournament's page
   if (String(event.id) !== id) permanentRedirect(`${seasonBase(season)}/tournaments/${event.id}`);
 
-  const rawGames = getTournamentEventGames(event, season);
+  const sections = getTournamentEventSections(event, season);
   const shortNames = shortTeamNames([
     ...event.groups.flatMap((g) => g.teams),
-    ...rawGames.flatMap((g) => [
-      { teamId: g.homeTeamId, teamName: g.homeTeamName },
-      { teamId: g.awayTeamId, teamName: g.awayTeamName },
-    ]),
+    ...sections.flatMap((sec) =>
+      sec.games.flatMap((g) => [
+        { teamId: g.homeTeamId, teamName: g.homeTeamName },
+        { teamId: g.awayTeamId, teamName: g.awayTeamName },
+      ])
+    ),
   ]);
-  const games = rawGames.map((g) => withShortNames(g, shortNames));
   const when =
     event.startDate && event.endDate
       ? event.startDate === event.endDate
@@ -90,10 +91,11 @@ export default async function TournamentPage({
         </p>
       </div>
       <TournamentDetail
-        groups={event.groups.map((g) => ({
-          label: g.label,
-          note: g.note,
-          teams: g.teams.map((team) => ({ ...team, shortName: shortNames.get(team.teamId) })),
+        groups={sections.map((sec) => ({
+          label: sec.label,
+          note: sec.note,
+          teams: sec.teams.map((team) => ({ ...team, shortName: shortNames.get(team.teamId) })),
+          games: sec.games.map((g) => withShortNames(g, shortNames)),
         }))}
         players={getTournamentEventPlayers(event, season).map((p) => ({
           participantId: p.participantId,
@@ -107,7 +109,6 @@ export default async function TournamentPage({
           points: p.points,
           pim: p.pim,
         }))}
-        games={games}
       />
     </div>
   );

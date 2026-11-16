@@ -17,6 +17,8 @@ export function GamesList({
   linkableTeamIds,
   showContext = false,
   emptyText = "No games scheduled yet.",
+  resultsPerPage = RESULTS_PAGE,
+  upcomingShown = UPCOMING_SHOWN,
 }: {
   games: GameView[];
   teamLinkBase?: string;
@@ -25,6 +27,10 @@ export function GamesList({
   /** Show which schedule/tier each game was in (team page) */
   showContext?: boolean;
   emptyText?: string;
+  /** Results per page (default 10) */
+  resultsPerPage?: number;
+  /** How many upcoming games to list (default 5) */
+  upcomingShown?: number;
 }) {
   const [page, setPage] = useState(0);
   const linkable = linkableTeamIds ? new Set(linkableTeamIds) : null;
@@ -39,8 +45,8 @@ export function GamesList({
   const upcoming = games
     .filter((g) => g.status === "scheduled" || g.status === "postponed")
     .reverse()
-    .slice(0, UPCOMING_SHOWN);
-  const pageCount = Math.ceil(results.length / RESULTS_PAGE);
+    .slice(0, upcomingShown);
+  const pageCount = Math.ceil(results.length / resultsPerPage);
   const currentPage = Math.min(page, Math.max(pageCount - 1, 0));
 
   if (results.length === 0 && awaiting.length === 0 && upcoming.length === 0) {
@@ -63,7 +69,7 @@ export function GamesList({
               <GameItem key={g.id} game={g} linkFor={linkFor} showContext={showContext} />
             ))}
             {results
-              .slice(currentPage * RESULTS_PAGE, (currentPage + 1) * RESULTS_PAGE)
+              .slice(currentPage * resultsPerPage, (currentPage + 1) * resultsPerPage)
               .map((g) => (
                 <GameItem key={g.id} game={g} linkFor={linkFor} showContext={showContext} />
               ))}

@@ -236,6 +236,78 @@ export function splitSchedule(
   return groups.filter((g) => g.teams.length > 0);
 }
 
+// ==================== Games per table ====================
+
+export interface TournamentSection extends TournamentGroup {
+  /** That table's games, newest first. Playoff sections have games but no teams */
+  games: GameRow[];
+}
+
+const POOL = /^Pool [A-Z]$/;
+
+/**
+ * A tournament's standings tables, each with its own games, in page order.
+ * Games between two pools (crossovers, semis, finals) get a "Playoffs" section
+ * right after those pools, e.g. "Playoffs" or "Group 1 · Playoffs".
+ */
+export function tournamentSections(
+  event: Pick<TournamentEvent, "scheduleIds" | "groups">,
+  gamesFor: (scheduleId: number) => GameRow[]
+): TournamentSection[] {
+  const out: TournamentSection[] = [];
+  const seen = new Set<number>();
+
+  for (const scheduleId of event.scheduleIds) {
+    const groups: TournamentSection[] = event.groups
+      .filter((g) => g.scheduleId === scheduleId)
+      .map((g) => ({ ...g, games: [] }));
+    if (groups.length === 0) continue;
+    const groupOf = new Map<number, TournamentSection>();
+    for (const g of groups) for (const t of g.teams) groupOf.set(t.teamId, g);
+    const playoffs = new Map<string, TournamentSection>();
+    // "Group 1 · Pool A" → ["Group 1"]: the part a playoff game's two teams share
+    const withoutPool = (label: string) => label.split(" · ").filter((p) => p && !POOL.test(p));
+
+    for (const game of gamesFor(scheduleId)) {
+      if (seen.has(game.id)) continue;
+      seen.add(game.id);
+      const home = groupOf.get(game.homeTeamId);
+      const away = groupOf.get(game.awayTeamId);
+      if (groups.length === 1 || (home && home === away)) {
+        (groups.length === 1 ? groups[0] : home!).games.push(game);
+        continue;
+      }
+      // Between pools, or a team not decided yet (TBD)
+      const sides = [home, away].filter((g): g is TournamentSection => Boolean(g)).map((g) => withoutPool(g.label));
+      const shared =
+        sides.length === 2
+          ? sides[0].filter((part, i) => part === sides[1][i])
+          : sides.length === 1
+            ? sides[0]
+            : withoutPool(groups[0].label).filter((part, i) => groups.every((g) => withoutPool(g.label)[i] === part));
+      const label = [...shared, "Playoffs"].join(" · ");
+      if (!playoffs.has(label)) playoffs.set(label, { label, scheduleId, teams: [], games: [] });
+      playoffs.get(label)!.games.push(game);
+    }
+
+    // Each playoff section goes right after the last table it draws from
+    const ordered = [...groups];
+    for (const section of playoffs.values()) {
+      const prefix = section.label.replace(/(^| · )Playoffs$/, "");
+      let at = -1;
+      ordered.forEach((g, i) => {
+        if (g.teams.length > 0 && (prefix === "" || g.label === prefix || g.label.startsWith(`${prefix} · `))) at = i;
+      });
+      ordered.splice(at === -1 ? ordered.length : at + 1, 0, section);
+    }
+    out.push(...ordered);
+  }
+
+  const newestFirst = (a: GameRow, b: GameRow) => (b.startTime ?? "").localeCompare(a.startTime ?? "");
+  for (const s of out) s.games.sort(newestFirst);
+  return out;
+}
+
 // ==================== Tournaments ====================
 
 function addDays(ymd: string, days: number): string {
