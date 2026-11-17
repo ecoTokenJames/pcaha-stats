@@ -6,6 +6,7 @@ import type { GameView, TeamStanding } from "@/lib/data";
 import { GamesList } from "./GamesList";
 import { TeamStar } from "./FavoriteStar";
 import { TeamName } from "./TeamName";
+import { showsSportsmanship, SPORTSMANSHIP_TITLE } from "@/lib/sportsmanship";
 
 type SortKey = keyof TeamStanding;
 
@@ -105,6 +106,9 @@ export function StandingsTable({
     groups.push({ name: null, teams: sortedTeams });
   }
 
+  // Sportsmanship points, only where this league awards them
+  const showSp = showsSportsmanship(teams);
+
   const columns: { key: SortKey; label: string; title: string; className?: string }[] = [
     { key: "rank", label: "#", title: "Rank" },
     { key: "teamName", label: "Team", title: "Team Name", className: "text-left" },
@@ -114,6 +118,9 @@ export function StandingsTable({
     { key: "ties", label: "T", title: "Ties" },
     // Points straight after the record, so phones see it without scrolling
     { key: "points", label: "PTS", title: "Points" },
+    ...(showSp
+      ? [{ key: "sportsmanshipPoints" as SortKey, label: "SP", title: SPORTSMANSHIP_TITLE }]
+      : []),
     { key: "otWins", label: "OTW", title: "Overtime Wins" },
     { key: "otLosses", label: "OTL", title: "Overtime Losses" },
     { key: "goalsFor", label: "GF", title: "Goals For" },
@@ -241,6 +248,9 @@ export function StandingsTable({
                   <td className="px-1.5 sm:px-2 py-2 text-center font-bold text-blue-900">
                     {team.points}
                   </td>
+                  {showSp && (
+                    <td className="px-1.5 sm:px-2 py-2 text-center">{team.sportsmanshipPoints}</td>
+                  )}
                   <td className="px-1.5 sm:px-2 py-2 text-center">{team.otWins}</td>
                   <td className="px-1.5 sm:px-2 py-2 text-center">{team.otLosses}</td>
                   <td className="px-1.5 sm:px-2 py-2 text-center">{team.goalsFor}</td>
@@ -260,6 +270,9 @@ export function StandingsTable({
               ))}
             </tbody>
           </table>
+          {showSp && (
+            <p className="px-4 py-2 text-xs text-gray-500">SP = sportsmanship points.</p>
+          )}
           </div>
           )}
         </div>
