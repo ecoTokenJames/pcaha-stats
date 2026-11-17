@@ -369,6 +369,24 @@
     "endDate": "2027-02-22"
   },
   {
+    "id": 203444,
+    "name": "GIRLS WITH GOALS - U11C - POOL A",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29"
+  },
+  {
+    "id": 203447,
+    "name": "GIRLS WITH GOALS - U11C - POOL B",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29"
+  },
+  {
     "id": 199299,
     "name": "FVE U11C Playoffs",
     "divisionName": "U11",
@@ -772,6 +790,24 @@
     "scheduleType": "Tournament",
     "startDate": "2026-11-20",
     "endDate": "2026-11-22"
+  },
+  {
+    "id": 203450,
+    "name": "GIRLS WITH GOALS - U13C - POOL A",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29"
+  },
+  {
+    "id": 203460,
+    "name": "GIRLS WITH GOALS - U13C - POOL B",
+    "divisionName": "U13",
+    "categoryName": "U13 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29"
   },
   {
     "id": 199303,
