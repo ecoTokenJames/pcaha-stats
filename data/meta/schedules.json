@@ -72,6 +72,15 @@
     "endDate": "2027-03-07"
   },
   {
+    "id": 203423,
+    "name": "BRIAN BRITTON MEMORIAL U9 TOURNAMENT",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-04",
+    "endDate": "2026-12-06"
+  },
+  {
     "id": 199308,
     "name": "U11 A Interconference Placement",
     "divisionName": "U11",
