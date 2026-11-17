@@ -317,6 +317,34 @@ async function fetchSchedules(divisions) {
 /**
  * Step 3: Fetch team standings for each schedule
  */
+/**
+ * Sportsmanship points from a Spordle standings row, when the league or tournament
+ * awards them (Spordle already counts them in `points`). The field name isn't
+ * documented, so match it by name; data/meta/teamstats-fields.json lists what
+ * Spordle actually sends, to check it against.
+ */
+const SPORTSMANSHIP_FIELD = /sportsman|spirit|fair_?play/i;
+function sportsmanshipOf(ts) {
+  for (const [key, value] of Object.entries(ts)) {
+    if (SPORTSMANSHIP_FIELD.test(key) && typeof value === 'number') return value;
+  }
+  return null;
+}
+
+/** Field names seen in this run's standings rows, plus one sample row (numbers only) */
+const teamStatFields = { keys: new Set(), sample: null };
+function noteTeamStatFields(schedule, teamStats) {
+  for (const ts of teamStats) for (const key of Object.keys(ts)) teamStatFields.keys.add(key);
+  // A row whose points are more than 2 per win + 1 per tie shows where the extra comes from
+  const extra = teamStats.find(ts => typeof ts.points === 'number' && ts.points > 2 * (ts.wins || 0) + (ts.ties || 0));
+  if (extra && !teamStatFields.sample) {
+    teamStatFields.sample = {
+      scheduleName: schedule.name,
+      row: Object.fromEntries(Object.entries(extra).filter(([, v]) => v === null || typeof v !== 'object')),
+    };
+  }
+}
+
 async function fetchStandings(schedules) {
   log('Fetching team standings...');
   const standings = {};
@@ -333,6 +361,7 @@ async function fetchStandings(schedules) {
       const teamStats = await api.getTeamStats(schedule.id);
       (scheduleCache[schedule.id] ||= {}).standings = null;
       if (!teamStats || teamStats.length === 0) continue;
+      noteTeamStatFields(schedule, teamStats);
 
       standings[schedule.id] = {
         scheduleId: schedule.id,
@@ -361,6 +390,7 @@ async function fetchStandings(schedules) {
           gaPerGame: ts.goalAgainstPerGame,
           pim: ts.pim,
           pimPerGame: ts.pimPerGame,
+          sportsmanshipPoints: sportsmanshipOf(ts),
           groupName: ts.group?.name || null,
           groupId: ts.group?.id ?? null,
         })),
@@ -371,6 +401,12 @@ async function fetchStandings(schedules) {
     } catch (e) {
       log(`  ERROR: ${schedule.name}: ${e.message}`);
     }
+  }
+
+  if (teamStatFields.keys.size > 0) {
+    const keys = [...teamStatFields.keys].sort();
+    log(`Standings fields from Spordle: ${keys.join(', ')}`);
+    saveJson(path.join(DATA_DIR, 'meta', 'teamstats-fields.json'), { keys, sample: teamStatFields.sample });
   }
 
   // Teams from outside PCAHA come without a name; fill in the ones we know (re-used ones too)

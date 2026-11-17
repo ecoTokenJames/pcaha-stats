@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import type { GameView, PlayerStat, TeamStanding } from "@/lib/data";
 import { GamesList } from "./GamesList";
 import { TeamName } from "./TeamName";
+import { showsSportsmanship, SPORTSMANSHIP_TITLE } from "@/lib/sportsmanship";
 
 /** Just the player fields this page shows */
 export type TournamentPlayer = Pick<
@@ -101,6 +102,14 @@ export function TournamentDetail({
                     <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-5 sm:w-10">L</th>
                     <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-5 sm:w-10">T</th>
                     <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10">PTS</th>
+                  {showsSportsmanship(group.teams) && (
+                    <th
+                      title={SPORTSMANSHIP_TITLE}
+                      className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10"
+                    >
+                      SP
+                    </th>
+                  )}
                     <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10">GF</th>
                     <th className="px-0.5 sm:px-2 py-2 text-center font-medium text-gray-500 w-6 sm:w-10">GA</th>
                   </tr>
@@ -122,6 +131,9 @@ export function TournamentDetail({
                       <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center text-red-600 font-medium">{team.losses}</td>
                       <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">{team.ties}</td>
                       <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center font-bold text-blue-900">{team.points}</td>
+                    {showsSportsmanship(group.teams) && (
+                      <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">{team.sportsmanshipPoints}</td>
+                    )}
                       <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">{team.goalsFor}</td>
                       <td className="px-0.5 sm:px-2 py-1.5 sm:py-2 text-center">{team.goalsAgainst}</td>
                     </tr>
@@ -130,7 +142,13 @@ export function TournamentDetail({
               </table>
             </div>
           )}
-          {group.note && <p className="px-3 sm:px-4 py-2 text-xs text-gray-500">{group.note}</p>}
+          {(group.note || showsSportsmanship(group.teams)) && (
+            <p className="px-3 sm:px-4 py-2 text-xs text-gray-500">
+              {[showsSportsmanship(group.teams) && "SP = sportsmanship points.", group.note]
+                .filter(Boolean)
+                .join(" ")}
+            </p>
+          )}
           {/* This table's games: results, then what's coming up */}
           <div className="border-t border-gray-100">
             <GamesList

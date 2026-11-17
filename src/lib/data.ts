@@ -59,6 +59,8 @@ export interface TeamStanding {
   gaPerGame: number;
   pim: number;
   pimPerGame: number;
+  /** Sportsmanship points, when the league/tournament awards them (null or missing = not given) */
+  sportsmanshipPoints?: number | null;
   groupName: string | null;
   /** Short name for phones ("Langley A1"); set by the page, not in the data files */
   shortName?: string;
