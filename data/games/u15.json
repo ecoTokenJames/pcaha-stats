@@ -23567,6 +23567,23 @@
       "arena": "Richmond Ice Centre Forum"
     },
     {
+      "id": 1030426,
+      "number": "U15L8212",
+      "date": "2026-12-08",
+      "startTime": "2026-12-09T02:30:00.000Z",
+      "groupId": 7029,
+      "groupName": "Gold",
+      "homeTeamId": 178596,
+      "homeTeamName": "NEW WESTMINSTER MHA U15 C1",
+      "awayTeamId": 178558,
+      "awayTeamName": "VANCOUVER THUNDERBIRD MHA U15 C5",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Queens Park Arena 1"
+    },
+    {
       "id": 1030510,
       "number": "U15L8618",
       "date": "2026-12-08",
@@ -24075,23 +24092,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Richmond Ice Centre Coliseum"
-    },
-    {
-      "id": 1030426,
-      "number": "U15L8212",
-      "date": "2026-11-29",
-      "startTime": "2026-11-29T23:30:00.000Z",
-      "groupId": 7029,
-      "groupName": "Gold",
-      "homeTeamId": 178596,
-      "homeTeamName": "NEW WESTMINSTER MHA U15 C1",
-      "awayTeamId": 178558,
-      "awayTeamName": "VANCOUVER THUNDERBIRD MHA U15 C5",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Queens Park Arena 1"
     },
     {
       "id": 1030361,

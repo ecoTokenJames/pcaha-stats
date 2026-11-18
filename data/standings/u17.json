@@ -26,6 +26,7 @@
         "gaPerGame": 2.93,
         "pim": 236,
         "pimPerGame": 15.73,
+        "sportsmanshipPoints": null,
         "groupName": null,
         "groupId": null
       },
@@ -47,6 +48,7 @@
         "gaPerGame": 3.59,
         "pim": 255,
         "pimPerGame": 15,
+        "sportsmanshipPoints": null,
         "groupName": null,
         "groupId": null
       },
@@ -68,6 +70,7 @@
         "gaPerGame": 3.07,
         "pim": 160,
         "pimPerGame": 11.43,
+        "sportsmanshipPoints": null,
         "groupName": null,
         "groupId": null
       },
@@ -89,6 +92,7 @@
         "gaPerGame": 3.19,
         "pim": 312,
         "pimPerGame": 19.5,
+        "sportsmanshipPoints": null,
         "groupName": null,
         "groupId": null
       },
@@ -110,6 +114,7 @@
         "gaPerGame": 3.44,
         "pim": 184,
         "pimPerGame": 11.5,
+        "sportsmanshipPoints": null,
         "groupName": null,
         "groupId": null
       },
@@ -131,6 +136,7 @@
         "gaPerGame": 3.06,
         "pim": 114,
         "pimPerGame": 7.13,
+        "sportsmanshipPoints": null,
         "groupName": null,
         "groupId": null
       },
@@ -152,6 +158,7 @@
         "gaPerGame": 4.27,
         "pim": 245,
         "pimPerGame": 16.33,
+        "sportsmanshipPoints": null,
         "groupName": null,
         "groupId": null
       },
@@ -173,6 +180,7 @@
         "gaPerGame": 3.81,
         "pim": 280,
         "pimPerGame": 17.5,
+        "sportsmanshipPoints": null,
         "groupName": null,
         "groupId": null
       },
@@ -194,6 +202,7 @@
         "gaPerGame": 5.06,
         "pim": 282,
         "pimPerGame": 16.59,
+        "sportsmanshipPoints": null,
         "groupName": null,
         "groupId": null
       }
@@ -227,6 +236,7 @@
         "gaPerGame": 1.46,
         "pim": 120,
         "pimPerGame": 9.23,
+        "sportsmanshipPoints": 13,
         "groupName": "Flight 1",
         "groupId": 6989
       },
@@ -249,6 +259,7 @@
         "gaPerGame": 1.83,
         "pim": 202,
         "pimPerGame": 16.83,
+        "sportsmanshipPoints": 7,
         "groupName": "Flight 1",
         "groupId": 6989
       },
@@ -271,6 +282,7 @@
         "gaPerGame": 1.78,
         "pim": 56,
         "pimPerGame": 6.22,
+        "sportsmanshipPoints": 9,
         "groupName": "Flight 1",
         "groupId": 6989
       },
@@ -293,6 +305,7 @@
         "gaPerGame": 3.27,
         "pim": 92,
         "pimPerGame": 8.36,
+        "sportsmanshipPoints": 11,
         "groupName": "Flight 1",
         "groupId": 6989
       },
@@ -315,6 +328,7 @@
         "gaPerGame": 3.8,
         "pim": 98,
         "pimPerGame": 9.8,
+        "sportsmanshipPoints": 9,
         "groupName": "Flight 1",
         "groupId": 6989
       },
@@ -337,6 +351,7 @@
         "gaPerGame": 4.8,
         "pim": 94,
         "pimPerGame": 9.4,
+        "sportsmanshipPoints": 9,
         "groupName": "Flight 1",
         "groupId": 6989
       },
@@ -359,6 +374,7 @@
         "gaPerGame": 6.25,
         "pim": 145,
         "pimPerGame": 12.08,
+        "sportsmanshipPoints": 8,
         "groupName": "Flight 1",
         "groupId": 6989
       },
@@ -381,6 +397,7 @@
         "gaPerGame": 5.2,
         "pim": 92,
         "pimPerGame": 9.2,
+        "sportsmanshipPoints": 8,
         "groupName": "Flight 1",
         "groupId": 6989
       },
@@ -403,6 +420,7 @@
         "gaPerGame": 5.36,
         "pim": 158,
         "pimPerGame": 14.36,
+        "sportsmanshipPoints": 8,
         "groupName": "Flight 1",
         "groupId": 6989
       }

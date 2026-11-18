@@ -39364,7 +39364,7 @@
       "id": 1024058,
       "number": "U13L1914",
       "date": "2026-11-22",
-      "startTime": "2026-11-22T20:30:00.000Z",
+      "startTime": "2026-11-22T20:15:00.000Z",
       "groupId": 6979,
       "groupName": "Flight 4",
       "homeTeamId": 221101,
@@ -39375,7 +39375,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Angel of the Winds Arena Community"
+      "arena": "Angel of the Winds Arena Main"
     },
     {
       "id": 1024298,

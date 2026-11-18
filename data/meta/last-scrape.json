@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-17T20:34:35.227Z",
+  "timestamp": "2026-11-18T00:30:51.540Z",
   "season": "2026-27",
   "divisionsScraped": [
     "U9",
@@ -14,7 +14,7 @@
     "U18"
   ],
   "schedulesProcessed": 181,
-  "standingsTeams": 2615,
-  "elapsedSeconds": 146,
+  "standingsTeams": 2618,
+  "elapsedSeconds": 104.1,
   "standingsOnly": false
 }

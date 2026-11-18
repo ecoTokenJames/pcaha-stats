@@ -141505,7 +141505,7 @@
   {
     "participantId": 1572969,
     "name": "NOAH ENGLUND",
-    "number": 73,
+    "number": 74,
     "teamId": 223655,
     "teamName": "WCAHA 12UC (PCAHA U13 C1)",
     "divisionName": "U13",
@@ -141521,7 +141521,7 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 2,
-    "isAffiliate": true,
+    "isAffiliate": false,
     "position": "F"
   },
   {
