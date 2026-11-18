@@ -4520,10 +4520,10 @@
       "homeTeamName": "ABBOTSFORD MHA U11 C1",
       "awayTeamId": 177771,
       "awayTeamName": "ABBOTSFORD MHA U11 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Abbotsford Recreation Centre 1"
     },
     {
@@ -6581,10 +6581,10 @@
       "homeTeamName": "VANCOUVER FEMALE IHA U11 A2",
       "awayTeamId": 177472,
       "awayTeamName": "TRI CITIES FEMALE IHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Killarney Community Centre 1"
     },
     {
@@ -10232,6 +10232,23 @@
       "arena": "Poirier Sport & Leisure Complex 2"
     },
     {
+      "id": 968687,
+      "number": "U11L5093",
+      "date": "2027-01-16",
+      "startTime": "2027-01-17T01:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177737,
+      "homeTeamName": "PORT MOODY AHA U11 C1",
+      "awayTeamId": 177732,
+      "awayTeamName": "RIDGE MEADOWS MHA U11 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Moody Recreation Complex 2"
+    },
+    {
       "id": 968675,
       "number": "U11L5103",
       "date": "2027-01-16",
@@ -10400,23 +10417,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
-    },
-    {
-      "id": 968687,
-      "number": "U11L5093",
-      "date": "2027-01-09",
-      "startTime": "2027-01-10T01:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177737,
-      "homeTeamName": "PORT MOODY AHA U11 C1",
-      "awayTeamId": 177732,
-      "awayTeamName": "RIDGE MEADOWS MHA U11 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Moody Recreation Complex 2"
     },
     {
       "id": 968689,
@@ -10844,6 +10844,23 @@
       "arena": "Port Moody Recreation Complex 2"
     },
     {
+      "id": 968644,
+      "number": "U11L5013",
+      "date": "2026-12-05",
+      "startTime": "2026-12-06T00:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177732,
+      "homeTeamName": "RIDGE MEADOWS MHA U11 C4",
+      "awayTeamId": 177742,
+      "awayTeamName": "PORT COQUITLAM MHA U11 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Ram Red"
+    },
+    {
       "id": 968708,
       "number": "U11L5072",
       "date": "2026-12-05",
@@ -11065,6 +11082,23 @@
       "arena": "Planet Ice Coquitlam 3 Venus"
     },
     {
+      "id": 968730,
+      "number": "U11L5050",
+      "date": "2026-11-25",
+      "startTime": "2026-11-26T02:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177740,
+      "homeTeamName": "PORT COQUITLAM MHA U11 C3",
+      "awayTeamId": 177753,
+      "awayTeamName": "COQUITLAM MHA U11 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Coquitlam Community Centre Arena 2"
+    },
+    {
       "id": 968723,
       "number": "U11L5058",
       "date": "2026-11-23",
@@ -11233,23 +11267,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Maple Ridge 2"
-    },
-    {
-      "id": 968730,
-      "number": "U11L5050",
-      "date": "2026-11-21",
-      "startTime": "2026-11-21T16:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177740,
-      "homeTeamName": "PORT COQUITLAM MHA U11 C3",
-      "awayTeamId": 177753,
-      "awayTeamName": "COQUITLAM MHA U11 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
       "id": 968736,
@@ -11709,23 +11726,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
-    },
-    {
-      "id": 968644,
-      "number": "U11L5013",
-      "date": "2026-10-25",
-      "startTime": "2026-10-25T16:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177732,
-      "homeTeamName": "RIDGE MEADOWS MHA U11 C4",
-      "awayTeamId": 177742,
-      "awayTeamName": "PORT COQUITLAM MHA U11 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "awaiting",
-      "arena": "Planet Ice Maple Ridge 2"
     },
     {
       "id": 968658,
@@ -26350,10 +26350,10 @@
       "homeTeamName": "BURNABY MHA U11 A2",
       "awayTeamId": 178234,
       "awayTeamName": "NORTH VANCOUVER MHA U11 A4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Bill Copeland Sports Centre BCSC"
     },
     {
@@ -26367,10 +26367,10 @@
       "homeTeamName": "BURNABY WINTER CLUB U11 A1",
       "awayTeamId": 178283,
       "awayTeamName": "COQUITLAM MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Burnaby Winter Club Main"
     },
     {
@@ -26384,10 +26384,10 @@
       "homeTeamName": "WEST VANCOUVER MHA U11 A1",
       "awayTeamId": 178247,
       "awayTeamName": "HOLLYBURN MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "West Vancouver Ice Arena"
     },
     {
@@ -26401,10 +26401,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA U11 A4-RED",
       "awayTeamId": 178260,
       "awayTeamName": "RIDGE MEADOWS MHA U11 A4-WHITE",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
@@ -26418,10 +26418,10 @@
       "homeTeamName": "PORT COQUITLAM MHA U11 A2",
       "awayTeamId": 221807,
       "awayTeamName": "SJHA 10U A JR METS (PCAHA/PNAHA)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
