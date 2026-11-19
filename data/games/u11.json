@@ -3758,7 +3758,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Aldergrove Community Centre 1"
     },
     {
@@ -4503,10 +4503,10 @@
       "homeTeamName": "CHILLIWACK MHA U11 C4",
       "awayTeamId": 177765,
       "awayTeamName": "CHILLIWACK MHA U11 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Chilliwack Coliseum 2 Red"
     },
     {
@@ -9543,10 +9543,10 @@
       "homeTeamName": "NORTH SHORE FEMALE IHA U11 C1",
       "awayTeamId": 177599,
       "awayTeamName": "RICHMOND RAVENS U11 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Harry Jerome Recreative Centre Harry Jerome Rec Centre"
     },
     {
@@ -10857,7 +10857,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
@@ -11180,7 +11180,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
@@ -22770,23 +22770,6 @@
       "arena": "Gibsons & Area Community Centre"
     },
     {
-      "id": 1023288,
-      "number": "U11L2516",
-      "date": "2026-12-20",
-      "startTime": "2026-12-20T20:45:00.000Z",
-      "groupId": 6991,
-      "groupName": "GVC Flight 2",
-      "homeTeamId": 178272,
-      "homeTeamName": "NORTH VANCOUVER MHA U11 A2",
-      "awayTeamId": 178249,
-      "awayTeamName": "VANCOUVER THUNDERBIRD MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Canlan Ice Sports North Shore 1 Red"
-    },
-    {
       "id": 1023114,
       "number": "U11L1013",
       "date": "2026-12-20",
@@ -25422,6 +25405,23 @@
       "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
+      "id": 1023288,
+      "number": "U11L2516",
+      "date": "2026-11-26",
+      "startTime": "2026-11-27T01:00:00.000Z",
+      "groupId": 6991,
+      "groupName": "GVC Flight 2",
+      "homeTeamId": 178272,
+      "homeTeamName": "NORTH VANCOUVER MHA U11 A2",
+      "awayTeamId": 178249,
+      "awayTeamName": "VANCOUVER THUNDERBIRD MHA U11 A2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Canlan Ice Sports North Shore 1 Red"
+    },
+    {
       "id": 1023168,
       "number": "U11L2211",
       "date": "2026-11-25",
@@ -26282,10 +26282,10 @@
       "homeTeamName": "ABBOTSFORD MHA U11 A1 HAWKS",
       "awayTeamId": 178279,
       "awayTeamName": "MISSION MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -26299,10 +26299,10 @@
       "homeTeamName": "VANCOUVER MHA U11 A1",
       "awayTeamId": 178300,
       "awayTeamName": "BURNABY MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 5"
     },
     {
@@ -26316,10 +26316,10 @@
       "homeTeamName": "CHILLIWACK MHA U11 A2 JR BRUINS",
       "awayTeamId": 178298,
       "awayTeamName": "ALDERGROVE MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sardis Sports Complex SSC1"
     },
     {
@@ -26333,10 +26333,10 @@
       "homeTeamName": "CLOVERDALE MHA U11 A1",
       "awayTeamId": 178262,
       "awayTeamName": "RIDGE MEADOWS MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Cloverdale Arena"
     },
     {
