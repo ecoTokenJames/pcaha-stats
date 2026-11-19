@@ -819,6 +819,23 @@
   ],
   "199254": [
     {
+      "id": 1014262,
+      "number": "U11L6749",
+      "date": "2027-01-31",
+      "startTime": "2027-02-01T00:45:00.000Z",
+      "groupId": 7017,
+      "groupName": "Red",
+      "homeTeamId": 223548,
+      "homeTeamName": "NORTH DELTA MHA U11 C3",
+      "awayTeamId": 223547,
+      "awayTeamName": "LANGLEY MHA U11 C8",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sungod Recreation Centre"
+    },
+    {
       "id": 1014207,
       "number": "U11L6054",
       "date": "2027-01-28",
@@ -833,23 +850,6 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
-    },
-    {
-      "id": 1014262,
-      "number": "U11L6749",
-      "date": "2027-01-28",
-      "startTime": "2027-01-29T01:15:00.000Z",
-      "groupId": 7017,
-      "groupName": "Red",
-      "homeTeamId": 223548,
-      "homeTeamName": "NORTH DELTA MHA U11 C3",
-      "awayTeamId": 223547,
-      "awayTeamName": "LANGLEY MHA U11 C8",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
@@ -16288,6 +16288,23 @@
       "arena": "Canlan Ice Sports North Shore 2 Blue"
     },
     {
+      "id": 939003,
+      "number": "U11L7259",
+      "date": "2027-01-16",
+      "startTime": "2027-01-16T23:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177741,
+      "homeTeamName": "NORTH VANCOUVER MHA U11 C3",
+      "awayTeamId": 177719,
+      "awayTeamName": "SUNSHINE COAST MHA U11 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Canlan Ice Sports North Shore 3 Green"
+    },
+    {
       "id": 939002,
       "number": "U11L7273",
       "date": "2027-01-16",
@@ -16575,23 +16592,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Hollyburn Country Club Main Ice"
-    },
-    {
-      "id": 939003,
-      "number": "U11L7259",
-      "date": "2026-12-12",
-      "startTime": "2026-12-12T18:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177741,
-      "homeTeamName": "NORTH VANCOUVER MHA U11 C3",
-      "awayTeamId": 177719,
-      "awayTeamName": "SUNSHINE COAST MHA U11 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Canlan Ice Sports North Shore 2 Blue"
     },
     {
       "id": 939015,
@@ -21746,23 +21746,6 @@
       "arena": "Richmond Ice Centre Forum"
     },
     {
-      "id": 1030149,
-      "number": "U11L8805",
-      "date": "2026-11-22",
-      "startTime": "2026-11-23T00:00:00.000Z",
-      "groupId": 7028,
-      "groupName": "Red",
-      "homeTeamId": 177709,
-      "homeTeamName": "VANCOUVER THUNDERBIRD MHA U11 C4",
-      "awayTeamId": 177712,
-      "awayTeamName": "VANCOUVER THUNDERBIRD MHA U11 C5",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "UBC A Thunderbird Arena"
-    },
-    {
       "id": 1030166,
       "number": "U11L8004",
       "date": "2026-11-22",
@@ -21846,6 +21829,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Richmond Ice Centre Coliseum"
+    },
+    {
+      "id": 1030149,
+      "number": "U11L8805",
+      "date": "2026-11-22",
+      "startTime": "2026-11-22T16:15:00.000Z",
+      "groupId": 7028,
+      "groupName": "Red",
+      "homeTeamId": 177709,
+      "homeTeamName": "VANCOUVER THUNDERBIRD MHA U11 C4",
+      "awayTeamId": 177712,
+      "awayTeamName": "VANCOUVER THUNDERBIRD MHA U11 C5",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "UBC A Thunderbird Arena"
     },
     {
       "id": 1030158,
@@ -23787,7 +23787,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "South Delta Recreation Centre Main Rink (SDRC)"
+      "arena": "Ladner Leisure Centre"
     },
     {
       "id": 1023238,

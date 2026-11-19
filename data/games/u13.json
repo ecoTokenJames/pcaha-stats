@@ -7356,7 +7356,7 @@
       "id": 1011068,
       "number": "U13L4039",
       "date": "2026-11-22",
-      "startTime": "2026-11-22T17:40:00.000Z",
+      "startTime": "2026-11-22T17:25:00.000Z",
       "groupId": 7007,
       "groupName": "Tier 1",
       "homeTeamId": 224897,
@@ -23894,7 +23894,7 @@
       "id": 918493,
       "number": "U13AAL0128",
       "date": "2026-12-20",
-      "startTime": "2026-12-20T23:30:00.000Z",
+      "startTime": "2026-12-20T22:00:00.000Z",
       "groupId": null,
       "groupName": null,
       "homeTeamId": 188077,
@@ -23905,7 +23905,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Poirier Sport & Leisure Complex 1"
+      "arena": "Burnaby Winter Club Main"
     },
     {
       "id": 918494,
@@ -24401,6 +24401,23 @@
       "arena": "North Shore Winter Club Main Rink"
     },
     {
+      "id": 918548,
+      "number": "U13AAL0075",
+      "date": "2026-12-03",
+      "startTime": "2026-12-04T03:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 187943,
+      "homeTeamName": "PCEHL U13 FNVE MOUNTAINEERS",
+      "awayTeamId": 186602,
+      "awayTeamName": "PCEHL U13 SOUTH FRASER ALLIANCE",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 1 Cam Neely"
+    },
+    {
       "id": 918520,
       "number": "U13AAL0101",
       "date": "2026-12-02",
@@ -24892,23 +24909,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Centennial Arena Centennial"
-    },
-    {
-      "id": 918548,
-      "number": "U13AAL0075",
-      "date": "2026-11-14",
-      "startTime": "2026-11-14T23:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 187943,
-      "homeTeamName": "PCEHL U13 FNVE MOUNTAINEERS",
-      "awayTeamId": 186602,
-      "awayTeamName": "PCEHL U13 SOUTH FRASER ALLIANCE",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "awaiting",
-      "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
       "id": 918459,
@@ -34363,6 +34363,23 @@
       "arena": "North Shore Winter Club Main Rink"
     },
     {
+      "id": 1023930,
+      "number": "U13L2807",
+      "date": "2026-12-21",
+      "startTime": "2026-12-22T00:45:00.000Z",
+      "groupId": 6982,
+      "groupName": "Flight 7",
+      "homeTeamId": 222462,
+      "homeTeamName": "SURREY MHA (2) U13 A2 TIER 3 THUNDER",
+      "awayTeamId": 178180,
+      "awayTeamName": "CHILLIWACK MHA (1) U13 A3 TIER 3 JR BRUINS",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Surrey Sport & Ice Complex Rink #3"
+    },
+    {
       "id": 1024117,
       "number": "U13L1353",
       "date": "2026-12-20",
@@ -37576,6 +37593,23 @@
       "arena": "The Arenas at LEC 2"
     },
     {
+      "id": 1024062,
+      "number": "U13L1921",
+      "date": "2026-12-02",
+      "startTime": "2026-12-03T02:50:00.000Z",
+      "groupId": 6979,
+      "groupName": "Flight 4",
+      "homeTeamId": 215094,
+      "homeTeamName": "SJHA 12UA1 JR METS (PCAHA)",
+      "awayTeamId": 178185,
+      "awayTeamName": "CLOVERDALE MHA (1) U13 A3 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Lynnwood Ice Centre 1"
+    },
+    {
       "id": 1024118,
       "number": "U13L1354",
       "date": "2026-12-02",
@@ -38288,23 +38322,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Cloverdale Arena"
-    },
-    {
-      "id": 1024062,
-      "number": "U13L1921",
-      "date": "2026-11-28",
-      "startTime": "2026-11-29T00:25:00.000Z",
-      "groupId": 6979,
-      "groupName": "Flight 4",
-      "homeTeamId": 215094,
-      "homeTeamName": "SJHA 12UA1 JR METS (PCAHA)",
-      "awayTeamId": 178185,
-      "awayTeamName": "CLOVERDALE MHA (1) U13 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Lynnwood Ice Centre 1"
     },
     {
       "id": 1024218,
@@ -40515,23 +40532,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Cloverdale Arena"
-    },
-    {
-      "id": 1023930,
-      "number": "U13L2807",
-      "date": "2026-11-15",
-      "startTime": "2026-11-16T00:15:00.000Z",
-      "groupId": 6982,
-      "groupName": "Flight 7",
-      "homeTeamId": 222462,
-      "homeTeamName": "SURREY MHA (2) U13 A2 TIER 3 THUNDER",
-      "awayTeamId": 178180,
-      "awayTeamName": "CHILLIWACK MHA (1) U13 A3 TIER 3 JR BRUINS",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "awaiting",
-      "arena": "North Surrey Sport & Ice Complex Rink #1"
     },
     {
       "id": 1023993,

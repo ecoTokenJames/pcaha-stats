@@ -1104,7 +1104,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "The Arenas at LEC 2"
     },
     {
@@ -18702,23 +18702,6 @@
       "arena": "Meadow Park Sports Centre"
     },
     {
-      "id": 952269,
-      "number": "U18L7935",
-      "date": "2027-01-17",
-      "startTime": "2027-01-17T18:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177881,
-      "homeTeamName": "SUNSHINE COAST MHA U18 C1",
-      "awayTeamId": 177899,
-      "awayTeamName": "NORTH SHORE WINTER CLUB MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sunshine Coast Arena"
-    },
-    {
       "id": 952273,
       "number": "U18L7934",
       "date": "2027-01-16",
@@ -18940,23 +18923,6 @@
       "arena": "Sunshine Coast Arena"
     },
     {
-      "id": 952291,
-      "number": "U18L7919",
-      "date": "2027-01-09",
-      "startTime": "2027-01-10T00:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177883,
-      "homeTeamName": "SQUAMISH MHA U18 C2",
-      "awayTeamId": 177898,
-      "awayTeamName": "NORTH VANCOUVER MHA U18 C6",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Brennan Park Arena"
-    },
-    {
       "id": 952246,
       "number": "U18L7820",
       "date": "2027-01-09",
@@ -19023,6 +18989,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Shore Winter Club Main Rink"
+    },
+    {
+      "id": 952291,
+      "number": "U18L7919",
+      "date": "2027-01-04",
+      "startTime": "2027-01-05T04:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177883,
+      "homeTeamName": "SQUAMISH MHA U18 C2",
+      "awayTeamId": 177898,
+      "awayTeamName": "NORTH VANCOUVER MHA U18 C6",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Brennan Park Arena"
     },
     {
       "id": 952354,
@@ -19533,6 +19516,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Harry Jerome Recreative Centre Rink"
+    },
+    {
+      "id": 952269,
+      "number": "U18L7935",
+      "date": "2026-12-02",
+      "startTime": "2026-12-03T02:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177881,
+      "homeTeamName": "SUNSHINE COAST MHA U18 C1",
+      "awayTeamId": 177899,
+      "awayTeamName": "NORTH SHORE WINTER CLUB MHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Gibsons & Area Community Centre"
     },
     {
       "id": 952382,
@@ -26934,7 +26934,7 @@
       "awayTeamId": 178640,
       "awayTeamName": "NORTH VANCOUVER MHA (1) U18 A2 TIER 2",
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 3,
       "decidedBy": null,
       "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
