@@ -681,6 +681,23 @@
       "arena": "Tilbury Ice"
     },
     {
+      "id": 1032276,
+      "number": "U9L6695",
+      "date": "2027-02-27",
+      "startTime": "2027-02-27T22:30:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178024,
+      "homeTeamName": "SOUTH DELTA MHA U9 C8",
+      "awayTeamId": 177974,
+      "awayTeamName": "LANGLEY MHA U9 C8",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Tilbury Ice"
+    },
+    {
       "id": 1032109,
       "number": "U9L6657",
       "date": "2027-02-27",
@@ -1803,23 +1820,6 @@
       "arena": "Tilbury Ice"
     },
     {
-      "id": 1032276,
-      "number": "U9L6695",
-      "date": "2027-02-06",
-      "startTime": "2027-02-06T22:30:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178024,
-      "homeTeamName": "SOUTH DELTA MHA U9 C8",
-      "awayTeamId": 177974,
-      "awayTeamName": "LANGLEY MHA U9 C8",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Tilbury Ice"
-    },
-    {
       "id": 1032152,
       "number": "U9L6615",
       "date": "2027-02-06",
@@ -2245,23 +2245,6 @@
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
-      "id": 1032167,
-      "number": "U9L6600",
-      "date": "2027-01-30",
-      "startTime": "2027-01-30T21:15:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178023,
-      "homeTeamName": "SOUTH DELTA MHA U9 C5",
-      "awayTeamId": 178025,
-      "awayTeamName": "SOUTH DELTA MHA U9 C9",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Tilbury Ice"
-    },
-    {
       "id": 1032174,
       "number": "U9L6599",
       "date": "2027-01-30",
@@ -2462,7 +2445,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
@@ -3877,6 +3860,23 @@
       "arena": "The Arenas at LEC 3"
     },
     {
+      "id": 1032167,
+      "number": "U9L6600",
+      "date": "2026-12-19",
+      "startTime": "2026-12-19T15:45:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178023,
+      "homeTeamName": "SOUTH DELTA MHA U9 C5",
+      "awayTeamId": 178025,
+      "awayTeamName": "SOUTH DELTA MHA U9 C9",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Ladner Leisure Centre"
+    },
+    {
       "id": 1031994,
       "number": "U9L6023",
       "date": "2026-12-19",
@@ -3892,23 +3892,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "The Arenas at LEC 3"
-    },
-    {
-      "id": 1032224,
-      "number": "U9L6544",
-      "date": "2026-12-19",
-      "startTime": "2026-12-19T14:30:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178020,
-      "homeTeamName": "SOUTH DELTA MHA U9 C6",
-      "awayTeamId": 178024,
-      "awayTeamName": "SOUTH DELTA MHA U9 C8",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Ladner Leisure Centre"
     },
     {
       "id": 1031981,
@@ -3960,6 +3943,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sungod Recreation Centre"
+    },
+    {
+      "id": 1032224,
+      "number": "U9L6544",
+      "date": "2026-12-13",
+      "startTime": "2026-12-13T22:30:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178020,
+      "homeTeamName": "SOUTH DELTA MHA U9 C6",
+      "awayTeamId": 178024,
+      "awayTeamName": "SOUTH DELTA MHA U9 C8",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Tilbury Ice"
     },
     {
       "id": 1032223,
@@ -5148,7 +5148,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Tilbury Ice"
     },
     {
@@ -6140,6 +6140,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Burnaby Winter Club Training"
+    },
+    {
+      "id": 1037814,
+      "number": "U9E8517",
+      "date": "2026-12-04",
+      "startTime": "2026-12-05T00:00:00.000Z",
+      "groupId": 7033,
+      "groupName": "Blue Minor",
+      "homeTeamId": 178073,
+      "homeTeamName": "NEW WESTMINSTER MHA U9 C3",
+      "awayTeamId": 178069,
+      "awayTeamName": "NEW WESTMINSTER MHA U9 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Queens Park Arena 1"
     },
     {
       "id": 980822,
@@ -7147,23 +7164,6 @@
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
-      "id": 1036688,
-      "number": "U9L7208",
-      "date": "2026-12-13",
-      "startTime": "2026-12-13T18:00:00.000Z",
-      "groupId": 7026,
-      "groupName": "Minor",
-      "homeTeamId": 178062,
-      "homeTeamName": "NORTH SHORE WINTER CLUB MHA U9 C3",
-      "awayTeamId": 177994,
-      "awayTeamName": "WHISTLER MHA U9 C1 WINTERHAWKS",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "North Shore Winter Club HTC Rink"
-    },
-    {
       "id": 1036686,
       "number": "U9L7207",
       "date": "2026-12-13",
@@ -7264,6 +7264,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Shore Winter Club HTC Rink"
+    },
+    {
+      "id": 1036688,
+      "number": "U9L7208",
+      "date": "2026-12-05",
+      "startTime": "2026-12-06T00:00:00.000Z",
+      "groupId": 7026,
+      "groupName": "Minor",
+      "homeTeamId": 178062,
+      "homeTeamName": "NORTH SHORE WINTER CLUB MHA U9 C3",
+      "awayTeamId": 177994,
+      "awayTeamName": "WHISTLER MHA U9 C1 WINTERHAWKS",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Canlan Ice Sports North Shore 2 Blue"
     },
     {
       "id": 1036675,

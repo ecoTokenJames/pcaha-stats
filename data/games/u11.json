@@ -17029,10 +17029,10 @@
       "homeTeamName": "HOLLYBURN MHA U11 C1",
       "awayTeamId": 177744,
       "awayTeamName": "NORTH VANCOUVER MHA U11 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 9,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Hollyburn Country Club Main Ice"
     },
     {

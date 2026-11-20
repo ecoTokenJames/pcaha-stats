@@ -23500,23 +23500,6 @@
       "arena": "Centennial Arena Centennial"
     },
     {
-      "id": 918468,
-      "number": "U13AAL0155",
-      "date": "2027-01-23",
-      "startTime": "2027-01-23T23:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 187943,
-      "homeTeamName": "PCEHL U13 FNVE MOUNTAINEERS",
-      "awayTeamId": 187963,
-      "awayTeamName": "PCEHL U13 BURNABY WINTER CLUB",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Planet Ice Maple Ridge 1 Cam Neely"
-    },
-    {
       "id": 918469,
       "number": "U13AAL0154",
       "date": "2027-01-23",
@@ -24450,6 +24433,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Coquitlam 2 Pluto"
+    },
+    {
+      "id": 918468,
+      "number": "U13AAL0155",
+      "date": "2026-12-01",
+      "startTime": "2026-12-02T01:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 187943,
+      "homeTeamName": "PCEHL U13 FNVE MOUNTAINEERS",
+      "awayTeamId": 187963,
+      "awayTeamName": "PCEHL U13 BURNABY WINTER CLUB",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
       "id": 918525,
@@ -36199,23 +36199,6 @@
       "arena": "Cloverdale Sport & Ice Complex 1-Blue"
     },
     {
-      "id": 1024022,
-      "number": "U13L2240",
-      "date": "2026-12-12",
-      "startTime": "2026-12-12T18:30:00.000Z",
-      "groupId": 6980,
-      "groupName": "Flight 5",
-      "homeTeamId": 178131,
-      "homeTeamName": "SEMIAHMOO MHA (1) U13 A4 TIER 4",
-      "awayTeamId": 178151,
-      "awayTeamName": "SOUTH DELTA MHA (2) U13 A2 TIER 3 STORM",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Surrey Sport & Leisure Centre Arena 2"
-    },
-    {
       "id": 1023976,
       "number": "U13L2839",
       "date": "2026-12-12",
@@ -38256,23 +38239,6 @@
       "arena": "Brennan Park Arena"
     },
     {
-      "id": 1024260,
-      "number": "U13L1625",
-      "date": "2026-11-29",
-      "startTime": "2026-11-29T17:15:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 178146,
-      "homeTeamName": "LANGLEY MHA (1) U13 A2 TIER 2 EAGLES",
-      "awayTeamId": 178160,
-      "awayTeamName": "PORT COQUITLAM MHA (2) U13 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "The Arenas at LEC 1"
-    },
-    {
       "id": 1023927,
       "number": "U13L1028",
       "date": "2026-11-28",
@@ -38339,6 +38305,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
+    },
+    {
+      "id": 1024022,
+      "number": "U13L2240",
+      "date": "2026-11-28",
+      "startTime": "2026-11-28T23:00:00.000Z",
+      "groupId": 6980,
+      "groupName": "Flight 5",
+      "homeTeamId": 178131,
+      "homeTeamName": "SEMIAHMOO MHA (1) U13 A4 TIER 4",
+      "awayTeamId": 178151,
+      "awayTeamName": "SOUTH DELTA MHA (2) U13 A2 TIER 3 STORM",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Centennial Arena Centennial"
     },
     {
       "id": 1023872,
@@ -39104,6 +39087,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "MSA Arena"
+    },
+    {
+      "id": 1024260,
+      "number": "U13L1625",
+      "date": "2026-11-23",
+      "startTime": "2026-11-24T03:00:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 178146,
+      "homeTeamName": "LANGLEY MHA (1) U13 A2 TIER 2 EAGLES",
+      "awayTeamId": 178160,
+      "awayTeamName": "PORT COQUITLAM MHA (2) U13 A1 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Langley Sportsplex 2"
     },
     {
       "id": 1023873,
@@ -39902,7 +39902,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Lynnwood Ice Centre 1"
+      "arena": "Olympic View Arena Main"
     },
     {
       "id": 1024310,

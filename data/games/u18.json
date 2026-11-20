@@ -4068,23 +4068,6 @@
       "arena": "MSA Arena"
     },
     {
-      "id": 935438,
-      "number": "U18L9058",
-      "date": "2026-12-14",
-      "startTime": "2026-12-15T04:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177930,
-      "homeTeamName": "ABBOTSFORD MHA U18 C2",
-      "awayTeamId": 177932,
-      "awayTeamName": "ABBOTSFORD MHA U18 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "MSA Arena"
-    },
-    {
       "id": 935368,
       "number": "U18L9131",
       "date": "2026-12-14",
@@ -4100,6 +4083,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Sardis Sports Complex SSC1"
+    },
+    {
+      "id": 935438,
+      "number": "U18L9058",
+      "date": "2026-12-13",
+      "startTime": "2026-12-14T04:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177930,
+      "homeTeamName": "ABBOTSFORD MHA U18 C2",
+      "awayTeamId": 177932,
+      "awayTeamName": "ABBOTSFORD MHA U18 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Matsqui Recreation Centre"
     },
     {
       "id": 935370,
@@ -4357,6 +4357,23 @@
       "arena": "Mission Leisure Centre North"
     },
     {
+      "id": 935383,
+      "number": "U18L9111",
+      "date": "2026-12-05",
+      "startTime": "2026-12-06T04:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177932,
+      "homeTeamName": "ABBOTSFORD MHA U18 C3",
+      "awayTeamId": 177918,
+      "awayTeamName": "CHILLIWACK MHA U18 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "MSA Arena"
+    },
+    {
       "id": 935393,
       "number": "U18L9100",
       "date": "2026-12-05",
@@ -4423,23 +4440,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "MSA Arena"
-    },
-    {
-      "id": 935383,
-      "number": "U18L9111",
-      "date": "2026-12-03",
-      "startTime": "2026-12-04T04:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177932,
-      "homeTeamName": "ABBOTSFORD MHA U18 C3",
-      "awayTeamId": 177918,
-      "awayTeamName": "CHILLIWACK MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Abbotsford Recreation Centre 1"
     },
     {
       "id": 935385,
@@ -19753,7 +19753,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Sunshine Coast Arena"
+      "arena": "Gibsons & Area Community Centre"
     },
     {
       "id": 952333,
