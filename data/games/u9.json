@@ -4795,23 +4795,6 @@
       "arena": "The Arenas at LEC 3"
     },
     {
-      "id": 1031984,
-      "number": "U9L6009",
-      "date": "2026-12-05",
-      "startTime": "2026-12-05T15:15:00.000Z",
-      "groupId": 7015,
-      "groupName": "Major",
-      "homeTeamId": 177961,
-      "homeTeamName": "LANGLEY MHA U9 C12",
-      "awayTeamId": 227556,
-      "awayTeamName": "LANGLEY MHA U9 C15",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "The Arenas at LEC 3"
-    },
-    {
       "id": 1031972,
       "number": "U9L6008",
       "date": "2026-12-04",
@@ -5252,6 +5235,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "The Arenas at LEC 3"
+    },
+    {
+      "id": 1031984,
+      "number": "U9L6009",
+      "date": "2026-11-28",
+      "startTime": "2026-11-28T16:15:00.000Z",
+      "groupId": 7015,
+      "groupName": "Major",
+      "homeTeamId": 177961,
+      "homeTeamName": "LANGLEY MHA U9 C12",
+      "awayTeamId": 227556,
+      "awayTeamName": "LANGLEY MHA U9 C15",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Canlan Ice Sports Langley Twin Rinks 1"
     },
     {
       "id": 1031983,

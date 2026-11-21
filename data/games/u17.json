@@ -351,10 +351,10 @@
       "homeTeamName": "CLOVERDALE MHA (1) U18 A3 TIER 3 (U17A)",
       "awayTeamId": 225619,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA (1) U18 A3 TIER 3 (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Cloverdale Sport & Ice Complex 1-Blue"
     },
     {
@@ -368,10 +368,10 @@
       "homeTeamName": "NORTH VANCOUVER MHA (1) U18 A3 TIER 3 (U17A)",
       "awayTeamId": 177460,
       "awayTeamName": "ABBOTSFORD MHA (1) U18 A2 TIER 2 HAWKS (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Karen Magnussen Arena"
     },
     {
