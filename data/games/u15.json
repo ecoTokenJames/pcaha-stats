@@ -813,7 +813,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Planet Ice Delta Canadian "
     },
     {
@@ -8390,7 +8390,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "North Shore Winter Club Main Rink"
     },
     {
@@ -17983,10 +17983,10 @@
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA U15 C2",
       "awayTeamId": 178561,
       "awayTeamName": "WEST VANCOUVER MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Shore Winter Club Main Rink"
     },
     {
@@ -30845,7 +30845,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Sno-King Ice Arena Snoqualmie"
     },
     {
@@ -30859,10 +30859,10 @@
       "homeTeamName": "SUNSHINE COAST MHA (3) U15 A1 TIER 3 BLUES",
       "awayTeamId": 177796,
       "awayTeamName": "VANCOUVER THUNDERBIRD MHA (1) U15 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Gibsons & Area Community Centre"
     },
     {
@@ -30876,10 +30876,10 @@
       "homeTeamName": "MISSION MHA (3) U15 A1 TIER 3",
       "awayTeamId": 215116,
       "awayTeamName": "SJHA 14UAA JR METS (PNAHA/PCAHA)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 8,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Mission Leisure Centre North"
     },
     {
@@ -30893,10 +30893,10 @@
       "homeTeamName": "SNO-KING JR. THUNDERBIRDS 14U A2 (PCAHA U15 A2)",
       "awayTeamId": 177835,
       "awayTeamName": "ABBOTSFORD MHA (1) U15 A2 TIER 2 HAWKS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sno-King Ice Arena Snoqualmie"
     },
     {
@@ -32818,10 +32818,10 @@
       "homeTeamName": "PCHA - U15 PREP",
       "awayTeamId": 176834,
       "awayTeamName": "BURNABY WINTER CLUB HCAS ACADEMY U15 PREP",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Burnaby Winter Club Main"
     },
     {
@@ -33078,7 +33078,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Burnaby Winter Club Main"
     },
     {

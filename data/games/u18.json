@@ -14377,7 +14377,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Poirier Sport & Leisure Complex 1"
+      "arena": "Planet Ice Coquitlam 1 Mars"
     },
     {
       "id": 968262,
@@ -18702,23 +18702,6 @@
       "arena": "Meadow Park Sports Centre"
     },
     {
-      "id": 952270,
-      "number": "U18L7933",
-      "date": "2027-01-16",
-      "startTime": "2027-01-17T01:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177882,
-      "homeTeamName": "SUNSHINE COAST MHA U18 C2",
-      "awayTeamId": 177906,
-      "awayTeamName": "NORTH VANCOUVER MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sunshine Coast Arena"
-    },
-    {
       "id": 952275,
       "number": "U18L7932",
       "date": "2027-01-16",
@@ -19431,6 +19414,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Meadow Park Sports Centre"
+    },
+    {
+      "id": 952270,
+      "number": "U18L7933",
+      "date": "2026-12-06",
+      "startTime": "2026-12-06T21:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177882,
+      "homeTeamName": "SUNSHINE COAST MHA U18 C2",
+      "awayTeamId": 177906,
+      "awayTeamName": "NORTH VANCOUVER MHA U18 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Gibsons & Area Community Centre"
     },
     {
       "id": 952317,
@@ -25291,23 +25291,6 @@
       "arena": "UBC B Father David Bauer Arena"
     },
     {
-      "id": 1023701,
-      "number": "U18L1621",
-      "date": "2026-12-04",
-      "startTime": "2026-12-05T04:45:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 178646,
-      "homeTeamName": "NORTH SHORE WINTER CLUB MHA (1) U18 A1 TIER 1",
-      "awayTeamId": 178632,
-      "awayTeamName": "SUNSHINE COAST MHA (3) U18 A1 TIER 3 BLUES",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "North Shore Winter Club Main Rink"
-    },
-    {
       "id": 1023693,
       "number": "U18L1326",
       "date": "2026-12-04",
@@ -25493,6 +25476,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "The Arenas at LEC 1"
+    },
+    {
+      "id": 1023701,
+      "number": "U18L1621",
+      "date": "2026-12-03",
+      "startTime": "2026-12-04T02:30:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 178646,
+      "homeTeamName": "NORTH SHORE WINTER CLUB MHA (1) U18 A1 TIER 1",
+      "awayTeamId": 178632,
+      "awayTeamName": "SUNSHINE COAST MHA (3) U18 A1 TIER 3 BLUES",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Shore Winter Club Main Rink"
     },
     {
       "id": 1023800,
@@ -35819,7 +35819,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -35833,10 +35833,10 @@
       "homeTeamName": "ABBOTSFORD MHA U18 C1",
       "awayTeamId": 176428,
       "awayTeamName": "JUAN DE FUCA MHA (2) U18 C2 GRIZZLIES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -35850,10 +35850,10 @@
       "homeTeamName": "LAKE COWICHAN MHA (4) U18 C1 LAKERS",
       "awayTeamId": 178817,
       "awayTeamName": "KELOWNA MHA (1) U18 REC TEAM 6",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -35867,10 +35867,10 @@
       "homeTeamName": "SUNSHINE COAST MHA U18 C1",
       "awayTeamId": 176787,
       "awayTeamName": "OCEANSIDE MHA  (3)  U18  C1  GENERALS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -35884,10 +35884,10 @@
       "homeTeamName": "KAMLOOPS MHA (1) U18 RECREATION #6",
       "awayTeamId": 177832,
       "awayTeamName": "MISSION MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -35901,10 +35901,10 @@
       "homeTeamName": "OCEANSIDE (3) U18 C2 GENERALS",
       "awayTeamId": 177883,
       "awayTeamName": "SQUAMISH MHA U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 11,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -35918,10 +35918,10 @@
       "homeTeamName": "RICHMOND JETS MHA U18 C3",
       "awayTeamId": 176418,
       "awayTeamName": "COWICHAN VALLEY MHA (3)  U18  C2 CAPITALS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Summit Centre West Rink"
     },
     {

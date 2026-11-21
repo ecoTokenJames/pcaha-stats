@@ -256,23 +256,6 @@
       "arena": "Tilbury Ice"
     },
     {
-      "id": 1032279,
-      "number": "U9L6701",
-      "date": "2027-03-06",
-      "startTime": "2027-03-06T22:30:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178024,
-      "homeTeamName": "SOUTH DELTA MHA U9 C8",
-      "awayTeamId": 221107,
-      "awayTeamName": "CLOVERDALE MHA U9 C9",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Tilbury Ice"
-    },
-    {
       "id": 1032101,
       "number": "U9L6671",
       "date": "2027-03-06",
@@ -628,23 +611,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Canlan Ice Sports Langley Twin Rinks 1"
-    },
-    {
-      "id": 1032107,
-      "number": "U9L6659",
-      "date": "2027-02-28",
-      "startTime": "2027-02-28T14:45:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 177973,
-      "homeTeamName": "LANGLEY MHA U9 C1",
-      "awayTeamId": 177984,
-      "awayTeamName": "LANGLEY MHA U9 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Canlan Ice Sports Langley Twin Rinks 2"
     },
     {
       "id": 1032108,
@@ -1106,23 +1072,6 @@
       "arena": "Tilbury Ice"
     },
     {
-      "id": 1032275,
-      "number": "U9L6698",
-      "date": "2027-02-20",
-      "startTime": "2027-02-20T22:30:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178024,
-      "homeTeamName": "SOUTH DELTA MHA U9 C8",
-      "awayTeamId": 178086,
-      "awayTeamName": "CLOVERDALE MHA U9 C5",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Tilbury Ice"
-    },
-    {
       "id": 1032122,
       "number": "U9L6643",
       "date": "2027-02-20",
@@ -1206,23 +1155,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Tilbury Ice"
-    },
-    {
-      "id": 1032125,
-      "number": "U9L6640",
-      "date": "2027-02-20",
-      "startTime": "2027-02-20T19:30:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 226362,
-      "homeTeamName": "WCAHA 8UC2 (PCAHA U9 C2)",
-      "awayTeamId": 177975,
-      "awayTeamName": "LANGLEY MHA U9 C10",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1032010,
@@ -1429,6 +1361,23 @@
       "arena": "Tilbury Ice"
     },
     {
+      "id": 1032279,
+      "number": "U9L6701",
+      "date": "2027-02-13",
+      "startTime": "2027-02-13T22:30:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178024,
+      "homeTeamName": "SOUTH DELTA MHA U9 C8",
+      "awayTeamId": 221107,
+      "awayTeamName": "CLOVERDALE MHA U9 C9",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Tilbury Ice"
+    },
+    {
       "id": 1032136,
       "number": "U9L6631",
       "date": "2027-02-13",
@@ -1495,23 +1444,6 @@
       "decidedBy": null,
       "status": "postponed",
       "arena": "Tilbury Ice"
-    },
-    {
-      "id": 1032139,
-      "number": "U9L6628",
-      "date": "2027-02-13",
-      "startTime": "2027-02-13T19:30:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 226361,
-      "homeTeamName": "WCAHA 8UC (PCAHA U9 C1)",
-      "awayTeamId": 177977,
-      "awayTeamName": "LANGLEY MHA U9 C9",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1032011,
@@ -1631,6 +1563,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Cloverdale Sport & Ice Complex 1-Blue"
+    },
+    {
+      "id": 1032125,
+      "number": "U9L6640",
+      "date": "2027-02-07",
+      "startTime": "2027-02-07T19:00:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 226362,
+      "homeTeamName": "WCAHA 8UC2 (PCAHA U9 C2)",
+      "awayTeamId": 177975,
+      "awayTeamName": "LANGLEY MHA U9 C10",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1032147,
@@ -2139,7 +2088,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "The Arenas at LEC 1"
     },
     {
@@ -2209,6 +2158,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
+    },
+    {
+      "id": 1032275,
+      "number": "U9L6698",
+      "date": "2027-01-30",
+      "startTime": "2027-01-30T21:15:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178024,
+      "homeTeamName": "SOUTH DELTA MHA U9 C8",
+      "awayTeamId": 178086,
+      "awayTeamName": "CLOVERDALE MHA U9 C5",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Tilbury Ice"
     },
     {
       "id": 1032174,
@@ -2513,7 +2479,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "The Arenas at LEC 1"
     },
     {
@@ -4387,6 +4353,23 @@
       "arena": "Centennial Arena Centennial"
     },
     {
+      "id": 1032139,
+      "number": "U9L6628",
+      "date": "2026-12-10",
+      "startTime": "2026-12-11T01:00:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 226361,
+      "homeTeamName": "WCAHA 8UC (PCAHA U9 C1)",
+      "awayTeamId": 177977,
+      "awayTeamName": "LANGLEY MHA U9 C9",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
+    },
+    {
       "id": 1032060,
       "number": "U9L6025",
       "date": "2026-12-09",
@@ -4999,6 +4982,23 @@
       "arena": "Langley Sportsplex 2"
     },
     {
+      "id": 1032082,
+      "number": "U9L6505",
+      "date": "2026-11-29",
+      "startTime": "2026-11-29T16:30:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 177973,
+      "homeTeamName": "LANGLEY MHA U9 C1",
+      "awayTeamId": 178086,
+      "awayTeamName": "CLOVERDALE MHA U9 C5",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "George Preston Recreation Centre Main"
+    },
+    {
       "id": 1032079,
       "number": "U9L6508",
       "date": "2026-11-29",
@@ -5065,23 +5065,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "The Arenas at LEC 1"
-    },
-    {
-      "id": 1032082,
-      "number": "U9L6505",
-      "date": "2026-11-29",
-      "startTime": "2026-11-29T14:45:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 177973,
-      "homeTeamName": "LANGLEY MHA U9 C1",
-      "awayTeamId": 178086,
-      "awayTeamName": "CLOVERDALE MHA U9 C5",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Canlan Ice Sports Langley Twin Rinks 2"
     },
     {
       "id": 1032022,
@@ -5252,6 +5235,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Canlan Ice Sports Langley Twin Rinks 1"
+    },
+    {
+      "id": 1032107,
+      "number": "U9L6659",
+      "date": "2026-11-28",
+      "startTime": "2026-11-28T15:45:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 177973,
+      "homeTeamName": "LANGLEY MHA U9 C1",
+      "awayTeamId": 177984,
+      "awayTeamName": "LANGLEY MHA U9 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "The Arenas at LEC 2"
     },
     {
       "id": 1031983,
