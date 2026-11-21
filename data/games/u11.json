@@ -21100,23 +21100,6 @@
       "arena": "UBC C Protrans Arena"
     },
     {
-      "id": 1030224,
-      "number": "U11L8411",
-      "date": "2026-12-11",
-      "startTime": "2026-12-12T01:15:00.000Z",
-      "groupId": 7031,
-      "groupName": "Green",
-      "homeTeamId": 177752,
-      "homeTeamName": "NEW WESTMINSTER MHA U11 C1",
-      "awayTeamId": 177717,
-      "awayTeamName": "VANCOUVER MHA U11 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Queens Park Arena 1"
-    },
-    {
       "id": 1030170,
       "number": "U11L8011",
       "date": "2026-12-06",
@@ -21166,6 +21149,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Richmond Ice Centre Igloo"
+    },
+    {
+      "id": 1030224,
+      "number": "U11L8411",
+      "date": "2026-12-06",
+      "startTime": "2026-12-06T18:30:00.000Z",
+      "groupId": 7031,
+      "groupName": "Green",
+      "homeTeamId": 177752,
+      "homeTeamName": "NEW WESTMINSTER MHA U11 C1",
+      "awayTeamId": 177717,
+      "awayTeamName": "VANCOUVER MHA U11 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Scotia Barn Rink 3"
     },
     {
       "id": 1030151,
@@ -22923,23 +22923,6 @@
       "arena": "Hillcrest Centre Arena"
     },
     {
-      "id": 1023283,
-      "number": "U11L1627",
-      "date": "2026-12-19",
-      "startTime": "2026-12-20T00:45:00.000Z",
-      "groupId": 6986,
-      "groupName": "FVC Flight 4",
-      "homeTeamId": 221127,
-      "homeTeamName": "ALDERGROVE MHA U11 A2",
-      "awayTeamId": 178307,
-      "awayTeamName": "ABBOTSFORD MHA U11 A3 HAWKS",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Aldergrove Community Centre 1"
-    },
-    {
       "id": 1023240,
       "number": "U11L2811",
       "date": "2026-12-19",
@@ -23346,23 +23329,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Gibsons & Area Community Centre"
-    },
-    {
-      "id": 1023278,
-      "number": "U11L1608",
-      "date": "2026-12-13",
-      "startTime": "2026-12-13T20:45:00.000Z",
-      "groupId": 6986,
-      "groupName": "FVC Flight 4",
-      "homeTeamId": 178238,
-      "homeTeamName": "SEMIAHMOO MHA U11 A5",
-      "awayTeamId": 178268,
-      "awayTeamName": "PORT MOODY AHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "South Surrey Arena"
     },
     {
       "id": 1023293,
@@ -24402,6 +24368,23 @@
       "arena": "UBC A Thunderbird Arena"
     },
     {
+      "id": 1023277,
+      "number": "U11L1615",
+      "date": "2026-12-05",
+      "startTime": "2026-12-06T01:45:00.000Z",
+      "groupId": 6986,
+      "groupName": "FVC Flight 4",
+      "homeTeamId": 178238,
+      "homeTeamName": "SEMIAHMOO MHA U11 A5",
+      "awayTeamId": 221807,
+      "awayTeamName": "SJHA 10U A JR METS (PCAHA/PNAHA)",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Newton Arena"
+    },
+    {
       "id": 1023307,
       "number": "U11L3109",
       "date": "2026-12-05",
@@ -24521,23 +24504,6 @@
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
-      "id": 1023264,
-      "number": "U11L1614",
-      "date": "2026-12-05",
-      "startTime": "2026-12-05T21:25:00.000Z",
-      "groupId": 6986,
-      "groupName": "FVC Flight 4",
-      "homeTeamId": 221807,
-      "homeTeamName": "SJHA 10U A JR METS (PCAHA/PNAHA)",
-      "awayTeamId": 178267,
-      "awayTeamName": "RIDGE MEADOWS MHA U11 A4-RED",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Lynnwood Ice Centre 1"
-    },
-    {
       "id": 1023244,
       "number": "U11L2802",
       "date": "2026-12-05",
@@ -24570,6 +24536,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Shore Winter Club Main Rink"
+    },
+    {
+      "id": 1023264,
+      "number": "U11L1614",
+      "date": "2026-12-05",
+      "startTime": "2026-12-05T20:00:00.000Z",
+      "groupId": 6986,
+      "groupName": "FVC Flight 4",
+      "homeTeamId": 178267,
+      "homeTeamName": "RIDGE MEADOWS MHA U11 A4-RED",
+      "awayTeamId": 221807,
+      "awayTeamName": "SJHA 10U A JR METS (PCAHA/PNAHA)",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 1 Cam Neely"
     },
     {
       "id": 1023147,
@@ -24655,6 +24638,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Brennan Park Arena"
+    },
+    {
+      "id": 1023283,
+      "number": "U11L1627",
+      "date": "2026-12-03",
+      "startTime": "2026-12-04T01:00:00.000Z",
+      "groupId": 6986,
+      "groupName": "FVC Flight 4",
+      "homeTeamId": 221127,
+      "homeTeamName": "ALDERGROVE MHA U11 A2",
+      "awayTeamId": 178307,
+      "awayTeamName": "ABBOTSFORD MHA U11 A3 HAWKS",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Aldergrove Community Centre 1"
     },
     {
       "id": 1023209,
@@ -25082,16 +25082,16 @@
       "arena": "North Shore Winter Club Main Rink"
     },
     {
-      "id": 1023277,
-      "number": "U11L1615",
+      "id": 1023278,
+      "number": "U11L1608",
       "date": "2026-11-28",
       "startTime": "2026-11-29T01:45:00.000Z",
       "groupId": 6986,
       "groupName": "FVC Flight 4",
       "homeTeamId": 178238,
       "homeTeamName": "SEMIAHMOO MHA U11 A5",
-      "awayTeamId": 221807,
-      "awayTeamName": "SJHA 10U A JR METS (PCAHA/PNAHA)",
+      "awayTeamId": 178268,
+      "awayTeamName": "PORT MOODY AHA U11 A2",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,

@@ -664,6 +664,23 @@
       "arena": "Planet Ice Delta Canadian "
     },
     {
+      "id": 904602,
+      "number": "U15AAL4053",
+      "date": "2026-11-28",
+      "startTime": "2026-11-29T03:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177479,
+      "homeTeamName": "PACIFIC COAST AHA FEMALE U15AA SOUTH VALLEY HAVOC",
+      "awayTeamId": 176441,
+      "awayTeamName": "CAPITAL REGION FEMALE MHA U15 AA FEMALE - VICTORIA REIGN",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Burnaby Winter Club Main"
+    },
+    {
       "id": 904603,
       "number": "U15AAL4054",
       "date": "2026-11-28",
@@ -679,23 +696,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Coquitlam 4 Saturn"
-    },
-    {
-      "id": 904602,
-      "number": "U15AAL4053",
-      "date": "2026-11-28",
-      "startTime": "2026-11-28T21:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177479,
-      "homeTeamName": "PACIFIC COAST AHA FEMALE U15AA SOUTH VALLEY HAVOC",
-      "awayTeamId": 176441,
-      "awayTeamName": "CAPITAL REGION FEMALE MHA U15 AA FEMALE - VICTORIA REIGN",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Surrey Sport & Leisure Centre Arena 2"
     },
     {
       "id": 904572,
@@ -32886,10 +32886,10 @@
       "homeTeamName": "ST. GEORGE'S HCAS ACADEMY U15 PREP",
       "awayTeamId": 176822,
       "awayTeamName": "YALE U15 PREP LIONS",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Delta Canadian "
     },
     {
@@ -32903,10 +32903,10 @@
       "homeTeamName": "BURNABY WINTER CLUB HCAS ACADEMY U15 PREP",
       "awayTeamId": 236334,
       "awayTeamName": "NASHVILLE JR. PREDATORS 14UAAA",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Burnaby Winter Club Main"
     },
     {
@@ -32920,10 +32920,10 @@
       "homeTeamName": "DHA - U15 PREP",
       "awayTeamId": 176828,
       "awayTeamName": "PCHA - U15 PREP",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Delta International"
     },
     {
@@ -33112,7 +33112,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Burnaby Winter Club Main"
     },
     {
@@ -33126,10 +33126,10 @@
       "homeTeamName": "U15 AAA - Vancouver North East Chiefs",
       "awayTeamId": 179447,
       "awayTeamName": "U15 AAA - Valley West Giants",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Burnaby Winter Club Main"
     },
     {
@@ -33143,10 +33143,10 @@
       "homeTeamName": "U15 AAA - Fraser Valley Thunderbirds",
       "awayTeamId": 179453,
       "awayTeamName": "U15 AAA - Cariboo Cougars",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Delta International"
     },
     {
@@ -33160,10 +33160,10 @@
       "homeTeamName": "FAIRMONT PREP 14U",
       "awayTeamId": 236262,
       "awayTeamName": "WENATCHEE WILD 14U AAA (PNAHA)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 14,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Delta American"
     },
     {
@@ -33177,10 +33177,10 @@
       "homeTeamName": "SLS - U15 PREP",
       "awayTeamId": 233657,
       "awayTeamName": "JR KRAKEN 14U AAA (NAPHL-PNAHA)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Delta American"
     },
     {

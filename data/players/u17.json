@@ -3630,9 +3630,9 @@
     "position": "G"
   },
   {
-    "participantId": 44758,
-    "name": "SAMUEL BIRCH",
-    "number": 1,
+    "participantId": 44624,
+    "name": "CALEB PENTECOST",
+    "number": 11,
     "teamId": 178627,
     "teamName": "CLOVERDALE MHA (1) U18 A3 TIER 3 (U17A)",
     "divisionName": "U17",
@@ -3647,9 +3647,9 @@
     "ppGoals": 0,
     "shGoals": 0,
     "gwGoals": 0,
-    "gamesPlayed": 0,
-    "isAffiliate": false,
-    "position": "G"
+    "gamesPlayed": 11,
+    "isAffiliate": true,
+    "position": "F"
   },
   {
     "participantId": 124650,
@@ -3670,30 +3670,8 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 10,
-    "isAffiliate": false,
+    "isAffiliate": true,
     "position": "G"
-  },
-  {
-    "participantId": 44624,
-    "name": "CALEB PENTECOST",
-    "number": 11,
-    "teamId": 178627,
-    "teamName": "CLOVERDALE MHA (1) U18 A3 TIER 3 (U17A)",
-    "divisionName": "U17",
-    "scheduleName": "U17A League",
-    "scheduleId": 200107,
-    "categoryName": "U17 A",
-    "scheduleType": "League",
-    "goals": 0,
-    "assists": 0,
-    "points": 0,
-    "pim": 0,
-    "ppGoals": 0,
-    "shGoals": 0,
-    "gwGoals": 0,
-    "gamesPlayed": 11,
-    "isAffiliate": false,
-    "position": "F"
   },
   {
     "participantId": 655245,

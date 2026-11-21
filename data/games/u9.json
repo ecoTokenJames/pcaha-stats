@@ -392,6 +392,23 @@
       "arena": "The Arenas at LEC 3"
     },
     {
+      "id": 1032278,
+      "number": "U9L6696",
+      "date": "2027-03-06",
+      "startTime": "2027-03-06T14:45:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178016,
+      "homeTeamName": "SURREY MHA U9 C2 SY2",
+      "awayTeamId": 178095,
+      "awayTeamName": "CLOVERDALE MHA U9 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Surrey Sport & Ice Complex Rink #1"
+    },
+    {
       "id": 1032007,
       "number": "U9L6085",
       "date": "2027-03-05",
@@ -1327,23 +1344,6 @@
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
-      "id": 1032278,
-      "number": "U9L6696",
-      "date": "2027-02-14",
-      "startTime": "2027-02-14T17:00:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178016,
-      "homeTeamName": "SURREY MHA U9 C2 SY2",
-      "awayTeamId": 178095,
-      "awayTeamName": "CLOVERDALE MHA U9 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "North Surrey Sport & Ice Complex Rink #3"
-    },
-    {
       "id": 1032131,
       "number": "U9L6636",
       "date": "2027-02-14",
@@ -1580,6 +1580,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Centennial Arena Centennial"
+    },
+    {
+      "id": 1032252,
+      "number": "U9L6102",
+      "date": "2027-02-07",
+      "startTime": "2027-02-07T22:15:00.000Z",
+      "groupId": 7015,
+      "groupName": "Major",
+      "homeTeamId": 178017,
+      "homeTeamName": "SURREY MHA U9 C1 SY1",
+      "awayTeamId": 178022,
+      "awayTeamName": "SOUTH DELTA MHA U9 C7",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
       "id": 1032023,
@@ -2056,57 +2073,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Cloverdale Arena"
-    },
-    {
-      "id": 1032159,
-      "number": "U9L6608",
-      "date": "2027-01-31",
-      "startTime": "2027-01-31T17:15:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178087,
-      "homeTeamName": "CLOVERDALE MHA U9 C7",
-      "awayTeamId": 178085,
-      "awayTeamName": "CLOVERDALE MHA U9 C6",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Cloverdale Sport & Ice Complex 1-Blue"
-    },
-    {
-      "id": 1032252,
-      "number": "U9L6102",
-      "date": "2027-01-31",
-      "startTime": "2027-01-31T17:00:00.000Z",
-      "groupId": 7015,
-      "groupName": "Major",
-      "homeTeamId": 178017,
-      "homeTeamName": "SURREY MHA U9 C1 SY1",
-      "awayTeamId": 178022,
-      "awayTeamName": "SOUTH DELTA MHA U9 C7",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "North Surrey Sport & Ice Complex Rink #3"
-    },
-    {
-      "id": 1032261,
-      "number": "U9L6693",
-      "date": "2027-01-31",
-      "startTime": "2027-01-31T17:00:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178016,
-      "homeTeamName": "SURREY MHA U9 C2 SY2",
-      "awayTeamId": 177976,
-      "awayTeamName": "LANGLEY MHA U9 C7",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
       "id": 1032160,
@@ -3112,6 +3078,23 @@
       "arena": "Sportsplex Arena 1"
     },
     {
+      "id": 1032159,
+      "number": "U9L6608",
+      "date": "2027-01-16",
+      "startTime": "2027-01-16T19:00:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178087,
+      "homeTeamName": "CLOVERDALE MHA U9 C7",
+      "awayTeamId": 178085,
+      "awayTeamName": "CLOVERDALE MHA U9 C6",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Cloverdale Sport & Ice Complex 1-Blue"
+    },
+    {
       "id": 1032047,
       "number": "U9L6038",
       "date": "2027-01-16",
@@ -3486,6 +3469,23 @@
       "arena": "Tilbury Ice"
     },
     {
+      "id": 1032261,
+      "number": "U9L6693",
+      "date": "2027-01-09",
+      "startTime": "2027-01-09T21:15:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178016,
+      "homeTeamName": "SURREY MHA U9 C2 SY2",
+      "awayTeamId": 177976,
+      "awayTeamName": "LANGLEY MHA U9 C7",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Surrey Sport & Ice Complex Rink #2"
+    },
+    {
       "id": 1032253,
       "number": "U9L6097",
       "date": "2027-01-09",
@@ -3605,6 +3605,23 @@
       "arena": "Centennial Arena Centennial"
     },
     {
+      "id": 1032257,
+      "number": "U9L6687",
+      "date": "2026-12-20",
+      "startTime": "2026-12-20T22:15:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178016,
+      "homeTeamName": "SURREY MHA U9 C2 SY2",
+      "awayTeamId": 178025,
+      "awayTeamName": "SOUTH DELTA MHA U9 C9",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Surrey Sport & Ice Complex Rink #1"
+    },
+    {
       "id": 1032215,
       "number": "U9L6555",
       "date": "2026-12-20",
@@ -3687,23 +3704,6 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "North Surrey Sport & Ice Complex Rink #3"
-    },
-    {
-      "id": 1032257,
-      "number": "U9L6687",
-      "date": "2026-12-20",
-      "startTime": "2026-12-20T17:00:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178016,
-      "homeTeamName": "SURREY MHA U9 C2 SY2",
-      "awayTeamId": 178025,
-      "awayTeamName": "SOUTH DELTA MHA U9 C9",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
@@ -5148,7 +5148,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "postponed",
+      "status": "scheduled",
       "arena": "Tilbury Ice"
     },
     {
@@ -7115,8 +7115,8 @@
     {
       "id": 1036689,
       "number": "U9L7211",
-      "date": "2026-12-13",
-      "startTime": "2026-12-13T22:30:00.000Z",
+      "date": "2027-01-03",
+      "startTime": "2027-01-03T21:00:00.000Z",
       "groupId": 7026,
       "groupName": "Minor",
       "homeTeamId": 178019,

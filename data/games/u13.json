@@ -1210,6 +1210,23 @@
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
+      "id": 1014177,
+      "number": "U13L6033",
+      "date": "2027-01-13",
+      "startTime": "2027-01-14T01:45:00.000Z",
+      "groupId": 7018,
+      "groupName": "Gold",
+      "homeTeamId": 178311,
+      "homeTeamName": "SEMIAHMOO MHA U13 C3 (SE3)",
+      "awayTeamId": 178369,
+      "awayTeamName": "NORTH DELTA MHA U13 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Delta Legends"
+    },
+    {
       "id": 1014077,
       "number": "U13L6734",
       "date": "2027-01-13",
@@ -1344,23 +1361,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Cloverdale Arena"
-    },
-    {
-      "id": 1014177,
-      "number": "U13L6033",
-      "date": "2027-01-09",
-      "startTime": "2027-01-09T22:15:00.000Z",
-      "groupId": 7018,
-      "groupName": "Gold",
-      "homeTeamId": 178311,
-      "homeTeamName": "SEMIAHMOO MHA U13 C3 (SE3)",
-      "awayTeamId": 178369,
-      "awayTeamName": "NORTH DELTA MHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Newton Arena"
     },
     {
       "id": 1014126,
@@ -1995,7 +1995,7 @@
       "id": 1014059,
       "number": "U13L6720",
       "date": "2026-12-06",
-      "startTime": "2026-12-06T18:15:00.000Z",
+      "startTime": "2026-12-06T18:00:00.000Z",
       "groupId": 7017,
       "groupName": "Red",
       "homeTeamId": 178354,
@@ -12561,6 +12561,23 @@
       "arena": "Port Moody Recreation Complex 1"
     },
     {
+      "id": 968587,
+      "number": "U13L5073",
+      "date": "2027-01-17",
+      "startTime": "2027-01-17T21:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178352,
+      "homeTeamName": "RIDGE MEADOWS MHA U13 C4",
+      "awayTeamId": 178358,
+      "awayTeamName": "RIDGE MEADOWS MHA U13 C6",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 2"
+    },
+    {
       "id": 968572,
       "number": "U13L5088",
       "date": "2027-01-17",
@@ -12850,6 +12867,23 @@
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
+      "id": 968595,
+      "number": "U13L5065",
+      "date": "2026-12-20",
+      "startTime": "2026-12-21T01:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178350,
+      "homeTeamName": "RIDGE MEADOWS MHA U13 C2",
+      "awayTeamId": 178353,
+      "awayTeamName": "RIDGE MEADOWS MHA U13 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 2"
+    },
+    {
       "id": 968586,
       "number": "U13L5074",
       "date": "2026-12-20",
@@ -12877,6 +12911,23 @@
       "homeTeamName": "RIDGE MEADOWS MHA U13 C4",
       "awayTeamId": 178365,
       "awayTeamName": "PORT MOODY AHA U13 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 2"
+    },
+    {
+      "id": 968626,
+      "number": "U13L5034",
+      "date": "2026-12-20",
+      "startTime": "2026-12-20T16:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178358,
+      "homeTeamName": "RIDGE MEADOWS MHA U13 C6",
+      "awayTeamId": 178367,
+      "awayTeamName": "PORT COQUITLAM MHA U13 C3",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -12916,6 +12967,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Maple Ridge 2"
+    },
+    {
+      "id": 968596,
+      "number": "U13L5064",
+      "date": "2026-12-19",
+      "startTime": "2026-12-19T23:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178356,
+      "homeTeamName": "RIDGE MEADOWS MHA U13 C5",
+      "awayTeamId": 178364,
+      "awayTeamName": "PORT COQUITLAM MHA U13 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Ram Red"
     },
     {
       "id": 968475,
@@ -13103,6 +13171,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
+    },
+    {
+      "id": 968497,
+      "number": "U13L5018",
+      "date": "2026-12-13",
+      "startTime": "2026-12-13T21:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178358,
+      "homeTeamName": "RIDGE MEADOWS MHA U13 C6",
+      "awayTeamId": 178370,
+      "awayTeamName": "COQUITLAM MHA U13 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 2"
     },
     {
       "id": 968524,
@@ -13547,6 +13632,23 @@
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
+      "id": 968594,
+      "number": "U13L5066",
+      "date": "2026-12-03",
+      "startTime": "2026-12-04T02:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178358,
+      "homeTeamName": "RIDGE MEADOWS MHA U13 C6",
+      "awayTeamId": 178365,
+      "awayTeamName": "PORT MOODY AHA U13 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Jeep Blue"
+    },
+    {
       "id": 968548,
       "number": "U13L5111",
       "date": "2026-12-03",
@@ -13613,6 +13715,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Coquitlam 3 Venus"
+    },
+    {
+      "id": 968571,
+      "number": "U13L5089",
+      "date": "2026-11-30",
+      "startTime": "2026-12-01T01:00:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178352,
+      "homeTeamName": "RIDGE MEADOWS MHA U13 C4",
+      "awayTeamId": 178356,
+      "awayTeamName": "RIDGE MEADOWS MHA U13 C5",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
       "id": 968555,
@@ -13921,23 +14040,6 @@
       "arena": "Port Moody Recreation Complex 1"
     },
     {
-      "id": 968571,
-      "number": "U13L5089",
-      "date": "2026-11-22",
-      "startTime": "2026-11-22T21:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178352,
-      "homeTeamName": "RIDGE MEADOWS MHA U13 C4",
-      "awayTeamId": 178356,
-      "awayTeamName": "RIDGE MEADOWS MHA U13 C5",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Planet Ice Maple Ridge 2"
-    },
-    {
       "id": 968573,
       "number": "U13L5086",
       "date": "2026-11-22",
@@ -14091,23 +14193,6 @@
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
-      "id": 968587,
-      "number": "U13L5073",
-      "date": "2026-11-15",
-      "startTime": "2026-11-15T21:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178352,
-      "homeTeamName": "RIDGE MEADOWS MHA U13 C4",
-      "awayTeamId": 178358,
-      "awayTeamName": "RIDGE MEADOWS MHA U13 C6",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Planet Ice Maple Ridge 2"
-    },
-    {
       "id": 968589,
       "number": "U13L5072",
       "date": "2026-11-15",
@@ -14174,57 +14259,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Port Moody Recreation Complex 1"
-    },
-    {
-      "id": 968594,
-      "number": "U13L5066",
-      "date": "2026-11-14",
-      "startTime": "2026-11-14T18:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178358,
-      "homeTeamName": "RIDGE MEADOWS MHA U13 C6",
-      "awayTeamId": 178365,
-      "awayTeamName": "PORT MOODY AHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Pitt Meadows Arena Complex Jeep Blue"
-    },
-    {
-      "id": 968595,
-      "number": "U13L5065",
-      "date": "2026-11-14",
-      "startTime": "2026-11-14T17:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178350,
-      "homeTeamName": "RIDGE MEADOWS MHA U13 C2",
-      "awayTeamId": 178353,
-      "awayTeamName": "RIDGE MEADOWS MHA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Planet Ice Maple Ridge 2"
-    },
-    {
-      "id": 968596,
-      "number": "U13L5064",
-      "date": "2026-11-13",
-      "startTime": "2026-11-14T02:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178356,
-      "homeTeamName": "RIDGE MEADOWS MHA U13 C5",
-      "awayTeamId": 178364,
-      "awayTeamName": "PORT COQUITLAM MHA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
       "id": 968600,
@@ -14720,23 +14754,6 @@
       "arena": "Port Coquitlam Community Centre Arena 2"
     },
     {
-      "id": 968626,
-      "number": "U13L5034",
-      "date": "2026-10-31",
-      "startTime": "2026-10-31T18:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178358,
-      "homeTeamName": "RIDGE MEADOWS MHA U13 C6",
-      "awayTeamId": 178367,
-      "awayTeamName": "PORT COQUITLAM MHA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Pitt Meadows Arena Complex Jeep Blue"
-    },
-    {
       "id": 968580,
       "number": "U13L5080",
       "date": "2026-10-31",
@@ -14922,23 +14939,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Poirier Sport & Leisure Complex 2"
-    },
-    {
-      "id": 968497,
-      "number": "U13L5018",
-      "date": "2026-10-24",
-      "startTime": "2026-10-24T18:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178358,
-      "homeTeamName": "RIDGE MEADOWS MHA U13 C6",
-      "awayTeamId": 178370,
-      "awayTeamName": "COQUITLAM MHA U13 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Pitt Meadows Arena Complex Jeep Blue"
     },
     {
       "id": 968479,
@@ -24061,23 +24061,6 @@
       "arena": "Harry Jerome Recreative Centre Rink"
     },
     {
-      "id": 918504,
-      "number": "U13AAL0119",
-      "date": "2026-12-13",
-      "startTime": "2026-12-14T02:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 188069,
-      "homeTeamName": "PCEHL U13 VANCOUVER ORCAS",
-      "awayTeamId": 188077,
-      "awayTeamName": "PCEHL U13 FORCE",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Hillcrest Centre Arena"
-    },
-    {
       "id": 918507,
       "number": "U13AAL0118",
       "date": "2026-12-13",
@@ -24246,6 +24229,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Burnaby Winter Club Main"
+    },
+    {
+      "id": 918504,
+      "number": "U13AAL0119",
+      "date": "2026-12-07",
+      "startTime": "2026-12-08T03:15:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 188069,
+      "homeTeamName": "PCEHL U13 VANCOUVER ORCAS",
+      "awayTeamId": 188077,
+      "awayTeamName": "PCEHL U13 FORCE",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Kitsilano Community Centre Kitsilano Rink"
     },
     {
       "id": 918513,
@@ -29848,23 +29848,6 @@
       "arena": "Kensington Arena"
     },
     {
-      "id": 1030388,
-      "number": "U13L8422",
-      "date": "2026-12-13",
-      "startTime": "2026-12-14T02:15:00.000Z",
-      "groupId": 7031,
-      "groupName": "Green",
-      "homeTeamId": 178330,
-      "homeTeamName": "RICHMOND JETS MHA U13 C4",
-      "awayTeamId": 178340,
-      "awayTeamName": "VANCOUVER MHA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Richmond Olympic Oval North"
-    },
-    {
       "id": 1030312,
       "number": "U13L8223",
       "date": "2026-12-13",
@@ -30713,6 +30696,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Richmond Ice Centre Forum"
+    },
+    {
+      "id": 1030388,
+      "number": "U13L8422",
+      "date": "2026-12-03",
+      "startTime": "2026-12-04T02:00:00.000Z",
+      "groupId": 7031,
+      "groupName": "Green",
+      "homeTeamId": 178330,
+      "homeTeamName": "RICHMOND JETS MHA U13 C4",
+      "awayTeamId": 178340,
+      "awayTeamName": "VANCOUVER MHA U13 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Richmond Ice Centre Pond"
     },
     {
       "id": 1030261,
@@ -41739,7 +41739,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Hope & District Recreation Centre"
     },
     {
@@ -41753,10 +41753,10 @@
       "homeTeamName": "HOPE & DISTRICT U13 C1",
       "awayTeamId": 178391,
       "awayTeamName": "ABBOTSFORD MHA U13 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hope & District Recreation Centre"
     }
   ],
