@@ -1,6 +1,23 @@
 {
   "199261": [
     {
+      "id": 1032137,
+      "number": "U9L6630",
+      "date": "2027-03-13",
+      "startTime": "2027-03-13T16:30:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178023,
+      "homeTeamName": "SOUTH DELTA MHA U9 C5",
+      "awayTeamId": 177984,
+      "awayTeamName": "LANGLEY MHA U9 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Ladner Leisure Centre"
+    },
+    {
       "id": 1032268,
       "number": "U9L6110",
       "date": "2027-03-11",
@@ -1393,23 +1410,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
-    },
-    {
-      "id": 1032137,
-      "number": "U9L6630",
-      "date": "2027-02-13",
-      "startTime": "2027-02-13T21:15:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178023,
-      "homeTeamName": "SOUTH DELTA MHA U9 C5",
-      "awayTeamId": 177984,
-      "awayTeamName": "LANGLEY MHA U9 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Tilbury Ice"
     },
     {
       "id": 1032281,
