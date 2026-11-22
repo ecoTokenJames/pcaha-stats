@@ -7859,7 +7859,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "Killarney Community Centre 1"
     },
     {
@@ -11685,10 +11685,10 @@
       "homeTeamName": "SUNSHINE COAST MHA FEMALE U18 C2",
       "awayTeamId": 177582,
       "awayTeamName": "RICHMOND RAVENS U18 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sunshine Coast Arena"
     },
     {
@@ -35506,10 +35506,10 @@
       "startTime": "2026-11-22T20:15:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
-      "awayTeamId": null,
-      "awayTeamName": "TBD",
+      "homeTeamId": 176787,
+      "homeTeamName": "OCEANSIDE MHA  (3)  U18  C1  GENERALS",
+      "awayTeamId": 178794,
+      "awayTeamName": "LILLOOET MHA (4) U18 RECREATION",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -35523,14 +35523,14 @@
       "startTime": "2026-11-22T19:15:00.000Z",
       "groupId": null,
       "groupName": null,
-      "homeTeamId": null,
-      "homeTeamName": "TBD",
-      "awayTeamId": null,
-      "awayTeamName": "TBD",
+      "homeTeamId": 177937,
+      "homeTeamName": "ABBOTSFORD MHA U18 C1",
+      "awayTeamId": 177830,
+      "awayTeamName": "ABBOTSFORD MHA U18 C4",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -35547,7 +35547,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "MSA Arena"
     },
     {
@@ -35561,10 +35561,10 @@
       "homeTeamName": "LAKE COWICHAN MHA (4) U18 C1 LAKERS",
       "awayTeamId": 177880,
       "awayTeamName": "SQUAMISH MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 8,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -35578,10 +35578,10 @@
       "homeTeamName": "ABBOTSFORD MHA U18 C3",
       "awayTeamId": 178794,
       "awayTeamName": "LILLOOET MHA (4) U18 RECREATION",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -35595,10 +35595,10 @@
       "homeTeamName": "OCEANSIDE MHA  (3)  U18  C1  GENERALS",
       "awayTeamId": 177847,
       "awayTeamName": "SEMIAHMOO MHA U18 C5 (SE5)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -35612,10 +35612,10 @@
       "homeTeamName": "RICHMOND JETS MHA U18 C3",
       "awayTeamId": 177830,
       "awayTeamName": "ABBOTSFORD MHA U18 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -35629,10 +35629,10 @@
       "homeTeamName": "ABBOTSFORD MHA U18 C1",
       "awayTeamId": 178817,
       "awayTeamName": "KELOWNA MHA (1) U18 REC TEAM 6",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
+      "homeScore": 8,
+      "awayScore": 7,
+      "decidedBy": "OT",
+      "status": "final",
       "arena": "Matsqui Recreation Centre"
     },
     {
