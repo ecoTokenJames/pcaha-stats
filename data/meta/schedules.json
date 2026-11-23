@@ -81,6 +81,15 @@
     "endDate": "2026-12-06"
   },
   {
+    "id": 203665,
+    "name": "Candy Cane Tournament - U9",
+    "divisionName": "U9",
+    "categoryName": "U9 REC",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-19",
+    "endDate": "2026-12-22"
+  },
+  {
     "id": 199308,
     "name": "U11 A Interconference Placement",
     "divisionName": "U11",
@@ -810,6 +819,15 @@
     "endDate": "2026-11-29"
   },
   {
+    "id": 203667,
+    "name": "Winter Classic - U13",
+    "divisionName": "U13",
+    "categoryName": "U13 REC",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-30"
+  },
+  {
     "id": 199303,
     "name": "FVE U13C Playoffs",
     "divisionName": "U13",
@@ -1177,6 +1195,15 @@
     "scheduleType": "Tournament",
     "startDate": "2026-11-19",
     "endDate": "2026-11-22"
+  },
+  {
+    "id": 203668,
+    "name": "Winter Classic - U15",
+    "divisionName": "U15",
+    "categoryName": "U15 REC",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-30"
   },
   {
     "id": 199306,

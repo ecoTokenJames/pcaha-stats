@@ -2704,6 +2704,23 @@
       "arena": "Centennial Arena Centennial"
     },
     {
+      "id": 1032237,
+      "number": "U9L6528",
+      "date": "2027-01-17",
+      "startTime": "2027-01-18T01:00:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 226362,
+      "homeTeamName": "WCAHA 8UC2 (PCAHA U9 C2)",
+      "awayTeamId": 177962,
+      "awayTeamName": "NORTH DELTA MHA U9 C4 Minor",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
+    },
+    {
       "id": 1032044,
       "number": "U9L6041",
       "date": "2027-01-17",
@@ -2753,6 +2770,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Tilbury Ice"
+    },
+    {
+      "id": 1032225,
+      "number": "U9L6542",
+      "date": "2027-01-17",
+      "startTime": "2027-01-17T19:00:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 226361,
+      "homeTeamName": "WCAHA 8UC (PCAHA U9 C1)",
+      "awayTeamId": 178023,
+      "awayTeamName": "SOUTH DELTA MHA U9 C5",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1032178,
@@ -3775,23 +3809,6 @@
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
-      "id": 1032225,
-      "number": "U9L6542",
-      "date": "2026-12-19",
-      "startTime": "2026-12-19T19:30:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 226361,
-      "homeTeamName": "WCAHA 8UC (PCAHA U9 C1)",
-      "awayTeamId": 178023,
-      "awayTeamName": "SOUTH DELTA MHA U9 C5",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Sportsplex Arena 1"
-    },
-    {
       "id": 1032140,
       "number": "U9L6627",
       "date": "2026-12-19",
@@ -3943,6 +3960,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Tilbury Ice"
+    },
+    {
+      "id": 1032256,
+      "number": "U9L6684",
+      "date": "2026-12-13",
+      "startTime": "2026-12-13T21:00:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178016,
+      "homeTeamName": "SURREY MHA U9 C2 SY2",
+      "awayTeamId": 178037,
+      "awayTeamName": "SOUTH DELTA MHA U9 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Newton Arena"
     },
     {
       "id": 1031977,
@@ -4198,23 +4232,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
-    },
-    {
-      "id": 1032237,
-      "number": "U9L6528",
-      "date": "2026-12-12",
-      "startTime": "2026-12-12T21:15:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 226362,
-      "homeTeamName": "WCAHA 8UC2 (PCAHA U9 C2)",
-      "awayTeamId": 177962,
-      "awayTeamName": "NORTH DELTA MHA U9 C4 Minor",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sportsplex Arena 1"
     },
     {
       "id": 1032238,
@@ -4554,23 +4571,6 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "North Surrey Sport & Ice Complex Rink #3"
-    },
-    {
-      "id": 1032256,
-      "number": "U9L6684",
-      "date": "2026-12-06",
-      "startTime": "2026-12-06T17:00:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178016,
-      "homeTeamName": "SURREY MHA U9 C2 SY2",
-      "awayTeamId": 178037,
-      "awayTeamName": "SOUTH DELTA MHA U9 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
@@ -4995,7 +4995,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "George Preston Recreation Centre Main"
     },
     {
@@ -5118,23 +5118,6 @@
       "arena": "Tilbury Ice"
     },
     {
-      "id": 1032071,
-      "number": "U9L6503",
-      "date": "2026-11-28",
-      "startTime": "2026-11-28T22:15:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178061,
-      "homeTeamName": "NORTH DELTA MHA U9 C3 Minor",
-      "awayTeamId": 177982,
-      "awayTeamName": "LANGLEY MHA U9 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
-    },
-    {
       "id": 1032064,
       "number": "U9L6501",
       "date": "2026-11-28",
@@ -5167,23 +5150,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Tilbury Ice"
-    },
-    {
-      "id": 1032251,
-      "number": "U9L6091",
-      "date": "2026-11-28",
-      "startTime": "2026-11-28T21:00:00.000Z",
-      "groupId": 7015,
-      "groupName": "Major",
-      "homeTeamId": 178065,
-      "homeTeamName": "NORTH DELTA MHA U9 C1 Major",
-      "awayTeamId": 177961,
-      "awayTeamName": "LANGLEY MHA U9 C12",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
       "id": 1032062,
@@ -5303,6 +5269,40 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Centennial Arena Centennial"
+    },
+    {
+      "id": 1032071,
+      "number": "U9L6503",
+      "date": "2026-11-27",
+      "startTime": "2026-11-28T01:15:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178061,
+      "homeTeamName": "NORTH DELTA MHA U9 C3 Minor",
+      "awayTeamId": 177982,
+      "awayTeamName": "LANGLEY MHA U9 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
+    },
+    {
+      "id": 1032251,
+      "number": "U9L6091",
+      "date": "2026-11-27",
+      "startTime": "2026-11-28T01:15:00.000Z",
+      "groupId": 7015,
+      "groupName": "Major",
+      "homeTeamId": 178065,
+      "homeTeamName": "NORTH DELTA MHA U9 C1 Major",
+      "awayTeamId": 177961,
+      "awayTeamName": "LANGLEY MHA U9 C12",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "postponed",
+      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
       "id": 1031973,

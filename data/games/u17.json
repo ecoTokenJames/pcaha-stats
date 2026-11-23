@@ -300,10 +300,10 @@
       "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U18 A3 TIER 3 (U17A)",
       "awayTeamId": 222002,
       "awayTeamName": "RIDGE MEADOWS MHA (1) U18 A4 TIER 4 (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 11,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Hillcrest Centre Arena"
     },
     {
@@ -317,10 +317,10 @@
       "homeTeamName": "LANGLEY MHA (1) U18 A4 TIER 4 EAGLES (U17A)",
       "awayTeamId": 178621,
       "awayTeamName": "NORTH VANCOUVER MHA (1) U18 A3 TIER 3 (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 1"
     },
     {
