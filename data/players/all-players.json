@@ -58938,28 +58938,6 @@
     "position": "F"
   },
   {
-    "participantId": 53793,
-    "name": "YEERDANA JIANATE",
-    "number": 91,
-    "teamId": 177844,
-    "teamName": "SEMIAHMOO MHA U18 C2 (SE2)",
-    "divisionName": "U18",
-    "scheduleName": "FVW U18C League",
-    "scheduleId": 199257,
-    "categoryName": "U18 C",
-    "scheduleType": "League",
-    "goals": 1,
-    "assists": 6,
-    "points": 7,
-    "pim": 2,
-    "ppGoals": 0,
-    "shGoals": 0,
-    "gwGoals": 0,
-    "gamesPlayed": 3,
-    "isAffiliate": false,
-    "position": "F"
-  },
-  {
     "participantId": 34514,
     "name": "CHARLES AMYOTTE",
     "number": 13,
@@ -121921,7 +121899,7 @@
     "gwGoals": 0,
     "gamesPlayed": 8,
     "isAffiliate": false,
-    "position": "F"
+    "position": "D"
   },
   {
     "participantId": 134810,
@@ -151556,28 +151534,6 @@
     "gamesPlayed": 5,
     "isAffiliate": false,
     "position": "D"
-  },
-  {
-    "participantId": 53793,
-    "name": "YEERDANA JIANATE",
-    "number": 91,
-    "teamId": 177844,
-    "teamName": "SEMIAHMOO MHA U18 C2 (SE2)",
-    "divisionName": "U18",
-    "scheduleName": "U18 C MEMORIAL TOURNAMENT",
-    "scheduleId": 202465,
-    "categoryName": "U18 C",
-    "scheduleType": "Tournament",
-    "goals": 2,
-    "assists": 2,
-    "points": 4,
-    "pim": 0,
-    "ppGoals": 0,
-    "shGoals": 0,
-    "gwGoals": 0,
-    "gamesPlayed": 4,
-    "isAffiliate": false,
-    "position": "F"
   },
   {
     "participantId": 50514,
@@ -206928,28 +206884,6 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 0,
-    "isAffiliate": false,
-    "position": "F"
-  },
-  {
-    "participantId": 53793,
-    "name": "YEERDANA JIANATE",
-    "number": 91,
-    "teamId": 177844,
-    "teamName": "SEMIAHMOO MHA U18 C2 (SE2)",
-    "divisionName": "U18",
-    "scheduleName": "FVW U18C Balancing",
-    "scheduleId": 199251,
-    "categoryName": "U18 C",
-    "scheduleType": "Placement",
-    "goals": 2,
-    "assists": 1,
-    "points": 3,
-    "pim": 4,
-    "ppGoals": 0,
-    "shGoals": 0,
-    "gwGoals": 0,
-    "gamesPlayed": 3,
     "isAffiliate": false,
     "position": "F"
   },
@@ -394391,7 +394325,7 @@
     "gwGoals": 0,
     "gamesPlayed": 5,
     "isAffiliate": false,
-    "position": "F"
+    "position": "D"
   },
   {
     "participantId": 660020,
@@ -504126,7 +504060,7 @@
     "gwGoals": 0,
     "gamesPlayed": 4,
     "isAffiliate": false,
-    "position": "F"
+    "position": "D"
   },
   {
     "participantId": 91081,
