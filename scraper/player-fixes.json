@@ -1,0 +1,9 @@
+{
+  "_readme": "Corrections families send to pcahastats@proton.me, by Spordle participant id. positions: the player's real position (F, D or G) when Spordle's roster has it wrong; applied to every season. Takes effect on the next deploy.",
+  "positions": {
+    "682664": {
+      "position": "D",
+      "note": "Timur Dauletbaev #98, EYH Jr. Silvertips: plays defence (family, 2026-11-23)"
+    }
+  }
+}

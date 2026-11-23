@@ -1,4 +1,10 @@
 {
-  "_readme": "Spordle participant ids of players whose names must not appear on the site (removal requests sent to pcahastats@proton.me). Their stats still count toward team totals; the name shows as 'Name withheld'. Add the id and a short note; takes effect on the next nightly update.",
-  "hidden": []
+  "_readme": "Spordle participant ids of players removed from the site on request (sent to pcahastats@proton.me). Plain entries: the name shows as 'Name withheld' and their stats still count toward team totals. Entries with \"remove\": true: the player is left out entirely (no rows, search, leaders or history; team totals unchanged). Add the id and a short note without the player's name; takes effect on the next deploy.",
+  "hidden": [
+    {
+      "participantId": 53793,
+      "remove": true,
+      "note": "Family asked for full removal, 2026-11-23 (Semiahmoo U18 C)"
+    }
+  ]
 }

@@ -79,8 +79,19 @@ const CACHE_DIR = path.join(DATA_DIR, 'cache');
 const REFETCH_DAYS = 3;
 
 /** Players removed on request: their names never get saved, in the cache or the site data */
-const HIDDEN = new Set(
-  (require('./hidden-players.json').hidden || []).map(h => Number(h.participantId ?? h))
+const HIDDEN_LIST = require('./hidden-players.json').hidden || [];
+const HIDDEN = new Set(HIDDEN_LIST.map(h => Number(h.participantId ?? h)));
+/** ...and the ones whose families asked for them to be left out entirely */
+const REMOVED = new Set(
+  HIDDEN_LIST.filter(h => h && typeof h === 'object' && h.remove).map(h => Number(h.participantId))
+);
+
+/** Positions families corrected (Spordle's roster had them wrong): participantId -> F/D/G */
+const POSITION_FIXES = new Map(
+  Object.entries(require('./player-fixes.json').positions || {}).map(([id, fix]) => [
+    Number(id),
+    typeof fix === 'string' ? fix : fix.position,
+  ])
 );
 
 /** Names of teams Spordle lists without one (BCEHL, VIAHA): teamId -> name */
@@ -920,6 +931,7 @@ async function main() {
 
     // Game-by-game player logs per division (used by the stats agent for trends)
     for (const [div, log] of Object.entries(gameLogs)) {
+      for (const id of REMOVED) delete log[id];
       saveJson(path.join(DATA_DIR, 'gamelogs', `${div.toLowerCase()}.json`), log);
     }
 
@@ -944,11 +956,18 @@ async function main() {
     await enrichWithRosters(playerMap, standings, schedules, lineupStats, touchedTeams);
 
     // Convert player map to sorted arrays
-    // Removal requests: keep the stats, withhold the name
-    for (const p of Object.values(playerMap)) {
+    // Removal requests: keep the stats and withhold the name, or leave the player out
+    // entirely when the family asked for that. Then apply corrected positions.
+    for (const [key, p] of Object.entries(playerMap)) {
+      if (REMOVED.has(p.participantId)) {
+        delete playerMap[key];
+        continue;
+      }
       if (HIDDEN.has(p.participantId)) p.name = 'Name withheld';
+      if (POSITION_FIXES.has(p.participantId)) p.position = POSITION_FIXES.get(p.participantId);
     }
-    if (HIDDEN.size > 0) log(`  Withheld ${HIDDEN.size} player name(s) on request`);
+    if (HIDDEN.size > 0) log(`  ${HIDDEN.size - REMOVED.size} name(s) withheld, ${REMOVED.size} player(s) left out, on request`);
+    if (POSITION_FIXES.size > 0) log(`  ${POSITION_FIXES.size} position correction(s) applied`);
 
     const players = Object.values(playerMap).sort((a, b) => b.points - a.points);
     saveJson(path.join(DATA_DIR, 'players', 'all-players.json'), players);

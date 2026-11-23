@@ -18,9 +18,14 @@ const SECTIONS = ["standings", "leaders", "tournaments"];
 const nextConfig: NextConfig = {
   // The stats assistant's /api/chat function reads the nightly data files at request time
   outputFileTracingIncludes: {
-    "/api/chat": ["./data/**/*"],
+    "/api/chat": ["./data/**/*", "./scraper/hidden-players.json", "./scraper/player-fixes.json"],
     // Past seasons' pages are built on first visit, from their packaged data
-    "/seasons/**": ["./data/meta/**/*", "./data/seasons/**/*", "./scraper/hidden-players.json"],
+    "/seasons/**": [
+      "./data/meta/**/*",
+      "./data/seasons/**/*",
+      "./scraper/hidden-players.json",
+      "./scraper/player-fixes.json",
+    ],
   },
   // ...but not past seasons' pages data (the agent uses data/history)
   outputFileTracingExcludes: {

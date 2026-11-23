@@ -153,47 +153,85 @@ export function getAllPlayers(season?: string): PlayerStat[] {
     // Past seasons ship per-division files only
     return getDivisions(season).flatMap((d) => getDivisionPlayers(d.name, season));
   }
-  return readJson<PlayerStat[]>("players/all-players.json") || [];
+  return applyPlayerRules(readJson<PlayerStat[]>("players/all-players.json") || []);
 }
 
-/** Players removed on request; past seasons were packaged earlier, so apply the list on read. */
-let hiddenIds: Set<number> | null = null;
-function hiddenPlayerIds(): Set<number> {
-  if (!hiddenIds) {
-    try {
-      const file = JSON.parse(
-        fs.readFileSync(path.join(process.cwd(), "scraper", "hidden-players.json"), "utf-8")
-      ) as { hidden?: Array<number | { participantId: number }> };
-      hiddenIds = new Set(
-        (file.hidden ?? []).map((h) => Number(typeof h === "object" ? h.participantId : h))
-      );
-    } catch {
-      hiddenIds = new Set();
-    }
+/**
+ * Family requests, applied whenever player data is read (past seasons were packaged
+ * earlier, and the nightly files may predate a request):
+ * - scraper/hidden-players.json: name shown as "Name withheld", or with "remove": true
+ *   the player is left out entirely;
+ * - scraper/player-fixes.json: corrected positions.
+ */
+interface PlayerRules {
+  withheld: Set<number>;
+  removed: Set<number>;
+  positions: Map<number, string>;
+}
+let playerRulesCache: PlayerRules | null = null;
+function playerRules(): PlayerRules {
+  if (!playerRulesCache) {
+    const read = <T,>(file: string): T | null => {
+      try {
+        return JSON.parse(fs.readFileSync(path.join(process.cwd(), "scraper", file), "utf-8")) as T;
+      } catch {
+        return null;
+      }
+    };
+    const hidden =
+      read<{ hidden?: Array<number | { participantId: number; remove?: boolean }> }>("hidden-players.json")
+        ?.hidden ?? [];
+    const fixes =
+      read<{ positions?: Record<string, string | { position: string }> }>("player-fixes.json")?.positions ?? {};
+    const removed = new Set(
+      hidden.filter((h) => typeof h === "object" && h.remove).map((h) => Number((h as { participantId: number }).participantId))
+    );
+    playerRulesCache = {
+      removed,
+      withheld: new Set(
+        hidden.map((h) => Number(typeof h === "object" ? h.participantId : h)).filter((id) => !removed.has(id))
+      ),
+      positions: new Map(
+        Object.entries(fixes).map(([id, f]) => [Number(id), typeof f === "string" ? f : f.position])
+      ),
+    };
   }
-  return hiddenIds;
+  return playerRulesCache;
 }
 
-const withheldCache = new Map<string, PlayerStat[]>();
+function applyPlayerRules<T extends { participantId: number; name: string; position?: string }>(list: T[]): T[] {
+  const { withheld, removed, positions } = playerRules();
+  if (withheld.size === 0 && removed.size === 0 && positions.size === 0) return list;
+  const out: T[] = [];
+  for (const p of list) {
+    if (removed.has(p.participantId)) continue;
+    const name = withheld.has(p.participantId) ? "Name withheld" : p.name;
+    const position = positions.get(p.participantId) ?? p.position;
+    out.push(name === p.name && position === p.position ? p : { ...p, name, position });
+  }
+  return out;
+}
+
+const pastPlayersCache = new Map<string, PlayerStat[]>();
 
 export function getDivisionPlayers(division: string, season?: string): PlayerStat[] {
   const file = `players/${division.toLowerCase()}.json`;
-  if (!season || season === SEASON) return readJson<PlayerStat[]>(file) || [];
+  if (!season || season === SEASON) return applyPlayerRules(readJson<PlayerStat[]>(file) || []);
   const key = `${season}/${file}`;
-  if (!withheldCache.has(key)) {
-    const hidden = hiddenPlayerIds();
-    withheldCache.set(
-      key,
-      (readJson<PlayerStat[]>(file, season) || []).map((p) =>
-        hidden.has(p.participantId) ? { ...p, name: "Name withheld" } : p
-      )
-    );
+  if (!pastPlayersCache.has(key)) {
+    pastPlayersCache.set(key, applyPlayerRules(readJson<PlayerStat[]>(file, season) || []));
   }
-  return withheldCache.get(key)!;
+  return pastPlayersCache.get(key)!;
 }
 
 export function getLeaders(): Leaders {
-  return readJson<Leaders>("players/leaders.json") || {};
+  const leaders = readJson<Leaders>("players/leaders.json") || {};
+  return Object.fromEntries(
+    Object.entries(leaders).map(([div, lists]) => [
+      div,
+      Object.fromEntries(Object.entries(lists).map(([k, list]) => [k, applyPlayerRules(list as PlayerStat[])])),
+    ])
+  ) as Leaders;
 }
 
 export interface GameRow {
@@ -297,7 +335,9 @@ export type GameLogRow = [number, number, number, number, number];
 
 /** Game-by-game player logs for a division (participantId -> rows). */
 export function getDivisionGameLogs(division: string): Record<string, GameLogRow[]> {
-  return readJson<Record<string, GameLogRow[]>>(`gamelogs/${division.toLowerCase()}.json`) || {};
+  const logs = readJson<Record<string, GameLogRow[]>>(`gamelogs/${division.toLowerCase()}.json`) || {};
+  for (const id of playerRules().removed) delete logs[String(id)];
+  return logs;
 }
 
 /** One past season for a player (built by scraper/build-history.js). */
@@ -336,7 +376,10 @@ export function getPlayerHistory(): Record<string, PlayerSeasonHistory[]> {
     const packed = readJson<PackedHistory>("history/players.json");
     playerHistory = {};
     if (packed) {
-      for (const [pid, [name, rows]] of Object.entries(packed.players)) {
+      const { removed, withheld } = playerRules();
+      for (const [pid, [savedName, rows]] of Object.entries(packed.players)) {
+        if (removed.has(Number(pid))) continue;
+        const name = withheld.has(Number(pid)) ? "Name withheld" : savedName;
         playerHistory[pid] = rows.map(([t, number, type, gamesPlayed, goals, assists, pim]) => {
           const [season, teamId, teamName, division] = packed.teams[t];
           return {
