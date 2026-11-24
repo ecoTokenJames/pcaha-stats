@@ -81,6 +81,15 @@
     "endDate": "2027-04-01"
   },
   {
+    "id": 201971,
+    "name": "PL U9 Exhibition",
+    "type": "Exhibition",
+    "divisionName": "U9",
+    "categoryName": "U9 C",
+    "startDate": "2026-11-27",
+    "endDate": "2027-03-08"
+  },
+  {
     "id": 202010,
     "name": "LG U9 Exhibition",
     "type": "Exhibition",

@@ -266,10 +266,10 @@
       "homeTeamName": "NORTH DELTA MHA (2) U18 A2 TIER 3 SUN DEVILS (U17A)",
       "awayTeamId": 178627,
       "awayTeamName": "CLOVERDALE MHA (1) U18 A3 TIER 3 (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Sungod Recreation Centre"
     },
     {
@@ -283,10 +283,10 @@
       "homeTeamName": "SOUTH DELTA MHA (2) U18 A2 TIER 3 STORM (U17A)",
       "awayTeamId": 178633,
       "awayTeamName": "RICHMOND JETS MHA (1) U18 A2 TIER 2 (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Ladner Leisure Centre"
     },
     {
