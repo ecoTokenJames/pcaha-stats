@@ -17293,6 +17293,23 @@
       "arena": "Karen Magnussen Arena"
     },
     {
+      "id": 939174,
+      "number": "U15L7686",
+      "date": "2026-12-20",
+      "startTime": "2026-12-20T17:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 178584,
+      "homeTeamName": "NORTH VANCOUVER MHA U15 C3",
+      "awayTeamId": 178582,
+      "awayTeamName": "NORTH VANCOUVER MHA U15 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Canlan Ice Sports North Shore 1 Red"
+    },
+    {
       "id": 939228,
       "number": "U15L7633",
       "date": "2026-12-19",
@@ -17410,23 +17427,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Meadow Park Sports Centre"
-    },
-    {
-      "id": 939174,
-      "number": "U15L7686",
-      "date": "2026-12-12",
-      "startTime": "2026-12-13T01:30:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 178584,
-      "homeTeamName": "NORTH VANCOUVER MHA U15 C3",
-      "awayTeamId": 178582,
-      "awayTeamName": "NORTH VANCOUVER MHA U15 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Karen Magnussen Arena"
     },
     {
       "id": 939175,

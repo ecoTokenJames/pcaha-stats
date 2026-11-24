@@ -836,6 +836,23 @@
       "arena": "Sungod Recreation Centre"
     },
     {
+      "id": 1014226,
+      "number": "U11L6034",
+      "date": "2027-01-30",
+      "startTime": "2027-01-30T22:45:00.000Z",
+      "groupId": 7018,
+      "groupName": "Gold",
+      "homeTeamId": 177698,
+      "homeTeamName": "LANGLEY MHA U11 C4",
+      "awayTeamId": 177748,
+      "awayTeamName": "NORTH DELTA MHA U11 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Langley Sportsplex 2"
+    },
+    {
       "id": 1014207,
       "number": "U11L6054",
       "date": "2027-01-28",
@@ -1854,23 +1871,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Surrey Sport & Ice Complex Rink #2"
-    },
-    {
-      "id": 1014226,
-      "number": "U11L6034",
-      "date": "2026-12-19",
-      "startTime": "2026-12-19T19:30:00.000Z",
-      "groupId": 7018,
-      "groupName": "Gold",
-      "homeTeamId": 177698,
-      "homeTeamName": "LANGLEY MHA U11 C4",
-      "awayTeamId": 177748,
-      "awayTeamName": "NORTH DELTA MHA U11 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "The Arenas at LEC 2"
     },
     {
       "id": 1014283,

@@ -6246,23 +6246,6 @@
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
-      "id": 1036713,
-      "number": "U9L7262",
-      "date": "2027-03-07",
-      "startTime": "2027-03-07T18:00:00.000Z",
-      "groupId": 7026,
-      "groupName": "Minor",
-      "homeTeamId": 178062,
-      "homeTeamName": "NORTH SHORE WINTER CLUB MHA U9 C3",
-      "awayTeamId": 178019,
-      "awayTeamName": "SQUAMISH MHA U9 C2 MINOR",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "North Shore Winter Club HTC Rink"
-    },
-    {
       "id": 1036705,
       "number": "U9L7261",
       "date": "2027-03-07",
@@ -6278,6 +6261,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Shore Winter Club HTC Rink"
+    },
+    {
+      "id": 1036679,
+      "number": "U9L7218",
+      "date": "2027-03-06",
+      "startTime": "2027-03-06T17:45:00.000Z",
+      "groupId": 7026,
+      "groupName": "Minor",
+      "homeTeamId": 178018,
+      "homeTeamName": "SUNSHINE COAST MHA U9 C1",
+      "awayTeamId": 177994,
+      "awayTeamName": "WHISTLER MHA U9 C1 WINTERHAWKS",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sunshine Coast Arena"
     },
     {
       "id": 1036707,
@@ -6363,6 +6363,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Shore Winter Club Small Rink"
+    },
+    {
+      "id": 1036732,
+      "number": "U9L7230",
+      "date": "2027-02-28",
+      "startTime": "2027-02-28T16:45:00.000Z",
+      "groupId": 7026,
+      "groupName": "Minor",
+      "homeTeamId": 178018,
+      "homeTeamName": "SUNSHINE COAST MHA U9 C1",
+      "awayTeamId": 177971,
+      "awayTeamName": "HOLLYBURN MHA U9 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sunshine Coast Arena"
     },
     {
       "id": 1036716,
@@ -6518,23 +6535,6 @@
       "arena": "Brennan Park Arena"
     },
     {
-      "id": 1036717,
-      "number": "U9L7246",
-      "date": "2027-02-14",
-      "startTime": "2027-02-14T21:15:00.000Z",
-      "groupId": 7026,
-      "groupName": "Minor",
-      "homeTeamId": 177994,
-      "homeTeamName": "WHISTLER MHA U9 C1 WINTERHAWKS",
-      "awayTeamId": 178066,
-      "awayTeamName": "NORTH SHORE WINTER CLUB MHA U9 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Meadow Park Sports Centre"
-    },
-    {
       "id": 1036718,
       "number": "U9L7245",
       "date": "2027-02-14",
@@ -6567,23 +6567,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Shore Winter Club Small Rink"
-    },
-    {
-      "id": 1036720,
-      "number": "U9L7243",
-      "date": "2027-02-13",
-      "startTime": "2027-02-13T16:15:00.000Z",
-      "groupId": 7026,
-      "groupName": "Minor",
-      "homeTeamId": 178018,
-      "homeTeamName": "SUNSHINE COAST MHA U9 C1",
-      "awayTeamId": 178021,
-      "awayTeamName": "SQUAMISH MHA U9 C3 MINOR",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sunshine Coast Arena"
     },
     {
       "id": 1036722,
@@ -6669,6 +6652,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Shore Winter Club HTC Rink"
+    },
+    {
+      "id": 1036720,
+      "number": "U9L7243",
+      "date": "2027-02-06",
+      "startTime": "2027-02-06T17:45:00.000Z",
+      "groupId": 7026,
+      "groupName": "Minor",
+      "homeTeamId": 178018,
+      "homeTeamName": "SUNSHINE COAST MHA U9 C1",
+      "awayTeamId": 178021,
+      "awayTeamName": "SQUAMISH MHA U9 C3 MINOR",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sunshine Coast Arena"
     },
     {
       "id": 1036725,
@@ -6790,21 +6790,21 @@
       "arena": "North Shore Winter Club Small Rink"
     },
     {
-      "id": 1036732,
-      "number": "U9L7230",
+      "id": 1036717,
+      "number": "U9L7246",
       "date": "2027-01-30",
-      "startTime": "2027-01-30T16:15:00.000Z",
+      "startTime": "2027-01-30T15:45:00.000Z",
       "groupId": 7026,
       "groupName": "Minor",
-      "homeTeamId": 178018,
-      "homeTeamName": "SUNSHINE COAST MHA U9 C1",
-      "awayTeamId": 177971,
-      "awayTeamName": "HOLLYBURN MHA U9 C3",
+      "homeTeamId": 177994,
+      "homeTeamName": "WHISTLER MHA U9 C1 WINTERHAWKS",
+      "awayTeamId": 178066,
+      "awayTeamName": "NORTH SHORE WINTER CLUB MHA U9 C4",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Sunshine Coast Arena"
+      "arena": "Meadow Park Sports Centre"
     },
     {
       "id": 1036735,
@@ -6994,23 +6994,6 @@
       "arena": "North Shore Winter Club Small Rink"
     },
     {
-      "id": 1036679,
-      "number": "U9L7218",
-      "date": "2027-01-16",
-      "startTime": "2027-01-16T16:15:00.000Z",
-      "groupId": 7026,
-      "groupName": "Minor",
-      "homeTeamId": 178018,
-      "homeTeamName": "SUNSHINE COAST MHA U9 C1",
-      "awayTeamId": 177994,
-      "awayTeamName": "WHISTLER MHA U9 C1 WINTERHAWKS",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sunshine Coast Arena"
-    },
-    {
       "id": 1036681,
       "number": "U9L7217",
       "date": "2027-01-10",
@@ -7130,6 +7113,23 @@
       "arena": "Brennan Park Arena"
     },
     {
+      "id": 1036676,
+      "number": "U9L7206",
+      "date": "2027-01-03",
+      "startTime": "2027-01-03T16:30:00.000Z",
+      "groupId": 7026,
+      "groupName": "Minor",
+      "homeTeamId": 178015,
+      "homeTeamName": "SUNSHINE COAST MHA U9 C2",
+      "awayTeamId": 178066,
+      "awayTeamName": "NORTH SHORE WINTER CLUB MHA U9 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sunshine Coast Arena"
+    },
+    {
       "id": 1036673,
       "number": "U9L7210",
       "date": "2026-12-13",
@@ -7179,23 +7179,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Shore Winter Club Small Rink"
-    },
-    {
-      "id": 1036676,
-      "number": "U9L7206",
-      "date": "2026-12-12",
-      "startTime": "2026-12-12T16:15:00.000Z",
-      "groupId": 7026,
-      "groupName": "Minor",
-      "homeTeamId": 178015,
-      "homeTeamName": "SUNSHINE COAST MHA U9 C2",
-      "awayTeamId": 178066,
-      "awayTeamName": "NORTH SHORE WINTER CLUB MHA U9 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sunshine Coast Arena"
     },
     {
       "id": 1036683,
@@ -7249,6 +7232,23 @@
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
+      "id": 1036713,
+      "number": "U9L7262",
+      "date": "2026-12-06",
+      "startTime": "2026-12-06T18:00:00.000Z",
+      "groupId": 7026,
+      "groupName": "Minor",
+      "homeTeamId": 178062,
+      "homeTeamName": "NORTH SHORE WINTER CLUB MHA U9 C3",
+      "awayTeamId": 178019,
+      "awayTeamName": "SQUAMISH MHA U9 C2 MINOR",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Shore Winter Club HTC Rink"
+    },
+    {
       "id": 1036682,
       "number": "U9L7202",
       "date": "2026-12-06",
@@ -7269,7 +7269,7 @@
       "id": 1036688,
       "number": "U9L7208",
       "date": "2026-12-05",
-      "startTime": "2026-12-06T00:00:00.000Z",
+      "startTime": "2026-12-05T22:30:00.000Z",
       "groupId": 7026,
       "groupName": "Minor",
       "homeTeamId": 178062,
@@ -7280,7 +7280,7 @@
       "awayScore": null,
       "decidedBy": null,
       "status": "scheduled",
-      "arena": "Canlan Ice Sports North Shore 2 Blue"
+      "arena": "North Shore Winter Club Main Rink"
     },
     {
       "id": 1036675,

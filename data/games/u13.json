@@ -23891,23 +23891,6 @@
       "arena": "Burnaby Winter Club Main"
     },
     {
-      "id": 918494,
-      "number": "U13AAL0127",
-      "date": "2026-12-20",
-      "startTime": "2026-12-20T19:15:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 186601,
-      "homeTeamName": "PCEHL U13 WEST VALLEY WRANGLERS",
-      "awayTeamId": 188069,
-      "awayTeamName": "PCEHL U13 VANCOUVER ORCAS",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "The Arenas at LEC 1"
-    },
-    {
       "id": 918497,
       "number": "U13AAL0126",
       "date": "2026-12-20",
@@ -24586,6 +24569,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Burnaby Winter Club Main"
+    },
+    {
+      "id": 918494,
+      "number": "U13AAL0127",
+      "date": "2026-11-28",
+      "startTime": "2026-11-28T18:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 186601,
+      "homeTeamName": "PCEHL U13 WEST VALLEY WRANGLERS",
+      "awayTeamId": 188069,
+      "awayTeamName": "PCEHL U13 VANCOUVER ORCAS",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Langley Sportsplex 2"
     },
     {
       "id": 918530,
@@ -31355,7 +31355,7 @@
       "awayTeamId": 178396,
       "awayTeamName": "BURNABY MHA U13 C3",
       "homeScore": 5,
-      "awayScore": 5,
+      "awayScore": 4,
       "decidedBy": null,
       "status": "final",
       "arena": "Rosemary Brown Recreation Centre A"
@@ -34414,6 +34414,23 @@
       "arena": "Newton Arena"
     },
     {
+      "id": 1024178,
+      "number": "U13L2552",
+      "date": "2026-12-20",
+      "startTime": "2026-12-21T01:00:00.000Z",
+      "groupId": 6981,
+      "groupName": "Flight 6",
+      "homeTeamId": 178186,
+      "homeTeamName": "COQUITLAM MHA (1) U13 A3 TIER 3",
+      "awayTeamId": 178133,
+      "awayTeamName": "SOUTH DELTA MHA (2) U13 A3 TIER 4 STORM",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Delta International"
+    },
+    {
       "id": 1023956,
       "number": "U13L2851",
       "date": "2026-12-20",
@@ -34548,23 +34565,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Karen Magnussen Arena"
-    },
-    {
-      "id": 1024178,
-      "number": "U13L2552",
-      "date": "2026-12-20",
-      "startTime": "2026-12-20T19:15:00.000Z",
-      "groupId": 6981,
-      "groupName": "Flight 6",
-      "homeTeamId": 178186,
-      "homeTeamName": "COQUITLAM MHA (1) U13 A3 TIER 3",
-      "awayTeamId": 178133,
-      "awayTeamName": "SOUTH DELTA MHA (2) U13 A3 TIER 4 STORM",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Poirier Sport & Leisure Complex 1"
     },
     {
       "id": 1023957,
@@ -37151,23 +37151,6 @@
       "arena": "Sportsplex Arena 1"
     },
     {
-      "id": 1024253,
-      "number": "U13L1633",
-      "date": "2026-12-05",
-      "startTime": "2026-12-05T22:30:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 178170,
-      "homeTeamName": "NORTH DELTA MHA (2) U13 A1 TIER 2 SUN DEVILS",
-      "awayTeamId": 178160,
-      "awayTeamName": "PORT COQUITLAM MHA (2) U13 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Sungod Recreation Centre"
-    },
-    {
       "id": 1024255,
       "number": "U13L1632",
       "date": "2026-12-05",
@@ -37965,6 +37948,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Shore Winter Club Main Rink"
+    },
+    {
+      "id": 1024253,
+      "number": "U13L1633",
+      "date": "2026-11-30",
+      "startTime": "2026-12-01T01:15:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 178170,
+      "homeTeamName": "NORTH DELTA MHA (2) U13 A1 TIER 2 SUN DEVILS",
+      "awayTeamId": 178160,
+      "awayTeamName": "PORT COQUITLAM MHA (2) U13 A1 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Sungod Recreation Centre"
     },
     {
       "id": 1024316,
