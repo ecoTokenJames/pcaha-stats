@@ -8,6 +8,7 @@ import {
 } from "@/lib/data";
 import type { Metadata } from "next";
 import { DivisionGrid } from "@/components/DivisionGrid";
+import { LevelUpCard } from "@/components/LevelUpAd";
 import { FalconsCard, falconsAdActive } from "@/components/FalconsAd";
 import { SponsorStrip } from "@/components/SponsorStrip";
 
@@ -111,12 +112,11 @@ export default function Home() {
       </h3>
       <DivisionGrid divisions={divisionStats} />
 
-      {/* Sponsor, after the navigation so it never gets in the way */}
-      {falconsAdActive() && (
-        <div className="mt-8">
-          <FalconsCard placement="home" />
-        </div>
-      )}
+      {/* Level Up card, after the navigation so it never gets in the way */}
+      <div className="mt-8 space-y-4">
+        <LevelUpCard placement="home" />
+        {falconsAdActive() && <FalconsCard placement="home" />}
+      </div>
     </div>
   );
 }
