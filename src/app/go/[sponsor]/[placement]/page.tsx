@@ -39,7 +39,7 @@ export default async function GoPage({
       <noscript>
         <meta httpEquiv="refresh" content={`0;url=${url}`} />
       </noscript>
-      <ForwardTo url={url} />
+      <ForwardTo url={url} sponsor={sponsor} placement={placement} />
     </div>
   );
 }
