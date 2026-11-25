@@ -2160,6 +2160,23 @@
       "arena": "Tilbury Ice"
     },
     {
+      "id": 1032247,
+      "number": "U9L6100",
+      "date": "2027-01-30",
+      "startTime": "2027-01-30T21:00:00.000Z",
+      "groupId": 7015,
+      "groupName": "Major",
+      "homeTeamId": 178065,
+      "homeTeamName": "NORTH DELTA MHA U9 C1 Major",
+      "awayTeamId": 177957,
+      "awayTeamName": "SEMIAHMOO MHA U9 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
+    },
+    {
       "id": 1032174,
       "number": "U9L6599",
       "date": "2027-01-30",
@@ -2549,23 +2566,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Tilbury Ice"
-    },
-    {
-      "id": 1032247,
-      "number": "U9L6100",
-      "date": "2027-01-23",
-      "startTime": "2027-01-23T21:00:00.000Z",
-      "groupId": 7015,
-      "groupName": "Major",
-      "homeTeamId": 178065,
-      "homeTeamName": "NORTH DELTA MHA U9 C1 Major",
-      "awayTeamId": 177957,
-      "awayTeamName": "SEMIAHMOO MHA U9 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
       "id": 1032258,
