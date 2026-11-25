@@ -10,6 +10,6 @@ export const LEVELUP_POSTHOG = {
 } as const;
 
 /** Sponsors whose clicks go to Level Up's PostHog (Falcons clicks are not Level Up's data). */
-export const LEVELUP_SPONSORS = new Set(["levelup", "levelup-coach"]);
+export const LEVELUP_SPONSORS = new Set(["levelup", "levelup-coach", "levelup-store"]);
 
 export const AD_CLICK_EVENT = "pcahastats_ad_click";
