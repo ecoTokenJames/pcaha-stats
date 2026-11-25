@@ -24,6 +24,12 @@ export const SPONSORS = {
       "leaders-row",
     ],
   },
+  // Level Up store (Black Friday tiles promo); same spots as the Level Up ads
+  "levelup-store": {
+    label: "the Level Up store",
+    url: (placement: string) => `https://www.levelup.hockey/store?${UTM}&utm_content=${placement}`,
+    placements: ["home", "team-page", "standings-card", "top-home", "top-standings", "top-leaders", "top-team"],
+  },
   "levelup-coach": {
     label: "Level Up Hockey",
     url: (placement: string) =>

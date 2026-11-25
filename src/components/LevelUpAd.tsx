@@ -7,6 +7,7 @@
  */
 
 import { sponsorHref } from "@/lib/sponsor-links";
+import { ShowUntil } from "./ShowUntil";
 
 type Placement =
   | "team-page"
@@ -32,6 +33,59 @@ function levelUpCoachLink(): string {
   return sponsorHref("levelup-coach", "team-page-coach");
 }
 
+/**
+ * Black Friday 2026: Home Grid tiles ready for pickup, code BLACKFRIDAY for 15% off
+ * (checked on the store 2026-11-25). Runs through Cyber Monday, Nov 30, B.C. time,
+ * then disappears by itself: pages built after that leave it out, and pages
+ * already open hide it at the cut-off.
+ */
+export const BLACK_FRIDAY_END = "2026-12-01T07:00:00Z";
+
+/** Is the Black Friday promo still on (at build/render time)? */
+export function blackFridayActive(now = Date.now()): boolean {
+  return now < Date.parse(BLACK_FRIDAY_END);
+}
+
+type StorePlacement = "home" | "team-page" | "standings-card" | "top-home" | "top-standings" | "top-leaders" | "top-team";
+
+/** The Black Friday tiles line, added to the Level Up ads while the promo runs. */
+export function BlackFridayTiles({
+  placement,
+  variant = "banner",
+}: {
+  placement: StorePlacement;
+  /** banner: a band across the top of a card; line: an extra line in the top strip */
+  variant?: "banner" | "line";
+}) {
+  if (!blackFridayActive()) return null;
+  const text = (
+    <>
+      <span className="font-bold text-gray-900">Black Friday:</span> Home Grid skatable tiles
+      are ready for pickup now. Use code{" "}
+      <span className="rounded bg-white px-1 font-mono font-bold text-gray-900">BLACKFRIDAY</span>{" "}
+      for 15% off.{" "}
+      <a
+        href={sponsorHref("levelup-store", placement)}
+        target="_blank"
+        rel="sponsored noopener"
+        className="font-semibold underline"
+        style={{ color: BRAND_TEXT }}
+      >
+        Shop the tiles →
+      </a>
+    </>
+  );
+  return (
+    <ShowUntil until={BLACK_FRIDAY_END}>
+      {variant === "line" ? (
+        <span className="mt-1 block basis-full rounded-md bg-orange-50 px-2 py-1.5 text-gray-700">{text}</span>
+      ) : (
+        <div className="border-b border-orange-100 bg-orange-50 px-5 py-2.5 text-sm text-gray-700">{text}</div>
+      )}
+    </ShowUntil>
+  );
+}
+
 const BRAND = "#FF3D00";
 /** Brand orange darkened enough for text on white, or white text on it (4.8:1) */
 export const BRAND_TEXT = "#D63300";
@@ -51,6 +105,7 @@ export function LevelUpCard({
       className="overflow-hidden rounded-lg border border-gray-200 bg-white"
     >
       <div className="h-1" style={{ backgroundColor: BRAND }} />
+      <BlackFridayTiles placement={placement} />
       <div className="flex gap-4 p-5">
         <div className="min-w-0 flex-1">
         <div className="mb-3 flex items-center justify-between gap-3">
@@ -179,6 +234,9 @@ export function LevelUpMini({
           Try it free for 7 days on iOS &amp; Android →
         </a>
       </span>
+      {placement.startsWith("top-") && (
+        <BlackFridayTiles placement={placement as StorePlacement} variant="line" />
+      )}
     </p>
   );
 }
@@ -221,6 +279,7 @@ export function LevelUpDivisionCard({ division }: { division: string }) {
       className="overflow-hidden rounded-lg border border-gray-200 bg-white"
     >
       <div className="h-1" style={{ backgroundColor: BRAND }} />
+      <BlackFridayTiles placement="standings-card" />
       <div className="flex gap-4 p-5">
         <div className="min-w-0 flex-1">
           <div className="mb-3 flex items-center justify-between gap-3">
