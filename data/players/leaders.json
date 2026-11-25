@@ -6859,8 +6859,8 @@
         "categoryName": "U15 AA",
         "scheduleType": "League",
         "goals": 12,
-        "assists": 14,
-        "points": 26,
+        "assists": 15,
+        "points": 27,
         "pim": 18,
         "ppGoals": 1,
         "shGoals": 3,
@@ -7842,6 +7842,28 @@
         "position": "F"
       },
       {
+        "participantId": 102776,
+        "name": "CARLY RODGERS",
+        "number": 9,
+        "teamId": 215301,
+        "teamName": "SEATTLE RED HAWKS 14U AA (PCAHA U15 Elite)",
+        "divisionName": "U15",
+        "scheduleName": "PCEHL U15 AA Regular Season",
+        "scheduleId": 198475,
+        "categoryName": "U15 AA",
+        "scheduleType": "League",
+        "goals": 12,
+        "assists": 15,
+        "points": 27,
+        "pim": 18,
+        "ppGoals": 1,
+        "shGoals": 3,
+        "gwGoals": 0,
+        "gamesPlayed": 16,
+        "isAffiliate": false,
+        "position": "F"
+      },
+      {
         "participantId": 135470,
         "name": "KESLER SCHMIDT",
         "number": 17,
@@ -7882,28 +7904,6 @@
         "shGoals": 0,
         "gwGoals": 0,
         "gamesPlayed": 9,
-        "isAffiliate": false,
-        "position": "F"
-      },
-      {
-        "participantId": 102776,
-        "name": "CARLY RODGERS",
-        "number": 9,
-        "teamId": 215301,
-        "teamName": "SEATTLE RED HAWKS 14U AA (PCAHA U15 Elite)",
-        "divisionName": "U15",
-        "scheduleName": "PCEHL U15 AA Regular Season",
-        "scheduleId": 198475,
-        "categoryName": "U15 AA",
-        "scheduleType": "League",
-        "goals": 12,
-        "assists": 14,
-        "points": 26,
-        "pim": 18,
-        "ppGoals": 1,
-        "shGoals": 3,
-        "gwGoals": 0,
-        "gamesPlayed": 16,
         "isAffiliate": false,
         "position": "F"
       },
@@ -9325,7 +9325,7 @@
         "gwGoals": 0,
         "gamesPlayed": 12,
         "isAffiliate": false,
-        "position": "F"
+        "position": "D"
       },
       {
         "participantId": 46862,
@@ -9657,7 +9657,7 @@
         "gwGoals": 0,
         "gamesPlayed": 12,
         "isAffiliate": false,
-        "position": "F"
+        "position": "D"
       },
       {
         "participantId": 137877,
@@ -11047,7 +11047,7 @@
         "gwGoals": 0,
         "gamesPlayed": 10,
         "isAffiliate": false,
-        "position": "F"
+        "position": "D"
       },
       {
         "participantId": 49833,
@@ -12732,28 +12732,6 @@
     ],
     "topPIM": [
       {
-        "participantId": 34538,
-        "name": "ASHTON KUPERIS",
-        "number": 15,
-        "teamId": 178645,
-        "teamName": "RIDGE MEADOWS MHA (1) U18 A2 TIER 2",
-        "divisionName": "U18",
-        "scheduleName": "U18A League",
-        "scheduleId": 201706,
-        "categoryName": "U18 A",
-        "scheduleType": "League",
-        "goals": 0,
-        "assists": 3,
-        "points": 3,
-        "pim": 50,
-        "ppGoals": 0,
-        "shGoals": 0,
-        "gwGoals": 0,
-        "gamesPlayed": 4,
-        "isAffiliate": false,
-        "position": "F"
-      },
-      {
         "participantId": 57885,
         "name": "JACE THORBURN HALL",
         "number": 16,
@@ -13168,6 +13146,28 @@
         "shGoals": 0,
         "gwGoals": 0,
         "gamesPlayed": 11,
+        "isAffiliate": false,
+        "position": "F"
+      },
+      {
+        "participantId": 34538,
+        "name": "ASHTON KUPERIS",
+        "number": 15,
+        "teamId": 178645,
+        "teamName": "RIDGE MEADOWS MHA (1) U18 A2 TIER 2",
+        "divisionName": "U18",
+        "scheduleName": "U18A League",
+        "scheduleId": 201706,
+        "categoryName": "U18 A",
+        "scheduleType": "League",
+        "goals": 0,
+        "assists": 3,
+        "points": 3,
+        "pim": 30,
+        "ppGoals": 0,
+        "shGoals": 0,
+        "gwGoals": 0,
+        "gamesPlayed": 4,
         "isAffiliate": false,
         "position": "F"
       },

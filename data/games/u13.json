@@ -1839,6 +1839,23 @@
       "arena": "Newton Arena"
     },
     {
+      "id": 1014149,
+      "number": "U13L6015",
+      "date": "2026-12-11",
+      "startTime": "2026-12-12T02:45:00.000Z",
+      "groupId": 7018,
+      "groupName": "Gold",
+      "homeTeamId": 178304,
+      "homeTeamName": "SEMIAHMOO MHA U13 C6 (SE6)",
+      "awayTeamId": 178369,
+      "awayTeamName": "NORTH DELTA MHA U13 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
+    },
+    {
       "id": 1014114,
       "number": "U13L6321",
       "date": "2026-12-10",
@@ -2262,23 +2279,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "South Delta Recreation Centre Main Rink (SDRC)"
-    },
-    {
-      "id": 1014149,
-      "number": "U13L6015",
-      "date": "2026-11-28",
-      "startTime": "2026-11-28T20:30:00.000Z",
-      "groupId": 7018,
-      "groupName": "Gold",
-      "homeTeamId": 178304,
-      "homeTeamName": "SEMIAHMOO MHA U13 C6 (SE6)",
-      "awayTeamId": 178369,
-      "awayTeamName": "NORTH DELTA MHA U13 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Newton Arena"
     },
     {
       "id": 1014143,
@@ -25013,6 +25013,23 @@
       "arena": "Planet Ice Coquitlam 2 Pluto"
     },
     {
+      "id": 918576,
+      "number": "U13AAL0047",
+      "date": "2026-11-10",
+      "startTime": "2026-11-11T02:30:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 186601,
+      "homeTeamName": "PCEHL U13 WEST VALLEY WRANGLERS",
+      "awayTeamId": 187963,
+      "awayTeamName": "PCEHL U13 BURNABY WINTER CLUB",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "awaiting",
+      "arena": "Langley Sportsplex 2"
+    },
+    {
       "id": 918573,
       "number": "U13AAL0050",
       "date": "2026-11-10",
@@ -25487,23 +25504,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Matsqui Recreation Centre"
-    },
-    {
-      "id": 918576,
-      "number": "U13AAL0047",
-      "date": "2026-10-25",
-      "startTime": "2026-10-25T19:00:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 186601,
-      "homeTeamName": "PCEHL U13 WEST VALLEY WRANGLERS",
-      "awayTeamId": 187963,
-      "awayTeamName": "PCEHL U13 BURNABY WINTER CLUB",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "awaiting",
-      "arena": "The Arenas at LEC 1"
     },
     {
       "id": 918589,

@@ -6165,23 +6165,6 @@
       "arena": "Bill Copeland Sports Centre BCSC"
     },
     {
-      "id": 1010813,
-      "number": "U15L4041",
-      "date": "2026-12-13",
-      "startTime": "2026-12-13T22:15:00.000Z",
-      "groupId": 7007,
-      "groupName": "Tier 1",
-      "homeTeamId": 177488,
-      "homeTeamName": "LANGLEY GIRLS IHA U15 A1",
-      "awayTeamId": 222412,
-      "awayTeamName": "SEATTLE RED HAWKS 14U A (PCAHA U15 A2)",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Canlan Ice Sports Langley Twin Rinks 1"
-    },
-    {
       "id": 1010805,
       "number": "U15L4040",
       "date": "2026-12-12",
@@ -6401,6 +6384,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Canlan Ice Sports Langley Twin Rinks 1"
+    },
+    {
+      "id": 1010813,
+      "number": "U15L4041",
+      "date": "2026-11-29",
+      "startTime": "2026-11-29T16:35:00.000Z",
+      "groupId": 7007,
+      "groupName": "Tier 1",
+      "homeTeamId": 177488,
+      "homeTeamName": "LANGLEY GIRLS IHA U15 A1",
+      "awayTeamId": 222412,
+      "awayTeamName": "SEATTLE RED HAWKS 14U A (PCAHA U15 A2)",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Lynnwood Ice Centre 1"
     },
     {
       "id": 1010801,
@@ -30250,7 +30250,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "cancelled",
       "arena": "Rosemary Brown Recreation Centre A"
     },
     {

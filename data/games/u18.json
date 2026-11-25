@@ -7727,6 +7727,23 @@
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
+      "id": 1010480,
+      "number": "U18L4021",
+      "date": "2026-11-28",
+      "startTime": "2026-11-28T17:45:00.000Z",
+      "groupId": 7007,
+      "groupName": "Tier 1",
+      "homeTeamId": 177504,
+      "homeTeamName": "VANCOUVER FEMALE IHA U18 A1",
+      "awayTeamId": 224945,
+      "awayTeamName": "SEATTLE RED HAWKS 19UAA (PCAHA U18 A1)",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Killarney Community Centre 1"
+    },
+    {
       "id": 1010482,
       "number": "U18L4038",
       "date": "2026-11-27",
@@ -7844,23 +7861,6 @@
       "decidedBy": null,
       "status": "final",
       "arena": "Richmond Ice Centre Igloo"
-    },
-    {
-      "id": 1010480,
-      "number": "U18L4021",
-      "date": "2026-11-22",
-      "startTime": "2026-11-23T00:30:00.000Z",
-      "groupId": 7007,
-      "groupName": "Tier 1",
-      "homeTeamId": 177504,
-      "homeTeamName": "VANCOUVER FEMALE IHA U18 A1",
-      "awayTeamId": 224945,
-      "awayTeamName": "SEATTLE RED HAWKS 19UAA (PCAHA U18 A1)",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Killarney Community Centre 1"
     },
     {
       "id": 1010459,
@@ -13173,6 +13173,23 @@
       "arena": "Port Moody Recreation Complex 1"
     },
     {
+      "id": 968254,
+      "number": "U18L5095",
+      "date": "2026-12-18",
+      "startTime": "2026-12-19T01:45:00.000Z",
+      "groupId": null,
+      "groupName": null,
+      "homeTeamId": 177846,
+      "homeTeamName": "RIDGE MEADOWS MHA U18 C7",
+      "awayTeamId": 177889,
+      "awayTeamName": "RIDGE MEADOWS MHA U18 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Planet Ice Maple Ridge 2"
+    },
+    {
       "id": 968194,
       "number": "U18L5152",
       "date": "2026-12-17",
@@ -14208,23 +14225,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Pitt Meadows Arena Complex Jeep Blue"
-    },
-    {
-      "id": 968254,
-      "number": "U18L5095",
-      "date": "2026-11-24",
-      "startTime": "2026-11-25T03:45:00.000Z",
-      "groupId": null,
-      "groupName": null,
-      "homeTeamId": 177846,
-      "homeTeamName": "RIDGE MEADOWS MHA U18 C7",
-      "awayTeamId": 177889,
-      "awayTeamName": "RIDGE MEADOWS MHA U18 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Planet Ice Maple Ridge 2"
     },
     {
       "id": 968255,
@@ -24594,6 +24594,23 @@
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
+      "id": 1023733,
+      "number": "U18L1630",
+      "date": "2026-12-12",
+      "startTime": "2026-12-12T20:30:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 178634,
+      "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U18 A2 TIER 2",
+      "awayTeamId": 177467,
+      "awayTeamName": "ALDERGROVE MHA (3) U18 A1 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "UBC B Father David Bauer Arena"
+    },
+    {
       "id": 1023844,
       "number": "U18L1661",
       "date": "2026-12-11",
@@ -24626,23 +24643,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Hollyburn Country Club Main Ice"
-    },
-    {
-      "id": 1023733,
-      "number": "U18L1630",
-      "date": "2026-12-11",
-      "startTime": "2026-12-12T03:15:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 178634,
-      "homeTeamName": "VANCOUVER THUNDERBIRD MHA (1) U18 A2 TIER 2",
-      "awayTeamId": 177467,
-      "awayTeamName": "ALDERGROVE MHA (3) U18 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Killarney Community Centre 1"
     },
     {
       "id": 1023637,
