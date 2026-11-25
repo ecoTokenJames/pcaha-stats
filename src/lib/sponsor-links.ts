@@ -1,7 +1,7 @@
 /**
  * Sponsor ad links go through /go/<sponsor>/<placement> on our own site, which
- * counts as a page view in Vercel Web Analytics (our only free click counter)
- * and then forwards to the sponsor. Destinations are fixed here, so /go can
+ * reports Level Up clicks to Level Up's PostHog (src/app/api/ad-click), counts as a
+ * page view in Vercel Web Analytics, and then forwards to the sponsor. Destinations are fixed here, so /go can
  * never be used to redirect anywhere else.
  */
 
