@@ -25223,6 +25223,23 @@
       "arena": "Brennan Park Arena"
     },
     {
+      "id": 1023719,
+      "number": "U18L1615",
+      "date": "2026-12-05",
+      "startTime": "2026-12-06T01:00:00.000Z",
+      "groupId": 6978,
+      "groupName": "Flight 3",
+      "homeTeamId": 221459,
+      "homeTeamName": "ARBUTUS CLUB (3) U18 A1 TIER 3",
+      "awayTeamId": 177461,
+      "awayTeamName": "CLOVERDALE MHA (1) U18 A2 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Arbutus Club Ice Rink"
+    },
+    {
       "id": 1023668,
       "number": "U18L1310",
       "date": "2026-12-05",
@@ -26071,23 +26088,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "North Surrey Sport & Ice Complex Rink #3"
-    },
-    {
-      "id": 1023719,
-      "number": "U18L1615",
-      "date": "2026-11-27",
-      "startTime": "2026-11-28T02:45:00.000Z",
-      "groupId": 6978,
-      "groupName": "Flight 3",
-      "homeTeamId": 221459,
-      "homeTeamName": "ARBUTUS CLUB (3) U18 A1 TIER 3",
-      "awayTeamId": 177461,
-      "awayTeamName": "CLOVERDALE MHA (1) U18 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Arbutus Club Ice Rink"
     },
     {
       "id": 1023623,

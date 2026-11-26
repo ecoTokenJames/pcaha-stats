@@ -819,6 +819,15 @@
     "endDate": "2026-11-29"
   },
   {
+    "id": 203735,
+    "name": "ABBOTSFORD U13 REC TOURNAMENT",
+    "divisionName": "U13",
+    "categoryName": "U13 A",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-04",
+    "endDate": "2026-12-06"
+  },
+  {
     "id": 203667,
     "name": "Winter Classic - U13",
     "divisionName": "U13",
