@@ -3517,10 +3517,10 @@
       "homeTeamName": "SEMIAHMOO MHA U15 C1 (SE1)",
       "awayTeamId": 223564,
       "awayTeamName": "SEMIAHMOO MHA U15 C6 (SE6)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Newton Arena"
     },
     {
@@ -4607,10 +4607,10 @@
       "homeTeamName": "ABBOTSFORD MHA U15 C2",
       "awayTeamId": 178602,
       "awayTeamName": "CHILLIWACK MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -4624,10 +4624,10 @@
       "homeTeamName": "CHILLIWACK MHA U15 C2",
       "awayTeamId": 178590,
       "awayTeamName": "MISSION MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Chilliwack Coliseum 2 Red"
     },
     {
@@ -6481,10 +6481,10 @@
       "homeTeamName": "NORTH SHORE FEMALE IHA U15 A1",
       "awayTeamId": 223847,
       "awayTeamName": "BURNABY FEMALE IHA U15 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Harry Jerome Recreative Centre Harry Jerome Rec Centre"
     },
     {
@@ -6498,10 +6498,10 @@
       "homeTeamName": "RICHMOND RAVENS U15 A1",
       "awayTeamId": 220336,
       "awayTeamName": "VANCOUVER FEMALE IHA U15 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
@@ -8115,10 +8115,10 @@
       "homeTeamName": "ABBOTSFORD FEMALE HA U15 C1",
       "awayTeamId": 177660,
       "awayTeamName": "TRI CITIES FEMALE IHA U15 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -11536,10 +11536,10 @@
       "homeTeamName": "PORT COQUITLAM MHA U15 C2",
       "awayTeamId": 178583,
       "awayTeamName": "RIDGE MEADOWS MHA U15 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
@@ -17847,10 +17847,10 @@
       "homeTeamName": "WEST VANCOUVER MHA U15 C1",
       "awayTeamId": 178582,
       "awayTeamName": "NORTH VANCOUVER MHA U15 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "West Vancouver Ice Arena"
     },
     {
@@ -24257,10 +24257,10 @@
       "homeTeamName": "VANCOUVER MHA U15 C4",
       "awayTeamId": 178540,
       "awayTeamName": "BURNABY MHA U15 C5",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "PNE Agrodome"
     },
     {
@@ -30196,10 +30196,10 @@
       "homeTeamName": "VANCOUVER MHA (2) U15 A2 TIER 3",
       "awayTeamId": 221439,
       "awayTeamName": "WCAHA 14UA (PCAHA U15 A1)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 4,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Britannia Community Centre"
     },
     {
@@ -30213,10 +30213,10 @@
       "homeTeamName": "RIDGE MEADOWS MHA (1) U15 A4 TIER 4",
       "awayTeamId": 221103,
       "awayTeamName": "EYH 14UA1 Jr. Silvertips (PNAHA/PCAHA U15 A1)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Planet Ice Maple Ridge 2"
     },
     {
@@ -30230,10 +30230,10 @@
       "homeTeamName": "HYDRA U15 A1 TIER 1",
       "awayTeamId": 177817,
       "awayTeamName": "MISSION MHA (3) U15 A1 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 5,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Moody Recreation Complex 1"
     },
     {

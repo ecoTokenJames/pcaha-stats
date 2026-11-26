@@ -9220,10 +9220,10 @@
       "homeTeamName": "LANGLEY GIRLS IHA U11 C3",
       "awayTeamId": 177619,
       "awayTeamName": "MEADOW RIDGE FEMALE MHA U11 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "The Arenas at LEC 3"
     },
     {
@@ -11092,10 +11092,10 @@
       "homeTeamName": "PORT COQUITLAM MHA U11 C3",
       "awayTeamId": 177753,
       "awayTeamName": "COQUITLAM MHA U11 C4",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 7,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 2"
     },
     {
@@ -16876,10 +16876,10 @@
       "homeTeamName": "NORTH SHORE WINTER CLUB MHA U11 C1",
       "awayTeamId": 177727,
       "awayTeamName": "SQUAMISH MHA U11 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "North Shore Winter Club Main Rink"
     },
     {
@@ -22940,23 +22940,6 @@
       "arena": "Mission Leisure Centre North"
     },
     {
-      "id": 1023227,
-      "number": "U11L1231",
-      "date": "2026-12-19",
-      "startTime": "2026-12-19T22:15:00.000Z",
-      "groupId": 6984,
-      "groupName": "FVC Flight 2",
-      "homeTeamId": 178276,
-      "homeTeamName": "PORT COQUITLAM MHA U11 A1",
-      "awayTeamId": 178281,
-      "awayTeamName": "COQUITLAM MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
-    },
-    {
       "id": 1023247,
       "number": "U11L2807",
       "date": "2026-12-19",
@@ -22972,6 +22955,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Burnaby Winter Club Main"
+    },
+    {
+      "id": 1023227,
+      "number": "U11L1231",
+      "date": "2026-12-19",
+      "startTime": "2026-12-19T21:00:00.000Z",
+      "groupId": 6984,
+      "groupName": "FVC Flight 2",
+      "homeTeamId": 178276,
+      "homeTeamName": "PORT COQUITLAM MHA U11 A1",
+      "awayTeamId": 178281,
+      "awayTeamName": "COQUITLAM MHA U11 A2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
       "id": 1023285,
@@ -25432,10 +25432,10 @@
       "homeTeamName": "VANCOUVER MHA U11 A1",
       "awayTeamId": 178266,
       "awayTeamName": "SQUAMISH MHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Scotia Barn Rink 5"
     },
     {
@@ -25449,10 +25449,10 @@
       "homeTeamName": "CLOVERDALE MHA U11 A1",
       "awayTeamId": 178275,
       "awayTeamName": "PORT MOODY AHA U11 A1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Cloverdale Arena"
     },
     {
@@ -25466,10 +25466,10 @@
       "homeTeamName": "ALDERGROVE MHA U11 A1",
       "awayTeamId": 178281,
       "awayTeamName": "COQUITLAM MHA U11 A2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Aldergrove Community Centre 1"
     },
     {
