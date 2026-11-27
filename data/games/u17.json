@@ -232,10 +232,10 @@
       "homeTeamName": "RICHMOND JETS MHA (1) U18 A2 TIER 2 (U17A)",
       "awayTeamId": 222001,
       "awayTeamName": "LANGLEY MHA (1) U18 A4 TIER 4 EAGLES (U17A)",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 9,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
