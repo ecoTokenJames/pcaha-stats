@@ -7,6 +7,7 @@ import { GamesList } from "./GamesList";
 import { TeamStar } from "./FavoriteStar";
 import { TeamName } from "./TeamName";
 import { showsSportsmanship, SPORTSMANSHIP_TITLE } from "@/lib/sportsmanship";
+import { useStandingsFilter } from "./StandingsFilter";
 
 type SortKey = keyof TeamStanding;
 
@@ -106,6 +107,10 @@ export function StandingsTable({
     groups.push({ name: null, teams: sortedTeams });
   }
 
+  // A tier picked at the top of the standings page shows just that tier's table
+  const pickedTier = useStandingsFilter()?.tier ?? null;
+  const shownGroups = pickedTier && hasGroups ? groups.filter((g) => g.name === pickedTier) : groups;
+
   // Sportsmanship points, only where this league awards them
   const showSp = showsSportsmanship(teams);
 
@@ -143,7 +148,7 @@ export function StandingsTable({
 
   return (
     <div>
-      {groups.map((group, gi) => {
+      {shownGroups.map((group, gi) => {
         const key = group.name ?? "";
         const view = views[key] ?? "standings";
         const groupGames = gamesFor(group.name);

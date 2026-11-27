@@ -8,6 +8,8 @@ import {
   getLeagueAbbrev,
   getSchedulePhase,
   getDivisionGames,
+  leagueLabel,
+  sortGroups,
   toGameView,
   withShortNames,
   type ScheduleStandings,
@@ -27,6 +29,13 @@ import {
 import { LevelUpDivisionCard } from "@/components/LevelUpAd";
 import { ShowFrom } from "@/components/ShowUntil";
 import { SponsorStrip } from "@/components/SponsorStrip";
+import { FavoriteTeams } from "@/components/FavoriteTeams";
+import {
+  FilteredLeague,
+  FilteredSection,
+  StandingsFilter,
+  type LeagueTiers,
+} from "@/components/StandingsFilter";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
 
@@ -181,12 +190,36 @@ export default async function DivisionStandingsPage({
 
   const teamLinkBase = `${seasonBase(season)}/standings/${category}/${division}/team`;
 
+  // League buttons + tier menu at the top (like Leaders): each table's league and
+  // tiers. VIAHA's "… Division 1/2/3" tables count as one league.
+  const tableOf = (s: ScheduleStandings): LeagueTiers => ({
+    name: leagueLabel(s.scheduleName).replace(/\s+Division\s+\d+$/i, ""),
+    tiers: sortGroups([...new Set(s.teams.map((t) => t.groupName).filter((g): g is string => Boolean(g)))]),
+  });
+  // In page order, so the buttons and each league's tiers read top to bottom like the tables
+  const pageOrder = sortedTypes.flatMap((type) =>
+    [...grouped[type]].sort(
+      (a, b) => scheduleRank(a) - scheduleRank(b) || a.scheduleName.localeCompare(b.scheduleName)
+    )
+  );
+  const leagueMap = new Map<string, string[]>();
+  for (const s of pageOrder) {
+    const { name, tiers } = tableOf(s);
+    const list = leagueMap.get(name) ?? [];
+    for (const t of tiers) if (!list.includes(t)) list.push(t);
+    leagueMap.set(name, list);
+  }
+  const leagues: LeagueTiers[] = [...leagueMap].map(([name, tiers]) => ({ name, tiers }));
+
   return (
     <div className="space-y-8">
       <SponsorStrip page="standings" division={divName} />
+      <StandingsFilter leagues={leagues}>
+      <FavoriteTeams />
       {sortedTypes.map((type, i) => (
         <Fragment key={type}>
-        <div>
+        <FilteredSection tables={grouped[type].map(tableOf)}>
+        <div className="mt-8 first:mt-0">
           {sortedTypes.length > 1 && (
             <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
               {SECTION_LABELS[type] ?? type}
@@ -221,10 +254,8 @@ export default async function DivisionStandingsPage({
                   data.teams.some((t) => t.gamesPlayed > 0);
 
                 return (
-                  <div
-                    key={scheduleId}
-                    className="bg-white rounded-lg border border-gray-200 overflow-hidden"
-                  >
+                  <FilteredLeague key={scheduleId} {...tableOf(data)}>
+                  <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
                     <div className="px-4 py-3 border-b border-gray-100 flex items-center justify-between">
                       <div>
                         <h4 className="font-semibold text-gray-900 text-sm">
@@ -257,10 +288,12 @@ export default async function DivisionStandingsPage({
                         .map((g) => withShortNames(toGameView(g), shortNames))}
                     />
                   </div>
+                  </FilteredLeague>
                 );
               })}
           </div>
         </div>
+        </FilteredSection>
         {/* Mid-page sponsor after the first section: Falcons (U9–U15) until
             their cut-off, then a Level Up card for this age group everywhere */}
         {i === 0 && FALCONS_DIVISIONS.includes(divName) && (
@@ -276,6 +309,7 @@ export default async function DivisionStandingsPage({
           ))}
         </Fragment>
       ))}
+      </StandingsFilter>
     </div>
   );
 }
