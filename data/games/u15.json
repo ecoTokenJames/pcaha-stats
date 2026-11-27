@@ -725,10 +725,10 @@
       "homeTeamName": "PACIFIC COAST AHA FEMALE U15AA NORTH VALLEY SURGE",
       "awayTeamId": 176818,
       "awayTeamName": "DHA - U15 FEMALE",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "decidedBy": null,
-      "status": "awaiting",
+      "status": "final",
       "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
@@ -26497,23 +26497,6 @@
       "arena": "West Vancouver Ice Arena"
     },
     {
-      "id": 1024548,
-      "number": "U15L1949",
-      "date": "2026-12-19",
-      "startTime": "2026-12-20T01:30:00.000Z",
-      "groupId": 6979,
-      "groupName": "Flight 4",
-      "homeTeamId": 177779,
-      "homeTeamName": "HYDRA U15 A2 TIER 2",
-      "awayTeamId": 177835,
-      "awayTeamName": "ABBOTSFORD MHA (1) U15 A2 TIER 2 HAWKS",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
-    },
-    {
       "id": 1024357,
       "number": "U15L1061",
       "date": "2026-12-19",
@@ -26529,6 +26512,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
+    },
+    {
+      "id": 1024548,
+      "number": "U15L1949",
+      "date": "2026-12-19",
+      "startTime": "2026-12-20T00:30:00.000Z",
+      "groupId": 6979,
+      "groupName": "Flight 4",
+      "homeTeamId": 177779,
+      "homeTeamName": "HYDRA U15 A2 TIER 2",
+      "awayTeamId": 177835,
+      "awayTeamName": "ABBOTSFORD MHA (1) U15 A2 TIER 2 HAWKS",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
       "id": 1024724,
@@ -27192,6 +27192,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "George Preston Recreation Centre Main"
+    },
+    {
+      "id": 1024531,
+      "number": "U15L1924",
+      "date": "2026-12-14",
+      "startTime": "2026-12-15T01:45:00.000Z",
+      "groupId": 6979,
+      "groupName": "Flight 4",
+      "homeTeamId": 177780,
+      "homeTeamName": "WHISTLER MHA (4) U15 A1 TIER 4 WINTERHAWKS",
+      "awayTeamId": 177829,
+      "awayTeamName": "BURNABY MHA (1) U15 A2 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Meadow Park Sports Centre"
     },
     {
       "id": 1024437,
@@ -29623,23 +29640,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Angel of the Winds Arena Community"
-    },
-    {
-      "id": 1024531,
-      "number": "U15L1924",
-      "date": "2026-11-29",
-      "startTime": "2026-11-30T00:00:00.000Z",
-      "groupId": 6979,
-      "groupName": "Flight 4",
-      "homeTeamId": 177780,
-      "homeTeamName": "WHISTLER MHA (4) U15 A1 TIER 4 WINTERHAWKS",
-      "awayTeamId": 177829,
-      "awayTeamName": "BURNABY MHA (1) U15 A2 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Meadow Park Sports Centre"
     },
     {
       "id": 1024746,

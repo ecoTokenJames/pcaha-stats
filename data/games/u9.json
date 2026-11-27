@@ -273,23 +273,6 @@
       "arena": "Canlan Ice Sports Langley Twin Rinks 2"
     },
     {
-      "id": 1032095,
-      "number": "U9L6672",
-      "date": "2027-03-06",
-      "startTime": "2027-03-06T23:45:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 177947,
-      "homeTeamName": "SOUTH DELTA MHA U9 C10",
-      "awayTeamId": 177972,
-      "awayTeamName": "LANGLEY MHA U9 C6",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Tilbury Ice"
-    },
-    {
       "id": 1032101,
       "number": "U9L6671",
       "date": "2027-03-06",
@@ -2024,23 +2007,6 @@
       "arena": "The Arenas at LEC 1"
     },
     {
-      "id": 1032162,
-      "number": "U9L6606",
-      "date": "2027-01-31",
-      "startTime": "2027-01-31T16:00:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 178086,
-      "homeTeamName": "CLOVERDALE MHA U9 C5",
-      "awayTeamId": 177967,
-      "awayTeamName": "CLOVERDALE MHA U9 C8",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Cloverdale Sport & Ice Complex 1-Blue"
-    },
-    {
       "id": 1032161,
       "number": "U9L6605",
       "date": "2027-01-31",
@@ -3401,23 +3367,6 @@
       "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
-      "id": 1032205,
-      "number": "U9L6559",
-      "date": "2027-01-09",
-      "startTime": "2027-01-09T21:30:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 177962,
-      "homeTeamName": "NORTH DELTA MHA U9 C4 Minor",
-      "awayTeamId": 178028,
-      "awayTeamName": "SOUTH DELTA MHA U9 C4",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
-    },
-    {
       "id": 1032209,
       "number": "U9L6558",
       "date": "2027-01-09",
@@ -3877,6 +3826,40 @@
       "arena": "Centennial Arena Centennial"
     },
     {
+      "id": 1032162,
+      "number": "U9L6606",
+      "date": "2026-12-18",
+      "startTime": "2026-12-18T23:45:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 178086,
+      "homeTeamName": "CLOVERDALE MHA U9 C5",
+      "awayTeamId": 177967,
+      "awayTeamName": "CLOVERDALE MHA U9 C8",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Cloverdale Sport & Ice Complex 2-Red"
+    },
+    {
+      "id": 1032095,
+      "number": "U9L6672",
+      "date": "2026-12-17",
+      "startTime": "2026-12-18T01:30:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 177972,
+      "homeTeamName": "LANGLEY MHA U9 C6",
+      "awayTeamId": 177947,
+      "awayTeamName": "SOUTH DELTA MHA U9 C10",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Langley Sportsplex 3"
+    },
+    {
       "id": 1032246,
       "number": "U9L6094",
       "date": "2026-12-13",
@@ -4266,6 +4249,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Surrey Sport & Leisure Centre Arena 1"
+    },
+    {
+      "id": 1032205,
+      "number": "U9L6559",
+      "date": "2026-12-12",
+      "startTime": "2026-12-12T17:30:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 177962,
+      "homeTeamName": "NORTH DELTA MHA U9 C4 Minor",
+      "awayTeamId": 178028,
+      "awayTeamName": "SOUTH DELTA MHA U9 C4",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Delta Recreation Centre Main Rink (NDRC)"
     },
     {
       "id": 1031989,
@@ -4978,7 +4978,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "postponed",
+      "status": "scheduled",
       "arena": "George Preston Recreation Centre Main"
     },
     {
@@ -9361,23 +9361,6 @@
       "arena": "Rosemary Brown Recreation Centre B"
     },
     {
-      "id": 1041847,
-      "number": "U9L8038",
-      "date": "2027-01-31",
-      "startTime": "2027-01-31T15:45:00.000Z",
-      "groupId": 7034,
-      "groupName": "Blue Major",
-      "homeTeamId": 177995,
-      "homeTeamName": "RICHMOND JETS MHA U9 C2",
-      "awayTeamId": 178011,
-      "awayTeamName": "VANCOUVER MHA U9 C3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Richmond Ice Centre Garage"
-    },
-    {
       "id": 1041920,
       "number": "U9L8245",
       "date": "2027-01-31",
@@ -11010,6 +10993,23 @@
       "arena": "Richmond Ice Centre Garage"
     },
     {
+      "id": 1041798,
+      "number": "U9L8006",
+      "date": "2026-12-06",
+      "startTime": "2026-12-06T17:00:00.000Z",
+      "groupId": 7034,
+      "groupName": "Blue Major",
+      "homeTeamId": 178011,
+      "homeTeamName": "VANCOUVER MHA U9 C3",
+      "awayTeamId": 178014,
+      "awayTeamName": "VANCOUVER MHA U9 C1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Scotia Barn Rink 3"
+    },
+    {
       "id": 1041894,
       "number": "U9L8269",
       "date": "2026-12-06",
@@ -11112,23 +11112,6 @@
       "arena": "PNE Agrodome"
     },
     {
-      "id": 1041798,
-      "number": "U9L8006",
-      "date": "2026-12-05",
-      "startTime": "2026-12-05T22:15:00.000Z",
-      "groupId": 7034,
-      "groupName": "Blue Major",
-      "homeTeamId": 178011,
-      "homeTeamName": "VANCOUVER MHA U9 C3",
-      "awayTeamId": 178014,
-      "awayTeamName": "VANCOUVER MHA U9 C1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "Britannia Community Centre"
-    },
-    {
       "id": 1041885,
       "number": "U9L8209",
       "date": "2026-12-05",
@@ -11212,6 +11195,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Richmond Ice Centre Coliseum"
+    },
+    {
+      "id": 1041847,
+      "number": "U9L8038",
+      "date": "2026-12-05",
+      "startTime": "2026-12-05T15:30:00.000Z",
+      "groupId": 7034,
+      "groupName": "Blue Major",
+      "homeTeamId": 177995,
+      "homeTeamName": "RICHMOND JETS MHA U9 C2",
+      "awayTeamId": 178011,
+      "awayTeamName": "VANCOUVER MHA U9 C3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Richmond Ice Centre Forum"
     },
     {
       "id": 1041737,

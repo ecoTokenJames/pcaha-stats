@@ -2821,7 +2821,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "postponed",
       "arena": "North Surrey Sport & Ice Complex Rink #2"
     },
     {
@@ -7047,6 +7047,23 @@
       "arena": "North Surrey Sport & Ice Complex Rink #3"
     },
     {
+      "id": 1010483,
+      "number": "U18L4037",
+      "date": "2026-12-19",
+      "startTime": "2026-12-19T21:00:00.000Z",
+      "groupId": 7007,
+      "groupName": "Tier 1",
+      "homeTeamId": 177499,
+      "homeTeamName": "SURREY FEMALE HA U18 A1 FALCONS",
+      "awayTeamId": 177492,
+      "awayTeamName": "BURNABY FEMALE IHA U18 A1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Surrey Sport & Ice Complex Rink #3"
+    },
+    {
       "id": 1010538,
       "number": "U18L4132",
       "date": "2026-12-19",
@@ -7062,23 +7079,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "George Preston Recreation Centre Main"
-    },
-    {
-      "id": 1010483,
-      "number": "U18L4037",
-      "date": "2026-12-18",
-      "startTime": "2026-12-19T04:15:00.000Z",
-      "groupId": 7007,
-      "groupName": "Tier 1",
-      "homeTeamId": 177499,
-      "homeTeamName": "SURREY FEMALE HA U18 A1 FALCONS",
-      "awayTeamId": 177492,
-      "awayTeamName": "BURNABY FEMALE IHA U18 A1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Surrey Sport & Leisure Centre Arena 3"
     },
     {
       "id": 1010488,
@@ -23846,23 +23846,6 @@
       "arena": "Pitt Meadows Arena Complex Chrysler Gold"
     },
     {
-      "id": 1023601,
-      "number": "U18L1039",
-      "date": "2026-12-19",
-      "startTime": "2026-12-20T03:15:00.000Z",
-      "groupId": 6989,
-      "groupName": "Flight 1",
-      "homeTeamId": 178644,
-      "homeTeamName": "PORT COQUITLAM MHA (2) U18 A1 TIER 2",
-      "awayTeamId": 177462,
-      "awayTeamName": "BURNABY MHA (1) U18 A1 TIER 1",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
-    },
-    {
       "id": 1023857,
       "number": "U18L1941",
       "date": "2026-12-19",
@@ -23878,6 +23861,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
+    },
+    {
+      "id": 1023601,
+      "number": "U18L1039",
+      "date": "2026-12-19",
+      "startTime": "2026-12-20T02:15:00.000Z",
+      "groupId": 6989,
+      "groupName": "Flight 1",
+      "homeTeamId": 178644,
+      "homeTeamName": "PORT COQUITLAM MHA (2) U18 A1 TIER 2",
+      "awayTeamId": 177462,
+      "awayTeamName": "BURNABY MHA (1) U18 A1 TIER 1",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
       "id": 1023822,
@@ -29326,6 +29326,23 @@
       "arena": "Richmond Ice Centre Coliseum"
     },
     {
+      "id": 1030522,
+      "number": "U18L8022",
+      "date": "2026-12-07",
+      "startTime": "2026-12-08T04:15:00.000Z",
+      "groupId": 7030,
+      "groupName": "Blue",
+      "homeTeamId": 177864,
+      "homeTeamName": "RICHMOND JETS MHA U18 C6",
+      "awayTeamId": 177859,
+      "awayTeamName": "VANCOUVER THUNDERBIRD MHA U18 C8",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Minoru Arena Silver"
+    },
+    {
       "id": 1030420,
       "number": "U18L8620",
       "date": "2026-12-07",
@@ -29392,23 +29409,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Queens Park Arena 1"
-    },
-    {
-      "id": 1030522,
-      "number": "U18L8022",
-      "date": "2026-12-06",
-      "startTime": "2026-12-07T02:15:00.000Z",
-      "groupId": 7030,
-      "groupName": "Blue",
-      "homeTeamId": 177864,
-      "homeTeamName": "RICHMOND JETS MHA U18 C6",
-      "awayTeamId": 177859,
-      "awayTeamName": "VANCOUVER THUNDERBIRD MHA U18 C8",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Minoru Arena Silver"
     },
     {
       "id": 1030589,

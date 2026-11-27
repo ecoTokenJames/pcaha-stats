@@ -166187,6 +166187,28 @@
     "position": "F"
   },
   {
+    "participantId": 127202,
+    "name": "KIERA ELLIOTT",
+    "number": 29,
+    "teamId": 177514,
+    "teamName": "NORTH SHORE WINTER CLUB MHA FEMALE U13 A1",
+    "divisionName": "U13",
+    "scheduleName": "U13 A Placement",
+    "scheduleId": 199396,
+    "categoryName": "U13 A",
+    "scheduleType": "Placement",
+    "goals": 0,
+    "assists": 0,
+    "points": 0,
+    "pim": 0,
+    "ppGoals": 0,
+    "shGoals": 0,
+    "gwGoals": 0,
+    "gamesPlayed": 8,
+    "isAffiliate": false,
+    "position": "G"
+  },
+  {
     "participantId": 93504,
     "name": "JULIETTE FERGUSON",
     "number": 18,
@@ -166205,7 +166227,7 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 2,
-    "isAffiliate": true,
+    "isAffiliate": false,
     "position": "F"
   },
   {
@@ -166227,30 +166249,8 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 4,
-    "isAffiliate": true,
+    "isAffiliate": false,
     "position": "F"
-  },
-  {
-    "participantId": 127202,
-    "name": "KIERA ELLIOTT",
-    "number": 29,
-    "teamId": 177514,
-    "teamName": "NORTH SHORE WINTER CLUB MHA FEMALE U13 A1",
-    "divisionName": "U13",
-    "scheduleName": "U13 A Placement",
-    "scheduleId": 199396,
-    "categoryName": "U13 A",
-    "scheduleType": "Placement",
-    "goals": 0,
-    "assists": 0,
-    "points": 0,
-    "pim": 0,
-    "ppGoals": 0,
-    "shGoals": 0,
-    "gwGoals": 0,
-    "gamesPlayed": 8,
-    "isAffiliate": true,
-    "position": "G"
   },
   {
     "participantId": 143108,
@@ -167855,7 +167855,7 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 4,
-    "isAffiliate": true,
+    "isAffiliate": false,
     "position": "G"
   },
   {
