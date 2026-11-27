@@ -20,6 +20,7 @@ import { TeamRosterTable } from "@/components/TeamRosterTable";
 import { GamesList } from "@/components/GamesList";
 import { LevelUpCard } from "@/components/LevelUpAd";
 import { SponsorStrip } from "@/components/SponsorStrip";
+import { TeamStar } from "@/components/FavoriteStar";
 import { DismissibleNote } from "@/components/DismissibleNote";
 
 const VALID_CATEGORIES: HockeyCategory[] = ["rep", "house", "female"];
@@ -169,7 +170,12 @@ export default async function TeamDetailPage({
       <div className="bg-white rounded-lg border border-gray-200 p-5">
         <div className="flex items-start justify-between">
           <div>
-            <h3 className="text-xl font-bold text-gray-900">
+            <h3 className="flex items-start gap-2 text-xl font-bold text-gray-900">
+              {season === SEASON && (
+                <span className="mt-1">
+                  <TeamStar teamId={teamId} />
+                </span>
+              )}
               {teamInfo.teamName}
             </h3>
             <p className="text-sm text-gray-500 mt-1">

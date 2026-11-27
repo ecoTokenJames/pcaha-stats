@@ -11,6 +11,7 @@ import { DivisionGrid } from "@/components/DivisionGrid";
 import { LevelUpCard } from "@/components/LevelUpAd";
 import { FalconsCard, falconsAdActive } from "@/components/FalconsAd";
 import { SponsorStrip } from "@/components/SponsorStrip";
+import { FavoriteTeams } from "@/components/FavoriteTeams";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -105,6 +106,9 @@ export default function Home() {
       </div>
 
       <SponsorStrip page="home" />
+
+      {/* Teams starred in this browser, as quick links */}
+      <FavoriteTeams showHint />
 
       {/* Division Grid */}
       <h3 className="text-lg font-semibold text-gray-900 mb-3">
