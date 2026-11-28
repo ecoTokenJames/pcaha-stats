@@ -43466,7 +43466,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -43480,10 +43480,10 @@
       "homeTeamName": "CAMPBELL RIVER MHA (2) U13 FEMALE C1 HURRICANES",
       "awayTeamId": 178869,
       "awayTeamName": "KAMLOOPS MHA (1) U13 FEMALE REC #1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Matsqui Recreation Centre"
     },
     {
@@ -43497,10 +43497,10 @@
       "homeTeamName": "ABBOTSFORD FEMALE HA U13 C1",
       "awayTeamId": 177643,
       "awayTeamName": "SURREY FEMALE HA U13 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 6,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     }
   ],
@@ -43672,7 +43672,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Abbotsford Recreation Centre 1"
     },
     {
@@ -43686,10 +43686,10 @@
       "homeTeamName": "VANCOUVER FEMALE IHA U13 C2",
       "awayTeamId": 224822,
       "awayTeamName": "CAMPBELL RIVER MHA (2) U13 FEMALE C2 HURRICANES",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     },
     {
@@ -43703,10 +43703,10 @@
       "homeTeamName": "ABBOTSFORD FEMALE HA U13 C2",
       "awayTeamId": 222944,
       "awayTeamName": "SURREY FEMALE HA U13 C3",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "MSA Arena"
     }
   ],

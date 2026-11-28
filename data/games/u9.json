@@ -205,23 +205,6 @@
       "arena": "Langley Sportsplex 2"
     },
     {
-      "id": 1032089,
-      "number": "U9L6677",
-      "date": "2027-03-07",
-      "startTime": "2027-03-07T16:00:00.000Z",
-      "groupId": 7014,
-      "groupName": "Minor",
-      "homeTeamId": 177976,
-      "homeTeamName": "LANGLEY MHA U9 C7",
-      "awayTeamId": 178025,
-      "awayTeamName": "SOUTH DELTA MHA U9 C9",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "postponed",
-      "arena": "The Arenas at LEC 1"
-    },
-    {
       "id": 1032090,
       "number": "U9L6676",
       "date": "2027-03-07",
@@ -4754,6 +4737,23 @@
       "homeTeamName": "LANGLEY MHA U9 C14",
       "awayTeamId": 178065,
       "awayTeamName": "NORTH DELTA MHA U9 C1 Major",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "The Arenas at LEC 3"
+    },
+    {
+      "id": 1032089,
+      "number": "U9L6677",
+      "date": "2026-12-05",
+      "startTime": "2026-12-05T15:15:00.000Z",
+      "groupId": 7014,
+      "groupName": "Minor",
+      "homeTeamId": 177976,
+      "homeTeamName": "LANGLEY MHA U9 C7",
+      "awayTeamId": 178025,
+      "awayTeamName": "SOUTH DELTA MHA U9 C9",
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
@@ -10190,23 +10190,6 @@
       "arena": "Sunshine Coast Arena"
     },
     {
-      "id": 1036718,
-      "number": "U9L7245",
-      "date": "2027-02-14",
-      "startTime": "2027-02-14T18:00:00.000Z",
-      "groupId": 7026,
-      "groupName": "Minor",
-      "homeTeamId": 178062,
-      "homeTeamName": "NORTH SHORE WINTER CLUB MHA U9 C3",
-      "awayTeamId": 177996,
-      "awayTeamName": "WHISTLER MHA U9 C2 WINTERHAWKS",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "North Shore Winter Club HTC Rink"
-    },
-    {
       "id": 1036722,
       "number": "U9L7242",
       "date": "2027-02-13",
@@ -10375,23 +10358,6 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Meadow Park Sports Centre"
-    },
-    {
-      "id": 1036728,
-      "number": "U9L7233",
-      "date": "2027-01-31",
-      "startTime": "2027-01-31T20:00:00.000Z",
-      "groupId": 7026,
-      "groupName": "Minor",
-      "homeTeamId": 177968,
-      "homeTeamName": "HOLLYBURN MHA U9 C2",
-      "awayTeamId": 178015,
-      "awayTeamName": "SUNSHINE COAST MHA U9 C2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Hollyburn Country Club Main Ice"
     },
     {
       "id": 1036729,
@@ -10698,6 +10664,40 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Meadow Park Sports Centre"
+    },
+    {
+      "id": 1036728,
+      "number": "U9L7233",
+      "date": "2027-01-10",
+      "startTime": "2027-01-10T20:00:00.000Z",
+      "groupId": 7026,
+      "groupName": "Minor",
+      "homeTeamId": 177968,
+      "homeTeamName": "HOLLYBURN MHA U9 C2",
+      "awayTeamId": 178015,
+      "awayTeamName": "SUNSHINE COAST MHA U9 C2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Hollyburn Country Club Main Ice"
+    },
+    {
+      "id": 1036718,
+      "number": "U9L7245",
+      "date": "2027-01-10",
+      "startTime": "2027-01-10T19:15:00.000Z",
+      "groupId": 7026,
+      "groupName": "Minor",
+      "homeTeamId": 178062,
+      "homeTeamName": "NORTH SHORE WINTER CLUB MHA U9 C3",
+      "awayTeamId": 177996,
+      "awayTeamName": "WHISTLER MHA U9 C2 WINTERHAWKS",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "North Shore Winter Club HTC Rink"
     },
     {
       "id": 1036685,
@@ -11460,10 +11460,10 @@
       "homeTeamName": "ABBOTSFORD FEMALE HA U9 C2",
       "awayTeamId": 177577,
       "awayTeamName": "NORTH SHORE FEMALE IHA U9 C2",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Surrey Sport & Leisure Centre Arena 2"
     },
     {
@@ -11477,10 +11477,10 @@
       "homeTeamName": "SURREY FEMALE HA U9 C2",
       "awayTeamId": 177560,
       "awayTeamName": "TRI CITIES FEMALE IHA U9 C1",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "final",
       "arena": "Surrey Sport & Leisure Centre Arena 1"
     },
     {
@@ -11497,7 +11497,7 @@
       "homeScore": null,
       "awayScore": null,
       "decidedBy": null,
-      "status": "scheduled",
+      "status": "awaiting",
       "arena": "Surrey Sport & Leisure Centre Arena 3"
     }
   ],

@@ -25172,23 +25172,6 @@
       "arena": "Sardis Sports Complex SSC1"
     },
     {
-      "id": 1023595,
-      "number": "U18L1025",
-      "date": "2026-12-05",
-      "startTime": "2026-12-06T03:15:00.000Z",
-      "groupId": 6989,
-      "groupName": "Flight 1",
-      "homeTeamId": 178644,
-      "homeTeamName": "PORT COQUITLAM MHA (2) U18 A1 TIER 2",
-      "awayTeamId": 178641,
-      "awayTeamName": "PORT MOODY AHA (2) U18 A1 TIER 2",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
-    },
-    {
       "id": 1023632,
       "number": "U18L1918",
       "date": "2026-12-05",
@@ -25204,6 +25187,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
+    },
+    {
+      "id": 1023595,
+      "number": "U18L1025",
+      "date": "2026-12-05",
+      "startTime": "2026-12-06T02:30:00.000Z",
+      "groupId": 6989,
+      "groupName": "Flight 1",
+      "homeTeamId": 178644,
+      "homeTeamName": "PORT COQUITLAM MHA (2) U18 A1 TIER 2",
+      "awayTeamId": 178641,
+      "awayTeamName": "PORT MOODY AHA (2) U18 A1 TIER 2",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
       "id": 1023616,
@@ -25342,23 +25342,6 @@
       "arena": "Hollyburn Country Club Main Ice"
     },
     {
-      "id": 1023855,
-      "number": "U18L1940",
-      "date": "2026-12-04",
-      "startTime": "2026-12-05T04:15:00.000Z",
-      "groupId": 6979,
-      "groupName": "Flight 4",
-      "homeTeamId": 178618,
-      "homeTeamName": "SQUAMISH MHA (3) U18 TIER 4 A2",
-      "awayTeamId": 178647,
-      "awayTeamName": "RIDGE MEADOWS MHA (1) U18 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Brennan Park Arena"
-    },
-    {
       "id": 1023712,
       "number": "U18L1620",
       "date": "2026-12-04",
@@ -25425,6 +25408,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Arbutus Club Ice Rink"
+    },
+    {
+      "id": 1023855,
+      "number": "U18L1940",
+      "date": "2026-12-04",
+      "startTime": "2026-12-05T02:15:00.000Z",
+      "groupId": 6979,
+      "groupName": "Flight 4",
+      "homeTeamId": 178618,
+      "homeTeamName": "SQUAMISH MHA (3) U18 TIER 4 A2",
+      "awayTeamId": 178647,
+      "awayTeamName": "RIDGE MEADOWS MHA (1) U18 A3 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Brennan Park Arena"
     },
     {
       "id": 1023854,

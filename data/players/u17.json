@@ -1053,7 +1053,7 @@
     "gwGoals": 0,
     "gamesPlayed": 11,
     "isAffiliate": false,
-    "position": "F"
+    "position": "D"
   },
   {
     "participantId": 46555,
@@ -1669,7 +1669,7 @@
     "gwGoals": 0,
     "gamesPlayed": 11,
     "isAffiliate": false,
-    "position": "F"
+    "position": "D"
   },
   {
     "participantId": 44221,
@@ -1911,7 +1911,7 @@
     "gwGoals": 0,
     "gamesPlayed": 13,
     "isAffiliate": false,
-    "position": "F"
+    "position": "D"
   },
   {
     "participantId": 44725,
@@ -2351,7 +2351,7 @@
     "gwGoals": 0,
     "gamesPlayed": 14,
     "isAffiliate": false,
-    "position": "F"
+    "position": "D"
   },
   {
     "participantId": 54125,
@@ -2373,7 +2373,7 @@
     "gwGoals": 0,
     "gamesPlayed": 14,
     "isAffiliate": false,
-    "position": "F"
+    "position": "D"
   },
   {
     "participantId": 45261,
@@ -2791,7 +2791,7 @@
     "gwGoals": 0,
     "gamesPlayed": 13,
     "isAffiliate": false,
-    "position": "F"
+    "position": "D"
   },
   {
     "participantId": 124644,
@@ -3454,28 +3454,6 @@
     "position": "G"
   },
   {
-    "participantId": 46663,
-    "name": "CEDRIC VANDERMEER",
-    "number": 1,
-    "teamId": 178621,
-    "teamName": "NORTH VANCOUVER MHA (1) U18 A3 TIER 3 (U17A)",
-    "divisionName": "U17",
-    "scheduleName": "U17A League",
-    "scheduleId": 200107,
-    "categoryName": "U17 A",
-    "scheduleType": "League",
-    "goals": 0,
-    "assists": 0,
-    "points": 0,
-    "pim": 0,
-    "ppGoals": 0,
-    "shGoals": 0,
-    "gwGoals": 0,
-    "gamesPlayed": 12,
-    "isAffiliate": false,
-    "position": "G"
-  },
-  {
     "participantId": 93507,
     "name": "SHAY LUND CHOW",
     "number": 35,
@@ -3495,6 +3473,28 @@
     "gwGoals": 0,
     "gamesPlayed": 12,
     "isAffiliate": false,
+    "position": "G"
+  },
+  {
+    "participantId": 46663,
+    "name": "CEDRIC VANDERMEER",
+    "number": 1,
+    "teamId": 178621,
+    "teamName": "NORTH VANCOUVER MHA (1) U18 A3 TIER 3 (U17A)",
+    "divisionName": "U17",
+    "scheduleName": "U17A League",
+    "scheduleId": 200107,
+    "categoryName": "U17 A",
+    "scheduleType": "League",
+    "goals": 0,
+    "assists": 0,
+    "points": 0,
+    "pim": 0,
+    "ppGoals": 0,
+    "shGoals": 0,
+    "gwGoals": 0,
+    "gamesPlayed": 12,
+    "isAffiliate": true,
     "position": "G"
   },
   {
@@ -3696,28 +3696,6 @@
     "position": "G"
   },
   {
-    "participantId": 90825,
-    "name": "JAYDEN E. TRIBE",
-    "number": 35,
-    "teamId": 177460,
-    "teamName": "ABBOTSFORD MHA (1) U18 A2 TIER 2 HAWKS (U17A)",
-    "divisionName": "U17",
-    "scheduleName": "U17A League",
-    "scheduleId": 200107,
-    "categoryName": "U17 A",
-    "scheduleType": "League",
-    "goals": 0,
-    "assists": 0,
-    "points": 0,
-    "pim": 0,
-    "ppGoals": 0,
-    "shGoals": 0,
-    "gwGoals": 0,
-    "gamesPlayed": 13,
-    "isAffiliate": false,
-    "position": "G"
-  },
-  {
     "participantId": 39382,
     "name": "ETHAN MCAULEY",
     "number": 1,
@@ -3736,7 +3714,29 @@
     "shGoals": 0,
     "gwGoals": 0,
     "gamesPlayed": 13,
-    "isAffiliate": false,
+    "isAffiliate": true,
+    "position": "G"
+  },
+  {
+    "participantId": 90825,
+    "name": "JAYDEN E. TRIBE",
+    "number": 35,
+    "teamId": 177460,
+    "teamName": "ABBOTSFORD MHA (1) U18 A2 TIER 2 HAWKS (U17A)",
+    "divisionName": "U17",
+    "scheduleName": "U17A League",
+    "scheduleId": 200107,
+    "categoryName": "U17 A",
+    "scheduleType": "League",
+    "goals": 0,
+    "assists": 0,
+    "points": 0,
+    "pim": 0,
+    "ppGoals": 0,
+    "shGoals": 0,
+    "gwGoals": 0,
+    "gamesPlayed": 13,
+    "isAffiliate": true,
     "position": "G"
   },
   {

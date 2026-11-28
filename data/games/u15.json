@@ -28724,23 +28724,6 @@
       "arena": "Abbotsford Recreation Centre 1"
     },
     {
-      "id": 1024561,
-      "number": "U15L1931",
-      "date": "2026-12-05",
-      "startTime": "2026-12-06T01:30:00.000Z",
-      "groupId": 6979,
-      "groupName": "Flight 4",
-      "homeTeamId": 177779,
-      "homeTeamName": "HYDRA U15 A2 TIER 2",
-      "awayTeamId": 177801,
-      "awayTeamName": "RIDGE MEADOWS MHA (1) U15 A3 TIER 3",
-      "homeScore": null,
-      "awayScore": null,
-      "decidedBy": null,
-      "status": "scheduled",
-      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
-    },
-    {
       "id": 1024379,
       "number": "U15L1039",
       "date": "2026-12-05",
@@ -28756,6 +28739,23 @@
       "decidedBy": null,
       "status": "scheduled",
       "arena": "Planet Ice Maple Ridge 1 Cam Neely"
+    },
+    {
+      "id": 1024561,
+      "number": "U15L1931",
+      "date": "2026-12-05",
+      "startTime": "2026-12-06T00:45:00.000Z",
+      "groupId": 6979,
+      "groupName": "Flight 4",
+      "homeTeamId": 177779,
+      "homeTeamName": "HYDRA U15 A2 TIER 2",
+      "awayTeamId": 177801,
+      "awayTeamName": "RIDGE MEADOWS MHA (1) U15 A3 TIER 3",
+      "homeScore": null,
+      "awayScore": null,
+      "decidedBy": null,
+      "status": "scheduled",
+      "arena": "Port Coquitlam Community Centre Arena 1 - Jon Baillie"
     },
     {
       "id": 1024737,

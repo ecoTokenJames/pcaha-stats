@@ -396,6 +396,24 @@
     "endDate": "2026-11-29"
   },
   {
+    "id": 203845,
+    "name": "HOPE WILDCATS U11 TOURNAMENT",
+    "divisionName": "U11",
+    "categoryName": "U11 C",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-11",
+    "endDate": "2026-12-13"
+  },
+  {
+    "id": 203841,
+    "name": "PAT QUINN CLASSIC - U11 FEMALE",
+    "divisionName": "U11",
+    "categoryName": "U11 AA",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-31"
+  },
+  {
     "id": 199299,
     "name": "FVE U11C Playoffs",
     "divisionName": "U11",
@@ -828,6 +846,33 @@
     "endDate": "2026-12-06"
   },
   {
+    "id": 203838,
+    "name": "PAT QUINN CLASSIC - U13 FLIGHT ONE",
+    "divisionName": "U13",
+    "categoryName": "U13 AAA",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-31"
+  },
+  {
+    "id": 203840,
+    "name": "PAT QUINN CLASSIC - U13 FEMALE",
+    "divisionName": "U13",
+    "categoryName": "U13 AA",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-31"
+  },
+  {
+    "id": 203839,
+    "name": "PAT QUINN CLASSIC - U13 FLIGHT TWO",
+    "divisionName": "U13",
+    "categoryName": "U13 AA",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-31"
+  },
+  {
     "id": 203667,
     "name": "Winter Classic - U13",
     "divisionName": "U13",
@@ -1206,6 +1251,15 @@
     "endDate": "2026-11-22"
   },
   {
+    "id": 203837,
+    "name": "PAT QUINN CLASSIC - U15",
+    "divisionName": "U15",
+    "categoryName": "U15 AAA",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-31"
+  },
+  {
     "id": 203668,
     "name": "Winter Classic - U15",
     "divisionName": "U15",
@@ -1285,6 +1339,24 @@
     "scheduleType": "League",
     "startDate": "2026-09-11",
     "endDate": "2027-02-16"
+  },
+  {
+    "id": 203835,
+    "name": "PAT QUINN CLASSIC - U17 FLIGHT ONE",
+    "divisionName": "U17",
+    "categoryName": "U17 AAA",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-31"
+  },
+  {
+    "id": 203836,
+    "name": "PAT QUINN CLASSIC - U17 FLIGHT TWO",
+    "divisionName": "U17",
+    "categoryName": "U17 AA",
+    "scheduleType": "Tournament",
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-31"
   },
   {
     "id": 198804,
